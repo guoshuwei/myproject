@@ -10,7 +10,14 @@ git test
 访问控制: acl
 公共类库: library
 
+开发环境：
+Linux debian 4.9.0-7-amd64 #1 SMP Debian 4.9.110-3+deb9u2 (2018-08-13) x86_64 GNU/Linux
 
+mysql  Ver 14.14 Distrib 5.6.42, for Linux (x86_64) using  EditLine wrapper
+
+PHP 7.0.30-0+deb9u1 (cli)(尽量用7.2以上)
+
+nginx/1.14.0
 
 
 
