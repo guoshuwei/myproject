@@ -1,0 +1,118 @@
+<include file="template:header" />
+<title>产品分类</title>
+</head>
+<body>
+<div class="pd-20">
+  <form class="form form-horizontal" id="form-user-add">
+    <div class="row cl">
+        <label class="form-label col-2"><span class="c-red">*</span>名称：</label>
+        <div class="formControls col-5">
+            <input type="text" class="input-text" value="<?php echo @$zjinfo[0]['branch_name'];?>" id="item_name" name="name">
+        </div>
+    </div>
+    <div class="row cl">
+        <label class="form-label col-2"><span class="c-red">*</span>跳转地址(url)：</label>
+        <div class="formControls col-5">
+            <input type="text" class="input-text" value="<?php echo @$zjinfo[0]['jump_url'];?>" id="jump_url" name="jump_url">
+        </div>
+    </div>
+    <div class="row cl">
+        <label class="form-label col-2"><span class="c-red">*</span>父级分类：</label>
+        <div class="formControls col-2"> 
+            <span class="select-box">
+                <select name="pid" class="select">
+                <option value="0">顶级分类</option>
+                <foreach name="selectlist" item="selectlist">
+                    <!-- 判断当前选中状态 -->
+                    <?php if($zjinfo[0]['pid'] == $selectlist['id'] ) $sel_s = 'selected="selected"';else $sel_s = ' ';?>
+                    <option {$sel_s} value="<?php echo @$selectlist['id'];?>">{$selectlist.name}</option>
+                        <foreach name="selectlist.subname" item="subname">      
+                            <option value="{$key}">&nbsp;&nbsp;├{$subname}</option>
+                        </foreach>
+                </foreach>   
+                </select>
+            </span> 
+        </div>
+        <label class="form-label col-1" >排序值：</label>
+        <div class="formControls col-2">
+            <input type="text" class="input-text" value="{$zjinfo[0]['vsort']}" placeholder="" id="vsort" name="vsort">
+        </div>
+    </div>
+    <div class="row cl">
+      <label class="form-label col-2">备注：</label>
+      <div class="formControls col-5">
+        <textarea name="comments" id="comments" class="textarea"  placeholder="说点什么...最少输入10个字符" datatype="*10-100" dragonfly="true" nullmsg="备注不能为空！" onKeyUp="textarealength(this,100)">{$zjinfo[0]['description']}</textarea>
+        <p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p>
+      </div>
+      <div class="col-5"> </div>
+    </div>
+    <div class="row cl">
+      <div class="col-9 col-offset-2">
+        <if condition="(isset($zjinfo[0]['id']) AND ($zjinfo[0]['id'] gt 0))">
+            <input class="btn btn-primary radius" onClick="item_edit({$zjinfo[0]['id']})" type="button" value="&nbsp;&nbsp;修改&nbsp;&nbsp;">
+        <else/>
+            <input class="btn btn-primary radius" onClick="item_add(0)" type="button" value="&nbsp;&nbsp;添加&nbsp;&nbsp;">
+        </if>
+      </div>
+    </div>
+  </form>
+</div>
+<include file="template:footer" />
+<script>
+function item_edit(id){
+        $.ajax({
+            url:'{:U('FL/item_edit')}',
+            type:'POST',
+            data:{'id':id,'name':$('#item_name').val(),'jump_url':$('#jump_url').val(),'pid':$('select option:selected').val(),'vsort':$('#vsort').val(),'comments':$('#comments').val()},
+            dataType:'json',
+            beforeSend:function(){
+                
+            },
+            complete:function(){
+                
+            },
+            success:function(data){
+                layer.confirm('确认要修改吗？',function(index){    
+                    if(data == 1)
+                    {
+                        layer.msg('修改成功!',{icon: 6,time:1000});
+                    }else{
+                        layer.msg('操作失败!',{icon: 5,time:1000});
+                    }
+                });
+            },
+            error:function(xhr,textStatus){
+
+            }
+        });
+}
+
+function item_add(id){
+        $.ajax({
+            url:'{:U('SPGL/item_add')}',
+            type:'POST',
+            data:{'id':id,'name':$('#item_name').val(),'jump_url':$('#jump_url').val(),'pid':$('select option:selected').val(),'vsort':$('#vsort').val(),'comments':$('#comments').val()},
+            dataType:'json',
+            beforeSend:function(){
+                
+            },
+            complete:function(){
+                
+            },
+            success:function(data){
+                layer.confirm('确认要添加吗？',function(index){    
+                    if(data == 1)
+                    {
+                        layer.msg('添加成功!',{icon: 6,time:1000});
+                    }else{
+                        layer.msg('操作失败!',{icon: 5,time:1000});
+                    }
+                });
+            },
+            error:function(xhr,textStatus){
+
+            }
+        });
+}
+</script>
+

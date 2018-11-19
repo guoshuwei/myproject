@@ -1,0 +1,101 @@
+<include file="template:header" />
+<header class="Hui-header cl"> <a class="Hui-logo l" title="H-ui.admin v2.3" href="{:U('Index')}">后台管理系统</a> <a class="Hui-logo-m l" href="/" title="H-ui.admin"></a> <span class="Hui-subtitle l"></span>
+	<nav class="mainnav cl" id="Hui-nav">
+		
+	</nav>
+
+	<ul class="Hui-userbar">
+		<li>超级管理员</li>
+		<li class="dropDown dropDown_hover"><a href="#" class="dropDown_A">admin <i class="Hui-iconfont">&#xe6d5;</i></a>
+			<ul class="dropDown-menu radius box-shadow">
+				<li><a href="{:U('Index/personal')}" data-title="个人信息" >个人信息</a></li>
+				<li><a href="{:U('Login/outlogin')}">退出</a></li>
+			</ul>
+		</li>
+		<li id="Hui-msg"> <a href="#" title="消息"><span class="badge badge-danger">1</span><i class="Hui-iconfont" style="font-size:18px">&#xe68a;</i></a> </li>
+		<li id="Hui-skin" class="dropDown right dropDown_hover"><a href="javascript:;" title="换肤"><i class="Hui-iconfont" style="font-size:18px">&#xe62a;</i></a>
+			<ul class="dropDown-menu radius box-shadow">
+				<li><a href="javascript:;" data-val="default" title="默认（黑色）">默认（黑色）</a></li>
+				<li><a href="javascript:;" data-val="blue" title="蓝色">蓝色</a></li>
+				<li><a href="javascript:;" data-val="green" title="绿色">绿色</a></li>
+				<li><a href="javascript:;" data-val="red" title="红色">红色</a></li>
+				<li><a href="javascript:;" data-val="yellow" title="黄色">黄色</a></li>
+				<li><a href="javascript:;" data-val="orange" title="绿色">橙色</a></li>
+			</ul>
+		</li>
+	</ul>
+	<a href="javascript:;" class="Hui-nav-toggle Hui-iconfont" aria-hidden="false">&#xe667;</a> </header>
+<!-- 中间员工信息 -->
+<div style="top:44px;position:relative">
+	<nav class="breadcrumb"><span> 个人信息</span></nav>
+	<div class="pd-20">
+		<div class="person-data">
+		    <div style="display:none" class="pinfo-set">
+		    	<form class="form form-horizontal" id="form-user-add" method="post" action="{:U('Index/personal_edit')}">
+				    <div class="row cl">
+				        <label class="form-label col-2"><span class="c-red">*</span>姓名：</label>
+				        <div class="formControls col-5">
+				            <input type="text" class="input-text" value="{$empinfo.name}"  id="item_name" name="name">
+				        </div>
+				    </div>
+				    <div class="row cl">
+				        <label class="form-label col-2"><span class="c-red">*</span>登录密码：</label>
+				        <div class="formControls col-5">
+				            <input type="password" class="input-text" value="{$empinfo.password}"   name="password">
+				        </div>
+				    </div>
+				    <div class="row cl">
+				        <label class="form-label col-2"><span class="c-red">*</span>确认登录密码：</label>
+				        <div class="formControls col-5">
+				            <input type="password" class="input-text" value="{$empinfo.password}"   name="repassword">
+				        </div>
+				    </div>
+				    <div class="row cl">
+				        <label class="form-label col-2"><span class="c-red">*</span>昵称：</label>
+				        <div class="formControls col-5">
+				            <input type="text" class="input-text" value="{$empinfo.nickname}"  name="nickname">
+				        </div>
+				    </div>
+				    <div class="row cl">
+				        <label class="form-label col-2"><span class="c-red">*</span>邮箱：</label>
+				        <div class="formControls col-5">
+				            <input type="text" class="input-text" value="{$empinfo.email}" id="email" name="email">
+				        </div>
+				    </div>
+				    <div class="row cl">
+				        <label class="form-label col-2"><span class="c-red"></span>头像：</label>
+				        <div class="formControls col-5">
+				            <input type="file" class="input-text" name="touxiang">
+				        </div>
+				    </div>
+				    <div class="row cl">
+				      	<div class="col-9 col-offset-2">
+				        	<input class="btn btn-primary radius" onclick="item_edit(48)" type="button" value="&nbsp;&nbsp;修改&nbsp;&nbsp;">
+				      	</div>
+				    </div>
+				</form>
+		    </div>
+			<div class="pinfo-show">
+				<div class="fl">
+					<dl>
+	                	<dt><img style="border-radius:50%" class="touxiang" src="__PUBLIC__/Admin/images/user_default.jpg"></dt>
+	                	<dd>管理组：{$empinfo.name}</dd>
+	                	<dd>昵称：<if condition="empty($empinfo['nickname'])"><else/>{$empinfo.nickname}</if></dd>
+	                	<dd>邮箱：{$empinfo.email}</dd>
+	                	<dd>电话：{$empinfo.phone}</dd>
+	                	<dd>登录时间：<?php echo date('Y-m-d',$empinfo['last_login_time']);?></dd>
+                	</dl>
+				</div>
+				<div><div class="btn edit"><span style="font-size:12px;color:#494949;">修改</span></div></div>	
+			</div>	
+		</div>
+		
+	</div>
+</div>
+<include file="template:footer" />
+<script>
+$('.edit').on('click',function(){
+	$('.pinfo-show').hide();
+	$('.pinfo-set').show();
+})
+</script>

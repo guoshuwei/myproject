@@ -1,0 +1,625 @@
+[ 2018-11-16T17:05:53+08:00 ] 192.168.186.1 /main/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003761s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0939s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( name='二级导航' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0072s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新公告' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc  [ RunTime:0.0439s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0048s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新信息' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=0 ) ORDER BY vsort asc  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0377s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( mid=6 ) ORDER BY vsort desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialistintro /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+NOTIC: [8] Undefined variable: fybjinfo /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 230 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 268 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004461s ]
+
+[ 2018-11-16T18:01:40+08:00 ] 192.168.186.1 /main/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( name='二级导航' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0022s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新公告' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0018s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新信息' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc LIMIT 5   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=0 ) ORDER BY vsort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( mid=6 ) ORDER BY vsort desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001112s ]
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialistintro /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+NOTIC: [8] Undefined variable: fybjinfo /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 230 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 268 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2018-11-16T18:02:51+08:00 ] 192.168.186.1 /main/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( name='二级导航' )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0023s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新公告' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0018s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新信息' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=0 ) ORDER BY vsort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( mid=6 ) ORDER BY vsort desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialistintro /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+NOTIC: [8] Undefined variable: fybjinfo /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 230 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 268 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000898s ]
+
+[ 2018-11-16T18:02:53+08:00 ] 192.168.186.1 /main/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( name='二级导航' )  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0022s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新公告' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0020s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新信息' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=0 ) ORDER BY vsort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( mid=6 ) ORDER BY vsort desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000293s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialistintro /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+NOTIC: [8] Undefined variable: fybjinfo /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 230 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 268 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001350s ]
+
+[ 2018-11-16T18:07:15+08:00 ] 192.168.186.1 /main/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( name='二级导航' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0018s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新公告' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0017s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新信息' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=0 ) ORDER BY vsort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( mid=6 ) ORDER BY vsort desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialistintro /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+NOTIC: [8] Undefined variable: fybjinfo /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 230 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 268 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2018-11-16T18:19:33+08:00 ] 192.168.186.1 /main/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( name='二级导航' )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0044s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新公告' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0017s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新信息' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc LIMIT 5   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=0 ) ORDER BY vsort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( mid=6 ) ORDER BY vsort desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001443s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001678s ]
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialistintro /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+NOTIC: [8] Undefined variable: fybjinfo /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 230 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 268 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000629s ]
+
+[ 2018-11-16T18:20:26+08:00 ] 192.168.186.1 /main/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001784s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( name='二级导航' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0021s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新公告' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0031s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新信息' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc LIMIT 5   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=0 ) ORDER BY vsort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( mid=6 ) ORDER BY vsort desc  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialistintro /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+NOTIC: [8] Undefined variable: fybjinfo /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 230 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 268 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001032s ]
+
+[ 2018-11-16T18:22:23+08:00 ] 192.168.186.1 /main/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `t_user_dd` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `t_user_dd` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( name='二级导航' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0018s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新公告' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0022s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新信息' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=0 ) ORDER BY vsort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( mid=6 ) ORDER BY vsort desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialistintro /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+NOTIC: [8] Undefined variable: fybjinfo /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 230 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 268 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000945s ]
+
+[ 2018-11-16T18:41:23+08:00 ] 192.168.186.1 /main/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `t_user_dd` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `t_user_dd` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( name='二级导航' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0019s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新公告' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0030s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新信息' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc LIMIT 5   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=0 ) ORDER BY vsort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( mid=6 ) ORDER BY vsort desc  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialistintro /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+NOTIC: [8] Undefined variable: fybjinfo /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 230 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 268 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001327s ]
+
+[ 2018-11-16T18:41:31+08:00 ] 192.168.186.1 /main/index.php/images/aut_icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+
+[ 2018-11-16T18:41:33+08:00 ] 192.168.186.1 /main/index.php/images/aut_icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001342s ]
+
+[ 2018-11-16T18:41:34+08:00 ] 192.168.186.1 /main/index.php/images/aut_icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+
+[ 2018-11-16T18:42:29+08:00 ] 192.168.186.1 /main/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `t_user_dd` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `t_user_dd` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( name='二级导航' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0017s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新公告' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0014s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新信息' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=0 ) ORDER BY vsort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( mid=6 ) ORDER BY vsort desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialistintro /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+NOTIC: [8] Undefined variable: fybjinfo /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 230 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 268 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2018-11-16T18:42:30+08:00 ] 192.168.186.1 /main/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `t_user_dd` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `t_user_dd` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( name='二级导航' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0015s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新公告' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0029s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新信息' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc LIMIT 5   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=0 ) ORDER BY vsort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( mid=6 ) ORDER BY vsort desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialistintro /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+NOTIC: [8] Undefined variable: fybjinfo /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 230 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 268 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014957s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2018-11-16T23:34:38+08:00 ] 192.168.186.1 /main/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( name='二级导航' )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0019s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新公告' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc  [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0017s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新信息' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc LIMIT 5   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=0 ) ORDER BY vsort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( mid=6 ) ORDER BY vsort desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialistintro /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+NOTIC: [8] Undefined variable: fybjinfo /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 230 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 268 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2018-11-16T23:35:18+08:00 ] 192.168.186.1 /main/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003166s ]
+SQL: SHOW COLUMNS FROM `t_user_dd` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `t_user_dd` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( name='二级导航' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0026s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新公告' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0021s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新信息' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc LIMIT 5   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=0 ) ORDER BY vsort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( mid=6 ) ORDER BY vsort desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined offset: 0 /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialistintro /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [2] count(): Parameter must be an array or an object that implements Countable /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 77 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 169 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 176 行.
+NOTIC: [8] Undefined variable: fybjinfo /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 187 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 219 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 230 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: specialists /var/www/main/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 268 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000827s ]
+
+[ 2018-11-16T23:35:25+08:00 ] 192.168.186.1 /main/index.php/images/aut_icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001432s ]
+
+[ 2018-11-16T23:42:00+08:00 ] 192.168.186.1 /main/index.php/images/aut_icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+
+[ 2018-11-16T23:42:01+08:00 ] 192.168.186.1 /main/index.php/images/aut_icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+

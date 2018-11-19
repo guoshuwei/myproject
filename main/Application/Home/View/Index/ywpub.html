@@ -1,0 +1,103 @@
+<include file='Template:header' />
+<?php 
+$re_leftsublist = $leftsublist;
+?>
+<style>
+    .item{
+        display:none;
+    }
+    .active{display:block;}
+    .item li{list-style:circle;}
+    .item li a span.title{display:block;float:left;}
+    .item li a span.uptime{display:block;float:right;}
+    .page_cont .page_nav .nav_ul .active li{
+        height: 37px;
+        line-height: 37px;
+        font-size:14px;
+        /*color: #2bbeed;*/
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 1px solid #ececec;
+        cursor: pointer;
+    }
+</style>
+<link href="__PUBLIC__/Home/css/page.css" rel="stylesheet" type="text/css" />
+    <div class="index_body">
+        <div class="index_page">
+            <div class="page_cont">
+                <div class="page_nav">
+                    <div class="nav_title">
+                        <p class="title_p1">院务公开</p>
+                        <p class="title_p2">Departments</p>
+                    </div>
+                    <ul class="hd nav_ul">
+                        <foreach name="leftsublist" item="leftsublist" key="k">
+                               <if condition="(isset($_GET['sid']) AND ($k eq $_GET['sid']))">
+                                <li><a href="{$leftsublist.jump_url}" class="sublist active">
+                                    {$leftsublist.name}
+                                </a></li>  
+                            <elseif condition="(!isset($_GET['sid']) AND ($leftsublist.index eq 0))"/>
+                                 <li><a href="{$leftsublist.jump_url}" class="sublist active">
+                                   {$leftsublist.name}
+                                </a></li>
+                            <else/>
+                                <li><a href="{$leftsublist.jump_url}" class="sublist">
+                                    {$leftsublist.name}
+                                </a></li>
+                            </if>
+                        </foreach>
+                    </ul>
+                </div>
+                <div class="bd page_introduce" style="font-size:12px;">
+                    <foreach name="re_leftsublist" item="re_leftsublist" key="k">
+                         <if condition="(isset($_GET['sid']) AND ($k eq $_GET['sid']))">
+                            <ul class="item active">
+                                <foreach name="re_leftsublist.sub.title" item="title" key="k">  
+                                    <li style="height:32px;color:#818181">
+                                        <a href="{:U('Sublist/show_content','id='.$re_leftsublist['sub']['id'][$k])}">
+                                             <span clas="title" style="float:left">{$title}</span>
+                                            <span class="uptime" style="float:right"><?php echo $re_leftsublist['sub']['updatetime'][$k];?></span>
+                                        </a>
+                                    </li>
+                                </foreach>
+                            </ul>
+                        <elseif condition="(!isset($_GET['sid']) AND ($re_leftsublist.index eq 0))"/>
+                            <ul class="item active">
+                                 <foreach name="re_leftsublist.sub.title" item="title" key="k">  
+                                    <li style="height:32px;color:#818181">
+                                        <a href="{:U('Sublist/show_content','id='.$re_leftsublist['sub']['id'][$k])}">
+                                            <span clas="title" style="float:left">{$title}</span>
+                                            <span class="uptime" style="float:right"><?php echo $re_leftsublist['sub']['updatetime'][$k];?></span>
+                                        </a>
+                                    </li>
+                                </foreach>  
+                            </ul>
+                        <else/>
+                            <ul class="item">
+                                 <foreach name="re_leftsublist.sub.title" item="title" key="k">  
+                                    <li style="height:32px;color:#818181">
+                                        <a href="{:U('Sublist/show_content','id='.$re_leftsublist['sub']['id'][$k])}">
+                                            <span clas="title" style="float:left">{$title}</span>
+                                            <span class="uptime" style="float:right"><?php echo $re_leftsublist['sub']['updatetime'][$k];?></span>
+                                        </a>
+                                    </li>
+                                </foreach>  
+                            </ul>
+                        </if>
+                    </foreach>
+                </div>
+            </div>
+        </div>
+    </div>
+<include file='Template:footer' />
+<script>
+    $(function(){
+        $('.hd a').on('click',function(){
+            if(!$(this).href)
+                $(this).removeAttr('href');
+            var index = $(this).index();
+            $('.hd .sublist').removeClass('active').eq(index).addClass('active');
+            $('.bd .item').removeClass('active').eq(index).addClass('active');
+        })
+    });
+</script>

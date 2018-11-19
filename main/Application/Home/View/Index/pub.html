@@ -1,0 +1,80 @@
+<include file='Template:header' />
+<?php 
+    $re_leftsublist = $leftsublist;
+?>
+<style>
+    .item{
+        display:none;
+    }
+    .active{display:block;}
+    a:hover{color:red;}
+</style>
+<link href="__PUBLIC__/Home/css/page.css" rel="stylesheet" type="text/css" />
+    <div class="index_body">
+        <div class="index_page">
+            <div class="page_cont">
+                <div class="page_nav">
+                    <div class="nav_title">
+                        <p class="title_p1">特色服务</p>
+                        <p class="title_p2">Departments</p>
+                    </div>
+                    <ul class="hd nav_ul">
+                        <foreach name="leftsublist" item="leftsublist" key="k">
+                            <if condition="(isset($_GET['sid']) AND ($k eq $_GET['sid']))">
+                                 <li class="sublist active">
+                                   {$leftsublist.name}</li>  
+                            <elseif condition="(!isset($_GET['sid']) AND ($leftsublist.index eq 0))"/>
+                                <li class="sublist active">
+                                    {$leftsublist.name}
+                                </li>
+                               
+                            <else/>
+                                <li class="sublist">
+                                    {$leftsublist.name}
+                                </li>
+                            </if>
+                        </foreach>
+                    </ul>
+                </div>
+                <div class="bd page_introduce smt">
+                    <foreach name="re_leftsublist" item="re_leftsublist" key="k">
+                        <if condition="(isset($_GET['sid']) AND ($k eq $_GET['sid']))">
+                            <ul class="item active">
+                                <foreach name="re_leftsublist.sub.content" item="content" key="k">  
+                                    <li>
+                                      <?php echo empty($content)?'还没有上传数据。。。。。':stripslashes($content); ?>
+                                    </li>
+                                </foreach>
+                            </ul>
+                        <elseif condition="(!isset($_GET['sid']) AND ($re_leftsublist.index eq 0))"/>
+                            <ul class="item active">
+                                <foreach name="re_leftsublist.sub.content" item="content" key="k">  
+                                    <li>
+                                      <?php echo empty($content)?'还没有上传数据。。。。。':stripslashes($content); ?>
+                                    </li>
+                                </foreach>
+                            </ul>
+                        <else/>
+                            <ul class="item">
+                                <if condition="empty($re_leftsublist['sub']['content'])">
+                                    <li style="text-align:center;margin-top:150px;">
+                                            <?php echo '还没有上传数据。。。。';?>
+                                    </li>  
+                                <else/>
+                                    <foreach name="re_leftsublist.sub.content" item="content" key="k">  
+                                        <li>
+                                            <?php echo stripslashes($content);?>
+                                        </li>
+                                    </foreach>
+                                </if>
+                            </ul>
+                        </if>
+                    </foreach>
+                </div>
+            </div>
+        </div>
+    </div>
+<include file='Template:footer' />
+<script>
+   
+</script>

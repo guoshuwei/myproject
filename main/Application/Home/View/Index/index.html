@@ -1,0 +1,26 @@
+<include file='Template:header' />
+<include file="Index:sindex" />
+<include file='Template:footer' />
+<script type="text/javascript">
+        $(window).load(function() {
+            setTimeout(function(){
+               $('#demo01').flexslider({
+                animation: "slide",
+                startAt:1,
+                direction:"horizontal",
+                slideshowSpeed: 5000, // 自动播放速度毫秒
+                easing:"swing"
+                });
+                // 轮播插件
+                $('#rolltotop').flexslider({
+                    animation: "slide",
+                    startAt:1,
+                    direction:"vertical",
+                    slideshowSpeed: 5000, // 自动播放速度毫秒
+                    easing:"swing"
+                });
+            },5000);
+            
+        });
+</script>
+

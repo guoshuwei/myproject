@@ -1,0 +1,294 @@
+<include file="template:header" />
+<title>新建网站角色</title>
+</head>
+<body>
+<div class="pd-20">
+	<form action="" method="post" class="form form-horizontal" id="form-user-character-add">
+		<div id="tab-system" class="HuiTab">
+			<div class="row cl">
+				<label class="form-label col-2">网站角色：</label>
+				<div class="formControls col-10">
+					<div class="tabBar cl">
+					<foreach name="rolelist" item="rolelist">
+					<span>{$rolelist['role_name']}</span>
+					</foreach>
+					<!-- <span>总编</span><span>栏目主辑</span><span>栏目编辑</span></div> -->
+				</div>
+				<div class="col-4"> </div>
+			</div>
+			<div class="row cl ">
+				<label class="form-label col-2">权限列表：</label>
+				<div class="tabCon">
+					<div class="formControls col-10">
+						<dl class="permission-list">
+							<dt>
+								<label>
+									<input type="checkbox" value="" name="user-Character-0" id="user-Character-0">
+									图片管理
+								</label>
+							</dt>
+							<dd>
+								<dl class="cl permission-list2">
+									<dt>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-0-0" id="user-Character-0-0">
+											图片管理</label>
+									</dt>
+									<dd>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-0-0-0" id="user-Character-0-0-0">
+											添加</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-0-0-0" id="user-Character-0-0-1">
+											修改</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-0-0-0" id="user-Character-0-0-2">
+											删除</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-0-0-0" id="user-Character-0-0-3">
+											查看</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-0-0-0" id="user-Character-0-0-4">
+											审核</label>
+										<label class="c-orange"><input type="checkbox" value="" name="user-Character-0-0-0" id="user-Character-0-0-5"> 只能操作自己发布的</label>
+									</dd>
+								</dl>
+								<dl class="cl permission-list2">
+									<dt>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-0-1" id="user-Character-0-1">
+											文章管理</label>
+									</dt>
+									<dd>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-0-1-0" id="user-Character-0-1-0">
+											添加</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-0-1-0" id="user-Character-0-1-1">
+											修改</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-0-1-0" id="user-Character-0-1-2">
+											删除</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-0-1-0" id="user-Character-0-1-3">
+											查看</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-0-1-0" id="user-Character-0-1-4">
+											审核</label>
+										<label class="c-orange"><input type="checkbox" value="" name="user-Character-0-2-0" id="user-Character-0-2-5"> 只能操作自己发布的</label>
+									</dd>
+								</dl>
+							</dd>
+						</dl>
+						<dl class="permission-list">
+							<dt>
+								<label>
+									<input type="checkbox" value="" name="user-Character-0" id="user-Character-1">
+									用户中心</label>
+							</dt>
+							<dd>
+								<dl class="cl permission-list2">
+									<dt>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0" id="user-Character-1-0">
+											用户管理</label>
+									</dt>
+									<dd>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-0">
+											添加</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-1">
+											修改</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-2">
+											删除</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-3">
+											查看</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-4">
+											审核</label>
+									</dd>
+								</dl>
+							</dd>
+						</dl>
+						<dl class="permission-list">
+							<dt>
+								<label>
+									<input type="checkbox" value="" name="user-Character-0" id="user-Character-1">
+									图片管理</label>
+							</dt>
+							<dd>
+								<dl class="cl permission-list2">
+									<dt>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0" id="user-Character-1-0">
+											用户管理</label>
+									</dt>
+									<dd>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-0">
+											添加</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-1">
+											修改</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-2">
+											删除</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-3">
+											查看</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-4">
+											审核</label>
+									</dd>
+								</dl>
+							</dd>
+						</dl>
+						<dl class="permission-list">
+							<dt>
+								<label>
+									<input type="checkbox" value="" name="user-Character-0" id="user-Character-1">
+									模块管理</label>
+							</dt>
+							<dd>
+								<dl class="cl permission-list2">
+									<dt>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0" id="user-Character-1-0">
+											用户管理</label>
+									</dt>
+									<dd>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-0">
+											添加</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-1">
+											修改</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-2">
+											删除</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-3">
+											查看</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-4">
+											审核</label>
+									</dd>
+								</dl>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="tabCon">
+					<div class="formControls col-10">
+						<dl class="permission-list">
+							<dt>
+								<label>
+									<input type="checkbox" value="" name="user-Character-0" id="user-Character-1">
+									图片管理</label>
+							</dt>
+							<dd>
+								<dl class="cl permission-list2">
+									<dt>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0" id="user-Character-1-0">
+											用户管理</label>
+									</dt>
+									<dd>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-0">
+											添加</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-1">
+											修改</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-2">
+											删除</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-3">
+											查看</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-4">
+											审核</label>
+									</dd>
+								</dl>
+							</dd>
+						</dl>
+						<dl class="permission-list">
+							<dt>
+								<label>
+									<input type="checkbox" value="" name="user-Character-0" id="user-Character-1">
+									模块管理</label>
+							</dt>
+							<dd>
+								<dl class="cl permission-list2">
+									<dt>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0" id="user-Character-1-0">
+											用户管理</label>
+									</dt>
+									<dd>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-0">
+											添加</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-1">
+											修改</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-2">
+											删除</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-3">
+											查看</label>
+										<label class="">
+											<input type="checkbox" value="" name="user-Character-1-0-0" id="user-Character-1-0-4">
+											审核</label>
+									</dd>
+								</dl>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="tabCon">3</div>
+				<div class="tabCon">4</div>
+			</div>
+		</div>
+		<div class="row cl">
+			<div class="col-10 col-offset-2">
+				<button type="submit" class="btn btn-success radius" id="admin-role-save" name="admin-role-save"><i class="icon-ok"></i> 确定</button>
+			</div>
+		</div>
+	</form>
+</div>
+<include file="template:footer" />
+<script>
+// $(function(){
+// 	$(".permission-list dt input:checkbox").click(function(){
+// 		$(this).closest("dl").find("dd input:checkbox").prop("checked",$(this).prop("checked"));
+// 	});
+// 	$(".permission-list2 dd input:checkbox").click(function(){
+// 		var l =$(this).parent().parent().find("input:checked").length;
+// 		var l2=$(this).parents(".permission-list").find(".permission-list2 dd").find("input:checked").length;
+// 		if($(this).prop("checked")){
+// 			$(this).closest("dl").find("dt input:checkbox").prop("checked",true);
+// 			$(this).parents(".permission-list").find("dt").first().find("input:checkbox").prop("checked",true);
+// 		}
+// 		else{
+// 			if(l==0){
+// 				$(this).closest("dl").find("dt input:checkbox").prop("checked",false);
+// 			}
+// 			if(l2==0){
+// 				$(this).parents(".permission-list").find("dt").first().find("input:checkbox").prop("checked",false);
+// 			}
+// 		}
+		
+// 	});
+// });
+$(function(){
+	$.Huitab("#tab-system .tabBar span","#tab-system .tabCon","current","click","0");
+})
+</script>
+</body>
+</html>

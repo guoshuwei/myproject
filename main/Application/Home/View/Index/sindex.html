@@ -1,0 +1,304 @@
+<?php
+$bydt_news_p =  $activeitem[0]['tpid'];
+$ywgk_p = $affairpublic[0]['pid'];
+$bydt_news_c =  $activeitem[0]['pid'];
+$ywgk_c = $affairpublic[0]['pid'];
+$dwgk_c = $poypublic[0]['pid'];
+$lzjs_c = $lzestablish[0]['pid'];
+$special_pid = $specialistintro['tpid'];
+$re_activeitem = $activeitem;
+$re1_activeitem = $activeitem;
+$imgcount = count($specialists);
+
+?>
+<style>
+.expert_physician2 .phys_cont .phys_inform .inf_p2 {
+    font-size: 14px;
+    color: #304959;
+    margin: 0px 0 0 19px;
+}
+#rolltotop .flex-direction-nav{    
+    height: 31px;
+    position: absolute;
+    width: 103px;
+    top: 15px;
+    z-index: 8888;
+    right: 0px;}
+#rolltotop .flex-direction-nav li{height:31px;}
+#rolltotop .flex-direction-nav a {
+    width: 31px;
+    height: 32px;
+    line-height: 99em;
+    overflow: hidden;
+    margin: -14px 16px 0;
+    display: block;
+    position: absolute;
+    /*background:transparent !important;*/background:#ff0000;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all .3s ease;
+}
+#rolltotop .flex-direction-nav .flex-prev {
+    right: 37px !important;
+}
+#rolltotop .flex-direction-nav .flex-next {
+    right: 0px !important;
+}
+.flex-control-nav.flex-control-paging{display:none;}
+</style>
+<div id="demo01" class="flexslider">
+            <ul class="slides">
+            <foreach name="bannerlist" item="bannerlist">
+                <li><div class="img" style="background-color:#ddf"><a href=""><?php echo stripslashes(trim($bannerlist['src'],"\"")) ;?></a></div></li>
+            </foreach>
+            </ul>
+        </div>
+        <div class="index_guide">
+        	<div class="guide_cont">
+            	<ul class="gu_ul">
+                <foreach name="second_navitem" item="second_navitem" key="k">
+                    <li><a href="{:U($second_navitem['jump_url'])}">
+                    	<img  src="__PUBLIC__/Home/images/jiuyi_icon{$k+1}.png" />
+                        <p>{$second_navitem.name}</p></a>
+                    </li>
+                </foreach>
+                </ul>
+                <div class="gu_inform" style="overflow:hidden;height:50px;line-height: 50px;">
+                    <img style="position: absolute;top: 18px;left: 20px;" src="__PUBLIC__/Home/images/tongzhi_icon.png">
+                    <div id="rolltotop" style="overflow:hidden;height:35px;line-height:35px;margin-top:10px;">
+                    	<ul class="slides">
+                            <foreach name="aditem" item="aditem" key="k" class="clearfix">
+                                <li  style="height:50px;line-height:43px;text-align:left;margin-left:80px;"><a style="display:inline-block;" href="{:U('Sublist/show_content/','id='.$aditem['id'])}">
+                                    <p class="inform_p">{$aditem.title}
+                                        <span>{$aditem.updatetime}</span>
+                                    </p></a>
+                                </li>
+                            </foreach>
+                        </ul>  
+                    </div>
+                    <div class="btnBox clearfix">
+                        <img class="s-up" src="__PUBLIC__/Home/images/s-up.png" alt="">
+                        <img class="s-down" src="__PUBLIC__/Home/images/s-down.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+
+        </script>
+        <div class="index_dynamic">
+        	<div class="dynamic_cont">
+            	<div class="dy_mod">
+                	<div class="mod_title">
+                    	<p>头条</p>
+                    </div>
+                    <ul class="mod_ul">
+                    <foreach name="activeitem" item="activeitem">
+                    	<a href="{:U('Sublist/show_content/','id='.$activeitem['id'])}"><li>
+                        	<p class="mod_p1">{$activeitem.title}</p>
+                            <p class="mod_p2">{$activeitem.updatetime}</p>
+                        </li></a>
+                    </foreach>
+                    </ul>
+                    <div class="mod_more"><a href="{:U('Index/active','id='.$bydt_news_p.'&sid='.$bydt_news_c)}"></a></div>
+                </div>
+                <div class="dy_mod" style="margin-left:65px;">
+                	<div class="mod_title">
+                    	<p>行业资讯</p>
+                    </div>
+                    <ul class="mod_ul">
+                    <foreach name="serviceitem" item="serviceitem">
+                        <a href="{:U('Index/pub','id='.$serviceitem['pid'].'&sid='.$serviceitem['id'])}">
+                            <li>
+                                <p class="mod_p1">{$serviceitem.name}</p>
+                                <p class="mod_p2"><?php echo date('Y-m-d',$serviceitem['dt']);?></p>
+                            </li>
+                        </a>
+                    </foreach>
+                    </ul>
+                    <div class="mod_more"><a href="{:U('Index/pub','id='.$serviceitem['pid'])}"></a></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="index_health">
+        	<div class="health_cont">
+            	<div class="mod_title">
+                    <p>招商</p>
+                </div>
+                <ul class="health_ul">
+                <foreach name="fybjinfo" item="fybj" key="k">
+                    <if condition="($k%2 eq 0)">
+                        <if condition="$k eq 0">
+                           <li class="li1" style="margin-left:0px;"> <a href="{:U('Index/mc_care','id='.$fybj['pid'].'&sid='.$fybj['id']
+                    )}">
+                        <else/>
+                         <li class="li1" > <a href="{:U('Index/mc_care','id='.$fybj['pid'].'&sid='.$fybj['id']
+                    )}">
+                        </if> 
+                                <img src="__PUBLIC__/Home/images/baojian_img{$k+1}.png" />
+                                <div class="heal_content">
+                                    <p class="heal_title">{$fybj['name']}：</p>
+                                    <p class="heal_p">{$fybj['comments']}</p>
+                                </div>
+                            </a></li>
+                    <else/>
+                        <li class="li2"><a href="{:U('Index/mc_care','id='.$fybj['pid'].'&sid='.$fybj['id']
+                    )}">
+                            <div class="heal_content">
+                                <p class="heal_title">{$fybj['name']}：</p>
+                                <p class="heal_p">{$fybj['comments']}</p>
+                            </div>
+                            <img class="heal_img2" src="__PUBLIC__/Home/images/baojian_img{$k+1}.png" />
+                        </a></li>  
+                    </if>  
+                </foreach>
+                </ul>
+            </div>
+        </div>
+        <div class="index_open">
+        	<div class="open_cont">
+            	<div class="mod_title">
+                    <p>品牌</p>
+                </div>
+                <ul class="open_ul">
+                	<li class="open_li" style="margin-left:0px;">
+                    	<div class="open_img" style="height:100%;margin-top:0px;"><a href="{:U('Index/ywpub', 'id='.$ywgk_p)}">
+                        	<img src="__PUBLIC__/Home/images/yuanwu_icon1.png" style="    margin-top:40px;"/>
+                            <p>院务公开</p></a>
+                        </div>
+                        <ul class="open_ul2">
+                        	<foreach name="affairpublic" item="affairpublic">          
+                                <li><a href="{:U('Index/ywpub', 'id='.$ywgk_p.'&sid='.$affairpublic['id'])}">
+                                        <p class="mod_p1">{$affairpublic.name}</p>
+                                </a></li>
+                            </foreach>
+                        </ul>
+                    </li>
+                    <li class="open_li">
+                    	<div class="open_img" style="height:100%;margin-top:0px;"><a href="{:U('Index/dwpub', 'id='.$ywgk_p.'&sid='.$dwgk_c)}">
+                        	<img src="__PUBLIC__/Home/images/yuanwu_icon2.png" style="    margin-top:40px;"/>
+                            <p>党务公开</p></a>
+                        </div>
+                        <ul class="open_ul2">
+                        	<foreach name="poypublic" item="poypublic">
+                                <li> <a href="{:U('Sublist/show_content/','id='.$poypublic['id'])}">
+                                        <p class="mod_p1">{$poypublic.title}</p>
+                                </a></li>
+                            </foreach>
+                        </ul>
+                    </li>
+                    <li class="open_li">
+                        <div class="open_img" style="height:100%;margin-top:0px;"><a href="{:U('Index/lzjs', 'id='.$ywgk_p.'&sid='.$lzjs_c)}">
+                            <img src="__PUBLIC__/Home/images/yuanwu_icon3.png" style="margin-top:40px;"/>
+                            <p>廉政建设</p></a>
+                        </div>
+                        <ul class="open_ul2">
+                            <foreach name="lzestablish" item="lzestablish">
+                                <li> <a href="{:U('Sublist/show_content/','id='.$lzestablish['id'])}">
+                                        <p style="max-width:200px;overflow:hidden;white-space:nowrap; text-overflow:ellipsis"class="mod_p1">{$lzestablish.title}</p>
+                                </a></li>
+                            </foreach>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <style type="text/css">
+        .specialImg img{width:130px;padding-left:10px;padding-right:10px;}
+        .ml10{margin-left:10px !important;}
+        .warp img{}
+        #first img{padding-left:0px !important;}
+        #last img{padding-right:0px !important;}
+        </style>
+        <div class="index_expert" style="height:300px;">
+        	<div class="expert_cont">
+            	<div class="mod_title">
+                    <p>商户人物</p>
+                </div>
+                <div id="demo" style="overflow: hidden; width: 960px; align:center;">
+                    <table cellspacing="0" cellpadding="0" align="center" border="0" style="margin-top:-2px;">
+                        <tbody>
+                            <tr>
+                                <td id="marquePic1" valign="top">
+                                    <table width="960" height="240" border="0" cellpadding="0" cellspacing="20">
+                                        <tr>
+                                            <foreach name="specialists" item="specialists" key="k">
+                                                <if condition="($k == 0)">
+                                                    <td style="width:170px;" align="center" id="first"> 
+                                                       
+                                                        <a href="{:U('Index/prointro','sid='.$specialists['id'])}" class="specialImg" style="" class="warp"><?php echo $specialists['img']; ?>
+                                                        </a>
+                                                        <p >{$specialists.keywords}</p>
+                                                    </td>
+                                                <elseif condition="($k == ($imgcount-1))"/> 
+                                                    <td style="width:170px;" align="center" id="last"> 
+                                                        <a href="{:U('Index/prointro','sid='.$specialists['id'])}" class="specialImg"style=""><?php echo $specialists['img']; ?>
+                                                        </a>
+                                                        <p >{$specialists.keywords}</p>
+                                                    </td>
+                                                <else/>
+                                                    <td style="width:170px;" align="center" > 
+                                                        <a href="{:U('Index/prointro','sid='.$specialists['id'])}" class="specialImg"style=""><?php echo $specialists['img']; ?>
+                                                        </a>
+                                                        <p >{$specialists.keywords}</p>
+                                                    </td>
+                                                </if>
+                                            </foreach>
+                                        </tr>
+                                    </table>        
+                                </td>
+                                <td id="marquePic2" valign="top" align="left" style="padding-left:-20px;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(function(){
+
+            var speed=20
+            $('#marquePic2').html($('#marquePic1').html());
+            function Marquee(){ 
+            if(demo.scrollLeft>=marquePic1.scrollWidth){ 
+            demo.scrollLeft=0 
+            }else{ 
+            demo.scrollLeft++ 
+            }}
+            var MyMar=setInterval(Marquee,speed) 
+            demo.onmouseover=function() {clearInterval(MyMar)} 
+            demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)} 
+        })
+         
+        // $(function(){
+        //     var speed1=50
+        //     $('#marquePic4').html($('#marquePic3').html());
+        //     function Marquee1(){ 
+        //        if(marquePic4.offsetTop-rolltotop.scrollTop<=0)
+        //             rolltotop.scrollTop-=marquePic3.offsetHeight
+        //        else{
+        //             rolltotop.scrollTop++
+        //        }
+        //     }
+           
+        //     var MyMar1=setInterval(Marquee1,speed1)
+        //     rolltotop.onmouseover=function() {clearInterval(MyMar1)}
+        //     rolltotop.onmouseout=function() {MyMar1=setInterval(Marquee1,speed1)}
+        //     $('.s-up').mouseover(function(){if(MyMar1)clearInterval(MyMar1)}).click(function(){
+        //         rolltotop.scrollTop +=50;
+        //     }).mouseout(function(){
+        //         MyMar1=setInterval(Marquee1,speed1)
+        //     })
+        //     $('.s-down').mouseover(function(){if(MyMar1) clearInterval(MyMar1)}).click(function(){
+        //         rolltotop.scrollTop -=50;
+        //     }).mouseout(function(){
+        //         MyMar1=setInterval(Marquee1,speed1)
+        //     })
+        //  }) 
+         
+        </script>
+

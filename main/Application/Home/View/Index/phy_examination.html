@@ -1,0 +1,149 @@
+<include file='Template:header' />
+<?php 
+$re_leftsublist = $leftsublist;
+?>
+<style>
+    .item{
+        display:none;
+    }
+    .active{display:block;}
+    a:hover{color:red;}
+    .item li{list-style:circle;}
+    .item li a span.title{display:block;float:left;}
+    .item li a span.uptime{display:block;float:right;}
+    .page_cont .page_nav .nav_ul .active li{
+        height: 37px;
+        line-height: 37px;
+        font-size:14px;
+        color: #2bbeed;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 1px solid #ececec;
+        cursor: pointer;
+    }
+     .page_introduce{margin-top:0px !important;}
+    .mt70{margin-top:70px !important;}
+    ul li{list-style-type:none !important}
+</style>
+<link href="__PUBLIC__/Home/css/page.css" rel="stylesheet" type="text/css" />
+    <div class="index_body">
+        <div class="index_page">
+            <div class="page_cont">
+                <div class="page_nav">
+                    <div class="nav_title">
+                        <p class="title_p1">体检指南</p>
+                        <p class="title_p2">Departments</p>
+                    </div>
+                    <ul class="hd nav_ul">
+                         <foreach name="leftsublist" item="leftsublist" key="k">
+                             <if condition="(isset($_GET['sid']) AND ($k eq $_GET['sid']))">
+                                <li class="sublist active">
+                                    {$leftsublist.name}
+                                </li>  
+                            <elseif condition="(!isset($_GET['sid']) AND ($leftsublist.index eq 0))"/>
+                                <li class="sublist active">
+                                    {$leftsublist.name}
+                                </li>
+                            <else/>
+                                <li class="sublist">
+                                    {$leftsublist.name}
+                                </li>
+                            </if>
+                        </foreach>
+                    </ul>
+                </div>
+                <div class="bd page_introduce" style="font-size:12px;">
+                   <foreach name="re_leftsublist" item="re_leftsublist" key="k">
+                        <if condition="(isset($_GET['sid']) AND ($k eq $_GET['sid']))">
+                            <if condition="count($re_leftsublist['sub']['title']) == 1"> 
+                                <ul class="item active" style="" >
+                                    <foreach name="re_leftsublist.sub.content" item="content" key="k">  
+                                        <li>
+                                          <?php echo empty($content)?'还没有上传数据。。。。。':stripslashes($content); ?>
+                                        </li>
+                                    </foreach>
+                                </ul>
+                            <else/>
+                                <ul class="item active mt70">
+                                    <foreach name="re_leftsublist.sub.title" item="title" key="k">  
+                                        <li style="height:32px;color:#818181">
+                                            <a href="{:U('Sublist/show_content','id='.$re_leftsublist['sub']['id'][$k])}">
+                                                <span clas="title" style="float:left;">{$title}</span>
+                                                <span class="uptime" style="float:right;"><?php echo $re_leftsublist['sub']['updatetime'][$k];?></span>
+                                            </a>
+                                        </li>
+                                    </foreach>
+                                </ul>
+                             </if>  
+                         <elseif condition="(!isset($_GET['sid']) AND ($re_leftsublist.index eq 0))"/>
+                           <if condition="count($re_leftsublist['sub']['title']) == 1"> 
+                                <ul class="item active" style="" >
+                                    <foreach name="re_leftsublist.sub.content" item="content" key="k">  
+                                        <li>
+                                          <?php echo empty($content)?'还没有上传数据。。。。。':stripslashes($content); ?>
+                                        </li>
+                                    </foreach>
+                                </ul>
+                                <else/>
+                                <ul class="item mt70">
+                                    <foreach name="re_leftsublist.sub.title" item="title" key="k">  
+                                        <li style="height:32px;color:#818181">
+                                            <a href="{:U('Sublist/show_content','id='.$re_leftsublist['sub']['id'][$k])}">
+                                                <span clas="title" style="float:left;">{$title}</span>
+                                                <span class="uptime" style="float:right;"><?php echo $re_leftsublist['sub']['updatetime'][$k];?></span>
+                                            </a>
+                                        </li>
+                                    </foreach>
+                                </ul>
+                                </if>  
+                        <else/>
+                           <if condition="count($re_leftsublist['sub']['title']) == 1"> 
+                                <ul class="item" style="" >
+                                    <foreach name="re_leftsublist.sub.content" item="content" key="k">  
+                                        <li>
+                                          <?php echo empty($content)?'还没有上传数据。。。。。':stripslashes($content); ?>
+                                        </li>
+                                    </foreach>
+                                </ul>
+                                <else/>
+                                <ul class="item mt70">
+                                    <foreach name="re_leftsublist.sub.title" item="title" key="k">  
+                                        <li style="height:32px;color:#818181">
+                                            <a href="{:U('Sublist/show_content','id='.$re_leftsublist['sub']['id'][$k])}">
+                                                <span clas="title" style="float:left;">{$title}</span>
+                                                <span class="uptime" style="float:right;"><?php echo $re_leftsublist['sub']['updatetime'][$k];?></span>
+                                            </a>
+                                        </li>
+                                    </foreach>
+                                </ul>
+                                </if>  
+                        </if>
+                    </foreach>
+                </div>
+            </div>
+        </div>
+    </div>
+<include file='Template:footer' />
+<script>
+    $(function(){
+    	//分页
+		$('.table-sort').dataTable({
+		    "bPaginate": true, //翻页功能
+		    "bLengthChange": false, //改变每页显示数据数量
+		    "bFilter": false, //过滤功能
+		    "bSort": true, //排序功能
+		    "bInfo": true,//页脚信息
+		    "bAutoWidth": true,//自动宽度
+		    "aLengthMenu": [1],//每页显示的条数
+		    "language": {
+		        "sInfo": "_PAGE_/_PAGES_ 共_TOTAL_条数据",
+		        "paginate": {
+		            "sFirst": "首页",
+		            "sPrevious": "上一页",
+		            "sNext": "下一页",
+		            "sLast": "尾页"
+		        }
+		    }
+		});
+    });
+</script>

@@ -1,0 +1,143 @@
+<include file='Template:header' />
+<?php 
+$re_leftsublist = $leftsublist;
+?>
+<style>
+    .item{
+        display:none;
+    }
+    .active{display:block;}
+    a:hover{color:red;}
+    .item li{list-style:circle;}
+    .item li a span.title{display:block;float:left;}
+    .item li a span.uptime{display:block;float:right;}
+    .page_cont .page_nav .nav_ul  li.active{
+        height: 37px;
+        line-height: 37px;
+        font-size:14px;
+        color: #2bbeed;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 1px solid #ececec;
+        cursor: pointer;
+    }
+        /*分页css*/
+</style>
+<link href="__PUBLIC__/Home/css/page.css" rel="stylesheet" type="text/css" />
+    <div class="index_body" style="z-index:999999">
+        <div class="index_page">
+            <div class="page_cont">
+                <div class="page_nav">
+                    <div class="nav_title">
+                        <p class="title_p1">本院动态</p>
+                        <p class="title_p2">Departments</p>
+                    </div>
+                    <ul class="hd nav_ul">
+                        <foreach name="leftsublist" item="leftsublist" key="k">
+                             <if condition="($k eq $_GET['sid']) or ($leftsublist.index eq 0)">
+                                <li class="sublist active">
+                                    {$leftsublist.name}
+                                </li>
+                            <else/>
+                                <li class="sublist">
+                                    {$leftsublist.name}
+                                </li>
+                            </if>
+                        </foreach>
+                    </ul>
+                </div>
+                <div class="bd page_introduce" style="font-size:12px;">
+                    <foreach name="re_leftsublist" item="re_leftsublist">
+                        <if condition="$re_leftsublist.index eq 0">
+                            <if condition="count($re_leftsublist['sub']['title']) gt 15">
+                                <table class="table-sort" style="width:100%;margin-top: -5px;">
+                                    <thead>
+                                        <tr class="text-c">
+                                            <td></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <foreach name="re_leftsublist.sub.title" item="title"  key="k">  
+                                                <tr><td style="height:32px;color:#818181">
+                                                    <a href="{:U('Sublist/show_content','id='.$re_leftsublist['sub']['id'][$k])}" style="width:100%;display:inline-block;">
+                                                        <span clas="title" style="float:left;">{$title}</span>
+                                                        <span class="uptime" style="float:right;"><?php echo $re_leftsublist['sub']['updatetime'][$k];?></span>
+                                                    </a>
+                                                </td></tr>
+                                            </foreach> 
+                                    </tbody>
+                                </table>
+                            <else/>
+                                <ul class="item active">
+                                    <foreach name="re_leftsublist.sub.title" item="title" key="k">  
+                                        <li style="height:32px;color:#818181">
+                                            <a href="{:U('Sublist/show_content','id='.$re_leftsublist['sub']['id'][$k])}">
+                                                <span clas="title" style="float:left;">{$title}</span>
+                                                <span class="uptime" style="float:right;"><?php echo $re_leftsublist['sub']['updatetime'][$k];?></span>
+                                            </a>
+                                        </li>
+                                    </foreach>
+                                </ul>
+                            </if>
+                        <else/>
+                            <ul class="item">
+                                 <foreach name="re_leftsublist.sub.title" item="title" key="k">  
+                                    <li style="height:32px;color:#818181">
+                                        <a href="{:U('Sublist/show_content','id='.$re_leftsublist['sub']['id'][$k])}">
+                                            <span clas="title" style="float:left;">{$title}</span>
+                                            <span class="uptime" style="float:right;"><?php echo $re_leftsublist['sub']['updatetime'][$k];?></span>
+                                        </a>
+                                    </li>
+                                </foreach>  
+                            </ul>
+                        </if>
+                    </foreach>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    $(function(){
+        $('.hd li').on('click',function(){
+            // alert($('.hd li').length);
+       
+            var index = $(this).index();
+            // alert(index);
+            $('.hd .sublist').removeClass('active').eq(index).addClass('active');
+            $('.bd .item').removeClass('active').eq(index).addClass('active');
+        })
+    });
+   
+</script>
+<include file='Template:footer' />
+<script>
+    // $(function(){
+    //     $('.hd.nav_ul li').on('click',function(){
+    //         var index = $(this).index();
+    //         // $(this).css('border','solid 1px #ff0000');
+    //         // console.log($('.hd.nav_ul .sublist'));
+    //         $('.hd.nav_ul .sublist').removeClass('active');
+    //         $('.hd.nav_ul .sublist').eq(index).addClass('active');
+    //         $('.bd .item').removeClass('active').eq(index).addClass('active');
+    //     })
+    // });
+   //分页
+        // $('.table-sort').dataTable({
+        //     "bPaginate": true, //翻页功能
+        //     "bLengthChange": false, //改变每页显示数据数量
+        //     "bFilter": false, //过滤功能
+        //     "bSort": false, //排序功能
+        //     "bInfo": true,//页脚信息
+        //     "bAutoWidth": true,//自动宽度
+        //     "aLengthMenu": [15],//每页显示的条数
+        //     "language": {
+        //         "sInfo": "_PAGE_/_PAGES_ 共_TOTAL_条数据",
+        //         "paginate": {
+        //             "sFirst": "首页",
+        //             "sPrevious": "上一页",
+        //             "sNext": "下一页",
+        //             "sLast": "尾页"
+        //         }
+        //     }
+        // });
+</script>

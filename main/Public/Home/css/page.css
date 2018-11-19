@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+.item{
+    display:none;
+}
+.active{display:block;}
+a:hover{color:#f876a6;}
+.index_page{
+	margin:0 auto;
+	overflow:hidden;
+	background:url(../images/banner_2.jpg) left top no-repeat #ffffff;
+	padding-bottom:20px;
+	}
+.page_cont{
+	width:960px;
+	margin:230px auto 0;
+	overflow:hidden;
+	}
+.page_cont .page_nav{
+	width:160px;
+	float:left;
+	}
+.page_cont .page_nav .nav_title{
+	height:62px;
+	background:url(../images/left_nav_top.png) left bottom no-repeat #75cae5;
+	overflow:hidden;
+	}
+.page_cont .page_nav .nav_title .title_p1{
+	font-size:20px;
+	font-family:"微软雅黑";
+	color:#FFF;
+	text-align:center;
+	line-height:20px;
+	margin-top:12px;
+	font-weight:bold;
+	}
+.page_cont .page_nav .nav_title .title_p2{
+	font-size:14px;
+	font-family:Arial;
+	color:#35abd1;
+	text-align:center;
+	line-height:14px;
+	margin-top:5px;
+	}
+.page_cont .page_nav .nav_ul{
+	overflow:hidden;
+	border:1px solid #ececec;
+	border-bottom:none;
+	}
+.page_cont .page_nav .nav_ul li{
+	height:37px;
+	line-height:37px;
+	font-size:14px;
+	color:#787878;
+	text-align:center;
+	border-bottom:1px solid #ececec;
+	cursor:pointer;
+	}
+.page_cont .page_nav .nav_ul li:hover{
+	color:#2bbeed;
+	font-weight:bold;
+	}
+.page_cont .page_nav .nav_ul .on{
+	color:#2bbeed;
+	font-weight:bold;
+	}
+.page_introduce{
+	overflow:hidden;
+	}
+.page_introduce .introduce_title{
+	font-size:24px;
+	color:#4a4a4a;
+	font-weight:bold;
+	margin-top:20px;
+	text-align:center;
+	}
+.page_introduce .introduce_cont1{
+	margin-top:35px;
+	font-size:14px;
+	color:#666666;
+	line-height:30px;
+	text-indent:2em;
+	overflow:hidden
+	}
+.page_introduce .introduce_title2{
+	font-size:18px;
+	color:#585858;
+	font-weight:bold;
+	margin-top:20px;
+	line-height:20px;
+	background:url(../images/title_bg.png) left center no-repeat;
+	padding-left:15px;
+	overflow:hidden
+	}
+.page_introduce .introduce_cont2{
+	margin-top:20px;
+	font-size:14px;
+	color:#666666;
+	line-height:30px;
+	text-indent:2em;
+	overflow:hidden;
+	}
+.page_introduce .introduce_cont3{
+	font-size:14px;
+	color:#666666;
+	line-height:30px;
+	text-indent:2em;
+	overflow:hidden;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

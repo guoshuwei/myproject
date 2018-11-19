@@ -1,0 +1,24 @@
+<include file='Template:header' />
+<link href="__PUBLIC__/Home/css/page.css" rel="stylesheet" type="text/css" />
+	<div class="index_body">
+        <div class="index_page">
+        	<div class="page_cont">
+            	<div class="page_nav">
+                	<div class="nav_title">
+                    	<p class="title_p1">科室介绍</p>
+                        <p class="title_p2">Departments</p>
+                    </div>
+                    <ul class="nav_ul">
+                    <foreach name="leftsublist" item="leftsublist">
+                        <a href="{:U('Sublist/'.$leftsublist['jump_url'].'?id='.$leftsublist['id'])}"><li>{$leftsublist.name}</li></a>
+                    </foreach>
+                    </ul>
+                </div>
+                <div class="page_introduce" style="margin-top:150px;">
+                    <foreach name="rightsublist" item="rightsublist">
+                        <a href="{:U('Sublist/show_content?id='.$rightsublist['id'])}"><p class="introduce_cont3">{$rightsublist.title}</p><a>
+                    </foreach>
+            </div>
+        </div>
+    </div>
+<include file='Template:footer' />

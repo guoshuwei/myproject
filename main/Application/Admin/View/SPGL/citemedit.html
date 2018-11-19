@@ -1,0 +1,57 @@
+<include file="template:header" />
+<title>添加子级节点</title>
+</head>
+<body>
+<div class="pd-20">
+	<form action="{:U('SPGL/sub_add')}" method="post" class="form form-horizontal" id="form-admin-add">
+		<div class="row cl">
+            <label class="form-label col-2"><span class="c-red">*</span>名称：</label>
+            <div class="formControls col-5">
+                <input type="text" class="input-text" value="" name="name">
+            </div>
+        <div class="col-5"> </div>
+    </div>
+    <div class="row cl">
+        <label class="form-label col-2">父级分类：</label>
+        <div class="formControls col-2"> 
+            <input type="text" disabled class="input-text" value="<?php echo $_GET['pname'];?>">
+        </div>
+    </div>
+    <div class="row cl">
+        <label class="form-label col-2"><span class="c-red">*</span>跳转地址(url)：</label>
+        <div class="formControls col-5">
+            <input type="text" class="input-text" value="" id="jump_url" name="jump_url">
+        </div>
+    </div>
+    <div class="row cl">
+      <label class="form-label col-2">备注：</label>
+      <div class="formControls col-5">
+        <textarea name="" cols="" rows="" class="textarea"  placeholder="说点什么...最少输入10个字符" datatype="*10-100" dragonfly="true" nullmsg="备注不能为空！" onKeyUp="textarealength(this,100)"></textarea>
+        <p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p>
+      </div>
+      <div class="col-5"> </div>
+    </div>
+    <div class="row cl">
+      <div class="col-9 col-offset-2">
+        <input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+      </div>
+    </div>
+    <input type="hidden" name="pid" value="{$_GET['pid']}">
+    <input type="hidden" name="id" value="{$_GET['id']}">
+	</form>
+</div>
+<include file="template:footer" />
+<script type="text/javascript">
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+	var index = parent.layer.getFrameIndex(window.name);
+	parent.$('.btn-refresh').click();
+	parent.layer.close(index);
+});
+</script>
+</body>
+</html>

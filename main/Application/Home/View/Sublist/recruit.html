@@ -1,0 +1,59 @@
+<?php
+var_dump($leftsublist);
+?>
+<include file='Template:header' />
+<link href="__PUBLIC__/Home/css/page.css" rel="stylesheet" type="text/css" />
+	<div class="index_body">
+        <div class="index_page">
+        	<div class="page_cont">
+            	<div class="page_nav">
+                	<div class="nav_title">
+                    	<p class="title_p1">科室介绍</p>
+                        <p class="title_p2">Departments</p>
+                    </div>
+                    <ul class="nav_ul">
+                    <foreach name="leftsublist" item="leftsublist">
+                        <a href="{:U('Sublist/'.$leftsublist['jump_url'].'?id='.$leftsublist['id'])}"><li>{$leftsublist.name}</li></a>
+                    </foreach>
+                    </ul>
+                </div>
+                <div class="page_introduce">
+                    <foreach name="rightsublist" item="rightsublist">
+                        <p class="introduce_title">{$rightsublist.name}</p>
+                        {$rightsublist.name}
+                    </foreach>
+                	<p class="introduce_title">妇幼保健中心介绍</p>
+                    <p class="introduce_cont1">妇女保健中心是我院临床与保健相结合的学科体系之一；是对广大女性全生命周期的服务，下设多个亚学科；普通妇科、妇科肿瘤，计划生育，妇科内分泌、不孕不育，中医妇科，宫颈疾病，盆底康复，产后42天复查，妇女病体检，乳腺外科等。各专业技术力量雄厚，拥有一批高学历高素质的专业队伍。开展腹腔镜下全子宫切除术、腹腔镜下子宫肌瘤剔除术、腹腔镜下卵巢输卵管手术，非脱垂阴式全子宫切除术、阴式子宫肌瘤剔除术、阴道前后壁修补术，宫腔镜下子宫粘膜下肌瘤切除术、子宫纵隔切开术，宫、腹腔镜探查诊治不孕症等。中西医结合治疗不孕不育、妇科内分泌疾病，对产后42天进行盆底康复治疗以恢复盆底肌功能。规范化治疗压力性尿失禁及盆腔脏器脱垂。个体化治疗多囊卵巢综合症及慢性盆腔痛。开展计划生育各种手术：中期引产，稽留流产，无痛可视人流预约能完全满足患者需求，各种计划生育手术每天开展。是大兴区适龄妇女宫颈癌、乳腺癌的长期筛查和诊断机构。</p>
+                    
+                     <p class="introduce_title2">妇科微创手术</p>
+                    <p class="introduce_cont1">妇女保健中心是我院临床与保健相结合的学科体系之一；是对广大女性全生命周期的服务，下设多个亚学科；普通妇科、妇科肿瘤，计划生育，妇科内分泌、不孕不育，中医妇科，宫颈疾病，盆底康复，产后42天复查，妇女病体检，乳腺外科等。各专业技术力量雄厚，拥有一批高学历高素质的专业队伍。开展腹腔镜下全子宫切除术、腹腔镜下子宫肌瘤剔除术、腹腔镜下卵巢输卵管手术，非脱垂阴式全子宫切除术、阴式子宫肌瘤剔除术、阴道前后壁修补术，宫腔镜下子宫粘膜下肌瘤切除术、子宫纵隔切开术，宫、腹腔镜探查诊治不孕症等。中西医结合治疗不孕不育、妇科内分泌疾病，对产后42天进行盆底康复治疗以恢复盆底肌功能。规范化治疗压力性尿失禁及盆腔脏器脱垂。个体化治疗多囊卵巢综合症及慢性盆腔痛。开展计划生育各种手术：中期引产，稽留流产，无痛可视人流预约能完全满足患者需求，各种计划生育手术每天开展。是大兴区适龄妇女宫颈癌、乳腺癌的长期筛查和诊断机构。</p>
+                    
+                    <p class="introduce_title2">妇科微创手术</p>
+                    <p class="introduce_cont2">妇女保健中心的宫腹腔镜微创技手术技术与设备完善，并以腔镜手术创伤小、痛苦少、恢复快、当天手术、当天下床、3—5天即可出院的独特优势，逐步取代传统开腹手术，减少了患者的心理和精神压力，增加了安全性和人性化关怀。妇科病房80%为微创手术（腹腔镜手术，宫腔镜手术，阴式手术），使患者免去开腹手术的痛苦。</p>
+                    
+                    <p class="introduce_title2">宫颈疾病门诊</p>
+                    <p class="introduce_cont2">应用快捷简单的方法（TCT、HPV）对宫颈癌进行筛查，对筛查异常的行阴道镜进一步诊断，及早地阻断宫颈癌前病变的发展。对早期病变行电凝、L EEP手术治疗。L EEP手术具有出血少、手术时间短、患者痛苦少,无需住院且环切组织边缘无碳化区,不影响病理学检查, 治疗效果好。尤其适合于有生育要求的妇女。</p>
+                    
+                    <p class="introduce_title2">妇科内分泌不孕不育门诊</p>
+                    <p class="introduce_cont2">青春期、育龄期、更年期女性月经异常、痛经，多囊卵巢等疾病的诊断与治疗。不孕症的系统检查、输卵管通液、促排卵等。更年期激素补充治疗提高中老年女性的生活质量。</p>
+                    
+                    <p class="introduce_title2">计划生育门诊</p>
+                    <p class="introduce_cont2">开展超导可视无痛人工流产，大大地减少了过度刮宫、宫腔粘连、吸宫不全、残留等并发症的发生，既无痛苦同时术后恢复快，对再次怀孕及生育影响小。节育环种类多，可满足不同人群的需求。</p>
+                    
+                    <p class="introduce_title2">盆底康复治疗</p>
+                    <p class="introduce_cont2">是我院的特色诊疗项目，主要针对咳嗽、打喷嚏漏尿，尿储留、尿失禁等排尿异常进行检测，对产后42天盆底肌恢复情况进行评估，利用盆底肌肉训练，生物反馈，盆底生物电刺激等非手术的方法进行治疗。盆底康复治疗还适用于生殖道轻度脱垂、性功能异常、慢性盆腔痛等治疗。</p>
+
+
+                    <p class="introduce_title2">妇科中医门诊</p>
+                    <p class="introduce_cont2">利用中医、中药内服外用的多种方法治疗如下疾病：</p>
+                    <p class="introduce_cont3">1、月经病：痛经 、月经不调 （月经过少、月经后期）、闭经、经行诸症（经行头痛、经行泄泻等）</p>
+                    <p class="introduce_cont3">2、不孕不育：排卵异常、输卵管不畅、习惯性流产</p>
+                    <p class="introduce_cont3">3、妇科炎症：阴道炎、 盆腔炎、盆腔炎性包块</p>
+                    <p class="introduce_cont3">4、妊娠：妊娠呕吐、先兆流产</p>
+                    <p class="introduce_cont3">5、产后：产后缺乳、产后腹痛、产后身痛、产后恢复不良。</p>
+                    <p class="introduce_cont3">6、子宫脱垂、子宫肌瘤、更年期综合征、卵巢早衰、多囊卵巢综合症。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<include file='Template:footer' />

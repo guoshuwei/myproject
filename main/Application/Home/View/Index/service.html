@@ -1,0 +1,144 @@
+<include file='Template:header' />
+<?php 
+$re_leftsublist = $leftsublist;
+
+?>
+<style>
+    .item{
+        display:none;
+    }
+    .active{display:block;}
+    a:hover{color:red;}
+    /*分页css*/
+.dataTables_info{text-align:center;height:40px;line-height:40px;float:right;margin-right:40%;font-size:14px;color:#666666}
+    .dataTables_paginate>a:nth-child(1){padding-right:5px;cursor:pointer;}
+    .dataTables_paginate>a:nth-child(3){padding-left:5px;cursor:pointer;}
+    .paging_simple_numbers{height:40px;line-height:40px;float:right;margin-right:20px;font-size:14px;color:#666666;}
+    .dataTables_paginate>span a{ 
+    cursor:pointer;  
+     position: relative;
+    height: 16px;
+    width: 16px;
+    text-align:center;
+    margin-left: 5px;
+    display: inline-block;
+    background: #edeef1;
+    border:solid 1px #e0e0e0;
+    line-height: 17px;
+}
+.dataTables_paginate>span a:hover{ 
+    cursor:pointer;  
+    position: relative;
+    height: 16px;
+    width: 16px;
+    margin-left: 5px;
+    display: inline-block;
+    background: #52a7f9;
+    color:#fff;
+    border:solid 1px #e0e0e0;
+    line-height: 17px;
+} 
+.dataTables_paginate>span a.current{ 
+    cursor:pointer;  
+    position: relative;
+    height: 16px;
+    width: 16px;
+    margin-left: 5px;
+    display: inline-block;
+    background: #52a7f9;
+    border:solid 1px #e0e0e0;
+    line-height: 17px;
+    color:#fff;
+} 
+</style>
+<link href="__PUBLIC__/Home/css/page.css" rel="stylesheet" type="text/css" />
+    <div class="index_body">
+        <div class="index_page">
+            <div class="page_cont">
+                <div class="page_nav">
+                    <div class="nav_title">
+                        <p class="title_p1">三大中心</p>
+                        <p class="title_p2">Departments</p>
+                    </div>
+                    <ul class="hd nav_ul">
+                        <foreach name="leftsublist" item="leftsublist" key="k">
+                             <if condition="($k eq $_GET['sid']) or ($leftsublist.index eq 0)">
+                                <li class="sublist active">
+                                    {$leftsublist.name}
+                                </li>
+                            <else/>
+                                <li class="sublist">
+                                    {$leftsublist.name}
+                                </li>
+                            </if>
+                        </foreach>
+                    </ul>
+                </div>
+                <div class="bd page_introduce smt">
+                    <foreach name="re_leftsublist" item="re_leftsublist" key="k">
+                        <if condition="(isset($_GET['sid']) AND ($k eq $_GET['sid']))">
+                            <ul class="item active">
+                                <foreach name="re_leftsublist.sub.content" item="content"  key="k">  
+                                    <li>
+                                      <?php echo empty($content)?'还没有上传数据。。。。。':stripslashes($content); ?>
+                                    </li>
+                                </foreach>
+                            </ul>
+                        <elseif condition="(!isset($_GET['sid']) AND ($re_leftsublist.index eq 0))"/>
+                            <ul class="item active">
+                                <foreach name="re_leftsublist.sub.content" item="content" key="k">  
+                                    <li>
+                                      <?php echo empty($content)?'还没有上传数据。。。。。':stripslashes($content); ?>
+                                    </li>
+                                </foreach>
+                            </ul>
+                        <else/>
+                            <ul class="item">
+                                <if condition="empty($re_leftsublist['sub']['content'])">
+                                    <li style="text-align:center;margin-top:150px;">
+                                            <?php echo '还没有上传数据。。。。';?>
+                                    </li>  
+                                <else/>
+                                    <foreach name="re_leftsublist.sub.content" item="content" key="k">  
+                                        <li>
+                                            <?php echo stripslashes($content);?>
+                                        </li>
+                                    </foreach>
+                                </if>
+                            </ul>
+                        </if>
+                    </foreach>
+                </div>
+            </div>
+        </div>
+    </div>
+<include file='Template:footer' />
+<script>
+    // $(function(){
+    	//分页
+		// $('.table-sort').dataTable({
+		//     "bPaginate": true, //翻页功能
+		//     "bLengthChange": false, //改变每页显示数据数量
+		//     "bFilter": false, //过滤功能
+		//     "bSort": true, //排序功能
+		//     "bInfo": true,//页脚信息
+		//     "bAutoWidth": true,//自动宽度
+		//     "aLengthMenu": [1],//每页显示的条数
+		//     "language": {
+		//         "sInfo": "_PAGE_/_PAGES_ 共_TOTAL_条数据",
+		//         "paginate": {
+		//             "sFirst": "首页",
+		//             "sPrevious": "上一页",
+		//             "sNext": "下一页",
+		//             "sLast": "尾页"
+		//         }
+		//     }
+		// });
+    //     $('.hd a').on('click',function(){
+    //         if(!$(this).href)
+    //             $(this).removeAttr('href');
+    //         var index = $(this).index();
+    //         $('.bd .item').removeClass('active').eq(index).addClass('active');
+    //     })
+    // });
+</script>

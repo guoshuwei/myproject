@@ -1,0 +1,64 @@
+<include file='Template:header' />
+<?php 
+	$re_perintro = $perintro;
+?>
+<style>
+    .item{
+        display:none;
+    }
+    .active{display:block;}
+    a:hover{color:red;}
+    .item li{list-style:circle;}
+    .item li a span.title{display:block;float:left;}
+    .item li a span.uptime{display:block;float:right;}
+    ul li{list-style-type:none !important;}
+</style>
+<link href="__PUBLIC__/Home/css/page.css" rel="stylesheet" type="text/css" />
+    <div class="index_body">
+        <div class="index_page">
+            <div class="page_cont">
+                <div class="page_nav">
+                    <div class="nav_title">
+                        <p class="title_p1">专家介绍</p>
+                        <p class="title_p2">Departments</p>
+                    </div>
+                    <ul class="hd nav_ul">
+                        <foreach name="perintro" item="perintro" key="k">
+                            <if condition="(isset($_GET['sid']) AND ($perintro['id'] == $_GET['sid']))">
+                                <li class="sublist active">{$perintro.title}</li>
+                            <elseif condition="(!isset($_GET['sid']) AND ($k == 0))"/>
+                                <li class="sublist active">{$perintro.title}</li>
+                            <else/>
+                                <li class="sublist">{$perintro.title}</li>
+                            </if>
+                        </foreach>
+                    </ul>
+                </div>
+                <div class="bd page_introduce smt">
+                    <foreach name="re_perintro" item="re_perintro" key="k">
+                    	<if condition="(isset($_GET['sid']) AND ($re_perintro['id'] == $_GET['sid']))">
+                            <ul class="item active">
+                                <li>
+                                	<?php echo stripslashes($re_perintro['content']); ?>
+                                </li>
+                            </ul>
+                        <elseif condition="(!isset($_GET['sid']) AND ($k == 0))"/>
+                            <ul class="item active">
+                                <li>
+                                    <?php echo stripslashes($re_perintro['content']); ?>
+                                </li>
+                            </ul>
+                        <else/>
+                        	 <ul class="item"> 
+                                <li>
+                                	<?php echo stripslashes($re_perintro['content']); ?>
+                                </li>
+                            </ul>
+                        </if>
+                    </foreach>
+                </div>
+            </div>
+        </div>
+    </div>
+<include file='Template:footer' />
+

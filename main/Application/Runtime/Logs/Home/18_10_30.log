@@ -1,0 +1,188 @@
+[ 2018-10-30T06:31:44+08:00 ] 192.168.186.1 /tp32/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001861s ]
+NOTIC: [2] Missing argument 2 for Home\Controller\IndexController::getSublistByName(), called in /var/www/tp32/Application/Home/Controller/IndexController.class.php on line 138 and defined /var/www/tp32/Application/Home/Controller/IndexController.class.php 第 100 行.
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( name='二级导航' )  [ RunTime:0.0026s ]
+NOTIC: [8] Undefined variable: limit /var/www/tp32/Application/Home/Controller/IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=33 and show_status = 1 ) ORDER BY vsort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0016s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新公告' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc  [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0018s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新信息' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc LIMIT 5   [ RunTime:0.0062s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=0 and name<>"二级导航" and name<>"妇幼保健" and name<>"公开" and name<>"就医指南-体检指南" and  show_status = 1 and jump_url is not null and jump_url<>"" ) ORDER BY vsort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( mid=6 ) ORDER BY vsort desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+NOTIC: [8] Undefined offset: 0 /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined offset: 0 /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: specialistintro /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: specialists /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 167 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Undefined variable: fybjinfo /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 185 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 228 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 239 行.
+NOTIC: [8] Undefined variable: specialists /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 266 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2018-10-30T06:31:45+08:00 ] 192.168.186.1 /tp32/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002199s ]
+NOTIC: [2] Missing argument 2 for Home\Controller\IndexController::getSublistByName(), called in /var/www/tp32/Application/Home/Controller/IndexController.class.php on line 138 and defined /var/www/tp32/Application/Home/Controller/IndexController.class.php 第 100 行.
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( name='二级导航' )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: limit /var/www/tp32/Application/Home/Controller/IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=33 and show_status = 1 ) ORDER BY vsort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0020s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新公告' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0016s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新信息' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc LIMIT 5   [ RunTime:0.0062s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=0 and name<>"二级导航" and name<>"妇幼保健" and name<>"公开" and name<>"就医指南-体检指南" and  show_status = 1 and jump_url is not null and jump_url<>"" ) ORDER BY vsort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( mid=6 ) ORDER BY vsort desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined offset: 0 /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined offset: 0 /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: specialistintro /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: specialists /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 167 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Undefined variable: fybjinfo /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 185 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 228 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 239 行.
+NOTIC: [8] Undefined variable: specialists /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 266 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2018-10-30T06:31:45+08:00 ] 192.168.186.1 /tp32/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+NOTIC: [2] Missing argument 2 for Home\Controller\IndexController::getSublistByName(), called in /var/www/tp32/Application/Home/Controller/IndexController.class.php on line 138 and defined /var/www/tp32/Application/Home/Controller/IndexController.class.php 第 100 行.
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( name='二级导航' )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: limit /var/www/tp32/Application/Home/Controller/IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=33 and show_status = 1 ) ORDER BY vsort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0016s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新公告' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc  [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0017s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新信息' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc LIMIT 5   [ RunTime:0.0062s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=0 and name<>"二级导航" and name<>"妇幼保健" and name<>"公开" and name<>"就医指南-体检指南" and  show_status = 1 and jump_url is not null and jump_url<>"" ) ORDER BY vsort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( mid=6 ) ORDER BY vsort desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+NOTIC: [8] Undefined offset: 0 /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined offset: 0 /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: specialistintro /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: specialists /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 167 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Undefined variable: fybjinfo /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 185 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 228 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 239 行.
+NOTIC: [8] Undefined variable: specialists /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 266 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2018-10-30T06:31:46+08:00 ] 192.168.186.1 /tp32/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+NOTIC: [2] Missing argument 2 for Home\Controller\IndexController::getSublistByName(), called in /var/www/tp32/Application/Home/Controller/IndexController.class.php on line 138 and defined /var/www/tp32/Application/Home/Controller/IndexController.class.php 第 100 行.
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( name='二级导航' )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: limit /var/www/tp32/Application/Home/Controller/IndexController.class.php 第 104 行.
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=33 and show_status = 1 ) ORDER BY vsort asc  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0025s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新公告' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc  [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0026s ]
+SQL: SELECT trd.pid as tpid,tzd.* FROM t_relation_dd trd LEFT JOIN t_zj_dd tzd on trd.id=tzd.pid  WHERE ( trd.name ='最新信息' and trd.show_status=1 and tzd.pubstatus=1 and tzd.showstatus=1 ) ORDER BY tzd.updatetime desc LIMIT 5   [ RunTime:0.0088s ]
+SQL: SELECT * FROM `t_relation_dd` WHERE ( pid=0 and name<>"二级导航" and name<>"妇幼保健" and name<>"公开" and name<>"就医指南-体检指南" and  show_status = 1 and jump_url is not null and jump_url<>"" ) ORDER BY vsort asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( mid=6 ) ORDER BY vsort desc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined offset: 0 /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined offset: 0 /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: specialistintro /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: specialists /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 167 行.
+NOTIC: [8] Undefined variable: serviceitem /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 174 行.
+NOTIC: [8] Undefined variable: fybjinfo /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 185 行.
+NOTIC: [8] Undefined variable: affairpublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 217 行.
+NOTIC: [8] Undefined variable: poypublic /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 228 行.
+NOTIC: [8] Undefined variable: lzestablish /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 239 行.
+NOTIC: [8] Undefined variable: specialists /var/www/tp32/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 266 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
