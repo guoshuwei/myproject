@@ -1,0 +1,1265 @@
+@import '../mod/retina';
+@import '../mod/icon';
+.index-header{
+  position: relative;
+  width: 1200px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  @include clearfix;
+  .le{
+	float: left;
+	width: 240px;
+	height: 200px;
+	text-align: center;
+	position: relative;
+	.index-header-icon{
+	 width: 84px;
+	 height: 84px;
+	 position: absolute;
+	 top:-5px;
+	 left: -5px;
+	 background: url("/styles/images/index/dpyl1.png") no-repeat;
+	 background-size: 100%;
+	}
+	.lo{
+	  display: block;
+	  height: 50px;
+	  margin: auto;
+	  padding: 74px 0 20px 0;
+	  img{
+		max-width: 130px;
+		height: 50px;
+	  }
+	}
+	.time{
+	  font-size: 14px;
+	  margin-top: 28px;
+	  color: #999999;
+	}
+	.address{
+	  span{
+		font-size: 14px;
+		color: #999;
+	  }
+	  .icons{
+		display: inline-block;
+		vertical-align: top;
+		width: 12px;
+		height: 18px;
+		margin-right: 8px;
+	  	background: url("/styles/images/loans/address_grey_icon.png") 0 0 no-repeat;
+	  }
+	  &:hover{
+	  	span{
+	  		color:#22a7f0;
+	  	}
+	  }
+	}
+	.map{
+	  display: block;
+	  margin: auto;
+	  color: #22a7f0;
+	  font-size: 14px;
+	}
+	.doubleOneHuoDong_jiaobiao{
+	  position: absolute;
+	  top: 3px;
+	  left: -12px;
+	  width: 160px;
+	  height: 45px;
+	  @include retina('/styles/images/index/doubleOneActivity/doubleOneActivity.png', 2, 160px 45px, center center no-repeat);
+	  background-position: 0 0 !important;
+	}
+  }
+  .line{
+	float: left;
+	width: 0;
+	height: 148px;
+	margin-top: 37px;
+	border-left: 1px dashed #e8e8e8;
+  }
+  .bg_problem{
+	position: absolute;
+	left: 778px;
+	bottom: 36px;
+	width: 186px;
+	height: 109px;
+  }
+  .cen{
+	position: relative;
+	width: 690px;
+	float: left;
+	padding-left: 50px;
+	height: 200px;
+	.tit{
+	  padding-top: 26px;
+	  height: 30px;
+	  @include clearfix;
+	  .name{
+		float: left;
+		font-size: 22px;
+		font-weight: bold;
+		line-height: 30px;
+		margin-right: 14px;
+		max-width: 134px;
+		@include text-ellipsis;
+	  }
+	  .tags{
+		float: left;
+		//width: 480px;
+		@include clearfix;
+		.tag_icon{
+		  width: 24px;
+		  height: 22px;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  background-color: #0099ee;
+		  div{
+			width: 16px;
+			height: 16px;
+			position: absolute;
+			top: 3px;
+			left: 4px;
+			background-image: url(/styles/images/index/dangan.png);
+		  }
+		}
+		.tag{
+		  display: block;
+		  float: left;
+		  position: relative;
+		  height: 22px;
+		  border-radius: 3px;
+		  line-height: 22px;
+		  padding-left: 33px;
+		  padding-right: 7px;
+		  font-size: 12px;
+		  margin: 2px 15px 0 0;
+		  border: 1px solid #0099ee;
+		  text-decoration: none;
+		}
+		.tag_problem_time{
+		  padding: 0 10px;
+		  color: #fff;
+		  border: 1px solid #666666;
+		  background-color: #666666;
+		}
+		.tag_problem{
+		  color: #fff;
+		  padding-left: 29px;
+		  border: 1px solid #e74d4b;
+		  background-color: #e74d4b;
+		  .tag_icon{
+			background-color: #e74d4b;
+			div{background-position: 0 -22px;}
+		  }
+		}
+		.tag_time{
+		  color: #0099ee;
+		  background-color: #e2f1ff;
+		  border-color: #e2f1ff;
+		  .tag_icon{
+		  	background-color: #e2f1ff;
+			div{background-position: -143px -113px;
+			  @include ratioBackground($url:'/styles/images/index/dangan.png',$size:735px 1000px);
+			  @include ratioBackgroundPosition($x:-71.5px,$y:-110px);}
+		  }
+		}
+		.tag_rating{
+		  color: #0099ee;
+		  background-color: #fff;
+		  .tag_icon{
+			div{background-position: -184px -113px;
+			  @include ratioBackground($url:'/styles/images/index/dangan.png',$size:735px 1000px);
+			  @include ratioBackgroundPosition($x:-112px,$y:-110px);}
+		  }
+		  &:hover{
+			color: #fff;
+			background-color: #0099ee;
+		  }
+		}
+		.tag_sort{
+		  color: #0099ee;
+		  background-color: #fff;
+		  .tag_icon{
+			div{background-position: -225px -113px;
+			  @include ratioBackground($url:'/styles/images/index/dangan.png',$size:735px 1000px);
+			  @include ratioBackgroundPosition($x:-153.5px,$y:-110px);}
+		  }
+		  &:hover{
+			color: #fff;
+			background-color: #0099ee;
+		  }
+		}
+		.tag_detail{
+		  padding-left: 24px;
+		  color: #e74d4b;
+		  border: 1px solid transparent;
+		  background-color: transparent;
+		  .tag_icon{
+			background-color: transparent;
+			div{background-position: 0 -40px;}
+		  }
+		}
+	  }
+
+	}
+	.key_vals{
+	  position: relative;
+	  font-size: 14px;
+	  padding-top: 18px;
+	  @include clearfix;
+	  >.line{
+		float: left;
+		height: 14px;
+		width: 0;
+		border-left: 1px dashed #eaeaea;
+		margin: 18px 19px 0;
+	  }
+	  .key_val{
+		float: left;
+		padding-right: 14px;
+		height: 35px;
+		line-height: 35px;
+		@include clearfix;
+		>.line{
+		  float: left;
+		  height: 18px;
+		  border-left: 1px dashed #eaeaea;
+		  margin: 0 15px;
+		}
+		.key{
+		  float: left;
+		  padding-right: 5px;
+		  color: #333;
+		}
+		.val{
+		  float: left;
+		  color: #333;
+		  .kaquan{
+			display: inline-block;
+			*display:inline;
+			*zoom:1;
+			vertical-align: top;
+			width: 61px;
+			height: 19px;
+			text-align: center;
+			line-height: 19px;
+			margin-right: 9px;
+			color: #ff842a;
+			font-size: 12px;
+			background-image: url(/styles/images/index/dangan.png);
+			background-position: 0 0;
+		  }
+		  .kaquan_link{
+			color: #e74d4b;
+		  }
+		  .red{
+			color: #e74d4b;
+			font-weight: bold;
+			padding: 0 5px;
+		  }
+		  .detail{
+			font-size: 12px;
+			padding-left: 5px;
+			color: #999999;
+		  }
+		  .pl12{
+			padding-left:17px;
+		  }
+		  .line{
+			display: inline;
+			float: none;
+			width: 0;
+			border-left: 1px dashed #eaeaea;
+			margin: 0 15px;
+		  }
+
+		  .tag_yhdp{
+			float: left;
+			max-width: 300px;
+			@include text-ellipsis;
+		  }
+		  .con_yhdp{
+			float: left;
+		  }
+		  .line_yhdp{
+			float: left;
+			height: 18px;
+			border-left: 1px dashed #eaeaea;
+			margin: 0 15px;
+		  }
+		  .tag_ptsl{
+			position: relative;
+			font-size: 12px;
+			float: left;
+			height: 17px;
+			line-height: 17px;
+			padding: 0 9px;
+			color: #0099ee;
+			border: 1px solid #0099ee;
+			border-radius: 3px;
+			margin-right: 12px;
+			margin-top: 2px;
+			.tag_tip{
+			  display: none;
+			  position: absolute;
+			  bottom: 130%;
+			  left: -1px;
+			  width: 450px;
+			  z-index: 1;
+			  .wrap{
+				display: inline-block;
+				padding: 5px 10px;
+				background-color: #404040;
+				border-radius: 3px;
+				.row{
+				  position: relative;
+				  color: #fff;
+				  line-height: 22px;
+				  font-size: 12px;
+				  padding-left: 10px;
+				  .dot{
+					position: absolute;
+					top: 0;
+					left: 0;
+					font-size: 18px;
+				  }
+				  .content{
+
+				  }
+				}
+			  }
+			}
+			&:hover{
+			  .tag_tip{
+				display: block;
+			  }
+			}
+		  }
+		}
+		.ui-color-red{
+			color: #e74d4b;
+		}
+		.rate{
+		  font-size: 14px;
+		  width: auto;
+		}
+		.period{
+		  font-size: 14px;
+		  color: #333333;
+		  width: auto;
+		}
+	  }
+	  .key_val_odd{
+	  	width: 255px;
+	  	.val{
+	  		max-width: 185px;
+	  		@include text-ellipsis;
+	  	}
+	  }
+	  .key_val_even{
+	  	width: 400px;
+	  	.val{
+	  		max-width: 330px;
+	  		@include text-ellipsis;
+	  	}
+	  }
+	  .key_val_long{
+	  	width: 602px;
+	  }
+	}
+  }
+  .ri{
+	position: relative;
+	width: 216px;
+	height: 100%;
+	min-height: 200px;
+	float: right;
+	.pt_url{
+	  width: 170px;
+	  height: 38px;
+	  line-height: 38px;
+	  color: #fff;
+	  background-color: #0099ee;
+	  font-size: 16px;
+	  margin-top: 39px;
+	  text-align: center;
+	  border-radius: 3px;
+	  text-decoration: none;
+	  @include text-ellipsis;
+	  display: block;
+	  &:hover{
+		background-color: #0079c3;
+	  }
+	}
+	.pt_url-go{
+		display: inline-block;
+		width: 15px;
+		height: 14px;
+		background: url('/styles/images/index/newindex/contact_normal.png') -64px 0 no-repeat;
+		@include ratioBackground($url:'/styles/images/index/newindex/contact_double.png', $size: 100px 100px, $x:-64px, $y:0px);	
+		overflow: hidden;
+		vertical-align: middle;
+		margin: -2px 0 0 6px;
+	}
+	.f_txt{
+	  position: absolute;
+	  left: 0;
+	  bottom: 102px;
+	  font-size: 12px;
+	  color: #999999;
+	  .red{
+		font-weight: bold;
+		padding: 0 4px;
+		color: #e74d4b;
+	  }
+	}
+	.btns{
+	  left: 0;
+	  width: 194px;
+	  position: absolute;
+	  @include clearfix;
+	  .btn{
+		display: block;
+		height: 19px;
+		line-height: 19px;
+		font-size: 12px;
+		color: #fff;
+		float: left;
+		border-radius: 3px;
+	  }
+	  .f_btn{
+		width: auto;
+		margin-right: 17px;
+		padding: 0 11px;
+		background-color: #e74d4b;
+		em{
+		  i{color:#fff;}
+		}
+		&:hover{
+		  background-color: #ff6666;
+		}
+	  }
+	  .ui-follow-easy{
+		border: 0;
+		box-shadow: none;
+	  }
+	  .ed{
+		background-color: #cccccc !important;
+	  }
+	  .c_btn{
+		margin-right: 17px;
+		padding: 0 11px;
+		background-color: #ff842a;
+		text-decoration: none;
+		&:hover{
+		  background-color: #ffba01;
+		}
+	  }
+
+	  .weixin_btn{
+		width: 23px;
+		margin-right: 15px;
+		background-image: url(/styles/images/index/dangan.png);
+		background-position: -427px -111px;
+		@include ratioBackground($url:'/styles/images/index/dangan.png',$size:735px 1000px);
+		@include ratioBackgroundPosition($x:-355px,$y:-108px);
+		&:hover{
+		  background-position: -591px -111px;
+		  @include ratioBackground($url:'/styles/images/index/dangan.png',$size:735px 1000px);
+		  @include ratioBackgroundPosition($x:-519px,$y:-108.5px);
+		}
+	  }
+	  .o_btn{
+		width: 23px;
+		margin-right: 15px;
+		background-image: url(/styles/images/index/dangan.png);
+		background-position: -470px -111px;
+		@include ratioBackground($url:'/styles/images/index/dangan.png',$size:735px 1000px);
+		@include ratioBackgroundPosition($x:-396px,$y:-108px);
+		&:hover{
+		  background-position: -634px -111px;
+		  @include ratioBackground($url:'/styles/images/index/dangan.png',$size:735px 1000px);
+		  @include ratioBackgroundPosition($x:-560px,$y:-108.5px);
+		}
+	  }
+	  .weibo_btn{
+		width: 23px;
+		margin-right: 15px;
+		background-image: url(/styles/images/index/dangan.png);
+		background-position: -510px -111px;
+		@include ratioBackground($url:'/styles/images/index/dangan.png',$size:735px 1000px);
+		@include ratioBackgroundPosition($x:-437px,$y:-108px);
+		&:hover{
+		  background-position: -674px -111px;
+		  @include ratioBackground($url:'/styles/images/index/dangan.png',$size:735px 1000px);
+		  @include ratioBackgroundPosition($x:-601px,$y:-108.5px);
+		}
+	  }
+	  .qq_btn{
+		width: 23px;
+		margin-right: 15px;
+		background-image: url(/styles/images/index/dangan.png);
+		background-position: -552px -111px;
+		@include ratioBackground($url:'/styles/images/index/dangan.png',$size:735px 1000px);
+		@include ratioBackgroundPosition($x:-481px,$y:-108px);
+		&:hover{
+		  background-position: -716px -111px;
+		  @include ratioBackground($url:'/styles/images/index/dangan.png',$size:735px 1000px);
+		  @include ratioBackgroundPosition($x:-645px,$y:-108.5px);
+		}
+	  }
+	}
+	.gzdb{
+	  bottom: 72px;
+	}
+	.jiathis_style{
+	  bottom: 37px;
+	  .jtico{
+		background: none !important;
+	  }
+	}
+  }
+}
+
+
+.ptsl_detail{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  .win_bg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #000;
+	@include opacity(.75);
+  }
+  .subwrap {
+	vertical-align: middle;
+	display: table-cell;
+	_position: absolute;
+	_top: 50%;
+	.win {
+	  position: relative;
+	  _top: -50%;
+	  width: 500px;
+	  background-color: #fff;
+	  border-radius: 4px;
+	  margin: auto;
+	  .hd {
+		position: relative;
+		padding: 12px 14px;
+		background-color: #f0f0f0;
+		border-radius: 4px 4px 0 0;
+		.title {
+		  font-size: 16px;
+		  line-height: 16px;
+		  color: #333333;
+		  padding-left: 10px;
+		  border-left: 4px solid #1093e1;
+		}
+		.close {
+		  width: 16px;
+		  height: 16px;
+		  position: absolute;
+		  top: 12px;
+		  right: 14px;
+		  background-image: url(/styles/images/index/dangan.png);
+		  background-position: -266px -113px;
+		  @include ratioBackground($url:'/styles/images/index/dangan.png',$size:735px 1000px);
+		  @include ratioBackgroundPosition($x:-194.5px,$y:-110px);
+		  cursor: pointer;
+		  &:hover{
+			background-position: -307px -113px;
+			@include ratioBackgroundPosition($x:-235.5px,$y:-110px);
+		  }
+		}
+	  }
+
+	  .bd {
+		height: 310px;
+		overflow: auto;
+		.kvs{
+		  padding-left: 20px;
+		  padding-bottom: 22px;
+		  .kv{
+			margin-top: 22px;
+			font-size: 14px;
+			line-height: 20px;
+			color: #333333;
+			@include clearfix;
+			.k{
+			  float: left;
+			  padding-right: 14px;
+			  .dot{
+				font-size: 17px;
+				padding-right: 5px;
+			  }
+			}
+
+			.v{
+			  width: 354px;
+			  float: left;
+			}
+		  }
+		}
+	  }
+	}
+  }
+}
+
+
+.navsparent{
+	width: 100%;
+	height: 52px;
+}
+.navs{
+	transform: translateZ(0px);
+	height: 50px;
+	z-index: 30;
+	.navs-inner{
+		width: 1200px;
+		height: 50px;
+		margin: 0 auto;
+	  	background: #f9f9f9;
+	}
+	.ui-tag-hot{
+		position: absolute;
+		top: 0px;
+		right: -5px;
+		z-index: 1;
+		@include icon_hot_circular;
+	}
+	.mod-platfixed{
+		height: 50px;
+		box-shadow: none;
+		border-bottom: 2px solid #0099ee;
+	}
+	.webname{
+		display: none;
+		height: 30px;
+		width: 112px;
+		background-color: #f5faff;
+		border: 1px solid #7ac9f6;
+		color: #0099ee;
+		border-radius: 5px;
+		font-size: 14px;
+		text-align: center;
+		line-height: 30px;
+		margin-top: 8px;
+		@include fadein(0.25s);
+		&:hover{
+			background-color: #0099ee;
+			color: #fff;
+		    text-decoration: none;
+		    @include fadein(0.25s);
+		}
+	}
+	.item{
+	  	position: relative;
+		float: left;
+		min-width: 61px;
+	  	padding: 0 20px;
+		text-align: center;
+		line-height: 50px;
+		color: #333;
+		font-size: 16px;
+		&:hover{
+			@include fadein(0.25s);
+			color: #fff;
+			text-decoration: none;
+			background-color: #0099ee;
+			span{
+				@include fadein(0.25s);
+				background-color: #0099ee;
+			}
+		}
+		span{
+			position: absolute;
+		  	top: 2px;
+		  	right: 0;
+			height: 20px;
+			width: 1px;
+			margin-top: 13px;
+			background-color: #d5d5d5;
+		}
+	  	div.newTag{
+		  position: absolute;
+		  top: 0px;
+		  right: -5px;
+		  @include icon_new_circular;
+		  z-index: 1;
+		}
+		div.newTag2 {
+			right: 10px;
+		}
+	    div.newHuoDong{
+		  position: absolute;
+		  top: 3px;
+		  right: -5px;
+		  width: 25px;
+		  height: 17px;
+		  @include retina('/styles/images/index/index_icons_1x_2x.png', 2, 1000px 1000px, center center no-repeat);
+		  background-position: 0 0 !important;
+		  z-index: 1;
+		}
+	  	div.doubleOneHuoDong{
+		  position: absolute;
+		  top: 3px;
+		  right: -5px;
+		  width: 46px;
+		  height: 17px;
+		  @include retina('/styles/images/index/index_icons_1x_2x.png', 2, 1000px 1000px, center center no-repeat);
+		  background-position: 0 -130px !important;
+		  z-index: 1;
+		}
+	}
+	.current{
+		color: #fff;
+		background-color: #0099ee;
+		span{
+			background-color: #0099ee;
+		}
+	}
+	.empty{
+		color: #999;
+		cursor: default;
+		&:hover{
+			@include fadein(0.25s);
+			color: #999;
+			text-decoration: none;
+			background: transparent;
+			span{
+				display: inline;
+			}
+		}
+	}
+}
+.navs-fixed{
+	height: 50px;
+	position: fixed;
+	top: 0;
+  	left: 0;
+	width: 100%;
+	background-color: #fff;
+	box-shadow:0px 0px 5px #666;
+	.mod-platfixed{
+		border-bottom: 0 none;
+	  	background: #fff;
+	}
+}
+.officialwebsite{
+	position: fixed;
+  	width:600px;
+	left: 50%;
+	top: 50%;
+	margin-top: -112px;
+	margin-left: -300px;
+	background-color: #fff;
+	border-radius: 5px;
+	z-index: 999;
+    font-family:"Microsoft YaHei";
+	.hd{
+		font-weight: bold;
+		font-size: 16px;
+		color: #ff7e15;
+		line-height: 40px;
+		height: 20px;
+		padding: 10px 0;
+		background-color: #ededed;
+		border-radius: 5px 5px 0 0;
+		span{
+			text-indent: 8px;
+			display: block;
+			color: #333;
+			font-size: 18px;
+			height: 20px;
+			line-height: 20px;
+			margin-left: 20px;
+		}
+		.inner{
+			text-align: center;
+			color:#333;
+			line-height: 20px;
+			font-size: 14px;
+			font-weight: normal;
+		}
+	}
+	.bd{
+		
+		.left {
+		  float: left;
+		  width: 225px;
+		  height: 260px;
+		  background: url(/styles/images/index/bg2.png) no-repeat 70px 50px;
+		}
+		.right{
+			float: left;
+			padding-top: 40px;
+			width: 275px;
+			.top{
+				font-size: 24px;
+				color: #0099ee;
+				line-height: 40px;
+			}
+			.middle{
+				font-size: 18px;
+				color: #0099ee;
+				line-height: 28px;
+			}
+			.bottom{
+				font-size: 14px;
+				color: #666;
+				line-height: 20px;
+				padding-bottom: 30px;
+			}
+		}	
+		.login{
+			float: left;
+			color: #999;
+			border-radius: 3px;
+			border: 2px solid #ccc;
+			width: 98px;
+			height: 28px;
+			font-size: 14px;
+			text-align: center;
+			line-height: 28px;
+			margin-right: 18px;
+			@include fadein(0.25s);
+			&:hover{
+				color: #fff;
+				text-decoration: none;
+				border: 2px solid #0099ee;
+				background-color:#0099ee;
+				@include fadein(0.25s);
+			}
+		}
+		.toreg{
+			float: left;
+			width: 120px;
+			height: 30px;
+			background-color:#0099ee;
+			border-radius:3px;
+			line-height: 30px;
+			text-align: center;
+			font-size: 14px;
+			color: #fff;
+			@include fadein(0.25s);
+			&:hover{
+				@include fadein(0.25s);
+				background-color: #087dee;
+				text-decoration: none;
+			}
+		}
+	}
+	.close{
+	      width: 28px;
+	      height: 28px;
+	      position: absolute;
+	      right:-10px;
+	      top:-8px;
+	      display: block;
+	      background: url(/styles/images/index/icons.png) no-repeat 0px -210px;
+	      margin-top: -5px;
+	      @include fadein(0.5s);
+	      &:hover{
+		      -webkit-transform:rotate(360deg);
+		      -moz-transform:rotate(360deg);
+		      transform:rotate(360deg);
+		    }
+	    }
+	    
+}
+.officalheight{
+  height:240px;
+  margin-top:-130px;
+  .bd {
+	.left{
+		float: left;
+		width: 270px;
+		height: 200px;
+		background: url(/styles/images/index/bg1.png) no-repeat 110px 30px;
+	}
+	.right{
+		.top{
+			font-size: 18px;
+			color: #383838;
+			span{
+				color: #ff7d00;
+			}
+		}
+		.bottom{
+			font-size: 14px;
+			color: #666;
+		}
+	}
+	.go{
+		display: block;
+		width: 100px;
+		height: 30px;
+		background-color:#ff7d00;
+		border-radius:3px;
+		line-height: 30px;
+		text-align: center;
+		font-size: 14px;
+		color: #fff;
+		@include fadein(0.25s);
+		&:hover{
+			@include fadein(0.25s);
+			background-color: #e56d0a;
+			text-decoration: none;
+		}	
+	}
+  }
+
+}
+.immediatelyto{
+	padding:40px 0 36px 148px;
+}
+.checkpic{
+	width:13px;
+	height:13px;
+	float:left;
+	margin:19px 10px 0 0;
+	background:url(/styles/images/index/checkpic_m.png) 0 -0 no-repeat;
+    @include ratioBackground($url:'/styles/images/index/checkpic_l.png', $size: 13px 13px, $x:0, $y:0);
+}
+.checktxt{
+	float:left;
+	height:50px;
+	line-height:50px;
+	font-size:14px;
+	color:#787878;
+	padding-right:20px;
+}
+.immediatelygo{
+	float:left;
+	height:50px;
+	line-height:50px;
+	font-size:14px;
+	padding:0 14px;
+	background-color:#0099ee;
+	color:#fff;
+	border-radius:5px;
+}
+.hotplatform{
+	margin-top:15px;
+	height:88px;
+	background-color:#e8f4fc;
+}
+.hotplatform-title{
+	height:15px;
+	position:relative;
+}
+.hotplatform-title-inner{
+	height:30px;
+	position:absolute;
+	left:0;
+	top:-15px;
+	span{
+		display: block;
+		height:30px;
+		line-height: 30px;
+		font-size: 14px;
+		color:#fff;
+		font-weight: bold;
+	}
+}
+.hotplatform-title-inner-rightbg{
+	padding-right:11px;
+	background:url(/styles/images/index/hotplatform-title-inner-rightbg_m.png) right top no-repeat;
+	@include ratioBackground($url:'/styles/images/index/hotplatform-title-inner-rightbg_l.png', $size: 11px 30px, $x:right, $y:top);
+}
+.hotplatform-title-inner-leftbg{
+	background-color:#24aded;
+	padding-left:11px;
+	padding-right:11px;
+}
+.hotplatforms{
+	padding:10px 20px 0 20px;
+}
+.hotplatforms-tab{
+	padding:0 12px;
+	height:40px;
+	position:relative;
+}
+.hotplatforms-prev,.hotplatforms-next{
+	position:absolute;
+	background:url(/styles/images/index/hotplatforms-btn_m.png) 0 0 no-repeat;
+	width:12px;
+	height:20px;
+	overflow:hidden;
+	top:10px;
+	cursor:pointer;
+	a{
+		display: block;
+		width:12px;
+		height:20px;
+		position:absolute;
+		left: 0;
+		top:0;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.hotplatforms-prev{
+	left:0;
+	background-position: 0 0;
+	@include ratioBackground($url:'/styles/images/index/hotplatforms-btn_l.png', $size: 26px 20px, $x:0, $y:0);
+}
+.hotplatforms-next{
+	right:0;
+	background-position: -14px 0;
+	@include ratioBackground($url:'/styles/images/index/hotplatforms-btn_l.png', $size: 26px 20px, $x:-14px, $y:0);
+}
+.hotplatforms-inner{
+	height:40px;
+	overflow:hidden;
+}
+.hotplatforms-inner ul,.hotplatforms-inner li{
+	height:40px;
+}
+.hotplatforms-inner-box{
+	width:107px;
+	height:40px;
+	float:left;
+	span{
+		display: block;
+		height:20px;
+		line-height: 20px;
+		text-align: center;
+		color:#787878;
+		@include text-ellipsis;
+	}
+	a{
+		color:#787878;
+		&:hover{
+			color:#24aded;
+			text-decoration: none;
+		}
+	}
+}
+.hotplatforms-inner-top{
+	font-size:14px;
+}
+.hotplatforms-inner-bot{
+	font-size:12px;
+	em{
+		color:#ff8001;
+	}
+}
+.ui-problem1{
+    background: #fff url(/styles/images/common/pproblem1.png) no-repeat 0 0;
+    background-size: 150px 102px;
+}
+.ui-problem2{
+    background: #fff url(/styles/images/common/pproblem2.png) no-repeat 0 0;
+    background-size: 150px 102px;
+}
+.ui-problem3{
+    background: #fff url(/styles/images/common/pproblem3.png) no-repeat 0 0;
+    background-size: 150px 102px;
+}
+.ui-problem4{
+    background: #fff url(/styles/images/common/pproblem4.png) no-repeat 0 0;
+	background-size: 150px 102px;
+}
+.ui-problem5{
+    background: #fff url(/styles/images/common/pproblem5.png) no-repeat 0 0;
+    background-size: 150px 102px;
+}
+.ui-problem6{
+    background: #fff url(/styles/images/common/pproblem6.png) no-repeat 0 0;
+    background-size: 150px 102px;
+}
+.ui-problem7{
+    background: #fff url(/styles/images/common/pproblem7.png) no-repeat 0 0;
+    background-size: 150px 102px;
+}
+.ui-problem8{
+    background: #fff url(/styles/images/common/pproblem8.png) no-repeat 0 0;
+    background-size: 150px 102px;
+}
+.ui-problem9{
+    background: #fff url(/styles/images/common/pproblem9.png) no-repeat 0 0;
+    background-size: 150px 102px;
+ }
+
+.ad_2{
+	margin:20px auto;font-size:0;width:160px;height:30px;overflow:hidden;
+}
+.ui-contact{
+	float: left;
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	margin-right: 15px;
+	position: relative;
+}
+.ui-contact-boxp{
+	width: 500px;
+	height: 58px;
+	padding-top: 14px;
+	position: absolute;
+	left: 0;
+	top: 30px;
+	z-index: 100;
+	margin-left: -235px;
+	text-align: center;
+	display: none;
+}
+.ui-contact-box{
+	display: inline-block;
+	min-width: 90px;
+	padding: 3px 10px;
+	background-color: #fff;
+	height: 52px;
+	border-radius: 5px;
+	box-shadow: 0 0 20px rgba(0,0,0,.2);
+	position: relative;
+}
+.ui-contact-jiao{
+	width: 0px;
+    content: '\20';
+    display: block;
+    height: 0px;
+    border: 8px solid transparent;
+    border-bottom-color: #fff;
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    margin-left: -8px;
+}
+.ui-contact-inner{
+	display: block;
+	height: 26px;
+	line-height: 26px;
+	color: #333;
+	font-size: 12px;
+}
+.ui-color-blue{
+	color: #09e;
+	font-size: 14px;
+}
+.ui-contact-box-tel{
+	padding: 0 16px;
+}
+.ui-contact-case{
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+.ui-contact-address{
+  background: url('/styles/images/index/newindex/contact_normal.png') 0 -64px no-repeat;
+  @include ratioBackground($url:'/styles/images/index/newindex/contact_double.png', $size: 100px 100px, $x:0px, $y:-64px);
+  &:hover{
+	background: url('/styles/images/index/newindex/contact_normal.png') -32px -64px no-repeat;
+	@include ratioBackground($url:'/styles/images/index/newindex/contact_double.png', $size: 100px 100px, $x:-32px, $y:-64px);
+  }
+}
+.ui-contact-tel{
+	background: url('/styles/images/index/newindex/contact_normal.png') 0 0 no-repeat;
+	@include ratioBackground($url:'/styles/images/index/newindex/contact_double.png', $size: 100px 100px, $x:0px, $y:0px);
+	&:hover{
+		background: url('/styles/images/index/newindex/contact_normal.png') -32px 0 no-repeat;
+		@include ratioBackground($url:'/styles/images/index/newindex/contact_double.png', $size: 100px 100px, $x:-32px, $y:0px);
+	}
+}
+.ui-contact-qq{
+  	margin-right: 0;
+	background: url('/styles/images/index/newindex/contact_normal.png') 0 -32px no-repeat;
+	@include ratioBackground($url:'/styles/images/index/newindex/contact_double.png', $size: 100px 100px, $x:0px, $y:-32px);
+	&:hover{
+		background: url('/styles/images/index/newindex/contact_normal.png') -32px -32px no-repeat;
+		@include ratioBackground($url:'/styles/images/index/newindex/contact_double.png', $size: 100px 100px, $x:-32px, $y:-32px);
+	}
+}
+
+.ui-val-box{
+	padding-top: 6px;
+	.detail{
+		float: left;
+		height: 24px;
+		line-height: 24px;
+	}
+}
+.ui-gzbtnbox{
+	padding-top: 48px;
+}
+.ui-btn{
+	float: left;
+	width: 55px;
+	margin-right: 5px;
+	height: 34px;
+	line-height: 34px;
+	color: #fff;
+	text-align: center;
+	background-color: #e74d4b;
+	font-size: 14px;
+	border-radius: 4px;
+	border:none;
+	&:hover{
+		background-color: #ff6666;
+		text-decoration: none;
+		color: #fff;
+	}
+	i{
+		color: #fff;
+	}
+}
+.ui-gzbtnbox-text{
+	height: 34px;
+	float: left;
+	width: 150px;
+	p{
+		line-height: 14px;
+		font-size: 12px;
+		color: #999;
+	}
+	.ui-gzbtnbox-text-top{
+		margin-bottom: 6px;
+		a{
+			font-weight: bold;
+			color: #999;
+		}
+	}
+}
+.ui-color-red{
+	color: #e74d4b;
+}
+.returnrecordicon {
+	font-size: 12px;
+    color: #e74d4b;
+    line-height: 18px;
+    border: 1px solid #e74d4b;
+    border-radius: 20px;
+    padding: 0px 10px;
+    display: inline-block;
+}
+/* 隐藏部分右下方的内容 */
+.mod-floatlayer{
+	.service,.qq,.account,.scancode{
+		display: none;
+	}
+	.contrast{
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

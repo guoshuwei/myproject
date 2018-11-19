@@ -1,0 +1,152 @@
+.mod-investshare-block{
+	position:relative;
+	.tab-hd{
+		position:absolute;
+		height: 30px;
+		background-color: #fff;
+		color: #606060;
+		top:15px;
+		right:0;
+		li{
+			float: left;
+			height: 30px;
+			display: inline-block;
+			*display:inline;
+			*zoom:1;
+			line-height: 30px;
+			text-align: center;
+			cursor: pointer;
+			padding:0 15px;
+		}
+		.current{
+			background-color:#1e88e5;
+			color: #fff;
+		}
+	}
+	.comment-inner{	
+		overflow:hidden;
+		.item{
+			width: 49%;
+			border-top:none;
+			border-left:1px solid #f0f0f0;
+			padding:0;
+			float: left;
+			height: 404px;
+			.more{
+				display: block;
+				width: 100%;
+				height: 100%;
+				background:#fff url(/styles/images/index/more-share.png) no-repeat center;
+			}
+		}
+	}
+	
+	.slider-item-wrap{
+		padding:0 25px;
+	}
+	.top{
+		overflow:hidden;
+	}
+	.mod-comment.active{
+		display: block;
+	}
+	.slider-wrap{
+		overflow:hidden;
+		padding-top:23px;
+	}
+	.mod-comment{
+		display: none;
+		height: 427px;
+		overflow:hidden;
+		position: relative;
+		padding-bottom:23px;
+		.share-pic{
+			width: 384px;
+			height: 234px;
+			margin:auto;
+			padding-bottom: 0;
+			vertical-align: middle;
+			text-align: center;
+			img{
+				width: 33px;
+				height: 33px;
+				margin-top: 70px;
+			}
+		}
+		.prev,.next{
+			width: 47px;
+			height: 93px;
+			position:absolute;
+			top:50%;
+			margin-top: -47px;
+			z-index: 1;
+			background:url(/styles/images/common/icons.png) no-repeat;
+			display: none;
+			cursor: pointer;
+			a{
+				display: block;
+				width: 47px;
+				height: 93px;
+			}
+			a:hover{
+				text-decoration: none;
+			}
+		}
+		.prev{
+			left:0;
+			background-position:-234px -356px;
+		}
+		.next{
+			right:0;
+			background-position:-232px -465px;
+		}
+		.mod-investdetials{
+			padding-top:10px;
+			padding-bottom:0;
+			margin-bottom: 30px;
+			height: 65px;
+			overflow:hidden;
+			a{
+				color: #383838;
+			}
+		    .blue{
+			  color:#0080cc;
+			  white-space: nowrap;
+			  word-break: normal;
+			  word-wrap: normal;
+			}
+		}
+		.detail{
+			.detail-wrap{
+				padding-left: 50px;
+			}
+		}
+		.floor{
+			padding-bottom:0;
+		}
+		.floor .info{
+			position: relative;
+			.username{
+				line-height: 1em;
+			}
+			.tips{
+				position:absolute;
+				right:0;
+				top:10px;
+			}
+		}
+
+		.floor .info .tips{
+			margin-left:0;
+			border-radius:3px;
+			padding:0 5px;
+		}
+		.floor .info .tips span{
+			padding-right:20px;
+		}
+		.tool{
+			text-align: center;
+		}
+	}
+	
+}

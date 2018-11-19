@@ -1,0 +1,55 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog';
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+
+
+.help-item{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #f7f7f7;
+  padding-bottom: px2rem(32px);
+}
+.help-box{
+  padding-left: px2rem(35px);
+  padding-right: px2rem(32px);
+}
+.title{
+  font-size: px2rem(38px);
+  color: #36465d;
+  margin-top: px2rem(69px);
+}
+.item-title{
+  font-size: px2rem(38px);
+  color: #36465d;
+  margin-top: px2rem(69px);
+  text-align: center;
+}
+.item-explain{
+  margin-top: px2rem(60px);
+  font-size: px2rem(31px);
+  color: #36465d;
+  line-height: px2rem(60px);
+  span{
+    color: #5b99ee;
+  }
+}
+
+.item-question{
+  font-size: px2rem(38px);
+  color: #DF3C31;
+  margin-top: px2rem(69px);
+}
+.help-img{
+  width: px2rem(686px);
+  margin-bottom: px2rem(60px);
+  img{
+    width: px2rem(686px);
+    height: px2rem(1216px);
+  }
+}

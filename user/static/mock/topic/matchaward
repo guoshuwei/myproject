@@ -1,0 +1,20 @@
+{
+    "code": 200,
+    "message": "Success.",
+    "data":
+            {
+                "id": "971116",
+                "aid": "6900",
+                "hid": "1",
+                "topic_type": "7",
+                "award_type": "22",
+                "uname": "znz",
+                "uid": "201903",
+                "create_time": "2016-11-17 10:50:19",
+                "award_name": "现金红包0.06元",
+                "code_key": null,
+                "supplier_name": "网贷天眼",
+                "supplier_url": "www.p2peye.com",
+                "award_level": "6"
+            }
+}

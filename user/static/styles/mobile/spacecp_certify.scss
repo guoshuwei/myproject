@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog';
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+@import '../inc/footer-mobile';
+@import '../mod/common-list';
+
+
+.content-form{
+  display: block;
+}
+.form-list{
+  margin: px2rem(32px) 0;
+  padding-left: px2rem(32px);
+  background-color: #fff;
+}
+.form-item{
+  height: px2rem(104px);
+  line-height: px2rem(104px);
+}
+.form-item+.form-item{
+  border-top: 1px solid #e9e9e9;
+}
+.form-item-title{
+  float: left;
+  width: px2rem(190px);
+  font-size: px2rem(32px);
+  color: #404040;
+}
+.form-item-input{
+  margin-top: px2rem(21px);
+  float: left;
+  width: px2rem(520px);
+  font-size: px2rem(32px);
+  height: px2rem(60px);
+  border: none;
+}
+.btn-box{
+  padding: 0 0 0 px2rem(32px);
+}
+.btn{
+  display: block;
+  float: left;
+  width: px2rem(326px);
+  height: px2rem(92px);
+  line-height: px2rem(92px);
+  border: 1px solid #ff7856;
+  color: #ff7856;
+  font-size: px2rem(36px);
+  text-align: center;
+  -webkit-border-radius: px2rem(6px);
+  -moz-border-radius: px2rem(6px);
+  border-radius: px2rem(6px);
+}
+.btn+.btn{
+  margin-left: px2rem(32px);
+}
+.btn-a{
+  width: px2rem(322px);
+  height: px2rem(88px);
+  border: 1px solid #ff7856;
+  color: #ff7856;
+}
+.btn-b{
+  border: 1px solid #ff7856;
+  color: #fff;
+  background-color: #ff7856;
+}
+.btn.disabled{
+  background-color: #ccc;
+  border-color: #ccc;
+}
+
+
+
+
+
+
+
+
+.content-success{
+  display: none;
+}
+.success-icon{
+  display: block;
+  width: px2rem(148px);
+  height: px2rem(148px);
+  margin: px2rem(96px) auto px2rem(32px);
+  background-image: url(/styles/images/member/mobile/success.png);
+  background-size: px2rem(148px) px2rem(148px);
+}
+.success-tips{
+  display: block;
+  height: px2rem(50px);
+  line-height: px2rem(50px);
+  font-size: px2rem(36px);
+  color: #404040;
+  text-align: center;
+}
+.success-btn{
+  display: block;
+  margin: px2rem(66px) auto 0;
+  height: px2rem(92px);
+  width: px2rem(360px);
+  -webkit-border-radius: px2rem(6px);
+  -moz-border-radius: px2rem(6px);
+  border-radius: px2rem(6px);
+  border: 1px solid #ff7856;
+  color: #ff7856;
+  font-size: px2rem(36px);
+  line-height: px2rem(92px);
+  text-align: center;
+}

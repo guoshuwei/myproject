@@ -1,0 +1,25 @@
+@charset "UTF-8";
+//layout
+.container-fluid {
+  @include container-fixed;
+}
+.row {
+  @include make-row;
+}
+@include make-grid-columns;
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+@include make-grid(xs);
+
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: $screen-sm-min) {
+  @include make-grid(sm);
+}

@@ -1,0 +1,507 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/grid';
+
+html{
+	background-color:#a2d63c;
+}
+.template_olympic{
+	background-color:#a2d63c;
+}
+.qt-w750{
+	width:px2rem(750px);
+	margin:0 auto;
+}
+.olympic_banner{
+	width:px2rem(750px);
+	height:px2rem(580px);
+	img{
+		display:block;
+		width:px2rem(750px);
+		height:px2rem(580px);
+	}
+}
+.mainbg{
+	width:px2rem(750px);
+	height:px2rem(1115px);
+	.mainbgh5{
+		width:px2rem(750px);
+		height:px2rem(1115px);
+		left:0;
+		top:0;
+	}
+	.startgo{
+		width:px2rem(242px);
+		height:px2rem(109px);
+		left:px2rem(254px);
+		top:px2rem(-38px);
+	}
+	.canclick{
+		background:url("/styles/images/topic/olympic/startgobgh5_green.png") 0 0 no-repeat;
+		background-size: px2rem(242px) px2rem(109px);
+	}
+	.noclick{
+		background:url("/styles/images/topic/olympic/startgobgh5_grey.png") 0 0 no-repeat;
+		background-size: px2rem(242px) px2rem(109px);
+	}
+	.cango{
+		width:px2rem(270px);
+		height:px2rem(35px);
+		left:px2rem(230px);
+		top:px2rem(80px);
+		font-size:px2rem(28px);
+		color:#00a651;
+		font-weight:bold;
+		line-height:26px;
+		text-align:center;
+		em{
+			color:#e95f54;
+		}
+	}
+	.gotext{
+		width:px2rem(242px);
+		height:px2rem(40px);
+		left:px2rem(244px);
+		top:px2rem(115px);
+		text-align:center;
+		font-size:px2rem(24px);
+		line-height:px2rem(40px);
+		color:#333;
+	}
+	.start{
+		width:px2rem(50px);
+		height:px2rem(40px);
+		left:px2rem(498px);
+		top:px2rem(124px);
+	}
+	.firstStep{
+		width:px2rem(120px);
+		height:px2rem(100px);
+		left:px2rem(450px);
+		top:px2rem(164px);
+	}
+	.secondStep{
+		width:px2rem(32px);
+		height:px2rem(32px);
+		left:px2rem(380px);
+		top:px2rem(267px);
+	}
+	.thirdStep{
+		width:px2rem(32px);
+		height:px2rem(32px);
+		left:px2rem(323px);
+		top:px2rem(355px);
+	}
+	.fourthStep{
+		width:px2rem(120px);
+		height:px2rem(100px);
+		left:px2rem(410px);
+		top:px2rem(368px);
+	}
+	.fifthStep{
+		width:px2rem(32px);
+		height:px2rem(32px);
+		left:px2rem(546px);
+		top:px2rem(542px);
+	}
+	.sixthStep{
+		width:px2rem(32px);
+		height:px2rem(32px);
+		left:px2rem(463px);
+		top:px2rem(586px);
+	}
+	.sevenStep{
+		width:px2rem(32px);
+		height:px2rem(32px);
+		left:px2rem(336px);
+		top:px2rem(554px);
+	}
+	.eighthStep{
+		width:px2rem(32px);
+		height:px2rem(32px);
+		left:px2rem(252px);
+		top:px2rem(643px);
+	}
+	.ninthStep{
+		width:px2rem(120px);
+		height:px2rem(100px);
+		left:px2rem(86px);
+		top:px2rem(675px);
+	}
+	.tenthStep{
+		width:px2rem(32px);
+		height:px2rem(32px);
+		left:px2rem(121px);
+		top:px2rem(852px);
+	}
+	.eleventhStep{
+		width:px2rem(32px);
+		height:px2rem(32px);
+		left:px2rem(250px);
+		top:px2rem(886px);
+	}
+	.twelfthStep{
+		width:px2rem(32px);
+		height:px2rem(32px);
+		left:px2rem(376px);
+		top:px2rem(856px);
+	}
+	.thirteenthStep{
+		width:px2rem(32px);
+		height:px2rem(32px);
+		left:px2rem(524px);
+		top:px2rem(828px);
+	}
+	.fourteenthStep{
+		width:px2rem(32px);
+		height:px2rem(32px);
+		left:px2rem(576px);
+		top:px2rem(918px);
+	}
+	.end{
+		width:px2rem(120px);
+		height:px2rem(100px);
+		left:px2rem(518px);
+		top:px2rem(1000px);
+	}
+	.nogo{
+		background:url("/styles/images/topic/olympic/nogo.png") center bottom no-repeat;
+		cursor:pointer;
+		background-size: px2rem(20px) px2rem(31px);
+	}
+	.goby{
+		background:url("/styles/images/topic/olympic/goby.png") center bottom no-repeat;
+		background-size: px2rem(28px) px2rem(29px);
+	}
+	.moneybag{
+		cursor:pointer;
+		background:url("/styles/images/topic/olympic/moneybag.png") center bottom no-repeat;
+		background-size: px2rem(108px) px2rem(71px);
+	}
+	.money8{
+		background:url("/styles/images/topic/olympic/money8.png") center bottom no-repeat;
+		background-size: px2rem(120px) px2rem(100px);
+	}
+	.money18{
+		background:url("/styles/images/topic/olympic/money18.png") center bottom no-repeat;
+		background-size: px2rem(120px) px2rem(100px);
+	}
+	.money38{
+		background:url("/styles/images/topic/olympic/money38.png") center bottom no-repeat;
+		background-size: px2rem(120px) px2rem(100px);
+	}
+	.money88{
+		background:url("/styles/images/topic/olympic/money88.png") center bottom no-repeat;
+		background-size: px2rem(120px) px2rem(100px);
+	}
+	.xtian{
+		width:px2rem(60px);
+		height:px2rem(93px);
+		img{
+			width:px2rem(60px);
+			height:px2rem(93px);
+		}
+	}
+	.people{
+		width:px2rem(60px);
+		height:px2rem(93px);
+		z-index:100;
+		//-webkit-transition: all 1s linear;
+		//-moz-transition: all 1s linear;
+		//transition: all 1s linear;
+	}
+	.going0{
+		left:px2rem(494px);
+		top:px2rem(60px);
+	}
+	.going1{
+		left:px2rem(480px);
+		top:px2rem(168px);
+	}
+	.going2{
+		left:px2rem(364px);
+		top:px2rem(204px);
+	}
+	.going3{
+		left:px2rem(306px);
+		top:px2rem(296px);
+	}
+	.going4{
+		left:px2rem(442px);
+		top:px2rem(372px);
+	}
+	.going5{
+		left:px2rem(532px);
+		top:px2rem(480px);
+	}
+	.going6{
+		left:px2rem(448px);
+		top:px2rem(526px);
+	}
+	.going7{
+		left:px2rem(320px);
+		top:px2rem(494px);
+	}
+	.going8{
+		left:px2rem(240px);
+		top:px2rem(584px);
+	}
+	.going9{
+		left:px2rem(116px);
+		top:px2rem(678px);
+	}
+	.going10{
+		left:px2rem(108px);
+		top:px2rem(790px);
+	}
+	.going11{
+		left:px2rem(238px);
+		top:px2rem(826px);
+	}
+	.going12{
+		left:px2rem(360px);
+		top:px2rem(794px);
+	}
+	.going13{
+		left:px2rem(508px);
+		top:px2rem(770px);
+	}
+	.going14{
+		left:px2rem(566px);
+		top:px2rem(858px);
+	}
+	.going15{
+		left:px2rem(548px);
+		top:px2rem(1004px);
+	}
+}
+.rankbg{
+	width:px2rem(750px);
+	height:px2rem(286px);
+	background:url("/styles/images/topic/olympic/rankbgh5.png") center bottom no-repeat;
+	background-size: px2rem(750px) px2rem(286px);
+	.ranking{
+		width:px2rem(310px);
+		height:px2rem(150px);
+		left:px2rem(348px);
+		top:px2rem(70px);
+		li{
+			height:px2rem(50px);
+			line-height:px2rem(50px);
+			padding-left:px2rem(18px);
+			color:#333;
+			font-size:px2rem(24px);
+			font-weight:bold;
+		}
+		span{
+			padding-right:px2rem(32px);
+			color:#e95f54;
+		}
+	}
+}
+.mod-olympic{
+	width:px2rem(750px);
+	margin:0 auto;
+	padding-top:px2rem(14px);
+	padding-bottom:px2rem(50px);
+	.hd{
+		.inner{
+			height:px2rem(131px);
+			img{
+				display:block;
+				width:px2rem(440px);
+				height:px2rem(131px);
+				margin:0 auto;
+			}
+		}
+		.tip{
+			height:px2rem(42px);
+			padding-bottom:px2rem(20px);
+			text-align:center;
+			color:#fff;
+			font-size:px2rem(34px);
+			line-height:px2rem(42px);
+		}
+		.empty{
+			height:px2rem(20px);
+		}
+		
+	}
+	.bd{
+		padding-top:px2rem(25px);
+		padding-right:px2rem(30px);
+		padding-bottom:px2rem(25px);
+		padding-left:px2rem(30px);
+		background-color:#6ebd36;
+		border-radius:px2rem(20px);
+		width:px2rem(660px);
+		margin:0 auto;
+	}
+	.power_plat{
+		width:px2rem(620px);
+		padding-top:px2rem(15px);
+		padding-right:px2rem(20px);
+		padding-left:px2rem(20px);
+		position:relative;
+		.prev,.next{
+			position:absolute;
+			width:px2rem(61px);
+			height:px2rem(120px);
+			top:px2rem(90px);
+			display:none;
+		}
+		.prev{
+			left:px2rem(-30px);
+			background:url("/styles/images/topic/olympic/prev.png") 0 0 no-repeat;
+			background-size: px2rem(61px) px2rem(120px);
+		}
+		.next{
+			right:px2rem(-30px);
+			background:url("/styles/images/topic/olympic/next.png") 0 0 no-repeat;
+			background-size: px2rem(61px) px2rem(120px);
+		}
+		.ulist{
+			width:px2rem(620px);
+			height:px2rem(300px);
+			overflow:hidden;
+		}
+		ul{
+			height:px2rem(300px);
+			width:px2rem(1320px);
+			margin-left:0;
+			-webkit-transition: all 0.25s ease-in-out;
+	        -moz-transition: all 0.25s ease-in-out;
+	        transition: all 0.25s ease-in-out;
+		}
+		ul.marginleft{
+			margin-left:px2rem(-660px);
+		}
+		li{
+			float:left;
+			width:px2rem(180px);
+			height:px2rem(300px);
+			margin-right:px2rem(40px);
+			img{
+				display:block;
+				width:px2rem(180px);
+				height:px2rem(120px);
+				margin-bottom:px2rem(30px);
+			}
+		}
+	}
+	.rule_plat{
+		li{
+			width:100%;
+			padding-bottom:px2rem(36px);
+		}
+		span{
+			width:px2rem(31px);
+			height:px2rem(33px);
+			padding-left:px2rem(5px);
+			padding-right:px2rem(5px);
+			float:left;
+			img{
+				width:px2rem(31px);
+				height:px2rem(33px);
+			}
+		}
+		p{
+			float:left;
+			line-height:px2rem(34px);
+			color:#fff;
+			font-size:px2rem(24px);
+			width:px2rem(610px);
+		}
+	}
+	
+}
+.olympic_foot{
+	padding-top:px2rem(20px);
+	padding-right:px2rem(20px);
+	padding-bottom:px2rem(20px);
+	padding-left:px2rem(20px);
+	background-color:#00a660;
+	.left{
+		float:left;
+		border-right:px2rem(2px) solid #7fd2af;
+		img{
+			vertical-align:middle;
+			width:px2rem(64px);
+			height:px2rem(51px);
+			margin-right:px2rem(10px);
+		}
+	}
+	.right{
+		float:right;
+		img{
+			vertical-align:middle;
+			width:px2rem(47px);
+			height:px2rem(51px);
+			margin-right:px2rem(10px);
+		}
+	}
+	.main{ 
+		width:px2rem(354px);
+		height:px2rem(54px);
+		text-align:center;
+		font-size:px2rem(24px);
+		line-height:px2rem(54px);
+		color:#fff;
+	}
+}
+.popup-box{
+	position:fixed;
+	z-index:100;
+	left:0;
+	bottom:0;
+	height:0;
+	overflow:hidden;
+	background-color:#383838;
+	-webkit-transition: height 0.25s ease-in-out;
+	-moz-transition: height 0.25s ease-in-out;
+	transition: height 0.25s ease-in-out;
+	.box{
+		padding-top:px2rem(46px);
+		padding-right:px2rem(60px);
+		padding-bottom:px2rem(40px);
+		padding-left:px2rem(60px);
+	}
+	.inner{
+		padding-bottom:px2rem(60px);
+		padding-left:px2rem(10px);
+		padding-right:px2rem(10px);
+		line-height:px2rem(48px);
+		font-size:px2rem(30px);
+		color:#fff;
+	}
+	.btnbox{
+		span{
+			width:px2rem(500px);
+			height:px2rem(80px);
+			line-height:px2rem(80px);
+			border-radius:px2rem(10px);
+			display:block;
+			margin:0 auto;
+			font-size:px2rem(26px);
+			font-weight:bold;
+			text-align:center;
+			margin-bottom:px2rem(24px);
+		}
+		.top{
+			background-color:#e95f54;
+			color:#fff;
+		}
+		.btm{
+			background-color:#fff;
+			color:#e95f54;
+		}
+	}
+}
+
+
+
+
+
+

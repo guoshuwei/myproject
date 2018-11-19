@@ -1,0 +1,333 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../inc/site-nav-ty';
+@import '../inc/header';
+@import '../inc/header-ty';
+@import '../inc/footer';
+@import '../mod/floatlayer';
+
+.crumbs{
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  color: #999;
+}
+.crumbs-link{
+  color: #999;
+}
+.crumbs-arrow{
+  margin: 0 2px;
+}
+
+
+.preview-wrap{
+  padding: 50px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.preview{
+  padding-right: 45px;
+  border-right: 2px solid #f4f4f4;
+}
+.preview-img{
+  height: 300px;
+  width: 300px;
+
+}
+.info-wrap{
+  padding-left: 40px;
+  width: 710px;
+}
+.info-title{
+  display: block;
+  margin-top: 15px;
+  height: 24px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+.info-desc{
+  display: block;
+  height:40px;
+  line-height: 20px;
+  color: #999;
+  font-size: 12px;
+  overflow: hidden;
+}
+.info-item{
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  color: #666;
+}
+.info-item-key{
+  display: block;
+  float: left;
+  margin-right: 15px;
+
+}
+.info-price{
+  display: block;
+  float: left;
+  height: 45px;
+}
+.info-price-red{
+  font-size: 20px;
+  color: #ff3141;
+}
+.info-itrm-getnumber{
+  display: block;
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  width: 145px;
+  border: 1px solid #eee;
+  color: #666;
+  margin-top: 7px;
+  font-size: 14px;
+
+
+}
+.info-itrm-getnumber-sub,.info-itrm-getnumber-add{
+  display: block;
+  float: left;
+  width: 29px;
+  text-align: center;
+}
+.info-itrm-getnumber-number{
+  display: block;
+  float: left;
+  width: 85px;
+  text-align: center;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.get-btn{
+  display: block;
+  height: 36px;
+  width: 145px;
+  margin-top: 30px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background-color: #ff3141;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  transition: all .2s ease-out;
+  cursor: pointer;
+}
+.get-btn:hover{
+  background-color: #f4242e;
+}
+.get-btn.disabled{
+  cursor: default;
+  background-color: #999;
+}
+.get-btn.disabled:hover{
+  background-color: #999;
+}
+.section-wrap{
+  background-color: #fff;
+}
+
+
+.title-box{
+  height: 60px;
+  background-color: #f7f7f7;
+}
+.title-left{
+  float: left;
+  padding: 0 20px;
+  border-top: 4px solid #ff3141;
+  height: 56px;
+  line-height: 56px;
+  color: #ff3141;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #fff;
+}
+.rule-box{
+  padding: 40px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #666;
+}
+.rule-little-title{
+  color: #333;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+
+/* 兑换弹窗 start */
+.exchange-float{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 100;
+}
+.exchange-float-mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=60);
+}
+.exchange-float-main{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -180px 0 0 -250px;
+  width: 500px;
+  height: 360px;
+  background-color: #fff;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.address-float .exchange-float-main{
+  margin: -140px 0 0 -250px;
+  height: 280px;
+}
+.exchange-title{
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #2f3245;
+}
+.exchange-title-word{
+  padding-left: 15px;
+
+}
+.exchange-exit{
+  float: right;
+  margin: 14px 15px 0 0;
+  height: 12px;
+  width: 12px;
+  background-image: url(/styles/images/club/club-icon.png);
+  background-position: -75px 0;
+  @include ratioBackground($url:'/styles/images/club/club-icon-2x.png', $size: 500px 500px, $x:-75px, $y:0px);
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.exchange-exit:hover{
+  transform: rotate(90deg);
+}
+.exchange-do{
+  padding: 30px 40px 40px;
+}
+.exchange-tips{
+  display: block;
+  text-align: center;
+  padding-top: 15px;
+  line-height: 38px;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+}
+.exchange-tips-red{
+  color: #ff3141;
+  font-weight: bold;
+}
+.exchange-tips-gray{
+  display: block;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 20px;
+}
+.exchange-tips-ellispe {
+  width: 420px;
+  @include text-ellipsis;
+}
+.exchange-tips-address {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 60px;
+  height: 20px;
+  line-height: 20px;
+  a {
+    color: #0099ee;
+    &:hover {
+      text-decoration: underline;
+      color: #ff3141;
+    }
+  }
+}
+.exchange-btns{
+  width: 280px;
+  margin: 0 auto;
+}
+.exchange-btn-red{
+  float: left;
+  height: 38px;
+  width: 115px;
+  line-height: 38px;
+  color: #fff;
+  background-color: #ff3141;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #ff3141;
+  font-size: 14px;
+  transition: all .2s ease-out;
+  cursor: pointer;
+}
+.exchange-btn-red:hover{
+  background-color: #f4242e;
+  text-decoration: none;
+}
+.exchange-btn-red.disabled{
+  cursor: default;
+  background-color: #999;
+  border-color: #999;
+}
+.exchange-btn-red.disabled:hover{
+  background-color: #999;
+  border-color: #999;
+  text-decoration: none;
+}
+.exchange-btn{
+  float: right;
+  height: 38px;
+  width: 115px;
+  line-height: 38px;
+  color: #ff3141;
+  background-color: #fff;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #ff3141;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+.exchange-btn:hover{
+  background-color: #f4242e;
+  border-color: #f4242e;
+  color: #fff;
+  text-decoration: none;
+}
+/* 兑换弹窗 end */

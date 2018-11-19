@@ -1,0 +1,364 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';    
+@import '../inc/ui';      
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/footer';    
+@import '../mod/bind';
+@import '../mod/floatlayer';
+    
+body{
+    background: #f7fdfb url(/styles/images/topic/xtyyh/pc/gonglue-bg.png) no-repeat center 36px;
+}    
+.page_section{
+    padding: 0;
+}
+a:hover{
+    text-decoration: none;
+}
+.qt-ml30{
+    margin-left: 30px;
+}  
+.ui-gohome{
+    margin-top: 290px;
+    line-height: 40px;
+    .ui-gohome-back{
+        float: left;
+        margin-left: 435px;
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        border-radius: 5px;
+        background-color: #649130;
+        @include fadein(0.25s);
+        &:hover{
+            @include fadein(0.25s);
+            text-decoration: none;
+            background-color: #e69748;
+        }
+    }
+    .ui-gohome-login{
+        float: left;
+        margin-left: 30px;
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        border-radius: 5px;
+        background-color: #e69748;
+        @include fadein(0.25s);
+        &:hover{
+            @include fadein(0.25s);
+            text-decoration: none;
+            background-color: #649130;
+        }
+    }
+}
+.ui-gonglue{
+    position: relative;
+    margin: 30px auto 0;
+    a{
+        display: block;
+    }
+}
+.ui-gonglue-item{
+    width: 585px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    a{
+        padding: 40px;
+        width: 505px;
+        height: 220px;
+        @include fadein(0.25s);
+    }
+    &:hover{       
+        a{
+            @include fadein(0.25s);
+            @include scale;
+        }
+    }
+}
+.ui-gonglue-box{
+    width: 585px;
+    height: 300px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.ui-gonglue-body{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+    line-height: 30px;
+    text-indent: 36px;
+}
+.ui-gonglue-balloon{
+    background-color: #b8d794;
+    a{
+        background: url(/styles/images/topic/xtyyh/pc/gonglue-balloon.png) no-repeat 370px 170px;
+    }
+    
+}
+.ui-gonglue-balloon-title{
+    font-size: 48px;
+    color: #4a6828;
+    line-height: 50px;
+    text-align: center;
+    font-family: Microsoft Yahei;
+}
+.ui-gonglue-balloon-btn{
+    display: block;
+    margin-top: 55px;
+    width: 153px;
+    height: 51px;
+    line-height: 51px;
+    text-align: center;
+    background-color: #649130;
+    border-radius: 26px;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 0 -4px 0 #4a6828 inset;
+}
+.ui-gonglue-loans{
+    background-color: #ffaaa0;
+    a{
+        background: url(/styles/images/topic/xtyyh/pc/gonglue-loans.png) no-repeat 400px 170px;
+    }
+    
+}
+.ui-gonglue-loans-title{
+    font-size: 48px;
+    color: #4a6828;
+    line-height: 50px;
+    text-align: center;
+    font-family: Microsoft Yahei;
+}
+.ui-gonglue-loans-btn{
+    display: block;
+    margin-top: 55px;
+    margin-left: 95px;
+    width: 153px;
+    height: 51px;
+    line-height: 51px;
+    text-align: center;
+    background-color: #f4503d;
+    border-radius: 26px;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 0 -4px 0 #df3b28 inset;
+}
+.ui-gonglue-slotmachines{
+    background-color: #7ce7c3;
+    a{
+        background: url(/styles/images/topic/xtyyh/pc/gonglue-slotmachines.png) no-repeat 370px 170px;
+    } 
+}
+.ui-gonglue-slotmachines-title{
+    font-size: 48px;
+    color: #4a6828;
+    line-height: 50px;
+    text-align: center;
+    font-family: Microsoft Yahei;
+}
+.ui-gonglue-slotmachines-btn{
+    display: block;
+    margin-top: 55px;
+    width: 153px;
+    height: 51px;
+    line-height: 51px;
+    text-align: center;
+    background-color: #05c685;
+    border-radius: 26px;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 0 -4px 0 #039463 inset;
+}
+.ui-gonglue-throwingeggs{
+    background-color:  #ffcb97;
+    a{
+        background: url(/styles/images/topic/xtyyh/pc/gonglue-throwingeggs.png) no-repeat 400px 170px;
+    }
+    
+}
+.ui-gonglue-throwingeggs-title{
+    font-size: 48px;
+    color: #4a6828;
+    line-height: 50px;
+    text-align: center;
+    font-family: Microsoft Yahei;
+}
+.ui-gonglue-throwingeggs-btn{
+    display: block;
+    margin-left: 95px;
+    margin-top: 55px;
+    width: 153px;
+    height: 51px;
+    line-height: 51px;
+    text-align: center;
+    background-color: #e69748;
+    border-radius: 26px;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 0 -4px 0 #b8722b inset;
+}
+.ui-gonglue-licai{
+    position: absolute;
+    top:178px;
+    left: 418px;
+    width: 357px;
+    height: 304px;
+    background: url(/styles/images/topic/xtyyh/pc/gonglue-licai.png) no-repeat 0 0;
+    @include fadein(0.25s);
+    &:hover{
+        @include fadein(0.25s);
+        @include scale;
+    }
+}
+.ui-remind{
+    margin-top: 10px;
+    padding: 15px 25px 15px 45px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+.ui-remind-title{
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    line-height: 60px;
+}
+.ui-remind-list{
+    list-style: decimal;
+    font-size: 18px;
+    color: #000;
+    line-height: 30px;
+}
+.ui-remind-list-item{
+    list-style: decimal;
+    a{
+        color: #f4503d;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.ui-plat{
+    padding: 0 12px;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: #7ce7c3;
+}
+.ui-plat-title{
+    padding: 15px 0 0 0;
+    font-weight: bold;
+    font-size: 36px;
+    color: #3b896f;
+    line-height: 65px;
+    text-align: center;
+}
+.ui-plat-remind{
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 16px;
+    color: #3b896f;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.ui-plat-remind-left,
+.ui-plat-remind-right{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    width: 75px;
+    height: 20px;
+    background-image: url(/styles/images/topic/xtyyh/pc/gonglue-line.png);
+    background-repeat: no-repeat;
+}
+.ui-plat-remind-left{
+    margin-right: 10px;
+    background-position: 0 6px;
+}
+.ui-plat-remind-right{
+    margin-left: 10px;
+    background-position: -75px 6px;
+}
+.ui-notice{
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    color: #383838;
+}
+.ui-plat-list-item{
+    float: left;
+    margin: 0 18px 38px;
+    width: 160px;
+    height: 110px;
+    border-radius: 10px;
+    background-color: #fff;
+    a{
+        display: block;
+        width: 160px;
+        height: 110px;
+        line-height: 110px;
+        vertical-align: middle;
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden;
+        &:hover{
+            img{
+                @include fadein(0.25s);
+                @include scale;
+            }
+        }
+    }
+
+    img{
+        max-width: 150px;
+        max-height: 100px;
+        border-radius: 10px;
+        _height:110px;
+        line-height: 110px;
+        vertical-align: middle;
+        @include fadein(0.25s);
+    }
+}
+  
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

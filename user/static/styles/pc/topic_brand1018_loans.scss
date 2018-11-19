@@ -1,0 +1,362 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/header';
+@import '../inc/footer';
+
+body{
+    background: #202123 url(/styles/images/topic/brand1018/pc/background_loans.png) no-repeat center 40px;
+}
+
+.page_section{
+    width: 1208px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    height: 850px
+}
+.mod-floatlayer{
+    display: none;
+}
+
+/* hotloans start*/
+.ui-brand18-hotloan{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 410px;
+}
+.ui-hotloan-season{
+    float: left;
+}
+.ui-hotloan-season-item{
+    width: 160px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+    color: #af3910;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+.ui-hotloan-season-item.current{
+    border: 5px solid #d82145;
+    background-color: #ffe210;
+    cursor: default;
+}
+.ui-hotloan-table{
+    float: right;
+    width: 1000px;
+}
+.ui-hotloan-table-item{
+    position: relative;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.ui-hotloans-tab{
+    position: absolute;
+    bottom: 0;
+    left: 84px;
+    width: 64px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px 3px 0 0;
+}
+.ui-hotloan-item11{
+    .ui-hotloans-tab{
+        background-color: #e53337;
+    }
+    .ui-hotloan-item-loans{
+        background-color: #e53337;
+    }
+}
+.ui-hotloan-item15{
+    .ui-hotloans-tab{
+        background-color: #f26b21;
+    }
+    .ui-hotloan-item-loans{
+        background-color: #f26b21;
+    }
+}
+
+.ui-hotloan-item-time{
+    position: absolute;
+    top: 0px;
+    right: 46px;
+    width: 80px;
+    height: 38px;
+    background: #fff;
+    border-radius: 0px 0px 5px 5px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 18px;
+    padding: 2px 0px 0px;
+    font-size: 13px;
+    color: #333;
+    strong{
+        display: block;
+        font-size: 14px;
+        line-height: 15px;
+        color: #333;
+    }
+}
+.ui-hotloan-item-box{
+    padding: 20px 0;
+    width: 230px;
+    height: 110px;
+}
+.ui-hotloan-item-logo{
+    display: block;
+    height: 50px;
+    text-align: center;
+    img{
+        max-height: 50px;
+        _height: 50px;
+        line-height: 50px;
+        vertical-align: middle;
+    }
+}
+.ui-hotloan-item-bg{
+    margin-top: 20px;
+    height: 20px;
+    text-align: center;
+    .ui-bg-item{
+        display: inline-block;
+        height: 18px;
+        line-height: 18px;
+        padding: 0 10px;
+        margin: 0 5px;
+        border-radius: 3px;
+        color: #2a3071;
+        border: 1px solid #c8cbe3;
+        font-size: 12px;
+    }
+}
+.ui-hotloan-item-loans{
+    float: left;
+    width: 770px;
+    height: 110px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    background-color: #fd6936;
+}
+.ui-hotloan-item-name{
+    line-height: 44px;
+    font-size: 20px;
+    color: #fff;
+    max-width: 202px;
+    margin-right: 18px;
+    @include text-ellipsis;
+    vertical-align: middle;
+    display: inline-block;
+}
+.ui-hotloan-item-notetag{
+    display: inline-block;
+    border-radius: 3px;
+    background: #fff;
+    height: 20px;
+    width: 125px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+    color: #333;
+    vertical-align: middle;
+}
+.ui-hotloan-item-list{
+    text-align: center;
+}
+.ui-hotloan-item-rate-num{
+    height: 50px;
+    font-weight: bold;
+    span{
+        font-size: 20px;
+    }
+    em{
+        font-size: 14px;
+        font-style: normal;
+    }
+    i{
+        font-size: 12px;
+        font-style: normal;
+    }
+}
+.ui-hotloan-item-note-name{
+    font-size: 13px;
+    line-height: 22px;
+    color: #fff;
+    
+}
+.ui-hotloan-item-rate-default{
+    float: left;
+    width: 120px;
+    line-height: 45px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+}
+.ui-hotloan-item-rate-add{
+    float: left;
+    width: 100px;
+    line-height: 45px;
+    font-size: 50px;
+    color: #fffc00;
+}
+.ui-hotloan-item-rate-symbol{
+    float: left;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 45px;
+    margin: 0 15px;
+}
+.ui-hotloan-item-deadline{
+    float: left;
+    width: 90px;
+    padding-top: 18px;
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+}
+.ui-hotloan-item-descript{
+    float: left;
+    padding-top: 18px;
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+}
+.ui-hotloan-item-btn{
+    float: right;
+    margin-right: 40px;
+    margin-top: 17px;
+    a{
+        display: block;
+        width: 120px;
+        height: 45px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 45px;
+        font-weight: bold;
+        color: #ed4337;
+        border-radius: 5px;
+        background-color: #fffc00;
+        @include fadein(0.25s);
+        &:hover{
+            text-decoration: none;
+            background-color: #e3e126;
+            @include fadein(0.25s);
+        }
+    }
+}
+.ui-hotloan-item-btned{
+    float: right;
+    margin-right: 40px;
+    margin-top: 17px;
+    a{
+        display: block;
+        width: 120px;
+        height: 45px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 45px;
+        font-weight: bold;
+        color: #999;
+        border-radius: 5px;
+        background-color: #e8e8e8;
+        cursor: default;
+    }
+}
+ 
+.ui-hotloan-item-timedown{
+    margin: 10px auto 0;
+    width: 233px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background: url(/styles/images/topic/brand718/pc/icons.png) no-repeat 0 -52px;
+    background-size: 350px 350px;
+}
+
+.ui-hotloan-item-rateadd-num{
+    width: 350px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 70px;
+    font-weight: bold;
+    color: #fffc00;
+    line-height: 72px;
+    strong{
+        font-size: 30px;
+        font-style: normal;
+        vertical-align: bottom;
+        line-height: 72px;
+    }
+    span{
+        font-size: 30px;
+        vertical-align: bottom;
+        line-height: 45px;
+    }
+    i{
+        font-size: 20px;
+        font-style: normal;
+        vertical-align: bottom;
+        line-height: 37px;
+    }
+}
+.ui-hotloan-item-rateadd-name{
+    width: 350px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 29px;
+    color: #fff;
+}
+.ui-hotloan-item-timedown-item{
+    display: inline-block;
+    width: 40px;
+    height: 66px;
+    font-size: 50px;
+    line-height: 66px;
+    margin: 0 4px;
+    border-radius: 5px;
+    background-color: #383838;
+    text-align: center;
+    color: #fff;
+    font-family: airil;
+}
+.ui-hotloan-item-timedown-symbol{
+    display: inline-block;
+    margin: 0 3px;
+    height: 66px;
+    line-height: 58px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #383838;
+    vertical-align: top;
+}
+.ui-hotloan-item-empty{
+    width: 100%;
+    text-align: center;
+    img{
+        height: 150px;
+    }
+}
+/* hotloans end*/
+.ui-hotloan-note{
+    font-size: 20px;
+    color: #333;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+

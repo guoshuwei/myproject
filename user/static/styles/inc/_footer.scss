@@ -1,0 +1,240 @@
+@import '../base/utils';
+.AQ__auth-fixed{
+	display:none;
+}
+.footer{
+	background:#474f59;
+	padding: 0px 0 20px 0;
+	color:#fff;
+	font-size:13px;
+  	overflow: hidden;
+	a{
+	  color:#ccc;
+	  font-size: 13px;
+	  &:hover {
+		color:#0099e5;
+	  }
+	}
+	.hd {
+	  padding:15px 0px 7px;
+	  width:1300px;
+	  .regyl {
+		position: absolute;
+		top:24px;
+		left:0px;
+		color:#0099e5;
+	  }
+	  .title {
+		float: left;
+		width: 75px;
+		color: #fff;
+		font-size: 13px;
+		position: relative;
+		line-height: 24px;
+	  }
+	  .bottom {
+		padding: 10px 0 14px 0;
+		position: relative;
+	  }
+	  .list {
+		float: left;
+		width:1190px;
+	  }
+	  .item {
+		float: left;
+		width:118px;
+		a {
+		  display: block;
+		  max-width: 80px;
+		  height: 24px;
+		  line-height: 24px;
+		  word-break: break-all;
+		  word-wrap: break-word;
+		  overflow: hidden;
+		  white-space: normal;
+		}
+	  }
+	}
+	.bd{
+	  padding: 15px 0 0px 0;
+	  border-left: 0;
+	  border-right: 0;
+	  .bd-lf {
+		float: left;
+		width: 480px;
+		padding: 0px 50px 0px 0px;
+	  }
+	  .bd-ct {
+		float: left;
+		width: 230px;
+		padding: 0px 110px 0px 0px;
+		.bd-body-item {
+		  width: 115px;
+		}
+	  }
+	  .bd-rt {
+		float: left;
+		width: 330px;
+		.bd-body-lf {
+		  float: left;
+		  padding: 2px 0px 0px;
+		  width: 210px;
+		  .text {
+			line-height: 30px;
+			font-size: 13px;
+			font-weight: bold;
+		  }
+		  .phone {
+			font-size: 24px;
+			color: #fff;
+			line-height: 24px;
+		  }
+		  .info {
+			padding: 2px 0px 0px;
+			height: 35px;
+		  }
+		}
+		.bd-body-rt {
+		  float: left;
+		  width:96px;
+		  text-align: center;
+		  padding:8px 0px 0px;
+		  .app_down {
+			width:96px;
+		  }
+		  .text {
+			font-size:13px;
+			line-height: 24px;
+		  }
+		}
+	  }
+	  .top {
+		height: 26px;
+	  }
+	  .bd-title {
+		height: 35px;
+		border-bottom: 1px solid #383838;
+	  }
+	  .bd-title-text {
+		border-bottom: 2px solid #0099e5;
+		font-size: 16px;
+		line-height: 34px;
+		color: #fff;
+		display: inline-block;
+	  }
+	  .bd-body {
+		padding: 10px 0px 0px;
+	  }
+	  .bd-body-item {
+		float: left;
+		width: 120px;
+		font-size: 13px;
+		line-height: 30px;
+		.dian {
+		  float: left;
+		  color:#ccc;
+		}
+		.link {
+		  float: left;
+		  color:#ccc;
+		  text-indent: 10px;
+		  &:hover {
+			color: #0099e5;
+		  }
+		}
+	  }
+	  .circus {
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		background:url("/styles/images/common/footer_icon.png") no-repeat;
+		@include ratioBackground($url:"/styles/images/common/footer_icon.png",$size:210px 75px);
+		margin-right: 20px;
+	  }
+	  .circus3 {
+		background-position: -136px 0;
+		@include ratioBackgroundPosition($x:-60px,$y:-35px);
+		position: relative;
+		&:hover {
+		  background-position: -359px 0px;
+		  @include ratioBackgroundPosition($x:-170px,$y:-35px);
+		}
+	  }
+	  .circus1{
+		background-position: -18px 0px;
+		@include ratioBackgroundPosition($x:0px,$y:-35px);
+		&:hover {
+		  background-position: -241px 0px;
+		  @include ratioBackgroundPosition($x:-110px,$y:-35px);
+		}
+	  }
+	}
+	.sevice{
+		font-size:12px;
+		line-height: 20px;
+		text-align: center;
+		padding:0px;
+		a {
+		  	color:#787878;
+		}
+		span {
+		  	padding-right: 20px;
+		}
+	}
+	.ft{
+	  padding:30px 0px 0px;
+		.bottom-nav{
+			/*
+			background:#383838;
+			*/
+			height: 40px;
+			line-height: 40px;	
+			text-align:center;
+			margin-bottom: 15px;
+			a{
+				color: #bdbdbd;
+				padding:0 15px;
+			}
+		}
+		p{
+			line-height: 20px;
+			text-align: center;
+			color: #ccc;
+			a{
+				color: #ccc;
+			}
+			.jbzx {
+			    background-color: #FFFFFF;
+			    border: 1px solid #DDDDDD;
+			    border-radius: 5px;
+			    line-height: 18px;
+			    height: 36px;
+			    overflow: hidden;
+			    padding: 0 2px;
+			    width: 90px;
+			    font-size: 12px;
+			    color: #6b6b6b;
+			    display: inline-block;
+			    *display: inline;
+			    *zoom:1;
+			    img{
+			    	float: left;
+				    width: 35px;
+				    vertical-align: middle;
+			    }
+			}
+
+		}
+	}
+	.weixin {
+		position: absolute;
+		top: 0;
+		right: -180px;
+		width: 172px;
+		height: 172px;
+		display: none;
+		img {
+			width:100%
+		}
+	}
+}

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/header';
+@import '../inc/member-header';
+@import '../inc/footer';
+@import '../mod/bind';
+@import '../mod/floatlayer';
+@import '../mod/activity';
+
+
+
+.qt-w{
+	padding-bottom:35px;
+}
+.mod-bind{
+	min-height:600px;
+	.hd{
+		height:240px;
+		background: #0080cc;
+		.title{
+			font-size: 30px;
+			font-weight: bold;
+			font-family: Microsoft YaHei;
+		}
+	}
+}

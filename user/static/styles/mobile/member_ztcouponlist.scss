@@ -1,0 +1,201 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils'; 
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog'; 
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+
+.page_section{
+    padding-bottom: px2rem(32px);
+}
+.ui-ztcouponlist-list-item{
+    position: relative;
+    margin: px2rem(32px) auto 0;
+    padding-top: px2rem(58px);
+    padding-left: px2rem(62px);
+    padding-right: px2rem(30px);
+    width: px2rem(594px);
+    height: px2rem(206px);
+    background: url(/styles/images/member/mobile/ztcouponlist-bg.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.ui-ztcouponlist-list-item-top{
+    line-height: px2rem(44px);
+    font-size: px2rem(32px);
+    color: #404040;
+}
+.ui-ztcouponlist-list-item-middle{
+    line-height: px2rem(40px);
+    font-size: px2rem(28px);
+    color: #9D9D9D;
+}
+.ui-ztcouponlist-list-item-bottom{
+    margin-top: px2rem(36px);
+}
+.ui-ztcouponlist-list-get{
+    float: left;
+    display: block;
+    height: px2rem(52px);
+    line-height: px2rem(52px);
+    font-size: px2rem(28px);
+    color: #9d9d9d;
+}
+.ui-ztcouponlist-list-money{
+    float: right;
+    font-size: px2rem(38px);
+    color: #2EB3E8;
+    line-height: px2rem(60px);
+    span{
+        font-size: px2rem(56px);
+    }
+}
+
+
+
+.ajax-style {
+    display:none;
+    position:absolute;
+    width:px2rem(686px);
+    height:px2rem(264px);
+    border-radius:px2rem(10px);
+    top:0;
+    left:0;
+    overflow: hidden;
+}
+.ajax-style .ajax-style-bg {
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.6;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter:alpha(opacity=60);
+}
+.ajax-style .ajax-style-main {
+    position:absolute;
+    top:px2rem(88px);
+    left:px2rem(128px);
+    height:px2rem(84px);
+    line-height:px2rem(84px);
+    color:#fff;
+}
+.ajax-style .ajax-style-main-symbol {
+    float:left;
+    width:px2rem(84px);
+    height:px2rem(84px);
+    background:url("/styles/images/member/member-int.png") 0 0 no-repeat;
+    background-size: px2rem(84px) px2rem(84px);
+    -webkit-animation:move 2s linear infinite;
+    -moz-animation:move 2s linear infinite;
+    -ms-animation:move 2s linear infinite;
+    animation:move 2s linear infinite;
+}
+@-webkit-keyframes move {
+    0% {
+        -webkit-transform:rotate(0deg);
+    }
+    50% {
+        -webkit-transform:rotate(-180deg);
+    }
+    100% {
+        -webkit-transform:rotate(-360deg);
+    }
+}
+@-moz-keyframes move {
+    0% {
+        -moz-transform:rotate(0deg);
+    }
+    50% {
+        -moz-transform:rotate(-180deg);
+    }
+    100% {
+        -moz-transform:rotate(-360deg);
+    }
+}
+@-ms-keyframes move {
+    0% {
+        -ms-transform:rotate(0deg);
+    }
+    50% {
+        -ms-transform:rotate(-180deg);
+    }
+    100% {
+        -ms-transform:rotate(-360deg);
+    }
+}
+@keyframes move {
+    0% {
+        transform:rotate(0deg);
+    }
+    50% {
+        transform:rotate(-180deg);
+    }
+    100% {
+        transform:rotate(-360deg);
+    }
+}
+.ajax-style .ajax-style-main-text {
+    padding-left:px2rem(40px);
+    font-size:px2rem(30px);
+    font-weight:bold;
+    float:left;
+}
+
+
+/* 跳转浮窗 */
+.ui-details-jump{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: px2rem(-145px) 0 0 px2rem(-270px);
+    width: px2rem(540px);
+    border-radius: px2rem(25px);
+    text-align: center;
+    background-color: rgba(248,248,248,0.82);
+    z-index: 999;
+}
+.ui-details-jump-top{
+    padding-top: px2rem(40px);
+    padding-bottom: px2rem(8px);
+    line-height: px2rem(46px);
+    font-size: px2rem(34px);
+    color: #000;
+}
+.ui-details-jump-middle{
+    padding: 0 px2rem(28px) px2rem(40px);
+    font-size: px2rem(26px);
+    color: #888;
+    line-height: px2rem(32px);
+}
+.ui-details-jump-bottom{
+    line-height: px2rem(88px);
+    border-top: px2rem(1px) solid #7f7f7f;
+}
+.ui-details-jump-cancel{
+    float: left;
+    width: 50%;
+    color: #007AFF;
+    font-size: px2rem(34px);
+    span{
+        display: block;
+        line-height: px2rem(88px);
+        border-right: px2rem(1px) solid #7f7f7f;
+    }
+}
+.ui-details-jump-confirm{
+    float: left;
+    width: 50%;
+    color: #007AFF;
+    font-size: px2rem(34px);
+}
+.card-item-lable{
+  width: px2rem(118px);
+  height: px2rem(110px);
+  background: url(../../styles/images/loans/mobile/double11.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

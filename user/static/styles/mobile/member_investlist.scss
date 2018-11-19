@@ -1,0 +1,102 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils'; 
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog'; 
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+
+.page_section{
+    padding-bottom: px2rem(32px);
+}
+.ui-investlist-tab-item{
+    float: left;
+    line-height: px2rem(88px);
+    text-align: center;
+    width: 50%;
+    font-size: px2rem(30px);
+    color: #404040;
+    background-color: #fff;
+    span{
+        display: block;
+        margin: px2rem(23px) 0;
+        height: px2rem(42px);
+        line-height: px2rem(42px);
+        border-right: px2rem(1px) solid #E9E9E9;
+    }
+    a{
+        display: block;
+        color: #404040;
+    }
+}
+.ui-investlist-tab-item.current{
+    a{
+        color: #5B99EE;
+    }
+}
+
+.ui-investlist-table-item{
+    margin-top: px2rem(32px);
+    height: px2rem(330px);
+    background-color: #fff;
+}
+
+.ui-investlist-table-item-icons{
+    float: left;
+    width: px2rem(38px);
+    padding: px2rem(44px) 0 0 px2rem(34px);
+}
+.ui-investlist-table-item-loans{
+    float: left;
+    padding-left: px2rem(26px);
+    .item-loans-platname{
+        width: px2rem(460px);
+        @include text-ellipsis;
+        padding-top: px2rem(44px);
+        padding-bottom: px2rem(26px);
+        line-height: px2rem(38px);
+        font-size: px2rem(30px);
+        color: #282828;
+    }
+    .item-loans-info{
+        line-height: px2rem(41px);
+        color: #bcbcbc;
+        span{       
+            color: #7A858D;
+        }
+    }
+}
+.ui-investlist-table-item-status{
+    float: right;
+    margin-top: px2rem(44px);
+    margin-right: px2rem(36px);
+    width: px2rem(100px);
+    height: px2rem(40px);
+    line-height: px2rem(40px);
+    border-radius: px2rem(200px);
+    text-align: center;
+    color: #fff;
+    font-size: px2rem(24px);
+}
+.ui-bg-ffa81a{
+    background-color: #ffa81a;
+}
+.ui-bg-508cee{
+    background-color: #508cee;
+}
+.ui-bg-c6c6c6{
+    background-color: #c6c6c6;
+}
+.ui-icons-money{
+    float: left;
+    width: px2rem(38px);
+    height: px2rem(38px);
+    margin-right: px2rem(20px);
+    background: url(/styles/images/common/mobile/icons.png) no-repeat px2rem(-219px) px2rem(-88px);
+    background-size: px2rem(358px) px2rem(209px);
+}
+.ui-font-ff401a{
+    font-style: normal;
+    color: #ff401a;
+}

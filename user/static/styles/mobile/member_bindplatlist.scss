@@ -1,0 +1,68 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils'; 
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog'; 
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+
+.page_section{
+    padding-bottom: px2rem(32px);
+}
+.ui-bindplatlist-total{
+    padding-right: px2rem(30px);
+    line-height: px2rem(60px);
+    text-align: right;
+    font-size: px2rem(24px);
+    color: #BCBCBC;
+}
+
+.ui-bindplatlist-list-item{
+    height: px2rem(200px);
+    margin-bottom: px2rem(26px);
+    border-left: px2rem(10px) solid #2EB3E8;
+    background-color: #fff;
+    overflow: hidden;
+    .item-platname{
+        display: block;
+        font-size: px2rem(32px);
+        color: #383838;
+        padding-top: px2rem(58px);
+        line-height: px2rem(44px);
+    }
+    .item-account{
+        display: block;
+        font-size: px2rem(24px);
+        color: #7A858D;
+        padding-top: px2rem(12px);
+        line-height: px2rem(34px);
+    }
+}
+.ui-bindplatlist-list-item-logo{
+    float: left;
+    width: px2rem(72px);
+    height: px2rem(200px);
+    line-height: px2rem(200px);
+    vertical-align: middle;
+    text-align: center;
+    margin-right: px2rem(30px);
+    img{
+        max-width: px2rem(72px);
+        line-height: px2rem(200px);
+        vertical-align: middle;
+    }
+}
+.ui-bindplatlist-list-item-platname{
+    float: left; 
+}
+.ui-bindplatlist-list-item-time{
+    float: right;
+    font-size: px2rem(24px);
+    color: #BDBDBD;
+    line-height: px2rem(34px);
+    padding: px2rem(58px) px2rem(28px) 0 0;
+}
+.ui-font-5f9fe5{
+    color: #5f9fe5;
+}

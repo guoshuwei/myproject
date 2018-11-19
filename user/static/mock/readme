@@ -1,0 +1,239 @@
+/ajax/getKillLoans
+    爆款标
+    参数:
+        position 整点时间（如10：00场次，则传值 10）
+    返回字段说明：
+        background: {} 平台背景
+        countdown: 距离可售目标时间秒差（不在时间范围内返回-1）
+        domain_body: "we"二级域名前缀
+        hot_rate_new: "3.00" 加息（新用户，现在爆款不区分新老用户都使用该字段）
+        hot_rate_old: "1.00" 加息（老用户）
+        hot_time_range: 距离停止销售目标时间秒差（不在时间范围内返回-1）
+        id: "209996" 标的id
+        is_hot: "1" 是否售罄（2已售罄）
+        logo: "/static/company/8486ab0a412f11cec08b426b67a524a2.jpg" logo（前加//:img.p2peye.com）
+        min_amount: "500.00" 投资限额（小极值）
+        name: "rrd17022701f" 标的名称
+        period: "5" 投资期限
+        period_type: "1" 投资期限单位（1月，否则天）
+        pname: "人人贷" 平台名
+        rate: "13.00" 年化收益率
+        up_amount: "10000.00"投资限额（大极值）
+        use_card_coupon: "1" 是否可以使用卡券（1可用）
+        is_hot_end_time: "1"是否启用停止销售目标时间（0未开启，1开启倒计时）
+        show_h5: "1"支持H5端投资，否则不支持
+    特殊说明：
+        hot_time_range为-1时，不考虑is_hot的值是否为已售罄状态,之间判定为已售罄
+        未配标之前接口数据如下:
+        {
+            "code":200,
+            "message":"Success.",
+            "data":{
+                "server_time":1495094546,
+                "countdown":-1,
+                "is_hot_end_time":0,
+                "hot_time_range":-1
+            }
+        }
+
+奖品对应type值
+    1  => '实物奖品',
+    20 => '谢谢参与',
+    21 => '卡密',
+    22 => '现金红包',
+    23 => '国家队勋章',
+    24 => '名次勋章',
+    25 => '游戏币',
+    26 => '金手锤',
+    27 => '拼图碎片',
+    28 => '卡券'
+    29 => '奖章'
+    缺少状态请查看
+    Library/TyLib/Award/Conf.php
+=======================小天游园会 start============================
+    /ajax/getKillLoans
+        小天园游会爆款标
+    /ajax/timedistance     post参数   position = 小时 minutes = 分钟
+        距离指定整点时间秒差
+    /topic/amusementgoods
+        小天园游会收货地址
+    /topic/balloon         post参数 bomb = 1 点击到炸弹  balloon = number（点击到的气球数量）
+        小天园游会扎气球异步请求奖品地址
+    /topic/balloonTimecheck
+        小天园游会扎气球有效游戏机会校验  返回200说明当前游戏有参加机会
+    /topic/getawardList
+        小天园游会全站中奖列表
+    /topic/getMyAward
+        小天园游会我的中奖纪录
+    /topic/getUserlotteryList   post参数 topc_type = 7
+        小天园游会我的游戏币
+    /topic/getUserlotteryList   post参数 topc_type = 4
+        小天园游会金锤获取记录   
+    /topic/recommendedloans
+        小天园游会爆款标已售罄重新请求8个随机标
+    /topic/slotmachines
+        小天园游会老虎机中奖结果，剩余抽奖机会
+    /topic/throwingeggs
+        小天园游会砸金蛋中奖结果，剩余抽奖机会
+=======================小天游园会 end==============================
+=======================2017-518理财 start=========================
+    /topic/getContact
+        获取收货地址
+        返回字段说明：
+            consignee :收件人
+            phone：手机号
+            address：详细地址
+            is_exist：是否可修改 1不可以 0可以
+            province：省
+            county：市
+            county：县/区
+            zip:邮政编码
+    /topic/myAwardlog
+        我的奖品
+        参数:
+            type（本次活动值固定为10）
+        返回字段说明：
+            award_name：奖品名称
+            uname：中奖用户名
+            award_type：奖品类型
+            create_time：中奖时间
+            supplier_name：奖品提供方
+            supplier_url：奖品提供网址
+    /topic/goodsreceipt
+        添加收货地址
+        参数：
+            consignee：收货人
+            phone：收货人电话
+            address：详细地址
+            province：省
+            city：市
+            county：县/区
+            zip：邮政编码
+        返回字段说明：
+            code ：200 成功，4100 未登录， 5140 缺少必要参数， 5140 失败请重试
+    /topic/myIntegral
+        我的积分详情
+        参数：
+            type (值固定为 1)
+        返回字段说明：
+            score：所得分数
+            create_time：得分时间
+            pathway：得分来源
+    /topic/verifycode
+        F码兑换
+        参数：
+            code
+    /topic/prizelist
+        获取兑奖奖品列表
+        返回字段说明
+            img : 奖品图片
+            award_name：奖品名称
+            supplier_name：奖品提供商
+            supplier_url：奖品提供商网址
+            conditions：兑换所需积分
+            start_time：开始兑换时间（如果没有兑换时间限制start_time为0）
+            show_award_num：配置显示数量
+            is_receive 1 已领取
+            award_num 小于 1  已领完
+    /topic/financialexchange
+        兑换奖品
+        请求参数：
+            prize_id (奖品ID)
+        返回字段说明：
+            img : 奖品图片
+            award_name：奖品名称
+            supplier_name：奖品提供商
+            supplier_url：奖品提供商网址
+            price：奖品价值（元）
+    /topic/card
+        获取平台专用卡券
+        返回字段：
+            num：已领取
+            total：总数
+            name：平台名称
+            online_time ：上线时间
+            background：平台背景标签（循环取出）
+            card:是否领取（0 未领取 1已领取）
+            bind：是否绑定平台（0 未绑定 1已绑定）
+    /topic/financialcard
+        领取卡券
+        请求参数：
+            pid(平台ID)
+    /topic/getpassword
+        获取天降红包
+        返回结果字段说明：
+            id：口令ID
+            answer：口令图片
+            id： 当前ID不可丢失在当用户选择某张图片时将图片对应ID提交到领取红包接口（answer中的id）
+            img ：图片地址
+    /topic/financialpacket
+        天降红包
+        请求结果：
+            结果1
+                {
+                    "code": 200,
+                    "message": "Success.",
+                    "data": {
+                        "id": "6948",
+                        "hid": "1",
+                        "img": "",
+                        "topic_type": "9",
+                        "probability": "0",
+                        "award_name": “55元红包",
+                        "award_type": "20",
+                        "award_level": "1",
+                        "award_num": "1",
+                        "create_time": "1486643619",
+                        "code_key": null,
+                        "supplier_name": "网贷天眼",
+                        "supplier_url": "http://www.p2peye.com/",
+                        "price": "0.00"
+                    }
+                }
+            结果2
+                {
+                    "code": 5194,
+                    "message": "Success.",
+                    "data": {
+                        "next_lien": “16"
+                    }
+                }
+        返回字段说明：
+            id： 奖品id
+            award_name：奖品名称
+            img     ：奖品图片 (前面需加http://img.p2peye.com)
+            price：奖品价值 （红包数额以此字段为准）
+            code码说明：
+            5183 已领取过 
+            5172 操作太快 
+            5194 下一时段再来(结果2)
+            5193 口令错误
+    /topic/myAwardlog
+        我的中奖纪录
+        返回字段说明：
+            create_time：获得时间
+            type_name：获得途径
+            num     ：获得数量
+    /topic/financialaward
+        活动三抽奖
+        返回字段说明：
+            id： 奖品id（红包固定为500）
+            award_name：奖品名称
+            img ：奖品图片 (前面需加http://img.p2peye.com)
+            price：奖品价值
+            ordinary：剩余抽奖次数
+=======================2017-518理财 end===========================
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,317 @@
+.ui-hotloan{
+    width: px2rem(700px);
+    height: px2rem(760px);
+    margin: 0 auto;
+    text-align: center;
+    .swiper-slide{
+        width: px2rem(700px);
+    }
+}
+
+.ui-hotloan-top{
+    height: px2rem(290px);
+    border-bottom: 2px solid #a4a1ae;
+}
+.ui-hotloan-bottom{
+    border-radius: 0 0 px2rem(20px) px2rem(20px);
+    height: px2rem(460px);
+    background:#a43dff; /* 一些不支持背景渐变的浏览器 */  
+    background:-moz-linear-gradient(top, #a43dff, rgba(136,0,255,1));  
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#a43dff), to(rgba(136,0,255,1)));  
+    background:-o-linear-gradient(top, #a43dff, rgba(136,0,255,1)); 
+}
+.ui-hotloan-note{
+    font-size: px2rem(22px);
+    color: #fff;
+    line-height: px2rem(40px);
+    text-align: center;
+}
+.ui-hotloan-item{
+    position: relative;
+    height: px2rem(750px) !important;
+    width: px2rem(680px);
+    margin: px2rem(10px) px2rem(10px) 0;
+    border-radius: px2rem(20px);
+    background-color: #fff; 
+}
+.ui-hotloan-item-tag11{
+    position: absolute;
+    top: px2rem(-9px);
+    left: px2rem(-9px);
+    width: px2rem(170px);
+    height: px2rem(170px);
+    background: url(/styles/images/topic/brand818/mobile/icons.png) no-repeat px2rem(-423px) px2rem(-73px);
+    background-size: px2rem(700px) px2rem(700px);
+}
+.ui-hotloan-item-tag15{
+    position: absolute;
+    top: px2rem(-9px);
+    left: px2rem(-9px);
+    width: px2rem(170px);
+    height: px2rem(170px);
+    background: url(/styles/images/topic/brand818/mobile/icons.png) no-repeat px2rem(-423px) px2rem(-266px);
+    background-size: px2rem(700px) px2rem(700px);
+}
+.ui-hotloan-item-time{
+    position: absolute;
+    right: px2rem(30px);
+    top: 0;
+    width: px2rem(100px);
+    height: px2rem(58px);
+    padding-top: px2rem(4px);
+    border-radius: 0 0 px2rem(10px) px2rem(10px); 
+    color: #fff;
+    font-size: px2rem(20px);
+    line-height: px2rem(25px);
+    text-align: center;
+    background-color: #4d569d;
+    strong{
+        display: block;
+    }
+}
+.ui-hotloan-item-logo{
+    width: px2rem(350px);
+    padding-top: px2rem(30px);
+    padding-bottom: px2rem(30px);
+    margin: 0 auto;
+    a{
+        display: table-cell;
+        width: px2rem(350px);
+        height: px2rem(145px);
+        vertical-align: middle;
+        text-align: center;
+    }
+    img{
+        max-width: px2rem(350px);
+        height: px2rem(90px);
+    }
+}
+.ui-hotloan-item-bg{
+    height: px2rem(34px);
+    margin-bottom: px2rem(20px);
+    .ui-bg-item{
+        display: inline-block;
+        margin: 0 px2rem(10px);
+        border-radius: px2rem(5px);
+        font-size: px2rem(20px);
+        color: #292e73;
+        border: 1px solid #cccee6;
+        line-height: px2rem(36px);
+        padding: 0 px2rem(10px);
+    }
+}
+.ui-hotloan-item-name{
+    max-width: px2rem(320px);
+    padding: px2rem(30px) 0;
+    line-height: px2rem(38px);
+    color: #fff;
+    font-size: px2rem(30px);
+    @include text-ellipsis;
+    vertical-align: top;
+    display: inline-block;
+}
+.ui-hotloan-item-rate{
+    padding-top: px2rem(20px);
+}
+.ui-hotloan-item-rate-num{
+    font-size: px2rem(90px);
+    font-weight: bold;
+    line-height: px2rem(50px);
+
+    span{
+        font-size: px2rem(36px);
+    }
+}
+.ui-hotloan-item-rate-name{
+    line-height: px2rem(36px);
+    font-size: px2rem(24px);
+    color: #fff;
+
+}
+.ui-hotloan-item-rate-default{
+    display: inline-block;
+    color: #fff;
+    width: px2rem(220px);
+    height: px2rem(110px);
+    text-align: center;
+    vertical-align: bottom;
+}
+.ui-hotloan-item-rate-add{
+    display: inline-block;
+    color: #fff40d;
+    width: px2rem(220px);
+    height: px2rem(110px);
+    text-align: center;
+    vertical-align: bottom;
+}
+.ui-hotloan-item-rate-symbol{
+    display: inline-block;
+    font-size: px2rem(70px);
+    color: #fff;
+    line-height: px2rem(50px);
+    width: px2rem(30px);
+    height: px2rem(110px);
+    margin: 0 px2rem(10px); 
+    vertical-align: bottom; 
+}
+.ui-hotloan-item-notetag{
+    display: inline-block;
+    vertical-align: top;
+    margin: px2rem(30px) 0 px2rem(30px) px2rem(20px);
+    height: px2rem(38px);
+    span{
+        display: inline-block;
+        height: px2rem(38px);
+        line-height: px2rem(38px);
+        width: px2rem(214px);
+        color: #292e73;
+        font-size: px2rem(20px);
+        border-radius: px2rem(17px);
+        overflow: hidden;
+        background: url(/styles/images/topic/brand818/mobile/icons.png) no-repeat 0 px2rem(-277px);
+        background-size: px2rem(700px) px2rem(700px);
+    }
+}
+.ui-hotloan-item-descript{
+    margin:  px2rem(30px) auto px2rem(40px);
+    font-size: px2rem(24px);
+    color: #fff;
+    line-height: px2rem(40px);
+}
+.ui-hotloan-item-btn{
+    a{
+        display: block;
+        margin: 0 auto;
+        width: px2rem(560px);
+        height: px2rem(78px);
+        line-height: px2rem(78px);
+        text-align: center;
+        font-size: px2rem(30px);
+        color: #fff;
+        border-radius: px2rem(20px);
+        background-color: #f0412f;
+        &:active{
+            background-color: #db3726;
+        }
+    }
+    span{
+        display: block;
+        margin: 0 auto;
+        width: px2rem(560px);
+        height: px2rem(78px);
+        line-height: px2rem(78px);
+        text-align: center;
+        font-size: px2rem(30px);
+        color: #fff;
+        border-radius: px2rem(20px);
+        background-color: #b2b2b2;
+    }
+}
+
+.ui-hotloan-item-timedown{
+    margin: 0 auto px2rem(65px);
+    text-align: center;
+    width: px2rem(214px);
+    height: px2rem(38px);
+    line-height: px2rem(38px);
+    color: #292e73;
+    font-size: px2rem(20px);
+    border-radius: px2rem(19px);
+    overflow: hidden;
+    background: url(/styles/images/topic/brand818/mobile/icons.png) no-repeat 0 px2rem(-277px);
+    background-size: px2rem(700px) px2rem(700px);
+}
+.ui-hotloan-item-timedown-five{
+    span{
+        display: inline-block;
+        margin: 0 px2rem(10px);
+        width: px2rem(70px);
+        height: px2rem(100px);
+        line-height: px2rem(100px);
+        text-align: center;
+        background-color: #fff;
+        font-weight: bold;
+        font-size: px2rem(60px);
+        color: #80f;
+        border-radius: px2rem(10px);
+    }
+    em{
+        display: inline-block;
+        margin: 0 px2rem(10px);
+        height: px2rem(100px);
+        line-height: px2rem(80px);
+        font-size: px2rem(110px);
+        font-weight: bold;
+        color: #fff;
+        vertical-align: top;
+    }
+}
+//timedown five 
+.ui-hotloan-item-rateadd{
+    height: px2rem(90px);
+    padding: px2rem(45px) 0 px2rem(40px);
+}
+.ui-hotloan-item-rateadd-num{
+    font-size: px2rem(90px);
+    font-weight: bold;
+    color: #fff40d;
+    line-height: px2rem(90px);
+    em{
+        font-size: px2rem(70px);
+        font-style: nomal;
+        vertical-align: bottom;
+    }
+    span{
+        font-size: px2rem(36px);
+        vertical-align: bottom;
+        line-height: px2rem(45px);
+    }
+}
+.ui-hotloan-item-rateadd-name{
+    font-size: px2rem(24px);
+    color: #fff;
+    line-height: px2rem(30px);
+}
+
+.ui-hotloan-item-empty{
+    width: 100%;
+    padding: px2rem(150px) 0;
+    text-align: center;
+    img{
+        width: px2rem(301px);
+        height: px2rem(311px);
+    }
+}
+.ui-hotloan-item-empty-note{
+    font-size: px2rem(30px);
+    color: #333;
+    line-height: px2rem(65px);
+}
+
+.ui-hotloan-pager{
+    padding: px2rem(30px) 0 px2rem(20px);
+    height: px2rem(8px);
+    text-align: center;
+    .swiper-pagination-switch{
+        margin: 0 px2rem(10px);
+        display: inline-block;
+        width: px2rem(48px);
+        height: px2rem(8px);
+        border: 1px solid #fff;
+        border-radius: px2rem(4px);
+        vertical-align: top;
+    }
+    .swiper-visible-switch{
+
+    }
+    .swiper-active-switch{
+        margin: 0 px2rem(10px);
+        display: inline-block;
+        width: px2rem(48px);
+        height: px2rem(8px);
+        border: 1px solid #fff;
+        border-radius: px2rem(4px);
+        background-color: #fff;
+        vertical-align: top;
+    }
+}

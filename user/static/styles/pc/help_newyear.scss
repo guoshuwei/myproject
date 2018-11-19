@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/header';
+@import '../inc/member-header';
+@import '../inc/footer';
+@import '../mod/bind';
+@import '../mod/comment';
+@import '../mod/floatlayer';
+@import '../mod/dynamic_block';
+@import '../mod/platlist';
+@import '../mod/activity';
+
+body {
+  background: #f53c39;
+}
+.page-section {
+  //height: 820px;
+  height: 100%;
+  width: 100%;
+  background: url(/styles/images/help/newyear/pc/pc-header.jpg) no-repeat center 0;
+  @include ratioBackground($url:'/styles/images/help/newyear/pc/pc-header-2x.jpg',$size:1920px 820px,$x: center,$y: 0px);
+  overflow: hidden;
+}
+
+.p-ps {
+  margin-top: 520px;
+  text-align: center;
+  color: #eaa05b;
+  font-size: 14px;
+}
+
+.step {
+  width: 1000px;
+  height: 476px;
+  margin: 15px auto 20px;
+  .step {
+    float: left;
+    height: 476px;
+    width: 320px;
+    margin-right: 20px;
+    .p {
+      text-align: center;
+      font-size: 14px;
+      color: #545454;
+      line-height: 30px;
+    }
+    .p1 {
+      margin-top: 100px;
+    }
+  }
+  .step1 {
+    background: url(/styles/images/help/newyear/pc/step1.png) no-repeat 0px 0px;
+    @include ratioBackground($url:'/styles/images/help/newyear/pc/step-2x.png',$size:320px 476px,$x: 0px,$y: 0px);
+  }
+  .step2 {
+    background: url(/styles/images/help/newyear/pc/step2.png) no-repeat center center;
+    @include ratioBackground($url:'/styles/images/help/newyear/pc/step2-2x.png',$size:320px 476px,$x: center,$y: center);
+  }
+  .step3 {
+    background: url(/styles/images/help/newyear/pc/step3.png) no-repeat center 0;
+    @include ratioBackground($url:'/styles/images/help/newyear/pc/step3-2x.png',$size:320px 476px,$x: center,$y: 0px);
+    margin-right: 0px;
+  }
+}
+
+.guize {
+  height: 450px;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px;
+  overflow: hidden;
+  background: url(/styles/images/help/newyear/pc/guize.png) no-repeat center 0;
+  @include ratioBackground($url:'/styles/images/help/newyear/pc/guize-2x.png',$size:1000px 450px,$x: center,$y: 0px);
+  .p-wrap {
+    width: 800px;
+    margin: 160px auto 0px;
+    line-height: 30px;
+    color: #545454;
+    font-size: 14px;
+  }
+}

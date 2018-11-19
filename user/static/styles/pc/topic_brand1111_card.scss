@@ -1,0 +1,510 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/header';
+@import '../inc/footer';
+@import '../mod/floatlayer';
+@import '../mod/bind';
+
+html,body{
+	background-color: #f4f4fa;
+}
+@mixin buttone31d1a {
+	display: block;
+	text-align: center;
+  	background-color: #e31d1a;
+  	@include fadein(0.25s);
+	&:hover{
+		@include fadein(0.25s);
+		text-decoration: none;
+		background-color: #a50814;
+	}
+}
+@mixin buttonborder {
+	display: block;
+	border-radius: 17px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #e2231a;
+  	border: 1px solid #e2231a;
+  	text-align: center;
+  	@include fadein(0.25s);
+	&:hover{
+		@include fadein(0.25s);
+		text-decoration: none;
+		color: #fff;
+		border: 1px solid #e31d1a;
+		background-color: #e31d1a;
+	}
+}
+a:hover{
+	text-decoration: none;
+}
+.w1000{
+	width: 1000px;
+	margin: 0 auto;
+}
+.w120{
+	width: 120px;
+}
+.w140{
+	width: 140px;
+}
+.w145{
+	width: 145px;
+}
+.w220{
+	width: 220px;
+}
+.ui-cardbanner{
+	padding-top: 45px;
+	height: 205px;
+	background: url(/styles/images/topic/brand1111/pc/card_banner.png) no-repeat center top;
+}
+.ui-cardbanner-logo{
+	margin: 0 auto;
+	width: 146px;
+	height: 90px;
+	line-height: 90px;
+	vertical-align: middle;
+	text-align: center;
+	overflow: hidden;
+	background-color: #fff;
+	img{
+		max-width: 146px;
+		max-height: 90px;
+		*width: 146px;
+	}
+}
+.ui-cardbanner-note{
+	font-weight: bold;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+}
+.ui-cardbanner-back{
+	margin: 0 auto;
+	width: 146px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 20px;
+	font-size: 14px;
+	color: #fff;
+	@include buttone31d1a;
+}
+.ui-cardlead{
+	height: 150px;
+	border-radius: 10px;
+	background: #fff url(/styles/images/topic/brand1111/pc/card_icons.png) no-repeat 27px 27px;
+}
+.ui-cardlead-more{
+	float: left;
+	padding: 88px 0 0 27px;
+	a{
+		width: 126px;
+		height: 34px;
+		line-height: 34px;
+		@include buttonborder;
+	}
+	
+}
+.ui-cardlead-list{
+	float: left;
+}
+.ui-cardlead-list-item{
+	float: left;
+	padding-top: 100px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #333;
+	text-align: center;
+}
+.ui-cardtitle{
+	margin: 30px auto 20px;
+	width: 130px;
+	height: 38px;
+	background: url(/styles/images/topic/brand1111/pc/card_icons.png) no-repeat 0 -160px;
+}
+.ui-cardlist{
+	width: 29000px;
+	height: 190px;
+	padding-top: 5px;
+	text-align: center;
+}
+.ui-cardlist-item{
+	float: left;
+	position: relative;
+	margin-right: 20px;
+	width: 290px;
+	height: 170px;
+	padding: 20px 15px 0;
+	border-radius: 5px;
+	background-color: #fff;
+	overflow: hidden;
+	cursor: default;
+}
+
+.ui-cardlist-note{
+	font-size: 12px;
+	color: #333;
+	line-height: 20px;
+	@include text-ellipsis;
+}
+.ui-cardlist-amount{
+	font-size: 30px;
+	color: #e2231a;
+	line-height: 55px;
+	margin-bottom: 5px;
+}
+.ui-cardlist-rate{
+	display: inline-block;
+	font-size: 12px;
+	text-align: center;
+	padding: 0 10px;
+	height: 24px;
+	line-height: 24px;
+	border: 1px dashed #999;
+	border-radius: 12px;
+	color: #999;
+	span{
+		color: #e2231a;
+	}
+}
+.ui-cardlist-bg{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+	background-color: #e31d1a;
+	background-image: url(/styles/images/topic/brand1111/pc/card_icons.png);
+	background-repeat: no-repeat;
+	background-position: 0 -305px;
+	line-height: 45px;
+	font-size: 14px;
+	color: #fff;
+}
+.ui-cardlist-time{
+	margin-left: 15px;
+}
+.ui-cardlist-click{
+	margin-right: 15px;
+}
+.ui-cardlist-tag{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 72px;
+	height: 58px;
+	background-image: url(/styles/images/topic/brand1111/pc/card_icons.png);
+	background-repeat: no-repeat;
+	background-position: 500px 500px;
+}
+.ui-cardlist-over{//已领完
+	.ui-cardlist-note{
+		color: #999;	
+	}
+	.ui-cardlist-amount{
+		color: #999;
+	}
+	.ui-cardlist-rate{
+		span{
+			color: #999;
+		}
+	}
+	.ui-cardlist-bg{
+		background-color: #999;
+		background-position: -330px -305px;
+	}
+	.ui-cardlist-tag{
+		background-position: 0 -228px;
+	}
+}
+.ui-cardlist-forbid{//不可领
+	.ui-cardlist-note{
+		color: #999;	
+	}
+	.ui-cardlist-amount{
+		color: #999;
+	}
+	.ui-cardlist-rate{
+		span{
+			color: #999;
+		}
+	}
+	.ui-cardlist-bg{
+		background-color: #999;
+		background-position: -330px -305px;
+	}
+	.ui-cardlist-tag{
+		background-position: -92px -228px;
+	}
+	
+}
+.ui-cardlist-already{//已领取
+	.ui-cardlist-note{
+		color: #999;	
+	}
+	.ui-cardlist-rate{
+		span{
+			color: #999;
+		}
+	}
+	.ui-cardlist-bg{
+		background-color: #0070cc;
+		background-position: -660px -305px;
+	}
+	.ui-cardlist-tag{
+		background-position: -184px -228px;
+	}
+	
+}
+.ui-cardlist-button{
+	text-align: center;
+	margin: 20px 0;
+}
+.ui-cardlist-button-e31d1a{
+	@include buttone31d1a;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	margin: 0 10px;
+	width: 128px;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 18px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;	
+}
+.ui-cardlist-button-border{
+	@include buttonborder;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	margin: 0 10px;
+	width: 128px;
+	height: 35px;
+	line-height: 35px;
+}
+.ui-cardlist-button-note{
+	font-size: 14px;
+	color: #e2231a;
+	line-height: 35px;
+}
+.ui-cardlist-rules{
+	border-radius: 10px;
+	background-color: #fff;
+	padding: 20px;
+	line-height: 25px;
+	font-size: 14px;
+	color: #333;
+	em{
+		float: left;
+		margin: 8px 10px 0 0;
+		width: 9px;
+		height: 9px;
+		border-radius: 50%;
+		background-color: #e31d1a;
+	}
+}
+.ui-cardlist-rules-title{
+	float: left;
+	margin: 48px 0 0;
+	width: 130px;
+	height: 38px;
+	background: url(/styles/images/topic/brand1111/pc/card_icons.png) no-repeat -180px -160px;
+}
+.ui-cardlist-rules-list{
+	float: left;
+	margin-left: 40px;
+	width: 790px;
+	a{
+		color: #e2231a;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+.ui-cardlist-alert-toloan{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -190px;
+	margin-left: -150px;
+	width: 301px;
+	height: 256px;
+	text-align: center;
+	padding-top: 125px;
+	background: url(/styles/images/topic/brand1111/pc/card_coupons.png) no-repeat 0 0;
+	z-index: 999;
+}
+.ui-cardlist-alert-toloan-amount{
+	line-height: 48px;
+	font-size: 30px;
+	color: #e2231a;
+}
+.ui-cardlist-alert-toloan-note{
+	font-size: 12px;
+	color: #e2231a;
+	line-height: 15px;
+}
+.ui-cardlist-alert-toloan-get{
+	display: block;
+	margin: 80px auto 0;
+	width: 258px;
+	height: 40px;
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #e94935;
+	border-radius: 23px;
+	border-top: 1px solid #f8d634;
+	border-bottom: 5px solid #eb0;
+	box-shadow: 0 3px 0 #c94036;
+	background-color: #ffdf00;
+	@include fadein(0.25s);
+	&:hover{
+		@include fadein(0.25s);
+		color: #c94036;
+	    background-color: #eb0;
+	    box-shadow: 0 3px #c94036;
+	}
+}
+.ui-cardlist-alert-toloan-wait{
+	display: block;
+	margin: 10px auto 0;
+	width: 258px;
+	height: 42px;
+	line-height: 42px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #fff;
+	border-radius: 23px;
+	background-color: #c94036;
+	@include fadein(0.25s);
+	&:hover{
+		@include fadein(0.25s);
+	    background-color: #a8201d;
+	}
+}
+.ui-cardlist-alert-tojb{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -214px;
+	margin-left: -135px;
+	padding: 25px 83px 0 60px;
+	text-align: center;
+	width: 127px;
+	height: 402px;
+	background: url(/styles/images/topic/brand1111/pc/card_vcode.png) no-repeat 0 0;
+	z-index: 999;
+}
+.ui-cardlist-alert-tojb-title{
+	font-size: 14px;
+	color: #333;
+	line-height: 18px;
+	padding-top: 10px;
+	margin: 5px 0;
+	span{
+		font-size: 12px;
+	}
+}
+.ui-cardlist-alert-tojb-vcode{
+	height: 102px;
+}
+.ui-cardlist-alert-tojb-note{
+	font-size: 14px;
+	font-weight: bold;
+	color: #fe2f2f;
+	line-height: 25px;
+}
+.ui-cardlist-alert-tojb-link{
+	display: block;
+	margin: 15px auto 0;
+	width: 110px;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #004e78;
+	border-radius: 14px;
+	font-size: 12px;
+	color: #004e78;
+	@include fadein(0.25s);
+	&:hover{
+		@include fadein(0.25s);
+		color: #fff;
+		background-color: #004e78;
+	}
+}
+.ui-cardlist-alert-close{
+	position: absolute;
+	right: 0;
+	top: -15px;
+	width: 35px;
+	height: 35px;
+	background: url(/styles/images/topic/brand1111/pc/card_icons.png) no-repeat -965px -160px;
+	@include fadein(0.25s);
+	cursor: pointer;
+	&:hover{
+		transform:scale(1.2);
+	}
+}
+.bx-wrapper{
+	position: relative;
+	max-width: 1000px!important;
+	width: 1000px;
+	.bx-prev{
+		position: absolute;
+		top: 60px;
+		left: -36px;
+		width: 36px;
+		height: 71px;
+		background: url(/styles/images/topic/brand1111/pc/card_icons.png) no-repeat -320px -228px;
+	}
+	.bx-next{
+		position: absolute;
+		top: 60px;
+		right: -36px;
+		width: 36px;
+		height: 71px;
+		background: url(/styles/images/topic/brand1111/pc/card_icons.png) no-repeat -356px -228px;
+	}
+}
+
+.ui-cardlist-box{
+	width: 1000px;
+	height: 195px;
+	overflow: hidden;
+}
+.ui-cardlist-get,
+.fn-cardlist-item{
+	cursor: pointer;
+	@include fadein(0.25s);
+	&:hover{
+		margin-top: -5px;
+		box-shadow: 0 0 5px #bcbcbc;
+	} 
+}
+.ui-cardnote{
+    margin: 0 auto 10px;
+    font-size: 12px;
+    color: #999;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,164 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/header';
+@import '../inc/footer';
+@import '../mod/floatlayer';
+@import '../mod/bind';
+
+body{
+	background: #251453 url(/styles/images/topic/brand1111/pc/privilege_bg.jpg) no-repeat center 40px;
+}
+
+.page_section{
+    height: 1400px;
+    
+}
+a:hover{
+	text-decoration: none;
+}
+.ui-banner{
+	height: 360px;
+    padding-top: 50px;
+    img{
+        display: block;
+        margin: 0 auto;
+        width: 686px;
+    }
+}
+.ui-privilegetitle{
+    color: #fff;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    height: 65px;
+    line-height: 65px;
+    vertical-align: top;
+    margin-top: 10px;
+    em{
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: top;
+        width: 63px;
+        height: 65px;
+        background: url(/styles/images/topic/brand1111/pc/privilege_icons.png) no-repeat 0 0;
+    }
+    strong{
+        vertical-align: top;
+        font-size: 50px;
+    }
+}
+.ui-info{
+    margin: 35px auto 0;
+    width: 1000px;
+    height: 285px;
+}
+.ui-info-title{
+    padding-top: 35px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    strong{
+        color: #ff3030;
+    }
+    span{
+        font-size: 45px;
+    }
+}
+.ui-info-list{
+    margin: 20px 0 30px;
+}
+.ui-info-list-item{
+    float: left;
+    width: 50%;
+    line-height: 45px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    span{
+        color: #ff3030;
+    }
+}
+.ui-info-button{
+    text-align: center;
+    .f00button{
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        margin: 0 30px;
+        font-size: 18px;
+        color: #fff;
+        width: 258px;
+        height: 46px;
+        line-height: 46px;
+        border-radius: 25px;
+        border: 2px solid #f00;
+        background-color: #f00;
+        @include fadein(0.25s);
+        &:hover{
+            border: 2px solid #ff5f5f;
+            background-color: #ff5f5f;
+        }
+    }
+    .borderbutton{
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        margin: 0 30px;
+        font-size: 18px;
+        color: #f00;
+        width: 258px;
+        height: 46px;
+        line-height: 46px;
+        border-radius: 25px;
+        border: 2px solid #f00;
+        @include fadein(0.25s);
+        &:hover{
+            color: #ff5f5f;
+            border: 2px solid #ff5f5f;
+        }
+    }
+    
+}
+.ui-rules{
+    width: 900px;
+    margin: 175px auto 0;
+    padding: 25px 65px 0 35px;
+}
+.ui-rules-item{
+    line-height: 31px;
+    margin-bottom: 20px;
+    em{
+        float: left;
+        margin-top: 10px;
+        width: 20px;
+        height: 20px;
+        background: url(/styles/images/topic/brand1111/pc/privilege_icons.png) no-repeat 0 -80px;
+    }
+    .ui-rules-text{
+        float: left;
+        margin-left: 10px;
+        width: 870px;
+        font-size: 16px;
+        color: #fff;
+    }
+    .special{
+        color: #ea922b;
+    }
+    .link{
+        color: #ff3030;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+

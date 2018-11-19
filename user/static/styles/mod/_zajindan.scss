@@ -1,0 +1,555 @@
+
+@keyframes sway{
+  5%{
+    -webkit-transform:rotate(-6deg);
+    -moz-transform:rotate(-6deg);
+    -o-transform:rotate(-6deg);
+    -ms-transform:rotate(-6deg);
+    transform: rotate(-6deg);
+  }
+  10%{
+    -webkit-transform:rotate(-12deg);
+    -moz-transform:rotate(-12deg);
+    -o-transform:rotate(-12deg);
+    -ms-transform:rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+  15%{
+    -webkit-transform:rotate(-18deg);
+    -moz-transform:rotate(-18deg);
+    -o-transform:rotate(-18deg);
+    -ms-transform:rotate(-18deg);
+    transform: rotate(-18deg);
+  }
+  20%{
+    -webkit-transform:rotate(-24deg);
+    -moz-transform:rotate(-24deg);
+    -o-transform:rotate(-24deg);
+    -ms-transform:rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+  25%{
+    -webkit-transform:rotate(-30deg);
+    -moz-transform:rotate(-30deg);
+    -o-transform:rotate(-30deg);
+    -ms-transform:rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+  30%{
+    -webkit-transform:rotate(-24deg);
+    -moz-transform:rotate(-24deg);
+    -o-transform:rotate(-24deg);
+    -ms-transform:rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+  35%{
+    -webkit-transform:rotate(-18deg);
+    -moz-transform:rotate(-18deg);
+    -o-transform:rotate(-18deg);
+    -ms-transform:rotate(-18deg);
+    transform: rotate(-18deg);
+  }
+  40%{
+    -webkit-transform:rotate(-12deg);
+    -moz-transform:rotate(-12deg);
+    -o-transform:rotate(-12deg);
+    -ms-transform:rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+  45%{
+    -webkit-transform:rotate(-6deg);
+    -moz-transform:rotate(-6deg);
+    -o-transform:rotate(-6deg);
+    -ms-transform:rotate(-6deg);
+    transform: rotate(-6deg);
+  }
+  50%{
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    transform: rotate(0deg);
+  }
+  55%{
+    -webkit-transform:rotate(6deg);
+    -moz-transform:rotate(6deg);
+    -o-transform:rotate(6deg);
+    -ms-transform:rotate(6deg);
+    transform: rotate(6deg);
+  }
+  60%{
+    -webkit-transform:rotate(12deg);
+    -moz-transform:rotate(12deg);
+    -o-transform:rotate(12deg);
+    -ms-transform:rotate(12deg);
+    transform: rotate(12deg);
+  }
+  65%{
+    -webkit-transform:rotate(18deg);
+    -moz-transform:rotate(18deg);
+    -o-transform:rotate(18deg);
+    -ms-transform:rotate(18deg);
+    transform: rotate(18deg);
+  }
+  70%{
+    -webkit-transform:rotate(24deg);
+    -moz-transform:rotate(24deg);
+    -o-transform:rotate(24deg);
+    -ms-transform:rotate(24deg);
+    transform: rotate(24deg);
+  }
+  75%{
+    -webkit-transform:rotate(30deg);
+    -moz-transform:rotate(30deg);
+    -o-transform:rotate(30deg);
+    -ms-transform:rotate(30deg);
+    transform: rotate(30deg);
+  }
+  80%{
+    -webkit-transform:rotate(24deg);
+    -moz-transform:rotate(24deg);
+    -o-transform:rotate(24deg);
+    -ms-transform:rotate(24deg);
+    transform: rotate(24deg);
+  }
+  85%{
+    -webkit-transform:rotate(18deg);
+    -moz-transform:rotate(18deg);
+    -o-transform:rotate(18deg);
+    -ms-transform:rotate(18deg);
+    transform: rotate(18deg);
+  }
+  90%{
+    -webkit-transform:rotate(12deg);
+    -moz-transform:rotate(12deg);
+    -o-transform:rotate(12deg);
+    -ms-transform:rotate(12deg);
+    transform: rotate(12deg);
+  }
+  95%{
+    -webkit-transform:rotate(6deg);
+    -moz-transform:rotate(6deg);
+    -o-transform:rotate(6deg);
+    -ms-transform:rotate(6deg);
+    transform: rotate(6deg);
+  }
+  100%{
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+
+.egg_falled{
+  left: 50%;
+  -webkit-animation:falled .5s linear;
+  -moz-animation:falled .5s linear;
+  -o-animation:falled .5s linear;
+  -ms-animation:falled .5s linear;
+  animation:falled .5s linear;
+}
+
+@keyframes falled{
+  0%{
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  10%{
+    top: 23%;
+    width: 120%;
+    height: 80%;
+  }
+  40%{
+    top: 12%;
+    width: 115%;
+    height: 92.5%;
+  }
+  60%{
+    top: 6.5%;
+    width: 107.5%;
+    height: 96.25%;
+  }
+  75%{
+    top: 3.25%;
+    width: 103.75%;
+    height: 98.125%;
+  }
+  85%{
+    top: 1.575%;
+    width: 101.857%;
+    height: 99.0625%;
+  }
+  93%{
+    top: .7%;
+    width: 100.9%;
+    height: 99.55%;
+  }
+  96%{
+    top: .35%;
+    width: 100.45%;
+    height: 99.775%;
+  }
+  100%{
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+/*
+.egg_jump{
+  animation: jump .5s ease-in;
+}
+@keyframes jump{
+  0%{//-2 +1 -4 +2
+    top: -2px;
+    width: 128px;
+    height: 181px;
+  }
+  10%{//-3 +3 -4 +4
+    top: -3px;
+    width: 124px;
+    height: 185px;
+  }
+  20%{//-７ +２ -4 +５
+    top: -7px;
+    width: 120px;
+    height: 190px;
+  }
+  80%{//+8 －２ ＋５ -５
+    top: 8px;
+    width: 125px;
+    height: 185px;
+  }
+  90%{//+4 -２ ＋9 -16
+    top: 4px;
+    width: 134px;
+    height: 169px;
+  }
+  95%{//+7 －4 ＋4 +5
+    top: 7px;
+    width: 138px;
+    height: 174px;
+  }
+  100%{//-5 +2 -6 +5
+    top: -5px;
+    width: 132px;
+    height: 179px;
+  }
+}*/
+.egg_jump{
+  -webkit-animation: jump .5s linear;
+  -moz-animation: jump .5s linear;
+  -o-animation: jump .5s linear;
+  -ms-animation: jump .5s linear;
+  animation: jump .5s linear;
+}
+
+@keyframes jump{
+  0%{//-2 +1 -4 +2
+    top: -2%;
+    width: 96%;
+    height: 102%;
+  }
+  10%{//-3 +3 -4 +4
+    top: -5%;
+    width: 92%;
+    height: 106%;
+  }
+  20%{//-７ +２ -4 +５
+    top: -12%;
+    width: 88%;
+    height: 110%;
+  }
+  70%{//+8 －２ ＋５ -５
+    top: -4%;
+    width: 93%;
+    height: 106%;
+  }
+  80%{//+8 －２ ＋５ -５
+    top: 0%;
+    width: 100%;
+    height: 100%;
+  }
+  90%{//+4 -２ ＋9 -16
+    top: 12%;
+    width: 110%;
+    height: 85%;
+  }
+  95%{//+7 －4 ＋4 +5
+    top: 16%;
+    width: 115%;
+    height: 90%;
+  }
+  100%{//-5 +2 -6 +5
+    top: 0%;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.ui-october-game{
+  .go_back{
+    position: fixed;
+    width: 150px;
+    height: 36px;
+    left: 50px;
+    top: 45px;
+    background-image: url("/styles/images/topic/xtyyh/pc/laohuji.png");
+    background-position: 0 -650px;
+    z-index: 32;
+    cursor: pointer;
+  }
+  .go_back:hover{
+    box-shadow: 0 0 15px #ff7e00;
+    background-position: -150px -650px;
+  }
+  .offmusic{
+    position: fixed;
+    right: 230px;
+    top: 44px;
+    width: 39px;
+    height: 39px;
+    background-position: -40px -83px;
+    background-image: url(/styles/images/topic/xtyyh/pc/bg-game-main.png);
+    background-repeat: no-repeat;
+    z-index: 32;
+    cursor: pointer;
+    &:hover{
+        background-position: 0 -83px;
+    }
+  }
+
+  .onmusic{
+    position: fixed;
+    right: 230px;
+    top: 44px;
+    z-index: 32;
+    width: 39px;
+    height: 39px;
+    background-position: 0px -83px;
+    background-image: url(/styles/images/topic/xtyyh/pc/bg-game-main.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    &:hover{
+      background-position: -40px -83px;
+    }
+  }
+
+  .gameItems{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 1024px;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    z-index: 4;
+    background-color: #000;
+    display:table;
+    >.bg{
+      display: block;
+      position: absolute;
+      top: 0;
+      z-index: 0;
+    }
+    .subwrap {
+      vertical-align: middle;
+      display: table-cell;
+      _position: absolute;
+      _top: 50%;
+      .jindan {
+        position:relative;
+        _top:-50%;
+        .g_jindan {
+          position: relative;
+          /*left: 50%;
+          top: 170px;*/
+          width: 851px;
+          height: 580px;
+          background: url("/styles/images/topic/xtyyh/pc/laohuji.png") no-repeat;
+          background-position: 0 -700px;
+          margin: auto;
+          //margin-left: -425px;
+          z-index: 2;
+          .message {
+            position: absolute;
+            bottom: 85px;
+            left: 340px;
+            color: #ffad5d;
+            font-weight: bold;
+          }
+          .changemoreeggs{
+            position: absolute;
+            bottom: 85px;
+            left: 560px;
+            color: #f7e1bf;
+            font-weight: bold;
+          }
+          .egg_break_bm {
+            position: absolute;
+            width: 130px;
+            height: 180px;
+            background: url("/styles/images/topic/xtyyh/pc/laohuji.png") no-repeat;
+            background-position: 0 -1750px;
+            overflow: visible;
+            -webkit-user-select: none;  /* Chrome all / Safari all */
+            -moz-user-select: none;     /* Firefox all */
+            -ms-user-select: none;      /* IE 10+ */
+            user-select: none;          /* Likely future */
+            .egg_break_tp {
+              position: absolute;
+              left: 5px;
+              top: -10px;
+              width: 120px;
+              height: 75px;
+              background: url("/styles/images/topic/xtyyh/pc/laohuji.png") no-repeat;
+              background-position: 0 -1650px;
+            }
+            .egg_break_fragment {
+              position: absolute;
+              left: 80px;
+              top: 185px;
+              width: 81px;
+              height: 64px;
+              background: url("/styles/images/topic/xtyyh/pc/laohuji.png") no-repeat;
+              background-position: 0 -1950px;
+              display: none;
+            }
+          }
+          .egg {
+            position: absolute;
+            width: 132px;
+            height: 179px;
+            top: 192px;
+            cursor: none;
+            -webkit-user-select: none;  /* Chrome all / Safari all */
+            -moz-user-select: none;     /* Firefox all */
+            -ms-user-select: none;      /* IE 10+ */
+            user-select: none;          /* Likely future */
+            img{
+              position: absolute;
+              width: 100%;
+              top: 0;
+              display: block;
+            }
+            .egg_mc{
+              left: 50%;
+              -webkit-transform: translateX(-50%);
+              -moz-transform: translateX(-50%);
+              -o-transform: translateX(-50%);
+              -ms-transform: translateX(-50%);
+              transform:translateX(-50%);
+            }
+            .fallstart{
+              opacity: 0;
+              top: -60%;
+            }
+            .fallend{
+              opacity: 1;
+              top: 0;
+            }
+            .fall_animate{
+              -webkit-transition: all .5s cubic-bezier(0.755, 0.050, 0.855, 0.060);
+              -moz-transition: all .5s cubic-bezier(0.755, 0.050, 0.855, 0.060);
+              -o-transition: all .5s cubic-bezier(0.755, 0.050, 0.855, 0.060);
+              -ms-transition: all .5s cubic-bezier(0.755, 0.050, 0.855, 0.060);
+              transition: all .5s cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            }
+          }
+          .egg1 {
+            left: 178px;
+          }
+          .egg2 {
+            top: 232px;
+            left: 357px;
+          }
+          .egg3 {
+            left: 541px;
+          }
+          .sway {
+            left: 0 !important;
+            -webkit-animation: sway .3s ease-in-out infinite !important;
+            -moz-animation: sway .3s ease-in-out infinite !important;
+            -o-animation: sway .3s ease-in-out infinite !important;
+            -ms-animation: sway .3s ease-in-out infinite !important;
+            animation: sway .3s ease-in-out infinite !important;
+          }
+          .jd_cz {
+            position: absolute;
+            width: 117px;
+            height: 85px;
+            background: url("/styles/images/topic/xtyyh/pc/laohuji.png") no-repeat;
+            background-position: 0 -1300px;
+          }
+          .p_egg1 {
+            //-30 +90
+            top: 152px;
+            left: 268px;
+          }
+          .p_egg2 {
+            //-30 +90
+            top: 202px;
+            left: 447px;
+          }
+          .p_egg3 {
+            //-30 +90
+            top: 152px;
+            left: 631px;
+          }
+          .smash {
+            -o-transform: rotate(-40deg);
+            -webkit-transform: rotate(-40deg);
+            -moz-transform: rotate(-40deg);
+            -ms-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+          }
+
+          .btn{
+            position: absolute;
+            cursor: pointer;
+          }
+          .btn:hover{
+            box-shadow: 0 0 15px #ff7e00;
+          }
+          .get_more_cz{
+            width: 141px;
+            height: 37px;
+            top: 518px;
+            left: 424px;
+          }
+          .show_more_item{
+            width: 141px;
+            height: 37px;
+            top: 518px;
+            left: 584px;
+          }
+          .redeem{
+            width: 101px;
+            height: 37px;
+            top: 518px;
+            left: 302px;
+            border: 0 none;
+            background: transparent;
+          }
+          .redeemkey{
+            width: 174px;
+            height: 39px;
+            top: 518px;
+            left: 110px;
+            position: absolute;
+            padding: 0 10px;
+            background-color: transparent;
+            border: 0;
+          }
+        }
+      }
+    }
+
+  }
+
+}

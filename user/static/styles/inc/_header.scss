@@ -1,0 +1,698 @@
+.header{
+	height:70px;
+	background:#fff;
+	z-index: 3;
+	overflow: hidden;
+	.logo{
+		line-height: 70px;
+		float: left;
+		margin-right: 35px;
+
+		img{
+			vertical-align: middle;
+			*margin-top:22px;
+		}
+	}
+
+	.level-two-title{
+		display: block;
+		float: left;
+		height: 70px;
+		line-height: 70px;
+		margin-right: 70px;
+		.level-two-title-pipe{
+			display: block;
+			float: left;
+			height: 36px;
+			width: 1px;
+			background-color: #f1f1f1;
+			margin: 17px 20px 0 -15px;
+		}
+		.level-two-title-word{
+			display: block;
+			float: left;
+			line-height:70px;
+			font-size: 20px;
+			font-weight: bold;
+			color: #ccc;
+			transition: color .2s ease-out;
+			&:hover{
+				text-decoration: none;
+				color: #0099e5;
+			}
+		}
+	}
+
+	.nav{
+	  	float: left;
+		height: 70px;
+		li{
+			float: left;
+			line-height: 70px;
+			height: 70px;
+			position: relative;
+		}
+		a{
+			color: #474f59;
+			font-size: 18px;
+			font-family: Microsoft YaHei;
+			display:inline-block;
+			*display:inline;
+			line-height: 68px;
+			*zoom:1;
+		  	border-top: 2px solid #fff;
+			padding:0 18px;
+		  	transition: all .2s ease-in-out;
+			.touch-icon{
+			  display: block;
+			  float: right;
+			  margin-top: 29px;
+			  margin-left: 6px;
+			  width: 12px;
+			  height: 8px;
+			  background: url("/styles/images/index/newindex/tobottom.png") no-repeat;
+			  @include ratioBackground($url:"/styles/images/index/newindex/tobottom2.png",$size:12px 8px);
+			}
+		  	.assets-icon{
+			  display: block;
+			  float: right;
+			  margin: 25px 0 0 3px;
+			  height: 16px;
+			  width: 48px;
+			  background: url("/styles/images/index/newindex/assets-icon.png") no-repeat;
+			  @include ratioBackground($url:"/styles/images/index/newindex/assets-icon-2x.png",$size:48px 16px);
+			}
+			//双11start
+			.assets-icon-brand1111 {
+				background: url("/styles/images/index/newindex/assets-icon-brand1111.png") no-repeat;
+			  	@include ratioBackground($url:"/styles/images/index/newindex/assets-icon-brand1111-2x.png",$size:48px 16px);
+			}
+			//双11end
+            .brand1018-icon{
+                display: block;
+                float: right;
+                margin: 25px 0 0 3px;
+                height: 16px;
+                width: 48px;
+                background: url(/styles/images/topic/brand1018/pc/assets-icon.png) no-repeat;
+                @include ratioBackground($url:"/styles/images/topic/brand1018/pc/assets-icon-2x.png",$size:48px 16px);
+            }
+		}
+		.ui-header-brand1111{
+			position:relative;
+			&:hover {
+				em {
+					display:block;
+				}
+			}
+			em {
+				display:none;
+				position:absolute;
+				width:77px;
+				height:14px;
+				top:6px;
+				left:50%;
+				margin-left:-38.5px;
+				background: url("/styles/images/index/newindex/loan-brand1111.png") no-repeat;
+		  		@include ratioBackground($url:"/styles/images/index/newindex/loan-brand1111-2x.png",$size:77px 14px);
+			}
+		}
+		a:hover{
+		  	box-shadow: 0 0 8px rgba(0,0,0,.1);
+			text-decoration: none;
+			border-top:2px solid #f72f48;
+		  .touch-icon{
+			display: block;
+			float: right;
+			margin-top: 29px;
+			margin-left: 6px;
+			width: 12px;
+			height: 8px;
+			background: url("/styles/images/index/newindex/tobhover.png") no-repeat;
+			@include ratioBackground($url:"/styles/images/index/newindex/tobhover2.png",$size:12px 8px);
+		  }
+		}
+		.long-title{
+			padding: 0 35px;
+			position: relative;
+		}
+		.icon-haoli{
+			position: absolute;
+			width: 26px;
+			height: 18px;
+			top: 13px;
+			right: 8px;
+			font: 0/0 a;
+			background-image: url(/styles/images/club/club-icon.png);
+			background-position: -200px 0px;
+			@include ratioBackground($url:'/styles/images/club/club-icon-2x.png', $size: 500px 500px, $x:-200px, $y:0px);
+		}
+		.icon-new{
+			position: absolute;
+			width: 26px;
+			height: 18px;
+			top: 13px;
+			right: -4px;
+			font: 0/0 a;
+			background-image: url(/styles/images/club/club-icon.png);
+			background-position: -200px -25px;
+			@include ratioBackground($url:'/styles/images/club/club-icon-2x.png', $size: 500px 500px, $x:-200px, $y:-25px);
+		}
+	    .current{
+		  i{
+			position: absolute;
+			top:15px;
+			left:5px;
+			display: block;
+			height:5px;
+			width:5px;
+			margin-top: 16px;
+			background-color: #ea544a;
+			-webkit-animation: fadein .1s ease-in-out 0s forwards;
+			-moz-animation: fadein .1s ease-in-out 0s forwards;
+			-ms-animation: fadein .1s ease-in-out 0s forwards;
+			animation: fadein .1s ease-in-out 0s forwards;
+		  }
+		  a{
+			position: relative;
+			font-weight: bold;
+			color: #ea544a;
+			&:hover{
+			  color: #474f59;
+			  font-weight: normal;
+			  i{
+				-webkit-animation: fadeout .1s ease-in-out 0s forwards;
+				-moz-animation: fadeout .1s ease-in-out 0s forwards;
+				-ms-animation: fadeout .1s ease-in-out 0s forwards;
+				animation: fadeout .1s ease-in-out 0s forwards;
+			  }
+			}
+		  }
+		}
+		.loanicon {
+			a {
+				position: relative;
+				em {
+					position: absolute;
+					width: 41px;
+					height: 16px;
+					top: 0;
+					left: 85px;
+					background: url(/styles/images/common/interest.png) 0 0 no-repeat;
+					overflow: hidden;
+					@media only screen and (-webkit-min-device-pixel-ratio: 1.5){
+						background:url(/styles/images/common/interest_2x.png) 0 0 no-repeat;
+						background-size:contain;
+					}
+					@media only screen and (min--moz-device-pixel-ratio: 1.5){
+						background:url(/styles/images/common/interest_2x.png) 0 0 no-repeat;
+						background-size:contain;
+					}
+					@media only screen and (min-device-pixel-ratio: 1.5){
+						background:url(/styles/images/common/interest_2x.png) 0 0 no-repeat;
+						background-size:contain;
+					}
+					@media only screen and (-o-min-device-pixel-ratio:3/2){
+						background:url(/styles/images/topic/common/interest_2x.png) 0 0 no-repeat;
+						background-size:contain;
+					}
+
+				}
+			}
+		}
+	  .new{
+		a{
+		  position:relative;
+		  em{
+			position: absolute;
+			width:24px;
+			height:16px;
+			top:0;
+			right:-8px;
+			background:url(/styles/images/topic/yqyl/yqyl_new.png) 0 0 no-repeat;
+			overflow:hidden;
+			@media only screen and (-webkit-min-device-pixel-ratio: 1.5){
+			  background:url(/styles/images/topic/yqyl/yqyl_new_ratio.png) 0 0 no-repeat;
+			  background-size:contain;
+			}
+			@media only screen and (min--moz-device-pixel-ratio: 1.5){
+			  background:url(/styles/images/topic/yqyl/yqyl_new_ratio.png) 0 0 no-repeat;
+			  background-size:contain;
+			}
+			@media only screen and (min-device-pixel-ratio: 1.5){
+			  background:url(/styles/images/topic/yqyl/yqyl_new_ratio.png) 0 0 no-repeat;
+			  background-size:contain;
+			}
+			@media only screen and (-o-min-device-pixel-ratio:3/2){
+			  background:url(/styles/images/topic/yqyl/yqyl_new_ratio.png) 0 0 no-repeat;
+			  background-size:contain;
+			}
+
+		  }
+		}
+	  }
+	}
+	.loginbtn{
+		display:inline-block;
+		height: 34px;
+		line-height: 34px;
+		border:1px solid #e7e7e7;
+		color: #6d6d6d;
+		font-size: 16px;
+		padding:0 8px;
+		border-radius:5px;
+		margin-top: 16px;
+		span{
+			display: inline-block;
+			line-height: 34px;
+			height: 34px;
+		}
+		.ui-icons-user{
+			margin-right: 5px;
+		}
+	}
+	.loginbtn:hover{
+		text-decoration: none;
+		border-color:#ea544a;
+	}
+    .ui-header-brand98{
+        position: relative;
+    }
+    .ui-header-brand98-tag {
+        position:absolute;
+        top: 10px;
+        left: 85px;
+    }
+    .ui-brand98-loans{
+        float: left;
+        padding-top: 16px;
+        padding-left: 18px;
+        a{
+            display: block;
+            width: 75px;
+            height: 38px;
+            background: url(/styles/images/topic/brand98/pc/nav.png) no-repeat 0 0;
+            @include ratioBackground($url:'/styles/images/topic/brand98/pc/navx2.png',$size:75px 38px);
+            @include fadein(0.25s);
+            &:hover{
+                border: 0 none;
+                box-shadow: none;
+                margin-top: -7px;
+                @include fadein(0.25s);
+            }
+        }
+    }
+}
+.pettyheader{
+  height:50px;
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.22);
+  z-index: 999;
+  .logo{
+	line-height: 50px;
+	img{
+	  *margin-top:12px;
+	}
+  }
+
+  .nav{
+	height: 50px;
+	li{
+	  line-height: 50px;
+	}
+	a{
+	  font-size:16px;
+	}
+	.current {
+	  i{
+		top:14px;
+		-webkit-animation: fadeins .1s ease-in-out 0s forwards;
+		-moz-animation: fadeins .1s ease-in-out 0s forwards;
+		-ms-animation: fadeins .1s ease-in-out 0s forwards;
+		animation: fadeins .1s ease-in-out 0s forwards;
+	  }
+	  a{
+		font-weight: bold;
+		color: #ea544a;
+		&:hover{
+		  i{
+			-webkit-animation: fadeouts .1s ease-in-out 0s forwards;
+			-moz-animation: fadeouts .1s ease-in-out 0s forwards;
+			-ms-animation: fadeouts .1s ease-in-out 0s forwards;
+			animation: fadeouts .1s ease-in-out 0s forwards;
+		  }
+		}
+	  }
+	}
+  }
+  .loginbtn{
+	margin-top:6px;
+  }
+  .header-1111{
+    left: 120px;
+    img{
+        height: 50px;
+    }
+  }
+}
+@-webkit-keyframes fadein{
+  from {
+	height: 0;
+	width: 0;
+	top:17px;
+	left: 7px;
+  }
+  to {
+	height: 5px;
+	width: 5px;
+	top:15px;
+	left:5px;
+  }
+}
+@-moz-keyframes fadein{
+  from {
+	height: 0;
+	width: 0;
+	top:17px;
+	left: 7px;
+  }
+  to {
+	height: 5px;
+	width: 5px;
+	top:15px;
+	left:5px;
+  }
+}
+@-ms-keyframes fadein{
+  from {
+	height: 0;
+	width: 0;
+	top:17px;
+	left: 7px;
+  }
+  to {
+	height: 5px;
+	width: 5px;
+	top:15px;
+	left:5px;
+  }
+}
+@keyframes fadein{
+  from {
+	height: 0;
+	width: 0;
+	top:17px;
+	left: 7px;
+  }
+  to {
+	height: 5px;
+	width: 5px;
+	top:15px;
+	left:5px;
+  }
+}
+@-webkit-keyframes fadeout{
+  from {
+	height: 5px;
+	width: 5px;
+	top:15px;
+	left:5px;
+  }
+  to {
+	height: 0;
+	width: 0;
+	top:17px;
+	left: 7px;
+  }
+}
+@-moz-keyframes fadeout{
+  from {
+	height: 5px;
+	width: 5px;
+	top:15px;
+	left:5px;
+  }
+  to {
+	height: 0;
+	width: 0;
+	top:17px;
+	left: 7px;
+  }
+}
+@-ms-keyframes fadeout{
+  from {
+	height: 5px;
+	width: 5px;
+	top:15px;
+	left:5px;
+  }
+  to {
+	height: 0;
+	width: 0;
+	top:17px;
+	left: 7px;
+  }
+}
+@keyframes fadeout{
+  from {
+	height: 5px;
+	width: 5px;
+	top:15px;
+	left:5px;
+  }
+  to {
+	height: 0;
+	width: 0;
+	top:17px;
+	left: 7px;
+  }
+}
+
+@-webkit-keyframes fadeins{
+  from {
+	height: 0;
+	width: 0;
+	top:16px;
+	left: 7px;
+  }
+  to {
+	height: 5px;
+	width: 5px;
+	top:14px;
+	left:5px;
+  }
+}
+@-moz-keyframes fadeins{
+  from {
+	height: 0;
+	width: 0;
+	top:16px;
+	left: 7px;
+  }
+  to {
+	height: 5px;
+	width: 5px;
+	top:14px;
+	left:5px;
+  }
+}
+@-ms-keyframes fadeins{
+  from {
+	height: 0;
+	width: 0;
+	top:16px;
+	left: 7px;
+  }
+  to {
+	height: 5px;
+	width: 5px;
+	top:14px;
+	left:5px;
+  }
+}
+@keyframes fadeins{
+  from {
+	height: 0;
+	width: 0;
+	top:16px;
+	left: 7px;
+  }
+  to {
+	height: 5px;
+	width: 5px;
+	top:14px;
+	left:5px;
+  }
+}
+@-webkit-keyframes fadeouts{
+  from {
+	height: 5px;
+	width: 5px;
+	top:14px;
+	left:5px;
+  }
+  to {
+	height: 0;
+	width: 0;
+	top:16px;
+	left: 7px;
+  }
+}
+@-moz-keyframes fadeouts{
+  from {
+	height: 5px;
+	width: 5px;
+	top:14px;
+	left:5px;
+  }
+  to {
+	height: 0;
+	width: 0;
+	top:16px;
+	left: 7px;
+  }
+}
+@-ms-keyframes fadeouts{
+  from {
+	height: 5px;
+	width: 5px;
+	top:14px;
+	left:5px;
+  }
+  to {
+	height: 0;
+	width: 0;
+	top:16px;
+	left: 7px;
+  }
+}
+@keyframes fadeouts{
+  from {
+	height: 5px;
+	width: 5px;
+	top:14px;
+	left:5px;
+  }
+  to {
+	height: 0;
+	width: 0;
+	top:16px;
+	left: 7px;
+  }
+}
+
+.head-box{
+    position: relative;
+}
+.header-1111{
+    position:absolute;
+    top: 0;
+    left:190px;
+    display: block;
+    z-index:5;
+}
+.nav_pop_item{
+  background: #fff;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px;
+  cursor: pointer;
+  .item{
+	width: 126px;
+	height: 36px;
+  }
+  .item-bottom{
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+  }
+  .item:hover{
+	a{
+	  color: #f72f48;
+	  font-weight: bold;
+	}
+	background: #fafafa;
+  }
+  a{
+	display: block;
+	width: 126px;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+	color: #666666;
+	text-decoration: none;
+	font-size: 16px;
+  }
+}
+//wechart financial planner start
+.ui-wechart {
+	float: right;
+    padding: 10px 0;
+    a{
+        display: block;
+        width: 154px;
+        height: 50px;
+        background: url("/styles/images/common/wechart.png")no-repeat 0 0;
+		background-size: 154px 50px ;
+        @include fadein(0.25s);
+
+    }
+	&:hover a{
+		border: 0 none;
+		box-shadow: none;
+		margin-top: -7px;
+		@include fadein(0.25s);
+	}
+}
+.ui-wechart-left{
+	float: left;
+}
+.ui-wechartlayer {
+	display:none;
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:1000;	
+}
+.ui-wechartlayer-bg {
+	width:100%;
+	height:100%;
+	background:#000;
+	@include opacity(0.6);
+}
+.ui-wechartlayer-main {
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-200px 0px 0px -250px;
+	width:500px;
+	height:400px;
+	background:url("/styles/images/common/wechart_layer.png") center top no-repeat;
+	@include ratioBackground($url:'/styles/images/common/wechart_layer_2x.png',$size:500px 400px);
+}
+.ui-wechartlayer-qrcode{
+	position:absolute;
+	left: 71px;
+	top: 224px;
+	display: block;
+	width:110px;
+	height:110px;
+	background-color: #f0c;
+}
+.ui-wechartlayer-close {
+	position:absolute;
+	right:-20px;
+	top:-20px;
+	display:block;
+	width:20px;
+	height:20px;
+	background:url("/styles/images/common/icons.png") -490px -1080px no-repeat;
+	@include fadein(0.5s);
+	&:hover {
+		-webkit-transform:rotate(360deg);
+		-moz-transform:rotate(360deg);
+		transform:rotate(360deg);
+
+	}
+}
+//wechart financial planner end

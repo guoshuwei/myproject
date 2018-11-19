@@ -1,0 +1,66 @@
+{
+    "code": 200,
+    "message": "Success.",
+    "data": {
+        "4": {
+            "id": "4",
+            "face_value": "2040.00",
+            "min_amount": "10000.00",
+            "min_period": "30",
+            "rate": "12.24",
+            "activity_rate": 36.24,
+            "expire_time": 1508774399,
+            "is_receive": 1,
+            "can_be_received": 2,
+            "is_empty": 2
+        },
+        "6": {
+            "id": "6",
+            "face_value": "1.300.00",
+            "min_amount": "15000.00",
+            "min_period": "30",
+            "rate": "12.24",
+            "activity_rate": 36.24,
+            "expire_time": 1508774399,
+            "is_receive": 2,
+            "can_be_received": 2,
+            "is_empty": 2
+        },
+        "9": {
+            "id": "9",
+            "face_value": "50.00",
+            "min_amount": "1000.00",
+            "min_period": "30",
+            "rate": "12.24",
+            "activity_rate": 72.24,
+            "expire_time": 1508774399,
+            "is_receive": 2,
+            "can_be_received": 2,
+            "is_empty": 2
+        },
+        "29": {
+            "id": "9",
+            "face_value": "50.00",
+            "min_amount": "1000.00",
+            "min_period": "30",
+            "rate": "12.24",
+            "activity_rate": 72.24,
+            "expire_time": 1508774399,
+            "is_receive": 2,
+            "can_be_received": 2,
+            "is_empty": 2
+        },
+        "19": {
+            "id": "9",
+            "face_value": "50.00",
+            "min_amount": "1000.00",
+            "min_period": "30",
+            "rate": "12.24",
+            "activity_rate": 72.24,
+            "expire_time": 1508774399,
+            "is_receive": 2,
+            "can_be_received": 2,
+            "is_empty": 2
+        }
+    }
+}

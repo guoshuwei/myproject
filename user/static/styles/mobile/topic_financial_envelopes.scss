@@ -1,0 +1,236 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils'; 
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog'; 
+@import '../inc/m_ui';
+@import '../inc/footer-mobile';
+
+body{
+    background: #f77400;
+    padding-top: px2rem(30px);
+}
+.ui-section{
+    width: px2rem(750px);
+    margin: 0 auto;
+}
+.ui-back{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #9e4910;
+    height: px2rem(70px);
+    z-index: 99;
+}
+.ui-icons-back{
+    float: left;
+    width: px2rem(20px);
+    height: px2rem(35px);
+    margin: px2rem(17px) px2rem(10px) 0 px2rem(20px);
+    background: url(/styles/images/topic/financial/mobile/icons.png) no-repeat px2rem(-285px) 0;
+    background-size: px2rem(400px) px2rem(400px);
+}
+.ui-back-history{
+    float: left;
+    width: px2rem(120px);
+    font-size: px2rem(30px);
+    color: #fff;
+    line-height: px2rem(70px);
+}
+.ui-back-title{
+    margin: 0 px2rem(120px);
+    font-size: px2rem(30px);
+    color: #fff;
+    line-height: px2rem(70px);
+    text-align: center;
+}
+.ui-back-right{
+    float: right;
+    text-align: right;
+    margin-right: px2rem(20px); 
+    width: px2rem(120px);
+    font-size: px2rem(24px);
+    color: #fff;
+    line-height: px2rem(70px);
+}
+.ui-financial-title{
+    font-size: px2rem(40px);
+    color: #fff;
+    line-height: px2rem(37px);
+    text-align: center;
+}
+.ui-financial-note{
+    font-size: px2rem(30px);
+    color: #fff;
+    text-align: center;
+    line-height: px2rem(30px);
+    margin: px2rem(15px) 0;
+}
+.ui-integral{
+    background: #ffd400 url(/styles/images/topic/financial/mobile/bg_integral.png) no-repeat 0 0;
+    background-size: px2rem(710px) px2rem(100px);
+    margin: px2rem(70px) px2rem(20px) px2rem(55px);
+    padding: px2rem(60px) px2rem(9px) px2rem(50px);
+}
+.ui-envelopes-item{
+    margin: 0 auto;
+    width: px2rem(581px);
+    height: px2rem(668px);
+    background: #ffd400 url(/styles/images/topic/financial/mobile/bg_redpaper.png) no-repeat 0 0;
+    background-size: px2rem(581px) px2rem(668px);
+}
+.ui-envelopes-title{
+    padding: px2rem(40px) 0;
+    img{
+        display: block;
+        margin: 0 auto;
+        width: px2rem(371px);
+        height: px2rem(135px);
+    }
+}
+.ui-envelopes-note{
+    font-size: px2rem(44px);
+    line-height: px2rem(60px);
+    color: #fff;
+    text-align: center;
+    padding: 0 px2rem(20px);
+    span{
+        color: #ffd400;
+    }
+}
+.ui-envelopes-vcode{
+    margin: 0 auto;
+    padding-top: px2rem(50px);
+    width: px2rem(188px);
+    height: px2rem(188px);
+    border-radius: px2rem(6px);
+    img{
+        width: px2rem(188px);
+        height: px2rem(188px);
+        border-radius: px2rem(6px);
+    }
+}
+.ui-envelopes-ps{
+    font-size: px2rem(26px);
+    color: #fff;
+    line-height: px2rem(95px);
+    text-align: center;
+    span{
+        color: #ffd400;
+    }
+}
+.ui-envelopes-ing-title{
+    padding-top: px2rem(30px);
+    font-size: px2rem(40px);
+    color: #fff;
+    text-align: center;
+}
+.ui-envelopes-ing-note{
+    font-size: px2rem(30px);
+    color: #fff;
+    text-align: center;
+}
+.ui-envelopes-ing-choose{
+    margin: 0 px2rem(50px);
+}
+.ui-envelopes-ing-choose-item{
+    float: left;
+    padding: px2rem(25px);
+    img{
+        border-radius: px2rem(10px);
+        width: px2rem(190px);
+        height: px2rem(190px);
+        background-color: #fff;
+    }
+}
+.ui-envelopes-ing-ps{
+    padding-top: px2rem(5px);
+    text-align: center;
+    font-size: px2rem(24px);
+    color: #fff;
+    span{
+        color: #ffd400;
+    } 
+      
+}
+.ui-icons-redpaper{
+    display: inline-block;
+    width: px2rem(34px);
+    height: px2rem(40px);
+    background: url(/styles/images/topic/financial/mobile/icons.png) no-repeat 0 px2rem(-186px);
+    background-size: px2rem(400px) px2rem(400px); 
+    vertical-align: top;
+    margin-right: px2rem(20px);  
+}
+.ui-financial-empty{  
+    width: 100%;
+    text-align: center;      
+    img{
+        width: px2rem(600px);
+        height: px2rem(300px);
+    }
+}
+.ui-over-title{
+    font-size: px2rem(48px);
+    color: #fff;
+    text-align: center;
+    line-height: px2rem(37px);
+}
+.ui-over-note{
+    font-size: px2rem(20px);
+    color: #fff;
+    text-align: center;
+    line-height: px2rem(30px);
+    padding-top: px2rem(20px);
+}
+.ui-over-number{
+    font-size: px2rem(80px);
+    color: #ffd400;
+    text-align: center;
+    line-height: px2rem(80px);
+}
+.ui-over-name{
+    font-size: px2rem(36px);
+    color: #ffd400;
+    text-align: center;
+    line-height: px2rem(60px);
+}
+.ui-envelopes-special{
+    margin: 0 auto;
+    width: px2rem(581px);
+    height: px2rem(964px);
+    background: #ffd400 url(/styles/images/topic/financial/mobile/bg_redpaper_ing.png) no-repeat 0 0;
+    background-size: px2rem(581px) px2rem(964px);
+}
+.ui-plat-logo{
+    margin-top: px2rem(15px);
+    height: px2rem(100px);
+    text-align: center;
+    a{
+        display: inline-block;
+        border-radius: px2rem(10px);
+        overflow: hidden;
+        background-color: #fff;
+    }
+    span{
+        display: table-cell;
+        width: px2rem(175px);
+        height: px2rem(100px);
+        margin: 0 px2rem(8px);
+        border-radius: px2rem(10px);
+        overflow: hidden;
+        vertical-align: middle;
+        text-align: center;
+    }
+    img{
+        max-width: px2rem(175px);
+        max-height: px2rem(100px);
+    }
+}
+.ui-friendly{
+    line-height: px2rem(90px);
+    text-align: center;
+    font-size: px2rem(26px);
+    color: #fff;
+}

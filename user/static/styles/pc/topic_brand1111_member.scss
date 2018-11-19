@@ -1,0 +1,246 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/header';
+@import '../inc/footer';
+@import '../mod/floatlayer';
+@import '../mod/bind';
+
+
+html,body{
+	background-color: #fff;
+}
+a:hover{
+	text-decoration: none;
+}
+.ui-brandnav{
+	height: 100px;
+	background-color: #f4f4fa;
+}
+.ui-brandnav-logo{
+	float: left;
+	width: 330px;
+	img{
+
+	}
+}
+.ui-brandnav-list{
+	float: left;
+	padding: 30px 0;
+}
+.ui-brandnav-list-item{
+	float: left;
+	padding: 0 35px;
+	height: 40px;
+	line-height: 40px;
+	border-right: 2px solid #383838;
+	&:last-child{
+		border-right: 0 none;
+	}
+	a{
+		display: block;
+		font-weight: bold;
+		font-size: 16px;
+		color: #383838;
+		&:hover{
+			color: #e2231a;
+		}
+	}
+}
+.ui-brandnav-list-current{
+	a{
+		color: #e2231a;
+	}
+}
+.ui-brandtable{
+	display: none;
+	width: 1000px;
+	margin: 0 auto;
+}
+.ui-brandtable-active{
+	display: block;
+}
+.ui-brandtable-box{
+	min-height: 472px;
+}
+.ui-address{
+	padding: 20px 0 20px 20px;
+	height: 35px;
+	border: 2px dashed #f18e8d;
+}
+.ui-address-content{
+	float: left;
+}
+.ui-address-content-info{
+	width: 650px;
+	font-weight: bold;
+	font-size: 16px;
+	color: #383838;
+	line-height: 16px;
+	margin-bottom: 7px;
+	@include text-ellipsis;
+}
+.ui-address-content-note{
+	font-size: 12px;
+	color: #e2231a;
+	line-height: 12px;
+}
+.ui-address-button{
+	float: right;
+	margin-right: 20px;
+	width: 133px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	background-color: #e31d1a;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 5px;
+	&:hover{
+		background-color: #a50814;
+	}
+}
+.ui-brandtable-title{
+	padding-left: 12px;
+	height: 22px;
+	line-height: 22px;
+	font-weight: bold;
+	color: #383838;
+	font-size: 16px;
+	border-left: 4px solid #e31d1a;
+
+}
+.ui-table{
+	height: 400px;
+}
+.ui-brandtable-list{	
+	table{
+		width: 100%;
+	}
+	th{
+		height: 40px;
+		background-color: #f4f4fa;
+		text-align: center;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	tbody{
+		tr{
+			border-bottom: 1px dashed #e6e6e6;
+		}
+		.ui-brandtable-empty{
+			border-bottom: 0 none;
+		}
+	}
+	td{
+		height: 44px;
+		text-align: center;
+		font-size: 14px;
+		border-bottom: 1px dashed #e6e6e6;
+		a{
+			font-weight: bold;
+			color: #e2231a;
+		}
+	}
+
+}
+.ui-brandtable-empty{
+	height: 472px;
+	td{
+		border-bottom: 0 none;
+	}
+	img{
+		width: 159px;
+		margin: 0 auto;
+	}
+}
+.ui-record-pager{
+	text-align: center;
+	padding-top: 35px;
+	height: 37px;
+	a:hover{
+		text-decoration: none;
+	}
+	a{
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		margin: 0 4px;
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		text-align: center;
+		color: #e31d1a;
+		font-size: 14px;
+		border: 1px solid #e31d1a;
+		border-radius: 3px;
+		background-color: #fff;
+		&:hover{
+			color: #fff;
+			border: 1px solid #a50814;
+			background-color: #a50814;
+		}
+	}
+	span{
+		color: #e31d1a;
+	}
+	.jp-current{
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		text-align: center;
+		color: #fff;
+		font-size: 14px;
+		border: 1px solid #e31d1a;
+		border-radius: 3px;
+		background-color: #e31d1a;
+		cursor: default;
+		&:hover{
+			border: 1px solid #e31d1a;
+			background-color: #e31d1a;
+		}
+	}
+	.jp-previous,
+	.jp-next{
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		width: auto;
+		padding: 0 16px;
+		border-radius: 3px;
+		font-size:14px;
+		color: #fff;
+		height: 35px;
+		line-height: 35px;
+		background-color: #e31d1a;
+		&:hover{
+			background-color: #a50814;
+		}
+	}
+	.jp-disabled{
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		width: auto;
+		padding: 0 16px;
+		border-radius: 3px;
+		font-size: 14px;
+		color: #fff;
+		height: 35px;
+		line-height: 35px;
+		border: 1px solid #cbcbcb;
+		background-color: #cbcbcb;
+		cursor: default;
+		&:hover{
+			border: 1px solid #cbcbcb;
+			background-color: #cbcbcb;
+		}
+	}
+}

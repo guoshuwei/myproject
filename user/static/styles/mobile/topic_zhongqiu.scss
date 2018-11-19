@@ -1,0 +1,569 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/grid';
+@import '../mod/dialog';
+@import '../inc/m_ui';
+
+body,html{
+  width:100%;
+  background: #faf2df;
+  font-family: "Microsoft Yahei", Hei, Tahoma, SimHei, sans-serif;
+}
+a:hover{
+  text-decoration: none;
+}
+.topic_zhongqiu{
+  width:px2rem(750px);
+  margin:0 auto;
+}
+.wrap {
+  background: url("/styles/images/harvest/mobile/bg2.png") center 0 no-repeat;
+  background-size:100% auto;
+  //width:px2rem(750px);
+  //margin:0 auto;
+  overflow: hidden;
+  .hd{
+    .list{
+      width:px2rem(656px);
+      height:px2rem(226px);
+      margin: 0 auto;
+      padding-top: px2rem(392px);
+      position: relative;
+      .play{
+        position:absolute;
+        .logo{
+          width:px2rem(160px);
+          height:px2rem(96px);
+          margin: px2rem(16px) auto;
+          img{
+            width: px2rem(160px);
+          }
+        }
+        .perform{
+          font-size: px2rem(22px);
+          font-weight: 800;
+          padding-top: px2rem(32px);
+          color: #383838;
+          text-align: center;
+        }
+      }
+      .play.today{
+        width:px2rem(451px);
+        height:px2rem(229px);
+        background:url("/styles/images/harvest/mobile/today.png") no-repeat;
+        background-size: 100%;
+        top:px2rem(392px);
+        left:px2rem(84px);
+        z-index: 1;
+      }
+      .play.forward1{
+        width:px2rem(289px);
+        height:px2rem(147px);
+        background:url("/styles/images/harvest/mobile/forward1.png") no-repeat;
+        background-size: 100%;
+        top:px2rem(426px);
+        right:0;
+        .logo{
+          width:px2rem(50px);
+          height:px2rem(50px);
+          margin: 24px auto;
+          img{
+            width:px2rem(50px);
+            height:px2rem(50px);
+          }
+        }
+        .perform{
+          font-size: px2rem(14px);
+          padding-top: px2rem(8px);
+          .time{
+            font-size:px2rem(16px);
+            font-weight: 800;
+            margin-top: px2rem(-4px);
+          }
+          .open{
+            font-size: px2rem(14px);
+            margin: 0 auto;
+            margin-left: px2rem(15px);
+          }
+        }
+      }
+      .play.forward2{
+        width:px2rem(232px);
+        height:px2rem(119px);
+        background:url("/styles/images/harvest/mobile/forward2.png") no-repeat;
+        background-size: 100%;
+        top:px2rem(432px);
+        left:0;
+        .logo{
+          width:px2rem(40px);
+          height:px2rem(40px);
+          margin: 24px auto;
+          img{
+            width:px2rem(40px);
+            height:px2rem(40px);
+          }
+        }
+        .perform{
+          font-size: px2rem(16px);
+          padding-top: px2rem(6px);
+          .time{
+            font-size:px2rem(14px);
+            font-weight: 800;
+            margin-top: px2rem(-4px);
+            padding-left: px2rem(20px);
+          }
+          .open{
+            font-size: px2rem(12px);
+            margin: 0 auto;
+            margin-left: px2rem(35px);
+          }
+        }
+      }
+    }
+  }
+  .bd{
+    .hotLoans{
+      margin-top: px2rem(20px);
+      padding: px2rem(32px) 0 px2rem(62px) 0;
+      .loans-h{
+        .title{
+          height:px2rem(43px);
+          line-height:px2rem(43px);
+          background:url("/styles/images/harvest/mobile/bk_tit.png") no-repeat;
+          background-size: 100% ;
+          text-align: center;
+          font-size: px2rem(36px);
+          font-weight: 800;
+          color: #383838;
+        }
+        .remark{
+          font-size: px2rem(24px);
+          color: #383838;
+          text-align: center;
+          padding-top: px2rem(8px);
+        }
+      }
+      .loans-b{
+        background:url("/styles/images/harvest/mobile/bk_bg.png") no-repeat;
+        background-size: 100% 100%;
+        margin-top: px2rem(-36px);
+        .emptyh5{
+          width:px2rem(600px);
+          height:px2rem(370px);
+          margin:0 auto;
+          padding-top:px2rem(110px);
+          img{
+            width:px2rem(600px);
+            height:px2rem(370px);
+          }
+        }
+        .hotLoansTpl{
+          .info{
+            text-align: center;
+            padding-top:px2rem(100px);
+            .time{
+              font-weight: 800;
+              font-size: px2rem(66px);
+              text-align: center;
+              padding-bottom: px2rem(6px);
+            }
+            .state{
+              width:px2rem(120px);
+              height:px2rem(32px);
+              background: #11a884;
+              border-radius: px2rem(16px);
+              margin: 0 auto;
+              text-align: center;
+              line-height:px2rem(32px);
+              color: #fff;
+              font-size: px2rem(16px);
+            }
+            .state.over{
+              background: #b5b5b5;
+            }
+            .logo{
+              width:px2rem(260px);
+              height:px2rem(150px);
+              border:2px solid #ff5b00;
+              margin: px2rem(14px) auto 0;
+              img{
+                width:px2rem(260px);
+                height:px2rem(150px);
+              }
+            }
+          }
+          .title{
+            .loans-name{
+              display: block;
+              font-size: px2rem(28px);
+              font-weight: 800;
+              width:px2rem(540px);
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+              margin: px2rem(38px) auto px2rem(18px);
+              text-align: center;
+              color: #383838;
+            }
+          }
+          .num-info{
+            padding-left: px2rem(60px);
+            .item{
+              float:left;
+              width:px2rem(210px);
+              text-align: center;
+              .num.annual{
+                color: #383838;
+                padding-top: px2rem(22px);
+                .num-int{
+                  font-size: px2rem(40px);
+                }
+                .num-float{
+                  font-size: px2rem(22px);
+                }
+              }
+              .num.add{
+                color: #ea4b43;
+                .num-int{
+                  font-size: px2rem(60px);
+                }
+                .num-float{
+                  font-size: px2rem(30px);
+                }
+              }
+              .num.limit{
+                color: #383838;
+                padding-top: px2rem(18px);
+                .num-int{
+                  font-size: px2rem(40px);
+                }
+                .num-float{
+                  font-size: px2rem(28px);
+                }
+              }
+              .info{
+                color: #787878;
+                font-size: px2rem(22px);
+                padding-top: px2rem(6px);
+              }
+            }
+          }
+          .count-tit{
+            font-size: px2rem(38px);
+            text-align: center;
+            line-height: px2rem(84px);
+            color: #383838;
+            font-weight: 800;
+          }
+          .count{
+            width: px2rem(566px);
+            margin: 0 auto;
+            .time{
+              float: left;
+              margin: 0 px2rem(9px);
+              height:px2rem(95px);
+              font-weight: 800;
+              font-size: px2rem(48px);
+              text-align: center;
+              line-height:px2rem(95px);
+            }
+            .time.number{
+              width:px2rem(64px);
+              background: #383838;
+              color: #fff;
+            }
+            .time-sign{
+              width:px2rem(18px);
+              color:#383838;
+            }
+          }
+        }
+        .more{
+          font-size: px2rem(24px);
+          color: #383838;
+          font-weight: 800;
+          text-align: center;
+          padding-top: px2rem(74px);
+        }
+      }
+    }
+    .normalLoans{
+      margin-top: px2rem(20px);
+      margin-bottom: px2rem(60px);
+      .loans-h{
+        .title{
+          height:px2rem(52px);
+          line-height:px2rem(52px);
+          background:url("/styles/images/harvest/mobile/nor_tit.png") no-repeat;
+          background-size: 100% 100%;
+          text-align: center;
+          font-size: px2rem(36px);
+          font-weight: 800;
+          color: #383838;
+        }
+        .remark{
+          font-size: px2rem(24px);
+          color: #383838;
+          text-align: center;
+          padding:px2rem(12px) 0 px2rem(18px) 0;
+        }
+      }
+      .loans-b{
+        width:px2rem(600px);
+        border: 7px solid #ff5b00;
+        margin: 0 auto;
+        padding:px2rem(10px) px2rem(28px);
+        background: #fff;
+        .li{
+          padding:px2rem(40px) px2rem(14px);
+          border-bottom: 1px solid #cecece;
+          .title{
+            font-size: px2rem(28px);
+            font-weight: 800;
+            color: #383838;
+            .loans-name{
+              width:px2rem(540px);
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+              display: block;
+              margin: 0 auto;
+              color: #383838;
+            }
+          }
+          .num-info{
+            .item{
+              float:left;
+              width:px2rem(190px);
+              text-align: center;
+              .num.annual{
+                color: #383838;
+                padding-top: px2rem(22px);
+                .num-int{
+                  font-size: px2rem(40px);
+                }
+                .num-float{
+                  font-size: px2rem(22px);
+                }
+              }
+              .num.add{
+                color: #ea4b43;
+                .num-int{
+                  font-size: px2rem(60px);
+                }
+                .num-float{
+                  font-size: px2rem(30px);
+                }
+              }
+              .num.limit{
+                color: #383838;
+                padding-top: px2rem(18px);
+                .num-int{
+                  font-size: px2rem(40px);
+                }
+                .num-float{
+                  font-size: px2rem(28px);
+                }
+              }
+              .info{
+                color: #787878;
+                font-size: px2rem(22px);
+                padding-top: px2rem(6px);
+              }
+            }
+          }
+        }
+        .li.not{
+          border-bottom: 0;
+        }
+      }
+    }
+    .totalInvest{
+      width:px2rem(680px);
+      margin: 0 auto;
+      .title{
+        width: px2rem(560px);
+        height:px2rem(52px);
+        background: url("/styles/images/harvest/mobile/fall_tit.png") no-repeat;
+        background-size: 100% 100%;
+        font-size: px2rem(35px);
+        font-weight: 800;
+        line-height:px2rem(52px);
+        color: #383838;
+        text-align: center;
+        margin: 0 auto;
+      }
+      .remark{
+        font-size: px2rem(24px);
+        color: #383838;
+        text-align: center;
+        padding:px2rem(12px) 0 px2rem(18px) 0;
+      }
+      .invest{
+        width:px2rem(682px);
+        height:px2rem(377px);
+        background: url("/styles/images/harvest/mobile/fall_bg.png") no-repeat;
+        background-size: 100% 100%;
+        padding-top: px2rem(64px);
+        .tit{
+          width:px2rem(345px);
+          height:px2rem(55px);
+          background: url("/styles/images/harvest/mobile/fall_tit2.png") no-repeat;
+          background-size: 100% 100%;
+          margin: 0 auto;
+          font-size: px2rem(28px);
+          text-align: center;
+          line-height:px2rem(66px);
+          font-weight: 800;
+          color: #383838;
+        }
+        .total-money{
+          color: #ea4b43;
+          font-size: px2rem(32px);
+          font-weight: 800;
+          text-align: center;
+          padding: px2rem(14px) 0 px2rem(30px);
+          .num-int{
+            font-size: px2rem(60px);
+            padding-left: px2rem(6px);
+          }
+          .num-float{
+            font-size: px2rem(22px);
+          }
+        }
+        .total-people{
+          width:px2rem(475px);
+          height:px2rem(29px);
+          background: url("/styles/images/harvest/mobile/fall_p.png") no-repeat;
+          background-size: 100% 100%;
+          margin: 0 auto;
+          font-size: px2rem(22px);
+          color: #383838;
+          text-align: center;
+          line-height:px2rem(29px);
+          .people-num{
+            color: #ea4b43;
+            font-size: px2rem(20px);
+          }
+        }
+        .start-time{
+          color: #383838;
+          font-size: px2rem(28px);
+          font-weight: 800;
+          text-align: center;
+          padding: px2rem(40px) 0;
+        }
+      }
+      .fall{
+        background: url("/styles/images/harvest/mobile/fall_bg.png") no-repeat;
+        background-size: 100% 100%;
+        padding-top: px2rem(40px);
+        text-align: center;
+        .tit{
+          width:px2rem(345px);
+          height:px2rem(55px);
+          background: url("/styles/images/harvest/mobile/fall_tit2.png") no-repeat;
+          background-size: 100% 100%;
+          margin: 0 auto;
+          font-size: px2rem(28px);
+          text-align: center;
+          line-height:px2rem(66px);
+          font-weight: 800;
+          color: #383838;
+        }
+        .price{
+          font-size: px2rem(50px);
+          font-weight: 800;
+          padding: px2rem(24px) 0;
+          b{
+            color: #ea4b43;
+          }
+        }
+        .total-money{
+          font-size: px2rem(24px);
+          color: #383838;
+          .money{
+            font-size: px2rem(20px);
+            font-weight: 800;
+            color: #ea4b43;
+          }
+        }
+        .total-people{
+          font-size: px2rem(24px);
+          color: #383838;
+          .people{
+            font-size: px2rem(20px);
+            font-weight: 800;
+            color: #ea4b43;
+          }
+        }
+        .total-moneybag,.go-pc{
+          font-size: px2rem(20px);
+          font-weight: 800;
+          color: #383838;
+          padding: px2rem(15px) 0;
+        }
+        .explain{
+          font-size: px2rem(22px);
+          text-align: left;
+          padding: 0 px2rem(52px);
+        }
+      }
+    }
+    .illustrate{
+      width:px2rem(590px);
+      //height:px2rem(662px);
+      background: #fff;
+      margin: px2rem(56px) auto px2rem(100px);
+      padding:px2rem(26px) px2rem(42px) 0;
+      .title{
+        width:px2rem(340px);
+        height:px2rem(67px);
+        background:url("/styles/images/harvest/mobile/rule.png") no-repeat;
+        background-size: 100% 100%;
+        margin:0 auto;
+        text-align: center;
+        line-height:px2rem(70px);
+        font-size: px2rem(28px);
+        font-weight: 800;
+        color: #ff742e;
+      }
+      .content{
+        padding-top: px2rem(6px);
+        .rule{
+          padding-bottom: px2rem(18px);
+          font-size: px2rem(24px);
+          color: #383838;
+          line-height: px2rem(36px);
+          .moneybag{
+            color: #383838;
+          }
+        }
+      }
+    }
+  }
+  .float-window{
+    a{
+      display: block;
+      width: px2rem(110px);
+      height: px2rem(105px);
+      background: url("/styles/images/harvest/mobile/float.png") no-repeat;
+      background-size: 100% 100%;
+      position: fixed;
+      right:0;
+      top:px2rem(288px);
+      line-height: px2rem(42px);
+      padding-top: px2rem(21px);
+      color: #ff5b00;
+      font-weight: 800;
+      padding-left: px2rem(40px);
+    }
+  }
+}
+.placeholderbox{
+  display: none;
+  width: px2rem(75px);
+  height: px2rem(410px);
+}

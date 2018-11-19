@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog';
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+@import '../inc/footer-mobile';
+.ui-footer {
+	display:none;
+}
+html{
+	min-height:100%;
+	background:#fb2f0e 
+}
+.page_section {
+	background: url("/styles/images/cpasinviting/mobile/bindplatform_bg.png") center top  no-repeat;
+	background-size:px2rem(750px) px2rem(493px);
+}
+.ui-icon1 {
+	background:url("/styles/images/cpasinviting/mobile/jibei_invite_icon.png") center top  no-repeat;
+	background-size:px2rem(598px) px2rem(167px);
+}
+main {
+	padding-top:px2rem(493px);
+	width:px2rem(674px);
+	margin:0px auto;
+}
+.ui-platinfo {
+	background:#fff;
+	height:px2rem(472px);
+	margin-bottom:px2rem(30px);
+	text-align:center;
+	overflow:hidden;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	padding:0px px2rem(38px);
+	color:#674a49;
+	.platinfo-name {
+		font-size:px2rem(30px);
+		height:px2rem(89px);
+		line-height:px2rem(89px);
+		padding-bottom:px2rem(10px);
+		background-position:0px px2rem(89px);
+	}
+	.platinfo-logo {
+		padding:px2rem(44px) 0px;
+		height:px2rem(106px);
+		overflow:hidden;
+	}
+	.platinfo-logo-common {
+		display:inline-block;
+		width:px2rem(18px);
+		height:px2rem(88px);
+		position:absolute;
+		top:px2rem(10px);
+	}
+	.platinfo-logo-left {
+		// left:px2rem(-48px);
+		left:0px;
+		background-position:0px px2rem(-40px);
+	}
+	.platinfo-logo-right {
+		right:0px;
+		background-position:px2rem(-55px) px2rem(-40px);
+	}
+	.platinfo-logo-img {
+		display:inline-block;
+		position:relative;
+		height:106px;
+		padding:0px px2rem(48px);
+		-box-sizing:border-box;
+		box-sizing:border-box;
+		img {
+			height:px2rem(106px);
+			vertical-align:top;
+			max-width:100%;
+		}
+	}
+	.platinfo-btn {
+		display:inline-block;
+		font-size:px2rem(30px);
+		color:#fff;
+		width:px2rem(593px);
+		height:px2rem(84px);
+		line-height:px2rem(84px);
+		background:#fb2f0e;
+		border-radius:px2rem(8px);
+	}
+	.platinfo-btnend {
+		background:#ccc3c2;
+	}
+	.platinfo-footer {
+		font-size:px2rem(24px);
+		line-height:px2rem(94px);
+		a {
+			color:#a55422;
+			text-decoration:underline;
+		}
+	}
+}
+.ui-detail {
+	background:#fff;
+	padding:px2rem(26px) px2rem(42px) 0px px2rem(48px);
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	height:px2rem(180px);
+	margin-bottom:px2rem(30px);
+	display:block;
+	.detail-left {
+		color:#a55422;
+	}
+	.detail-right {
+		width:px2rem(182px);
+		height:px2rem(128px);
+		background-position:bottom right;
+	}
+	.detail-right-text {
+		font-size:px2rem(26px);
+		line-height:px2rem(34px);
+		padding-top:px2rem(24px);
+		color:#ff3b1a;
+		width:px2rem(114px);
+		text-align:center;
+		padding-left:px2rem(43px);
+	}
+	.detail-left-tit {
+		padding-top:px2rem(24px);
+		font-size:px2rem(30px);
+		line-height:px2rem(50px);
+	}
+	.detail-left-text {
+		font-size:px2rem(28px);
+		line-height:px2rem(34px);
+		span {
+			display:inline-block;
+			vertical-align:top;
+			height:px2rem(34px);
+			width:px2rem(28px);
+			padding-left:px2rem(20px);
+			background-position:px2rem(-340px) px2rem(-40px);
+		}
+	}
+}

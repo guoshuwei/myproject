@@ -1,0 +1,103 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/footer';
+@import '../mod/bind';
+
+.mod-floatlayer {
+  display: none;
+}
+body{
+  width: 100%;
+  background: url("/styles/images/topic/borntolove/pc/xingkong.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.book_wrapper{
+  width: 974px;
+  height: 645px;
+  margin: 60px auto 0px;
+  background: url("/styles/images/topic/borntolove/pc/bookbj.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  padding-top: 25px;
+}
+.reference{
+  display: block;
+  width: 270px;
+  height: 38px;
+  overflow: hidden;
+  margin: 20px auto 0px;
+}
+.reference-begin{
+  float: left;
+  width: 124px;
+  height: 36px;
+  background: #27a2f0;
+  line-height: 36px;
+  text-align: center;
+  color: #f2f2f2;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.reference-begin:hover{
+  text-decoration: none;
+}
+.reference-end{
+  float: left;
+  width: 122px;
+  height: 34px;
+  border: 1px solid #797983;
+  line-height: 34px;
+  text-align: center;
+  color: #eee;
+  border-radius: 3px;
+  margin-left: 19px;
+  cursor: pointer;
+}
+.reference-end:hover{
+  text-decoration: none;
+}
+.b-load img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#next_page_button,
+#prev_page_button{
+  display:none;
+  position:absolute;
+  width:41px;
+  height:40px;
+  cursor:pointer;
+  margin-top:-20px;
+  top:50%;
+  background:transparent url("/styles/images/topic/borntolove/pc/buttons.png") no-repeat 0px -40px;
+}
+#prev_page_button{
+  left:-30px;
+}
+#next_page_button{
+  right:-30px;
+  background-position:-41px -40px;
+}
+#next_page_button:hover{
+  background-position:-41px 0px;
+}
+#prev_page_button:hover{
+  background-position:0px 0px;
+}
+.feng{
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 19px;
+  height: 620px;
+  background:url("/styles/images/topic/borntolove/pc/feng.png") no-repeat;
+  margin: 0 auto;
+  z-index: 1000;
+}

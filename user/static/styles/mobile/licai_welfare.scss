@@ -1,0 +1,393 @@
+@charset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog';
+@import '../inc/header-mobile';
+@import '../inc/footer-mobile';
+
+
+
+.content-wrap{
+  padding: px2rem(568px) 0 px2rem(100px);
+  background: #feaf7f url(/styles/images/mobile/welfare/bg.png) no-repeat;
+  background-size: px2rem(750px) px2rem(761px);
+}
+.content-wrap58{
+  padding: px2rem(568px) 0 px2rem(100px);
+  background: #feaf7f url(/styles/images/mobile/welfare/bgh5.png) no-repeat;
+  background-size: px2rem(750px) px2rem(761px);
+}
+.content{
+  width: px2rem(720px);
+  margin: 0 auto;
+}
+.count-down-tips{
+  display: block;
+  height: px2rem(73px);
+  line-height: px2rem(73px);
+  font-size: px2rem(26px);
+  color: #612b00;
+  text-align: center;
+}
+.count-down-wrap{
+  width: px2rem(500px);
+  height: px2rem(52px);
+  margin: 0 auto px2rem(50px);
+}
+.count-down-number{
+  float: left;
+  width: px2rem(41px);
+  height: px2rem(52px);
+  line-height: px2rem(52px);
+  background-color: #612b00;
+  color: #fff;
+  font-weight: bold;
+  font-size: px2rem(32px);
+  border-radius: px2rem(6px);
+  text-align: center;
+}
+.count-down-number+.count-down-number{
+  margin-left: px2rem(3px);
+}
+.count-down-unit{
+  float: left;
+  width: px2rem(40px);
+  height: px2rem(52px);
+  line-height: px2rem(52px);
+  color: #612b00;
+  font-size: px2rem(22px);
+  text-align: center;
+}
+
+
+
+.section-wrap{
+  position: relative;
+  padding: 0 px2rem(15px) px2rem(15px);
+  -webkit-border-radius: px2rem(10px);
+  -moz-border-radius: px2rem(10px);
+  border-radius: px2rem(10px);
+  background-image: url(/styles/images/mobile/welfare/line-bg.png);
+  background-size: px2rem(30px) px2rem(52.5px);
+}
+.section-wrap + .section-wrap{
+  margin-top: 30px;
+}
+
+
+.have-in-hand{
+  font: 0/0 a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: px2rem(122px);
+  height: px2rem(128.5px);
+  background:  url(/styles/images/mobile/welfare/shoudai.png) no-repeat;
+  background-size: px2rem(122px) px2rem(128.5px);
+  z-index: 10;
+}
+.task-wrap .task-title{
+  width: px2rem(435px);
+}
+.task-title{
+  font-weight: bold;
+  height: px2rem(70px);
+  line-height: px2rem(70px);
+  font-size: px2rem(26px);
+  color: #612b00;
+  text-align: center;
+  margin: 0 auto;
+}
+.task-adorn{
+  display: block;
+  float: left;
+  height: px2rem(8.5px);
+  width: px2rem(144.5px);
+  margin-top: px2rem(33px);
+  background-size: px2rem(144.5px) px2rem(8.5px);
+}
+.task-adorn-l{
+  background-image: url(/styles/images/mobile/welfare/title-line-left_01.png);
+}
+.task-adorn-r{
+  background-image: url(/styles/images/mobile/welfare/title-line-right.png);
+}
+
+.task-title-word{
+  display: block;
+  float: left;
+  font-weight: bold;
+  height: px2rem(70px);
+  width: px2rem(146px);
+}
+
+.section-box{
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.box-spot{
+  position: absolute;
+  height: px2rem(8px);
+  width: px2rem(8px);
+  background-image:  url(/styles/images/mobile/welfare/yuandian.png);
+  background-size: px2rem(8px) px2rem(8px);
+}
+.box-spot-lt{
+  left: px2rem(10px);
+  top: px2rem(10px);
+}
+.box-spot-lb{
+  left: px2rem(10px);
+  bottom: px2rem(10px);
+}
+.box-spot-rt{
+  top: px2rem(10px);
+  right: px2rem(10px);
+}
+.box-spot-rb{
+  right: px2rem(10px);
+  bottom: px2rem(10px);
+}
+.task-wrap .section-box{
+  height: px2rem(105px);
+  padding: px2rem(42px) px2rem(29px) px2rem(43px) px2rem(38px);
+}
+
+
+.task-red-packet{
+  height: px2rem(102.5px);
+  width: px2rem(91.5px);
+  margin-right: px2rem(30px);
+  background: url(/styles/images/mobile/welfare/renwu-red.png) no-repeat;
+  background-size: px2rem(91.5px) px2rem(102.5px);
+}
+.task-red-packet58{
+  height: px2rem(102.5px);
+  width: px2rem(91.5px);
+  margin-right: px2rem(30px);
+  background: url(/styles/images/mobile/welfare/hbh5.png) no-repeat;
+  background-size: px2rem(91.5px) px2rem(102.5px);
+}
+.task-info{
+  width: px2rem(490px);
+  color: #612b00;
+}
+.task-info-top{
+  padding-top: px2rem(10px);
+}
+.task-info-left{
+  float: left;
+}
+.task-info-20{
+  display: block;
+  font-size: px2rem(26px);
+  margin-bottom: px2rem(10px);
+}
+.task-info-30b{
+  display: block;
+  font-size: px2rem(32px);
+  font-weight: bold;
+}
+
+.task-info-30b .red{
+  font-weight: bold;
+  color: #f7544a;
+}
+
+
+.task-info-link{
+  display: block;
+  height: px2rem(58px);
+  width: px2rem(151px);
+  margin-top: px2rem(16px);
+  float: right;
+  line-height: px2rem(58px);
+  text-align: center;
+  font-size: px2rem(22px);
+  color: #fff;
+  font-weight: bold;
+  background:  url(/styles/images/mobile/welfare/renwu-btn.png) no-repeat;
+  background-size: px2rem(151px) px2rem(58px);
+}
+.task-info-link:hover{
+  text-decoration: none;
+}
+
+
+.task-info-bottom{
+  display: block;
+  width: px2rem(720px);
+  margin: 0 auto;
+  padding: px2rem(20px) 0;
+  line-height: px2rem(30px);
+  font-size: px2rem(20px);
+  color: #612b00;
+}
+
+
+
+
+
+.step-wrap .section-box{
+  padding: px2rem(35px) px2rem(12px) px2rem(65px);
+}
+.step-hd{
+  height: px2rem(80px);
+  border-bottom: 2px dashed #feb734;
+}
+.step-hd-list{
+  position: relative;
+}
+.step-hd-item{
+  height: px2rem(47px);
+  color: #fff;
+  font-size: px2rem(20px);
+  float: left;
+  cursor: pointer;
+  background-size: px2rem(157.5px) px2rem(47px);
+  background-repeat: no-repeat;
+}
+.step-hd-fitst{
+  padding-left:  px2rem(17px);
+  width: px2rem(140.5px);
+  background-image:  url(/styles/images/mobile/welfare/step-first.png);
+}
+.step-hd-next{
+  padding-left:  px2rem(25px);
+  width: px2rem(132.5px);
+  margin-left: px2rem(8px);
+  background-image:  url(/styles/images/mobile/welfare/step-next.png);
+}
+.step-hd-number{
+  display: block;
+  float: left;
+  height: px2rem(18px);
+  width: px2rem(18px);
+  margin-top: px2rem(12px);
+  font-size: px2rem(14px);
+  font-weight: bold;
+  line-height: px2rem(18px);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: px2rem(2px) solid #fff;
+  text-align: center;
+}
+.step-hd-word{
+  display: block;
+  float: left;
+  margin-left: px2rem(3px);
+  line-height: px2rem(45px);
+}
+$slideTransition: all .5s ease-in-out;
+.step-hd-point{
+  position: absolute;
+  top: px2rem(52px);
+  left: px2rem(63px);
+  height: px2rem(10px);
+  width: px2rem(16px);
+  background-image: url(/styles/images/mobile/welfare/daosanjiao.png);
+  background-size: px2rem(16px)  px2rem(10px);
+  transition: $slideTransition;
+}
+.step-hd-point.step-1{
+  left: px2rem(63px);
+}
+.step-hd-point.step-2{
+  left: px2rem(228px);
+}
+.step-hd-point.step-3{
+  left: px2rem(393px);
+}
+.step-hd-point.step-4{
+  left: px2rem(558px);
+}
+
+.step-bd-wrap{
+  position: relative;
+  width: px2rem(660px);
+  margin-top: px2rem(60px);
+  overflow: hidden;
+}
+.step-bd-list{
+  width: px2rem(2700px);
+  transition: $slideTransition;
+}
+.step-bd-item{
+  float: left;
+  padding: 0 px2rem(80px) 0;
+  width: px2rem(500px);
+}
+
+.step-bd-info-title{
+  display: block;
+  font-size: px2rem(32px);
+  color: #f7544a;
+  font-weight: bold;
+}
+.step-bd-info-desc{
+  display: block;
+  margin-top: px2rem(20px);
+  line-height: px2rem(37px);
+  font-size: px2rem(26px);
+  color: #262626;
+}
+
+.pager-prev{
+  display: none;
+  position: absolute;
+  top: px2rem(43px);
+  left: px2rem(5px);
+  height: px2rem(43px);
+  width: px2rem(45px);
+  cursor: pointer;
+  background:  url(/styles/images/mobile/welfare/slide-prev.png) no-repeat;
+  background-size: px2rem(43px) px2rem(43px);
+}
+.pager-next{
+  display: none;
+  position: absolute;
+  top: px2rem(43px);
+  right: px2rem(5px);
+  height: px2rem(43px);
+  width: px2rem(43px);
+  cursor: pointer;
+  background:  url(/styles/images/mobile/welfare/slide-next.png) no-repeat;
+  background-size: px2rem(43px) px2rem(43px);
+}
+
+.i-konw-that{
+  display: block;
+  padding-left: px2rem(45px);
+  width: px2rem(297px);
+  height: px2rem(56px);
+  margin: px2rem(40px) auto 0;
+  line-height: px2rem(52px);
+  text-align: left;
+  color: #fff;
+  font-size: px2rem(22px);
+  background-image: url(/styles/images/mobile/welfare/renwu-btn-go.png);
+  background-size: px2rem(342px) px2rem(56px);
+}
+
+.rule-box{
+  margin-top: px2rem(35px);
+}
+
+.rule-box .task-title{
+  width: px2rem(435px);
+}
+.rule-list{
+  max-height: 999999px;
+  padding-top: px2rem(25px);
+  color: #612b00;
+  font-size: px2rem(24px);
+  line-height:  px2rem(35px);
+}
+.rule-item+.rule-item{
+  padding-top: px2rem(35px);
+}
+

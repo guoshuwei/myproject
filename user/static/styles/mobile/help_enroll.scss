@@ -1,0 +1,477 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/grid';
+@import '../inc/m_ui';
+@mixin center{
+  padding-left:px2rem(33px);
+  padding-right:px2rem(33px);
+}
+body {
+  background:#fff;
+  position:relative;
+}
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+  font-family: 'Microsoft YaHei';
+}
+.form-wrap {
+  .img {
+    width: 100%;
+    overflow: hidden;
+    .img-list {
+      width:200%;
+    }
+    img {
+      float: left;
+      width:50%;
+    }
+  }
+}
+.form {
+  position:relative;
+  top:px2rem(-62px);
+  @include center;
+  input {
+    border:none;
+  }
+  .tit {
+    font-size:px2rem(48px);
+    font-weight: bold;
+    color:#fb615a;
+    line-height: px2rem(107px);
+  }
+  .item {
+    height:px2rem(78px);
+    padding-bottom:px2rem(30px);
+    .input {
+      padding-left:px2rem(30px);
+      border:1px solid #d9d9d9;
+      border-radius: 8px;
+      height: px2rem(78px);
+      overflow: hidden;
+    }
+    input {
+      font-size:px2rem(30px);
+      background: #fff;
+      height: px2rem(78px);
+      width: 100%;
+      text-indent:px2rem(50px);
+      float: left;
+    }
+    .wrap {
+      float: left;
+      width:100%;
+    }
+    .usename .icon{
+      background:url("/styles/images/help/mobile/zhuce/usename.png") no-repeat  left center;
+      background-size:px2rem(32px) px2rem(36px);
+    }
+    .password .icon{
+      background:url("/styles/images/help/mobile/zhuce/password.png") no-repeat  left center;
+      background-size:px2rem(29px) px2rem(36px);
+    }
+    .code {
+      width:px2rem(380px);
+      float: left;
+      .icon{
+        background:url("/styles/images/help/mobile/zhuce/code.png") no-repeat  left center;
+        background-size:px2rem(32px) px2rem(36px);
+      }
+    }
+    .phone .icon{
+       background:url("/styles/images/help/mobile/zhuce/phone.png") no-repeat  left center;
+      background-size:px2rem(26px) px2rem(36px);
+    }
+    .phone-code {
+      width:px2rem(380px);
+      float: left;
+      .icon{
+        background:url("/styles/images/help/mobile/zhuce/phone-code.png") no-repeat  left center;
+        background-size:px2rem(26px) px2rem(35px);
+      }
+    }
+    .icon {
+      float: left;
+      width:px2rem(52px);
+      height: 100%;
+      margin-left:-100%;
+    }
+    .changecode {
+      width:px2rem(246px);
+      height: px2rem(80px);
+      img {
+        width: 100%;
+      }
+    }
+    .phonecode {
+      width:px2rem(244px);
+      height:px2rem(78px);
+      border:1px solid #fb615a;
+      border-radius: 8px;
+      color:#fb615a;
+      font-size: px2rem(24px);
+      line-height: px2rem(78px);
+      text-align: center;
+    }
+    .disabled {
+      background: #787878;
+      border:1px solid #787878;
+      color:#fff;
+    }
+  }
+  .submit {
+    padding-bottom:px2rem(30px);
+    input {
+      float: left;
+      width: 100%;
+      font-size: px2rem(32px);
+      color:#fff;
+      background: #fb615a;
+      height: px2rem(88px);
+      text-align: center;
+      line-height: px2rem(88px);
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  }
+  .item-gou {
+    color:#787878;
+    padding-bottom:px2rem(22px);
+    span {
+      float: left;
+      font-size: px2rem(24px);
+      line-height: 1em;
+      padding-left: px2rem(15px);
+    }
+    a {
+      float: left;
+      color: #0080cc;
+      font-size: px2rem(24px);
+      line-height: 1em;
+    }
+    i {
+      float: left;
+      width: px2rem(18px);
+      height: px2rem(18px);
+      border: px2rem(3px) solid #fb615a;
+      border-radius: 8px;
+    }
+    .active {
+      background: url("/styles/images/help/mobile/zhuce/gou.png") no-repeat center center;
+      background-size:contain;
+    }
+  }
+  .forget {
+    text-align: center;
+    font-size:px2rem(30px);
+    padding-bottom:px2rem(8px);
+    line-height: 1em;
+    .wrap {
+      float: left;
+      width:100%;
+    }
+    a {
+      color:#383838;
+    }
+  }
+}
+.local-tyqbind {
+  color:#383838;
+  .mobilenumber {
+    font-size: px2rem(72px);
+    font-weight: bold;
+    font-family: arial;
+    line-height: px2rem(80px);
+  }
+  .desc {
+    line-height: px2rem(86px);
+    padding-bottom:px2rem(16px);
+    font-size: px2rem(30px);
+  }
+}
+.section-title {
+  font-size:px2rem(46px);
+  color:#383838;
+  font-weight: bold;
+  line-height: px2rem(90px);
+  text-align: center;
+  margin-top:px2rem(-62px);
+}
+.mod-public {
+  font-family: 'Microsoft YaHei';
+  @include center;
+  position:relative;
+  .mod-tit {
+    width:px2rem(564px);
+    height:px2rem(127px);
+    position:relative;
+    z-index: 2;
+    margin:0px auto;
+    line-height: px2rem(78px);
+    color:#fff;
+    font-size: px2rem(46px);
+    font-weight: bold;
+    text-align: center;
+    background: url("/styles/images/help/mobile/zhuce/enroll2-title-bg.png") center top no-repeat;
+    background-size: contain;
+  }
+  .public-list {
+    margin-top:px2rem(-52px);
+    border: px2rem(6px) solid #ef3a3a;
+    border-radius: px2rem(20px);
+    padding-top:px2rem(58px);
+    background: #fff7de;
+    overflow: hidden;
+    ul {
+      background: #fff7de;
+    }
+  }
+}
+.public2 {
+  .desc {
+    color:#383838;
+    text-align: center;
+    padding-bottom:px2rem(26px);
+    .desc-red {
+      color:#fb615a;
+      float: left;
+      width: 100%;
+      font-size:px2rem(28px);
+      line-height: 1em;
+    }
+    .desc-text {
+      float: left;
+      width: 100%;
+      font-size:px2rem(36px);
+      line-height: px2rem(66px);
+      font-weight: bold;
+    }
+  }
+  .public-list {
+    float: none;
+    .public-list-main {
+      width: 100%;
+    }
+    .list{
+      width:50%;
+      .tit {
+        height: px2rem(88px);
+        background:#fb615a;
+        border-top: px2rem(8px) solid #ef3a3a;
+        font-size:px2rem(34px);
+        line-height: px2rem(88px);
+        color:#fff;
+        font-weight: bold;
+        text-align: center;
+      }
+      .item {
+        font-size:px2rem(26px);
+        color:#383838;
+        height: px2rem(78px);
+        padding-left:px2rem(30px);
+        line-height: px2rem(78px);
+        .item-con {
+          color:#fb615a;
+        }
+        span {
+          float: left;
+        }
+      }
+      .item1 {
+        background: #ffffff;
+      }
+    }
+    .left {
+      float:left;
+      border-right:px2rem(2px) dashed #ef3a3a;
+      box-sizing: border-box;
+    }
+    .right {
+      float: right;
+      box-sizing: border-box;
+    }
+  }
+}
+.public3 {
+  padding-top:px2rem(43px);
+  .pt-tp18 {
+    padding-top: px2rem(28px);
+  }
+  .public-list {
+    padding-left: px2rem(32px);
+    padding-right: px2rem(32px);
+  }
+  .public-item {
+    float:left;
+    text-align:left;
+    color:#383838;
+    font-size:px2rem(24px);
+    line-height: px2rem(36px);
+    padding-bottom:px2rem(36px);
+    width: 100%;
+    .item-icon {
+      float: left;
+      width:16px;
+      height:px2rem(36px);
+      margin-left:-100%;
+      position:relative;
+      .item-img {
+        background: #ef3a3a;
+        border-radius: 50%;
+        position:absolute;
+        width: px2rem(16px);
+        height: px2rem(16px);
+        left:0px ;
+        top:50%;
+        margin-top:px2rem(-8px);
+      }
+    }
+    .item-main {
+      float: left;
+      width: 100%;
+      .item-main-child {
+        padding-left: px2rem(28px);
+      }
+      .item-main-text2 {
+        color:#fb615a;
+      }
+    }
+  }
+}
+.download {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  background: rgba(251,97,90,0.7);
+  width:100%;
+  font-weight: bold;
+  z-index: 3;
+  .wrap {
+    padding-left:px2rem(48px);
+    padding-right: px2rem(48px);
+    padding-top:px2rem(7px);
+    padding-bottom:px2rem(7px);
+  }
+  .lf {
+    float: left;
+  }
+  .close {
+    float: left;
+    margin-top:px2rem(12px);
+    height:px2rem(51px);
+    width:px2rem(51px);
+    background: url("/styles/images/help/mobile/zhuce/close_ratio.png") left center no-repeat;
+    background-size: px2rem(41px);
+  }
+  .logo {
+    margin-left:px2rem(10px);
+    float: left;
+    height: px2rem(65px);
+    width: px2rem(65px);
+    background:#fff url("/styles/images/help/mobile/zhuce/licai_logo_ratio.png") no-repeat center center ;
+    background-size:contain;
+    border-radius: 8px;
+  }
+  .text {
+    float: left;
+    color:#fff;
+    font-size: px2rem(24px);
+    line-height: px2rem(36px);
+    padding-left: px2rem(10px);
+    span {
+      display: block;
+    }
+  }
+  .rt {
+    float: right;
+    width:px2rem(236px);
+    height: px2rem(62px);
+    border:1px solid #fff;
+    border-radius: 8px;
+    line-height: px2rem(62px);
+    a {
+      padding-left:26px;
+      display: block;
+      color:#fff;
+      font-size:px2rem(32px);
+      span {
+        display: block;
+        padding-left:px2rem(52px);
+        background:url("/styles/images/help/mobile/zhuce/down_ratio.png") no-repeat left center;
+        background-size:px2rem(41px) px2rem(38px);
+      }
+    }
+  }
+}
+.footer{
+  margin-top:px2rem(28px);
+  height:px2rem(226px);
+  p{
+    line-height: px2rem(36px);
+    color: #383838;
+    font-size: px2rem(24px);
+    text-align: center;
+  }
+}
+.layer {
+  position: fixed;
+  display: none;
+  z-index: 5;
+  height: 100%;
+  width:100%;
+  top:0px;
+  left: 0px;
+  .mask {
+    position:absolute;
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    width: 100%;
+  }
+  .prompt {
+    position: fixed;
+    z-index: 5;
+    top:50%;
+    margin-top:px2rem(-100px);
+    text-align: center;
+    width:100%;
+    .wrap {
+      margin:0 auto;
+      background: #fff;
+      width:px2rem(600px);
+      height: px2rem(200px);
+      border-radius: 8px;
+    }
+    .desc {
+      font-size: px2rem(28px);
+      height: px2rem(104px);
+      color:#383838;
+      line-height: 1.2em;
+      span {
+        display: block;
+        padding-top:px2rem(52px);
+      }
+    }
+    .close {
+        width: px2rem(140px);
+        margin: 0 auto;
+    }
+    a {
+      float: left;
+      background: #fb615a;
+      width: px2rem(140px);
+      height: px2rem(50px);
+      color:#fff;
+      font-weight: bold;
+      font-size: px2rem(24px);
+      line-height: px2rem(50px);
+      border-radius: 8px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+.picode-item{
+  display: none;
+}

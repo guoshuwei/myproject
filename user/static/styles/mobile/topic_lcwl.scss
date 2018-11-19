@@ -1,0 +1,376 @@
+@charset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/grid';
+@import '../mod/dialog';
+@import '../mod/swiper';
+@import '../inc/m_ui';
+
+*{
+  font-family: "Microsoft YaHei",sans-serif;
+}
+$blue: #3fc6f0;
+
+.swiper-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* 第一屏 */
+.head-box{
+  height: 100%;
+  width: 100%;
+  background-image: url(/styles/images/topic/lcwl/mobile/bg_1.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+.icon-invitation{
+  display: block;
+  height: px2rem(200px);
+  width: px2rem(348px);
+  margin: px2rem(615px) auto px2rem(45px);
+  background-image: url(/styles/images/topic/lcwl/mobile/invitation.png);
+  background-size: px2rem(348px) px2rem(200px);
+}
+.active-tips{
+  display: block;
+  height: px2rem(30px);
+  line-height: px2rem(30px);
+  color: $blue;
+  font-size: px2rem(22px);
+  text-align: center;
+}
+.swiper-button-next{
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  margin-left: px2rem(-50px);
+  height: px2rem(98px);
+  width: px2rem(100px);
+  padding-top: px2rem(20px);
+}
+.swiper-button-next em{
+  display: block;
+  height: px2rem(48px);
+  width: px2rem(56px);
+  margin: 0 auto;
+  background-image: url(/styles/images/topic/lcwl/mobile/next.png);
+  background-size: px2rem(56px) px2rem(48px);
+  animation: jump .7s infinite ease-in-out;
+  -moz-animation: jump .7s infinite ease-in-out;
+  -webkit-animation: jump .7s infinite ease-in-out;
+  -o-animation: jump .7s infinite ease-in-out;
+}
+
+@keyframes jump{
+  0%,100%{
+    margin-top:10px;
+  }
+  50%{
+    margin-top:-10px;
+  }
+}
+@-moz-keyframes jump{
+  0%,100%{
+    margin-top:10px;
+  }
+  50%{
+    margin-top:-10px;
+  }
+}
+@-webkit-keyframes jump{
+  0%,100%{
+    margin-top:10px;
+  }
+  50%{
+    margin-top:-10px;
+  }
+}
+@-o-keyframes jump{
+  0%,100%{
+    margin-top:10px;
+  }
+  50%{
+    margin-top:-10px;
+  }
+}
+
+/* 小标题（图片） */
+.icon-title{
+  font:0/0 a;
+  display: block;
+  height: px2rem(50px);
+  width: px2rem(198px);
+  margin: px2rem(189px) auto 0;
+  background-size: px2rem(198px) px2rem(50px);
+}
+.icon-title-mid{
+  margin-top: px2rem(110px);
+}
+.icon-title-hdgs{
+  background-image: url(/styles/images/topic/lcwl/mobile/hdgs.png);
+}
+.icon-title-fhld{
+  background-image: url(/styles/images/topic/lcwl/mobile/fhld.png);
+}
+.icon-title-fhyt{
+  background-image: url(/styles/images/topic/lcwl/mobile/fhyt.png);
+}
+.icon-title-yjzt{
+  background-image: url(/styles/images/topic/lcwl/mobile/yjzt.png);
+}
+.icon-title-rcap{
+  background-image: url(/styles/images/topic/lcwl/mobile/rcap.png);
+}
+.icon-title-chjb{
+  background-image: url(/styles/images/topic/lcwl/mobile/chjb.png);
+}
+.icon-title-wybm{
+  background-image: url(/styles/images/topic/lcwl/mobile/wybm.png);
+}
+
+
+/* 后边几屏的背景 start */
+.body-box{
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  background-image: url(/styles/images/topic/lcwl/mobile/bg_2.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+/* 后边几屏的背景 end */
+
+.active-theme{
+  margin: px2rem(95px) auto 0;
+  width: px2rem(550px);
+  font-size: px2rem(24px);
+  line-height: px2rem(48px);
+}
+
+.luminous-point-list{
+  margin: 0 auto;
+  width: px2rem(520px);
+}
+.luminous-point-item{
+  width: px2rem(520px);
+  margin-top: px2rem(80px);
+  text-align: center;
+}
+.luminous-point-icon{
+  display: block;
+  float: left;
+  height: px2rem(90px);
+  width: px2rem(90px);
+  margin: 0 auto px2rem(10px);
+  background-size: px2rem(90px) px2rem(90px);
+}
+.icon-a{
+  background-image: url(/styles/images/topic/lcwl/mobile/icon_01.png);
+}
+.icon-b{
+  background-image: url(/styles/images/topic/lcwl/mobile/icon_02.png);
+}
+.icon-c{
+  background-image: url(/styles/images/topic/lcwl/mobile/icon_03.png);
+}
+.icon-d{
+  background-image: url(/styles/images/topic/lcwl/mobile/icon_04.png);
+}
+.luminous-point-title{
+  display: block;
+  width: px2rem(408px);
+  margin-left: px2rem(20px);
+  line-height: px2rem(36px);
+  padding-top: px2rem(9px);
+  float: left;
+  font-size: px2rem(28px);
+  text-align: left;
+}
+
+.schedule-list{
+  position: relative;
+  width: px2rem(360px);
+  padding-top: px2rem(85px);
+  margin: 0 auto;
+}
+.schedule-line{
+  position: absolute;
+  left: px2rem(187px);
+  top: px2rem(110px);
+  width: 2px;
+  height: px2rem(660px);
+  background-color: $blue;
+}
+.schedule-item{
+  position: relative;
+  line-height: px2rem(53px);
+  padding-bottom: px2rem(40px);
+}
+.schedule-icon{
+  position: absolute;
+  left: px2rem(180px);
+  top: px2rem(18px);
+  height: px2rem(15px);
+  width: px2rem(15px);
+  background-image: url(/styles/images/topic/lcwl/mobile/circle.png);
+  background-size: px2rem(15px) px2rem(15px);
+}
+.schedule-time{
+  display: block;
+  float: left;
+  width: px2rem(140px);
+  margin-right: px2rem(90px);
+  font-size: px2rem(24px);
+}
+.schedule-work{
+  display: block;
+  float: left;
+  width: px2rem(130px);
+  font-size: px2rem(28px);
+}
+/* 应邀嘉宾 */
+.nyjb-list{
+  width: px2rem(410px);
+  margin: px2rem(55px) auto 0;
+}
+.nyjb-item{
+  width: px2rem(410px);
+  margin-bottom: px2rem(20px);
+}
+.nyjb-item img{
+  display: block;
+  float: left;
+  width: px2rem(135px);
+  height: px2rem(135px);
+  margin-right: px2rem(20px);
+}
+.nyjb-name{
+  display: block;
+  padding: px2rem(20px) 0 px2rem(15px);
+  font-size: px2rem(36px);
+  color: $blue;
+}
+.nyjb-name-two{
+  padding-top: 0;
+}
+.nyjb-desc{
+  display: block;
+  font-size: px2rem(20px);
+  line-height: px2rem(30px);
+}
+/* 我要报名 start */
+.form-box{
+  width: px2rem(500px);
+  margin: px2rem(95px) auto 0;
+}
+.form-list{
+  width:px2rem(500px);
+}
+.form-item{
+
+}
+.form-title{
+  display: block;
+  float: left;
+  height: px2rem(62px);
+  width: px2rem(120px);
+  margin-right: px2rem(20px);
+  line-height: px2rem(62px);
+  font-size: px2rem(28px);
+  font-weight: bold;
+  color: #fff;
+  text-align: justify;
+}
+.form-title:after {
+  width: 100%;
+  height: 0;
+  margin: 0;
+  display: inline-block;
+  overflow: hidden;
+  content: '';
+}
+.form-input{
+  float: left;
+  width: px2rem(360px);
+}
+.form-input input{
+  font-size: px2rem(24px);
+  display: block;
+  width: px2rem(310px);
+  height:px2rem(62px);
+  line-height: px2rem(62px);
+  -webkit-border-radius: px2rem(5px);
+  -moz-border-radius: px2rem(5px);
+  border-radius: px2rem(5px);
+  padding: 0 px2rem(20px);
+}
+.form-input input.error-style{
+  background-color: $blue;
+  border-color: $blue;
+  color: #fff;
+}
+
+
+.form-input input.error-style::-webkit-input-placeholder {
+  color: #fff;
+}
+.form-input input.error-style:-moz-placeholder {
+  color: #fff;
+}
+.form-input input.error-style::-moz-placeholder {
+  color: #fff;
+}
+.form-input input.error-style:-ms-input-placeholder {
+  color: #fff;
+}
+
+
+.error-tips{
+  display: block;
+  height: px2rem(45px);
+  line-height: px2rem(45px);
+  color: $blue;
+  font-size: px2rem(24px);
+}
+.form-input textarea{
+  font-size: px2rem(24px);
+  display: block;
+  width: px2rem(310px);
+  height: px2rem(230px);
+  line-height: px2rem(40px);
+  -webkit-border-radius: px2rem(5px);
+  -moz-border-radius: px2rem(5px);
+  border-radius: px2rem(5px);
+  padding: px2rem(10px) px2rem(20px);
+}
+#submitBtn{
+  display: block;
+  margin: px2rem(35px) auto 0;
+  height: px2rem(75px);
+  width: px2rem(223px);
+  line-height: px2rem(75px);
+  text-align: center;
+  font-size: px2rem(26px);
+  color: #fff;
+  font-weight: bold;
+  background-image: url(/styles/images/topic/lcwl/mobile/btn.png);
+  background-size: px2rem(223px) px2rem(75px);
+  background-color: transparent;
+  border: none;
+  -webkit-appearance:none;  /* 解决iphone safari上的圆角问题 */
+}
+
+/* 我要报名 end */
+
+
+/* 最后一页隐藏 nextbtn */
+.swiper-button-next{
+  transition: opacity .25s ease-in-out;
+}
+.swiper-button-next.swiper-button-disabled{
+  opacity: 0;
+}

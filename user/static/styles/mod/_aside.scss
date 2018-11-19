@@ -1,0 +1,23 @@
+.mod-aside{
+	background:#fff;
+	.hd{
+		height: 20px;
+		line-height: 20px;
+		font-size: 18px;
+		padding: 15px; 
+		color: #333;
+		h3{
+			font-family: Microsoft YaHei;
+			display: inline;
+			padding-left: 10px;
+			border-left:4px solid #1093e1;
+			a{
+				color: #333;
+			}
+		}
+	}
+	.bd{
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}

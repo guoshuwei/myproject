@@ -1,0 +1,265 @@
+@charset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog';
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+@import '../inc/footer-mobile';
+
+body{
+  background-color: #fff;
+}
+.hd-image{
+  height: px2rem(305px);
+  width: px2rem(750px);
+  background-image: url("/styles/images/redland/mobile/banner.png");
+  background-size: px2rem(750px) px2rem(305px);
+  background-repeat: no-repeat;
+}
+.bd-content{
+  padding: 0 px2rem(30px) px2rem(100px);
+}
+.hd-tips{
+  padding-top: px2rem(11px);
+  height: px2rem(65px);
+  line-height: px2rem(36px);
+  font-size: px2rem(24px);
+  color: #949494;
+}
+.card-hd{
+
+}
+.card-hd-inner{
+  position: relative;
+  width: px2rem(176px);
+  height: px2rem(89px);
+  line-height: px2rem(89px);
+  margin: 0 auto;
+  text-align: center;
+  font-size: px2rem(30px);
+  color: #282828;
+  font-weight: bold;
+}
+.card-hd-block{
+  position: absolute;
+  top: px2rem(39px);
+  height: px2rem(11px);
+  width: px2rem(11px);
+  background-image: url("/styles/images/redland/mobile/block.png");
+  background-size: px2rem(11px) px2rem(11px);
+  background-repeat: no-repeat;
+}
+.card-hd-block-left{
+  left: 0;
+}
+.card-hd-block-right{
+  right: 0;
+}
+
+.card-item{
+  display: block;
+  width: px2rem(686px);
+  height: px2rem(153px);
+  padding: px2rem(40px) 0;
+  color: #fff;
+  background-size: px2rem(686px) px2rem(233px);
+  background-repeat: no-repeat;
+}
+.card-item+.card-item{
+  margin-top: px2rem(30px);
+}
+
+.card-item-red{
+  background-image: url("/styles/images/redland/mobile/card-red.png");
+}
+.card-item-orange{
+  background-image: url("/styles/images/redland/mobile/card-orange.png");
+}
+.card-item-golden{
+  background-image: url("/styles/images/redland/mobile/card-golden.png");
+}
+.card-item-blue{
+  background-image: url("/styles/images/redland/mobile/card-blue.png");
+}
+
+.card-item-red.card-item-yiling{
+  background-image: url("/styles/images/redland/mobile/card-red-get.png");
+}
+.card-item-orange.card-item-yiling{
+  background-image: url("/styles/images/redland/mobile/card-orange-get.png");
+}
+.card-item-golden.card-item-yiling{
+  background-image: url("/styles/images/redland/mobile/card-golden-get.png");
+}
+.card-item-blue.card-item-yiling{
+  background-image: url("/styles/images/redland/mobile/card-blue-get.png");
+}
+
+.card-item-left{
+  display: block;
+  float: left;
+  color: #fff;
+  width: px2rem(333px);
+  padding-left: px2rem(55px);
+  height: px2rem(153px);
+}
+
+/* 倒计时 start */
+.count-down-tips{
+  display: block;
+  padding-bottom: px2rem(15px);
+  height: px2rem(80px);
+  line-height: px2rem(80px);
+  font-size: px2rem(24px);
+}
+.count-down-wrap{
+
+}
+.count-down-number{
+  float: left;
+  width: px2rem(50px);
+  height: px2rem(50px);
+  line-height: px2rem(50px);
+  font-size: px2rem(28px);
+  color: #ee493b;
+  font-weight: bold;
+  background-color: #fff;
+  text-align: center;
+  -webkit-border-radius: px2rem(4px);
+  -moz-border-radius: px2rem(4px);
+  border-radius: px2rem(4px);
+  box-shadow: 0 px2rem(4px) px2rem(22px) 0 rgba(172, 0, 25, 0.21);
+}
+.count-down-unit{
+  float: left;
+  width: px2rem(45px);
+  height: px2rem(50px);
+  line-height: px2rem(50px);
+  font-size: px2rem(22px);
+  text-align: center;
+}
+/* 倒计时 end */
+
+
+
+.card-tips{
+  width: px2rem(333px);
+  height: px2rem(29px);
+  line-height: px2rem(29px);
+  font-size: px2rem(20px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.card-face-value{
+  display: block;
+  height: px2rem(94px);
+  line-height: px2rem(94px);
+  font-size: px2rem(80px);
+  font-weight: bold;
+}
+.card-face-value-s{
+  padding-left: px2rem(5px);
+  font-size: px2rem(30px);
+  font-weight: bold;
+}
+.card-max-value{
+  display: block;
+  float: left;
+  padding: 0 px2rem(6px);
+  height: px2rem(28px);
+  line-height: px2rem(28px);
+  font-size: px2rem(20px);
+}
+.card-item-red .card-max-value{
+  color: #ef463e;
+  background-color: #ffb5b7;
+}
+.card-item-orange .card-max-value{
+  color: #ff8239;
+  background-color: #ffe1cf;
+}
+.card-item-golden .card-max-value{
+  color: #c9aa7e;
+  background-color: #fff1dd;
+}
+.card-item-blue .card-max-value{
+  color: #3ba9ee;
+  background-color: #d9f0ff;
+}
+
+
+.card-item-right{
+  float: left;
+  width: px2rem(293px);
+  height: px2rem(148px);
+  padding-top: px2rem(5px);
+  border-left: 1px solid rgba(255,255,255,0.3);
+}
+.card-item-rule{
+  display: block;
+  height: px2rem(38px);
+  line-height: px2rem(38px);
+  font-size: px2rem(22px);
+  text-align: center;
+}
+.card-item-btn{
+  display: block;
+  width: px2rem(180px);
+  height: px2rem(60px);
+  line-height: px2rem(60px);
+  text-align: center;
+  font-size: px2rem(26px);
+  font-weight: bold;
+  margin: px2rem(12px) auto 0;
+  -webkit-border-radius: px2rem(60px);
+  -moz-border-radius: px2rem(60px);
+  border-radius: px2rem(60px);
+}
+.card-item-red .card-item-btn{
+  color: rgb(242, 52, 80);
+  background-image: -moz-linear-gradient( 90deg, rgb(254,180,171) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(254,180,171) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(254,180,171) 0%, rgb(255,255,255) 100%);
+  box-shadow: 0 px2rem(4px) px2rem(22px) 0 rgba(172, 0, 25, 0.21);
+}
+.card-item-orange .card-item-btn{
+  color: rgb(255, 98, 5);
+  background-image: -moz-linear-gradient( 90deg, rgb(255,206,178) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(255,206,178) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(255,206,178) 0%, rgb(255,255,255) 100%);
+  box-shadow: 0 px2rem(4px) px2rem(22px) 0 rgba(172, 0, 25, 0.21);
+}
+.card-item-golden .card-item-btn{
+  color: rgb(168, 132, 80);
+  background-image: -moz-linear-gradient( 90deg, rgb(233,211,179) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(233,211,179) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(233,211,179) 0%, rgb(255,255,255) 100%);
+  box-shadow: 0 px2rem(4px) px2rem(22px) 0 rgba(172, 0, 25, 0.21);
+}
+.card-item-blue .card-item-btn{
+  color: rgb(42, 145, 224);
+  background-image: -moz-linear-gradient( 90deg, rgb(216,238,255) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(216,238,255) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(216,238,255) 0%, rgb(255,255,255) 100%);
+  box-shadow: 0 px2rem(4px) px2rem(22px) 0 rgba(172, 0, 25, 0.21);
+}
+.card-item-disabled .card-item-btn{
+  color: rgb(202, 202, 202);
+  background: #fff;
+  box-shadow: 0 px2rem(4px) px2rem(22px) 0 rgba(172, 0, 25, 0.21);
+}
+.card-item-isused .card-item-btn{
+  color: rgb(202, 202, 202);
+  background: #fff;
+  box-shadow: 0 px2rem(4px) px2rem(22px) 0 rgba(172, 0, 25, 0.21);
+}
+.card-item-isused-inapp .card-item-btn{
+  color: rgb(242, 52, 80);
+  background-image: -moz-linear-gradient( 90deg, rgb(254,180,171) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(254,180,171) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(254,180,171) 0%, rgb(255,255,255) 100%);
+  box-shadow: 0 px2rem(4px) px2rem(22px) 0 rgba(172, 0, 25, 0.21);
+}

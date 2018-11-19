@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog';
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+@import '../inc/footer-mobile';
+@import '../mod/common-list';
+
+html {
+  max-height:999999px;
+  background-color: #efefef;
+  font-family: "Microsoft YaHei",sans-serif;
+}
+.error-tips{
+  height:100vh;
+  width:100vw;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+  font-size: px2rem(26px);
+}
+.list{
+  margin-top:px2rem(50px);
+  background-color: #fff;
+  padding-left: px2rem(32px);
+  height:px2rem(208px);
+}
+.list-item{
+  height:px2rem(103px);
+}
+.list-item+.list-item{
+  border-top: 1px solid #e9e9e9;
+}
+.list-item-input{
+  float: left;
+  display: block;
+  border:none;
+  height:px2rem(38px);
+  line-height:px2rem(38px);
+  padding: px2rem(32px) 0;
+  font-size: px2rem(32px);
+  color:#333;
+}
+.list-item-input.phone{
+  width:px2rem(465px);
+}
+.list-input-line{
+  float: left;
+  height:px2rem(50px);
+  margin-top:px2rem(26px);
+  width:1px;
+  background-color: #e9e9e9;
+}
+.list-input-button{
+  float: left;
+  height:px2rem(102px);
+  line-height:px2rem(102px);
+  width: px2rem(250px);
+  text-align: center;
+  font-size: px2rem(32px);
+  color: #5b89ee;
+}
+.list-input-button.disable{
+  color: #7a858d;
+}
+.list-submit{
+  display: block;
+  -webkit-border-radius: px2rem(10px);
+  -moz-border-radius: px2rem(10px);
+  border-radius: px2rem(10px);
+  border:none;
+  height:px2rem(92px);
+  line-height:px2rem(92px);
+  text-align: center;
+  width:px2rem(686px);
+  font-size: px2rem(36px);
+  color:#fff;
+  margin:px2rem(40px) auto 0;
+  background-color: #ff7856;
+}
+.list-submit.disable{
+  background-color: #c8c8c8;
+}
+
+

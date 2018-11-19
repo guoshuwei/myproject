@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog';
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+@import '../inc/footer-mobile';
+
+html{
+  background-color: #fff;
+}
+a:hover{
+  text-decoration: none;
+}
+
+.box{
+  position: relative;
+  padding-top: px2rem(120px);
+  text-align: center;
+  height: 90vh;
+  min-height: px2rem(1000px);
+  box-sizing: border-box;
+}
+.sorry-icon{
+  display: block;
+  height: px2rem(362px);
+  width: px2rem(270px);
+  margin: 0 auto px2rem(74px);
+  background-image: url(../../styles/images/member/mobile/sorry.png);
+  background-size: px2rem(270px) px2rem(362px);
+  background-repeat: no-repeat;
+}
+
+/* 去app */
+.app-tips{
+  font-size: px2rem(32px);
+  line-height: px2rem(44px);
+  color: #404040;
+}
+.download-app{
+  display: block;
+  height: px2rem(92px);
+  line-height: px2rem(92px);
+  width: px2rem(686px);
+  margin: px2rem(52px) auto 0;
+  background-color: #ff7856;
+  font-size: px2rem(36px);
+  border-radius: px2rem(6px);
+  color: #fff;
+}
+.wechat-bottom-tips{
+  position: absolute;
+  bottom: px2rem(54px);
+  height: px2rem(34px);
+  width: 100%;
+  line-height: px2rem(34px);
+  color: #7a858d;
+  font-size: px2rem(24px);
+}
+
+/* 去微信 */
+
+.wechat-tips{
+  font-size: px2rem(32px);
+  line-height: px2rem(44px);
+  color: #404040;
+}
+.wechat-tips-how{
+  margin-top: px2rem(20px);
+  padding: 0 px2rem(30px);
+  font-size: px2rem(24px);
+  line-height: px2rem(36px);
+  color: #7a858d;
+}
+.wechat-tips-how em{
+  color: #ff7856;
+}
+.back-to-award{
+  display: block;
+  height: px2rem(92px);
+  line-height: px2rem(92px);
+  width: px2rem(686px);
+  margin: px2rem(108px) auto 0;
+  border: 1px solid #ff7856;
+  font-size: px2rem(36px);
+  border-radius: px2rem(6px);
+  color: #ff7856;
+}
+
+

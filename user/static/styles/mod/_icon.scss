@@ -1,0 +1,116 @@
+// circular 圆角 square 方角
+@mixin icon_hot_circular{
+  width: 32px;
+  height: 16px;
+  background: url('../images/icon/ty_icon_normal.png') -102px 0px  no-repeat;
+  @include ratioBackground($url:'../images/icon/ty_icon_double.png', $size: 202px 202px, $x: -102px, $y: 0px);
+}
+@mixin icon_hot_square{
+  width: 25px;
+  height: 18px;
+  background: url('../images/icon/ty_icon_normal.png') -81px -18px  no-repeat;
+  @include ratioBackground($url:'../images/icon/ty_icon_double.png', $size: 202px 202px, $x: -81px, $y: -18px);
+}
+@mixin icon_new_circular{
+  width: 32px;
+  height: 16px;
+  background: url('../images/icon/ty_icon_normal.png') -68px 0px  no-repeat;
+  @include ratioBackground($url:'../images/icon/ty_icon_double.png', $size: 202px 202px, $x: -68px, $y: 0px);
+}
+@mixin icon_new_square{
+  width: 25px;
+  height: 18px;
+  background: url('../images/icon/ty_icon_normal.png') -54px -18px  no-repeat;
+  @include ratioBackground($url:'../images/icon/ty_icon_double.png', $size: 202px 202px, $x: -54px, $y: -18px);
+}
+@mixin icon_reward_circular{
+  width: 32px;
+  height: 16px;
+  background: url('../images/icon/ty_icon_normal.png') 0px 0px  no-repeat;
+  @include ratioBackground($url:'../images/icon/ty_icon_double.png', $size: 202px 202px, $x: 0px, $y: 0px);
+}
+@mixin icon_reward_square{ 
+  width: 25px;
+  height: 18px;
+  background: url('../images/icon/ty_icon_normal.png') 0px -18px  no-repeat;
+  @include ratioBackground($url:'../images/icon/ty_icon_double.png', $size: 202px 202px, $x: 0px, $y: -18px);
+}
+@mixin icon_rebate_circular{
+  width: 32px;
+  height: 16px;
+  background: url('../images/icon/ty_icon_normal.png') -34px 0px  no-repeat;
+  @include ratioBackground($url:'../images/icon/ty_icon_double.png', $size: 202px 202px, $x: -34px, $y: 0px);
+}
+@mixin icon_rebate_square{
+  width: 25px;
+  height: 18px;
+  background: url('../images/icon/ty_icon_normal.png') -27px -18px  no-repeat;
+  @include ratioBackground($url:'../images/icon/ty_icon_double.png', $size: 202px 202px, $x: -27px, $y: -18px);
+}
+@mixin icon_jiaxi_circular{
+  width: 32px;
+  height: 16px;
+  background: url('../images/icon/ty_icon_normal.png') -136px 0px  no-repeat;
+  @include ratioBackground($url:'../images/icon/ty_icon_double.png', $size: 202px 202px, $x: -136px, $y: 0px);
+}
+@mixin icon_jiaxi_square{
+  width: 25px;
+  height: 18px;
+  background: url('../images/icon/ty_icon_normal.png') -108px -18px  no-repeat;
+  @include ratioBackground($url:'../images/icon/ty_icon_double.png', $size: 202px 202px, $x: -108px, $y: -18px);
+}
+@mixin icon_original_circular{
+  width: 32px;
+  height: 16px;
+  background: url('../images/icon/ty_icon_normal.png') -170px 0px  no-repeat;
+  @include ratioBackground($url:'../images/icon/ty_icon_double.png', $size: 202px 202px, $x: -170px, $y: 0px);
+}
+@mixin icon_original_square{
+  width: 25px;
+  height: 18px;
+  background: url('../images/icon/ty_icon_normal.png') -135px -18px  no-repeat;
+  @include ratioBackground($url:'../images/icon/ty_icon_double.png', $size: 202px 202px, $x: -135px, $y: -18px);
+}
+@mixin icon_activity_circular{
+  width: 28px;
+  height: 14px;
+  background: url('../images/icon/ty_icon_normal.png') -162px -18px  no-repeat;
+  @include ratioBackground($url:'../images/icon/ty_icon_double.png', $size: 202px 202px, $x: -162px, $y: -18px);
+}
+@mixin icon_activity_square{
+  width: 35px;
+  height: 35px;
+  background: url('../images/icon/ty_icon_normal.png') 0px -38px  no-repeat;
+  @include ratioBackground($url:'../images/icon/ty_icon_double.png', $size: 202px 202px, $x: 0px, $y: -38px);
+}
+@mixin icon_yuan{
+  width: 13px;
+  height: 16px;
+  background: url('../images/icon/ty_icon_normal.png') -37px -38px  no-repeat;
+  @include ratioBackground($url:'../images/icon/ty_icon_double.png', $size: 202px 202px, $x: -37px, $y: -38px);
+}
+@mixin icon_18{
+  width: 14px;
+  height: 19px;
+  background: url('../images/icon/ty_icon_normal.png') -52px -38px  no-repeat;
+  @include ratioBackground($url:'../images/icon/ty_icon_double.png', $size: 202px 202px, $x: -52px, $y: -38px);
+}
+@mixin icon_fan{
+  width: 14px;
+  height: 14px;
+  background: url('../images/icon/ty_icon_normal.png') -68px -38px  no-repeat;
+  @include ratioBackground($url:'../images/icon/ty_icon_double.png', $size: 202px 202px, $x: -68px, $y: -38px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

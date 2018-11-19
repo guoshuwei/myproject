@@ -1,0 +1,66 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog';
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+
+.page_section{
+  padding-bottom: px2rem(32px);
+
+}
+.help-list{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #f7f7f7;
+}
+.help-list-title{
+  width: 100%;
+  height: px2rem(57px);
+  border-bottom:px2rem(1px) solid #e7e7e8;
+  font-size: px2rem(23px);
+  padding-top: px2rem(34px);
+  padding-left: px2rem(29px);
+  color: #36465d;
+  font-weight: 800;
+  background: #fff;
+  i{
+    display: inline-block;
+    width: px2rem(20px);
+    height: px2rem(14px);
+    background: url(/styles/images/member/mobile/help/helplist.png) no-repeat;
+    background-size: 100% 100%;
+    margin-right: px2rem(29px);
+  }
+}
+.help-list-item{
+  margin-top: px2rem(35px);
+  margin-left: px2rem(79px);
+
+  .first{
+    a{
+      padding-top: 0;
+    }
+  }
+  li{
+    font-size: px2rem(26px);
+    color: #36465d;
+    border-bottom: px2rem(1px) solid #e7e7e8;
+    a{
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      padding-bottom: px2rem(38px);
+      padding-top: px2rem(38px);
+    }
+    span{
+      float: right;
+      color: #a4acb6;
+      margin-right: px2rem(31px);
+    }
+  }
+}

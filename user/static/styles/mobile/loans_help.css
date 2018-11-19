@@ -1,0 +1,31 @@
+html, body, div, a, img {
+  margin: 0;
+  padding: 0; }
+
+img {
+  display: block; }
+
+.content .helppic {
+  width: 100%; }
+.content .jumpapp {
+  display: block;
+  width: 87.5%;
+  margin: 0 auto;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+  font-size: 0.5rem;
+  font-family: Microsoft YaHei;
+  font-weight: 500;
+  color: #fff;
+  background-color: #f46c6c;
+  border-radius: 5px;
+  box-shadow: 0 -5px 1px #e86060 inset;
+  text-decoration: none; }
+
+body {
+  padding-bottom: 1rem; }
+  body span {
+    display: none; }
+
+/*# sourceMappingURL=loans_help.css.map */

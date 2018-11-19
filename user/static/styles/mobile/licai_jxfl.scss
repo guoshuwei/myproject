@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/grid';
+@import '../inc/m_ui';
+html,body{
+	background: #fff;
+}
+.ui-mhead{
+	padding-top: px2rem(8px);
+	height: px2rem(82px);
+	background-color: #3492e9;
+}
+.ui-mhead-warp{
+	padding-top: px2rem(18px);
+	padding-right: px2rem(30px);
+	padding-bottom: px2rem(18px);
+	padding-left: px2rem(30px);
+}
+.ui-mhead-tylogo{
+	width: px2rem(160px);
+	height: px2rem(46px);
+	margin-right: px2rem(20px);
+	float: left;
+	a,img{
+		float: left;
+		width: px2rem(160px);
+		height: px2rem(46px);
+
+	}
+}
+.ui-mhead-lclogo{
+	width: px2rem(168px);
+	height: px2rem(46px);
+	padding-left: px2rem(20px);
+	margin-right: px2rem(20px);
+	border-left: px2rem(2px) solid #99b6d2;
+	float: left;
+	a,img{
+		float: left;
+		width: px2rem(168px);
+		height: px2rem(46px);
+
+	}
+}
+.ui-mhead-info{
+	float: right;
+	height: px2rem(46px);
+	line-height: px2rem(46px);
+	font-size: px2rem(24px);
+	color: #fff;
+	.ui-color-yellow{
+		color: #ffd878;
+	}
+}
+.ui-mhead-info-user{
+	display: inline-block;
+	width: px2rem(48px);
+	height: px2rem(48px);
+	vertical-align: middle;
+	margin-right: px2rem(8px);
+	img{
+		display: inline-block;
+		width: px2rem(48px);
+		height: px2rem(48px);
+	}
+}
+.ui-plr{
+	padding-right: px2rem(30px);
+	padding-left: px2rem(30px);
+}
+.ui-jxfl{
+	padding-top: px2rem(35px);
+	width: px2rem(680px);
+	margin: 0 auto;
+}
+.ui-jxfl-warp{
+	width: px2rem(680px);
+	height: px2rem(764px);
+	padding-top: px2rem(80px);
+	background-color: #873bff;
+	border: px2rem(2px) solid #3f0b9f;
+	border-radius: px2rem(12px);
+	margin-bottom: px2rem(35px);
+}
+.ui-jxfl-hd{
+	padding-left: px2rem(104px);
+	height: px2rem(132px);
+}
+.ui-jxfl-hd-bg{
+	width: px2rem(525px);
+	height: px2rem(132px);
+	overflow: hidden;
+}
+.ui-jxfl-hd-bg1{
+	background: url(/styles/images/licai/mobile/jx_bg.png) 0 0 no-repeat;
+	background-size: px2rem(503px) px2rem(132px);
+}
+.ui-jxfl-hd-bg2{
+	background: url(/styles/images/licai/mobile/fl_bg.png) px2rem(4px) 0 no-repeat;
+	background-size: px2rem(471px) px2rem(132px);
+}
+.ui-jxfl-bd{
+	padding-top: px2rem(48px);
+	padding-right: px2rem(50px);
+	padding-left: px2rem(74px);
+	p{
+		line-height: px2rem(44px);
+		font-size: px2rem(26px);
+		color: #fff;
+		margin-bottom: px2rem(12px);
+	}
+}
+.ui-jxfl-fd{
+	padding-top: px2rem(60px);
+}
+.ui-jxfl-btn{
+	display: block;
+	margin: 0 auto;
+	width: px2rem(224px);
+	height: px2rem(66px);
+	line-height: px2rem(66px);
+	text-align: center;
+	font-size: px2rem(26px);
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: px2rem(12px);
+}
+.ui-jxfl-hover{
+	color: #f66;
+	border-color: #f66;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

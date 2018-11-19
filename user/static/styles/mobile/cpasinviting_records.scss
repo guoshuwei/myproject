@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog';
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+@import '../inc/footer-mobile';
+.ui-footer {
+	display:none;
+}
+body,html {
+	min-height:100%;
+	background:#fff;
+}
+main {
+	width:px2rem(750px);
+	margin:0px auto;
+}
+.ui-info {
+	height:px2rem(150px);
+	background:#fb620e;
+	color:#fff;
+	text-align:center;
+	padding-top:px2rem(30px);
+	box-sizing:border-box;
+	// -webkit-column-count:3; Safari and Chrome
+	// column-count:3;
+	font-size:px2rem(24px);
+	color:#fff;
+	.info-common {
+		width:33.33%;
+		float:left;
+		overflow:hidden;
+		span {
+			vertical-align:top;
+			font-size:px2rem(24px);
+			line-height:px2rem(58px);
+		}
+	}
+	.info-tit {
+		font-size:px2rem(24px);
+		line-height:px2rem(44px);
+		height:px2rem(44px);
+		overflow:hidden;
+		text-overflow:ellipsis;
+		white-space:nowrap;
+	}
+	.info-num {
+		font-size:px2rem(40px);
+		line-height:px2rem(50px);
+		height:px2rem(50px);
+		text-overflow:ellipsis;
+		white-space:nowrap;
+		overflow:hidden;
+	}
+}
+.ui-detail {
+	text-align:center;
+	background:#f6f6f6;
+	height:px2rem(56px);
+	overflow:hidden;
+	line-height:px2rem(56px);
+	font-size:px2rem(24px);
+	color:#aeaeae;
+	span {
+		display:inline-block;
+		vertical-align:top;
+		width:px2rem(34px);
+		height:px2rem(56px);
+		background:url("/styles/images/cpasinviting/mobile/warm.png") left center  no-repeat;
+		background-size:px2rem(24px);
+	}
+}
+.ui-page {
+	.page-list {
+		text-align:center;
+	}
+	.page-item {
+		-webkit-column-count:3; /* Safari and Chrome */
+		column-count:3;
+		font-size:px2rem(26px);
+		line-height:px2rem(86px);
+		height:px2rem(86px);
+		overflow:hidden;
+		color:#666;
+		border-bottom:1px solid #e9e9e9;
+	}
+	.page-itemtitle {
+		font-size:px2rem(24px);
+		height:px2rem(66px);
+		line-height:px2rem(66px);
+		color:#949494;
+	}
+	.page-name {
+
+	}
+	.page-plat {
+
+	}
+	.page-color {
+		color:#fb620e;
+	}
+}

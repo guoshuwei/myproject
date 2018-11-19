@@ -1,0 +1,2291 @@
+@charset "UTF-8";
+@Fcharset "UTF-8";
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: '\20';
+    display: table;
+    height: 0;
+    overflow: hidden; }
+  .clearfix:after {
+    clear: both; }
+
+.clear {
+  display: table;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  line-height: 0; }
+
+.spacpce-form-list {
+  padding-top: 10px; }
+
+.spacpce-form-left {
+  display: block;
+  float: left;
+  padding-left: 50px;
+  height: 36px;
+  line-height: 36px;
+  width: 100px;
+  font-size: 14px;
+  color: #666; }
+
+.spacpce-form-center {
+  float: left; }
+
+.spacpce-form-input-value {
+  display: block;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666; }
+
+.spacpce-form-input {
+  display: block;
+  float: left;
+  width: 278px;
+  padding: 0 10px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #e8e8e8;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+.spacpce-form-input-m {
+  width: 150px; }
+
+.spacpce-form-input-btn {
+  display: block;
+  float: left;
+  height: 36px;
+  width: 110px;
+  line-height: 36px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-left: 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #0080cc;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s ease-in-out; }
+
+.spacpce-form-input-btn:hover {
+  background-color: #0070bc; }
+
+.spacpce-form-input-btn.disabled {
+  background-color: #ccc; }
+
+.spacpce-form-input-link {
+  display: block;
+  float: left;
+  margin-left: 20px;
+  height: 36px;
+  line-height: 36px; }
+
+.spacpce-form-error {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #ea544a; }
+
+.spacpce-form-error span {
+  display: none; }
+
+.spacpce-form-error i {
+  display: block;
+  width: 14px;
+  height: 12px;
+  margin: 3px 3px 0 0;
+  float: left;
+  background: url(/styles/images/member/icon.png);
+  background-position: -318px -52px; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+    .spacpce-form-error i {
+      background: transparent url("/styles/images/member/icon.png") 0px 0px no-repeat;
+      background-size: 550px 140px; } }
+  @media only screen and (min--moz-device-pixel-ratio: 1.5) {
+    .spacpce-form-error i {
+      background: transparent url("/styles/images/member/icon.png") 0px 0px no-repeat;
+      background-size: 550px 140px; } }
+  @media only screen and (min-device-pixel-ratio: 1.5) {
+    .spacpce-form-error i {
+      background: transparent url("/styles/images/member/icon.png") 0px 0px no-repeat;
+      background-size: 550px 140px; } }
+  @media only screen and (-o-min-device-pixel-ratio: 3 / 2) {
+    .spacpce-form-error i {
+      background: transparent url("/styles/images/member/icon.png") 0px 0px no-repeat;
+      background-size: 550px 140px; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+    .spacpce-form-error i {
+      background-position: -318px -80px; } }
+  @media only screen and (min--moz-device-pixel-ratio: 1.5) {
+    .spacpce-form-error i {
+      background-position: -318px -80px; } }
+  @media only screen and (min-device-pixel-ratio: 1.5) {
+    .spacpce-form-error i {
+      background-position: -318px -80px; } }
+  @media only screen and (-o-min-device-pixel-ratio: 3 / 2) {
+    .spacpce-form-error i {
+      background-position: -318px -80px; } }
+
+.spacpce-form-submit {
+  height: 34px;
+  width: 90px;
+  line-height: 32px;
+  border: 1px solid #0080cc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #0080cc;
+  text-align: center;
+  margin: 10px 0 0 200px;
+  background-color: transparent;
+  transition: all .2s ease-in-out;
+  cursor: pointer; }
+
+.spacpce-form-submit:hover {
+  background-color: #0080cc;
+  color: #fff; }
+
+.spacpce-form-submit.disabled {
+  border-color: #ccc;
+  color: #fff;
+  background-color: #ccc; }
+
+/*!
+ * Reset
+ */
+html {
+  color: #454545;
+  background: #f0f0f0;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+  font-family: 'PingFang SC', 'PingFang TC', 'Noto Sans CJK SC', 'Noto Sans CJK TC', 'Microsoft YaHei', Helvetica, Arial; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+input, select, textarea {
+  font-size: 1rem; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th {
+  text-align: inherit; }
+
+fieldset, img {
+  border: none; }
+
+img {
+  border: none; }
+
+iframe {
+  display: block; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+del {
+  text-decoration: line-through; }
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: 500; }
+
+ol, ul, li {
+  list-style: none; }
+
+q:before, q:after {
+  content: ''; }
+
+sub, sup {
+  font-size: 0.75rem;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+a:hover {
+  text-decoration: underline; }
+
+ins, a {
+  text-decoration: none; }
+
+textarea {
+  resize: none;
+  overflow: auto; }
+
+input, textarea {
+  outline: none; }
+
+a {
+  color: #0081cb;
+  outline: none; }
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+  -webkit-appearance: none;
+  border-radius: none; }
+
+textarea {
+  -webkit-appearance: none; }
+
+@media screen {
+  .qt-col {
+    display: table;
+    width: 100%; }
+
+  .qt-col1 {
+    float: left;
+    width: 20%; }
+
+  .qt-col2 {
+    float: right;
+    width: 20%; }
+
+  .qt-col3 {
+    width: auto;
+    margin: 0 20%; }
+
+  .qt-cbox {
+    padding: 0 10px; }
+
+  .qt-cbox-left {
+    padding: 0 10px 0 0; }
+
+  .qt-cbox-right {
+    padding: 0 0 0 10px; }
+
+  /**
+  * @ Grid Module
+  */
+  .qt-grid {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0; }
+
+  .qt-flow {
+    display: block;
+    clear: both;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    max-width: 1200px; }
+
+  .qt-gl {
+    float: left;
+    margin: 0; }
+
+  .qt-gr {
+    float: right;
+    margin: 0 0 0 -5px; }
+
+  .qt-por {
+    position: relative; }
+
+  .qt-g10 {
+    width: 10%; }
+
+  .qt-g16 {
+    width: 16%; }
+
+  .qt-g20 {
+    width: 20%; }
+
+  .qt-g40 {
+    width: 40%; }
+
+  .qt-g60 {
+    width: 60%; }
+
+  .qt-g80 {
+    width: 80%; }
+
+  .qt-g24 {
+    width: 24%; }
+
+  .qt-g25 {
+    width: 25%; }
+
+  .qt-g30 {
+    width: 30%; }
+
+  .qt-g33 {
+    width: 33.333%; }
+
+  .qt-g50 {
+    width: 50%; }
+
+  .qt-g66 {
+    width: 66.666%; }
+
+  .qt-g65 {
+    width: 65%; }
+
+  .qt-g75 {
+    width: 75%; }
+
+  .qt-g38 {
+    width: 38.2%; }
+
+  .qt-g62 {
+    width: 61.8%; }
+
+  .qt-g84 {
+    width: 84%; }
+
+  .qt-g90 {
+    width: 89.99%; }
+
+  /*等高*/
+  .qt-eqh {
+    overflow: hidden; }
+
+  /*等高元素*/
+  .qt-eqh .qt-eqh-item {
+    padding-bottom: 10000px;
+    margin-bottom: -10000px;
+    *padding-bottom: 0px;
+    *margin-bottom: 0px; } }
+.qt-w {
+  margin: 0 auto;
+  width: 1200px; }
+
+.qt-pr {
+  position: relative; }
+
+.qt-pa {
+  position: absolute; }
+
+.qt-m {
+  width: 100%; }
+
+.qt-pr20 {
+  padding-right: 20px; }
+
+.qt-pt0 {
+  padding-top: 0 !important; }
+
+.qt-pt10 {
+  padding-top: 10px; }
+
+.qt-pt15 {
+  padding-top: 15px; }
+
+.qt-pt20 {
+  padding-top: 20px; }
+
+.qt-pt25 {
+  padding-top: 25px; }
+
+.qt-pt30 {
+  padding-top: 30px; }
+
+.qt-pt35 {
+  padding-top: 35px; }
+
+.qt-pt40 {
+  padding-top: 40px; }
+
+.qt-pt45 {
+  padding-top: 45px; }
+
+.qt-pr0 {
+  padding-right: 0 !important; }
+
+.qt-pr10 {
+  padding-right: 10px; }
+
+.qt-pr15 {
+  padding-right: 15px; }
+
+.qt-pr20 {
+  padding-right: 20px; }
+
+.qt-pr25 {
+  padding-right: 25px; }
+
+.qt-pr30 {
+  padding-right: 30px; }
+
+.qt-pr35 {
+  padding-right: 35px; }
+
+.qt-pr40 {
+  padding-right: 40px; }
+
+.qt-pr45 {
+  padding-right: 45px; }
+
+.qt-pb0 {
+  padding-bottom: 0 !important; }
+
+.qt-pb10 {
+  padding-bottom: 10px; }
+
+.qt-pb15 {
+  padding-bottom: 15px; }
+
+.qt-pb20 {
+  padding-bottom: 20px; }
+
+.qt-pb25 {
+  padding-bottom: 25px; }
+
+.qt-pb30 {
+  padding-bottom: 30px; }
+
+.qt-pb35 {
+  padding-bottom: 35px; }
+
+.qt-pb40 {
+  padding-bottom: 40px; }
+
+.qt-pb45 {
+  padding-bottom: 45px; }
+
+.qt-pl0 {
+  padding-left: 0 !important; }
+
+.qt-pl10 {
+  padding-left: 10px; }
+
+.qt-pl15 {
+  padding-left: 15px; }
+
+.qt-pl20 {
+  padding-left: 20px; }
+
+.qt-pl25 {
+  padding-left: 25px; }
+
+.qt-pl30 {
+  padding-left: 30px; }
+
+.qt-pl35 {
+  padding-left: 35px; }
+
+.qt-pl40 {
+  padding-left: 40px; }
+
+.qt-pl45 {
+  padding-left: 45px; }
+
+.qt-mt5 {
+  margin-top: 5px; }
+
+.qt-mt10 {
+  margin-top: 10px; }
+
+.qt-mt15 {
+  margin-top: 15px; }
+
+.qt-mt20 {
+  margin-top: 20px; }
+
+.qt-mt22 {
+  margin-top: 22px; }
+
+.qt-mt25 {
+  margin-top: 25px; }
+
+.qt-mt30 {
+  margin-top: 30px; }
+
+.qt-mt35 {
+  margin-top: 35px; }
+
+.qt-mt40 {
+  margin-top: 40px; }
+
+.qt-mt45 {
+  margin-top: 45px; }
+
+.qt-mt50 {
+  margin-top: 50px; }
+
+.qt-mr5 {
+  margin-right: 5px; }
+
+.qt-mr10 {
+  margin-right: 10px; }
+
+.qt-mr15 {
+  margin-right: 15px; }
+
+.qt-mr20 {
+  margin-right: 20px; }
+
+.qt-mr22 {
+  margin-right: 22px; }
+
+.qt-mr25 {
+  margin-right: 25px; }
+
+.qt-mr30 {
+  margin-right: 30px; }
+
+.qt-mr35 {
+  margin-right: 35px; }
+
+.qt-mr40 {
+  margin-right: 40px; }
+
+.qt-mr45 {
+  margin-right: 45px; }
+
+.qt-mr50 {
+  margin-right: 50px; }
+
+.qt-mb5 {
+  margin-bottom: 5px; }
+
+.qt-mb10 {
+  margin-bottom: 10px; }
+
+.qt-mb15 {
+  margin-bottom: 15px; }
+
+.qt-mb20 {
+  margin-bottom: 20px; }
+
+.qt-mb22 {
+  margin-bottom: 22px; }
+
+.qt-mb25 {
+  margin-bottom: 25px; }
+
+.qt-mb30 {
+  margin-bottom: 30px; }
+
+.qt-mb35 {
+  margin-bottom: 35px; }
+
+.qt-mb40 {
+  margin-bottom: 40px; }
+
+.qt-mb45 {
+  margin-bottom: 45px; }
+
+.qt-mb50 {
+  margin-bottom: 50px; }
+
+.qt-ml5 {
+  margin-left: 5px; }
+
+.qt-ml10 {
+  margin-left: 10px; }
+
+.qt-ml15 {
+  margin-left: 15px; }
+
+.qt-ml20 {
+  margin-left: 20px; }
+
+.qt-ml22 {
+  margin-left: 22px; }
+
+.qt-ml25 {
+  margin-left: 25px; }
+
+.qt-ml30 {
+  margin-left: 30px; }
+
+.qt-ml35 {
+  margin-left: 35px; }
+
+.qt-ml40 {
+  margin-left: 40px; }
+
+.qt-ml45 {
+  margin-left: 45px; }
+
+.qt-ml50 {
+  margin-left: 50px; }
+
+.qt-flowhidden {
+  overflow: hidden; }
+
+#lightbox_wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  -ms-filter: alpha(opacity=75);
+  z-index: 998; }
+
+.qt-white {
+  background-color: #fff;
+  border-radius: 2px; }
+
+.main {
+  width: 100%;
+  float: left; }
+  .main .wrap {
+    margin-right: 420px;
+    position: relative;
+    padding-top: 51px; }
+
+.sub {
+  width: 390px;
+  float: left;
+  margin-left: -390px; }
+
+.mod-userinfo {
+  height: 72px;
+  line-height: 72px;
+  overflow: hidden; }
+  .mod-userinfo .qt-gl {
+    font-size: 14px;
+    color: #383838; }
+    .mod-userinfo .qt-gl span {
+      font-size: 30px;
+      color: #383838;
+      font-family: Micorsoft YaHei;
+      line-height: 72px;
+      font-weight: bold;
+      margin-right: 10px; }
+  .mod-userinfo .ui-follow {
+    float: left;
+    margin-left: 20px;
+    margin-top: 21px; }
+
+.mod-sbox {
+  background: #fff; }
+  .mod-sbox .hd {
+    height: 40px;
+    line-height: 40px;
+    background: #faf9f9;
+    font-size: 16px;
+    padding: 0 22px;
+    border-left: 5px solid #0080cc;
+    color: #383838;
+    border-bottom: 1px solid #ececec; }
+    .mod-sbox .hd h3 {
+      font-family: Microsoft YaHei;
+      display: inline;
+      float: left; }
+    .mod-sbox .hd a {
+      color: #787878;
+      font-family: arial;
+      float: right;
+      font-size: 14px; }
+
+.qt-1920 {
+  position: relative;
+  overflow: hidden; }
+
+.qt-1920-wrap {
+  width: 1920px;
+  position: relative;
+  left: 50%;
+  margin-left: -960px;
+  overflow: hidden; }
+
+.page_section {
+  min-height: 600px;
+  padding-bottom: 50px; }
+
+.nowrap {
+  white-space: nowrap;
+  word-wrap: normal;
+  word-break: normal; }
+
+.mod-leftfixed .sub {
+  float: left;
+  margin-left: -100%; }
+.mod-leftfixed .main {
+  float: left;
+  width: 100%; }
+
+._logo1 {
+  display: block; }
+
+._logo2 {
+  display: none; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  ._logo1 {
+    display: none; }
+
+  ._logo2 {
+    display: block; } }
+@media only screen and (min--moz-device-pixel-ratio: 1.5) {
+  ._logo1 {
+    display: none; }
+
+  ._logo2 {
+    display: block; } }
+@media only screen and (min-device-pixel-ratio: 1.5) {
+  ._logo1 {
+    display: none; }
+
+  ._logo2 {
+    display: block; } }
+@media only screen and (-o-min-device-pixel-ratio: 3 / 2) {
+  ._logo1 {
+    display: none; }
+
+  ._logo2 {
+    display: block; } }
+.dialog {
+  position: absolute;
+  z-index: 999;
+  background-color: #fff;
+  border-radius: 5px; }
+
+.dialog_title,
+.dialog_content,
+.dialog_footer {
+  padding: 10px 15px; }
+
+.dialog_content {
+  padding: 20px 40px;
+  color: #787878;
+  font-size: 14px; }
+
+.dialog_title {
+  font-size: 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+  background-color: #3dbbf9;
+  color: #fff;
+  font-family: Microsoft YaHei;
+  padding: 15px 30px; }
+
+.dialog_title .why {
+  font-size: 12px;
+  float: right;
+  margin-right: 40px;
+  line-height: 28px;
+  color: #0080cc; }
+
+.dialog_title .why em {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  background: url(/styles/images/common/icons.png) no-repeat -34px -200px;
+  vertical-align: top;
+  *vertical-align: middle;
+  margin-top: 7px;
+  *margin-top: 0;
+  margin-right: 5px; }
+
+.dialog_title .closebtn {
+  position: absolute;
+  top: 14px;
+  right: 30px;
+  width: 31px;
+  height: 31px;
+  display: block;
+  background: url(/styles/images/common/icons.png) no-repeat -115px -107px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; }
+
+.dialog_title .closebtn:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  transform: rotate(360deg); }
+
+.newdialog {
+  border: 2px solid #f0f0f0; }
+
+.newdialog .dialog_title {
+  background-color: #fff;
+  color: #7b7b7b;
+  font-size: 18px; }
+
+/*
+ * Swiper 2.7.0
+ * Mobile touch slider and framework with hardware accelerated transitions
+ *
+ * http://www.idangero.us/sliders/swiper/
+ *
+ * Copyright 2010-2014, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us/
+ *
+ * Licensed under GPL & MIT
+ *
+ * Released on: August 30, 2014
+*/
+/* ===============================================================
+Basic Swiper Styles 
+================================================================*/
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* Fix of Webkit flickering */
+  z-index: 1; }
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  -webkit-transition-property: -webkit-transform, left, top;
+  -webkit-transition-duration: 0s;
+  -webkit-transform: translate3d(0px, 0, 0);
+  -webkit-transition-timing-function: ease;
+  -moz-transition-property: -moz-transform, left, top;
+  -moz-transition-duration: 0s;
+  -moz-transform: translate3d(0px, 0, 0);
+  -moz-transition-timing-function: ease;
+  -o-transition-property: -o-transform, left, top;
+  -o-transition-duration: 0s;
+  -o-transform: translate3d(0px, 0, 0);
+  -o-transition-timing-function: ease;
+  -o-transform: translate(0px, 0px);
+  -ms-transition-property: -ms-transform, left, top;
+  -ms-transition-duration: 0s;
+  -ms-transform: translate3d(0px, 0, 0);
+  -ms-transition-timing-function: ease;
+  transition-property: transform, left, top;
+  transition-duration: 0s;
+  transform: translate3d(0px, 0, 0);
+  transition-timing-function: ease;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+.swiper-free-mode > .swiper-wrapper {
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  margin: 0 auto; }
+
+.swiper-slide {
+  float: left;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+  -ms-touch-action: pan-y; }
+
+.swiper-wp8-vertical {
+  -ms-touch-action: pan-x; }
+
+/* ===============================================================
+Your custom styles, here you need to specify container's and slide's
+sizes, pagination, etc.
+================================================================*/
+.swiper-container {
+  /* Specify Swiper's Size: */
+  /*width:200px;
+  height: 100px;*/ }
+
+.swiper-slide {
+  /* Specify Slides's Size: */
+  /*width: 100%;
+  height: 100%;*/ }
+
+.swiper-slide-active {
+  /* Specific active slide styling: */ }
+
+.swiper-slide-visible {
+  /* Specific visible slide styling: */ }
+
+/* ===============================================================
+Pagination Styles
+================================================================*/
+.swiper-pagination-switch {
+  /* Stylize pagination button: */ }
+
+.swiper-active-switch {
+  /* Specific active button style: */ }
+
+.swiper-visible-switch {
+  /* Specific visible button style: */ }
+
+@Fcharset "UTF-8";
+.ui-form .ui-item.first {
+  border-top: 1px solid #d7d7d7; }
+.ui-form .ui-submit-parent {
+  border-top: 1px solid #d7d7d7;
+  padding-top: 0.8rem; }
+.ui-form .ui-item-label {
+  width: 0.7733333333rem;
+  text-align: center;
+  height: 1.1733333333rem;
+  line-height: 1.1733333333rem;
+  margin-left: -100%; }
+.ui-form .ui-item-icon {
+  width: 0.3066666667rem;
+  height: 0.4rem;
+  vertical-align: middle; }
+.ui-form .ui-item-text {
+  height: 1.1733333333rem;
+  width: 100%; }
+.ui-form .ui-item-text-wrap {
+  padding-left: 0.7733333333rem; }
+.ui-form .ui-item-extra {
+  float: left;
+  width: 2.6666666667rem;
+  height: 1.1733333333rem;
+  line-height: 1.1733333333rem;
+  background: #fff;
+  margin-left: -2.6666666667rem; }
+.ui-form .ui-input {
+  border: none;
+  background: #fff;
+  height: 1.1733333333rem;
+  line-height: 1.1733333333rem;
+  font-size: 0.4rem;
+  color: #999;
+  width: 100%; }
+.ui-form .ui-submit {
+  background: #2a8ce7;
+  height: 1.0666666667rem;
+  line-height: 1.0666666667rem;
+  color: #fff;
+  font-size: 0.48rem;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  width: 100%; }
+
+@-o-keyframes circle {
+  0% {
+    -webkit-transform: translateX(0) scale(0);
+    transform: translateX(0) scale(0);
+    z-index: 3; }
+  17% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+    z-index: 3; }
+  34% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+    z-index: 3; }
+  51% {
+    -webkit-transform: translateX(-0.5333333333rem) scale(1);
+    transform: translateX(-0.5333333333rem) scale(1);
+    z-index: 1; }
+  68% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+    z-index: 1; }
+  85% {
+    -webkit-transform: translateX(0.5333333333rem) scale(1);
+    transform: translateX(0.5333333333rem) scale(1);
+    z-index: 1; }
+  100% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+    z-index: 1; } }
+@-moz-keyframes circle {
+  0% {
+    -webkit-transform: translateX(0) scale(0);
+    transform: translateX(0) scale(0);
+    z-index: 3; }
+  17% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+    z-index: 3; }
+  34% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+    z-index: 3; }
+  51% {
+    -webkit-transform: translateX(-0.5333333333rem) scale(1);
+    transform: translateX(-0.5333333333rem) scale(1);
+    z-index: 1; }
+  68% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+    z-index: 1; }
+  85% {
+    -webkit-transform: translateX(0.5333333333rem) scale(1);
+    transform: translateX(0.5333333333rem) scale(1);
+    z-index: 1; }
+  100% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+    z-index: 1; } }
+@-webkit-keyframes circle {
+  0% {
+    -webkit-transform: translateX(0) scale(0);
+    transform: translateX(0) scale(0);
+    z-index: 3; }
+  17% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+    z-index: 3; }
+  34% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+    z-index: 3; }
+  51% {
+    -webkit-transform: translateX(-0.5333333333rem) scale(1);
+    transform: translateX(-0.5333333333rem) scale(1);
+    z-index: 1; }
+  68% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+    z-index: 1; }
+  85% {
+    -webkit-transform: translateX(0.5333333333rem) scale(1);
+    transform: translateX(0.5333333333rem) scale(1);
+    z-index: 1; }
+  100% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+    z-index: 1; } }
+@keyframes circle {
+  0% {
+    -webkit-transform: translateX(0) scale(0);
+    transform: translateX(0) scale(0);
+    z-index: 3; }
+  17% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+    z-index: 3; }
+  34% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+    z-index: 3; }
+  51% {
+    -webkit-transform: translateX(-0.5333333333rem) scale(1);
+    transform: translateX(-0.5333333333rem) scale(1);
+    z-index: 1; }
+  68% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+    z-index: 1; }
+  85% {
+    -webkit-transform: translateX(0.5333333333rem) scale(1);
+    transform: translateX(0.5333333333rem) scale(1);
+    z-index: 1; }
+  100% {
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+    z-index: 1; } }
+.ui-circle {
+  position: absolute; }
+  .ui-circle .circle-wrap {
+    position: relative; }
+  .ui-circle .b-r {
+    -webkit-animation: circle 3s linear both infinite;
+    -moz-animation: circle 3s linear both infinite;
+    -o-animation: circle 3s linear both infinite;
+    animation: circle 3s linear both infinite; }
+  .ui-circle .b-b {
+    -webkit-animation: circle 3s linear both infinite  -1s;
+    -moz-animation: circle 3s linear both infinite  -1s;
+    -o-animation: circle 3s linear both infinite  -1s;
+    -webkit-animation: circle 3s linear both infinite  -1s; }
+  .ui-circle .b-y {
+    -webkit-animation: circle 3s linear both infinite  -2s;
+    -moz-animation: circle 3s linear both infinite  -2s;
+    -o-animation: circle 3s linear both infinite  -2s;
+    -webkit-animation: circle 3s linear both infinite  -2s; }
+  .ui-circle .b-r, .ui-circle .b-b, .ui-circle .b-y {
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 50%;
+    background: teal;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -0.0933333333rem;
+    background: red; }
+  .ui-circle .b-r {
+    background: #ff6114;
+    z-index: 3; }
+  .ui-circle .b-b {
+    background: #14d6ff;
+    z-index: -1; }
+  .ui-circle .b-y {
+    background: #ffd200;
+    z-index: -1; }
+
+.ui-alert-box {
+  position: fixed;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin-top: -0.6666666667rem;
+  z-index: 9999; }
+
+.ui-alert {
+  display: inline-block;
+  height: 1.3333333333rem;
+  line-height: 1.3333333333rem;
+  border-radius: 0.1066666667rem;
+  padding: 0 0.4rem;
+  color: #fff;
+  font-size: 0.4266666667rem;
+  background-color: rgba(71, 79, 89, 0.85); }
+
+.shack {
+  -moz-animation: shack .1s .5s;
+  -webkit-animation: shack .1s .5s;
+  -o-animation: shack .1s .5s;
+  -ms-animation: shack .1s .5s;
+  animation: shack .1s .5s; }
+
+@-ms-keyframes shack {
+  0% {
+    left: 0px; }
+  25% {
+    left: 10px; }
+  50% {
+    left: -5px; }
+  75% {
+    left: 10px; }
+  100% {
+    left: 0; } }
+@-moz-keyframes shack {
+  0% {
+    left: 0px; }
+  25% {
+    left: 10px; }
+  50% {
+    left: -5px; }
+  75% {
+    left: 10px; }
+  100% {
+    left: 0; } }
+@-o-keyframes shack {
+  0% {
+    left: 0px; }
+  25% {
+    left: 10px; }
+  50% {
+    left: -5px; }
+  75% {
+    left: 10px; }
+  100% {
+    left: 0; } }
+@-webkit-keyframes shack {
+  0% {
+    left: 0px; }
+  25% {
+    left: 10px; }
+  50% {
+    left: -5px; }
+  75% {
+    left: 10px; }
+  100% {
+    left: 0; } }
+@keyframes shack {
+  0% {
+    left: 0px; }
+  25% {
+    left: 10px; }
+  50% {
+    left: -5px; }
+  75% {
+    left: 10px; }
+  100% {
+    left: 0; } }
+.ui-loading {
+  line-height: 1.3333333333rem;
+  font-size: 0.3733333333rem;
+  text-align: center; }
+
+.ui-backtop {
+  display: none;
+  position: fixed;
+  right: 0.4266666667rem;
+  bottom: 2.9333333333rem;
+  width: 1.0666666667rem;
+  height: 1.0666666667rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6) url(/styles/images/common/mobile/icons.png) no-repeat 0.2666666667rem -0.8666666667rem;
+  background-size: 4.7733333333rem 2.7866666667rem;
+  z-index: 990; }
+
+.ui-empty img {
+  display: block;
+  margin: 2.5333333333rem auto 0.1333333333rem; }
+
+.ui-empty-descript {
+  color: #bbb;
+  font-size: 0.4rem;
+  text-align: center; }
+
+.mask-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.45;
+  filter: alpha(opacity=45);
+  -ms-filter: alpha(opacity=45);
+  z-index: 99; }
+
+.ui-loans-prize {
+  display: block;
+  margin: 1.0666666667rem auto 0;
+  width: 3.4666666667rem;
+  height: 0.6933333333rem;
+  line-height: 0.6933333333rem;
+  text-align: center;
+  font-size: 0.4266666667rem;
+  color: #3492E9;
+  border: 0.0266666667rem solid #3492E9;
+  border-radius: 0.9866666667rem; }
+
+body {
+  width: 100%;
+  background: #000710;
+  position: relative; }
+
+.module {
+  width: 9.2rem;
+  margin: 0 auto; }
+
+.top {
+  width: 100%;
+  overflow: hidden; }
+
+.top-title {
+  width: 100%;
+  height: 6.96rem;
+  margin: 0 auto;
+  background: url("/styles/images/topic/borntolove/mobile/title1.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative; }
+
+.playback {
+  width: 1.7733333333rem;
+  height: 2.7466666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/zheng1.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  right: 0.6666666667rem; }
+
+.doswinging {
+  -webkit-animation: swinging 4s ease-in-out 0s infinite;
+  -moz-animation: swinging 4s ease-in-out 0s infinite;
+  animation: swinging 4s ease-in-out 0s infinite;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0; }
+
+@-webkit-keyframes swinging {
+  0% {
+    -webkit-transform: rotate(10deg); }
+  50% {
+    -webkit-transform: rotate(-10deg); }
+  100% {
+    -webkit-transform: rotate(10deg); } }
+.luckbag-title {
+  width: 8.4533333333rem;
+  height: 1.4933333333rem;
+  margin: 0 auto;
+  background: url("/styles/images/topic/borntolove/mobile/lihei1.png") no-repeat;
+  background-size: 100% 100%; }
+
+.mod-slider-box {
+  width: 10rem;
+  height: 8.6666666667rem;
+  overflow: hidden;
+  position: relative;
+  margin: 0.6666666667rem auto 0; }
+  .mod-slider-box .swiper-wrapper {
+    height: 8.6666666667rem; }
+    .mod-slider-box .swiper-wrapper li {
+      width: 100%;
+      height: 8.6666666667rem; }
+  .mod-slider-box .mod-slider-lb {
+    height: 8.6666666667rem; }
+    .mod-slider-box .mod-slider-lb li {
+      width: 100%;
+      height: 8.6666666667rem; }
+  .mod-slider-box .mod-slider-bj {
+    width: 100%;
+    height: 8.6666666667rem;
+    background: url("/styles/images/topic/borntolove/mobile/jiqirenbj.png") no-repeat center 3.8666666667rem;
+    background-size: 100%; }
+  .mod-slider-box .nowtime .time {
+    font-size: 0.5866666667rem;
+    color: #16bce8;
+    font-weight: 800;
+    width: 100%;
+    text-align: center; }
+  .mod-slider-box .gotime .time {
+    font-size: 0.5866666667rem;
+    color: #515151;
+    font-weight: 800;
+    width: 100%;
+    text-align: center; }
+  .mod-slider-box .nexttime .time {
+    font-size: 0.5866666667rem;
+    color: #eeae23;
+    font-weight: 800;
+    width: 100%;
+    text-align: center; }
+  .mod-slider-box .dotime {
+    font-size: 28px;
+    color: #16bce8;
+    width: 100%;
+    text-align: center; }
+  .mod-slider-box .futuretime {
+    font-size: 28px;
+    color: #eeae23;
+    width: 100%;
+    text-align: center; }
+  .mod-slider-box .latetime {
+    font-size: 28px;
+    color: #515151;
+    width: 100%;
+    text-align: center; }
+  .mod-slider-box .lucky {
+    width: 6.68rem;
+    height: 5.9333333333rem;
+    background: url("/styles/images/topic/borntolove/mobile/jiqiren1.png") no-repeat center;
+    background-size: 100% 100%;
+    margin: 0.5733333333rem auto 0px;
+    overflow: hidden; }
+  .mod-slider-box .pager {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center; }
+  .mod-slider-box .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center; }
+  .mod-slider-box .swiper-pagination-switch {
+    float: left;
+    margin-right: 0.1333333333rem;
+    display: inline-block;
+    width: 0.1866666667rem;
+    height: 0.1866666667rem;
+    border: 0.0133333333rem solid #15b7e2;
+    border-radius: 50%; }
+  .mod-slider-box .swiper-active-switch {
+    background: #15b7e2; }
+  .mod-slider-box .mod-slider-bj .swiper-pagination {
+    height: 0.2666666667rem;
+    left: 50%;
+    margin-left: -1.56rem;
+    bottom: 0.1333333333rem; }
+  .mod-slider-box .pager-wrap {
+    display: inline-block; }
+  .mod-slider-box .bx-pager-item {
+    float: left;
+    margin-right: 0.1333333333rem; }
+  .mod-slider-box .bx-pager-item {
+    display: inline-block;
+    width: 0.1866666667rem;
+    height: 0.1866666667rem;
+    border: 0.0133333333rem solid #15b7e2;
+    border-radius: 50%; }
+  .mod-slider-box .active {
+    background: #15b7e2; }
+
+.jigsaw {
+  width: 100%;
+  height: 8rem;
+  margin-top: 1.0666666667rem; }
+
+.jigsaw-title {
+  width: 8.3733333333rem;
+  height: 1.3866666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/pintu.png") no-repeat center;
+  background-size: 100% 100%;
+  margin: 0 auto; }
+
+.jigsaw-xiaotian {
+  width: 9.2rem;
+  height: 6.1333333333rem;
+  background: url("/styles/images/topic/borntolove/mobile/eyept.png") no-repeat center;
+  background-size: 100% 100%;
+  margin-top: 0.4rem;
+  overflow: hidden; }
+
+.jigsaw-examine {
+  display: block;
+  width: 8.4rem;
+  height: 1.0666666667rem;
+  background: #16bce8;
+  line-height: 1.0666666667rem;
+  text-align: center;
+  color: #eeeeee;
+  font-size: 0.4533333333rem;
+  margin: 4.6666666667rem auto 0px;
+  cursor: pointer; }
+
+.bonus-title {
+  width: 8.52rem;
+  height: 1.32rem;
+  background: url("/styles/images/topic/borntolove/mobile/jiangjinchi.png") no-repeat center;
+  background-size: 100% 100%;
+  margin: 1rem auto 0px; }
+
+.top-bonus {
+  width: 9.2rem;
+  height: 3.7333333333rem;
+  background: url("/styles/images/topic/borntolove/mobile/jiangjinchibj.png") no-repeat center;
+  background-size: 100% 100%;
+  margin: 0.3333333333rem auto 0px;
+  overflow: hidden; }
+
+.top-bonus-box {
+  width: 6.8rem;
+  height: 1.0666666667rem;
+  margin: 0.7466666667rem auto 0px;
+  overflow: hidden; }
+
+.money-sign {
+  height: 0.8266666667rem;
+  width: 0.5866666667rem;
+  font-size: 0.8rem;
+  float: left;
+  color: #333333;
+  margin-right: 0.3333333333rem;
+  font-weight: 800;
+  line-height: 0.8266666667rem; }
+
+.comma {
+  display: block;
+  height: 0.8266666667rem;
+  width: 0.16rem;
+  color: #333333;
+  font-weight: 900;
+  font-size: 0.48rem;
+  margin-left: 0.1066666667rem;
+  margin-right: 0.1066666667rem;
+  line-height: 1.0933333333rem; }
+
+.money-list {
+  display: block;
+  width: 0.5333333333rem;
+  height: 0.8266666667rem;
+  color: #333333;
+  font-weight: 900;
+  line-height: 0.8266666667rem;
+  font-size: 0.8266666667rem;
+  text-align: center; }
+
+.money {
+  float: left;
+  overflow: hidden; }
+  .money .moneyhide {
+    display: none; }
+  .money span {
+    float: left; }
+
+.top-rule {
+  width: 8.3333333333rem;
+  height: 0.8rem;
+  font-size: 0.32rem;
+  color: #4c4c4c;
+  margin: 0.7333333333rem auto 0rem; }
+
+.investment {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 1.0266666667rem; }
+
+.investment-title {
+  width: 8.2533333333rem;
+  height: 1.3066666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/jingxuanh5.png") no-repeat center;
+  background-size: 100% 100%;
+  margin: 0 auto; }
+
+.investment-specific {
+  width: 9.2133333333rem;
+  height: 8.9066666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/214bj.png") no-repeat center;
+  background-size: 100% 100%;
+  margin: 0.2133333333rem auto 0;
+  overflow: hidden; }
+
+.it-name {
+  width: 100%;
+  height: 0.48rem;
+  line-height: 0.48rem;
+  text-align: center;
+  font-size: 0.48rem;
+  color: #333333;
+  font-weight: 800;
+  margin-top: 0.6933333333rem; }
+
+.it-model {
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  font-size: 0.3733333333rem;
+  color: #333333;
+  margin-top: 0.2666666667rem;
+  margin-bottom: 0.2666666667rem; }
+
+.it-context {
+  max-width: 80%;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-size: 0.2933333333rem;
+  padding: 0.12rem 0.2666666667rem;
+  color: #7ac8ec;
+  border: 0.0133333333rem solid #7ac8ec;
+  margin: auto;
+  margin-left: 3.7333333333rem;
+  border-radius: 0.04rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block; }
+
+.it-sum {
+  width: 6.7333333333rem;
+  height: 1.6rem;
+  margin-top: 0.8rem;
+  margin-left: 1.28rem;
+  font-size: 0.8rem;
+  color: #333333;
+  font-weight: 800;
+  overflow: hidden; }
+
+.it-sum-top {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.4666666667rem;
+  font-weight: 800;
+  color: #333333; }
+  .it-sum-top .it-sum-persent {
+    font-size: 1.0666666667rem;
+    color: #333333;
+    font-weight: 400; }
+
+.added {
+  float: left;
+  font-size: 0.8rem;
+  color: #333;
+  margin-left: 0.4266666667rem;
+  margin-right: 0.4266666667rem; }
+
+.it-sum-added {
+  float: left;
+  width: 2.68rem;
+  height: 0.8rem;
+  color: #ea544a;
+  font-weight: 800;
+  line-height: 0.8rem;
+  text-align: center;
+  font-size: 0.8rem; }
+
+.it-term {
+  width: 100%;
+  height: 0.4rem;
+  font-size: 0.3466666667rem;
+  color: #3f3f3f;
+  text-align: center;
+  margin-top: 0.6666666667rem; }
+
+.it-ensure {
+  display: block;
+  width: 8.4rem;
+  height: 1.0666666667rem;
+  background: #16bce8;
+  font-size: 0.44rem;
+  color: #eee;
+  line-height: 1.0666666667rem;
+  text-align: center;
+  border-radius: 0.0666666667rem;
+  margin: 0.68rem auto 0px; }
+
+.it-more {
+  display: block;
+  width: 100%;
+  height: 0.48rem;
+  font-size: 0.4533333333rem;
+  line-height: 0.48rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0.5333333333rem; }
+
+.invest {
+  width: 100%;
+  height: 15.0933333333rem;
+  margin-top: 1.0666666667rem; }
+
+.invest-title {
+  width: 8.2rem;
+  height: 1.3466666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/jifen.png") no-repeat center;
+  background-size: 100% 100%;
+  margin: 0 auto; }
+
+.invest-box {
+  width: 9.2rem;
+  height: 13.3333333333rem;
+  background: #eeeeee;
+  border-radius: 0.1333333333rem;
+  margin: 0.4rem auto 0px;
+  overflow: hidden; }
+
+.invest-box-title {
+  font-size: 0.6666666667rem;
+  color: #333333;
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  margin-top: 0.5333333333rem;
+  font-weight: 500;
+  text-align: center; }
+
+.invest-box-total {
+  width: 3.2666666667rem;
+  height: 0.32rem;
+  text-align: center;
+  line-height: 0.32rem;
+  font-size: 0.32rem;
+  color: #999;
+  margin: 0.24rem auto 0px; }
+  .invest-box-total span {
+    color: #ee2137; }
+
+.rank {
+  overflow: hidden;
+  width: 7.0933333333rem;
+  height: 0.9066666667rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  margin: 0.2666666667rem auto 0px;
+  border-bottom: 2px solid #cccccc; }
+
+.rank-left {
+  font-size: 0.3733333333rem;
+  color: #999999;
+  float: left;
+  line-height: 0.9066666667rem; }
+
+.rank-right {
+  font-size: 0.3733333333rem;
+  color: #999999;
+  float: right;
+  line-height: 0.9066666667rem; }
+
+.rank-content {
+  margin: 0 auto;
+  width: 7.8933333333rem;
+  height: 8.4rem;
+  overflow: hidden; }
+
+.rank-number {
+  margin-top: 0.4rem;
+  overflow: hidden; }
+
+.user-number {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  float: left;
+  font-size: 0.3733333333rem;
+  color: #333333; }
+
+.user-name {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  width: 2.9333333333rem;
+  float: left;
+  font-size: 0.3733333333rem;
+  color: #333333;
+  margin-left: 0.2666666667rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.user-score {
+  line-height: 0.4rem;
+  float: right;
+  font-size: 0.3733333333rem;
+  color: #333333; }
+
+.topthree .user-number {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  float: left;
+  font-size: 0.3733333333rem;
+  color: #ee2137; }
+.topthree .user-name {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  width: 2.9333333333rem;
+  float: left;
+  font-size: 0.3733333333rem;
+  color: #ee2137;
+  margin-left: 0.2666666667rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+.topthree .user-score {
+  line-height: 0.4rem;
+  float: right;
+  font-size: 0.3733333333rem;
+  color: #ee2137; }
+
+.my-rank {
+  margin: 0 auto;
+  width: 7.8933333333rem;
+  overflow: hidden; }
+  .my-rank .my-number {
+    display: block;
+    height: 0.2133333333rem;
+    width: 0.2133333333rem;
+    background: #12aa52;
+    float: left;
+    margin-left: 0.1066666667rem;
+    margin-top: 0.08rem; }
+  .my-rank .my-name {
+    height: 0.4rem;
+    line-height: 0.4rem;
+    width: 2.9333333333rem;
+    float: left;
+    font-size: 0.3733333333rem;
+    color: #12aa52;
+    margin-left: 0.3333333333rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .my-rank .my-score {
+    line-height: 0.4rem;
+    float: right;
+    font-size: 0.3733333333rem;
+    color: #12aa52; }
+
+.invest-module-bottom {
+  width: 7.8933333333rem;
+  margin: 0.2rem auto 0px;
+  height: 0.8666666667rem;
+  padding-top: 0.2rem;
+  border-top: 0.0266666667rem solid #cccccc;
+  font-size: 0.3066666667rem;
+  color: #999999; }
+
+.prize {
+  width: 9.2rem;
+  height: 11.0666666667rem;
+  background: #eeeeee;
+  border-radius: 0.1333333333rem;
+  margin: 0.4rem auto 0px;
+  overflow: hidden;
+  position: relative; }
+  .prize .pager {
+    position: absolute;
+    bottom: 1.84rem;
+    left: 0;
+    width: 100%;
+    text-align: center; }
+  .prize .pager-wrap {
+    display: inline-block; }
+  .prize .bx-pager-item {
+    display: inline-block;
+    width: 0.1866666667rem;
+    height: 0.1866666667rem;
+    border: 0.0133333333rem solid #9b9b9b;
+    border-radius: 50%;
+    float: left;
+    margin-right: 0.1333333333rem; }
+  .prize .active {
+    background: #666666; }
+
+.scoreboard {
+  font-size: 0.6133333333rem;
+  color: #333;
+  width: 100%;
+  height: 0.6933333333rem;
+  line-height: 0.6933333333rem;
+  text-align: center;
+  margin-top: 0.4933333333rem; }
+
+.mod-slider-prize {
+  height: 9.3333333333rem;
+  margin-top: 0.5333333333rem;
+  margin-left: 0.6666666667rem; }
+  .mod-slider-prize li {
+    width: 7.8666666667rem;
+    height: 9.3333333333rem;
+    margin: 0 auto; }
+
+.prize-item1 {
+  width: 7.8666666667rem;
+  height: 7.8666666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/prize1.png") no-repeat center;
+  background-size: 100% 100%; }
+
+.prize-item2 {
+  width: 7.8666666667rem;
+  height: 7.8666666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/2deng.png") no-repeat center;
+  background-size: 100% 100%; }
+
+.prize-item3 {
+  width: 7.8666666667rem;
+  height: 7.8666666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/3deng.png") no-repeat center;
+  background-size: 100% 100%; }
+
+.prize-item4 {
+  width: 7.8666666667rem;
+  height: 7.8666666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/4deng.png") no-repeat center;
+  background-size: 100% 100%; }
+
+.prize-item5 {
+  width: 7.8666666667rem;
+  height: 7.8666666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/5deng.png") no-repeat center;
+  background-size: 100% 100%; }
+
+.prize-explain {
+  font-size: 0.3733333333rem;
+  color: #333;
+  margin-left: 2.2133333333rem;
+  margin-top: 0.44rem; }
+
+.rule {
+  width: 100%; }
+
+.rule-title {
+  width: 6.92rem;
+  height: 0.7333333333rem;
+  background: url("/styles/images/topic/borntolove/mobile/guize.png") no-repeat center;
+  background-size: 100% 100%;
+  margin: 1.0533333333rem auto 0px; }
+
+.rule-list {
+  width: 8.2rem;
+  height: 4.6666666667rem;
+  padding: 0.6666666667rem 0.4rem 0.6rem 0.6rem;
+  background: #eeeeee;
+  border-radius: 0.1333333333rem;
+  margin: 0.4rem auto 0px;
+  overflow: hidden; }
+
+.rule-list-time {
+  overflow: hidden;
+  width: 100%; }
+
+.rule-list-time-left {
+  width: 1.8666666667rem;
+  float: left;
+  font-size: 0.3733333333rem;
+  color: #333333;
+  font-weight: 800; }
+
+.rule-list-time-right {
+  width: 6.3333333333rem;
+  float: left;
+  font-size: 0.3733333333rem;
+  color: #333333; }
+
+.rule-list-cash {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 0.5333333333rem; }
+
+.rule-list-cash-left {
+  width: 1.8666666667rem;
+  float: left;
+  font-size: 0.3733333333rem;
+  color: #333333;
+  font-weight: 800; }
+
+.rule-list-cash-right {
+  width: 6.3333333333rem;
+  float: left;
+  font-size: 0.3733333333rem;
+  color: #333333; }
+
+.rule-list-entity {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 0.5333333333rem; }
+
+.rule-list-entity-left {
+  width: 1.8666666667rem;
+  float: left;
+  font-size: 0.3733333333rem;
+  color: #333333;
+  font-weight: 800; }
+
+.rule-list-entity-right {
+  width: 6.3333333333rem;
+  float: left;
+  font-size: 0.3733333333rem;
+  color: #333333; }
+
+.remind {
+  width: 100%;
+  margin-top: 0.5333333333rem;
+  color: #666666;
+  font-size: 0.32rem;
+  text-align: center;
+  padding-bottom: 0.5333333333rem; }
+
+.boxback {
+  display: none;
+  width: 5.8666666667rem;
+  height: 5.8933333333rem;
+  background: url("/styles/images/topic/borntolove/mobile/h5bj.png") no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1000; }
+  .boxback a {
+    display: block;
+    width: 5.0666666667rem;
+    height: 1.0666666667rem;
+    background: #50baeb;
+    line-height: 1.0666666667rem;
+    text-align: center;
+    font-size: 0.4533333333rem;
+    color: #fff;
+    margin: 0.6666666667rem auto 0px; }
+
+.bj {
+  display: none;
+  width: 100%;
+  background-color: #000;
+  filter: alpha(opacity=90);
+  -moz-opacity: 0.90;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999; }
+
+.boxback-btn {
+  display: none;
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/chadiao.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 6.5333333333rem;
+  right: 1.3333333333rem;
+  z-index: 1001; }
+
+.cartoon {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 17.7866666667rem;
+  z-index: 2001;
+  background: url("/styles/images/topic/borntolove/mobile/manhuabj.png") no-repeat;
+  background-size: 100% 100%;
+  top: 0px;
+  overflow: hidden; }
+
+.cartoon-btn {
+  width: 9.2266666667rem;
+  height: 3.1733333333rem;
+  overflow: hidden;
+  margin: 12.0933333333rem auto 0px; }
+
+.cartoon-bagin {
+  display: block;
+  width: 9.2266666667rem;
+  height: 1.36rem;
+  background: #27a2f0;
+  color: #eee;
+  line-height: 1.36rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.5333333333rem; }
+
+.cartoon-bagin:hover {
+  text-decoration: none; }
+
+.cartoon-end {
+  display: block;
+  width: 9.2rem;
+  height: 1.3333333333rem;
+  border: 0.0133333333rem solid #eeeeee;
+  color: #eeeeee;
+  line-height: 1.3333333333rem;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 0.4rem;
+  font-size: 0.5333333333rem; }
+
+.cartoon-end:hover {
+  text-decoration: none; }
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  z-index: 2000; }
+
+.question {
+  width: 100%;
+  height: 100%;
+  margin: 0.5733333333rem auto 0px;
+  display: none;
+  position: relative; }
+
+.question-bj {
+  width: 5.8666666667rem;
+  height: 5.8666666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/h5tibj.png") no-repeat;
+  background-size: 100% 100%;
+  padding-left: 0.4rem;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden; }
+  .question-bj h2 {
+    font-size: 0.4rem;
+    color: #16bce8;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.48rem;
+    margin-bottom: 0.4533333333rem; }
+
+.question-item {
+  font-size: 0.3733333333rem;
+  color: #333333;
+  margin-bottom: 0.2533333333rem;
+  padding-right: 0.4rem; }
+  .question-item i {
+    width: 0.2133333333rem;
+    height: 0.2133333333rem;
+    background: #50baeb;
+    display: block;
+    float: left;
+    margin-top: 0.08rem;
+    margin-right: 0.08rem; }
+
+.answer {
+  display: block;
+  float: left;
+  width: 1.92rem;
+  height: 0.6666666667rem;
+  padding: 0.1733333333rem 0.2133333333rem;
+  font-size: 0.3066666667rem;
+  color: #666666;
+  margin-right: 0.2666666667rem;
+  border: 0.0266666667rem solid #cccccc;
+  text-align: center;
+  margin-top: 0.2666666667rem; }
+
+.error-close {
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/chadiao.png") no-repeat;
+  background-size: 100% 100%;
+  float: right;
+  position: absolute;
+  right: 1.0666666667rem; }
+
+.success-bj {
+  width: 5.8666666667rem;
+  height: 5.8666666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/h5tibj.png") no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  position: relative; }
+
+.success-time {
+  width: 100%;
+  text-align: center;
+  font-size: 0.4rem;
+  color: #16bce8;
+  margin: 0.3466666667rem auto 0.2666666667rem; }
+
+.succesimg {
+  width: 2.9066666667rem;
+  height: 2.9066666667rem;
+  display: block;
+  margin: 0 auto; }
+
+.success-top {
+  font-size: 0.3733333333rem;
+  color: #333;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.32rem; }
+
+.success-bottom {
+  height: 0.8rem;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 5.8666666667rem;
+  background: #16bce8;
+  font-size: 0.32rem;
+  color: #ffffff;
+  line-height: 0.8rem;
+  text-align: center;
+  border-bottom-right-radius: 0.04rem;
+  border-bottom-left-radius: 0.04rem; }
+
+.error-img {
+  width: 5.8666666667rem;
+  height: 5.8666666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/yihan.png") no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.error-btn {
+  display: block;
+  margin: 4.4rem auto 0px;
+  width: 5.0666666667rem;
+  height: 1.0666666667rem;
+  background: #16bce8;
+  font-size: 0.4266666667rem;
+  color: #eeeeee;
+  text-align: center;
+  line-height: 1.0666666667rem; }
+
+.expectimg {
+  width: 5.8666666667rem;
+  height: 5.8666666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/qidai.png") no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.do-close {
+  width: 0.6666666667rem;
+  height: 0.6666666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/chadiao.png") no-repeat;
+  background-size: 100% 100%;
+  float: right;
+  position: absolute;
+  right: 1.0666666667rem; }
+
+.expecttime {
+  font-size: 0.6133333333rem;
+  color: #333333;
+  text-align: center;
+  margin: 3.6rem auto 0px; }
+
+.lateimg {
+  width: 5.8666666667rem;
+  height: 5.8666666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/guang.png") no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.latebtn {
+  width: 5.0666666667rem;
+  height: 1.0666666667rem;
+  display: block;
+  font-size: 0.48rem;
+  text-align: center;
+  line-height: 1.0666666667rem;
+  margin: 4.4rem auto 0px;
+  background: #16bce8;
+  color: #eeeeee; }
+
+.muchimg {
+  width: 5.8666666667rem;
+  height: 5.8666666667rem;
+  background: url("/styles/images/topic/borntolove/mobile/gtaiduo.png") no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.ranknumber {
+  margin-top: 0.4rem;
+  overflow: hidden; }
+
+.username {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  width: 2.9333333333rem;
+  float: left;
+  font-size: 0.3466666667rem;
+  color: #333333;
+  margin-left: 0.2666666667rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.userscore {
+  line-height: 0.4rem;
+  float: right;
+  font-size: 0.3733333333rem;
+  color: #333333;
+  margin-right: 0.6133333333rem; }
+
+.shupingAnimate {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  animation: iphone 1.6s ease-in infinite; }
+
+.shuping {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+  background-color: #000; }
+  .shuping .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 2.1296296296rem;
+    margin-left: -50%;
+    margin-top: -1.0648148148rem;
+    text-align: center;
+    line-height: 1.5rem; }
+    .shuping .content .img {
+      width: 2.1296296296rem; }
+    .shuping .content .text {
+      text-align: center;
+      font-size: .3rem;
+      color: #fff;
+      white-space: nowrap;
+      overflow: visible; }
+
+/*# sourceMappingURL=topic_borntolove.css.map */

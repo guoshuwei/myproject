@@ -1,0 +1,805 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/footer';
+@import '../mod/bind';
+
+
+
+.mod-floatlayer {
+  display: none;
+}
+
+body{
+  width: 100%;
+  background: url("/styles/images/topic/carnival2016/pc/bj.jpg") no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.signed{
+  width: 191px;
+  height: 191px;
+  position: fixed;
+  left: 45px;
+  top:100px;
+}
+.phone{
+  width: 40px;
+  height: 191px;
+  background:url("/styles/images/topic/carnival2016/pc/qiandao.jpg") no-repeat ;
+  float: left;
+}
+.erweima{
+  width: 120px;
+  height: 169px;
+  float: left;
+  margin: auto 0 auto;
+  border-top: 1px solid #343434;
+  border-bottom: 1px solid #343434;
+}
+.erweima-img{
+  width: 94px;
+  height: 94px;
+
+}
+
+
+.module{
+  width: 1100px;
+  margin: 0 auto;
+}
+.top{
+  width: 100%;
+  overflow: hidden;
+}
+.top-title{
+  width: 1176px;
+  height: 600px;
+  margin: 0 auto;
+  background: url("/styles/images/topic/carnival2016/pc/title1.png") no-repeat center;
+  position: relative;
+  z-index: 2;
+}
+.top-bonus{
+  width: 1128px;
+  height: 318px;
+  background:url("/styles/images/topic/carnival2016/pc/jiangjinchi1.png") no-repeat center ;
+  margin: -80px auto 0px;
+  overflow: hidden;
+}
+.top-bonus-box{
+  width: 510px;
+  height: 80px;
+  margin: 150px auto 0px;
+  overflow: hidden;
+}
+.money-sign{
+  height: 62px;
+  width: 44px;
+  font-size: 62px;
+  float: left;
+  color: #fdb824;
+  margin-right: 16px;
+  font-weight: 800;
+  line-height: 62px;
+}
+.comma{
+  display: block;
+  height: 62px;
+  width: 12px;
+  color: #fdb824;
+  font-weight: 900;
+  font-size: 36px;
+  margin-left: 8px;
+  margin-right:8px;
+  line-height: 82px;
+}
+.money-list{
+  display: block;
+  width: 40px;
+  height: 62px;
+  color: #fdb824;
+  font-weight: 900;
+  line-height: 62px;
+  font-size: 62px;
+  text-align: center;
+}
+.money {
+  float: left;
+  overflow: hidden;
+  .moneyhide {
+    display: none;
+  }
+  span {
+    float: left;
+  }
+}
+.top-rule{
+  width: 646px;
+  height: 18px;
+  font-size: 14px;
+  line-height: 18px;
+  color:#999;
+  margin: 55px auto 0px;
+}
+.luckbag{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 55px;
+}
+.luckbag-module{
+  width: 1215px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.luckbag-title{
+  width: 656px;
+  height: 67px;
+  background:url("/styles/images/topic/carnival2016/pc/fudai.png") no-repeat center ;
+  margin: 0 auto;
+}
+.mod-slider-box{
+  width: 1215px;
+  height: 470px;
+  overflow: hidden;
+  position: relative;
+}
+.mod-slider-lb{
+  height:310px;
+  li{
+    width: 578px;
+    height: 310px;
+  }
+}
+.mod-slider-bj{
+  width: 890px;
+  height: 310px;
+  background: url("/styles/images/topic/carnival2016/pc/fudaibj.png") no-repeat center;
+  margin: 30px auto 0px;
+  .bx-controls{
+    display: none;
+  }
+}
+.lucky{
+  width: 311px;
+  height: 298px;
+  background:url("/styles/images/topic/carnival2016/pc/fu.png") no-repeat center ;
+  margin: 0 auto;
+}
+.prev{
+  width: 70px;
+  position: absolute;
+  left:153px;
+  top:240px;
+  height: 120px;
+  background:url("/styles/images/topic/carnival2016/pc/toleft.png") no-repeat;
+  .bx-prev{
+    display: inline-block;
+    width: 70px;
+    height: 120px;
+    cursor: pointer;
+  }
+}
+.next{
+  width: 70px;
+  height: 120px;
+  position: absolute;
+  right:153px;
+  top:240px;
+  background:url("/styles/images/topic/carnival2016/pc/toright.png") no-repeat;
+  .bx-next{
+    display: inline-block;
+    width: 70px;
+    height: 120px;
+    cursor: pointer;
+  }
+}
+.progress{
+  width: 1215px;
+  height: 110px;
+  margin: 28px auto 0px;
+  position: relative;
+  overflow: hidden;
+  background:url("/styles/images/topic/carnival2016/pc/tiao.png") no-repeat 67px 50px;
+  .progress-lb{
+    width: 135px;
+    float: left;
+    height:110px;
+  }
+  .old{
+    .progress-time{
+      text-align: center;
+      margin-top: 20px;
+    }
+    .time{
+      text-align: center;
+      font-size: 16px;
+      color: #515151;
+    }
+    .time-hover{
+      font-size: 24px;
+      font-weight: 800;
+    }
+    .prompt{
+      margin-bottom: 5px;
+      width: 96px;
+      height: 37px;
+      .prompt-img{
+        display: none;
+        width: 96px;
+        height: 37px;
+        margin-left: 18px;
+        background:url("/styles/images/topic/carnival2016/pc/greytishi.png") no-repeat;
+      }
+    }
+    .origin{
+      width:20px;
+      height: 22px;
+      margin-top: 3px;
+      margin-left: 57px;
+      background:url("/styles/images/topic/carnival2016/pc/old.png") no-repeat;
+    }
+  }
+  .new{
+    .progress-time{
+      text-align: center;
+      margin-top: 20px;
+    }
+    .time{
+      text-align: center;
+      font-size: 16px;
+      color: #12aa52;
+    }
+    .time-hover{
+      font-size: 24px;
+      font-weight: 800;
+    }
+    .prompt{
+      margin-bottom: 5px;
+      width: 96px;
+      height: 37px;
+      .prompt-img{
+        display: none;
+        width: 96px;
+        height: 37px;
+        margin-left: 18px;
+        background:url("/styles/images/topic/carnival2016/pc/greentishi.png") no-repeat;
+      }
+    }
+    .origin{
+      width:20px;
+      height: 22px;
+      margin-top: 3px;
+      margin-left: 57px;
+      background:url("/styles/images/topic/carnival2016/pc/now.png") no-repeat;
+    }
+  }
+  .future{
+    .progress-time{
+      text-align: center;
+      margin-top: 20px;
+    }
+    .time{
+      text-align: center;
+      font-size: 16px;
+      color: #eeae23;
+    }
+    .time-hover{
+      font-size: 24px;
+      font-weight: 800;
+    }
+    .prompt{
+      margin-bottom: 5px;
+      width: 96px;
+      height: 37px;
+      .prompt-img{
+        display: none;
+        width: 96px;
+        height: 37px;
+        margin-left: 18px;
+        background:url("/styles/images/topic/carnival2016/pc/yellowtishi.png") no-repeat;
+      }
+    }
+    .origin{
+      width:20px;
+      height: 22px;
+      margin-top: 3px;
+      margin-left: 57px;
+      background:url("/styles/images/topic/carnival2016/pc/blackball.png") no-repeat;
+    }
+    .active{
+      width:20px;
+      height: 22px;
+      margin-top: 3px;
+      margin-left: 57px;
+      background:url("/styles/images/topic/carnival2016/pc/future.png") no-repeat;
+    }
+  }
+}
+.invest{
+  width: 100%;
+  height: 596px;
+  margin-top: 45px;
+  .invest-module{
+    width: 1128px;
+    height: 596px;
+    margin: 0 auto;
+    overflow: hidden;
+    background:url("/styles/images/topic/carnival2016/pc/jifen.png") no-repeat;
+  }
+}
+.invest-module-top{
+  width: 1100px;
+  margin: 140px auto 0px;
+  height: 373px;
+  overflow: hidden;
+}
+.invest-module-bottom{
+  font-size: 14px;
+  color: #878787;
+  width: 700px;
+  margin: 35px auto 0px;
+}
+.invest-module-prize{
+  width: 690px;
+  height: 373px;
+  float: left;
+}
+.invest-module-rank{
+  width: 290px;
+  height: 373px;
+  float: left;
+  margin-left: 60px;
+}
+.points{
+  width: 290px;
+  height: 25px;
+  overflow: hidden;
+}
+.points-shan{
+  display: block;
+  float: left;
+  width: 22px;
+  height: 20px;
+  background:url("/styles/images/topic/carnival2016/pc/shan.png") no-repeat;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+.points-title{
+  float: left;
+  color: #fdb824;
+  font-size: 22px;
+  font-weight: 800;
+}
+.points-total{
+  float: left;
+  margin-left: 28px;
+  font-size:14px;
+  color: #fdb824;
+  margin-top: 8px;
+}
+.points-total-title{
+  font-size: 14px;
+  color: #808080;
+  margin-right: 5px;
+}
+.rank-title{
+  width: 290px;
+  height: 30px;
+  overflow: hidden;
+  border-bottom: 2px solid #101010;
+  margin-top: 18px;
+  .user-rank{
+    display: block;
+    float: left;
+    line-height: 30px;
+    font-size: 16px;
+    color: #666666;
+    margin-left: 16px;
+  }
+  .user-points{
+    display: block;
+    float: left;
+    line-height: 30px;
+    font-size: 16px;
+    color: #666666;
+    margin-left: 172px;
+  }
+}
+.rank-content{
+  width: 290px;
+  border-top: 1px solid #343434;
+  padding-left: 8px;
+  padding-right: 8px;
+  .rank-number{
+    margin-top: 7px;
+    overflow: hidden;
+    .user-number{
+      font-size: 14px;
+      height: 20px;
+      line-height: 20px;
+      color: #888888;
+      float: left;
+      margin-right: 10px;
+    }
+    .user-name{
+      width:115px;
+      height: 20px;
+      line-height: 20px;
+      display:block;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      font-size: 14px;
+      color: #888888;
+      float: left;
+    }
+    .user-score{
+      height: 20px;
+      line-height: 20px;
+      font-size: 14px;
+      color: #888888;
+      float: right;
+    }
+  }
+  .topthree{
+    .user-number{
+      font-size: 14px;
+      height: 20px;
+      line-height: 20px;
+      color: #fdb824;
+      float: left;
+      margin-right: 10px;
+    }
+    .user-name{
+      width:115px;
+      height: 20px;
+      line-height: 20px;
+      display:block;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      font-size: 14px;
+      color: #fdb824;
+      float: left;
+    }
+    .user-score{
+      height: 20px;
+      line-height: 20px;
+      font-size: 14px;
+      color: #fdb824;
+      float: right;
+    }
+  }
+}
+.my-rank{
+  overflow: hidden;
+  width: 290px;
+  margin-top: 7px;
+  padding-left: 8px;
+  padding-right: 8px;
+  .my-number{
+    width: 10px;
+    height: 10px;
+    background: #12aa52;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .my-name{
+    width:115px;
+    height: 20px;
+    line-height: 20px;
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-size: 14px;
+    color: #12aa52;
+    float: left;
+  }
+  .my-score{
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #12aa52;
+    float: right;
+  }
+}
+.htmleaf-container{
+  width: 690px;
+  height: 373px;
+  .dg-container{
+    width: 730px;
+    height: 303px;
+  }
+  .dg-wrapper{
+    width:263px;
+    height:303px;
+    a{
+      img{
+        height: 303px;
+      }
+    }
+    .goods{
+      display: none;
+      margin-top: 40px;
+      color: #fdb824;
+      font-size:18px;
+    }
+    .dg-center{
+      .goods{
+        display: block !important;
+      }
+    }
+  }
+  .controlbtn{
+    display: block;
+  }
+}
+
+.dg-prev{
+  display: block;
+  width: 70px;
+  position: absolute;
+  left:0px;
+  top:86px;
+  cursor: pointer;
+  height: 120px;
+  background:url("/styles/images/topic/carnival2016/pc/toleft.png") no-repeat;
+}
+.dg-next{
+  display: block;
+  width: 70px;
+  height: 120px;
+  position: absolute;
+  right:0px;
+  cursor: pointer;
+  top:86px;
+  background:url("/styles/images/topic/carnival2016/pc/toright.png") no-repeat;
+
+}
+.jigsaw{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 55px;
+}
+.jigsaw-module{
+  width: 1110px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.jigsaw-title{
+  width: 596px;
+  height: 87px;
+  margin: 0 auto;
+  background: url("/styles/images/topic/carnival2016/pc/pin.png") no-repeat;
+}
+.xiaotian-jigsaw{
+  width: 1110px;
+  height: 415px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.sagacity {
+  float: left;
+  width: 302px;
+  height: 410px;
+}
+  .sagacity-title{
+    padding-left: 12px;
+    width: 285px;
+    height: 22px;
+    line-height: 22px;
+    border-left: 5px solid #fdb824;
+    font-size:20px;
+    color: #999999;
+    margin-bottom: 20px;
+    p{
+      float: right;
+      width: 80px;
+      height: 22px;
+      line-height: 22px;
+      font-size: 14px;
+      color: #999999;
+      span{
+        color: #fdb824;
+      }
+    }
+  }
+  .sagacity-box{
+    width: 302px;
+    height: 362px;
+  }
+  .sagacity-jigsaw{
+    width: 302px;
+    height: 299px;
+    overflow: hidden;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+    position: relative;
+    z-index: 10;
+    li{
+      float: left;
+    }
+
+  .sagacity-item{
+    position: relative;
+    img{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+    .sagacity-nub{
+      width: 40px;
+      height: 30px;
+      color: #fff;
+      background: #5c5c5c;
+      line-height: 30px;
+      text-align: center;
+      font-size: 14px;
+      position: absolute;
+      border-radius: 15px;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    .cover-layer{
+      display: none;
+    }
+    .bright{
+      .cover-layer{
+        position: absolute;
+        top:0;
+        display:block;
+        width: 100%;
+        height: 100%;
+        background-color:#000;
+        filter:alpha(opacity=50);
+        -moz-opacity:0.5;
+        opacity:0.5;
+      }
+      .sagacity-nub{
+        display: none;
+      }
+    }
+
+  }
+  .success{
+    background: #151515;
+    border-top:1px solid #343434;
+    width: 302px;
+    height: 62px;
+    text-align: center;
+    line-height: 62px;
+    font-size: 16px;
+    color: #999999;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+    cursor: pointer;
+  }
+
+.xtcenter{
+  margin-left: 95px;
+  margin-right: 95px;
+}
+.dresser{
+  float: left;
+  width: 302px;
+  height: 410px;
+}
+.bigeye{
+  float: left;
+  width: 302px;
+  height: 410px;
+}
+.oneclass{
+  width: 102px;
+  height: 101px;
+}
+.twoclass{
+  width: 101px;
+  height: 101px;
+}
+.threeclass{
+  width:99px;
+  height: 101px;
+}
+.fourclass{
+  width: 102px;
+  height: 102px;
+}
+.fiveclass{
+  width: 101px;
+  height: 102px;
+}
+.sixclass{
+  width: 99px;
+  height: 102px;
+}
+.sevenclass{
+  width: 102px;
+  height: 96px;
+}
+.eightclass{
+  width: 101px;
+  height: 96px;
+}
+.nineclass{
+  width: 99px;
+  height: 96px;
+}
+.jigsaw-footer{
+  width: 400px;
+  height:22px;
+  margin: 20px auto 0px;
+  font-size: 14px;
+  color: #888888;
+  .getmore{
+    color: #d09923;
+    cursor: pointer;
+  }
+}
+.rule{
+  width: 100%;
+  height: 326px;
+  margin-top: 55px;
+  overflow: hidden;
+}
+.rule-moudle{
+  width: 1128px;
+  height: 326px;
+  margin: 0 auto;
+  overflow: hidden;
+  background:url("/styles/images/topic/carnival2016/pc/guize.png") no-repeat; ;
+}
+.rule-list{
+  width: 965px;
+  height: 100px;
+  padding-left: 81px;
+  padding-right: 81px;
+  margin-top: 128px;
+  li{
+    float: left;
+    width: 235px;
+    height: 100px;
+  }
+}
+.rule-title{
+  border-left: 4px solid #fdb824;
+  height: 20px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #999;
+  font-weight: 800;
+  padding-left: 8px;
+  margin-bottom: 20px;
+}
+.rule-time{
+  font-size: 14px;
+  color: #999;
+}
+.rule-list-one{
+  margin-right: 128px;
+}
+.rule-list-two{
+  margin-right: 125px;
+}
+.warn{
+  margin-top: 37px;
+  width: 100%;
+  height: 53px;
+  line-height: 53px;
+  color: #666666;
+  font-size: 14px;
+  text-align: center;
+}

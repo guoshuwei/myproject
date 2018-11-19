@@ -1,0 +1,105 @@
+.mod-hotpro{
+    li{
+        border-top:1px dashed #ccc;
+        padding:0 20px 20px;
+        .wrapper{
+            
+        }
+        .tag{
+            margin: 0 0 10px;
+            span{
+                float: left;
+                border: 1px solid #38aee8;
+                border-radius: 3px;
+                color: #38aee8;
+                font-size: 12px;
+                height: 18px;
+                line-height: 18px;
+                margin-right: 8px;
+                padding: 0 4px;
+                text-align: center;
+            }
+        }
+        .title{
+            font-size: 20px;
+            padding-top: 20px;
+            margin-bottom: 6px;
+            a{
+                color: #383838;
+            }
+            span{
+                display: inline-block;
+                *display: inline;
+                *zoom:1;
+                border:1px solid #ffc38b;
+                background-color: #fff9f2;
+                color: #ffc38b;
+                height: 19px;
+                line-height: 19px;
+                font-size: 12px;
+                font-weight: lighter;
+                padding: 0 5px;
+                border-radius:2px;
+                vertical-align: top;
+                *vertical-align: middle;
+                margin-top:18px;
+                *margin-top:0;
+                margin-left: 5px;
+            }
+        }
+        .info{
+            .top{
+                font-size: 12px;
+                color: #9b9b9b;
+                margin-bottom:5px;
+            }
+            .bottom{
+                font-size: 30px;
+                .small{
+                    font-size: 18px;
+                }
+                .c_red{
+                    color: #ff1414;
+                }
+                .ui-icons-j{
+                    vertical-align: top;
+                }
+                .time{
+                    font-size: 14px;
+                    color: #9b9b9b;
+                    margin-top: 5px;
+                }
+                .toloans {
+                    float: right;
+                    width: 130px;
+                    height: 43px;
+                    line-height: 43px;
+                    text-align: center;
+                    background-color: #f25a4f;
+                    font-size: 20px;
+                    color: #fff;
+                    margin-top: 14px;
+                    box-shadow: 0 -3px 0 #cd3429 inset;
+                    -webkit-transition: all .25s ease-in-out;
+                    -moz-transition: all .25s ease-in-out;
+                    transition: all .25s ease-in-out;
+                    border-radius: 4px;
+                    &:hover {
+                        background-color: #ffba00;
+                        text-decoration: none;
+                        box-shadow: 0 -3px 0 #dfa300 inset;
+                    }
+                }
+            }
+        }
+        .tools{
+            color: #aaa;
+            .qt-gl{
+                font-size: 14px;
+            }
+        }
+        &:first-child{
+            border-top:none;
+        }
+    }
+}

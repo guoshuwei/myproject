@@ -1,0 +1,350 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/mobileGrid';
+@import '../inc/m_ui';
+
+
+html,body{
+    background-color: #f4af6e;
+}
+a:hover{
+    text-decoration: none;
+}
+.ui-section{
+    min-height: px2rem(1333px);
+}
+
+.ui-fstart-item1{
+    height: px2rem(1333px);
+    background: url(/styles/images/topic/brand618/mobile/start1.jpg) no-repeat 0 0;
+    background-size: px2rem(750px) px2rem(1333px);
+}
+.ui-fstart-item2{
+    height: px2rem(1333px);
+    background: url(/styles/images/topic/brand618/mobile/start2.jpg) no-repeat 0 0;
+    background-size: px2rem(750px) px2rem(1333px);
+}
+.ui-fstart-item-next{
+    position: absolute;
+    bottom: px2rem(20px);
+    width: 100%;
+}
+.ui-fstart-item-next-note{
+    font-size: px2rem(30px);
+    color: #fff;
+    line-height: px2rem(55px);
+    text-align: center;
+}
+.ui-icons-next{
+    margin: 0 auto;
+    width: px2rem(50px);
+    height: px2rem(36px);
+    background: url(/styles/images/topic/brand618/mobile/next.png) no-repeat 0 0;
+    background-size: px2rem(50px) px2rem(36px);
+}
+.ui-pt1183{
+    padding-top: px2rem(1183px);
+}
+.ui-pt550{
+    padding-top: px2rem(550px);
+}
+.ui-answer-btn{
+    
+    a{
+        display: block;
+        margin: 0 auto;
+        width: px2rem(490px);
+        height: px2rem(88px);
+        line-height: px2rem(88px);
+        text-align: center;
+        font-size: px2rem(30px);
+        color: #fff;
+        border-radius: px2rem(10px);
+        background-color: #d8323d;
+    }   
+}
+.ui-list{
+    min-height: px2rem(1333px);
+    background: url(/styles/images/topic/brand618/mobile/list.jpg) no-repeat 0 0;
+    background-size: px2rem(750px) px2rem(1333px);
+}
+.ui-question{
+    padding: px2rem(110px) px2rem(85px) 0;
+    font-size: px2rem(30px);
+    line-height: px2rem(84px); 
+    color: #333;
+}
+.ui-answer{
+    margin: px2rem(40px) auto 0;
+    width: px2rem(585px);
+    height: px2rem(291px);
+}
+.ui-answer-item1{
+    width: px2rem(585px);
+    height: px2rem(120px);
+    border-radius: px2rem(10px);
+    font-size: px2rem(30px);
+    line-height: px2rem(40px);
+    background: url(/styles/images/topic/brand618/mobile/answer_bg.png) no-repeat 0 0;
+    background-size: px2rem(585px) px2rem(291px);
+    a{
+        display: table-cell;
+        color: #333;
+        padding-left: px2rem(130px);
+        padding-right: px2rem(20px);
+        vertical-align: middle;
+        width: px2rem(435px);
+        height: px2rem(120px);
+    }
+    &:active{
+        background-color: #e8e8e8;
+    }
+}
+.ui-answer-item2{
+    margin-top: px2rem(50px);
+    width: px2rem(585px);
+    height: px2rem(120px);
+    border-radius: px2rem(10px);
+    font-size: px2rem(30px);
+    line-height: px2rem(40px);
+    background: url(/styles/images/topic/brand618/mobile/answer_bg.png) no-repeat 0 px2rem(-170px);
+    background-size: px2rem(585px) px2rem(291px);
+    a{
+        display: table-cell;
+        color: #333;
+        padding-left: px2rem(130px);
+        padding-right: px2rem(20px);
+        vertical-align: middle;
+        width: px2rem(435px);
+        height: px2rem(120px);
+    }
+    &:active{
+        background-color: #e8e8e8;
+    }
+}
+.ui-fresult{
+    height: px2rem(1333px);
+    background: url(/styles/images/topic/brand618/mobile/result.jpg) no-repeat 0 0;
+    background-size: px2rem(750px) px2rem(1333px);
+}
+.ui-fresult-img{
+    padding-top: px2rem(60px);
+    margin: 0 auto px2rem(20px);
+    width: px2rem(422px);
+    height: px2rem(422px);
+    img{
+        width: px2rem(422px);
+        height: px2rem(422px);
+    }
+}
+.ui-fresult-title{
+    font-size: px2rem(30px);
+    color: #333;
+    text-align: center;
+    line-height: px2rem(70px);
+}
+.ui-fresult-result{
+    text-align: center;
+    strong{
+        display: inline-block;
+        padding: 0 px2rem(60px);
+        background-color: #714233;
+        height: px2rem(98px);
+        line-height: px2rem(98px);
+        border-radius: px2rem(50px);
+        font-size: px2rem(40px);
+        color: #fff;
+    }
+}
+.ui-fresult-introduce{
+    font-size: px2rem(28px);
+    line-height: px2rem(48px);
+    color: #333;
+    padding: px2rem(80px) px2rem(80px) px2rem(40px);
+}
+.ui-fresult-again{
+    margin: 0 auto;
+    width: px2rem(176px);
+    height: px2rem(46px);
+    line-height: px2rem(46px);
+    text-align: center;
+    border-radius: px2rem(10px);
+    border: 2px solid #da3c3c;
+    font-size: px2rem(26px);
+    color: #da3c3c;
+}
+.ui-btnbox{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: px2rem(100px);
+    background-color: rgba(93,88,89,0.9);
+    z-index: 100;
+}
+.ui-btnbox-item{
+    float: left;
+    width: 50%;
+    height: px2rem(100px);
+    text-align: center;
+}
+.ui-btnbox-line{
+    float: right;
+    margin-top: px2rem(20px);
+    width: 2px;
+    height: px2rem(60px);
+    background-color: rgba(255,255,255,0.4);
+}
+.ui-fresult-gift{
+    display: inline-block;
+    margin-top: px2rem(20px);
+    width: px2rem(266px);
+    height: px2rem(56px);
+    border: 2px solid #da3c3c;
+    line-height: px2rem(60px);
+    text-align: center;
+    font-size: px2rem(30px);
+    color: #fff;
+    border-radius: px2rem(28px);
+    background-color: #da3c3c;
+}
+.ui-fresult-show{
+    display: inline-block;
+    margin-top: px2rem(20px);
+    width: px2rem(266px);
+    height: px2rem(56px);
+    border: 2px solid #fff;
+    line-height: px2rem(60px);
+    text-align: center;
+    font-size: px2rem(30px);
+    color: #fff;
+    border-radius: px2rem(28px);
+}
+.ui-fshow{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.ui-fshow-img{
+    padding: px2rem(40px) 0;
+    img{
+        display: block;
+        margin: 0 auto; 
+        width: px2rem(600px);
+    }
+}
+.ui-fshow-title{
+    font-weight: bord;
+    color: #fff;
+    font-size: px2rem(46px);
+    text-align: center;
+    line-height: px2rem(75px);
+}
+.ui-fshow-note{
+    color: #fff;
+    font-size: px2rem(36px);
+    text-align: center;
+    line-height: px2rem(75px);
+}
+.ui-fshow-weixin{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    img{
+        display: block;
+        margin: 0 auto;
+        width: px2rem(650px);
+        height: px2rem(572px);
+    }
+}
+.ui-fshow-gift{
+    position: fixed;
+    top: px2rem(295px);
+    left: 50%;
+    padding-top: px2rem(60px);
+    margin-left: px2rem(-271px);
+    width: px2rem(543px);
+    height: px2rem(300px);
+    border-radius: px2rem(20px);
+    background-color: #fff;
+    z-index: 999;
+}
+.ui-fshow-gift-close{
+    position: absolute;
+    top: px2rem(-40px);
+    right: px2rem(-40px);
+    width: px2rem(46px);
+    height: px2rem(46px);
+    margin: 0 auto;
+    background: url(/styles/images/topic/brand618/mobile/icons.png) no-repeat px2rem(-354px) px2rem(-112px);
+    background-size: px2rem(400px) px2rem(400px);
+}
+.ui-fshow-gift-img{
+    width: px2rem(100px);
+    height: px2rem(100px);
+    margin: 0 auto;
+    background: url(/styles/images/topic/brand618/mobile/icons.png) no-repeat px2rem(-300px) 0;
+    background-size: px2rem(400px) px2rem(400px);
+ 
+}
+.ui-fshow-gift-title{
+    font-size: px2rem(30px);
+    color: #333;
+    line-height: px2rem(100px);
+    text-align: center;
+}
+.ui-fshow-gift-btn{
+    a{
+        display: block;
+        margin: 0 auto;
+        width: px2rem(176px);
+        height: px2rem(46px);
+        line-height: px2rem(46px);
+        text-align: center;
+        border-radius: px2rem(10px);
+        border: 2px solid #da3c3c;
+        font-size: px2rem(26px);
+        color: #da3c3c;
+    }
+}
+.ui-circle{
+    z-index: 112;
+}
+
+   
+
+@mixin jump{
+0%      {-webkit-transform: translateY(0) scale(1);transform: translateY(0) scale(1);}
+25%     {-webkit-transform: translateY(px2rem(-20px)) scale(1);transform: translateY(px2rem(-20px)) scale(1);} 
+50%     {-webkit-transform: translateY(0) scale(1);transform: translateY(0) scale(1);}
+75%     {-webkit-transform: translateY(px2rem(20px)) scale(1);transform: translateY(px2rem(20px)) scale(1);}   
+100%    {-webkit-transform: translateY(0) scale(1);transform: translateY(0) scale(1);}
+}
+@-o-keyframes jump{
+    @include jump;
+}
+@-moz-keyframes jump{
+    @include jump;
+}
+@-webkit-keyframes jump{
+    @include jump;
+}
+@keyframes jump{
+    @include jump;
+}
+
+.ui-animate-jump{
+    -webkit-animation: jump 1s linear both infinite;
+    -moz-animation: jump 1s linear both infinite;
+    -o-animation: jump 1s linear both infinite;
+    animation: jump 1s linear both infinite;
+}
+
+
+
+
+
+

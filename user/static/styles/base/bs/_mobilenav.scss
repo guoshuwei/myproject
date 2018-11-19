@@ -1,0 +1,110 @@
+@charset "UTF-8";
+.navbar {
+  position: relative;
+  min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  //margin-bottom: $navbar-margin-bottom;
+  border: 1px solid transparent;
+
+  // Prevent floats from breaking the navbar
+  @include clearfix;
+
+  @media (min-width: $grid-float-breakpoint) {
+    border-radius: $navbar-border-radius;
+  }
+}
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  .navbar-collapse {
+    max-height: $navbar-collapse-max-height;
+
+    @media (max-device-width: $screen-xs-min) and (orientation: landscape) {
+      max-height: 200px;
+    }
+  }
+}
+// Fix the top/bottom navbars when screen real estate supports it
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: $zindex-navbar-fixed;
+
+  // Undo the rounded corners
+  @media (min-width: $grid-float-breakpoint) {
+    border-radius: 0;
+  }
+}
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+.navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0; // override .navbar defaults
+  border-width: 1px 0 0;
+}
+.navbar-default{
+  background-color: $navbar-default-bg;
+  border-color: $navbar-default-border;
+    .navbar-brand {
+    color: $navbar-default-brand-color;
+    &:hover,
+    &:focus {
+      color: $navbar-default-brand-hover-color;
+      background-color: $navbar-default-brand-hover-bg;
+    }
+  }
+  float: left;
+  padding: $navbar-padding-vertical $navbar-padding-horizontal;
+  font-size: $font-size-large;
+  line-height: $line-height-computed;
+  height: $navbar-height;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  > img {
+    display: block;
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    .navbar > .container &,
+    .navbar > .container-fluid & {
+      margin-left: -$navbar-padding-horizontal;
+    }
+  }
+}
+.navbar-default-no-style{
+    .navbar-brand {
+    color: $navbar-default-brand-color;
+    &:hover,
+    &:focus {
+      color: $navbar-default-brand-hover-color;
+      background-color: $navbar-default-brand-hover-bg;
+    }
+  }
+  float: left;
+  padding: $navbar-padding-vertical 0;
+  font-size: 15px;
+  line-height: $line-height-computed;
+  height: $navbar-height;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  > img {
+    display: block;
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    .navbar > .container &,
+    .navbar > .container-fluid & {
+      margin-left: -$navbar-padding-horizontal;
+    }
+  }
+}

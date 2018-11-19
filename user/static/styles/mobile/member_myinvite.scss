@@ -1,0 +1,210 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils'; 
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog'; 
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+@media only screen and (min-width:1000px) and (orientation:landscape){
+    html{font-size:7.1rem !important;}
+}
+@media only screen and (min-width:1200px) and (orientation:landscape){
+    html{font-size:8.38rem !important;}
+}
+@media only screen and (min-width:1400px) and (orientation:landscape){
+    html{font-size:9.2rem !important;}
+}
+@media only screen and (min-width:2200px) and (orientation:landscape){
+    html{font-size:13.83rem !important;}
+}
+.page_section{
+    padding-bottom: px2rem(32px);
+}
+.ui-myinvite-total{
+    text-align: center;
+    font-size: px2rem(30px);
+    color: #404040;
+    line-height: px2rem(86px);
+}
+.ui-myinvite-title{
+    height: px2rem(80px);
+    line-height: px2rem(80px);
+    font-size: px2rem(30px);
+    color: #fff;
+    background-color: #5F9FE5;
+
+}
+.ui-myinvite-title{
+    text-align: center;
+    padding: 0 px2rem(25px);
+}
+.ui-myinvite-title-user{
+    float: left;
+    width: 29%;
+}
+.ui-myinvite-title-win{
+    float: left;
+    width: 42%;
+}
+.ui-myinvite-title-time{
+    float: left;
+    width: 29%;
+}
+.ui-myinvite-list{
+    text-align: center;
+    padding: 0 px2rem(25px);
+    line-height: px2rem(102px);
+    background-color: #fff;
+}
+.ui-myinvite-list-item{   
+    border-bottom: px2rem(1px) dashed #ddd;
+}
+.ui-myinvite-list-item-user{
+    float: left;
+    width: 29%;
+    font-size: px2rem(28px);
+    color: #8A8A8A;
+}
+.ui-myinvite-list-item-win{
+    float: left;
+    width: 42%;
+    font-size: px2rem(30px);
+    color: #FF7119;
+}
+.ui-myinvite-list-item-time{
+    float: left;
+    width: 29%;
+    font-size: px2rem(28px);
+    color: #8A8A8A;
+}
+.ui-font-5f9fe5{
+    color: #5f9fe5;
+}
+
+
+
+
+.ui-tongji{
+    position: relative;
+    width: 100%;
+    height: px2rem(197px);
+    background-color: #fff;
+    .ui-col{
+        width: 33.333333%;
+        float: left;
+        text-align: center;
+        .ui-top{
+            height: px2rem(34px);
+            line-height: px2rem(34px);
+            margin-top: px2rem(51px);
+            font-size: px2rem(26px);
+            color: #8c8c8c;
+        }
+        .ui-bot{
+            height: px2rem(44px);
+            line-height: px2rem(44px);
+            margin-top: px2rem(18px);
+            font-size: px2rem(34px);
+            color: #ff7119;
+            @include text-ellipsis;
+            span{
+                color: #383838;
+            }
+        }
+    }
+    .ui-bottomtip{
+        height: px2rem(23px);
+        line-height: px2rem(23px);
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: px2rem(13px);
+        font-size: px2rem(20px);
+        color: #c8c8c8;
+    }
+}
+
+.ui-no-data{
+    text-align: center;
+    .ui-icon{
+        display: block;
+        width: px2rem(195px);
+        height: px2rem(223px);
+        margin: px2rem(229px) auto 0;
+    }
+    .ui-txt{
+        margin-top: px2rem(35px);
+        font-size: px2rem(28px);
+        color: #b2b2b2;
+    }
+    .ui-btn{
+        display: block;
+        width: px2rem(256px);
+        height: px2rem(68px);
+        line-height: px2rem(68px);
+        margin: px2rem(70px) auto 0;
+        border: px2rem(2px) solid #5b99ee;
+        font-size: px2rem(28px);
+        border-radius: px2rem(68px);
+        color: #5b99ee;
+        &:active{
+            color: #fff;
+            background-color: #5b99ee;
+        }
+    }
+}
+
+
+.ui-tbl{
+    width: px2rem(686px);
+    margin: px2rem(33px) auto px2rem(60px);
+    text-align: center;
+    .ui-thd{
+        height: px2rem(60px);
+        background-color: #ccb19e;
+        .ui-cell{
+            float: left;
+            font-size: px2rem(24px);
+            line-height: px2rem(60px);
+            color: #efefef;
+
+        }
+    }
+    .ui-tbd{
+        background-color: #fff;
+        .ui-tr{
+            height: px2rem(89px);
+            border-bottom: 1px dashed #dddddd;
+            .ui-cell{
+                float: left;
+                font-size: px2rem(26px);
+                line-height: px2rem(89px);
+                color: #8b8b8b;
+                @include text-ellipsis;
+                .red{
+                    color: #ff7119;
+                }
+            }
+        }
+    }
+    .ui-colspan35{
+        width: 35%;
+    }
+    .ui-colspan25{width: 25%;}
+    .ui-colspan20{width: 20%;}
+    .ui-colspan30{width: 30%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/header';
+@import '../inc/member-header';
+@import '../inc/footer';
+@import '../mod/bind';
+@import '../mod/floatlayer';
+@import '../mod/activity';
+
+
+.qt-1920-wrap{
+	position:relative;
+	img{
+		float:left;	
+	}
+
+	.section{
+		position:relative;
+		overflow: hidden;
+		.ui-link{
+			float: left;
+			margin-left: -53%;
+    		margin-top: 185px;
+    		background: #FF702A;
+    		color: #fff;
+		}
+	}
+	.section .ui-link:hover{
+		background: #e24a0e;
+	}
+
+}
+.fixed{
+	position:fixed;
+	width:100%;
+	height:120px;	
+	background:rgba(0,0,0,.5);
+	bottom:0;
+	left:0;
+	text-align:center;
+	display:block;
+	line-height:120px;
+	img{
+		float: none;
+		vertical-align: middle;
+	}
+	.ui-link{
+		vertical-align: middle;	
+		background: #FF702A;
+    	color: #fff;
+	}
+}

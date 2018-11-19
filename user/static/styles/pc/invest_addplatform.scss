@@ -1,0 +1,372 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/header';
+@import '../inc/member-header';
+@import '../inc/assets-tab';
+@import '../inc/footer';
+@import '../mod/search';
+@import '../mod/charge';
+@import '../mod/swiper';
+@import '../mod/bind';
+@import '../mod/wdate';
+@import '../mod/autocomplete';
+@import '../mod/redpapersave';
+@import '../mod/floatlayer';
+@import '../mod/activity';
+
+
+.page_section {
+  min-height: 450px;
+  padding-bottom: 50px;
+}
+.content-wrap{
+  position: relative;
+  width: 1040px;
+  float: left;
+}
+.content-section{
+  background-color: #fff;
+}
+.content-section+.content-section{
+  margin-top: 10px;
+}
+.add-section{
+  min-height: 600px;
+}
+
+
+
+
+// 小标题
+.mod-title{
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 30px 0 20px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.mod-title-left{
+  float: left;
+  position: relative;
+}
+.mod-title-right{
+  float: right;
+}
+.mod-title-word{
+  display: block;
+  float: left;
+  height: 16px;
+  line-height:16px;
+  border-left: 4px solid #ea544a;
+  margin-top: 22px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  padding-left: 10px;
+}
+.mod-title-tips{
+  display: block;
+  float: left;
+  font-size: 12px;
+  color: #999;
+  padding-left: 10px;
+}
+.mod-title-back{
+  color: #ea544a;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+.addplant-tips{
+  display: block;
+  padding-left: 30px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 20px;
+}
+.account-type,.form-list-item {
+  height: 57px;
+}
+.form-list-item-template{
+  height: 37px;
+}
+.dividing-line-item{
+  position: relative;
+  height: 21px;
+  line-height: 21px;
+  padding: 0 30px 20px;
+}
+.dividing-line{
+  height: 10px;
+  border-bottom: 1px dashed #e8e8e8;
+}
+.dividing-line-text{
+  position: absolute;
+  top: 0;
+  left: 425px;
+  display: block;
+  height: 21px;
+  font-size: 12px;
+  text-align: center;
+  color: #999;
+  width: 84px;
+  background-color: #fff;
+}
+.form-wrap {
+  display: none;
+}
+.form-wrap.active {
+  display: block;
+}
+.list-title {
+  float: left;
+  height: 37px;
+  width: 80px;
+  padding-left: 30px;
+  line-height: 34px;
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+}
+.list-title em{
+  color: #ff3434;
+}
+.list-input {
+  float: left;
+  width: 600px;
+  height: 57px;
+}
+.list-textarea{
+  height: 140px;
+}
+.list-input-template{
+  height: 37px;
+}
+.list-input-box {
+  position: relative;
+  height: 37px;
+}
+.date-icon {
+  position: absolute;
+  display: block;
+  height: 17px;
+  width: 15px;
+  left: 324px;
+  top: 10px;
+  background-image: url(/styles/images/member/account-icons.png);
+  background-position: -240px 0;
+  @include ratioBackground($url:'/styles/images/member/account-icons-ret.png', $size: 420px 420px, $x:-240px, $y:-0px);
+}
+.date-icon-m {
+  left: 122px;
+}
+.account-type-label {
+  display: block;
+  float: left;
+  margin: 2px 20px 0 0;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  width: 58px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #d2d2d2;
+  cursor: pointer;
+  transition: all .25s ease-in-out;
+}
+.account-type-input{
+  display: none;
+}
+.account-type-input:checked+.account-type-label {
+  border-color: #2897ff;
+  background-color: #2897ff;
+  color: #fff;
+}
+
+.list-input-text {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  height: 37px;
+  line-height: 37px;
+}
+.list-input-textarea{
+  display: block;
+  float: left;
+  margin-right: 20px;
+  padding: 10px;
+  height: 100px;
+  line-height: 18px;
+  font-size: 14px;
+  width: 328px;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+}
+.list-input-text-l {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  padding: 0 10px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  width: 338px;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+}
+.list-input-text-l .date-picker {
+  width: 248px;
+  padding-right: 40px;
+}
+select.list-input-text-l {
+  width: 350px;
+}
+.list-input-text-m {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  padding: 0 10px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  width: 214px;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+}
+.list-input-text-s {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  padding: 0 10px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  width: 103px;
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+}
+.list-img-s{
+  display: block;
+  float: left;
+  margin-right: 10px;
+  height: 37px;
+  width: 115px;
+}
+.identify-img{
+  cursor: pointer;
+}
+.list-input-tips {
+  float: left;
+  height: 37px;
+  line-height: 37px;
+  font-size: 14px;
+  color: #999;
+  text-align: right;
+}
+
+.list-input-error {
+  display: none;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #ea554e;
+}
+
+.list-input-checkbox {
+  display: none;
+}
+.list-input-checkbox-style {
+  display: block;
+  float: left;
+  height: 22px;
+  width: 22px;
+  margin: 6px 10px 0 0;
+  background-image: url(/styles/images/member/icons.png);
+  background-position: -179px 0;
+  cursor: pointer;
+}
+.template-set {
+  display: block;
+  float: left;
+  height: 37px;
+  line-height: 37px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+.list-input-checkbox:checked+.list-input-checkbox-style {
+  background-position: -212px 0;
+}
+.radio-input {
+  display: none;
+}
+.radio-style {
+  display: block;
+  float: left;
+  height: 14px;
+  width: 14px;
+  margin-top:10px;
+  background-image: url(/styles/images/member/icons.png);
+  background-position: -150px 0;
+  cursor: pointer;
+}
+.radio-input-fn.active .radio-style {
+  background-position: -150px -20px;
+}
+.radio-word {
+  display: block;
+  float: left;
+  height: 37px;
+  padding-left: 5px;
+  line-height: 37px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.list-input-submit {
+  height: 40px;
+  width: 140px;
+  border: none;
+  color: #fff;
+  @include border-radius(4px);
+  background-color: #0080cc;
+  transition: all .25s ease-in-out;
+  cursor: pointer;
+}
+.list-input-submit:hover {
+  background-color: #0067ad;
+}
+.list-input-submit.disabled{
+  background-color: #ccc;
+}
+.list-input-submit.disabled:hover{
+  background-color: #ddd;
+}
+.qt-ml10 {
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+

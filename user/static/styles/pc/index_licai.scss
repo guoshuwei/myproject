@@ -1,0 +1,434 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav-ty';
+@import '../inc/header-ty';
+@import '../inc/footer-ty';
+@import '../mod/bind';
+@import '../mod/activity';
+@import '../mod/floatlayer';
+@import '../mod/aside';
+@import '../mod/animate';
+@import '../mod/seoadvert';
+@import '../inc/index-header';
+
+@keyframes rotate_360{
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@mixin licaibackground($x:0px,$y:0px,$xx:0px,$yy:0px) {
+  background-image: url(/styles/images/index/dangan.png);
+  background-size: 1470px 2000px;
+  background-position: $x $y;
+  @include ratioBackground($url:'/styles/images/index/dangan.png', $size: 735px 1000px, $x:$xx, $y:$yy);
+}
+
+.licai-step {
+  //width: 1200px;
+  height: 180px;
+  background: #fff;
+  padding: 20px;
+  .licai-title {
+    h1 {
+      float: left;
+      font-size: 20px;
+      color: #333333;
+      font-weight: bold;
+    }
+    a {
+      float: right;
+      font-size: 14px;
+      color: #0099ee;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .step-wrap {
+    text-align: center;
+    color: #333333;
+    margin-top: 8px;
+    .step {
+      float: left;
+      height: 140px;
+      padding: 5px;
+      text-align: center;
+      em {
+        display: inline-block;
+        height: 80px;
+        width: 81px;
+      }
+      h3 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+      p {
+        font-size: 12px;
+        color: #999;
+        margin-top: 2px;
+      }
+    }
+    .step-right {
+      float: left;
+      height: 160px;
+      width: 37px;
+      text-align: center;
+      line-height: 110px;
+      em {
+        display: inline-block;
+        width: 30px;
+        height: 38px;
+        @include licaibackground($x:0px,$y:-1086px,$xx:-18px,$yy:-544px);
+      }
+    }
+    .step-right1 {
+      margin-left: 4px;
+    }
+    .step-right2 {
+      margin-left: 16px;
+    }
+    .step-right3 {
+      margin-right: 28px;
+    }
+    .step-right4 {
+      margin-left: 40px;
+    }
+    .step1 em {
+      @include licaibackground($x:0px,$y:-800px,$xx:0px,$yy:-440px);
+    }
+    .step2 em {
+      @include licaibackground($x:-165px,$y:-800px,$xx:-82.5px,$yy:-440px);
+    }
+    .step3 em {
+      @include licaibackground($x:-329px,$y:-800px,$xx:-165px,$yy:-440px);
+    }
+    .step4 em {
+      @include licaibackground($x:-494px,$y:-800px,$xx:-247.5px,$yy:-440px);
+    }
+    .step5 em {
+      @include licaibackground($x:-659.5px,$y:-800px,$xx:-330px,$yy:-440px);
+    }
+
+  }
+}
+
+.licai-list {
+  //overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-size: 14px;
+  padding-bottom: 30px;
+  text-align: center;
+  .licai-ui {
+    display: block;
+    margin-top: -20px;
+    height: 49px;
+    border-bottom: 1px solid #e8e8e8;
+    line-height: 50px;
+    background: #f9f9f9;
+    .col {
+      float: left;
+      text-align: center;
+      .icon-span {
+        display: inline-block;
+        margin-left: 5px;
+        vertical-align: middle;
+      }
+    }
+    .li-hover {
+      &:hover {
+        cursor: pointer;
+        color: #0099ee;
+        text-decoration: underline;
+      }
+    }
+    .li-select {
+        cursor: pointer;
+        color: #0099ee;
+    }
+    .li-refresh {
+      &:hover {
+        cursor: pointer;
+        color: #0099ee;
+      }
+    }
+    .col1 {
+      margin-left: 20px;
+      width: 140px;
+      padding: 0px 20px;
+      text-align: left;
+      @include text-ellipsis;
+    }
+    .col2 {
+      width: 75px;
+      padding: 0px 35px;
+    }
+    .col3 {
+      width: 183px;
+      padding: 0px 5px;
+      position: relative;
+    }
+    .col4 {
+      width: 74px;
+      padding: 0px 14px;
+    }
+    .col5 {
+      width: 120px;
+      padding: 0px 24px;
+    }
+    .col6 {
+      width: 136px;
+      padding: 0px 8px;
+    }
+    .col7 {
+      margin-left: 65px;
+      width: 122px;
+      padding: 0px 16px;
+    }
+    .col-down {
+       width: 9px;
+       height: 12px;
+       @include licaibackground($x:-18px,$y:-1043px,$xx:-8.5px,$yy:-528.5px)
+    }
+    .col-up {
+      width: 9px;
+      height: 12px;
+      @include licaibackground($x:0px,$y:-1043px,$xx:0.5px,$yy:-528.5px)
+    }
+    .col-all {
+      width: 9px;
+      height: 12px;
+      @include licaibackground($x:-36px,$y:-1043px,$xx:-17px,$yy:-528.5px)
+    }
+    .col-refresh {
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+      margin-left: 0px;
+      @include licaibackground($x:-54px,$y:-1043px,$xx:-27px,$yy:-529px)
+    }
+    .requesting{
+      -webkit-animation: rotate_360 1s linear infinite;
+      -moz-animation: rotate_360 1s linear infinite;
+      -o-animation: rotate_360 1s linear infinite;
+      -ms-animation: rotate_360 1s linear infinite;
+      animation: rotate_360 1s linear infinite;
+    }
+  }
+  .info-ui {
+    display: block;
+    margin-top: 0px;
+    height: 69px;
+    line-height: 70px;
+    border-bottom: 1px solid #e8e8e8;
+    background: #fff;
+    cursor: pointer;
+    color: #333;
+    &:hover {
+      background: #f9f9f9;
+    }
+    .col1 {
+      text-align: left;
+    }
+    .col3{
+      .col3-span {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        margin-left: 10px;
+        vertical-align: middle;
+        @include licaibackground($x:-126px,$y:-1043px,$xx:-63px,$yy:-529px);
+        &:hover {
+          @include licaibackground($x:-90px,$y:-1043px,$xx:-45px,$yy:-529px);
+        }
+      }
+    }
+    .col7 {
+      span {
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        width: 120px;
+        background: #f5faff;
+        border: 1px solid #b7e1fa;
+        color: #0099ee;
+        border-radius: 6px;
+        //@include fadein(0.25s);
+      }
+      .span-hover {
+          background: #0099ee;
+          color: #fff;
+      }
+    }
+    .col6 {
+      span {
+        display: inline-block;
+        width: 80px;
+        height: 10px;
+        background: #f0f0f0;
+        position: relative;
+        margin-right: 10px;
+        em {
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: #0099ee;
+          height: 10px;
+        }
+      }
+    }
+  }
+  .info-ui:last-child {
+    border-bottom: none;
+  }
+  .load-moreloan {
+    display: inline-block;
+    margin-top: 30px;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    background: #f5faff;
+    border: 1px solid #b7e1fa;
+    color: #0099ee;
+    border-radius: 6px;
+    cursor: pointer;
+    @include fadein(0.25s);
+    &:hover {
+      background: #0099ee;
+      color: #fff;
+    }
+  }
+}
+
+.licai-alert {
+  position: absolute;
+  //height: 202px;
+  width: 480px;
+  background: #000;
+  border-radius: 10px;
+  padding: 15px 10px;
+  background: #000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  filter: alpha(opacity=75);
+  background: rgba(0,0,0,.75);
+  display: none;
+  .li-none {
+    color: #838383;
+    font-size: 12px;
+  }
+  //.alert-bottom {
+  //  border: 15px solid transparent;
+  //  border-top: 15px solid #000;
+  //  opacity: 0.75;
+  //  position: absolute;
+  //  bottom: -30px;
+  //  left: 40px;
+  //}
+  .tou {
+    padding: 2px 0px;
+    float: left;
+    //height: 150px;
+    width: 210px;
+    //background: #999;
+    text-align: center;
+    .tou-title {
+      height: 20px;
+      width: 60px;
+      //display: inline-block;
+      margin: 0 auto;
+      border-radius: 10px;
+      margin-bottom: 5px;
+      color:#fff;
+      font-size: 12px;
+      line-height: 20px;
+      //font-weight: bold;
+    }
+    .li-yellow {
+      color: #ff8a15;
+    }
+    .li-blue {
+      color: #27a7d6;
+    }
+    .tou-yellow {
+      background: #ff8a15;
+    }
+    .tou-blue {
+      background: #0099ee;
+    }
+    ul {
+      font-size: 12px;
+      color: #fff;
+      li {
+        line-height: 20px;
+        //font-weight: bold;
+      }
+      li .li-left {
+        float: left;
+        width: 145px;
+        text-align: left;
+        //margin-right: 20px;
+      }
+      li .li-yellow, li .li-blue {
+        float: right;
+      }
+    }
+  }
+  .shoutou {
+    padding-right: 32px;
+    //border-right: 2px solid #636363;
+  }
+  .futou {
+    padding-left: 20px;
+  }
+  //.list-line {
+  //  float: left;
+  //  height: 131px;
+  //  //margin-top: 40px;
+  //  width: 2px;
+  //  background: #4c4c4c;
+  //}
+  .tou-wrap {
+    padding: 1px 1px;
+  }
+  .list-beizhu {
+    margin-top: 10px;
+    color: #b2b2b2;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    .beizhu-span {
+      color: #fff;
+      display: inline;
+    }
+  }
+}
+
+.ui-pagenav {
+  margin-top: 20px;
+}
+.navs .item div.newTag2 {
+  right: 10px;
+}

@@ -1,0 +1,169 @@
+.games{
+  .gameItems{
+    .laohuji{
+      width: 100%;
+      min-width: 320px;
+      position: absolute;
+      top:50%;
+      left:50%;
+      -webkit-transform:translate(-50%, -50%);
+      -moz-transform:translate(-50%, -50%);
+      -o-transform:translate(-50%, -50%);
+      transform:translate(-50%, -50%);
+      .g_machine{
+        position: relative;
+        margin: auto;
+        z-index: 2;
+        .g_machine_bg{
+          width: 100%;
+          display: block;
+        }
+        .message_t{
+          width: 37.36413043478261%;
+          height: 6%;
+          position: absolute;
+          left: 31.52173913043478%;
+          top: 34.2%;
+          div{
+            max-width: 95%;
+            position: absolute;
+            top:50%;
+            left:50%;
+            -webkit-transform:translate(-50%, -50%);
+            -moz-transform:translate(-50%, -50%);
+            -o-transform:translate(-50%, -50%);
+            transform:translate(-50%, -50%);
+            color: #fdfec5;
+            font-size: .21rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+        .message_b{
+          width: 65.94202898550725%;
+          height: 4%;
+          position: absolute;
+          left: 17.84420289855072%;
+          bottom: 4.984219001610306%;
+
+          div{
+            max-width: 95%;
+            position: absolute;
+            top:50%;
+            left:50%;
+            -webkit-transform:translate(-50%, -50%);
+            -moz-transform:translate(-50%, -50%);
+            -o-transform:translate(-50%, -50%);
+            transform:translate(-50%, -50%);
+            color: #ffad5d;
+            font-size: .18rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+        .btn{
+          position: absolute;
+          cursor: pointer;
+        }
+        .btn:hover{
+          box-shadow: 0 0 15px #ff7e00;
+        }
+
+        .lucky_draw{
+          width: 17.78571428571429%;
+          height: 7.474576271186441%;
+          left: 41.44761904761905%;
+          bottom: 13.42372881355932%;
+          background-image: url("/styles/images/topic/xtyyh/mobile/laohuji/btns/start.png");
+          background-size: contain;
+          border-radius: 1em;
+        }
+        .lucky_draw_playing{
+          background-image: url("/styles/images/topic/xtyyh/mobile/laohuji/btns/start_light.png");
+        }
+        .get_changes{
+          width: 12.3688155922039%;
+          height: 5.866666666666667%;
+          right: 2.39880059970015%;
+          top: 14.93333333333333%;
+        }
+        .g_currency{
+          width: 12.3688155922039%;
+          height: 5.866666666666667%;
+          right: 2.39880059970015%;
+          top: 24.93333333333333%;
+        }
+        .more_jiabiaoxi{
+          width: 12.3688155922039%;
+          height: 5.866666666666667%;
+          right: 2.39880059970015%;
+          top: 34.8%;
+        }
+      }
+      .g_prize_container{
+        position: absolute;
+        left: 29.83508245877061%;
+        top: 46.66666666666667%;
+        width: 40.92953523238381%;
+        height: 26.13333333333333%;
+        margin: auto;
+        z-index: 1;
+
+        >div{
+          position: absolute;
+          width: 25.27472527472527%;
+          height: 100%;
+          overflow: hidden;
+          .g_prizes{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: #330404;
+            width: 100%;
+            .g_prize{
+              position: relative;
+              width: 100%;
+              background-color: #000;
+              box-sizing: border-box;
+              .g_prize_bg{
+                width: 100%;
+                position: absolute;
+                left: 0;
+                z-index: 0;
+                background-color: #fff;
+              }
+              .prizeImg{
+                top:50%;
+                -webkit-transform:translateY(-50%);
+                -moz-transform:translateY(-50%);
+                -o-transform:translateY(-50%);
+                transform:translateY(-50%);
+                width: 80%;
+                position:relative;
+                display: block;
+                margin: auto;
+                z-index: 1;
+              }
+            }
+            .g_prize:first-child{
+              margin-top: 0;
+            }
+          }
+        }
+        .g_prize_container1{
+          left: 0;
+        }
+        .g_prize_container2{
+          left: 37.17948717948718%;
+        }
+        .g_prize_container3{
+          left: 74.72527472527473%;
+        }
+      }
+
+    }
+  }
+
+}

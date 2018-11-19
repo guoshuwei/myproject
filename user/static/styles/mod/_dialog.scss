@@ -1,0 +1,67 @@
+.dialog{
+	position:absolute;
+	z-index:999;
+	background-color:#fff;
+	border-radius:5px;
+}
+.dialog_title,
+.dialog_content,
+.dialog_footer{
+	padding:10px 15px;
+}
+.dialog_content{
+	padding:20px 40px;
+	color:#787878;
+	font-size:14px;
+}
+.dialog_title{
+	font-size:20px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	position:relative;
+	background-color:#3dbbf9;
+	color:#fff;
+	font-family:Microsoft YaHei;
+	padding:15px 30px;
+}
+.dialog_title .why{
+	font-size: 12px;
+	float: right;
+	margin-right: 40px;
+	line-height: 28px;
+	color: #0080cc;
+}
+.dialog_title .why em{
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	*display:inline;
+	*zoom:1;
+	background:url(/styles/images/common/icons.png) no-repeat -34px -200px;
+	vertical-align: top;
+	*vertical-align:middle;
+    margin-top: 7px;
+    *margin-top: 0;
+    margin-right: 5px;
+
+}
+.dialog_title .closebtn{
+	position:absolute;
+	  top:14px;
+	  right:30px;
+	  width: 31px;
+	  height: 31px;
+	  display: block;
+	  background: url(/styles/images/common/icons.png) no-repeat -115px -107px;
+	  -webkit-transition: all .5s ease-in-out;
+	  -moz-transition: all .5s ease-in-out;
+	  transition: all .5s ease-in-out;
+}
+.dialog_title .closebtn:hover{
+	-webkit-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	transform:rotate(360deg);
+}
+
+.newdialog{ border: 2px solid #f0f0f0; }
+.newdialog .dialog_title{ background-color: #fff;color:#7b7b7b;font-size:18px; }

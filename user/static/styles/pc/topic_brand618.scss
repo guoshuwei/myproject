@@ -1,0 +1,793 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/header';
+@import '../inc/member-header';
+@import '../inc/search-header';
+@import '../inc/footer';
+@import '../mod/bind';
+@import '../mod/floatlayer';
+@import '../mod/activity';
+.page_section{
+	background:#20a7e2;
+  position:relative;
+  overflow:hidden;
+}
+.hidden {
+  overflow:hidden;
+}
+.mod-icon {
+	background:url('/styles/images/topic/brand618/pc/icon.png')  center top no-repeat;
+}
+.mod-banner {
+	height:503px;
+	width:100%;
+	overflow:hidden;
+	background:url('/styles/images/topic/brand618/pc/banner.jpg')  center top no-repeat;
+	@include ratioBackground($url:"/styles/images/topic/brand618/pc/banner_2x.jpg",$x:center,$y:top,$size:1920px 503px);
+
+}
+.mod-floatlayer {
+	display:none;
+}
+.mod-title {
+	text-align:center;
+	padding-top:22px;
+	.mod-title-wrap {
+		position:relative;
+		display:inline-block;
+	}
+	.mod-title-icon {
+		position:absolute;
+		top:14px;
+		background-position:-373px 0px;
+		width:40px;
+		height:56px;
+	}
+	.icon-left{
+		left:-56px;
+	}
+	.icon-right{
+		right:-56px;
+	}
+	.title-header {
+		display:block;
+		line-height:48px;
+		font-size:30px;
+		color:#fff;
+		font-weight:bold;
+	}
+	.title-desc {
+		display:inline-block;
+		font-size:14px;
+		height:30px;
+		line-height:30px;
+		border-radius:15px;
+		background:#005b93;
+		color:#fff;
+		padding:0px 20px;
+	}
+	.title-link{
+		width:68px;
+		height:22px;
+		display:inline-block;
+		text-align:center;
+		font-size:12px;
+		color:#af3910;
+		line-height:20px;
+		background-position:0px 0px;
+		text-decoration:none;
+		vertical-align:middle;
+		&:hover,&:active {
+			color:#fff;
+			background-position:0px -65px;
+		}
+	}
+}
+.mod-title1 {
+	text-align:center;
+	padding:28px 0px 0px;
+	.mod-title-wrap {
+		position:relative;
+		display:inline-block;
+	}
+	.mod-title-icon {
+		position:absolute;
+		top:0px;
+		background-position:-400px -140px;
+		width:30px;
+		height:44px;
+	}
+	.icon-left{
+		left:-56px;
+	}
+	.icon-right{
+		right:-56px;
+	}
+	.title-header {
+		display:block;
+		line-height:45px;
+		font-size:30px;
+		color:#fff;
+		font-weight:bold;
+	}
+	.title-desc-text {
+		display:inline-block;
+		font-size:14px;
+		height:30px;
+		line-height:30px;
+		border-radius:15px;
+		background:#005b93;
+		color:#fff;
+		padding:0px 20px;
+	}
+	.title-link{
+		width:68px;
+		height:22px;
+		display:inline-block;
+		text-align:center;
+		font-size:12px;
+		color:#af3910;
+		line-height:20px;
+		background-position:0px 0px;
+		text-decoration:none;
+		vertical-align:middle;
+		&:hover,&:active {
+			color:#fff;
+			background-position:0px -65px;
+		}
+	}
+}
+.mod-section {
+	padding:0px 0px 30px;
+	.mod-section-wrap {
+		width:1200px;
+		background:#0976ad url('/styles/images/topic/brand618/pc/bubble.png')  center top no-repeat;
+		border:4px solid #79caee;
+		border-radius:10px;
+		margin:0px auto;
+		min-height:325px;
+	}
+
+}
+.section-explosion {
+.explosion-main {
+    height: 190px;
+    width: 1168px;
+    margin: 0px auto;
+    padding:20px 0px 14px;
+  }
+  .cuntdown {
+    .cuntdown-left {
+      padding-top: 49px;
+    }
+    .cuntdown-right {
+      padding-top: 49px;
+      text-align: center;
+      .cuntdown-time {
+        width: 40px;
+        height: 66px;
+        font-size: 50px;
+        line-height: 66px;
+        margin-right: 6px;
+        border-radius: 5px;
+        background: #383838;
+        text-align: center;
+        color: #fff;
+        font-family: airil;
+      }
+      .cuntdown-symbol {
+        color: #383838;
+        margin: 0px 20px 0px 14px;
+        font-size: 100px;
+        width: 9px;
+        height: 66px;
+        background: url("/styles/images/topic/financial/pc/icon_heaven.png") no-repeat -336px -221px ;
+        @include ratioBackground($url:"/styles/images/topic/financial/pc/icon_heaven.png",$x:-241px,$y:-108.5px,$size:250px 250px);
+      }
+    }
+    .cuntdown-left-top-symbol {
+      font-size: 30px;
+      line-height: 72px;
+      color: #ff5d1d;
+      font-weight: bold;
+      padding:0px 8px 0px 72px;
+      font-family: airil;
+    }
+    .cuntdown-left-top-main {
+      text-align: center;
+      width: 228px;
+    }
+    .cuntdown-left-top {
+      font-size: 70px;
+      line-height: 72px;
+      color: #ff5d1d;
+      font-weight: bold;
+      .cuntdown-left-top-text3 {
+        padding-top: 27px;
+        font-size: 30px;
+        line-height: 45px;
+      }
+      .cuntdown-left-top-text2 {
+        font-size: 20px;
+        padding-top: 34px;
+        line-height: 37px;
+      }
+    }
+    .cuntdown-left-info {
+      font-size: 14px;
+      line-height: 29px;
+      color: #787878;
+    }
+  }
+  .explosion-main-left {
+    width: 180px;
+    height: 150px;
+    margin-left: -100%;
+  }
+  .cunttimerecored {
+    padding-bottom: 10px;
+  }
+  .cuntdown-right-info {
+    color: #787878;
+    width: 233px;
+    height: 22px;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0px auto;
+    background: url("/styles/images/topic/financial/pc/icon_heaven.png") no-repeat 0px -381px ;
+    @include ratioBackground($url:"/styles/images/topic/financial/pc/icon_heaven.png",$x:0px,$y:-229px,$size:250px 250px);
+  }
+  .explosion-main-tab {
+    padding: 0px 0px 6px;
+  }
+  .explosion-main-btn {
+    display: block;
+    width: 160px;
+    height:81px;
+    text-decoration:none;
+    background:#20a7e2;
+    border-radius:10px;
+    color: #fff;
+    border:4px solid #79caee;
+  }
+  .explosion-main-btn-text {
+    display: block;
+ 	font-size: 30px;
+    line-height: 81px;
+    font-weight: bold;
+    text-align: center;
+    span {
+      font-size: 30px;
+      font-family: arial;
+    }
+  }
+  .btn-active {
+    cursor: text;
+    background:#fff;
+    border-color:#fff;
+    color:#0d7db5;
+   }
+
+  .explosion-main-right {
+    width: 100%;
+  }
+  .explosion-main-right-wrap {
+    padding: 0px 0px  0px 180px;
+  }
+  .explosion-main-mark {
+    border:5px solid #20a7e2;
+    background: #eef9ff;
+    height: 180px;
+    overflow: hidden;
+    border-radius:10px;
+  }
+  .explosion-screen {
+    display: none;
+  }
+  .explosion-active{
+    display: block;
+  }
+  .explosion-screen-img {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    .img {
+      width: 978px;
+      height: 180px;
+    }
+  }
+  .explosion-screen-main {
+    position: relative;
+    .cuntdowning {
+      position: absolute;
+      width: 80px;
+      height: 38px;
+      background: #20a7e2;
+      border-radius: 0px 0px 5px 5px;
+      overflow: hidden;
+      top:0px ;
+      right:46px;
+      text-align: center;
+    }
+    .cuntdowning-title {
+      line-height: 18px;
+      padding: 2px 0px 0px;
+      font-size: 13px;
+      color: #fff;
+    }
+    .cuntdowning-main {
+      font-size: 14px;
+      line-height: 15px;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+  .explosion-screen-main-left {
+    width: 260px;
+    margin-left: -100%;
+    height: 180px;
+    background: #fff;
+    overflow: hidden;
+    .left-wrap {
+      width: 228px;
+      height: 118px;
+      padding:31px 10px;
+      text-align: center;
+    }
+    .left-img {
+      img {
+        height: 65px;
+        max-width: 228px;
+      }
+    }
+    .left-info {
+      padding: 16px 0px 0px;
+      height: 22px;
+      overflow: hidden;
+    }
+    .left-info-text {
+      display: inline-block;
+      margin: 0px 4px;
+      height: 20px;
+      padding: 0px 10px;
+      text-align: center;
+      background: #eef9ff;
+      color: #7197af;
+      font-size: 13px;
+      line-height: 20px;
+      border-radius: 3px;
+    }
+  }
+  .explosion-screen-main-right {
+    width: 100%;
+  }
+  .explosion-screen-main-right {
+    .right-wrap {
+      padding-left: 290px;
+    }
+    .right-title {
+      padding: 31px 0px 0px 10px;
+    }
+    .right-title-text {
+      line-height: 44px;
+      font-size: 20px;
+      color: #383838;
+      max-width: 202px;
+      @include text-ellipsis;
+      margin-right: 18px;
+    }
+    .right-title-text2 {
+      padding: 13px 0px 0px;
+      span {
+        display: block;
+        border-radius: 3px;
+        background: #479fd6;
+        height: 20px;
+        width: 125px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 13px;
+        color: #fff;
+      }
+    }
+    .right-main-item {
+      text-align: center;
+      .right-main-item-top {
+        height: 45px;
+        font-family: Arial;
+        .top-text1 {
+          line-height: 45px;
+          font-size: 50px;
+          color: #333;
+          font-weight: bold;
+          span {
+            line-height: 22px;
+            font-size: 14px;
+          }
+          .text1 {
+            font-size: 20px;
+          }
+        }
+        .top-text {
+          padding-top: 14px;
+          font-size: 20px;
+          line-height: 32px;
+          color: #383838;
+        }
+      }
+    }
+    .right-main-item1 {
+      width: 120px;
+    }
+    .right-main-item2 {
+      width: 120px;
+      .right-main-item-top .top-text1{
+        color: #ff5d1d;
+      }
+    }
+    .right-main-item3 {
+      width: 89px;
+      padding: 0px 0px 14px;
+      .color {
+      	color:#af3910;
+      }
+    }
+    .right-main-item4 {
+      width: 170px;
+    }
+    .right-main-item5 {
+      padding: 16px 0px 0px 20px;
+      .right-main-item-btn {
+        display: block;
+        width: 122px;
+        height: 48px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 46px;
+        font-weight: bold;
+        color: #af3910;
+        text-decoration:none;
+    	background-position:0px -141px;
+        &:hover,&:active{
+          background-position: -197px -141px;
+          color:#fff;
+        }
+      }
+      .right-main-item-btnover {
+        cursor: text;
+        background-position: -380px 0px;
+        color: #999;
+        background: url("/styles/images/topic/financial/pc/icon_heaven.png") no-repeat left top ;
+        @include ratioBackground($url:"/styles/images/topic/financial/pc/icon_heaven.png",$x:0px,$y:-120.5px,$size:250px 250px);
+        &:hover,&:active {
+        	color:#999;
+          background-position: -380px 0px;
+          @include ratioBackgroundPosition($x:-0px,$y:-120.5px);
+        }
+      }
+    }
+    .right-main-item6 {
+      color: #ff5d1d;
+      font-size: 30px;
+      line-height: 45px;
+    }
+    .right-main-item-bottom {
+      font-size: 13px;
+      line-height: 22px;
+      color: #787878;
+      text-align: center;
+    }
+  }
+}
+.section-envelopes {
+	.mod-section-wrap {
+		position:relative;
+	}
+	.section-envelopes-bg {
+		position:absolute;
+		width:100%;
+		text-align:center;
+		bottom:0px;
+		height:373px;
+		img {
+			height:373px;
+		}
+	}
+	.envelopes-main	{
+		position:relative;
+		text-align:center;
+		height:267px;
+	}
+	.envelopes-main-link {
+		padding:20px 0px;
+	}
+	.envelopes-open {
+		display:block;
+		width:122px;
+		height:48px;
+		font-size:16px;
+		line-height:46px;
+		margin:0px auto;
+		font-weight:bold;
+		background-position:0px -141px;
+		text-decoration:none;
+		color:#af3910;
+		&:hover,&:active {
+			background-position:-197px -141px;
+			color:#fff;
+		}
+	}
+	.envelopes-img {
+		height:120px;
+		img {
+			height:110px;
+			border:5px solid #79caee;
+		}
+	}
+	.envelopes-main-desc {
+		padding:20px 0px 0px;
+		.main-desc-text {
+			height:24px;
+			font-size:12px;
+			line-height:24px;
+			color:#fff;
+			background:#005b93;
+			border-radius:5px;
+			display:inline-block;
+			padding:0px 20px;
+		}
+	}
+}
+.section-rotplat {
+	overflow:hidden;
+	.section-rotplat-main {
+		padding:20px 15px 0px;
+    height:338px;
+    overflow:hidden;
+	}
+  .rotplat-main-list {
+    width:1200px;
+    height: 338px;
+  }
+  .rotplat-main-item {
+    width: 395px;
+    position: relative;
+    height: 324px;
+    padding: 0px 0px 14px;
+    .link-top {
+      height: 230px;
+      background: #fff;
+    }
+    .link-top-img {
+      padding:15px 0px;
+      img {
+        height: 74px;
+      }
+    }
+    .link-top-main {
+      text-align: center;
+    }
+    .link-top-main-beijing {
+      height: 20px;
+    }
+    .link-top-main-text {
+      display: inline-block;
+      vertical-align: top;
+      height: 20px;
+      font-size: 12px;
+      line-height: 20px;
+      padding: 0px 8px;
+      color: #479fd6;
+      border-radius: 3px;
+      border:1px solid #479fd6;
+    }
+    .link-top-main-rate {
+      padding: 23px 0px 0px;
+      text-align: center;
+    }
+    .link-top-main-rate-text {
+      line-height: 41px;
+      font-size: 40px;
+      color: #333;
+      .fontarial {
+        font-weight: bold;
+      }
+    }
+    .link-top-main-rate-desc {
+      font-size: 14px;
+      line-height: 26px;
+      color: #787878;
+    }
+    .link-bottom {
+      padding: 26px  0px;
+      .link-bottom-block {
+        width: 184px;
+        line-height: 30px;
+        font-size: 12px;
+        color: #787878;
+        span {
+          font-size: 14px;
+          color: #ff5d1d;
+        }
+        .fontarial {
+          font-size: 20px;
+          font-weight:bold;
+        }
+      }
+      .bd-lf {
+        border-left:1px solid #cccccc;
+      }
+    }
+  }
+  .rotplat-main-link {
+    display: block;
+    position: absolute;
+    width: 370px;
+    height: 314px;
+    top:0px;
+    left:0px;
+    background: #eef9ff;
+    border-radius: 7px;
+    border:5px solid #79caee;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    transition: top,box-shadow .5s,.5s;
+    &:hover,&active {
+      transition: top,box-shadow .5s,.5s;
+      top: -7px;
+      box-shadow: 0px 4px 20px #bcbcbc;
+    }
+  }
+}
+
+.section-noneinterest {
+	text-align:center;
+	.mod-section-wrap {
+		background-image:none;
+	}
+	img {
+		height:465px;
+	}
+}
+.section-rule {
+	width:1200px;
+	margin:0px auto;
+  position:relative;
+  z-index:2;
+	.section-rule-main {
+		background:#0d92cc;
+		border-radius:10px;
+	}
+	.rule-title {
+		line-height:63px;
+		padding:23px 0px 0px;
+		font-size:30px;
+		color:#fff;
+		font-weight:bold;
+		text-align:center;
+	}
+	.rule-list {
+		padding:0px 56px;
+	}
+	.rule-item {
+		font-size:14px;
+		line-height:22px;
+		color:#fff;
+		padding:15px 0px ;
+		border-bottom:1px dashed #3da8d6;
+    a {
+      color:#ffee1f;
+    }
+	}
+	.rule-extra {
+		width:100%;
+		height:18px;
+		margin-top:-3px;
+		background:#0d92cc;
+	}
+}
+.rightfloat{
+	position:fixed;
+	right:10px;
+	top:174px;
+  z-index:5;
+	.rightfloat-bg {
+		position:absolute;
+		height:90%;
+		width:100%;
+		top:10px;
+	}
+	.rightfloat-bg-main {
+		width:56px;
+		border:6px solid #e15b15;
+		height:90%;
+		margin:0px auto;
+	}
+	.rightfloat-list {
+		position:relative;
+	}
+	.rightfloat-header {
+		position:absolute;
+		left:-8px;
+		top:-74px;
+			}
+	.rightfloat-header-img {
+		width:106px;
+		height:87px;
+		background-position:-196px 0px;
+	}
+	.rightfloat-item {
+		padding-top:8px;
+	}
+	.rightfloat-icon {
+		width:92px;
+		height:45px;
+		display:block;
+		font-size:16px;
+		font-weight:bold;
+		line-height:44px;
+		color:#af3910;
+		text-align:center;
+		background-position:-85px 0px;
+		text-decoration:none;
+		cursor:pointer;
+		&:hover,&:active{
+			color:#fff;
+			background-position:-85px -65px;
+		}
+	}
+	.rightfloat-code {
+		position:relative;
+		.code-pic {
+			position:absolute;
+      display:none;
+			top:0px;
+			left:-140px;
+      img {
+        height:120px;
+      }
+		}
+		&:hover {
+			.code-pic{
+				display:block;
+			}
+		}
+	}
+}
+.mod-clouds {
+  position:absolute;
+  width:100%;
+  bottom:0px;
+  .clouds-bg {
+    margin-left:-75px;
+  }
+  img {
+    vertical-align:top;
+    width:188px;
+  }
+
+}
+.mod-clouds1 {
+  position:absolute;
+  width:100%;
+  bottom:0px;
+  .qt-w {
+    position:relative;
+  }
+  .clouds-bg {
+    position:absolute;
+    bottom:0px;
+    right:-72px;
+    z-index:3;
+  }
+  img {
+    vertical-align:top;
+  }
+
+}

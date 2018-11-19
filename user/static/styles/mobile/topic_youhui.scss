@@ -1,0 +1,174 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/grid';
+@import '../mod/dialog';
+@import '../inc/m_ui';
+
+body,html{
+  width:100%;
+  background: #faf2df;
+  font-family: "Microsoft Yahei", Hei, Tahoma, SimHei, sans-serif;
+}
+a:hover{
+  text-decoration: none;
+}
+.wrap{
+  border-top: px2rem(6px) solid #ff5b00;
+  .hd{
+    padding-top: px2rem(52px);
+    .title{
+      color: #383838;
+      font-size: px2rem(34px);
+      font-weight: 800;
+      width:px2rem(420px);
+      height:px2rem(43px);
+      margin: 0 auto;
+      text-align: center;
+      line-height:px2rem(43px);
+      background:url("/styles/images/harvest/mobile/coupon_tit.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .go-pc{
+      color: #383838;
+      font-size: px2rem(24px);
+      height:px2rem(60px);
+      text-align: center;
+      line-height:px2rem(60px);
+      padding-bottom: px2rem(24px);
+    }
+  }
+  .bd{
+    .day{
+      background: #fff;
+      margin-bottom: px2rem(60px);
+      .tit{
+        height: px2rem(100px);
+        line-height: px2rem(100px);
+        .date{
+          float: left;
+          margin-left: px2rem(36px);
+          font-size: px2rem(28px);
+          font-weight: 800;
+          color: #ff5b00;
+          .dollar{
+            display: inline-block;
+            width:px2rem(36px);
+            height:px2rem(37px);
+            background:url("/styles/images/harvest/mobile/dollar.png") no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+        .change{
+          margin-right: px2rem(36px);
+          float: right;
+          font-size: px2rem(28px);
+          color: #383838;
+          .arrow{
+            display: inline-block;
+            width:px2rem(31px);
+            height:px2rem(17px);
+          }
+          .arrow.up{
+            background:url("/styles/images/harvest/mobile/up.png") no-repeat;
+            background-size: 100% 100%;
+          }
+          .arrow.down{
+            background:url("/styles/images/harvest/mobile/down.png") no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+      }
+      .coupon{
+        height: auto;
+        overflow: hidden;
+        -webkit-transition: height 1s ease-in-out;
+        transition: height 1s ease-in-out;
+        &.hide{
+          height: 0;
+        }
+        .item{
+          line-height: px2rem(100px);
+          overflow: hidden;
+          border-top: 1px solid #e8e6e3;
+          .loans-name{
+            float: left;
+            color: #383838;
+            padding-left: px2rem(36px);
+            font-size: px2rem(26px);
+          }
+          .get{
+            float: right;
+            margin-top: px2rem(32px);
+            margin-right: px2rem(36px);
+            display: inline-block;
+            width:px2rem(100px);
+            height:px2rem(36px);
+            text-align: center;
+            line-height: px2rem(36px);
+            border: 1px solid #ff5b00;
+            color: #ff5b00;
+            font-size: px2rem(22px);
+          }
+        }
+        .item.early{
+          .loans-name{
+            color: #9b9b9b;
+          }
+          .get{
+            border: 1px solid #9b9b9b;
+            color: #9b9b9b;
+          }
+        }
+        .item.already{
+          .get{
+            .right{
+              width:px2rem(27px);
+              height:px2rem(27px);
+              display: inline-block;
+              background: url("/styles/images/harvest/mobile/right.png") no-repeat;
+              background-size: 100% 100%;
+              margin-right: px2rem(3px);
+              margin-bottom: px2rem(-5px);
+            }
+            border: 0;
+            color: #9b9b9b;
+          }
+        }
+        .item.late{
+          .loans-name{
+            color: #9b9b9b;
+          }
+          .get{
+            width:px2rem(116px);
+            height:px2rem(56px);
+            border: 0;
+            margin-top: px2rem(18px);
+            margin-right: px2rem(32px);
+            background: url("/styles/images/harvest/mobile/late.png") no-repeat;
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+  }
+  .return-btn{
+    margin: 0 auto;
+    width:px2rem(680px);
+    height:px2rem(100px);
+
+    padding-bottom: px2rem(52px);
+    .return{
+      width:px2rem(680px);
+      height:px2rem(100px);
+      background: #ff5b00;
+      border-radius: px2rem(3px);
+      display: block;
+      color: #fff;
+      text-align: center;
+      line-height:px2rem(100px);
+      font-size: px2rem(38px);
+    }
+  }
+}

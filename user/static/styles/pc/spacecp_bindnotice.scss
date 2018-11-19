@@ -1,0 +1,171 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../inc/site-nav-ty';
+@import '../inc/header';
+@import '../inc/header-ty';
+@import '../inc/member-header';
+@import '../inc/member-tab';
+@import '../inc/footer';
+@import '../mod/search';
+@import '../mod/floatlayer';
+@import '../mod/dialog';
+@import '../mod/bind';
+@import '../mod/activity';
+
+.content {
+  background: #eaedf4;
+  min-height: 600px;
+}
+.bind-wrap {
+  width: 932px;
+  min-height: 600px;
+  padding: 18px 29px 70px;
+  float: left;
+  background: #fff;
+}
+.my-account{
+  width: 100%;
+}
+.bind-wrap-head{
+  width: 933px;
+  height: 37px;
+  border-bottom: 1px solid #e8e8e8;
+  color: #333;
+  text-align: left;
+}
+.bind-wrap-head-ui{
+  font-size: 16px;
+  border-left: 4px solid #ea544a;
+  padding-left: 10px;
+  width: 922px;
+  font-weight: 800;
+}
+.bind-wrap-return{
+  float: right;
+  color: #ea544a;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 800;
+}
+.bind-success{
+  display: inline-block;
+  height: 115px;
+  margin: 150px auto 0px;
+  overflow: hidden;
+}
+.bind-img{
+  width: 41px;
+  height: 41px;
+  background: url(/styles/images/member/icon.png) no-repeat;
+  float: left;
+}
+.bind-success-img{
+  background-position: -366px -38px;
+  @include ratioBackground($url:'/styles/images/member/icon.png',$size:550px 140px);
+  @include ratioBackgroundPosition($x:-366px ,$y:-80px );
+}
+.bind-success-box{
+  float: left;
+  height: 41px;
+  margin-left: 10px;
+  text-align: left;
+}
+.bind-success-title{
+  font-size: 22px;
+  color: #666;
+  font-weight: 800;
+}
+.bind-success-text{
+  font-size: 12px;
+  color: #a9a9a9;
+}
+.bind-success-btn{
+  a{
+    display: block;
+    width: 144px;
+    height: 37px;
+    border: 1px solid #ea544a;
+    margin: 30px auto 0px;
+    font-size: 14px;
+    color: #eb645c;
+    text-align: center;
+    line-height: 37px;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+
+}
+.bind-fail-img{
+  width: 41px;
+  height: 41px;
+  background: url(/styles/images/spacecp/fail.png) no-repeat;
+  @include ratioBackground($url:'/styles/images/spacecp/fail2.png', $size: 41px 41px);
+  float: left;
+}
+.my-bind{
+  text-align: center;
+}
+.bind-fail{
+  display: inline-block;
+  height: 115px;
+  margin: 150px auto 0px;
+  overflow: hidden;
+}
+.bind-fail-box{
+  float: left;
+  height: 41px;
+  margin-left: 10px;
+  text-align: left;
+}
+.bind-share-ui{
+  margin: 30px auto 0px;
+  width: 280px;
+  font-size: 12px;
+  color: #999;
+}
+.chk_1 {
+  display: none;
+}
+
+.chk_1 + label {
+  float: left;
+  background-color: #0080cc;
+  border: 1px solid #C1CACA;
+  width: 14px;
+  height: 14px;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+.chk_1 + label:active {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.chk_1:checked + label {
+  background-color: #0080cc;
+  border: 1px solid #92A1AC;
+  color: #243441;
+}
+
+.chk_1:checked + label:after {
+  content: '\2714'; //勾选符号
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  vertical-align: text-top;
+}
+.bind-share{
+  float: left;
+  font-size: 12px;
+  color: #999;
+}

@@ -1,0 +1,1516 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/footer';
+@import '../mod/bind';
+
+.mod-floatlayer {
+  display: none;
+}
+
+body{
+  background: #3e2056;
+  position: relative;
+}
+
+.module{
+  width: 990px;
+  margin: 0 auto;
+}
+.lead{
+  width: 84px;
+  height: 402px;
+  position: fixed;
+  right: 22px;
+  top:88px;
+  .lead-top{
+    background: url("/styles/images/topic/bigcarnival/pc/xftop.png") no-repeat center;
+    margin-bottom: 3px;
+  }
+
+  li{
+    width: 84px;
+    height: 49px;
+    overflow: hidden;
+    cursor: pointer;
+    .lead-item{
+      width: 84px;
+      height: 49px;
+      display: block;
+      text-decoration: none;
+      overflow: hidden;
+      span{
+        width: 100%;
+        display: block;
+        font-size: 14px;
+        color: #f5f5f5;
+        text-align: center;
+
+      }
+    }
+
+  }
+.lead-return{
+  background: #3a3731;
+  .return{
+    display: block;
+    width: 100%;
+    height: 15px;
+    background: url("/styles/images/topic/bigcarnival/pc/return.png") no-repeat center;
+    margin-top: 7px;
+    margin-bottom: 4px;
+  }
+}
+  .lead-win{
+    background: #ff4d80;
+    .win{
+      display: block;
+      width: 100%;
+      height: 15px;
+      background: url("/styles/images/topic/bigcarnival/pc/money.png") no-repeat center;
+      margin-top: 7px;
+      margin-bottom: 4px;
+    }
+  }
+  .lead-myreward{
+    background: #8989e8;
+    .myreward{
+      display: block;
+      width: 100%;
+      height: 15px;
+      background: url("/styles/images/topic/bigcarnival/pc/liebiao.png") no-repeat center;
+      margin-top: 7px;
+      margin-bottom: 4px;
+    }
+  }
+  .lead-service{
+    background: #9e46d0;
+    .service{
+      display: block;
+      width: 100%;
+      height: 15px;
+      background: url("/styles/images/topic/bigcarnival/pc/kefu.png") no-repeat center;
+      margin-top: 7px;
+      margin-bottom: 4px;
+    }
+  }
+  .lead-strategy{
+    background: #a6b706;
+    .strategy{
+      display: block;
+      width: 100%;
+      height: 15px;
+      background: url("/styles/images/topic/bigcarnival/pc/gonglue.png") no-repeat center;
+      margin-top: 7px;
+      margin-bottom: 4px;
+    }
+  }
+  .lead-invite{
+    background: #2487cd;
+    .invite{
+      display: block;
+      width: 100%;
+      height: 18px;
+      background: url("/styles/images/topic/bigcarnival/pc/yaoqing.png") no-repeat center;
+      margin-top: 7px;
+      margin-bottom: 4px;
+    }
+  }
+.lead-bottom{
+  margin-top: 3px;
+  background: url("/styles/images/topic/bigcarnival/pc/xfbottom.png") no-repeat center;
+}
+  .getred{
+    background: #ee0a3b;
+  }
+  .getblack{
+    background: #3a3731;
+  }
+}
+.top{
+  width: 100%;
+  overflow: hidden;
+  background:url("/styles/images/topic/bigcarnival/pc/toutu1.jpg") no-repeat center;
+  
+  .receive{
+    height: 166px;
+    margin-top: 460px;
+    background: url("/styles/images/topic/bigcarnival/pc/djsbj.png") no-repeat;
+    position: relative;
+    .prompt{
+      display: none;
+      width: 258px;
+      height: 97px;
+      background:url("/styles/images/topic/bigcarnival/pc/qipao.png") no-repeat;
+      position: absolute;
+      top:90px;
+      left: 253px;
+    }
+    .topleft{
+      width: 340px;
+      float: left;
+
+      .rule{
+        width: 57px;
+        height: 166px;
+        overflow: hidden;
+        float: left;
+        background: url("/styles/images/topic/bigcarnival/pc/djsleft.png") no-repeat;
+        .want{
+          height: 105px;
+          width: 20px;
+          margin-left: 15px;
+          margin-top: 30px;
+          font-size: 20px;
+          color: #383838;
+          font-weight: 800;
+        }
+      }
+      .privilege{
+        float: left;
+        width: 258px;
+        padding: 30px 15px 0 10px;
+        font-size: 14px;
+        color: #484d35;
+        span{
+          color: #ee0a3b;
+        }
+      }
+    }
+    .topright{
+      width: 650px;
+      float: left;
+      .title{
+        height: 26px;
+        line-height: 26px;
+        text-align: center;
+        color: #3a3731;
+        font-weight: 800;
+        letter-spacing:1px;
+        margin-top: 24px;
+      }
+      .money-sign{
+        float:left;
+        height: 68px;
+        width: 70px;
+        font-size:50px;
+        font-weight: 800;
+        text-align: center;
+        line-height: 68px;
+        margin-top: 30px;
+        color: #3a3731;
+      }
+      .money{
+        float: left;
+        margin-top: 20px;
+        overflow: hidden;
+        .moneyhide{
+          display: none;
+        }
+        span{
+          float: left;
+        }
+        .comma{
+          display: block;
+          height: 68px;
+          width: 20px;
+          font-weight: 900;
+          font-size: 30px;
+          line-height: 100px;
+          color: #3a3731;
+        }
+        .money-list{
+          width: 46px;
+          height: 68px;
+          display: block;
+          background: #3a3731;
+          text-align: center;
+          line-height: 68px;
+          color: #ffffff;
+          font-size: 38px;
+          border-radius: 10px;
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+  .investment{
+    height: 60px;
+    background:url("/styles/images/topic/bigcarnival/pc/bkbts.png") no-repeat;
+    overflow: hidden;
+    .investleft{
+      float: left;
+      width: 300px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      color: #fffef3;
+      margin-left: 21px;
+      margin-top: 12px;
+      margin-bottom: 13px;
+      strong{
+        font-size: 20px;
+        span{
+          font-size: 14px;
+          padding: 0 5px;
+        }
+        .question{
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          background:url("/styles/images/topic/bigcarnival/pc/wenhao.png") no-repeat;
+        }
+      }
+    }
+    .investlist{
+      width: 669px;
+      float: left;
+      .user{
+        width: 600px;
+        height: 16px;
+        margin-left: 45px;
+        margin-top: 20px;
+        .userhorn{
+          display: block;
+          width:20px ;
+          float: left;
+          height: 16px;
+          background:url("/styles/images/topic/bigcarnival/pc/laba.png") no-repeat;
+        }
+        .listbox{
+          width: 560px;
+          float: left;
+          height: 16px;
+          position: relative;
+          overflow: hidden;
+          margin-left: 20px;
+          .userlist{
+            width: 674px;
+            height: 16px;
+            position: absolute;
+            top:0;
+            left:0;
+              li{
+                float: left;
+                font-size: 12px;
+                color: #cecece;
+                line-height: 16px;
+                margin-right: 50px;
+                .plantname{
+                  color:#bce805;
+                }
+              }
+          }
+        }
+
+      }
+    }
+  }
+}
+.surprised{
+  width: 100%;
+
+  .surprised-fire{
+    height: 400px;
+    background: url("/styles/images/topic/bigcarnival/pc/hdend.png") no-repeat;
+    overflow: hidden;
+    .surprised-pic{
+      display: block;
+      width: 94px;
+      height: 85px;
+      background:url("/styles/images/topic/bigcarnival/pc/bkbtt.png") no-repeat ;
+      position: absolute;
+      top:0;
+      left:20px;
+    }
+    .mgl158{
+      margin-left: 158px;
+    }
+    .surprised-content {
+      margin-top: 38px;
+      overflow: hidden;
+      .surprised-title {
+        float: left;
+        font-size: 18px;
+        height: 20px;
+        line-height: 20px;
+        font-weight: 900;
+        color: #383838;
+        .surprised-title-name{
+          display:block;
+          font-size: 18px;
+          height: 20px;
+          line-height: 20px;
+          font-weight: 900;
+          color: #383838;
+          cursor: pointer;
+        }
+      }
+      .ongoing {
+        float: left;
+        display: inline-block;
+        width: 70px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        border-radius: 10px;
+        background: #07a337;
+        color: #ffffff;
+        font-size: 12px;
+        margin-left: 10px;
+      }
+    }
+    .parameter{
+      width: 560px;
+      height: 45px;
+    .interest{
+      font-size: 22px;
+      color: #383838;
+      font-weight: 900;
+      margin-right: 32px;
+      .percent{
+        font-size: 16px;
+        font-style:normal;
+      }
+    }
+      .add{
+        color: #787878;
+        font-size: 16px;
+        font-weight: 900;
+        font-style:normal;
+      }
+      .vip{
+        display: inline-block;
+        font-size: 44px;
+        font-weight: 900;
+        color: #ee0a3b;
+        margin-left: 30px;
+        margin-right: 57px;
+        .percent{
+          font-size: 16px;
+          font-style:normal;
+        }
+      }
+      .month{
+        display: inline-block;
+        font-size: 16px;
+        color: #383838;
+        margin-right: 59px;
+      }
+      .add-interest{
+        font-size: 16px;
+        color: #383838;
+      }
+    }
+    .explain{
+      width: 550px;
+      height: 16px;
+      margin-top: 12px;
+      overflow: hidden;
+      a{
+        color: #787878;
+        font-size: 12px;
+        display: block;
+        float: left;
+        text-decoration: none;
+      }
+      .annual-rate{
+        margin-left: 10px;
+      }
+      .vip-rate{
+        margin-left:102px ;
+      }
+      .term{
+        margin-left: 54px;
+      }
+      .add-rate{
+        margin-left: 125px;
+      }
+    }
+    .investbtn{
+      display: block;
+      width: 150px;
+      height: 50px;
+      position: absolute;
+      bottom: 33px;
+      right: 82px;
+      background: url("/styles/images/topic/bigcarnival/pc/tzbtn.png") no-repeat;
+      cursor: pointer;
+    }
+    .sell-out{
+      display: block;
+      width: 150px;
+      height: 50px;
+      position: absolute;
+      bottom: 33px;
+      right: 82px;
+      background: url("/styles/images/topic/bigcarnival/pc/shouqing.png") no-repeat;
+      text-align: center;
+      line-height: 50px;
+      color: #b5b5b5;
+      font-size: 18px;
+      cursor: default;
+    }
+    .investbtn-hover{
+      background: url("/styles/images/topic/bigcarnival/pc/tzbtnhover.png") no-repeat;
+    }
+  }
+}
+.sell{
+  float: left;
+  display: inline-block;
+  width: 70px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background: #b5b5b5;
+  color: #ffffff;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.platetitle{
+  height: 105px;
+  position: relative;
+  .platetitle-box{
+    height: 58px;
+    position: absolute;
+    left:0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    overflow: hidden;
+    padding-left: 180px;
+    .platetitle-left{
+      float: left;
+      width: 80px;
+      height: 58px;
+      background: url("/styles/images/topic/bigcarnival/pc/leftpoint.png") no-repeat;
+    }
+    .platetitle-center{
+      float: left;
+      height: 58px;
+      text-align: center;
+      line-height: 58px;
+
+      h2{
+        float: left;
+        color: #f4f4f4;
+        font-size: 40px;
+        font-weight: 900;
+      }
+      .point{
+        float: left;
+        width:12px;
+        height: 12px;
+        display: inline-block;
+        border-radius: 50%;
+        background: #f4f4f4;
+        margin: 20px 12px 0;
+      }
+    }
+    .platetitle-right{
+      float: left;
+      width: 87px;
+      height: 58px;
+      background: url("/styles/images/topic/bigcarnival/pc/rightpoint.png") no-repeat;
+    }
+  }
+}
+.mod-slider{
+  height: 261px;
+  background: url("/styles/images/topic/bigcarnival/pc/jxbbj.png") no-repeat;
+  overflow: hidden;
+  position: relative;
+  .mod-slider-box{
+    height: 230px;
+    width: 970px;
+    margin:10px 10px 0;
+    overflow: hidden;
+  }
+  .bx-wrapper{
+    height: 230px;
+    width: 970px;
+  }
+  .mod-slider-lb{
+    height: 230px;
+    width: 3880px;
+    .mgrt9{
+      margin-right: 9px;
+    }
+    .mod-slider-lb-item{
+      float: left;
+      height: 230px;
+      width: 480px;
+      overflow: hidden;
+      background: url("/styles/images/topic/bigcarnival/pc/jxb.png") no-repeat;
+      .mglf154{
+        margin-left: 154px;
+      }
+      .mglf80{
+        margin-left: 80px;
+      }
+      .mod-slider-item{
+        float: left;
+        width: 330px;
+        height: 192px;
+        margin-top: 25px;
+        .mod-slider-item-title{
+          color: #383838;
+          font-size: 18px;
+          font-weight: 900;
+          margin-left: 28px;
+          margin-bottom: 9px;
+          white-space:nowrap;
+          overflow:hidden;
+          text-overflow:ellipsis;
+        }
+        .label-box{
+          float: left;
+          position: relative;
+          left: 50%;
+        }
+        .labei-info{
+          float: left;
+          position: relative;
+          left: -50%;
+        }
+        .label{
+          height: 23px;
+          margin-left: 24px;
+          margin-bottom: 30px;
+          position: relative;
+          .label-item{
+            text-decoration: none;
+            display: inline-block;
+            margin-left: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 21px;
+            float: left;
+            border: 1px solid #cecece;
+            border-radius: 3px;
+            font-size: 12px;
+            color: #999999;
+            line-height: 21px;
+            text-align: center;
+          }
+        }
+        .rates-list{
+          height: 50px;
+          margin-bottom: 27px;
+          overflow: hidden;
+          .bright{border-right: 1px dashed #cecece}
+          .rates-list-item{
+            float: left;
+          }
+          .rates-list-one{
+            width: 74px;
+            padding-right: 25px;
+            .black-rate{
+              font-size: 22px;
+              color: #383838;
+              margin-bottom: 2px;
+              .small-rate{
+                font-size: 16px;
+              }
+            }
+            .rate-title{
+              font-size: 12px;
+              color: #787878;
+            }
+          }
+          .rates-list-two{
+            padding-left: 32px;
+            padding-right:29px;
+            .red-rate{
+              font-size: 22px;
+              color: #ee0a3b;
+              margin-bottom: 2px;
+              .small-rate{
+                font-size: 16px;
+              }
+            }
+            .rate-title{
+              font-size: 12px;
+              color: #787878;
+            }
+          }
+          .rates-list-three{
+            width: 50px;
+            padding-left: 35px;
+            .month-rate{
+              font-size: 12px;
+              color: #383838;
+              margin-bottom: 10px;
+            }
+            .rate-title{
+              font-size: 12px;
+              color: #787878;
+            }
+          }
+        }
+        .rate-btn{
+          height: 30px;
+          line-height: 30px;
+          overflow: hidden;
+          .addrate {
+            float: left;
+            font-size: 12px;
+            color: #383838;
+            margin-right: 23px;
+          }
+            .limit{
+              float: left;
+              font-size: 12px;
+              color: #787878;
+              margin-right: 8px;
+            }
+
+            .addrate-btn{
+              float: left;
+              width: 100px;
+              cursor: pointer;
+              height: 28px;
+              background:url("/styles/images/topic/bigcarnival/pc/smallbtn.png") no-repeat;
+            }
+            .addrate-btn-hover{
+              background:url("/styles/images/topic/bigcarnival/pc/smallbtnhover.png") no-repeat;
+            }
+        }
+      }
+    }
+  }
+  .prev{
+    width: 35px;
+
+    position: absolute;
+    left:10px;
+    top:80px;
+    height: 69px;
+    background:url("/styles/images/topic/bigcarnival/pc/turnleft.png") no-repeat;
+    .bx-prev{
+      display: inline-block;
+      width: 35px;
+      height: 69px;
+      cursor: pointer;
+    }
+  }
+  .next{
+    width: 35px;
+    height: 69px;
+    position: absolute;
+    right:10px;
+    top:80px;
+    background:url("/styles/images/topic/bigcarnival/pc/turnright.png") no-repeat;
+    .bx-next{
+      display: inline-block;
+      width: 35px;
+      height: 69px;
+      cursor: pointer;
+    }
+  }
+  .bx-pager{
+    position: absolute;
+    bottom: 2px;
+    width: 80px;
+    height: 17px;
+    background: #576c4a;
+    border-radius: 5px;
+    z-index: 2;
+    left:0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    .bx-pager-item{
+      float: left;
+      width: 10px;
+      height: 10px;
+      margin: 3px 5px;
+      .bx-pager-link{
+        display: inline-block;
+        float: left;
+        font-size: 0;
+        color:#47655b ;
+        width: 6px;
+        height: 6px;
+        border: 2px solid #fffef3;
+        border-radius: 10px;
+      }
+      .active{
+        background: #fffef3;
+      }
+    }
+
+    .mglf12{
+      margin-left: 12px;
+    }
+    .mglf10{
+      margin-left: 7px;
+    }
+  }
+}
+.platform{
+  height: 706px;
+  .mg20{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .blue{
+    background:url("/styles/images/topic/bigcarnival/pc/bluebj.png") no-repeat;
+  }
+  .pink{
+    background:url("/styles/images/topic/bigcarnival/pc/pinkbj.png") no-repeat;
+  }
+  .green{
+    background:url("/styles/images/topic/bigcarnival/pc/greenbj.png") no-repeat;
+  }
+  .platform-item{
+    width: 316px;
+    height: 342px;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+    .pop{
+      display: none;
+      width: 300px;
+      height: 322px;
+      position: absolute;
+      top:10px;
+      left:0;
+      right: 0;
+      margin: auto;
+      background: #373633;
+      filter:alpha(opacity=80);
+      -moz-opacity:0.8;
+      -khtml-opacity: 0.8;
+      opacity: 0.8;
+      z-index: 10;
+    }
+    .pop-moudle {
+      display: none;
+      width: 282px;
+      height: 322px;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 100;
+      text-align: center;
+      .pop-box {
+          overflow: hidden;
+        .pop-left {
+          margin-top: 56px;
+          width: 39px;
+          height: 28px;
+          float: left;
+          background: url("/styles/images/topic/bigcarnival/pc/leftprompt.png") no-repeat;
+        }
+        .pop-center {
+          height: 38px;
+          float: left;
+          margin-top: 50px;
+          margin-left: 7px;
+          margin-right: 7px;
+          h2 {
+            float: left;
+            font-size: 32px;
+            color: #fffef3;
+          }
+          .pop-point {
+            float: left;
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            background: #fffef3;
+            border-radius: 50%;
+            margin-left: 4px;
+            margin-right: 4px;
+            margin-top: 17px;
+          }
+        }
+        .pop-right {
+          margin-top: 56px;
+          width: 42px;
+          height: 28px;
+          float: left;
+          background: url("/styles/images/topic/bigcarnival/pc/rightprompt.png") no-repeat;
+        }
+      }
+      .enjoy{
+        width: 180px;
+        height: 22px;
+        margin: 20px auto;
+        .enjoy-line{
+          width: 31px;
+          height: 22px;
+          float: left;
+          background: url("/styles/images/topic/bigcarnival/pc/line.png") no-repeat center;
+        }
+        .enjoy-text{
+          float: left;
+          font-size: 20px;
+          color: #fffef3;
+          text-align: center;
+          line-height: 22px;
+          margin-left: 8px;
+          margin-right: 8px;
+        }
+      }
+      .pop-btn{
+        display: block;
+        width: 230px;
+        height: 50px;
+        background: url("/styles/images/topic/bigcarnival/pc/platbtn.png") no-repeat center;
+        margin: 117px auto;
+        cursor: pointer;
+      }
+      .pop-btn-hover{
+        background: url("/styles/images/topic/bigcarnival/pc/platbtnhover.png") no-repeat center;
+      }
+    }
+    .platform-item-box{
+      width: 300px;
+      height: 322px;
+      background: #ffffff;
+      border-radius:5px;
+      margin: 10px auto;
+      overflow: hidden;
+      .platform-logo{
+        width: 160px;
+        height: 72px;
+        line-height: 72px;
+        vertical-align: middle;
+        margin: 30px auto 11px;
+        text-align: center;
+        .ptlogo{
+          max-width: 160px;
+          max-height: 72px;
+          line-height: 72px;
+          vertical-align: middle;
+        }
+      }
+      .bank-info{
+        float: left;
+        height: 25px;
+        position: relative;
+        left:50%;
+      }
+      .bank-box{
+        height: 25px;
+        position: relative;
+      }
+      .bank{
+        float: left;
+        overflow: hidden;
+        height: 25px;
+        position: relative;
+        left:-50%;
+        a{
+          color: #569fe8;
+          display: inline-block;
+          height: 21px;
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: 12px;
+          float: left;
+          line-height: 21px;
+          border-radius: 3px;
+          text-align: center;
+          border: 1px solid #569fe8;
+          margin-right: 10px;
+          text-decoration: none;
+        }
+      }
+      .eleven{
+        width: 182px;
+        height: 40px;
+        color: #ee0a3b;
+        margin:0 auto;
+        padding-top: 25px;
+        text-align: center;
+        padding-left: 36px;
+        i{
+          font-style:normal;
+          float: left;
+          font-size: 26px;
+          font-weight: 900;
+          margin-right: 10px;
+          margin-top: 5px;
+        }
+        h2{
+          float: left;
+          font-size: 38px;
+          font-weight: 900;
+          letter-spacing:1px;
+        }
+        span{
+          margin-left: 2px;
+          margin-top: 22px;
+          font-size: 12px;
+          float: left;
+          font-weight: 900;
+          letter-spacing:3px;
+        }
+      }
+      .eyeadd{
+        width: 87px;
+        height: 14px;
+        line-height: 14px;
+        font-size: 14px;
+        color: #383838;
+        margin:12px auto;
+      }
+      .register{
+        width: 230px;
+        height: 50px;
+        border-top:1px dashed #cecece ;
+        padding-top: 13px;
+        margin: 19px auto;
+        .range{
+          font-size: 13px;
+          color: #ee0a3b;
+          font-weight: 900;
+          margin-bottom: 6px;
+          span{
+            color: #787878;
+            font-size: 12px;
+            margin-right: 13px;
+            font-weight: 100;
+          }
+        }
+        .capital{
+
+          font-size: 12px;
+          color: #383838;
+          span{
+            color: #787878;
+            font-size: 12px;
+            margin-right: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+.game{
+  height:400px;
+  overflow: hidden;
+  .game-item{
+    float: left;
+    width: 316px;
+    height: 400px;
+  }
+  .tiger{
+    background:url("/styles/images/topic/bigcarnival/pc/lhjbj.png") no-repeat;
+    position: relative;
+    .game-tiger{
+      position: absolute;
+      left:42px;
+      bottom: 31px;
+      background:url("/styles/images/topic/bigcarnival/pc/lhjbtn.png") no-repeat;
+      width: 230px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      font-size: 18px;
+      color: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .game-tiger-hover{
+      background:url("/styles/images/topic/bigcarnival/pc/lhjbtnhover.png") no-repeat;
+    }
+  }
+  .egg{
+    background:url("/styles/images/topic/bigcarnival/pc/zjcbj.png") no-repeat;
+    position: relative;
+    margin-left: 21px;
+    margin-right: 21px;
+    .game-egg{
+      position: absolute;
+      left:42px;
+      bottom: 31px;
+      background:url("/styles/images/topic/bigcarnival/pc/zjdbtn.png") no-repeat;
+      width: 230px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      font-size: 18px;
+      color: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .game-egg-hover{
+      background:url("/styles/images/topic/bigcarnival/pc/zjdbtnhover.png") no-repeat;
+    }
+  }
+  .friend{
+    background:url("/styles/images/topic/bigcarnival/pc/friengbj.png") no-repeat;
+    position: relative;
+    .game-friend{
+      position: absolute;
+      left:42px;
+      bottom: 31px;
+      background:url("/styles/images/topic/bigcarnival/pc/yqbtn.png") no-repeat;
+      width: 230px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      font-size: 18px;
+      color: #ffffff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .game-friend-hover{
+      background:url("/styles/images/topic/bigcarnival/pc/yqbtnhover.png") no-repeat;
+    }
+  }
+}
+.warning{
+  width: 155px;
+  color: #fffef3;
+  font-size: 14px;
+  margin:0 auto;
+  padding-top: 33px;
+}
+.red-bottom{
+  display: block;
+  width: 146px;
+  height: 12px;
+  margin: 10px auto;
+  background:url("/styles/images/topic/bigcarnival/pc/zi.png") no-repeat;
+}
+.prize{
+  width: 100%;
+  height:100%;
+  background:#000000;
+  filter:alpha(opacity=60);
+  -moz-opacity:0.6;
+  -khtml-opacity: 0.6;
+  opacity: 0.6;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 100;
+  display: none;
+}
+.prize-record{
+  display: none;
+  z-index: 101;
+  position: absolute;
+  left:0;
+  right: 0;
+  top:100px;
+  margin: auto;
+  width: 1014px;
+  height: 534px;
+  background: url("/styles/images/topic/bigcarnival/pc/123.png") no-repeat;
+  .add-up{
+    width: 250px;
+    height: 30px;
+    font-size: 16px;
+    color: #ef3a3a;
+    font-weight: 800;
+    margin-left: 348px;
+    margin-top: 157px;
+    .add-amount{
+      font-size: 30px;
+      font-weight: 800;
+      color: #ef3a3a;
+    }
+    .add{
+      font-size: 16px;
+      color: #383838;
+
+    }
+    .addred{
+      font-style: normal;
+      font-size: 16px;
+      font-weight: 800;
+      color: #ef3a3a;
+    }
+  }
+  .red-paper{
+    font-size: 12px;
+    color: #000000;
+    margin-top: 14px;
+    margin-left: 260px;
+    .mine-red-paper{
+      color: #ef3a3a;
+    }
+  }
+
+}
+.hint{
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid #b5b5b5;
+  background: #fffdf5;
+  position: absolute;
+  font-size: 12px;
+  color: #383838;
+  top:325px;
+  left: 600px;
+  z-index: 110;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  display: none;
+}
+.ui-record-bodys{
+    width: 605px;
+    height: 176px;
+    margin-top: 20px;
+    margin-left: 156px;
+    padding: 5px 15px 10px;
+  table{
+    width: 100%;
+  }
+  thead{
+    border-bottom: 1px dashed #e2e2e2;
+  }
+  th{
+    font-weight: bold;
+    font-size: 14px;
+    color: #383838;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  td{
+    font-size: 12px;
+    color: #787878;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  tbody{
+    a{
+      color: #787878;
+    }
+  }
+}
+.ui-record-foot{
+  padding-top: 12px;
+  width: 400px;
+  margin: 0 auto;
+}
+.ui-record-foot-page{
+  display: none;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 5px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #fb615a;
+  &:hover{
+    text-decoration: none;
+    background-color: #ef3a3a;
+  }
+}
+.ui-pager-inner{
+  text-align: center;
+  overflow: hidden;
+  a,.jp-previous,.jp-next{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin: 0 4px;
+    padding: 0 5px;
+    text-align: center;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #fb615a;
+    &:hover{
+      text-decoration: none;
+      background-color: #ef3a3a;
+    }
+  }
+  span{
+    color: #fb615a;
+  }
+  .jp-disabled{
+    display: none;
+  }
+  .jp-current{
+    background-color: #ef3a3a;
+  }
+}
+.loan{
+  float: left;
+  font-weight: bold;
+  font-size: 14px;
+  color: #383838;
+  margin-left: 22px;
+}
+  .myquestion{
+    float: left;
+    width: 13px;
+    height: 13px;
+    margin-left: 2px;
+    margin-top: 2px;
+    background: url("/styles/images/topic/bigcarnival/pc/redwenhao.png") no-repeat;
+  }
+
+.remove{
+  display:block;
+  float: right;
+  margin-top: 120px;
+  margin-right: 215px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background: url("/styles/images/topic/bigcarnival/pc/close.png") no-repeat;
+}
+.showy{
+  width: 1172px;
+  height: 123px;
+  background:url("/styles/images/topic/bigcarnival/pc/showy.png") no-repeat;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  right: 0;
+  margin: auto;
+  z-index: 1000;
+  .showy-left{
+    width: 420px;
+    height: 60px;
+    float: left;
+    margin-left: 430px;
+    margin-top: 55px;
+    .showy-item{
+      width: 418px;
+      height: 30px;
+      overflow: hidden;
+      .showy-pic-left{
+        width: 31px;
+        height: 23px;
+        float: left;
+        margin-top: 6px;
+        background:url("/styles/images/topic/bigcarnival/pc/showy-left.png") no-repeat;
+      }
+      h2{
+        height: 30px;
+        float: left;
+        font-size: 26px;
+        color: #fed201;
+        margin-left: 7px;
+        margin-right: 7px;
+        span{
+          font-size: 18px;
+          color: #fbe138;
+          margin-right: 9px;
+        }
+      }
+      .showy-pic-right{
+        margin-top: 6px;
+        width: 33px;
+        height: 23px;
+        float: left;
+        background:url("/styles/images/topic/bigcarnival/pc/showy-right.png") no-repeat;
+      }
+    }
+    .hour {
+      margin-top: 13px;
+      overflow: hidden;
+      .time-left {
+        width: 70px;
+        height: 18px;
+        float: left;
+        background: url("/styles/images/topic/bigcarnival/pc/bottomleft.png") no-repeat center;
+      }
+      .time {
+        height: 18px;
+        line-height: 18px;
+        font-size: 16px;
+        color: #fed201;
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .time-right {
+        width: 70px;
+        height: 18px;
+        float: left;
+        background: url("/styles/images/topic/bigcarnival/pc/bottomright.png") no-repeat center;
+      }
+    }
+  }
+  .showy-right{
+    height: 60px;
+    float: left;
+    margin-top: 55px;
+    .showy-btn{
+      display: block;
+      height: 55px;
+      padding-left: 45px;
+      padding-right: 45px;
+      background: #d21d3c;
+      border-radius: 5px;
+      color: #f1f1f1;
+      line-height: 55px;
+      text-align: center;
+      font-size: 20px;
+      float: left;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+.showy-prompt{
+  display: none;
+  width: 80px;
+  height: 20px;
+  background: #d21d3c;
+  line-height: 20px;
+  color: #f5f5f5;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.ui-laons-body-inner{
+  margin: 0 auto;
+  width: 550px;
+  height: 120px;
+  border-radius: 5px;
+  background-color: #fffef3;
+  padding-top: 50px;
+}
+.ui-laons-waiting,
+.ui-laons-loading
+.ui-laons-ing,
+.ui-laons-empty{
+  padding: 0 40px 30px;
+}
+.ui-laons-loading-logo{
+  float: left;
+  width: 160px;
+  height: 70px;
+  border: 1px solid #beb17e;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden;
+}
+.ui-scale{
+  .ui-scale-inner{
+    @include fadein(0.25s);
+  }
+  &:hover{
+    .ui-scale-inner{
+      @include fadein(0.25s);
+      @include scale;
+    }
+  }
+}
+.ui-laons-loading-logo-img{
+  max-width: 162px;
+  max-height: 66px;
+  line-height: 66px;
+}
+.ui-laons-loading-add{
+  float: left;
+  font-weight: bolder;
+  font-size: 16px;
+  color: #787878;
+  line-height: 70px;
+  margin-left: 25px;
+  margin-right:22px;
+}
+.ui-laons-loading-rate{
+  float: left;
+  text-align: center;
+}
+.ui-laons-loading-rate-top{
+  font-weight: bold;
+  color: #ef5350;
+  font-size: 16px;
+  height: 46px;
+  line-height: 46px;
+  strong{
+    font-size: 46px;
+  }
+}
+.ui-laons-loading-rate-bottom{
+  font-size: 12px;
+  color: #787878;
+  line-height: 30px;
+}
+.ui-laons-loading-time{
+  float: left;
+  margin-left: 20px;
+  text-align: center;
+}
+.ui-laons-loading-time-top{
+  height: 110px;
+}
+.ui-laons-loading-time-top-item{
+  float: left;
+  width: 40px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 4px;
+  background-color: #333333;
+}
+.ui-laons-loading-time-top-icons{
+  background: url("/styles/images/topic/bigcarnival/pc/loans-bg.png") no-repeat center;
+  float: left;
+  width: 26px;
+  height: 60px;
+}
+.ui-laons-loading-time-bottom{
+  font-size: 24px;
+  color: #787878;
+  line-height: 30px;
+}
+.stance-pic{
+  width: 990px;
+  height: 170px;
+  background: url("/styles/images/topic/bigcarnival/pc/zwt.png") no-repeat center;
+}
+.ui-laons-nopic{
+  height: 160px;
+  width: 686px;
+  margin: 5px auto;
+  background: url("/styles/images/topic/bigcarnival/pc/quesheng.png") no-repeat;
+  background-size: 100%;
+}
+.amount-hidden{
+  display: none;
+}
+.moreplate{
+  display: block;
+  width: 990px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #ffffff;
+  background:#D21D3C;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.moreplate:hover{
+  background:#8C0421 ;
+  text-decoration: none;
+}

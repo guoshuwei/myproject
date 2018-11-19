@@ -1,0 +1,268 @@
+@charset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog';
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+@import '../inc/footer-mobile';
+
+.goods-info{
+  background-color: #fff;
+}
+.preview-img{
+  display: block;
+  height: px2rem(750px);
+  width: px2rem(750px);
+}
+.goods-title{
+  display: block;
+  height: px2rem(87px);
+  line-height: px2rem(87px);
+  border-bottom: px2rem(2px) solid #e3e3ed;
+  padding: 0 px2rem(26px);
+  font-size: px2rem(28px);
+  font-weight: bold;
+  color: #666;
+}
+.goods-price{
+  height: px2rem(80px);
+  line-height: px2rem(80px);
+  border-bottom: px2rem(2px) solid #e3e3ed;
+  padding: 0 px2rem(26px);
+  font-size: px2rem(24px);
+  font-weight: bold;
+  color: #808080;
+}
+.goods-price-left{
+  position: relative;
+  padding-left: px2rem(44px);
+  height: px2rem(80px);
+  float: left;
+}
+.goods-price-icon{
+  position: absolute;
+  top: px2rem(24px);
+  left: 0;
+  height: px2rem(32px);
+  width: px2rem(32px);
+  background-image: url(/styles/images/club/mobile/tyb.png);
+  background-size: px2rem(32px) px2rem(32px);
+  background-repeat: no-repeat;
+}
+.goods-price-red{
+  color: #ff3141;
+}
+.goods-price-yellow{
+  color: #cda76e;
+}
+.goods-price-right{
+  float: right;
+}
+.goods-price-right .number{
+  letter-spacing: px2rem(3px);
+}
+
+.goods-rule{
+  background-color: #fff;
+  margin-top: px2rem(20px);
+  padding-bottom: px2rem(70px);
+}
+.goods-rule-section{
+
+}
+.goods-rule-title{
+  position: relative;
+  height: px2rem(90px);
+  line-height: px2rem(90px);
+}
+.goods-rule-title-line{
+  position: absolute;
+  left: px2rem(102px);
+  top: px2rem(44px);
+  width: px2rem(546px);
+  height: px2rem(2px);
+  background-color: #e3e3ed;
+}
+.goods-rule-title-word{
+  position: relative;
+  display: block;
+  width: px2rem(170px);
+  text-align: center;
+  color: #3e3e3e;
+  font-weight: bold;
+  font-size: px2rem(28px);
+  background-color: #fff;
+  margin: 0 auto;
+}
+.goods-rule-pre{
+  padding: 0 px2rem(26px);
+  font-size: px2rem(24px);
+  line-height: px2rem(34px);
+  color: #808080;
+}
+.goods-rule-list{
+  padding: 0 px2rem(26px);
+  font-size: px2rem(24px);
+  line-height: px2rem(34px);
+  color: #808080;
+}
+
+.get-goods-btn{
+  display: block;
+  height: px2rem(90px);
+  width: px2rem(600px);
+  margin: px2rem(70px) auto 0;
+  background-color: #ff3141;
+  font-size: px2rem(30px);
+  line-height: px2rem(90px);
+  text-align: center;
+  color: #fff;
+  //box-shadow: 0 0 px2rem(80px) rgba(255,49,65,0.5);
+  -webkit-border-radius: px2rem(10px);
+  -moz-border-radius: px2rem(10px);
+  border-radius: px2rem(10px);
+}
+.get-goods-btn.disabled{
+  background-color: #999;
+  border-color: #999;
+  //box-shadow: 0 0 px2rem(80px) rgba(0,0,0,0.0);
+}
+
+/* 兑换弹窗 start */
+.exchange-float{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  z-index: 100;
+}
+.exchange-float-mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=60);
+}
+.exchange-float-main{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: px2rem(-240px) 0 0 px2rem(-308px);
+  width: px2rem(616px);
+  height: px2rem(480px);
+  background-color: #fff;
+  -webkit-border-radius: px2rem(18px);
+  -moz-border-radius: px2rem(18px);
+  border-radius: px2rem(18px);
+  overflow: hidden;
+}
+.address-float .exchange-float-main{
+  margin: px2rem(-210px) 0 0 px2rem(-308px);
+  height: px2rem(420px);
+}
+.exchange-title{
+  height: px2rem(78px);
+  line-height: px2rem(78px);
+  font-size: px2rem(28px);
+  color: #fff;
+  background: -webkit-linear-gradient( #f1573d , #f13631); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient( #f1573d, #f13631); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient( #f1573d, #f13631); /* Firefox 3.6 - 15 */
+  background: linear-gradient( #f1573d , #f13631); /* 标准的语法 */
+}
+.exchange-title-word{
+  padding-left: px2rem(26px);
+
+}
+.exchange-do{
+  padding: px2rem(46px) px2rem(66px) 0;
+}
+.exchange-tips{
+  display: block;
+  text-align: center;
+  line-height: px2rem(60px);
+  font-size: px2rem(34px);
+  color: #333;
+  margin-bottom: px2rem(30px);
+}
+.exchange-tips-red{
+  color: #ff3141;
+  font-weight: bold;
+}
+.exchange-tips-gray{
+  display: block;
+  text-align: center;
+  height: px2rem(22px);
+  line-height: px2rem(22px);
+  font-size: px2rem(22px);
+  color: #999;
+  margin-bottom: px2rem(20px);
+}
+.exchange-tips-ellispe {
+  width: px2rem(480px);
+  @include text-ellipsis;
+}
+.exchange-tips-address {
+  display: block;
+  text-align: center;
+  font-size: px2rem(22px);
+  margin-bottom: px2rem(40px);
+  height: px2rem(22px);
+  line-height: px2rem(22px);
+  a {
+    color: #0099ee;
+    &:active {
+      text-decoration: underline;
+      color: #ff3141;
+    }
+  }
+}
+
+.exchange-btns{
+  width: px2rem(490px);
+  margin: 0 auto;
+}
+.exchange-btn-red{
+  float: left;
+  height: px2rem(80px);
+  width: px2rem(230px);
+  line-height: px2rem(80px);
+  color: #fff;
+  background-color: #ff3141;
+  text-align: center;
+  -webkit-border-radius: px2rem(8px);
+  -moz-border-radius: px2rem(8px);
+  border-radius: px2rem(8px);
+  border: px2rem(2px) solid #ff3141;
+  font-size: px2rem(36px);
+  cursor: pointer;
+}
+.exchange-btn-red.disabled{
+  background-color: #999;
+  border-color: #999;
+}
+.exchange-btn{
+  float: right;
+  height: px2rem(80px);
+  width: px2rem(230px);
+  line-height: px2rem(80px);
+  color: #fff;
+  background-color: #e5e6e9;
+  text-align: center;
+  -webkit-border-radius: px2rem(8px);
+  -moz-border-radius: px2rem(8px);
+  border-radius: px2rem(8px);
+  border: px2rem(2px) solid #e5e6e9;
+  font-size: px2rem(36px);
+  cursor: pointer;
+  transition: all .2s ease-out;
+}
+/* 兑换弹窗 end */

@@ -1,0 +1,35 @@
+{
+    "code": 200,
+    "message": "\u6210\u529f",
+    "data": {
+        "more": 0,
+        "data": [{
+            "cid": "0",
+            "pid": "0",
+            "pname": "",
+            "username": "",
+            "mobile": "",
+            "bind_time": null,
+            "is_new": "0",
+            "is_first": 0,
+            "domain_body": null,
+            "icon": null,
+            "url": null,
+            "bind_date": "1970-01-01"
+        },
+        {
+            "cid": "16",
+            "pid": "3",
+            "pname": "\u4eba\u4eba\u8d37",
+            "username": "dltest",
+            "mobile": "13439597565",
+            "bind_time": "1452684706",
+            "is_new": "0",
+            "is_first": 1,
+            "domain_body": "we",
+            "icon": "\/static\/icon\/ae70c1ae73cb3f18473852e6a898f61d.png",
+            "url": "http:\/\/www.we.com\/",
+            "bind_date": "2016-01-13"
+        }]
+    }
+}

@@ -1,0 +1,103 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/site-nav';
+@import '../inc/footer';
+@import '../mod/floatlayer';
+@import '../mod/dialog';
+@import '../mod/activity';
+
+.template_carnival_strategy{
+    background-color:#fff;
+    .qt-m{
+        overflow:hidden;
+    }
+    .page_section{
+        padding-bottom:0;
+    }
+    .mod-floatlayer{
+        bottom:90px;
+        z-index:100;
+    }
+}
+
+.strategy-back{
+    height:280px;
+    .main{
+        padding-left:205px;
+    }
+    .inner{
+        width:110px;
+        padding-top:110px;
+        height:140px;
+        background:url(/styles/images/carnival/strategy-innerbg.png) 0 0 no-repeat;
+    }
+    .back{
+        width:110px;
+        height:140px;
+        display:block;
+        background:url(/styles/images/carnival/strategy-backbg.png) 0 0 no-repeat;
+    }
+    .back:hover{
+        text-decoration:none;
+    }
+}
+.mod-strategy{ 
+    left: 50%;
+    margin-left: -960px;
+    position: relative;
+    width: 1920px;
+}
+.strategybg1{
+    height:594px;
+    background:url(/styles/images/carnival/strategybg1.png) 0 0 no-repeat;
+}
+.strategybg2{
+    height:340px;
+    background:url(/styles/images/carnival/strategybg2.png) 0 0 no-repeat;
+}
+.strategybg3{
+    height:251px;
+    background:url(/styles/images/carnival/strategybg3.png) 0 0 no-repeat;
+}
+.strategybg4{
+    height:265px;
+    background:url(/styles/images/carnival/strategybg4.png) 0 0 no-repeat;
+}
+.strategybg5{
+    height:420px;
+    background:url(/styles/images/carnival/strategybg5.png) 0 0 no-repeat;
+}
+.strategybg6{
+    height:460px;
+    background:url(/styles/images/carnival/strategybg6.png) 0 0 no-repeat;
+}
+.strategybg7{
+    height:340px;
+    background:url(/styles/images/carnival/strategybg7.png) 0 0 no-repeat;
+}
+.strategybg8{
+    height:328px;
+    background:url(/styles/images/carnival/strategybg8.png) 0 0 no-repeat;
+}
+.strategybg9{
+    height:320px;
+    background:url(/styles/images/carnival/strategybg9.png) 0 0 no-repeat;
+}
+.strategybg10{
+    height:270px;
+    background:url(/styles/images/carnival/strategybg10.png) 0 0 no-repeat;
+}
+.strategybg11{
+    height:270px;
+    background:url(/styles/images/carnival/strategybg11.png) 0 0 no-repeat;
+}
+.strategybg12{
+    height:300px;
+    background:url(/styles/images/carnival/strategybg12.png) 0 0 no-repeat;
+}
+.strategybg13{
+    height:397px;
+    background:url(/styles/images/carnival/strategybg13.png) 0 0 no-repeat;
+}

@@ -1,0 +1,939 @@
+@Fcharset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/site-nav';
+@import '../inc/header';
+@import '../inc/footer';
+@import '../mod/floatlayer';
+@import '../mod/dialog';
+@import '../mod/bind';
+@import '../inc/ui';
+@import '../mod/activity';
+@import '../inc/login';
+
+
+.template_inviting{
+  position:relative;
+  .qt-h400{
+    height:400px;
+  }
+  .qt-w1000{
+    width:1000px;
+    margin:0 auto;
+  }
+  .yqylbg{
+    overflow:hidden;
+    background:url(/styles/images/topic/yqyl/topic_yqylbg.png) 0 0 no-repeat;
+  }
+  .qt-1920-wrap{
+    position: relative;
+    background:url(/styles/images/topic/yqyl/topic_yqyl_inviting.png) 0 0 no-repeat;
+    a{
+      position: absolute;
+      width:163px;
+      height:46px;
+      left:1169px;
+      top:297px;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+  }
+
+}
+.mod-invite{
+  .hd{
+    padding:16px 0;
+    height:38px;
+    background:url(/styles/images/topic/yqyl/topic_yqyl_hdbgx.jpg) left center repeat-x;
+    .inner{
+      width:448px;
+      height:38px;
+      margin:0 auto;
+      background:url(/styles/images/topic/yqyl/topic_yqyl_innerbg.png) 0 0 no-repeat;
+    }
+    .title{
+      width:142px;
+      height:38px;
+      margin:0 auto;
+      background:url(/styles/images/topic/yqyl/topic_yqyl_titlebg.png) 0 0 no-repeat;
+    }
+  }
+
+}
+.invite_gift{
+  background-color:#fff;
+  padding-top:36px;
+  .hd{
+    .inner{
+      background-color:#fff;
+    }
+  }
+  .bd{
+    ul{
+      padding:22px 0;
+      li{
+        float:left;
+        width:275px;
+        height:252px;
+        margin-right:87px;
+        background:url(/styles/images/topic/yqyl/topic_yqyl_bdulbg.png) 0 0 no-repeat;
+      }
+      .first{
+        background-position: 0 0;
+      }
+      .second{
+        background-position: -280px 0;
+      }
+      .third{
+        background-position: -560px 0;
+        margin-right:0;
+      }
+    }
+    p{
+      height:32px;
+      padding-bottom:28px;
+      b{
+        font-size:20px;
+        color:#000;
+        padding-right:15px;
+        line-height:32px;
+      }
+      span{
+        font-size:15px;
+        color:#999;
+        padding-right:6px;
+        line-height:32px;
+      }
+      a{
+        display:inline-block;
+        padding:0 14px;
+        height:28px;
+        line-height:28px;
+        border:1px solid #ff6155;
+        border-radius:5px;
+        color:#ff6155;
+        font-size:15px;
+      }
+    }
+  }
+}
+.invite_mine{
+  background-color:#f4f4f4;
+  padding-top:16px;
+  .hd{
+    .inner{
+      background-color:#f4f4f4;
+    }
+    .title{
+      background-position: 0 -42px;
+    }
+  }
+  .bd{
+    padding-bottom:50px;
+    .prompt{
+      height:20px;
+      line-height:20px;
+      padding-bottom:10px;
+      b{
+        float:left;
+        width:14px;
+        height:15px;
+        overflow:hidden;
+        margin:2px 6px 0 0;
+      }
+      .yqylbg{
+        background-position:0 0;
+      }
+      span{
+        float:left;
+        font-size:14px;
+        color:#ff6155;
+      }
+    }
+    .top{
+      margin-bottom:20px;
+      .inner{
+        padding:0 30px 30px;
+      }
+      textarea{
+        padding:8px 12px;
+        border:1px solid #e5e5e5;
+        border-width:1px 2px;
+        line-height:24px;
+        height:72px;
+        width:914px;
+        color:#333;
+        background-color:#fff;
+        border-radius:10px;
+        word-break: break-all;
+      }
+    }
+    .box{
+      border:1px solid #dbdbdb;
+      background-color:#fff;
+    }
+    .bottom{
+      .box{
+        width:488px;
+        height:252px;
+      }
+    }
+    .share{
+      float:left;
+      .inner{
+        padding:22px 0 37px 34px;
+      }
+    }
+
+    .record{
+      float:right;
+      .inner{
+        padding:10px 20px 8px;
+      }
+      .nologin{
+        .yqylbg{
+          width:100px;
+          height:100px;
+          margin:8px auto;
+          background-position: -200px 0;
+        }
+      }
+      .norecord{
+        .yqylbg{
+          width:140px;
+          height:140px;
+          margin:15px auto;
+          background-position: 0 -100px;
+        }
+      }
+      p{
+        padding:10px 0;
+        height:25px;
+        text-align:center;
+        a{
+          display:inline-block;
+          width:100px;
+          height:23px;
+          border:1px solid #9b9b9b;
+          border-radius:5px;
+          text-align:center;
+          line-height:23px;
+          font-size:14px;
+          color:#9b9b9b;
+        }
+        a:hover{
+          background-color:#9b9b9b;
+          color:#fff;
+        }
+      }
+      ul{
+        width:100%;
+        height:120px;
+        li{
+          width:100%;
+          float:left;
+          height:30px;
+          span{
+            float:left;
+            height:30px;
+            line-height:30px;
+            text-align:center;
+            color:#7f7f7f;
+            font-size:16px;
+          }
+          .c333{color:#333;}
+          .w46{width:46px;}
+          .w174{width:174px;}
+          .w66{width:66px;}
+          .w160{width:160px;}
+        }
+      }
+    }
+    .title2{
+      padding:16px 0;
+      margin:0 20px;
+      border-bottom:1px solid #ccc;
+      height:32px;
+      .yqylbg{
+        float:left;
+        width:196px;
+        height:32px;
+        background-position: 0 -66px;
+      }
+      .detail{
+        float:right;
+        padding-top:4px;
+        height:28px;
+        width:250px;
+        text-align:right;
+        a{
+          display:inline-block;
+          padding:0 14px;
+          height:24px;
+          border:1px solid #7f7f7f;
+          color:#7f7f7f;
+          font-size:12px;
+          border-radius:10px;
+          line-height:24px;
+          margin-left:10px;
+        }
+        a:hover{
+          background-color:#7f7f7f;
+          color:#fff;
+          text-decoration:none;
+        }
+      }
+    }
+    .title{
+      padding:16px 30px;
+      .left{
+        float:left;
+      }
+      .right{
+        float:right;
+      }
+      b{
+        float:left;
+        width:170px;
+        height:31px;
+        margin:1px 15px 0 0;
+      }
+      .one{
+        background-position:-16px 0;
+      }
+      .two{
+        background-position:-16px -33px;
+      }
+      span{
+        float:left;
+        font-size:15px;
+        color:#999;
+        line-height:40px;
+      }
+    }
+    .copy{
+      display:block;
+      width:160px;
+      height:40px;
+      border-top:1px solid #ffd7d4;
+      border-bottom:2px solid #dd3b33;
+      background-color:#ff6155;
+      color:#fff;
+      text-align:center;
+      font-size:18px;
+      line-height:40px;
+      border-radius:10px;
+      outline:none;
+    }
+  }
+}
+.mod-rules{
+  padding:20px 0 30px 0;
+  background-color:#fff;
+  .hd{
+    padding:12px 0;
+    height:23px;
+    .inner{
+      width:440px;
+      height:23px;
+      margin:0 auto;
+      background:url(/styles/images/topic/yqyl/topic_yqyl_ruleshdbg.png) 0 0 no-repeat;
+    }
+  }
+  .bd{
+    p{
+      line-height:30px;
+      color:#888;
+      font-size:14px;
+      a{
+        color:#ea544a;
+        padding:0 4px;
+      }
+      a:hover{
+        text-decoration:none;
+      }
+    }
+  }
+}
+#jiathis{
+  .jiathis_style_32x32{
+    a{
+      margin-right:23px;
+      display:inline-block;
+    }
+    .jiathis_txt{
+      line-height: 84px !important;
+    }
+    .jtico{
+      height: 84px !important;
+      line-height: 84px !important;
+      padding-left: 84px !important;
+      background:url(/styles/images/topic/yqyl/jiathis.png) 0 0;
+    }
+    .jtico_cqq{
+      background-position:0 0;
+    }
+    .jtico_qzone{
+      background-position:0 -86px;
+    }
+    .jtico_tsina{
+      background-position:0 -172px;
+    }
+    .jtico_weixin{
+      background-position:0 -258px;
+    }
+  }
+  .jiathis_box{
+    padding:8px 0;
+    height:26px;
+    span{
+      margin-right:23px;
+      display:inline-block;
+      width:84px;
+      height:26px;
+      line-height:26px;
+      text-align:center;
+      font-size:14px;
+      color:#444;
+    }
+  }
+}
+.copySuccess{
+  width:200px;
+  height:60px;
+  position: fixed;
+  left:50%;
+  top:50%;
+  margin:-30px 0 0 -100px;
+  display:none;
+  background-color: transparent;
+  background-image:url(/styles/images/cpasinviting/icons.png);
+  background-position: 0 -1600px;
+  z-index: 10;
+}
+
+
+
+
+
+
+.number{
+  font-family: Arial;
+}
+.tag_num{
+  width: 14px;
+  height: 12px;
+  background-image:url(/styles/images/cpasinviting/icons.png);
+}
+.tag_num1{
+
+  background-position: 0 -600px;
+}
+.tag_num2{
+
+  background-position: -14px -600px;
+}
+.hook{
+  position: absolute;
+  right: -52px;
+  width: 78px;
+  height: 16px;
+  background-image:url(/styles/images/cpasinviting/icons.png);
+  background-position: 0 -550px;
+}
+
+.page_section{
+  padding-bottom: 0;
+  overflow: hidden;
+  .secs{
+    position: relative;
+    width: 1200px;
+    margin: auto;
+    padding-bottom: 124px;
+    >div{
+      position: relative;
+    }
+    >.bg{
+      width: 1920px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: -360px;
+      background-color: #ffc42d;
+      background-image:url(/styles/images/cpasinviting/bg.png);
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+    .sec_active_1 {
+      background:url(/styles/images/cpasinviting/activity.png) top center no-repeat;
+      text-align:center;
+      width:929px;
+      margin:0px 0px 0px 128px;
+      .btn_invite1{
+        display: block;
+        width: 153px;
+        height: 44px;
+        margin: 222px auto 34px;
+      }
+      .btn_invite_active {
+        font-size:14px;
+        color:#fde598;
+      }
+    }
+    .sec_1{
+      height: 521px;
+      overflow: hidden;
+      .btn_invite{
+        display: block;
+        width: 153px;
+        height: 44px;
+        margin: 222px auto 0;
+        background-image:url(/styles/images/cpasinviting/icons.png);
+        background-position: -306px 0;
+        &:hover{
+          background-position: 0 0;
+        }
+        &:active{
+          background-position: -153px 0 !important;
+        }
+      }
+    }
+    .sec_2{
+      .tit{
+        width: 429px;
+        height: 99px;
+        margin: auto;
+        background-image:url(/styles/images/cpasinviting/icons.png);
+        background-position: 0 -400px;
+
+      }
+    }
+    .sec_3{
+      position: relative;
+      height: 420px;
+      padding: 20px;
+      margin-top: 12px;
+      .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 4px;
+        @include opacity(.25);
+      }
+      .con{
+        position: relative;
+        width: 1200px;
+        @include clearfix;
+        .item1{
+          z-index: 3;
+          .detail{
+            position: absolute;
+            bottom: 0;
+            left: 54px;
+            width: 219px;
+            height: 259px;
+            background-image:url(/styles/images/cpasinviting/icons.png);
+            background-position: 0 -650px;
+            .detail_tit{
+              height: 24px;
+              line-height: 24px;
+              font-size: 18px;
+              margin: 47px 0 0 92px;
+              color: #fff8a5;
+            }
+            .detail_desc{
+              height: 58px;
+              line-height: 58px;
+              margin: 8px 0 0 116px;
+              font-size: 50px;
+              color: #fff8a5;
+            }
+          }
+        }
+        .item2{
+          z-index: 2;
+          .detail{
+            position: relative;
+            width: 166px;
+            height: 228px;
+            margin: 48px auto 36px;
+            background-image:url(/styles/images/cpasinviting/icons.png);
+            background-position: 0 -950px;
+            .detail_desc{
+              height: 54px;
+              line-height: 54px;
+              margin: 0 0 0 100px;
+              padding-top: 4px;
+              font-size: 46px;
+              font-weight: bold;
+              color: #f55327;
+            }
+          }
+        }
+        .item3{
+          z-index: 1;
+          .detail{
+            position: relative;
+            width: 201px;
+            height: 190px;
+            margin: 22px auto 0;
+            background-image:url(/styles/images/cpasinviting/icons.png);
+            background-position: 0 -1200px;
+          }
+        }
+        .item{
+          position: relative;
+          float: left;
+          width: 370px;
+          height: 420px;
+          margin-right: 26px;
+          background-color: #fff;
+          border-radius: 4px;
+
+          .tit{
+            height: 24px;
+            line-height: 24px;
+            margin: 48px 0 0 39px;
+            font-size: 18px;
+            color: #a35b25;
+            font-weight: bold;
+            .tag_num{
+              margin-left: 2px;
+              display: inline-block;
+              vertical-align: top;
+            }
+            .first_time{
+              padding: 0 9px;
+              color: #34a4ec;
+            }
+          }
+          .desc{
+            color: #f55327;
+            font-weight: bold;
+          }
+          .desc1{
+            height: 31px;
+            line-height: 31px;
+            font-size: 24px;
+            margin: 8px 0 0 39px;
+          }
+          .desc2{
+            height: 29px;
+            line-height: 29px;
+            font-size: 22px;
+            margin: 9px 0 0 39px;
+          }
+          .desc3{
+            height: 29px;
+            line-height: 29px;
+            font-size: 22px;
+            margin: 3px 0 0 39px;
+            .small{
+              padding-left: 8px;
+              font-size: 12px;
+              color: #a35b25;
+              font-weight: normal;
+            }
+          }
+          .hook_top{
+            top: 118px;
+          }
+          .hook_bot{
+            bottom: 118px;
+          }
+
+        }
+      }
+    }
+    .sec_4{
+      margin-top: 5px;
+      font-size: 14px;
+      color: #a35b25;
+      line-height: 24px;
+    }
+    .sec_5{
+      margin-top: 8px;
+      .tit{
+        width: 429px;
+        height: 99px;
+        margin: auto;
+        background-image:url(/styles/images/cpasinviting/icons.png);
+        background-position: -429px -400px;
+
+      }
+    }
+    .sec_6{
+      position: relative;
+      height: 341px;
+      padding: 20px;
+      margin-top: 11px;
+      .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 4px;
+        @include opacity(.25);
+      }
+      .con {
+        position: relative;
+        width: 1200px;
+        @include clearfix;
+        .item {
+          position: relative;
+          float: left;
+          width: 570px;
+          height: 340px;
+          margin-right: 20px;
+          background-color: #fff;
+          border-radius: 4px;
+          .tit{
+            height: 24px;
+            line-height: 24px;
+            margin: 62px 0 0 55px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #a35b25;
+            .link{
+              position: relative;
+              float: right;
+              margin: 1px 76px 0 0;
+              font-size: 14px;
+              color: #a35b25;
+              div{
+                position: absolute;
+                top: 4px;
+                right: -20px;
+                width: 15px;
+                height: 15px;
+                background-image:url(/styles/images/cpasinviting/icons.png);
+                background-position: 0 -1450px;
+              }
+              &:hover{
+                color: #34a4ec;
+                div{
+                  background-position: -15px -1450px;
+                }
+              }
+            }
+          }
+          .hook{
+            right: -49px;
+          }
+          .hook_top{
+            top: 93px;
+          }
+          .hook_bot{
+            bottom: 100px;
+          }
+        }
+        .item1 {
+          z-index: 2;
+          .detail{
+            margin: 48px 0 0 55px;
+            .jiathis_style > div{
+              margin-right: 46px;
+              cursor: pointer;
+            }
+            .icon{
+              display: block;
+              width: 74px;
+              height: 74px;
+              background-image:url(/styles/images/cpasinviting/icons.png);
+              span{
+                display: none !important;
+              }
+            }
+            .txt{
+              height: 19px;
+              line-height: 19px;
+              margin-top: 13px;
+              font-size: 14px;
+              color: #a35b25;
+              text-align: center;
+            }
+            .qq{
+              float: left;
+              .icon{
+                background-position: -148px -60px;
+              }
+              &:hover{
+                .icon{
+                  background-position: 0 -60px;
+                }
+              }
+              &:active{
+                .icon{
+                  background-position: -74px -60px;
+                }
+              }
+            }
+            .qzone{
+              float: left;
+              .icon{
+                background-position: -148px -134px;
+              }
+              &:hover{
+                .icon{
+                  background-position: 0 -134px;
+                }
+              }
+              &:active{
+                .icon{
+                  background-position: -74px -134px;
+                }
+              }
+            }
+            .weibo{
+              float: left;
+              .icon{
+                background-position: -148px -208px;
+              }
+              &:hover{
+                .icon{
+                  background-position: 0 -208px;
+                }
+              }
+              &:active{
+                .icon{
+                  background-position: -74px -208px;
+                }
+              }
+            }
+            .weixin{
+              float: left;
+              .icon{
+                background-position: -148px -282px;
+              }
+              &:hover{
+                .icon{
+                  background-position: 0 -282px;
+                }
+              }
+              &:active{
+                .icon{
+                  background-position: -74px -282px;
+                }
+              }
+            }
+          }
+        }
+        .item2 {
+          z-index: 1;
+          .detail {
+            width: 423px;
+            height: 76px;
+            padding: 24px 19px;
+            line-height: 18px;
+            font-size: 14px;
+            margin: 16px 0 0 55px;
+            color: #2d2d2d;
+            background-color: #f3f3f3;
+            overflow: auto;
+            overflow-x: hidden;
+            white-space: normal;
+            word-wrap: break-word;
+            border-radius: 5px;
+          }
+          .btn_copy{
+            position: relative;
+            display: block;
+            width: 150px;
+            height: 42px;
+            margin: 20px 0 0 55px;
+            background-image:url(/styles/images/cpasinviting/icons.png);
+            background-position: 0 -1500px;
+            &:hover{
+              background-position: -150px -1500px;
+            }
+            &:active{
+              background-position: -300px -1500px !important;
+            }
+          }
+          .zclip{
+            position: relative;
+            display: block;
+            width: 150px;
+            height: 42px;
+            background-image:url(/styles/images/cpasinviting/icons.png);
+            background-position: 0 -1500px;
+            z-index: 100;
+            &:hover{
+              background-position: -150px -1500px;
+            }
+          }
+          .zclip_mousedown{
+            background-position: -300px -1500px !important;
+          }
+        }
+      }
+    }
+    .sec_7{
+      font-size: 14px;
+      line-height: 36px;
+      color: #a35b25;
+    }
+    .sec_8{
+      .tit{
+        margin-top: 5px;
+        width: 429px;
+        height: 99px;
+        margin: auto;
+        background-image:url(/styles/images/cpasinviting/icons.png);
+        background-position: -858px -400px;
+
+      }
+    }
+    .sec_9{
+      margin-top: 11px;
+      padding: 20px;
+      .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 4px;
+        @include opacity(.25);
+      }
+      .con {
+        position: relative;
+        width: 1108px;
+        padding: 32px 26px 23px;
+        background-color: #fff;
+        border-radius: 4px;
+        .item{
+          position: relative;
+          font-size: 14px;
+          line-height: 22px;
+          padding-left: 41px;
+          margin-bottom: 9px;
+          color: #a35b25;
+          .number{
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #fff;
+            background-image:url(/styles/images/cpasinviting/icons.png);
+            background-position: 0 -1550px;
+            text-align: center;
+          }
+          a{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+}

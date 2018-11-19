@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../inc/site-nav-ty';
+@import '../inc/header';
+@import '../inc/header-ty';
+@import '../inc/member-header';
+@import '../inc/member-tab';
+@import '../inc/footer';
+@import '../mod/search';
+@import '../mod/floatlayer';
+@import '../mod/dialog';
+@import '../mod/invest-popup';
+@import '../mod/bind';
+@import '../mod/activity';
+
+.content {
+  background: #eaedf4;
+}
+.bind-wrap {
+  width: 932px;
+  padding: 18px 29px 70px;
+  float: left;
+  background: #fff;
+}
+.my-account{
+  width: 100%;
+}
+.bind-wrap-head{
+  width: 933px;
+  height: 37px;
+  border-bottom: 1px solid #e8e8e8;
+  color: #333;
+}
+.bind-wrap-head-ui{
+  font-size: 16px;
+  border-left: 4px solid #ea544a;
+  padding-left: 10px;
+  width: 922px;
+  font-weight: 800;
+}
+.my-table{
+  margin: 20px auto 48px;
+  width: 910px;
+  tr{
+    height: 46px;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 30px;
+    .center{
+      width: 120px;
+      line-height: 14px;
+      color: #333333;
+    }
+    .have{
+      width: 130px;
+      .have-icon{
+        width: 14px;
+        height: 14px;
+        background-image: url(/styles/images/member/icon.png);
+        background-repeat:no-repeat;
+        background-position: -295px -51px;
+        @include ratioBackground($url:'/styles/images/member/icon.png',$size:550px 140px);
+        @include ratioBackgroundPosition($x:-295px,$y:-80px);
+      }
+    }
+    .content-ui{
+      width: 530px;
+    }
+    .link{
+      text-align: right;
+      width:130px;
+      .breakline{
+        margin: 0 3px;
+      }
+    }
+  }
+}
+.password-ui{
+  width: 100%;
+  margin-top: 60px;
+}
+.person-ui{
+  width: 100%;
+  margin-top: 60px;
+}
+.myaddress-ui{
+  width: 100%;
+  margin-top: 60px;
+}
+.blockbox{
+  display: block;
+}
+
+.secret-btn-bg{
+  float: right;
+  position: relative;
+  height: 15px;
+  width: 30px;
+  cursor: pointer;
+  background-color: #999;
+  -webkit-border-radius: 7.5px;
+  -moz-border-radius: 7.5px;
+  border-radius: 7.5px;
+  transition: all .25s ease-in-out;
+}
+.secret-btn{
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 13px;
+  width: 13px;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+.secret-btn-bg.on{
+  background-color: #0080cc;
+}
+.secret-btn-bg.off{
+  background-color: #999;
+}
+.secret-btn-bg.on .secret-btn{
+  left: 16px;
+}
+.secret-btn-bg.off .secret-btn{
+  left: 1px;
+}

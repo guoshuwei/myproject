@@ -1,0 +1,11 @@
+{
+    "code": 200,
+    "message": "success",
+    "data": {
+        "img": "http://img.p2peye.com/2017/04/20/2b64acc84003b8b2a4a09b7ac462108b.jpg?v=1492684557",
+        "award_name": "小米平衡车",
+        "supplier_name": "网贷天眼",
+        "supplier_url": "http://www.baidu.com",
+        "price": "100.00"
+    }
+}

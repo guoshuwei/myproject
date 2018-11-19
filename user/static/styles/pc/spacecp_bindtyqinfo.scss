@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../inc/site-nav-ty';
+@import '../inc/header';
+@import '../inc/header-ty';
+@import '../inc/member-header';
+@import '../inc/member-tab';
+@import '../inc/footer';
+@import '../mod/search';
+@import '../mod/floatlayer';
+@import '../mod/dialog';
+@import '../mod/bind';
+@import '../mod/activity';
+
+.content {
+  background: #eaedf4;
+}
+.bind-wrap {
+  width: 932px;
+  padding: 18px 29px 70px;
+  float: left;
+  background: #fff;
+}
+.my-account{
+  width: 100%;
+}
+.bind-wrap-head{
+  width: 933px;
+  height: 37px;
+  border-bottom: 1px solid #e8e8e8;
+  color: #333;
+}
+.bind-wrap-head-ui{
+  font-size: 16px;
+  border-left: 3px solid #ea544a;
+  padding-left: 10px;
+  width: 922px;
+}
+.bind-wrap-return{
+  float: right;
+  color: #ea544a;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.tyq-info{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.tyq-info-remarks{
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 30px;
+}
+.tyq-info-item{
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.tyq-info-item-left{
+  float: left;
+  font-size: 14px;
+  color: #999;
+  width: 90px;
+  margin-right: 30px;
+}
+.tyq-info-item-right{
+  float: left;
+  font-size: 12px;
+  color: #666;
+  strong{
+    font-size: 16px;
+    color: #666;
+    font-weight: 800;
+  }
+  span{
+    font-size: 16px;
+    color: #ea544a;
+    font-weight: 800;
+  }
+  a{
+    font-size: 14px;
+    color: #0080cc;
+    margin-left: 32px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+.tyq-question{
+  margin-top: 100px;
+  border-top: 1px dashed #e8e8e8;
+  padding-top: 40px;
+}
+.tyq-question-title{
+  border-left: 2px solid #666666;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #666;
+}
+.tyq-question-item{
+  margin-top: 19px;
+  a{
+    font-size: 12px;
+    color: #999;
+    cursor: pointer;
+    i{
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #ccc;
+      margin-right: 9px;
+    }
+  }
+}

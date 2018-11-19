@@ -1,0 +1,245 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav-ty';
+@import '../inc/header';
+@import '../inc/header-ty';
+@import '../inc/member-header';
+@import '../inc/footer';
+@import '../mod/search';
+@import '../mod/redpapersave';
+@import '../mod/floatlayer';
+@import '../mod/activity';
+.content{
+    position:relative;
+    padding-top:50px;
+}
+.mod-platfixed{
+    width: 100%;
+    -webkittransform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 0;
+    box-shadow: 0px 0px 5px #ccc;
+    position:absolute;
+    top:0; 
+    left:0;
+    background-color:#fff;
+    .a{
+        border-right: 1px solid #e6e6e6;
+        color: #383838;
+        display: block; 
+        float: left;
+        font-family: Microsoft YaHei;
+        font-size: 16px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        transition: background 0.25s ease-in-out 0s;
+        width: 155px;
+        margin-left:0;
+        &:hover{
+            background-color: #0080cc;
+            border-right: medium none;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            width: 156px;
+        }
+    }
+    .a.current{
+        background-color: #0080cc;
+        border-right: medium none;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        width: 156px;
+    }
+    .more{
+        display: block;
+        float: right;
+        margin-right:20px;
+        font-family: Microsoft YaHei;
+        font-size: 14px;
+        color:#0080cc;
+        height: 50px;
+        line-height:50px;
+        &:hover{
+            color:#0080cc;
+        }
+    }
+}
+.notice{
+    font-family:Microsoft YaHei;
+    font-size:14px;
+    color:#3dbbf9;
+    span{
+        height:35px;
+        line-height:35px;
+        color:#787878;
+    }
+}
+.paperbox{
+    background-color:#fff;
+    padding:50px 14px 15px;
+}
+.redpaper{
+    float:left;
+    width:210px; 
+    height:251px;
+    padding:0 1px 3px;
+    margin:0 38px 47px;
+    background:url(/styles/images/tender/redpaper.png) no-repeat 0 0;
+    .tit{
+        width:210px;
+        height:60px;
+        line-height:60px;
+        font-size:20px;
+        font-family: Microsoft YaHei;
+        color:#ffbfbf;
+        text-align:center;
+        overflow:hidden;
+        white-space:nowrap;
+        word-break:keep-all;
+        text-overflow:ellipsis;
+    }
+    .add{
+        height:48px;
+        line-height:48px;  
+        font-size:14px;
+        color:#ffbfbf;
+        text-align:center;
+        font-family: Microsoft YaHei;
+        white-space: nowrap;
+        word-break: keep-all;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .money{
+        font-weight:bold; 
+        font-size:40px;
+        color:#fff;
+        text-align:center; 
+        height:55px;       
+    }
+    .time{
+        font-size:12px;
+        color:#ffbfbf;
+        text-align:center;
+        height:35px;
+        line-height:35px;
+    }
+    .save{
+        a{
+            display:block;
+            width:180px;
+            text-align:center;
+            height:30px;
+            line-height:30px;
+            font-size:14px;
+            color:#cb1c0d;   
+            margin:0 auto;      
+        }
+    }
+}
+.noreceive{
+    display:none;
+    .ui-pagenav{
+        padding-top:40px;
+    }    
+}
+.receivelist{
+    display:none;
+    .ui-pagenav{
+        padding:40px 0 130px;
+    }    
+}
+.active{
+    display:block;
+}
+.paperrecord{
+    .hd{
+        height:30px;
+        line-height:30px;
+        background-color:#0080cc;
+        span{
+            color:#fff;     
+        }
+        span.name{
+            font-size:14px;
+        }
+    }
+    .recordlist{
+        height:48px;
+        line-height:48px;
+        margin-top:9px;
+        background-color:#fff;
+        span{
+            color:#383838;     
+        }
+        span.name{
+            font-size:16px;
+        }
+    }
+    span{
+        float:left;
+        font-size:14px;
+        text-align:center;    
+        font-family: Microsoft YaHei;    
+    }
+    .name{
+        width:300px;
+        overflow:hidden;
+        white-space:nowrap;
+        word-break:keep-all;
+        text-overflow:ellipsis;
+    }
+    .starttime{
+        width:220px;
+    }
+    .savetime{
+        width:250px;
+    }
+    .num{
+        width:135px;
+    }
+    .type{
+        width:140px;
+    }
+    .state{
+        width:155px;
+    }
+}
+.ui-alert,.ui-loading{
+  display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

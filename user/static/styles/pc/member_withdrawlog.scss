@@ -1,0 +1,232 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav-ty';
+@import '../inc/header';
+@import '../inc/header-ty';
+@import '../inc/member-header';
+@import '../inc/footer';
+@import '../mod/charge';
+@import '../mod/bind';
+@import '../mod/floatlayer';
+@import '../mod/activity';
+@import '../mod/pagenav';
+
+
+
+.section-box{
+  background-color: #fff;
+}
+.section-box+.section-box{
+  margin-top: 10px;
+}
+.mod-title{
+  padding: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.mod-title-left{
+  float: left;
+}
+.mod-title-right{
+  float: right;
+}
+.mod-title-word{
+  font-size: 16px;
+  color: #383838;
+  font-weight: bold;
+}
+.mod-title-link{
+  float: left;
+  font-size: 14px;
+  color: #0080cc;
+}
+.mod-title-breakline{
+  display: block;
+  float: left;
+  font-size: 16px;
+  color: #f2f2f2;
+  padding: 0 15px;
+}
+
+
+
+.table-list{
+  display: block;
+  font-size: 14px;
+}
+.table-list tbody{
+  display: block;
+}
+.table-list tr{
+  display: block;
+  height: 59px;
+  line-height: 59px;
+  border-bottom: 1px dashed #e8e8e8;
+}
+.table-list th,.table-list td{
+  display: block;
+  float: left;
+  text-align: center;
+}
+.table-list th{
+  color: #999;
+}
+.table-list td{
+  color: #333;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+.table-money{
+  font-weight: bold;
+}
+.table-list .color-red{
+  color: #ea544a;
+}
+.table-list .color-blue{
+  color: #0080cc;
+}
+
+
+
+
+
+
+
+
+
+
+/**基金列表*/
+.content{
+  position:relative;
+  padding-top:75px;
+}
+
+.mod-platfixed{
+  position:absolute;
+  width:100%;
+  left:0;
+  top:0;
+  background:#fff;
+  height:50px;
+  -webkittransform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index:11;
+  border-bottom:1px solid #e6e6e6;
+  box-shadow: rgb(230, 230, 230) 0px 2px 2px;
+
+  .a{
+    display: block;
+    float: left;
+    border-right:1px solid #e6e6e6;
+    height:50px;
+    line-height:50px;
+    color: #383838;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    width: 153px;
+    text-align: center;
+    -webkit-transition: background .25s ease-in-out;
+    -moz-transition: background .25s ease-in-out;
+    transition: background .25s ease-in-out;
+
+    span{
+      color: #ea544a;
+    }
+  }
+  .a:hover,.a.current{
+    background:#0080cc;
+    width: 154px;
+    border-right:none;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+.mod-deal-status{
+  height:58px;
+  padding-left:50px;
+  font-size:24px;
+  font-family:Microsoft YaHei;
+  line-height:58px;
+  background:#fff;
+}
+.mod-deal-status.success{
+  color:#0080cc;
+  border:1px solid #0080cc;
+}
+.mod-deal-status.ing{
+  color:#ff702a;
+  border:1px solid #ff702a;
+}
+.mod-deal-status.error{
+  color:#ea544a;
+  border:1px solid #ea544a;
+}
+.deal-summary{
+  padding: 0 50px 25px;
+  li{
+    padding-bottom:18px;
+    padding-top:38px;
+    border-bottom:1px dashed #ccc;
+    p{
+      font-size: 16px;
+      color: #383838;
+      padding-bottom:20px;
+    }
+  }
+}
+.notopen{
+  height: 30px;
+  line-height:30px;
+  background-color: #fffdd0;
+  border: 1px solid #dbcf93;
+  padding: 5px 20px 5px 10px;
+  font-size:16px;
+  margin-bottom:20px;
+  a{
+    color:#a78651;
+  }
+}
+
+// 无数据
+.nodata{
+  padding: 65px 0 160px;
+}
+.nodata-icon{
+  display: block;
+  width: 136px;
+  height: 136px;
+  margin: 0 auto;
+  background-image: url(/styles/images/member/nodata-02.png);
+  @include ratioBackground($url:'/styles/images/member/nodata-02-2x.png', $size: 136px 136px, $x:0px, $y:0px);
+}
+.nodata-tips{
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+.nodata-btn{
+  height: 36px;
+  padding: 0 30px;
+  line-height: 36px;
+  border: 1px solid #ea544a;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
+}
+.nodata-btn:hover{
+  background-color: #ea544a;
+  color: #fff;
+}

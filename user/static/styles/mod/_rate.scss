@@ -1,0 +1,27 @@
+.mod-rate{
+	width:100%;
+	height:14px;
+	line-height:14px;
+	color:#252525;
+	border:1px solid #ff702a;
+	background:#fff;
+	border-radius:7px;
+	position:relative;
+	overflow:hidden;
+	.rate-wrap{
+		height: 14px;
+		float: left;
+		width: 30%;
+		background:#ff702a;
+		border-radius:0 7px 7px 0;
+	}
+	.rate-tag{
+		position:absolute;
+		top:0;
+		right:0;
+		height: 14px;
+		padding-right: 8px;
+		font-size: 12px;
+		line-height: 14px;
+	}
+}

@@ -1,0 +1,326 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/grid';
+@import '../inc/m_ui';
+@import '../inc/index_footer_mobile';
+@import "../inc/index_header_mobile";
+@import '../mod/retina';
+  .lf {
+    float: left;
+  }
+  .rt {
+    float: right;
+  }
+main {
+  padding-top:px2rem(30px);
+}
+  .tip-dianping-huodong{
+    display: block;
+    font-size: px2rem(26px);
+    line-height: px2rem(75px);
+    color: rgb(255, 126, 21);
+    background-color: rgb(254, 234, 202);
+    text-align: center;
+  }
+  .section-title {
+    padding-bottom:px2rem(30px);
+  }
+  .section-title-wrap {
+    background: #fff;
+    @include pd-pt22;
+    padding-bottom:px2rem(20px)
+  }
+  .section-title-top {
+    font-size: px2rem(28px);
+    line-height: px2rem(82px);
+    color: #666;
+    .color {
+      color: #ff6600;
+      font-size: px2rem(22px);
+    }
+    .pd-lr {
+      padding-left: px2rem(15px);
+      padding-right: px2rem(22px);
+    }
+  }
+  .progress {
+    padding-top:px2rem(34px);
+    .progress-bar {
+      width: px2rem(150px);
+      height: px2rem(16px);
+      background: #e8e8e8;
+    }
+    .bar-ing {
+      height: px2rem(16px);
+      background: #ff6600;
+      width:0;
+    }
+  }
+  .section-title-top-left {
+    float: left;
+  }
+  .section-title-top-right {
+    float: right;
+  }
+  .section-title-nav {
+    pading-bottom:px2rem(20px);
+    .nav-list{
+      width:100%;
+      max-height: px2rem(96px);
+      overflow: hidden;
+    }
+    .nav-item {
+      font-size: px2rem(22px);
+      color: #999;
+      float: left;
+      padding-right: px2rem(30px);
+      padding-bottom:px2rem(10px);
+    }
+    .nav-item-text {
+      display: inline-block;
+      padding:0px px2rem(18px);
+      border-radius: px2rem(4px);
+      border:px2rem(1px) solid #C3C3C3;
+      line-height: px2rem(38px);
+      height: px2rem(38px);
+    }
+  }
+  .section-body {
+    background: #fff;
+  }
+  .section-body-nav {
+    @include pd-pt22;
+    height: px2rem(87px);
+    border-bottom:px2rem(1px) solid #dadada;
+    overflow: hidden;
+    .nav-list {
+      padding-top:px2rem(8px);
+    }
+    .nav-item {
+      float: left;
+      width: 20%;
+      text-align: center;
+      font-size: px2rem(28px);
+    }
+    .w123 {
+      width: px2rem(123px);
+    }
+    .nav-item-link {
+      display: inline-block;
+      color: #666;
+      line-height: px2rem(76px);
+      width: 100%;
+      text-align: center;
+    }
+    .nav-active {
+      font-size: px2rem(30px);
+      .nav-item-link {
+        color: #333;
+        border-bottom: px2rem(6px) solid #2a8ce7;
+      }
+    }
+  }
+  .section-comment-list {
+    @include pd-pt22;
+  }
+  .section-comment-item {
+    border-bottom: px2rem(1px) solid #dadada;
+  }
+  .section-comment-link {
+    display: block;
+    span{
+      color: #999;
+    }
+  }
+  .comment-item-top {
+    padding:px2rem(30px) 0px px2rem(22px);;
+    line-height: px2rem(36px);
+  }
+  .comment-item-top-left {
+    float: left;
+    font-size: px2rem(26px);
+    color: #2a8ce7;
+    img {
+      width: px2rem(36px);
+      height: px2rem(36px);
+      vertical-align: middle;
+      border-radius: 50%;
+      margin-right: px2rem(16px);
+    }
+  }
+  .comment-item-top-right {
+    float: right;
+    padding-left: px2rem(30px);
+    height: px2rem(36px);
+    font-size: px2rem(22px);
+  }
+  .good {
+    color: #66cc66;
+    background: url("../images/mobile/index/goodcomment.png") left center no-repeat;
+    background-size: px2rem(22px) px2rem(22px);
+  }
+  .kind {
+    color: #999;
+    background: url("../images/mobile/index/commonlycomment.png") left center no-repeat;
+    background-size: px2rem(22px) px2rem(22px);
+  }
+  .bad {
+    color: #ff6600;
+    background: url("../images/mobile/index/badcomment.png") left center no-repeat;
+    background-size: px2rem(22px) px2rem(22px);
+  }
+  .comment-item-main {
+    line-height: px2rem(40px);
+    max-height: px2rem(80px);
+    overflow: hidden;
+    font-size: px2rem(28px);
+    color: #333;
+  }
+  .comment-item-bottom {
+    font-size: px2rem(22px);
+    line-height: px2rem(70px);
+    color: #999;
+    padding-bottom:px2rem(8px);
+  }
+  .comment-item-bottom-text {
+    float: left;
+  }
+  .praise{
+    position: relative;
+    display: block;
+    padding-left: px2rem(35px);
+    float: right;
+    .praise-animate-num{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: px2rem(24px);
+      height: px2rem(24px);
+      line-height: px2rem(24px);
+      font-size: px2rem(14px);
+      color: #ea544a;
+      text-align: center;
+      -webkit-transition: all .6s ease-in-out;
+      -moz-transition: all .6s ease-in-out;
+      -o-transition: all .6s ease-in-out;
+      -ms-transition: all .6s ease-in-out;
+      transition: all .6s ease-in-out;
+    }
+    .praise-animate-num-uping{
+      opacity: 0;
+      top: px2rem(-20px);
+    }
+    .praise-icon{
+      position: absolute;
+      top: px2rem(20px);
+      left: 0;
+      width: px2rem(26px);
+      height: px2rem(24px);
+      background: url("../images/mobile/index/comments/icons.png") left center no-repeat;
+      background-size: px2rem(1000px) px2rem(1000px);
+      background-position: 0 0;
+    }
+    .praise-icon-hov{
+      background-position: px2rem(-30px) 0;
+    }
+    .praise-txt{
+      font-size: px2rem(22px);
+      color: #999999;
+    }
+    .praise-txt-hov{
+      color: #ffa42f;
+    }
+  }
+  .comment-item-bottom-line {
+    float: left;
+    padding: 0px px2rem(20px);
+  }
+  .comment-more-wrap {
+    margin-top: px2rem(-2px);
+    .mod-extra {
+      width: 100%;
+      height: px2rem(1px);
+      background: #fff;
+      border-top:px2rem(1px) solid #fff;
+    }
+    .mod-comment-more {
+      border-top:px2rem(1px) solid #dadada;
+      display: block;
+      width: 100%;
+      font-size: px2rem(28px);
+      line-height: px2rem(90px);
+      color: #2a8ce7;
+      height: px2rem(88px);
+      text-align: center;
+    }
+    .more-disable {
+      color: #949494;
+    }
+  }
+.mod-nodata .nodata-img img {
+  width: px2rem(167px);
+  height: px2rem(172px);
+}
+body{
+  padding-bottom: px2rem(96px) !important;
+}
+//底部悬浮按钮
+.section-commentBtn{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: px2rem(98px);
+  .commentBtn-wrap{
+    width: 100%;
+    padding: px2rem(13px) px2rem(34px);
+    background-color: #f7f7f7;
+    border-top: px2rem(2px) solid #e5e5e5;
+    box-sizing: border-box;
+    .commentBtn{
+      display: block;
+      width: 100%;
+      height: px2rem(70px);
+      line-height: px2rem(70px);
+      background-color: #5b9cf5;
+      color: #fff;
+      text-align: center;
+      font-size: px2rem(30px);
+      border-radius: px2rem(6px);
+    }
+  }
+}
+.commentBtn-wrap-fixed{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+footer{
+  padding-top: 0 !important;
+}
+
+
+/* 置顶精华8.1 00:00 ---8.15:24:00后删除 start */
+
+.section-comment{
+  .topIcon{
+    float: left;
+    width: px2rem(37px);
+    height: px2rem(36px);
+    margin-left: px2rem(13px);
+    @include retina('/styles/images/mobile/index/index_icons_1x_2x.png', 2, px2rem(1000px) px2rem(1000px), center center no-repeat);
+    background-position: 0 0 !important;
+  }
+  .jingHuaIcon{
+    float: left;
+    width: px2rem(37px);
+    height: px2rem(36px);
+    margin-left: px2rem(8px);
+    @include retina('/styles/images/mobile/index/index_icons_1x_2x.png', 2, px2rem(1000px) px2rem(1000px), center center no-repeat);
+    background-position: 0 px2rem(-60px) !important;
+  }
+}
+
+/* 置顶精华8.1 00:00 ---8.15:24:00后删除 end */

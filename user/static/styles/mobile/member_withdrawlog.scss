@@ -1,0 +1,71 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils'; 
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog'; 
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+
+.ui-datalist {
+	background:#fff;
+	padding-left:px2rem(30px);
+}
+.ui-dataitem{
+	height:px2rem(146px);
+	overflow:hidden;
+	.dataitem-link{
+		display: block;
+		width:100%;
+	}
+	.dataitem-right {
+		width:100%;
+		padding-left:px2rem(200px);
+		-webkit-box-sizing:border-box;
+		box-sizing:border-box;
+		line-height:px2rem(146px);
+		font-size: px2rem(28px);
+		color: #EB5E5E;
+	}
+	.dataitem-right-crash {
+		color:#000;
+		width:100%;
+		-webkit-box-sizing:border-box;
+		box-sizing:border-box;
+		padding-right:px2rem(168px);
+		overflow:hidden;
+		height:px2rem(146px);
+		text-align:left;
+		border-bottom:1px solid #E9E9E9;
+		&:nth-last-of-type(1){
+			border-bottom:0px;
+		}
+	}
+	.dataitem-right-desc {
+		text-align:right;
+		color:#43A047;
+		width:px2rem(140px);
+		// padding-right:px2rem(28px);
+		margin-left:px2rem(-168px);
+	}
+	.dataitem-right-descing {
+		color:#FFA100 ;
+	}
+	.dataitem-right-descerror {
+		color:#EB5E5E  ;
+	}
+
+	.dataitem-left {
+		margin-left:-100%;
+		width:px2rem(200px);
+		text-align:left;
+		overflow:hidden;
+		font-size:px2rem(22px);
+		line-height:px2rem(32px);
+		color:#888;
+	}
+	.dataitem-left-tit {
+		height:px2rem(32px);
+		padding-top:px2rem(40px);
+	}
+}

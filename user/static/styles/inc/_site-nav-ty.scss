@@ -1,0 +1,215 @@
+.site-nav-ty{
+  width: 100%;
+  background-color: #0079c3;
+  text-align: center;
+  .nav-line{
+	float: left;
+	height: 40px;
+	span.pipe{
+	  font-size: 18px;
+	  display: block;  line-height: 38px;
+	  padding: 0 15px;
+	  color: #fff; } }
+  .nav-item-login{
+	background-color: #ec9019;
+	&:hover{background-color: #ec6814 !important;
+	}  }
+  .hov{background-color: #006098;}
+  .nav-item{
+	position: relative;float: left;height: 40px;z-index:990; >a{
+	  font-size: 14px; display: block;
+	  line-height: 40px;
+	  padding: 0 10px; color: #fff;
+	    span.triangle{
+		position: relative;
+		display: inline-block;
+		height: 40px;width: 10px;
+		padding-left: 5px; vertical-align: top;*vertical-align: middle; }
+	  span.triangle:before{
+		position: absolute;
+		top: 17px;right: 0;content: '';
+		width: 0;height: 0;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid #fff;
+	  }  .text{color:#ea544b;} .user-photo{
+	  	width: 20px;
+	  	height: 20px;
+	  	margin-right: 6px;
+	  	border-radius: 50%;
+	  	vertical-align: middle;
+									 }}
+
+
+		.dropMenu{
+	  display: none;
+	  position: absolute;
+	  top: 40px;left: 0;
+	  &:hover{ display: block;}
+	  background-color: #fff;
+	  padding: 5px 10px;
+	  border: 1px solid #d4d4d4;box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+	  z-index: 1000;li{
+		line-height: 24px;
+		font-size: 14px;text-align: left;
+		  a{
+		  color: #333;
+		  white-space: nowrap;
+			.text{
+			  span{
+				color:#ea544b;
+			  }
+
+			}
+		  .icon{
+			width:14px;
+			height:14px;
+			display: inline-block;
+			padding:0px 10px 0px 0px;
+			vertical-align: middle;
+			overflow: hidden;
+			background:url("//www.p2peye.com/static/styles/images/common/header_common_icon.png") no-repeat;
+			@include ratioBackground($url:'//www.p2peye.com/static/styles/images/common/header_common_icon.png',$size:250px 164px);
+		  }
+		  .icon-hyzx{
+		  	width: 15px;
+		  	height: 12px;
+		  	background: url("/styles/images/common/nav-icon_normal.png") 0 -30px no-repeat;
+		  	@include ratioBackground($url:'/styles/images/common/nav-icon_double.png', $size: 100px 100px, $x:0px, $y:-30px);	
+		  }
+		  .icon-zhgl{
+		  	width: 13px;
+		  	height: 13px;
+		  	background: url("/styles/images/common/nav-icon_normal.png") 0 0 no-repeat;
+		  	@include ratioBackground($url:'/styles/images/common/nav-icon_double.png', $size: 100px 100px, $x:0px, $y:0px);
+		  }
+		  .icon-msg {
+			background-position:-34px 0px;
+			@include ratioBackgroundPosition($x:-38px,$y:0px)
+		  }
+		  .icon-interactive {
+			background-position:-34px -25px;
+			@include ratioBackgroundPosition($x:-38px,$y:-19px)
+		  }
+		  .icon-mypost {
+			background-position:-34px -48px;
+			@include ratioBackgroundPosition($x:-38px,$y:-38px)
+		  }
+		  .icon-manage {
+			background-position:-34px -72px;
+			@include ratioBackgroundPosition($x:-38px,$y:-57.5px)
+		  }.icon-app {
+			background-position:-34px -97px;
+			@include ratioBackgroundPosition($x:-38px,$y:-76px)
+		  }
+		  .icon-fans {
+			background-position:-34px -124px;
+			@include ratioBackgroundPosition($x:-38px,$y:-95px)
+		  }
+		  .icon-remind {
+			background-position:-34px -214px;
+			@include ratioBackgroundPosition($x:-107px,$y:-19px)
+		  }
+		  .icon-system {
+			background-position:-34px -192px;
+			@include ratioBackgroundPosition($x:-107px,$y:-1px)
+		  }
+		  .icon-set {
+			background-position:-34px -147px;
+			@include ratioBackgroundPosition($x:-38px,$y:-114px)
+		  }
+		  .icon-quit {
+			background-position:-34px -169px;
+			@include ratioBackgroundPosition($x:-38px,$y:-133px)
+		  }
+
+		  &:hover{
+			color:#0099e5;
+			.icon-hyzx{
+			  	width: 15px;
+			  	height: 12px;
+			  	margin-left: 2px;
+		  		padding-right: 8px;
+			  	background: url("/styles/images/common/nav-icon_normal.png") 0 -44px no-repeat;
+			  	@include ratioBackground($url:'/styles/images/common/nav-icon_double.png', $size: 100px 100px, $x:0px, $y:-44px);
+			  }
+			  .icon-zhgl{
+			  	width: 13px;
+			  	height: 13px;
+			  	margin-left: 2px;
+		  		padding-right: 8px;
+			  	background: url("/styles/images/common/nav-icon_normal.png") 0 -15px no-repeat;
+			  	@include ratioBackground($url:'/styles/images/common/nav-icon_double.png', $size: 100px 100px, $x:0px, $y:-15px);
+			  }
+			.icon-msg {
+			  background-position:0px 0px;
+			  @include ratioBackgroundPosition($x:-72px,$y:0px)
+			}
+			.icon-interactive {
+			  background-position:0px -25px;
+			  @include ratioBackgroundPosition($x:-72px,$y:-19px)
+			}
+			.icon-mypost {
+			  background-position:0px -48px;
+			  @include ratioBackgroundPosition($x:-72px,$y:-38px)
+			}
+			.icon-manage {
+			  background-position:0px -72px;
+			  @include ratioBackgroundPosition($x:-72px,$y:-57.5px)
+			}
+			.icon-app {
+			  background-position:0px -97px;
+			  @include ratioBackgroundPosition($x:-72px,$y:-76px)
+			}
+			.icon-fans {
+			  background-position:0px -124px;
+			  @include ratioBackgroundPosition($x:-72px,$y:-95px)
+			}
+			.icon-set {
+			  background-position:0px -147px;
+			  @include ratioBackgroundPosition($x:-72px,$y:-114px)
+			}
+			.icon-quit {
+			  background-position:0px -169px;
+			  @include ratioBackgroundPosition($x:-72px,$y:-133px)
+			}
+			.icon-remind {
+			  background-position:0px -214px;
+			  @include ratioBackgroundPosition($x:-142px,$y:-19px)
+			}
+			.icon-system {
+			  background-position:0px -192px;
+			  @include ratioBackgroundPosition($x:-142px,$y:0px)
+			}
+		  }}
+	  }
+	   }
+	  .discuz{
+		border-radius: 4px;
+		padding: 10px 10px 0;
+		li{padding-bottom: 10px;font-size: 12px}
+		&:before{
+		  width: 0px;
+		  content: '\20';
+		  display: block;
+		  height: 0px;
+		  border: 9px solid transparent;
+		  border-bottom-color: #fff;
+		  position: absolute;
+		  top: -18px;
+		  left: 2px;
+		}
+	  }
+	&:hover .dropMenu{display: block;} }
+  .le{  float: left;
+	.nav-item{
+	  a{
+		text-decoration: none;
+	  }
+	  &:hover{background-color: #006098;}
+	}
+
+  }
+  .ri{
+	float: right;  }
+}

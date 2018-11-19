@@ -1,0 +1,284 @@
+@charset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils'; 
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/_mobileLoading';
+
+html,body{
+	background-color: #f5f5f9;
+}
+.qt-w750{
+	width: px2rem(750px);
+	margin: 0 auto;
+}
+.ui-amount{
+	background-color: #fff;
+	padding-left: px2rem(30px); 
+	padding-right: px2rem(30px);
+	padding-top: px2rem(88px);
+	padding-bottom: px2rem(72px);
+	margin-bottom: px2rem(20px);
+}
+.ui-amount-text{
+	height: px2rem(68px);
+	line-height: px2rem(68px);
+	font-size: px2rem(28px);
+	color: #bf8713;
+	text-align: center;
+	@include text-ellipsis;
+}
+.ui-amount-money{
+	height: px2rem(90px);
+	line-height: px2rem(90px);
+	font-size: px2rem(52px);
+	color: #fc3f43;
+	text-align: center;
+	@include text-ellipsis;
+	span{
+		font-size: px2rem(30px);
+		padding-left: px2rem(12px);
+		vertical-align: middle;
+		margin-top: px2rem(-4px);
+	}
+}
+.ui-download{
+	background-color: #fff;
+	padding-left: px2rem(30px); 
+	padding-right: px2rem(30px);
+	padding-top: px2rem(30px);
+	padding-bottom: px2rem(30px);
+	margin-bottom: px2rem(20px);
+}
+.ui-download-left{
+	float: left;
+	width: px2rem(450px);
+	height: px2rem(120px);
+}
+.ui-download-right{
+	float: right;
+	width: px2rem(220px);
+	height: px2rem(74px);
+	padding-top: px2rem(20px);
+}
+.ui-download-inner{
+	height: px2rem(40px);
+	line-height: px2rem(40px);
+	font-size: px2rem(24px);
+	color: #8c8c8c;
+	@include text-ellipsis;
+	span{
+		display: inline-block;
+		width: px2rem(24px);
+		height: px2rem(24px);
+		line-height: px2rem(24px);
+		border-radius: px2rem(24px);
+		border: px2rem(2px) solid #8c8c8c;
+		vertical-align: middle;
+		text-align: center;
+		font-size: px2rem(20px);
+	}
+}
+.ui-download-btn{
+	display: block;
+	width: px2rem(220px);
+	height: px2rem(74px);
+	line-height: px2rem(74px);
+	text-align: center;
+	font-size: px2rem(24px); 
+    color: #fff;
+    background-color: #2975ff;
+    border-radius: px2rem(8px); 
+    span{
+    	display: inline-block;
+    	width: px2rem(27px);
+		height: px2rem(27px);
+		background: url(/styles/images/topic/double/mobile/download.png) 0 0 no-repeat;
+    	background-size: px2rem(27px) px2rem(27px);
+    	margin-right: px2rem(10px);
+    	vertical-align: middle;
+    	margin-top: px2rem(-2px);
+    }
+}
+.ui-ulist{
+	padding-left: px2rem(30px);
+	background-color: #fff;
+	padding-bottom: px2rem(30px);
+}
+.ui-ulist-title{
+	height: px2rem(108px);
+	line-height: px2rem(108px);
+	text-align: center;
+	font-size: px2rem(28px); 
+    color: #333;
+    font-weight: bold;
+    padding-right: px2rem(30px);
+    border-bottom: 1px solid #e9e9e9;
+}
+.ui-ulist-item{
+	height: px2rem(221px);
+    overflow: hidden;
+}
+.ui-ulist-item-box{
+	height: px2rem(120px);
+	padding-top: px2rem(50px);
+	padding-bottom: px2rem(50px);
+	padding-right: px2rem(30px);
+	border-bottom: px2rem(1px) solid #e9e9e9;
+}
+.ui-ulist-item-left{
+	float: left;
+	width: px2rem(146px);
+	height: px2rem(120px);
+	padding-right: px2rem(30px);
+}
+.ui-ulist-item-middle{
+	float: left;
+	width: px2rem(320px);
+	height: px2rem(110px);
+	padding-top: px2rem(10px);
+}
+.ui-ulist-item-right{
+	float: right;
+	width: px2rem(180px);
+	height: px2rem(74px);
+	padding-top: px2rem(22px);
+}
+.ui-ulist-item-red{
+	width: px2rem(146px);
+	height: px2rem(46px); 
+	line-height: px2rem(46px);  
+	padding-top: px2rem(48px);
+	padding-bottom: px2rem(26px);
+	background: url(/styles/images/topic/double/mobile/redbg.png) 0 0 no-repeat;
+    background-size: px2rem(146px) px2rem(120px);
+    color: #fff;
+    font-size: px2rem(30px);
+    text-align: center;
+    b{
+    	font-size: px2rem(20px);
+    	vertical-align: middle;
+    	margin-right: px2rem(6px);
+    	font-weight: normal;
+    }
+    strong{
+    	padding-right: px2rem(6px);
+    	font-weight: normal;
+    }
+}
+.ui-ulist-item-inner1{
+	height: px2rem(52px); 
+	line-height: px2rem(52px); 
+	color: #333;
+    font-size: px2rem(30px);
+    @include text-ellipsis; 
+}
+.ui-ulist-item-inner2{
+	height: px2rem(46px); 
+	line-height: px2rem(46px); 
+	color: #666;
+    font-size: px2rem(24px); 
+    @include text-ellipsis;
+}
+.ui-ulist-item-btn{
+	display: block;
+	width: px2rem(180px);
+	height: px2rem(74px);
+	line-height: px2rem(74px);
+	text-align: center;
+	font-size: px2rem(24px); 
+    color: #fff;
+    background-color: #fc3f43;
+    border-radius: px2rem(37px);
+}
+.mask-layer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.45;
+  filter: alpha(opacity=45);
+  -ms-filter: alpha(opacity=45);
+  z-index: 99
+}
+.prompt-message{
+  padding-top:px2rem(10px);
+  padding-right:px2rem(40px);
+  padding-bottom:px2rem(10px);
+  padding-left:px2rem(40px);
+  background:rgba(0,0,0,0.5);
+  color:#fff;
+  font-size:px2rem(24px);
+  line-height:px2rem(60px);
+  position:fixed;
+  left:50%;
+  top:50%;
+  z-index:100;
+  border-radius:px2rem(10px);
+  display:none;
+}
+.ui-loading{
+	width: px2rem(60px);
+	height: px2rem(60px);
+	position: fixed;
+	z-index: 100;
+	left: 50%;
+	top: 50%;
+	margin-left: px2rem(-30px); 
+	margin-top: px2rem(-30px); 
+	display: none;
+}
+/* 跳转浮窗 */
+.ui-details-jump{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: px2rem(-145px) 0 0 px2rem(-270px);
+  width: px2rem(540px);
+  border-radius: px2rem(25px);
+  text-align: center;
+  background-color: rgba(248,248,248,0.82);
+  z-index: 999;
+}
+.ui-details-jump-top{
+  padding-top: px2rem(40px);
+  padding-bottom: px2rem(8px);
+  line-height: px2rem(46px);
+  font-size: px2rem(34px);
+  color: #000;
+}
+.ui-details-jump-middle{
+  padding: 0 px2rem(28px) px2rem(40px);
+  font-size: px2rem(26px);
+  color: #888;
+  line-height: px2rem(32px);
+}
+.ui-details-jump-bottom{
+  line-height: px2rem(88px);
+  border-top: px2rem(1px) solid #7f7f7f;
+}
+.ui-details-jump-cancel{
+  float: left;
+  width: 50%;
+  color: #007AFF;
+  font-size: px2rem(34px);
+  span{
+    display: block;
+    line-height: px2rem(88px);
+    border-right: px2rem(1px) solid #7f7f7f;
+  }
+}
+.ui-details-jump-confirm{
+  float: left;
+  width: 50%;
+  color: #007AFF;
+  font-size: px2rem(34px);
+}
+
+
+
+
+
+
+

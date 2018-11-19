@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/header';
+@import '../inc/member-header';
+@import '../inc/footer';
+@import '../mod/search';
+@import '../mod/charge';
+@import '../mod/redpapersave';
+@import '../mod/floatlayer';
+@import '../mod/activity';
+.section-main {
+	padding:0px 100px 50px;
+	background:#fff
+}
+.main-title {
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	line-height:36px;
+	padding:22px;
+}
+.main-content {
+	font-size:13px;
+	line-height:22px;
+}
+.main-text {
+	padding:22px 0px;
+}

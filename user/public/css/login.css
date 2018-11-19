@@ -1,0 +1,56 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+.login-block{
+    background: #DE6262;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+float:left;
+width:100%;
+padding : 50px 0;
+}
+.banner-sec{background:url(https://static.pexels.com/photos/33972/pexels-photo.jpg)  no-repeat left bottom; background-size:cover; min-height:500px; border-radius: 0 10px 10px 0; padding:0;}
+.container{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
+.carousel-inner{border-radius:0 10px 10px 0;}
+.carousel-caption{text-align:left; left:5%;}
+.login-sec{padding: 50px 30px; position:relative;}
+.login-sec .copy-text{position:absolute; width:80%; bottom:20px; font-size:13px; text-align:center;}
+
+.login-form-desc-text {
+    /*padding-left: 82px;*/
+    font-size: 13px;
+    line-height: 28px;
+    color: #c7161d;
+    display: none;
+}
+.register-form-desc-text {
+    /*padding-left: 82px;*/
+    font-size: 13px;
+    line-height: 28px;
+    color: #c7161d;
+    display: none;
+}
+.shack {
+    -moz-animation: shack .1s .5s;
+    -webkit-animation: shack .1s .5s;
+    -o-animation: shack .1s .5s;
+    -ms-animation: shack .1s .5s;
+    animation: shack .1s .5s;
+}
+.ui-alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 4px;
+    padding: 0 25px 0 15px;
+    color: #fff;
+    font-size: 16px;
+    background-color: rgba(71, 79, 89, 0.85);
+    background-color: #474f59 \9;
+    z-index: 9999;
+}
+

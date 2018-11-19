@@ -1,0 +1,269 @@
+
+// Typography
+$text-color:       #000 !default;
+$base-font-size:   12px !default;
+$base-line-height:  1.5 !default;
+$base-font-family: tahoma, arial, \5b8b\4f53 !default;
+$support-for-html5-tags-in-ie:  true !default;
+
+// Placeholder text
+@mixin placeholder($color: #ccc) {
+  // Firefox
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1; // See https://github.com/twbs/bootstrap/pull/11526
+  }
+  &:-ms-input-placeholder { color: $color; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
+}
+
+//clearfix
+@mixin clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: '\20';
+    display: table;
+    height:0;
+    overflow:hidden;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+// ie7 inline-block hack
+@mixin ie7-inline-block {
+  *display: inline;
+  *zoom: 1;
+}
+
+//size inc
+@mixin size($width: 1px, $height: 1px, $radius: false) {
+  width: $width;
+  height: $height;
+  @if type-of($radius) == number {
+    border-radius: $radius;
+  }
+}
+
+// Set text-size-adjust property for mobile devices
+@mixin text-size-adjust($value: 100%) {
+  @each $prefix in 'webkit', 'moz', 'ms' {
+    -#{$prefix}-text-size-adjust: $value;
+  }
+}
+
+//set background-image-liner-gradient
+@mixin background-image-liner-gradient($from,$end){
+	background-image: -webkit-linear-gradient(top, $from, $end);
+	background-image: -moz-linear-gradient(top, $from ,  $end);
+  background-image: -o-linear-gradient(top, $from, $end);
+  background-image: linear-gradient(top, $from, $end);
+  background-image: -ms-linear-gradient(top, $from, $end);
+}
+
+
+@mixin text-ellipsis{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  display:block;
+}
+@mixin opacity($opacity){
+  opacity:#{$opacity};
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity*100})";
+  filter: alpha(opacity=#{$opacity*100});
+}
+
+
+.clearfix{
+  @include clearfix;
+}
+
+.clear{
+  display:table;
+  height:0;
+  overflow:hidden;
+  clear:both;
+  line-height:0;
+}
+@mixin fadein($s){
+   -webkit-transition: all $s ease-in-out;
+   -moz-transition: all $s ease-in-out;
+   transition: all $s ease-in-out;
+}
+@mixin scale{
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -o-transform:scale(1.1); 
+  -ms-transform:scale(1.1);
+  transform:scale(1.1);
+}
+@mixin ratio(){
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5){
+    @content;
+  }
+  @media only screen and (min--moz-device-pixel-ratio: 1.5){
+    @content;
+  }
+  @media only screen and (min-device-pixel-ratio: 1.5){
+    @content;
+  }
+  @media only screen and (-o-min-device-pixel-ratio:3/2){
+    @content;
+  }
+}
+@mixin ratioBackground($bgcolor:transparent,$url:'',$size:contain,$x: 0px,$y: 0px ){
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5){
+    background:$bgcolor url($url) $x $y no-repeat;
+    background-size:$size;
+  }
+  @media only screen and (min--moz-device-pixel-ratio: 1.5){
+    background:$bgcolor url($url) $x $y no-repeat;
+    background-size:$size;
+  }
+  @media only screen and (min-device-pixel-ratio: 1.5){
+    background:$bgcolor url($url) $x $y no-repeat;
+    background-size:$size;
+  }
+  @media only screen and (-o-min-device-pixel-ratio:3/2){
+    background:$bgcolor url($url) $x $y no-repeat;
+    background-size:$size;
+  }
+}
+@mixin ratioBackgroundPosition($x:0px ,$y:0px ){
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5){
+    background-position:$x $y;
+  }
+  @media only screen and (min--moz-device-pixel-ratio: 1.5){
+    background-position:$x $y;
+  }
+  @media only screen and (min-device-pixel-ratio: 1.5){
+    background-position:$x $y;
+  }
+  @media only screen and (-o-min-device-pixel-ratio:3/2){
+    background-position:$x $y;
+  }
+}
+
+
+
+.spacpce-form-list{
+  padding-top: 10px;
+}
+.spacpce-form-left{
+  display: block;
+  float: left;
+  padding-left: 50px;
+  height: 36px;
+  line-height: 36px;
+  width: 100px;
+  font-size: 14px;
+  color: #666;
+}
+.spacpce-form-center{
+  float: left;
+}
+.spacpce-form-input-value{
+  display: block;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+}
+.spacpce-form-input{
+  display: block;
+  float: left;
+  width: 278px;
+  padding: 0 10px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #e8e8e8;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.spacpce-form-input-m{
+  width: 150px;
+}
+.spacpce-form-input-btn{
+  display: block;
+  float: left;
+  height: 36px;
+  width: 110px;
+  line-height: 36px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-left: 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #0080cc;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.spacpce-form-input-btn:hover{
+  background-color: #0070bc;
+}
+.spacpce-form-input-btn.disabled{
+  background-color: #ccc;
+}
+.spacpce-form-input-link{
+  display: block;
+  float: left;
+  margin-left: 20px;
+  height: 36px;
+  line-height: 36px;
+}
+.spacpce-form-error{
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #ea544a;
+}
+.spacpce-form-error span{
+  display: none;
+}
+.spacpce-form-error i{
+  display: block;
+  width: 14px;
+  height:12px;
+  margin: 3px 3px 0 0;
+  float: left;
+  background: url(/styles/images/member/icon.png);
+  background-position:-318px -52px;
+  @include ratioBackground($url:'/styles/images/member/icon.png',$size:550px 140px);
+  @include ratioBackgroundPosition($x:-318px ,$y:-80px );
+}
+.spacpce-form-submit{
+  height: 34px;
+  width: 90px;
+  line-height: 32px;
+  border: 1px solid #0080cc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;;
+  font-size: 14px;
+  color: #0080cc;
+  text-align: center;
+  margin: 10px 0 0 200px;
+  background-color: transparent;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+.spacpce-form-submit:hover{
+  background-color: #0080cc;
+  color: #fff;
+}
+
+.spacpce-form-submit.disabled{
+  border-color: #ccc;
+  color: #fff;
+  background-color: #ccc;
+}

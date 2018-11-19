@@ -1,0 +1,357 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/grid';
+@import '../inc/m_ui';
+@mixin center{
+  padding-left:px2rem(33px);
+  padding-right:px2rem(33px);
+}
+body {
+  background:#fff;
+  position:relative;
+}
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+  font-family: 'Microsoft YaHei';
+}
+.banner {
+  .img {
+    img {
+      float: left;
+      width:100%;
+    }
+  }
+}
+.form {
+  position:relative;
+  margin-top:px2rem(82px);
+  @include center;
+  input {
+    border:none;
+  }
+  .tit {
+//    font-size:px2rem(48px);
+//    font-weight: bold;
+//    color:#fb615a;
+//    line-height: px2rem(107px);
+    width:px2rem(531px);
+    height:px2rem(93px);
+    position:relative;
+    z-index: 2;
+    margin:0px auto;
+    line-height: px2rem(62px);
+    color:#fff;
+    font-size: px2rem(34px);
+    font-weight: bold;
+    text-align: center;
+    background: url("/styles/images/help/enroll/xtyyh_title.png") center top no-repeat;
+    background-size: cover;
+    margin-bottom:px2rem(20px);
+  }
+  .item {
+    height:px2rem(78px);
+    padding-bottom:px2rem(30px);
+    .input {
+      padding-left:px2rem(30px);
+      border:1px solid #d9d9d9;
+      border-radius: 8px;
+      height: px2rem(78px);
+      overflow: hidden;
+    }
+    input {
+      font-size:px2rem(30px);
+      background: #fff;
+      height: px2rem(78px);
+      width: 100%;
+      text-indent:px2rem(50px);
+      float: left;
+    }
+    .wrap {
+      float: left;
+      width:100%;
+    }
+    .usename .icon{
+      background:url("/styles/images/help/mobile/zhuce/usename.png") no-repeat  left center;
+      background-size:px2rem(32px) px2rem(36px);
+    }
+    .password .icon{
+      background:url("/styles/images/help/mobile/zhuce/password.png") no-repeat  left center;
+      background-size:px2rem(29px) px2rem(36px);
+    }
+    .code {
+      width:px2rem(380px);
+      float: left;
+      .icon{
+        background:url("/styles/images/help/mobile/zhuce/code.png") no-repeat  left center;
+        background-size:px2rem(32px) px2rem(36px);
+      }
+    }
+    .phone .icon{
+      background:url("/styles/images/help/mobile/zhuce/phone.png") no-repeat  left center;
+      background-size:px2rem(26px) px2rem(36px);
+    }
+    .phone-code {
+      width:px2rem(380px);
+      float: left;
+      .icon{
+        background:url("/styles/images/help/mobile/zhuce/phone-code.png") no-repeat  left center;
+        background-size:px2rem(26px) px2rem(35px);
+      }
+    }
+    .icon {
+      float: left;
+      width:px2rem(52px);
+      height: 100%;
+      margin-left:-100%;
+    }
+    .changecode {
+      width:px2rem(246px);
+      height: px2rem(80px);
+      img {
+        width: 100%;
+      }
+    }
+    .phonecode {
+      width:px2rem(244px);
+      height:px2rem(78px);
+      border:1px solid #fb615a;
+      border-radius: 8px;
+      color:#fb615a;
+      font-size: px2rem(24px);
+      line-height: px2rem(78px);
+      text-align: center;
+    }
+    .disabled {
+      background: #787878;
+      border:1px solid #787878;
+      color:#fff;
+    }
+  }
+  .submit {
+    padding-bottom:px2rem(30px);
+    input {
+      float: left;
+      width: 100%;
+      font-size: px2rem(32px);
+      color:#fff;
+      background: #fb615a;
+      height: px2rem(88px);
+      text-align: center;
+      line-height: px2rem(88px);
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  }
+  .item-gou {
+    color:#787878;
+    padding-bottom:px2rem(22px);
+    .item-gou-left {
+      float: left;
+    }
+    .login{
+      float: right;
+      color: #0080cc;
+      font-size: px2rem(24px);
+      line-height: 1em;
+      padding-right: px2rem(15px);
+    }
+    span {
+      float: left;
+      font-size: px2rem(24px);
+      line-height: 1em;
+      padding-left: px2rem(15px);
+    }
+    a {
+      float: left;
+      color: #0080cc;
+      font-size: px2rem(24px);
+      line-height: 1em;
+    }
+  }
+  .forget {
+    text-align: center;
+    font-size:px2rem(30px);
+    padding-bottom:px2rem(8px);
+    line-height: 1em;
+    .wrap {
+      float: left;
+      width:100%;
+    }
+    a {
+      color:#383838;
+    }
+  }
+}
+.local-tyqbind {
+  color:#383838;
+  .mobilenumber {
+    font-size: px2rem(72px);
+    font-weight: bold;
+    font-family: arial;
+    line-height: px2rem(80px);
+  }
+  .desc {
+    line-height: px2rem(86px);
+    padding-bottom:px2rem(16px);
+    font-size: px2rem(30px);
+  }
+}
+.section-title {
+  font-size:px2rem(46px);
+  color:#383838;
+  font-weight: bold;
+  line-height: px2rem(90px);
+  text-align: center;
+  margin-top:px2rem(-62px);
+}
+.mod-public {
+  font-family: 'Microsoft YaHei';
+  position:relative;
+  .mod-tit {
+    width:px2rem(531px);
+    height:px2rem(93px);
+    position:relative;
+    z-index: 2;
+    margin:0px auto;
+    line-height: px2rem(62px);
+    color:#fff;
+    font-size: px2rem(34px);
+    font-weight: bold;
+    text-align: center;
+    background: url("/styles/images/help/enroll/xtyyh_title.png") center top no-repeat;
+    background-size: cover;
+  }
+}
+.public2 {
+  margin-top:px2rem(10px);
+  .mod-tit {
+    margin-bottom:px2rem(20px);
+  }
+  .public-list {
+    width:px2rem(750px);
+    height:px2rem(1113px);
+    margin:0px auto;
+    background: url("/styles/images/help/mobile/zhuce/xtyyh_main.jpg") center top  no-repeat;
+    background-size:contain;
+    position:relative;
+  }
+  .link {
+    width:px2rem(249px);
+    height:px2rem(60px);
+    display: inline-block;
+    color:#fff;
+    font-size: px2rem(27px);
+    font-weight: bold;
+    line-height: px2rem(52px);
+    position:absolute;
+    text-decoration: none;
+    text-align: center;
+    background: url("/styles/images/help/mobile/zhuce/xtyyh_btn.png") center top no-repeat;
+    background-size: contain;
+  }
+  .link-zha {
+    left:px2rem(256px);
+    top:px2rem(150px);
+    background: url("/styles/images/help/mobile/zhuce/xtyyh_btn_.png") center top no-repeat;
+    background-size: contain;
+  }
+  .link-lao {
+    left:px2rem(76px);
+    top:px2rem(423px);
+  }
+  .link-jin {
+    top:px2rem(718px);
+    left:px2rem(362px);
+  }
+  .link-loan {
+    left:px2rem(186px);
+    top:px2rem(1052px);
+  }
+}
+.public3 {
+  margin-top:px2rem(60px);
+  .public-list {
+    margin-top: px2rem(-40px);
+    background: #f4f4f4;
+  height:px2rem(496px);
+    padding-bottom: px2rem(54px);
+    padding-top:px2rem(84px);
+    .public-list-img {
+      width:px2rem(696px);
+      height:px2rem(496px);
+      margin:0px auto;
+      background: url("/styles/images/help/mobile/zhuce/xtyyh_prize.jpg") top center no-repeat;
+      background-size: px2rem(696px) px2rem(496px);
+    }
+  }
+}
+.footer{
+  background: #474f59;
+  padding-top:px2rem(48px);
+  height:px2rem(188px);
+  p{
+    line-height: px2rem(36px);
+    color: #fff;
+    font-size: px2rem(24px);
+    text-align: center;
+  }
+}
+.layer {
+  position: fixed;
+  display: none;
+  z-index: 5;
+  height: 100%;
+  width:100%;
+  top:0px;
+  left: 0px;
+  .mask {
+    position:absolute;
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    width: 100%;
+  }
+  .prompt {
+    position: fixed;
+    z-index: 5;
+    top:50%;
+    margin-top:px2rem(-100px);
+    text-align: center;
+    width:100%;
+    .wrap {
+      margin:0 auto;
+      background: #fff;
+      width:px2rem(500px);
+      height: px2rem(200px);
+      border-radius: 8px;
+    }
+    .desc {
+      font-size: px2rem(28px);
+      height: px2rem(104px);
+      color:#383838;
+      line-height: 1.2em;
+      span {
+        display: block;
+        padding-top:px2rem(52px);
+      }
+    }
+    .close {
+      width: px2rem(140px);
+      margin: 0 auto;
+    }
+    a {
+      float: left;
+      background: #fb615a;
+      width: px2rem(140px);
+      height: px2rem(50px);
+      color:#fff;
+      font-weight: bold;
+      font-size: px2rem(24px);
+      line-height: px2rem(50px);
+      border-radius: 8px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

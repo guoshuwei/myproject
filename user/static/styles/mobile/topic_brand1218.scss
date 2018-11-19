@@ -1,0 +1,222 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils'; 
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../inc/m_ui';
+@import '../inc/footer-mobile';
+@import '../mod/getkillloans-mobile';
+
+
+body{
+    background-color: #320055;
+    background-position: center 0;         
+    background-size: px2rem(750px) px2rem(451px);
+    background-image: url(/styles/images/topic/brand1218/mobile/banner.jpg);
+    background-repeat: no-repeat;
+}
+
+.ui-section{
+    width: px2rem(750px);
+    margin: 0 auto;
+}
+.qt-w{
+    margin-left: px2rem(36px);
+    margin-right: px2rem(36px);
+}
+
+.ui-banner{
+    height: px2rem(520px);
+}
+//title start
+.ui-brand18-title{
+    text-align: center;
+}
+.ui-brand18-taga{
+    display: inline-block;
+    margin-left: px2rem(20px);
+    margin-right: px2rem(20px);
+    padding: 0 px2rem(15px);
+    height: px2rem(36px);
+    line-height: px2rem(36px);
+    text-align: center;
+    font-size: px2rem(24px);
+    color: #fff;
+    border-radius: px2rem(5px);
+    background-color: #f0412f;
+    &:active{
+        background-color: #db3726;
+    }
+}
+.ui-brand18-title-content{
+    font-size: px2rem(50px);
+    margin: 0 px2rem(10px);
+    font-weight: bold;
+    color: #fff;
+    vertical-align: middle;
+}
+.ui-brand18-title-note{
+    display: inline-block;
+    font-size: px2rem(28px);
+    color: #fff;
+    line-height: px2rem(47px);
+    text-align: center;
+}
+.ui-icons-title-left{
+    display: inline-block;
+    width: px2rem(134px);
+    height: px2rem(45px);
+    line-height: px2rem(40px);
+    background: url(/styles/images/topic/brand818/mobile/icons.png) no-repeat 0 px2rem(-161px);
+    background-size: px2rem(700px) px2rem(700px);
+    vertical-align: middle;
+}
+.ui-icons-title-right{
+    display: inline-block;
+    width: px2rem(134px);
+    height: px2rem(45px);
+    line-height: px2rem(40px);
+    background: url(/styles/images/topic/brand818/mobile/icons.png) no-repeat 0 px2rem(-220px);
+    background-size: px2rem(700px) px2rem(700px);
+    vertical-align: middle;
+}
+.ui-icons-title-left-little{
+    display: inline-block;
+    width: px2rem(107px);
+    height: px2rem(45px);
+    line-height: px2rem(40px);
+    background: url(/styles/images/topic/brand818/mobile/icons.png) no-repeat px2rem(-253px) px2rem(-314px);
+    background-size: px2rem(700px) px2rem(700px);
+    vertical-align: middle;
+}
+.ui-icons-title-right-little{
+    display: inline-block;
+    width: px2rem(107px);
+    height: px2rem(45px);
+    line-height: px2rem(40px);
+    background: url(/styles/images/topic/brand818/mobile/icons.png) no-repeat px2rem(-253px) px2rem(-371px);
+    background-size: px2rem(700px) px2rem(700px);
+    vertical-align: middle;
+}
+//title end
+
+.ui-brandlead{
+    width: px2rem(678px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.ui-brandlead-top{
+    height: px2rem(300px);
+}
+.ui-brandlead-item{
+    margin-top: px2rem(20px);
+    width: px2rem(600px);
+    height: px2rem(610px);
+    padding: px2rem(40px);
+    border-radius: px2rem(20px);
+    overflow: hidden;
+    background: url(/styles/images/topic/brand1218/mobile/lead.png) no-repeat 0 0;
+    background-size: px2rem(678px) px2rem(690px);
+}
+.ui-brandlead-title{
+    font-weight: bold;
+    font-size: px2rem(50px);
+    color: #fff;
+    line-height: px2rem(70px);
+    span{
+        color: #ffff16;
+    }
+
+}
+.ui-brandlead-note{
+    line-height: px2rem(70px);
+    color: #fff;
+    font-size: px2rem(24px);
+}
+
+.ui-brandlead-time{
+    margin: 0 auto;
+    width: px2rem(168px);
+    height: px2rem(37px);
+    line-height: px2rem(37px);
+    border: 2px solid #fff;
+    border-radius: px2rem(18px);
+    font-size: px2rem(22px);
+    color: #fff;
+    text-align: center;
+}
+.ui-brandlead-app{
+    img{
+        display: block;
+        width: px2rem(155px);
+        margin: 0 auto px2rem(60px);
+    }
+}
+
+.ui-brandlead-list{
+    padding-top: px2rem(50px);
+    padding-left: px2rem(130px);
+    font-size: px2rem(24px);
+    color: #fff;
+    line-height: px2rem(32px);
+    text-align: left;
+    strong{
+        color: #ffff16;
+    }
+}
+.ui-brandlead-button{
+    a{
+        display: inline-block;
+        width: px2rem(340px);
+        height: px2rem(90px);
+        line-height: px2rem(90px);
+        text-align: center;
+        font-size: px2rem(34px);
+        color: #fff;
+        border-radius: px2rem(10px);
+        background-color: #ff2c27;
+        &:active{
+            background-color: #db342c;
+        }
+    }
+}
+
+
+
+//rules
+.ui-rules{
+    padding: px2rem(18px) px2rem(38px) 0;
+    border-radius: px2rem(20px);
+    background-color: #9720ff;
+    color: #fff;
+} 
+.ui-rules-list-item{
+    padding: px2rem(25px) 0;
+    font-size: px2rem(28px);
+    border-bottom: 1px dashed #474974;
+    line-height: px2rem(44px);
+    a{
+        color: #ff2c27;
+    }
+}
+.ui-rules-list-item:last-child{
+    border: 0 none;
+}
+.mt70{
+    margin-top: px2rem(70px);
+}
+// rules end
+.ui-friendly{
+    line-height: px2rem(40px);
+    padding-bottom: px2rem(30px);
+    text-align: center;
+    font-size: px2rem(24px);
+    color: #67657d;
+}
+
+
+
+
+
+

@@ -1,0 +1,830 @@
+@charset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../inc/m_ui';
+@import '../mod/dialog';
+
+html {
+  max-height:999999px;
+  background-color: #272c6c;
+  font-family: "Microsoft YaHei",sans-serif;
+}
+a:hover{
+  text-decoration: none;
+}
+/* 盒子 */
+
+/* 头图 */
+.head-img {
+  width: 10rem;
+}
+/* 大红包 */
+.got-it {
+  display: none;
+  width: px2rem(690px);
+  height: px2rem(398px);
+  padding-top: px2rem(50px);
+  margin: px2rem(30px) auto 0;
+  text-align: center;
+  background-image: url(/styles/images/weixin/big_red_lucky_money.png);
+  background-repeat: no-repeat;
+  background-size: px2rem(690px) px2rem(448px);
+}
+.got-it-congratulations {
+  display: block;
+  height:px2rem(30px);
+  font-size: px2rem(30px);
+  color:#666;
+}
+.got-it-congratulations em {
+  color:#fc4b4b;
+}
+.got-it-money {
+  display: block;
+  margin-top: px2rem(30px);
+  color:#fc4b4b;
+  height:px2rem(90px);
+  line-height: px2rem(90px);
+  font-size: px2rem(110px);
+}
+.got-it-money em {
+  font-weight:normal;
+  font-size: px2rem(56px);
+}
+.got-it-tips {
+  display: block;
+  color:#a69800;
+  margin-top: px2rem(30px);
+  font-size: px2rem(24px);
+  line-height: px2rem(87px);
+}
+.got-it-share {
+  display: block;
+  margin:0 auto;
+  width: px2rem(574px);
+  height: px2rem(96px);
+  line-height: px2rem(96px);
+  color:#ff5a5a;
+  font-size: px2rem(44px);
+}
+
+/* 输入手机号领取红包 */
+.got-it-phonenumber{
+  display: none;
+  width: px2rem(690px);
+  height: px2rem(383px);
+  padding-top: px2rem(46px);
+  margin: px2rem(30px) auto 0;
+  text-align: center;
+  background-image: url(/styles/images/weixin/big_red_mobile.png);
+  background-repeat: no-repeat;
+  background-size: px2rem(690px) px2rem(429px);
+}
+.got-it-phonenumber-tips{
+  display: block;
+  color:#666;
+  font-size: px2rem(30px);
+  line-height: px2rem(30px);
+}
+.got-it-phonenumber-input{
+  display: block;
+  height: px2rem(36px);
+  line-height: px2rem(36px);
+  color:#333;
+  border:1px solid #e4e4e4;
+  width: px2rem(510px);
+  padding: px2rem(25px) px2rem(30px);
+  margin: px2rem(33px) auto px2rem(53px);
+  font-size: px2rem(36px);
+  -webkit-border-radius: px2rem(20px);
+  -moz-border-radius: px2rem(20px);
+  border-radius: px2rem(20px);
+}
+.got-it-phonenumber-btn{
+  display: block;
+  margin:0 auto;
+  width: px2rem(574px);
+  height: px2rem(96px);
+  line-height: px2rem(96px);
+  color:#ff5a5a;
+  font-size: px2rem(44px);
+}
+.got-it-phonenumber-app{
+  height:px2rem(80px);
+  line-height: px2rem(80px);
+  font-size: px2rem(24px);
+  color: #ffd8d4;
+  text-shadow: px2rem(1px) px2rem(1px) px2rem(1px) #b91919;
+}
+.got-it-phonenumber-app:hover{
+  text-decoration: none;
+}
+.got-it-phonenumber-app em{
+  display: inline-block;
+  height:px2rem(12px);
+  width:px2rem(12px);
+  background-image: url(/styles/images/weixin/little_point.png);
+  background-size: px2rem(12px) px2rem(12px);
+}
+/* 加载中 */
+@keyframes loadingRun{
+  0%{background-image:url(/styles/images/weixin/loading/loading_01.png);}
+  14.286%{background-image:url(/styles/images/weixin/loading/loading_02.png);}
+  28.571%{background-image:url(/styles/images/weixin/loading/loading_03.png);}
+  42.857%{background-image:url(/styles/images/weixin/loading/loading_04.png);}
+  57.143%{background-image:url(/styles/images/weixin/loading/loading_05.png);}
+  71.429%{background-image:url(/styles/images/weixin/loading/loading_06.png);}
+  85.714%{background-image:url(/styles/images/weixin/loading/loading_07.png);}
+  100%{background-image:url(/styles/images/weixin/loading/loading_08.png);}
+}
+@keyframes loadingRun2{
+  0%,100%{background-image:url(/styles/images/weixin/loading/loading_01.png);}
+  12.5%{background-image:url(/styles/images/weixin/loading/loading_02.png);}
+  25%{background-image:url(/styles/images/weixin/loading/loading_03.png);}
+  37.5%{background-image:url(/styles/images/weixin/loading/loading_04.png);}
+  50%{background-image:url(/styles/images/weixin/loading/loading_05.png);}
+  62.5%{background-image:url(/styles/images/weixin/loading/loading_06.png);}
+  75%{background-image:url(/styles/images/weixin/loading/loading_07.png);}
+  87.5%{background-image:url(/styles/images/weixin/loading/loading_08.png);}
+}
+.loading{
+  display: none;
+  width:px2rem(690px);
+  margin:0 auto;
+}
+.loading em{
+  display: block;
+  width:px2rem(340px);
+  height:px2rem(350px);
+  background-size:px2rem(340px) px2rem(340px);
+  margin:0 auto;
+  animation-name:loadingRun2;
+  animation-duration:.6s;
+  animation-iteration-count:infinite;
+}
+.loading-word{
+  height:px2rem(40px);
+  line-height:px2rem(40px);
+  color:#fff;
+  margin-top: px2rem(30px);
+  display: block;
+  text-align: center;
+  font-size: px2rem(28px);
+}
+/* 奖励提示 */
+.tip-words{
+  display: none;
+  height: px2rem(70px);
+  line-height: px2rem(70px);
+  text-align: center;
+  font-size: px2rem(30px);
+  color:#fff;
+}
+/* 修改手机号 */
+.modify{
+  display: none;
+  width: px2rem(630px);
+  padding:0 px2rem(30px);
+  margin: 0 auto px2rem(30px);
+  background-color: #eee;
+  border-radius: px2rem(15px);
+  color: #333;
+}
+.current-number{
+  display: block;
+  text-align: center;
+  height:px2rem(70px);
+  line-height:px2rem(70px);
+  font-size: px2rem(24px);
+  color: #333;
+}
+.current-number em {
+  color: #fc4b4b;
+}
+.modify-input-box{
+  position: relative;
+  height: px2rem(90px);
+  width: px2rem(630px);
+  border-radius: px2rem(10px);
+  overflow: hidden;
+  background-color: #fff;
+}
+.modify-input-icon{
+  position: absolute;
+  left: px2rem(29px);
+  top: px2rem(27px);
+  height: px2rem(40px);
+  width: px2rem(30px);
+  background-image: url(/styles/images/weixin/mobile.png);
+  background-size: px2rem(24px) px2rem(34px);
+  background-repeat: no-repeat;
+}
+.modify-input{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: px2rem(36px);
+  width: px2rem(562px);
+  line-height: px2rem(36px);
+  padding: px2rem(27px) 0 px2rem(27px) px2rem(68px);
+  font-size: px2rem(36px);
+  border: none;
+}
+.modify-submit{
+  height: px2rem(90px);
+  width: px2rem(630px);
+  border-radius: px2rem(10px);
+  margin-top: px2rem(30px);
+  background-color: #fc4b4b;
+  line-height: px2rem(90px);
+  text-align: center;
+  color:#fff;
+  font-size: px2rem(36px);
+  border: none;
+}
+.modify-tips{
+  display: block;
+  text-align: center;
+  height:px2rem(70px);
+  line-height:px2rem(70px);
+  font-size: px2rem(24px);
+  color: #333;
+}
+/* 已获得的奖励列表 */
+.card{
+  display: none;
+  width: px2rem(630px);
+  padding:px2rem(30px);
+  margin: 0 auto;
+  background-color: #eee;
+  border-radius: px2rem(15px);
+  color: #333;
+}
+.card.no-card{
+  margin-top: px2rem(20px);
+  display: block;
+}
+.card.no-card.error-tips,.card.no-card.error-tips-update{
+  display: none;
+}
+.card-list{
+  margin-bottom: px2rem(20px);
+}
+.card-list-item{
+  position: relative;
+  height: px2rem(130px);
+  width: px2rem(590px);
+  padding: px2rem(15px) px2rem(20px);
+  border-radius: px2rem(10px);
+  background-color:#fff;
+}
+.card-list-item+.card-list-item{
+  margin-top: px2rem(20px);
+}
+.card-none{
+  display: block;
+  font-size: px2rem(36px);
+  font-weight: bold;
+  text-align: center;
+  color: #666;
+  height: px2rem(130px);
+  line-height: px2rem(130px);
+}
+.perforation-l{
+  position: absolute;
+  left: px2rem(-10px);
+  top: px2rem(70px);
+  height: px2rem(20px);
+  width: px2rem(20px);
+  background-color: #eee;
+  border-radius: 50%;
+}
+.perforation-r{
+  position: absolute;
+  right: px2rem(-10px);
+  top: px2rem(70px);
+  height: px2rem(20px);
+  width: px2rem(20px);
+  background-color: #eee;
+  border-radius: 50%;
+}
+.card-list-item-lt{
+  float: left;
+  width:px2rem(450px);
+}
+.card-list-item-gt{
+  float: left;
+  width:px2rem(102px);
+  height:px2rem(102px);
+  margin-left: px2rem(36px);
+}
+.card-list-item-gt img{
+  width:px2rem(102px);
+  height:px2rem(102px);
+}
+.card-list-item-bd{
+  height: px2rem(70px);
+  padding-bottom: px2rem(19px);
+  margin-bottom: px2rem(15px);
+  border-bottom: 1px dashed #e7e7e7;
+}
+.card-item-info{
+
+  float: left;
+}
+.card-item-info-title{
+  display: block;
+  color:#fc4b4b;
+  font-size: px2rem(30px);
+  height: px2rem(30px);
+  line-height: px2rem(30px);
+  max-width: px2rem(290px);
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+.card-item-info-money{
+  margin-top: px2rem(15px);
+  display: block;
+  color:#999;
+  font-size: px2rem(24px);
+  height: px2rem(24px);
+  line-height: px2rem(24px);
+  max-width: px2rem(290px);
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+.card-list-item-lt .card-item-info-title{
+  max-width: px2rem(450px);
+}
+.card-item-rate{
+  float: right;
+  color: #fc4b4b;
+  font-size: px2rem(80px);
+  font-weight: bold;
+}
+.card-item-rate em{
+  font-size: px2rem(30px);
+  font-weight: normal;
+}
+.card-list-item-ft{
+  display: block;
+  font-size: px2rem(24px);
+  height: px2rem(24px);
+  line-height: px2rem(24px);
+}
+.card-list-item-ft .overdue{
+  float: left;
+  color:#d0d0d0;
+}
+.card-list-item-ft .card-item-use{
+  float: right;
+  color:#fc4b4b;
+}
+
+.account{
+  height: px2rem(24px);
+  line-height: px2rem(24px);
+  text-align: center;
+  font-size: px2rem(24px);
+}
+.account-number{
+  color:#333;
+}
+.account-change{
+  color:#fc4b4b;
+}
+.use-btn{
+  display: block;
+  height: px2rem(90px);
+  width: px2rem(630px);
+  border-radius: px2rem(10px);
+  margin-top: px2rem(30px);
+  background-color: #fc4b4b;
+  line-height: px2rem(90px);
+  text-align: center;
+  color:#fff;
+  font-size: px2rem(36px);
+}
+.active-link{
+  display: block;
+  padding-top:px2rem(15px);
+  margin-bottom: px2rem(-15px);
+  font-size: px2rem(24px);
+  text-align: center;
+  color: #fc4b4b;
+}
+.active-link:active{
+  text-decoration: none;
+}
+/* 大家的手气 */
+.luck{
+  display: none;
+  width: px2rem(650px);
+  padding: 0 px2rem(20px) px2rem(10px);
+  margin: px2rem(30px) auto 0;
+  background-color: #eee;
+  border-radius: px2rem(15px);
+  color: #333;
+}
+.luck-list-item{
+  height:px2rem(60px);
+  padding-bottom: px2rem(30px);
+}
+.luck-list-item+.luck-list-item{
+  border-top:1px dashed #d9d9d9;
+  padding-top: px2rem(30px);
+}
+.head-portrait{
+  display: block;
+  float: left;
+  height: px2rem(60px);
+  width: px2rem(60px);
+  border-radius: px2rem(30px);
+  overflow: hidden;
+}
+.luck-list-info{
+  float: left;
+  margin-left: px2rem(15px);
+}
+.luck-list-name{
+  display: block;
+  height:px2rem(36px);
+  line-height: px2rem(36px);
+  color:#333;
+  font-size: px2rem(24px);
+}
+.luck-list-time{
+  display: block;
+  height:px2rem(24px);
+  line-height: px2rem(24px);
+  color:#999;
+  font-size: px2rem(20px);
+}
+.luck-list-money{
+  float: right;
+  height: px2rem(60px);
+  line-height: px2rem(60px);
+  color:#333;
+  font-size: px2rem(30px);
+}
+/* 规则 */
+.rules {
+  width: px2rem(650px);
+  padding: 0 px2rem(20px) px2rem(20px);
+  margin: px2rem(30px) auto px2rem(30px);
+  background-color: #eee;
+  border-radius: px2rem(15px);
+  color: #333;
+}
+.rules-share-after,.rules-share-before,.rules-active{
+  display: none;
+}
+.rules-title {
+  position: relative;
+  height: px2rem(80px);
+}
+.rules-title-line {
+  display: block;
+  position: absolute;
+  top:px2rem(39px);
+  background-color: #b7b7b7;
+  height:px2rem(2px);
+  width:100%;
+  z-index: 1;
+}
+.rules-title-word {
+  position: relative;
+  display: block;
+  height: px2rem(80px);
+  width:px2rem(170px);
+  background-color: #eee;
+  line-height: px2rem(80px);
+  font-size: px2rem(30px);
+  margin:0 auto;
+  text-align: center;
+  z-index: 3;
+}
+.rules-list-item {
+  font-size: px2rem(24px);
+  line-height: px2rem(45px);
+  padding-left: 1.2em;
+  max-height: 99999px;
+}
+.rules-list-item:first-letter {
+  margin-left: -1.2em;
+}
+
+/* 浮层 */
+.float-layer{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height:100%;
+  width:100%;
+  background-color:rgba(0,0,0,0.7);
+  z-index: 10;
+}
+.share-success-layer{
+  display: none;
+}
+.share-tips-layer{
+  display: none;
+}
+.share-tips-layer em{
+  display: block;
+  height: px2rem(572px);
+  width: px2rem(650px);
+  margin:px2rem(65px) auto 0;
+  background-image: url(/styles/images/weixin/share_layer.png);
+  background-repeat: no-repeat;
+  background-size: px2rem(650px) px2rem(572px);
+}
+.share-success{
+  position: absolute;
+  left:50%;
+  top:50%;
+  margin-left: px2rem(-200px);
+  margin-top: px2rem(-233px);
+  height:px2rem(466px);
+  width:px2rem(400px);
+}
+.share-success-box{
+  position: relative;
+  height:px2rem(230px);
+  width:px2rem(400px);
+  padding-top:px2rem(50px);
+  border-radius:px2rem(10px);
+  background-color:#333;
+  z-index: 11;
+  color:#fff;
+}
+.share-success-box span{
+  display: block;
+}
+.share-success-box-title{
+  text-align: center;
+  font-size: px2rem(36px);
+  line-height: px2rem(36px);
+  padding-bottom: px2rem(26px);
+}
+.share-success-box-content{
+  position: relative;
+  height:px2rem(30px);
+  font-size: px2rem(30px);
+  line-height: px2rem(30px);
+  padding-bottom: px2rem(30px);
+}
+.share-success-box-content-wrap{
+  position: absolute;
+  height:px2rem(30px);
+  left:50%;
+  float: left;
+}
+.share-success-box-content-center{
+  height:px2rem(30px);
+  margin-left:-53%;
+  float: left;
+}
+.share-success-box-content .icon{
+  display: block;
+  float: left;
+  height:px2rem(30px);
+  width:px2rem(30px);
+  background-image: url(/styles/images/weixin/red_lucky_money.png);
+  background-repeat: no-repeat;
+  background-size: px2rem(30px) px2rem(30px);
+}
+.share-success-box-content span{
+  float: left;
+  display: block;
+  width:10em;
+  height:px2rem(30px);
+  font-size: px2rem(30px);
+  line-height: px2rem(30px);
+}
+.share-success-box-btn{
+  text-align: center;
+  height: px2rem(60px);
+  width: px2rem(170px);
+  line-height: px2rem(60px);
+  margin:0 auto;
+  border-radius: px2rem(10px);
+  font-size: px2rem(30px);
+  background-color: #fc4b4b;
+}
+.share-success-line{
+  margin:0 auto;
+  height:px2rem(126px);
+  width:px2rem(3px);
+  background-color: #fff;
+}
+.share-success-close{
+  margin:0 auto;
+  height:px2rem(65px);
+  width:px2rem(65px);
+  background-image: url(/styles/images/weixin/close_button.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: px2rem(60px) px2rem(60px);
+}
+/* 新手福利 */
+.novice-welfare{
+  display: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width:px2rem(750px);
+  height:px2rem(96px);
+  background-image: url(/styles/images/weixin/bottom_btn.png);
+  background-size: px2rem(750px) px2rem(96px);
+  z-index: 5;
+}
+.novice-welfare a{
+  display: block;
+  float: left;
+  height: px2rem(96px);
+  width:px2rem(650px);
+}
+.novice-welfare-close{
+  float: right;
+  height: px2rem(96px);
+  width:px2rem(95px);
+}
+/* 链接失效 */
+.link-invalid{
+  background-color: #eee;
+  padding-bottom: px2rem(40px);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+.link-invalid-title{
+  height: px2rem(40px);
+  line-height: px2rem(40px);
+  padding: px2rem(45px) 0;
+  text-align: center;
+}
+.link-invalid-title-wrap{
+  margin-left:50%;
+  float: left;
+}
+.link-invalid-title-inner{
+  float: left;
+  margin-left: -70%;
+}
+
+.target-list{
+
+}
+.target-item{
+  display: block;
+  padding: px2rem(54px) px2rem(30px);
+  height: px2rem(170px);
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+  background-color: #fff;
+}
+.target-item:active{
+  background-color: #f7f7f7;
+}
+.target-item+.target-item{
+  margin-top: px2rem(24px);
+}
+.target-item-title{
+  display: block;
+  height: px2rem(42px);
+  line-height: px2rem(42px);
+  font-size: px2rem(30px);
+  color: #404040;
+  margin-bottom:px2rem(32px);
+}
+.target-item-info-left{
+  float: left;
+  height:px2rem(95px);
+  width: px2rem(212px);
+  border-right: 1px solid #e9e9e9;
+}
+.target-item-info-number{
+  display: block;
+  max-width: px2rem(212px);
+  height: px2rem(60px);
+  line-height: px2rem(60px);
+  font-size: px2rem(52px);
+  color: #ff401a;
+}
+.target-item-info-number em{
+  font-size: px2rem(28px);
+}
+.target-item-info-type{
+  display: block;
+  max-width: px2rem(212px);
+  height: px2rem(36px);
+  line-height: px2rem(36px);
+  font-size: px2rem(26px);
+  color: #9b9ba8;
+}
+.target-item-info-right{
+  height: px2rem(95px);
+  padding-left: px2rem(64px);
+  display: table-cell;
+  vertical-align: middle;
+}
+.target-item-info-time{
+  height: px2rem(50px);
+  font-size: px2rem(26px);
+  color: #9b9ba8;
+}
+
+.target-item-info-time-long{
+  font-size: px2rem(36px);
+  color: #404040;
+}
+
+.target-item-info-time-unit{
+  color: #404040;
+}
+.target-item-tag{
+  margin-top: px2rem(12px);
+}
+.target-item-tag span{
+  display: block;
+  float: left;
+  height: px2rem(34px);
+  padding: 0 px2rem(10px);
+  line-height: px2rem(34px);
+  font-size: px2rem(22px);
+  margin-right: px2rem(12px);
+  border: 1px solid #ff4520;
+  color: #ff401a;
+}
+
+
+
+.link-invalid-icon{
+  display: block;
+  float: left;
+  height:px2rem(40px);
+  width:px2rem(40px);
+  margin-right:px2rem(10px);
+  background-image: url(/styles/images/weixin/wechat_error.png);
+  background-repeat: no-repeat;
+  background-size: px2rem(40px) px2rem(40px);
+}
+.link-invalid-words{
+  display: block;
+  float: left;
+  color: #333;
+  font-size: px2rem(24px);
+  line-height: px2rem(40px);
+  height: px2rem(40px);
+}
+.link-invalid-words em{
+  color: #fa6063;
+}
+.link-invalid-btn{
+  display: block;
+  height:px2rem(90px);
+  width:px2rem(630px);
+  line-height: px2rem(90px);
+  border-radius: px2rem(10px);
+  margin: px2rem(40px) auto 0;
+  text-align: center;
+  font-size: px2rem(36px);
+  color: #fff;
+  background-color: #fc4b4b;
+}
+.link-invalid-btn:hover{
+  text-decoration: none;
+}
+/* 非微信打开 */
+.not-wechat{
+  height:100vh;
+  width:100vw;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+  font-size: px2rem(26px);
+}
+
+.foot-height-box{
+  height: px2rem(116px);
+}
+.show{
+  display: block;
+}
+.ui-brand718-adv{
+  display: block;
+  margin: px2rem(30px) px2rem(30px) 0;
+  border-radius: px2rem(15px);
+  overflow: hidden;
+  img{
+    display: block;
+    width: px2rem(690px);
+  }
+}

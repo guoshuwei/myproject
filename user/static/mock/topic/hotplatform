@@ -1,0 +1,64 @@
+{
+    "code": 200,
+    "message": "Success.",
+    "data": {
+        "35": {
+            "typid": "67",
+            "max_rate": "0.00",
+            "logo": "/static/company/bd9ca0f75ccedee918dad6856f7eb4b1.jpg",
+            "icon": "/static/icon/29213bf5c039284bab1e44947424b279.jpg",
+            "max_rate": 12.33,
+            "name": "和信贷",
+            "domain_body": "hexindai",
+            "background": {
+                "4": "VC/PE背景"
+            },
+            "interest_rate": "8%~16%",
+            "seven_day_amount": 11885
+        },
+        "120": {
+            "typid": "1326",
+            "max_rate": "0.00",
+            "logo": "/static/company/5f58521b53607ab4d96ac3c708e50e94.png",
+            "icon": "/static/icon/2ccb3e64c06a6c2346d4d506a2690fa5.jpg",
+            "max_rate": 12.33,
+            "name": "小牛在线",
+            "domain_body": "xiaoniu88",
+            "background": {
+                "5": "协会"
+            },
+            "interest_rate": "8%~12%",
+            "seven_day_amount": 44053
+        },
+        "1245": {
+            "typid": "885",
+            "max_rate": "0.00",
+            "logo": "/data/bd/tyyimgs/52dbd27b0ad090f038630868a5ea342a.gif",
+            "icon": "/static/icon/9e919d6a99ba5059f2bc3d8cfef0ece8.png",
+            "max_rate": 12.33,
+            "name": "博金贷",
+            "domain_body": "bjdp2p",
+            "background": [
+                "国资背景",
+                "VC/PE背景"
+            ],
+            "interest_rate": "8%~12%",
+            "seven_day_amount": 18008
+        },
+        "2092": {
+            "typid": "2466",
+            "max_rate": "0.00",
+            "logo": "/static/company/dc06f1fd37859640f417c4701f8d9ede.png",
+            "icon": "/static/icon/b5fd5b558a52aaf56a797fe85c0eb91b.png",
+            "max_rate": 12.33,
+            "name": "钱满仓",
+            "domain_body": "qianmancang",
+            "background": {
+                "2": "国资背景",
+                "4": "VC/PE背景"
+            },
+            "interest_rate": "8%~12%",
+            "seven_day_amount": 0
+        }
+    }
+}

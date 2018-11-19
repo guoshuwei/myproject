@@ -1,0 +1,7 @@
+{
+    "code":200,
+    "message":"Success.",
+    "data":{
+        "countdown":14400
+    }
+}

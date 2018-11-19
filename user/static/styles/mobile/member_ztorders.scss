@@ -1,0 +1,262 @@
+@charset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog';
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+@import '../inc/footer-mobile';
+
+a:hover{
+  text-decoration: none;
+}
+html{
+  background-color: #efefef;
+}
+
+/* 我的奖励 start */
+/* 小标题 */
+.title-box{
+  height: px2rem(100px);
+  line-height: px2rem(100px);
+  padding: 0 px2rem(30px);
+  background-color: #efefef;
+}
+.title-box-word{
+  display: block;
+  float: left;
+  height: px2rem(100px);
+  font-size: px2rem(30px);
+  color: #7a858d;
+}
+.title-box-more{
+  position: relative;
+  float: right;
+  display: block;
+  height: px2rem(100px);
+  font-size: px2rem(26px);
+  padding-right: px2rem(20px);
+  color: #5b99ee;
+}
+.title-box-more em{
+  position: absolute;
+  right: 0;
+  top: px2rem(38px);
+  height: px2rem(24px);
+  width: px2rem(14px);
+  background-image: url(/styles/images/member/mobile/arrow_right_blue.png);
+  background-size: px2rem(14px) px2rem(24px);
+  background-repeat: no-repeat;
+}
+/* 订单列表 */
+.award-order-list{
+  padding-left: px2rem(32px);
+  background-color: #fff;
+  border-bottom: 1px solid #e9e9e9;
+}
+.award-order-item{
+  height: px2rem(116px);
+  padding-right: px2rem(32px);
+}
+.award-order-item+.award-order-item{
+  border-top: 1px solid #e9e9e9;
+}
+.award-order-item-style{
+  display: block;
+  float: left;
+  height: px2rem(12px);
+  width: px2rem(12px);
+  border: px2rem(4px) solid #ffa81a;
+  border-radius: 50%;
+  margin: px2rem(48px) px2rem(32px)px2rem(48px) 0;
+}
+.award-order-item-title{
+  display: block;
+  float: left;
+  height: px2rem(116px);
+  line-height: px2rem(116px);
+  color: #404040;
+  font-size: px2rem(30px);
+  max-width: px2rem(472px);
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+.award-order-item-use{
+  display: block;
+  float: right;
+  height: px2rem(50px);
+  line-height: px2rem(50px);
+  text-align: center;
+  width: px2rem(145px);
+  font-size: px2rem(26px);
+  border-radius: px2rem(6px);
+  background-color: #508cee;
+  color: #fff;
+  margin: px2rem(32px) 0;
+}
+
+/* 奖励入口 */
+.card{
+  padding-left: px2rem(108px);
+  background-color: #fff;
+  border-bottom: 1px solid #e9e9e9;
+}
+.card-money{
+  margin-top: px2rem(24px);
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+}
+.card-item{
+  display: block;
+  position: relative;
+  height: px2rem(116px);
+  padding-right: px2rem(32px);
+}
+.card-item+.card-item{
+  border-top: 1px solid #e9e9e9;
+}
+.card-icon{
+  display: block;
+  position: absolute;
+  left: px2rem(-78px);
+  top: px2rem(36px);
+  height: px2rem(48px);
+  width: px2rem(48px);
+  background-size: px2rem(48px) px2rem(48px);
+  background-repeat: no-repeat;
+}
+.card-red-icon{
+  background-image: url(/styles/images/member/mobile/coin.png);
+}
+.card-coupons-icon{
+  background-image: url(/styles/images/member/mobile/coupons.png);
+}
+.card-money-icon{
+  background-image: url(/styles/images/member/mobile/red_paper.png);
+}
+.card-returnrecord-icon {
+  background-image: url(/styles/images/member/mobile/return_redpaper.png);
+}
+.card-title{
+  display: block;
+  float: left;
+  height: px2rem(116px);
+  line-height: px2rem(116px);
+  color:#404040;
+  font-size: px2rem(32px);
+}
+.card-go{
+  float: right;
+  height: px2rem(24px);
+  width: px2rem(14px);
+  margin: px2rem(46px) 0 px2rem(46px) px2rem(24px);
+  background-image: url(/styles/images/member/mobile/arrow_right_deepgray.png);
+  background-size: px2rem(14px) px2rem(24px);
+  background-repeat: no-repeat;
+}
+.card-number{
+  float: right;
+  height: px2rem(44px);
+  width: px2rem(44px);
+  line-height: px2rem(44px);
+  border-radius: 50%;
+  background-color: #ff401a;
+  font-size: px2rem(30px);
+  text-align: center;
+  margin: px2rem(36px) 0;
+  color:#fff;
+}
+/* 我的奖励 end */
+
+/* 奖励订单 start */
+.order{
+  padding-top: px2rem(40px);
+}
+.order-item{
+  position: relative;
+  margin-bottom: px2rem(20px);
+  height: px2rem(140px);
+  padding: px2rem(40px) px2rem(40px) px2rem(40px) px2rem(80px);
+  background-color: #fff;
+}
+.order-item-style{
+  position: absolute;
+  left: px2rem(32px);
+  top: px2rem(50px);
+  display: block;
+  height: px2rem(12px);
+  width: px2rem(12px);
+  border: px2rem(4px) solid #ffa81a;
+  border-radius: 50%;
+}
+.order-item-info{
+  float: left;
+}
+.order-item-title{
+  display: block;
+  height:px2rem(42px);
+  line-height: px2rem(42px);
+  margin-bottom: px2rem(16px);
+  font-size: px2rem(30px);
+  color: #404040;
+  max-width: px2rem(472px);
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+.order-item-time{
+  display: block;
+  height:px2rem(36px);
+  line-height: px2rem(36px);
+  font-size: px2rem(26px);
+  margin-bottom: px2rem(8px);
+  color: #7a858d;
+}
+.order-item-money{
+  display: block;
+  height:px2rem(36px);
+  line-height: px2rem(36px);
+  font-size: px2rem(26px);
+  color: #7a858d;
+}
+.order-item-use{
+  float: right;
+  display: block;
+  height: px2rem(50px);
+  line-height: px2rem(50px);
+  text-align: center;
+  width: px2rem(88px);
+  font-size: px2rem(26px);
+  border-radius: px2rem(6px);
+  background-color: #508cee;
+  color: #fff;
+  margin: px2rem(45px) 0;
+}
+/* 发红包 */
+
+.hand-out-red{
+  position: fixed;
+  height: px2rem(132px);
+  width: px2rem(112px);
+  right: px2rem(56px);
+  bottom: px2rem(80px);
+  font: 0/0 a;
+  background-image: url(/styles/images/member/mobile/hand_out_red_paper.png);
+  background-size: px2rem(112px) px2rem(132px);
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+/* 奖励订单 end */
+
+
+
+
+
+
+
+
+
+
+

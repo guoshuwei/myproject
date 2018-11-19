@@ -1,0 +1,63 @@
+.mod-searchbox{
+  padding-top:px2rem(23px);
+  padding-right:px2rem(25px);
+  padding-bottom:px2rem(23px);
+  padding-left:px2rem(25px);
+  height:px2rem(68px);
+  background-color:#fff;
+  .sub{
+    width:px2rem(215px);
+  }
+  .main{
+    .box{
+      padding-left:px2rem(215px);
+    }
+  }
+}
+.mod-searchbox-ask{
+  width:px2rem(200px);
+  height:px2rem(68px);
+  background-color:#6c6;
+  border-radius:px2rem(10px);
+  color:#fff;
+  text-align:center;
+  line-height:px2rem(68px);
+  font-size:px2rem(24px);
+}
+.mod-searchbox-search{
+  height:px2rem(44px);
+  padding-top:px2rem(10px);
+  padding-right:px2rem(8px);
+  padding-bottom:px2rem(10px);
+  padding-left:px2rem(22px);
+  border: 2px solid #e5e5e5;
+  border-radius:px2rem(10px);
+  .text,.submit{
+    height:px2rem(44px);
+    line-height:px2rem(44px);
+    border:none;
+  }
+
+}
+.mod-searchbox-form{
+  height:px2rem(44px);
+}
+.mod-searchbox-search-text{
+  width:85%;
+  height:px2rem(44px);
+  line-height:px2rem(44px);
+  border:none;
+  display:block;
+  font-size:px2rem(24px);
+  color:#333;
+}
+.mod-searchbox-search-submit{
+  width:px2rem(52px);
+  height:px2rem(44px);
+  line-height:px2rem(44px);
+  border:none;
+  right:0;
+  top:0;
+  background:url("../images/mobile/index/search_subbg.png") 0 0 no-repeat;
+  background-size:px2rem(52px) px2rem(44px);
+}

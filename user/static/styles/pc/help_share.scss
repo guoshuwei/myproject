@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/header';
+@import '../inc/member-header';
+@import '../inc/footer';
+@import '../mod/bind';
+@import '../mod/comment';
+@import '../mod/floatlayer';
+@import '../mod/investshare_block';
+@import '../mod/activity';
+
+body{
+	background:#fff;
+}
+
+.page-section{
+	background:#fff url(/styles/images/help/share-banner.jpg) no-repeat center top;
+	padding-top:514px;
+}
+.local-peoplelist{
+	width:960px;
+	padding:27px;
+	background:#f0f0f0;
+
+	.item{
+		width: 120px;
+		height: 120px;
+		a{
+			display: block;
+			width: 120px;
+			height: 120px;	
+			overflow:hidden;
+			img{
+				width: 120px;
+				height: 120px;	
+				float: left;
+				-webkit-transition: all .25s ease-in-out;
+				-moz-transition: all .25s ease-in-out; 
+				transition: all .25s ease-in-out; 
+			}
+			.mask{
+				position: absolute;
+				width: 120px;
+				height: 120px;	
+				top:0;
+				left: 0;
+				line-height: 120px;
+				text-align: center;
+				color: #fff;
+				font-size: 14px;
+				font-family: Micrsoft YaHei;
+				font-weight: bold;
+				filter:alpha(opacity=0);
+				opacity: 0;
+				background:rgba(31,126,209,.8);
+				text-indent: -300px;
+				-webkit-transition: all .5s ease-in-out;
+				-moz-transition: all .5s ease-in-out; 
+				transition: all .5s ease-in-out; 
+				
+			}
+			&:hover{
+				.mask{
+					filter:alpha(opacity=100);
+					opacity: 1;
+					text-indent: 0;
+				}
+				img{
+					-webkit-transform:scale(1.1); 
+					-moz-transform:scale(1.1); 
+					-o-transform:scale(1.1); 
+				}
+			}
+		}
+	}
+}
+.local-title{
+	text-align:center;
+}
+.local-commentbox{
+	width:888px;
+	border:1px solid #bababa;
+	border-radius:3px;
+}
+.mod-investshare-block{
+	.mod-comment{
+		overflow:initial;
+
+		.prev,.next{
+			width:56px;
+			height:100px;
+			display:block;
+			background:none;
+			a{
+				width:56px;
+				height:100px;
+				background:url(/styles/images/common/icons.png) no-repeat;
+			}
+		}
+		.prev{
+			left:-81px;
+			a{
+			    background-position: -304px -374px;
+			}
+		}
+		.next{
+			right:-81px;	
+			a{
+			    background-position: -308px -484px;
+			}
+		}
+	}
+	.comment-inner{
+		height:427px;
+	}
+}
+
+.local-more{
+	text-align:center;
+}

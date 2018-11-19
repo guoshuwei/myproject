@@ -1,0 +1,290 @@
+html,body{min-width: 100%;min-height: 100%;}
+.double_one_words{
+    position: fixed;
+    top: 175px;
+    width: 530px;
+    height: 289px;
+    z-index: 10001;
+    display: none;
+}
+
+.double_one_words .words_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.double_one_words .words_wrap{
+    vertical-align:middle;
+    display:table-cell;
+    _position:absolute;
+    _top:50%;
+}
+.double_one_words .words_wrap .words_target_wrap{
+    display: none;
+}
+.double_one_words .words_wrap .words_target_wrap .words_target{
+    width: 200px;
+    height: 200px;
+    border: 0;
+    margin: auto;
+    display: block;
+    position:relative;
+    _position:relative;
+    _top:-50%;
+}
+.double_one_words .words_wrap .words{
+    width: 100%;
+    margin: auto;
+    display: block;
+    position:relative;
+    _position:relative;
+    _top:-50%;
+}
+.activity_double_one {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    display: none;
+}
+.activity_double_one > .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+}
+.activity_double_one > .double_one_con{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display:table;
+}
+.activity_double_one > .double_one_con > .double_one_wrap{
+    vertical-align:middle;
+    display:table-cell;
+    _position:absolute;
+    _top:50%;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one{
+    width: 100%;
+    min-height: 600px;
+    margin: auto;
+    display: block;
+    position:relative;
+    _position:relative;
+    _top:-50%;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo{
+    position: absolute;
+    display: none;
+    width: 294px;
+    height: 162px;
+    text-align: center;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .close{
+    position: absolute;
+    top: 50px;
+    right: 10%;
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .close .close_txt{
+    color: #fff;
+    font-size: 18px;
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .close .close_img{
+    cursor: pointer;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .ufo_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .ufo_all{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .ufo_door{
+    display: none;
+    position: relative;
+    width: 0;
+    height: 0;
+    margin: auto;
+    margin-top: 153px;
+}
+
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .ufo_fragment{
+    position: absolute;
+    top: 146px;
+    left: 104px;
+    width: 84px;
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .ufo_light{
+    position: absolute;
+    top: 147px;
+    left: 22px;
+    width: 250px;
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .ufo_gift{
+    position: absolute;
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .gift_in{
+    top: 78px;
+    left: 118px;
+    width: 60px;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .gift_out1{
+    top: 380px;
+    left: 95px;
+    width: 110px;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .gift_out2{
+    top: 380px;
+    left: 95px;
+    width: 110px;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .gift_shadows{
+    position: absolute;
+    top: 481px;
+    left: 79px;
+    width: 143px;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .gift_shadows .gift_shadow{
+    display:none;
+    margin: auto;
+    height: 25px;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .jump_man{
+    position: absolute;
+    top: 70px;
+    left: 118px;
+    width: 60px;
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .jump_shadow{
+    position: absolute;
+    top: 404px;
+    left: 120px;
+    width: 62px;
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .ufo_cloud1{
+    position: absolute;
+    top: 263px;
+    left: 22px;
+    width: 407px;
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .ufo_cloud2{
+    position: absolute;
+    top: 360px;
+    left: -150px;
+    width: 395px;
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .ufo_cloud3{
+    position: absolute;
+    top: 60px;
+    left: -110px;
+    width: 750px;
+    opacity: .2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .ufo_cloud4{
+    position: absolute;
+    top: 260px;
+    left: -300px;
+    width: 650px;
+    opacity: .2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .ufo .ufo_boom{
+    position: absolute;
+    top: 130px;
+    left: -40px;
+    width: 380px;
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one > .ufo > .words{
+    position: absolute;
+    top: 240px;
+    left: -95px;
+    width: 530px;
+    display: none;
+}
+
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .kneel_man1{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 134px;
+    opacity: .3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    display: none;
+}
+
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .kneel_man2{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 134px;
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .kneel_man3{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 134px;
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .kneel_man4{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 134px;
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .kneel_man5{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 134px;
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .kneel_man6{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 134px;
+    display: none;
+}
+.activity_double_one > .double_one_con > .double_one_wrap > .double_one .kneel_man7{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 134px;
+    display: none;
+}

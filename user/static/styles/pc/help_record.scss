@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/header';
+@import '../inc/member-header';
+@import '../inc/footer';
+@import '../mod/bind';
+@import '../mod/comment';
+@import '../mod/floatlayer';
+@import '../mod/dynamic_block';
+@import '../mod/platlist';
+@import '../mod/nrank';
+@import '../mod/activity';
+
+.page-section{
+	background:url(/styles/images/help/record-banner.jpg) no-repeat center top;
+	padding-top:733px;
+}
+.local-info{
+	position:relative;
+	padding-bottom:45px;
+	overflow:hidden;
+	a{
+		position: absolute;
+		right: 198px;
+    	top: 222px;
+		display: inline-block;
+		*display: inline;
+		*zoom:1;
+		color: #00cdaf;
+		font-size: 16px;
+		font-weight: bold;
+		font-family: Micrsoft YaHei;
+	}
+}
+
+.local-title{
+	text-align:center;
+}
+.local-commentbox{
+	width:890px;
+	border-radius:3px;
+}
+.local-platlist{
+	width:890px;
+}
+.mod-dynamic-block .item a:hover{
+	border-color:#00cdaf;
+}
+.mod-dynamic-block{
+	overflow:initial;
+	.prev,.next{
+		width:56px;
+		height:100px;
+		display:block;
+		background:none;
+		a{
+			width:56px;
+			height:100px;
+			background:url(/styles/images/common/icons.png) no-repeat;
+		}
+	}
+	.prev{
+		left:-81px;
+		a{
+		    background-position: -377px -374px;
+		}
+	}
+	.next{
+		right:-81px;	
+		a{
+		    background-position: -381px -484px;
+		}
+	}
+	.comment-inner{
+		height:427px;
+	}
+}
+
+.local-more{
+	text-align:center;
+}
+
+.local-nrank{
+	width:890px;
+	.mod-nrank{
+		width: 291px;
+		margin-left: 8px;
+		overflow:inherit;
+		.hd{
+			width: 100%;
+			background:#fff;
+			.item{
+				width: 100%;
+				border-top:2px solid #fff;
+				position:relative;
+			}
+			.item-wrap{
+				width: 218px;
+				height: 42px;
+				position:absolute;
+				left: 50%;
+				margin-left: -109px;
+				top:-8px;
+			}
+		}
+
+		&.green .item-wrap{
+			background:url(/styles/images/help/record-bg1.png) no-repeat center;
+			color: #fff;
+			line-height: 42px;
+			font-size: 16px;
+			font-weight: bold;
+			font-family: Micrsoft YaHei;
+		}
+		&.red .item-wrap{
+			background:url(/styles/images/help/record-bg2.png) no-repeat center;
+			color: #fff;
+			line-height: 42px;
+			font-size: 16px;
+			font-weight: bold;
+			font-family: Micrsoft YaHei;
+		}
+		&.green .bd .rank-bd .hot a{
+			color: #00cdaf;
+		}
+		&.red .bd .rank-bd .hot a{
+			color: #ea544a;
+		}
+		&.green .bd .rank-bd .hot span em{
+			background-color: #00cdaf;
+		}
+		&.red .bd .rank-bd .hot span em{
+			background-color: #ea544a;
+		}
+	}
+
+	.first{
+		margin-left:0;
+	}
+}

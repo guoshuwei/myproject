@@ -1,0 +1,113 @@
+.mod-bindtyq{
+	h3{
+		color: #383838;
+		font-size: 24px;
+		font-family: Microsoft YaHei;
+	}
+
+	.align-l{
+		padding-left: 100px;
+	}
+	.align-c{
+		text-align: center;
+	}
+	dt,dd{
+		display: inline-block;
+		*display: inline;
+		*zoom:1;
+	}
+	dl{
+		height: 30px;
+		padding-bottom:10px;
+	}
+	dt{
+		height: 30px;
+		line-height: 30px;
+		color: #383838;
+	}
+  	dt.inputTitle{
+	  width:70px;
+	}
+	.vcode{
+		font-size: 16px;
+		color: #fff;
+		background:#3dbbf9;
+		border:none;
+		height: 33px;
+		line-height: 33px;
+		padding-right:10px;
+		cursor: pointer;
+	}
+	.vcode.disabled{
+		background:#ccc;
+	}
+	.input{
+		height: 31px;
+		line-height: 31px;
+		padding-left:10px;
+	}
+
+	.tiper{
+		font-size: 12px;
+		color: #ea544a;
+		display: none;
+	}
+	.onerror .tiper{
+		display: inline;
+	}
+
+	.align-center{
+		text-align: center;
+	}
+
+	input{
+		border:1px solid #ccc;
+		padding-left:10px;
+	}
+
+	b{
+		font-size: 18px;
+		color: #383838;
+	}
+
+	.invest-btn{
+		display: inline-block;
+		*display:inline;
+		*zoom:1;
+		border:1px solid #0080cc;
+		padding:0 30px;
+		line-height: 35px;
+		margin: 0 auto;
+		background:#fff;
+		color: #0080cc;
+		font-size: 16px;
+		font-family: Microsoft YaHei;
+		border-radius:8px;
+		-webkit-transition: all .25s ease-in-out; 
+		-moz-transition: all .25s ease-in-out; 
+		transition: all .25s ease-in-out; 
+		cursor: pointer;
+	}
+	.invest-btn:hover,.invest-btn.current{
+		background:#0080cc;
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.tiper{
+		font-size: 12px;
+		color: #ea544a;
+		display: none;
+	}
+	.onerror .tiper{
+		display: inline;
+	}
+  .already_bind{
+	display: none;
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 10px;
+	color: #ea544a;
+  }
+}

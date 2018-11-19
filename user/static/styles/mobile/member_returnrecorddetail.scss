@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog';
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+@import '../inc/footer-mobile';
+html,body {
+	background:#efefef;
+}
+.page_section {
+	padding:px2rem(30px) px2rem(30px) 0px;
+}
+.ui-sectionlist {
+	border-top:px2rem(6px) solid #ff7856;
+	background:#fff;
+	padding:px2rem(20px) px2rem(40px) px2rem(40px);
+	.sectionlist-link {
+		display:block;
+		width:px2rem(550px);
+		height:px2rem(90px);
+		margin:0px auto;
+		background:#ff7856;
+		font-size:px2rem(32px);
+		line-height:px2rem(90px);
+		color:#fff;
+		text-align:center;
+		border-radius:px2rem(7px);
+	}
+	.sectionlist-list {
+		padding:0px px2rem(40px) px2rem(40px);
+	}
+	.sectionlist-item {
+		font-size:px2rem(28px);
+		line-height:px2rem(68px);
+		color:#404040;
+		span {
+			color:#7c868e;
+			width:px2rem(180px);
+			display:inline-block;
+		}
+	}
+}
+.ui-sectiondesc{
+	padding-top:px2rem(52px);
+	font-size:px2rem(24px);
+	color:#666;
+	.sectiondesc-title {
+		line-height:px2rem(40px);
+		font-weight:bold;
+	}
+	.sectiondesc-text {
+		line-height:px2rem(40px);
+		padding-top:px2rem(12px);
+	}
+}

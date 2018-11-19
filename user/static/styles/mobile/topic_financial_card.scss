@@ -1,0 +1,230 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils'; 
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog'; 
+@import '../inc/m_ui';
+@import '../inc/footer-mobile';
+
+body{
+    background: #f77400;
+    padding-top: px2rem(30px);
+}
+.ui-section{
+    width: px2rem(750px);
+    margin: 0 auto;
+}
+.ui-card{
+    margin: px2rem(70px) px2rem(20px) px2rem(55px);
+    padding: px2rem(20px) 0 px2rem(1px);
+    background: #2888e0 url(/styles/images/topic/financial/mobile/bg_cooperation.png) no-repeat 0 0;
+    background-size: px2rem(710px) px2rem(100px);
+}
+.ui-financial-title{
+    font-size: px2rem(40px);
+    color: #fff;
+    line-height: px2rem(37px);
+    text-align: center;
+}
+.ui-financial-note{
+    font-size: px2rem(20px);
+    color: #fff;
+    text-align: center;
+    line-height: px2rem(50px);
+    margin-bottom: px2rem(15px);
+}
+.ui-financial-card{
+    padding: px2rem(15px);
+    width: px2rem(595px);
+    margin: 0 auto;
+    font-size: px2rem(26px);
+    color: #fff;
+    line-height: px2rem(42px);
+    background-color: #186dcd;
+}
+.ui-font-fff600{
+    font-size: px2rem(34px);
+    color: #fff600;
+}
+.ui-card-btn{
+    display: block;
+    font-size: px2rem(30px);
+    color: #a0490e;
+    background-color: #fff600;
+    border-radius: px2rem(6px);
+    height: px2rem(88px);
+    line-height: px2rem(88px);
+    text-align: center;
+    width: px2rem(625px);
+    margin: px2rem(20px) auto px2rem(40px);
+}
+.ui-icons-fire{
+    display: inline-block;
+    margin-right: px2rem(15px); 
+    width: px2rem(24px);
+    height: px2rem(37px);
+    vertical-align: bottom;
+    background: url(/styles/images/topic/financial/mobile/icons.png) no-repeat px2rem(-158px) px2rem(-69px);
+    background-size: px2rem(400px) px2rem(400px);    
+}
+.ui-card-list{}
+.ui-card-list-item{
+    position: relative;
+    margin: 0 auto px2rem(40px);
+    width: px2rem(625px);
+}
+.ui-card-list-top{   
+    height: px2rem(245px);
+    border-radius: px2rem(8px);
+    background-color: #f95520;
+}
+.ui-card-list-bottom{
+    height: px2rem(245px);
+    border-radius: px2rem(8px);
+    background-color: #fff;
+}
+.ui-card-list-name{
+    line-height: px2rem(70px);
+    padding-top: px2rem(30px);
+    text-align: center;
+    font-size: px2rem(48px);
+    font-weight: 500;
+    color: #fff;
+}
+.ui-card-list-bg{
+    height: px2rem(55px);
+    text-align: center;
+    .ui-bg-item{
+        display: inline-block;
+        padding: px2rem(5px) px2rem(10px);
+        font-size: px2rem(20px);
+        color: #fff;
+        line-height: px2rem(20px);
+        margin: px2rem(17px) 0 0;
+        border-radius: px2rem(5px);
+        border: 1px solid #fff;
+        max-height: px2rem(99999px);
+    }
+}
+.ui-card-list-online{
+    line-height: px2rem(40px);
+    color: #fff;
+    font-size: (20px);
+    text-align: center;
+    max-height: px2rem(99999px);
+}
+.ui-card-list-num{
+    margin-left: px2rem(35px);
+    padding-top: px2rem(25px);
+    font-size: px2rem(20px);
+    color: #333;
+    line-height: px2rem(30px);
+}
+.ui-card-list-progress{
+    position: relative;
+    margin-left: px2rem(35px);
+    margin-top: px2rem(10px);
+    width: px2rem(484px);
+    height: px2rem(4px);
+    background-color: #e2e2e2;
+    border-radius: px2rem(3px);
+}
+.ui-card-list-progress-inner{
+    position: absolute;
+    top: px2rem(-3px);
+    left: 0;
+    height: px2rem(10px);
+    background-color: #f95520;
+    border-radius: px2rem(5px);
+}
+.ui-card-list-percent{
+    margin-right: px2rem(35px);
+    line-height: px2rem(25px);
+    font-size: px2rem(24px);
+    color: #f95520;
+}
+.ui-card-list-note{
+    line-height: px2rem(60px);
+    font-size: px2rem(24px);
+    color: #9a9a9a;
+    text-align: center;
+}
+.ui-card-list-btn{
+    display: block;
+    margin: 0 px2rem(33px);
+    height: px2rem(72px);
+    line-height: px2rem(72px);
+    text-align: center;
+    font-size: px2rem(30px);
+    font-weight: bold;
+    color: #259fd8;
+    border: px2rem(2px) solid #259fd8;
+    border-radius: px2rem(5px);
+}
+.ui-card-list-over{
+    display: block;
+    margin: 0 px2rem(33px);
+    height: px2rem(72px);
+    line-height: px2rem(72px);
+    text-align: center;
+    font-size: px2rem(30px);
+    font-weight: bold;
+    color: #a4a4a4;
+    border: px2rem(2px) solid #a4a4a4;
+    border-radius: px2rem(5px);
+}
+.ui-card-list-middle{
+    position: absolute;
+    left: px2rem(-17px);
+    top: px2rem(228px);
+    width: px2rem(659px);
+    height: px2rem(34px);
+}
+.ui-card-list-middle-item{
+    width: px2rem(34px);
+    height: px2rem(34px);
+    background-color: #2888e0;
+    border-radius: px2rem(34px);
+}
+.ui-card-list-tag{
+    position: absolute;
+    top:px2rem(-8px);
+    left:px2rem(-8px);
+    width: px2rem(143px);
+    height: px2rem(143px);
+    background: url(/styles/images/topic/financial/mobile/icons.png) no-repeat 0 px2rem(-258px);
+    background-size: px2rem(400px) px2rem(400px);
+}
+.ui-back{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #9e4910;
+    height: px2rem(70px);
+    z-index: 99;
+}
+.ui-icons-back{
+    float: left;
+    width: px2rem(20px);
+    height: px2rem(35px);
+    margin: px2rem(17px);
+    background: url(/styles/images/topic/financial/mobile/icons.png) no-repeat px2rem(-285px) 0;
+    background-size: px2rem(400px) px2rem(400px);
+}
+.ui-back-history{
+    float: left;
+    width: px2rem(150px);
+    font-size: px2rem(30px);
+    color: #fff;
+    line-height: px2rem(70px);
+}
+.ui-back-title{
+    margin: 0 px2rem(150px);
+    font-size: px2rem(30px);
+    color: #fff;
+    line-height: px2rem(70px);
+    text-align: center;
+}
+
+

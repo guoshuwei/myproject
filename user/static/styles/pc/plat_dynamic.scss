@@ -1,0 +1,70 @@
+@charset "UTF-8";
+@import '../base/utils'; 
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/header';
+@import '../inc/member-header';
+@import '../inc/search-header';
+@import '../inc/footer';
+@import '../mod/bind';
+@import '../mod/title';
+@import '../mod/comment';
+@import '../mod/platlist';
+@import '../mod/bind';
+@import '../mod/autocomplete';
+@import '../mod/floatlayer';  
+@import '../mod/hotpro';
+@import '../mod/hotplat';
+@import '../mod/plathead';
+@import '../mod/asidelist';
+@import '../mod/activity';
+
+.main .wrap{
+	padding-top:0;
+}
+
+.banner{
+	height:120px;
+	overflow:hidden;
+	a{
+		display: block;
+	}
+	img{
+		position:relative;
+		left:50%;
+		margin-left:-960px;
+	}
+}
+.load-more{
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  font-size: 14px;
+  margin-top:  15px;
+  text-align: center;
+}
+.load-more-btn{
+  display: block;
+  height:100%;
+  width:100%;
+  color: #787878;
+  -webkit-transition: background .25s ease-in-out;
+  -moz-transition: background .25s ease-in-out;
+  transition: background .25s ease-in-out;
+}
+.load-more-btn:hover{
+  background:#0080cc;
+  color:#fff;
+  text-decoration: none;
+}
+.mod-hotpro li .title{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.mod-hotpro li .info .bottom .toloans{
+  margin-top: -9px;
+}

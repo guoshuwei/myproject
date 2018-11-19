@@ -1,0 +1,19 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog';
+@import '../inc/m_ui';
+
+html,body{
+  height: px2rem(520px);
+  background: #fff;
+}
+
+
+#echart-distribution{
+  width:px2rem(680px);
+  height:px2rem(500px);
+  margin: 20px auto 0;
+}

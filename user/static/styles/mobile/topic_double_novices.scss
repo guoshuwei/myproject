@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils'; 
+@import '../base/mreset';
+@import '../base/mobileGrid';
+
+html,body{
+	background-color: #ffe89b;
+}
+.qt-w750{
+	width: px2rem(750px);
+	margin: 0 auto;
+}
+.ui-amounts{
+	width: px2rem(750px);
+	height: px2rem(566px);
+	background: url(/styles/images/topic/double/mobile/amountsbg.png) 0 0 no-repeat;
+    background-size: px2rem(750px) px2rem(566px);
+}
+.ui-redpacket{
+	padding-top: px2rem(8px);
+	padding-right: px2rem(59px);
+	padding-bottom: px2rem(8px);
+	padding-left: px2rem(60px);
+	width: px2rem(631px);
+	height: px2rem(497px);
+	position: relative;
+}
+.ui-redpacket-nosplit{
+	width: px2rem(631px);
+	height: px2rem(497px);
+	background: url(/styles/images/topic/double/mobile/nosplit.png) 0 0 no-repeat;
+    background-size: px2rem(631px) px2rem(497px);
+}
+.ui-redpacket-nosplit-btnbox{
+	padding-top: px2rem(293px);
+}
+.ui-redpacket-btn{
+	display: block;
+	margin: 0 auto;
+	width: px2rem(420px);
+	height: px2rem(94px);
+	line-height: px2rem(94px);
+	text-align: center;
+	font-size: px2rem(34px); 
+	background: url(/styles/images/topic/double/mobile/redpacketbtn.png) 0 0 no-repeat;
+    background-size: px2rem(420px) px2rem(94px);
+    color: #ed2c18;
+}
+.ui-redpacket-get{
+	width: px2rem(631px);
+	height: px2rem(622px); 
+	position: absolute;
+	left: px2rem(60px);
+	top: px2rem(-125px); 
+	background: url(/styles/images/topic/double/mobile/redpacketget.png) 0 0 no-repeat;
+    background-size: px2rem(631px) px2rem(622px);
+}
+.ui-redpacket-get-box{
+	padding-left: px2rem(100px); 
+	padding-right: px2rem(100px);
+	padding-top: px2rem(92px);
+}
+.ui-redpacket-get-text{
+	height: px2rem(42px);
+	line-height: px2rem(42px);
+	font-size: px2rem(28px);
+	color: #bf8713;
+	text-align: center;
+	@include text-ellipsis;
+}
+.ui-redpacket-get-money{
+	height: px2rem(125px);
+	line-height: px2rem(125px);
+	font-size: px2rem(60px);
+	color: #fc3f43;
+	text-align: center;
+	@include text-ellipsis;
+	b{
+		font-size: px2rem(30px);
+		padding-right: px2rem(16px);
+		vertical-align: middle;
+		margin-top: px2rem(-4px);
+	}
+	strong{
+		padding-right: px2rem(30px);
+	}
+}
+.ui-redpacket-get-btnbox{
+	padding-top: px2rem(118px);
+}
+.ui-redpacket-get-zero{
+	padding-left: px2rem(100px); 
+	padding-right: px2rem(100px);
+	padding-top: px2rem(120px);
+	.ui-redpacket-get-btnbox{
+		padding-top: px2rem(180px);
+	}
+}
+.ui-redpacket-get-text1{
+	height: px2rem(64px);
+	line-height: px2rem(64px);
+	font-size: px2rem(34px);
+	color: #fc3f43;
+	text-align: center;
+	@include text-ellipsis;
+}
+.ui-redpacket-get-text2{
+	height: px2rem(52px);
+	line-height: px2rem(52px);
+	font-size: px2rem(24px);
+	color: #bf8713;
+	text-align: center;
+	@include text-ellipsis;
+}
+
+
+.ui-rule{
+	padding-left: px2rem(60px);
+	padding-right: px2rem(60px);
+	padding-bottom: px2rem(80px);
+}
+.ui-rule-title{
+	padding-top: px2rem(40px);
+	padding-bottom: px2rem(40px);
+	height: px2rem(32px);
+	text-align: center;
+	b{
+		display: inline-block;
+		width: px2rem(12px);
+		height: px2rem(27px);
+		vertical-align: middle;
+	}
+	b.ui-rule-icon-left{
+		background: url(/styles/images/topic/double/mobile/ui-rule-icon-left.png) 0 0 no-repeat;
+		background-size: px2rem(12px) px2rem(27px);
+	}
+	b.ui-rule-icon-right{
+		background: url(/styles/images/topic/double/mobile/ui-rule-icon-right.png) 0 0 no-repeat;
+		background-size: px2rem(12px) px2rem(27px);
+	}
+	span{
+		padding-left: px2rem(16px);
+		padding-right: px2rem(16px);
+		font-size: px2rem(30px);
+		line-height: px2rem(32px);
+		color: #fd551b;
+	}
+}
+.ui-rule-inner{
+	line-height: px2rem(44px);
+	font-size: px2rem(24px);
+	color: #fd551b;
+}
+
+
+
+
+
+
+
+

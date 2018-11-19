@@ -1,0 +1,452 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog';
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+@import '../inc/footer-mobile';
+a {
+    text-decoration: none;
+}
+.ui-redland-head{
+    padding-top: px2rem(72px);
+    height: px2rem(406px);
+    text-align: center;
+    background: url(/styles/images/redland/mobile/header-bg.png) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.ui-redland-head-top{
+    font-size: px2rem(50px);
+    line-height: px2rem(76px);
+    color: #fff;
+    strong{
+        display: block;
+        font-family: arial;
+        font-size: px2rem(76px);
+    }
+}
+.ui-redland-head-middle{
+    margin: px2rem(62px) 0;
+    color: #fff;
+    font-size: px2rem(28px);
+    height: px2rem(36px);
+    line-height: px2rem(36px);
+    overflow: hidden;
+}
+.ui-redland-head-bottom{
+    margin: 0 auto;
+    width: px2rem(380px);
+    height: px2rem(80px);
+    padding: px2rem(7px);
+    border-radius: px2rem(54px);
+    background-color: rgba(255,255,255,0.2);
+    a{
+        display: block;
+        width: px2rem(380px);
+        height: px2rem(80px);
+        line-height: px2rem(80px);
+        font-size: px2rem(32px);
+        color: #FA654A;
+        border-radius: px2rem(54px);
+        background: -webkit-linear-gradient(#FFFFD6, #F8EEAD); /* Safari 5.1 - 6.0 */
+        background: linear-gradient(#FFFFD6, #F8EEAD); /* 标准的语法 */
+    }
+}
+.ui-redland-head-bottom.ed {
+    a {
+        color: #9C9A98;
+        background: #fff;
+    }
+}
+.ui-redland-rule{
+    background-color: #fff; 
+    padding:0 px2rem(27px) px2rem(50px);
+    .ui-redland-rule-title{
+        line-height: px2rem(98px);
+        font-size: px2rem(30px);
+        color: #404040;
+    }
+    .ui-redland-rule-list{
+        line-height: px2rem(45px);
+        font-size: px2rem(28px);
+        color: #9C9A98;
+        list-style: decimal;
+        padding-left: px2rem(30px);
+        li{
+            list-style: decimal;
+        }
+    }
+}
+
+.ui-goodactivity-list{
+    padding: px2rem(28px) 0 0 px2rem(32px);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -moz-overflow-scrolling: touch;
+    -o-overflow-scrolling: touch;
+    -ms-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+.ui-goodactivity-list-inner{
+    width: px2rem(1000px);
+}
+.ui-goodactivity-list-item{
+    float: left;
+    width: px2rem(460px);
+    height: px2rem(218px);
+    margin-right: px2rem(40px);
+    img{
+        width: px2rem(460px); 
+        height: px2rem(218px);
+        border-radius: px2rem(6px);
+    }
+}
+
+.ui-numberadd{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: px2rem(76px);
+    line-height: px2rem(76px);
+    vertical-align: bottom;
+}
+.ui-numberup{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: px2rem(36px);
+    line-height: px2rem(36px);
+    vertical-align: bottom;
+}
+.ui-numberup .i{
+    position: absolute;
+    left:0;
+    word-break: break-all;
+    white-space: normal;
+    width: px2rem(20px);
+    line-height: px2rem(36px);
+    font-size: px2rem(28px);
+    color: #fff;
+    font-style:normal;
+}
+.ui-numberup .span{
+    position:relative;
+    top:px2rem(36px);
+    display: inline-block;
+    *display: inline;
+    *zoom: 0;
+    width: px2rem(18px);
+    height: px2rem(720px);
+    line-height: px2rem(36px);    
+}
+.mod-section {
+    background:#fff;
+    margin-bottom:px2rem(20px);
+    .mod-title {
+        padding:px2rem(34px) px2rem(14px);
+    }
+    .mod-title-text {
+        float: left;
+        border-left:px2rem(8px) solid #FF6D0C;
+        line-height: px2rem(32px);
+        font-size:px2rem(30px);
+        padding-left:px2rem(12px);
+
+    }
+    .mod-title-link {
+        float: right;
+        color:#508CEE;
+        font-size: px2rem(28px);
+    }
+}
+.section-package {
+    padding-bottom:px2rem(40px);
+    .package-main {
+        padding:px2rem(0px) px2rem(30px);
+        overflow: hidden;
+    }
+    .package-list {
+        width:px2rem(800px);
+    }
+    .package-item {
+        float: left;
+        width:px2rem(134px);
+        height: px2rem(220px);
+        margin-right:px2rem(6px);
+        text-align: center;
+        position:relative;
+        background: #F6F6F6;
+    }
+    .package-img {
+        padding-top:px2rem(48px);
+        img {
+            height: px2rem(94px);
+        }
+    }
+    .already-open {
+        display: none;
+        position:absolute;
+        top:px2rem(12px);
+        right:px2rem(10px);
+        width:px2rem(32px);
+        height: px2rem(32px);
+        background: url("/styles/images/redland/mobile/success.png") no-repeat 0 0;
+        background-size: contain;
+    }
+    .show {
+        display: block;
+    }
+    .package-info {
+        line-height: px2rem(75px);
+        font-size: px2rem(26px);
+        color:#9B9BA8;
+    }
+}
+.section-prize {
+    .mod-title {
+        padding-right:px2rem(32px)
+    }
+    .prize-main {
+        border-top:1px solid  #E9E9E9;
+    }
+    .prize-list {
+        margin-top:1px;
+        padding:px2rem(0px) px2rem(36px);
+    }
+    .prize-item {
+        height: px2rem(99px);
+        border-top:1px solid  #E9E9E9;
+        line-height: px2rem(99px);
+        font-size: px2rem(28px);
+        color: #9B9BA8;
+        .color {
+            color:#FF401A;
+        }
+    }
+    .noborder {
+        border: none;
+    }
+    .prize-item-left {
+        float: left;
+        max-width: px2rem(420px);
+        @include text-ellipsis;
+    }
+    .prize-item-right {
+        float: right;
+    }
+}
+//弹层
+.section-ajaxprocess {
+    position:fixed;
+    background: rgba(0,0,0,0.6);
+    width:100%;
+    height:100%;
+    top:0px;
+    left: 0px;
+    .ajaxprocess-main {
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-left:px2rem(-250px);
+        margin-top:px2rem(-307px);
+        width:px2rem(500px);
+        height: px2rem(614px);
+        background: #fff;
+        text-align: center;
+    }
+    .mod-process-footer {
+        border-top:1px solid #E9E9E9;
+        height: px2rem(92px);
+        line-height: px2rem(92px);
+        font-size: px2rem(30px);
+        position:absolute;
+        bottom:0px;
+        width:100%;
+        .mod-process-footer-left {
+            float: left;
+            width: 50%;
+            border-right:1px solid #E9E9E9;
+            -webkit-box-sizing:border-box;
+            box-sizing:border-box;
+            a {
+                color:#404040;
+            }
+        }
+        .mod-process-footer-right {
+            float: right;
+            width: 50%;
+            a {
+                color:#508CEE;
+            }
+        }
+    }
+    .ajaxprocess-close {
+        position:absolute;
+        top:px2rem(32px);
+        right:px2rem(32px);
+        width:px2rem(30px);
+        height: px2rem(30px);
+        background: url("/styles/images/redland/mobile/close.png") 0 0 no-repeat;
+        background-size: contain;
+    }
+    .ajaxprocess-ing {
+        .img {
+            padding-top:px2rem(130px);
+            img {
+                width:px2rem(238px);
+            }
+        }
+        .ing-info {
+            line-height: px2rem(148px);
+            font-size:px2rem(28px);
+            color:#404040;
+        }
+        .ing-bar {
+            width:px2rem(280px);
+            height: px2rem(16px);
+            margin:0px auto;
+            border-radius: px2rem(16px);
+            background: #E7E7E7 ;
+        }
+        .ing-bar-ing {
+            height: px2rem(16px);
+            border-radius: px2rem(16px);
+            background: #FF8010;
+            width:0px;
+        }
+    }
+    .ajaxprocess-parize {
+        background: url("/styles/images/redland/mobile/success_bg.png") no-repeat center top;
+        background-size: px2rem(424px) px2rem(162px);
+        .parize-title {
+            padding-top:px2rem(76px);
+            padding-bottom:px2rem(40px);
+        }
+        .parize-title-text {
+            line-height: px2rem(50px);
+            font-size: px2rem(40px);
+            color:#404040;
+        }
+        .parize-title-text1 {
+            line-height: px2rem(54px);
+            font-size: px2rem(28px);
+            color:#9B9BA8;
+        }
+        .prize-main {
+            padding-bottom:px2rem(52px)
+        }
+        .prize-list {
+            height: px2rem(248px);
+        }
+        .prize-item {
+            height: px2rem(124px);
+        }
+        .pd-pt{
+            padding-top: px2rem(62px);
+        }
+        .prize-item-link {
+            height: px2rem(100px);
+            width:px2rem(388px);
+            display: block;
+            margin:0px auto;
+        }
+        .prize-item-left {
+            float: left;
+            padding-top:px2rem(25px);
+            padding-left:px2rem(25px);
+            padding-right:px2rem(25px);
+            .prize-item-icon {
+                display: block;
+                width:px2rem(38px);
+                height:px2rem(42px);
+                background: url("/styles/images/redland/mobile/icon.png") no-repeat center top;
+                background-size: px2rem(38px) px2rem(264px);
+            }
+        }
+        .prize-cash {
+            background: #FE6A09;
+            .prize-item-icon {
+                background-position: 0px 0px;
+            }
+        }
+        .prize-volume {
+            background: #EBB844;
+            .prize-item-icon {
+                background-position: 0px px2rem(-87px);
+            }
+        }
+        .prize-volume1 {
+            background: #2EB3E8;
+            .prize-item-icon {
+                background-position: 0px px2rem(-173px);
+            }
+        }
+        .prize-item-right {
+            float: left;
+            line-height: px2rem(100px);
+            border-left:1px dashed #fff;
+            font-size: px2rem(26px);
+            color:#FFE0CC;
+            padding-left: px2rem(30px);
+            max-width:px2rem(255px);
+            @include text-ellipsis;
+            .font {
+                font-size: px2rem(40px);
+                color:#fff;
+            }
+        }
+    }
+    .ajaxprocess-every {
+        .every-title {
+            padding-top:px2rem(98px);
+            img {
+                height:px2rem(148px);
+            }
+        }
+        .every-title-info {
+            color: #404040;
+            font-size: px2rem(40px);
+            line-height: px2rem(56px);
+            padding-top:px2rem(56px);
+        }
+        .every-main-msg {
+            line-height: px2rem(50px);
+            font-size: px2rem(28px);
+            color:#9B9BA8;
+            .color {
+                color:#508CEE;
+            }
+        }
+    }
+    .ajaxprocess-error {
+        .error-title {
+            padding-top:px2rem(98px);
+            img {
+                height:px2rem(148px);
+            }
+        }
+        .error-title-info {
+            color: #404040;
+            font-size: px2rem(40px);
+            line-height: px2rem(56px);
+            padding-top:px2rem(56px);
+        }
+        .error-main-msg {
+            line-height: px2rem(50px);
+            font-size: px2rem(28px);
+            color:#9B9BA8;
+            .color {
+                color:#508CEE;
+            }
+        }
+    }
+}
+
+
+
+
+
+

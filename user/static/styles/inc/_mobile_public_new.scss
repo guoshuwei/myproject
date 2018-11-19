@@ -1,0 +1,91 @@
+/* new css 2016-10-12 */
+.fn-img-vercen{
+  text-align:center;
+  img,span{
+    vertical-align:middle;
+  }
+  span{
+    display:inline-block;
+  }
+}
+.qt-paddingt-16{
+  padding-top:px2rem(16px);
+}
+.qt-paddinglr-25{
+  padding-right:px2rem(25px);
+  padding-left:px2rem(25px);
+}
+.qt-marginb-16{
+  margin-bottom:px2rem(16px);
+}
+.qt-paddingt-26{
+  padding-top:px2rem(26px);
+}
+.qt-paddingr-120{
+  padding-right:px2rem(120px);
+}
+.qt-bg-fff{
+  background-color:#fff;
+}
+.qt-bg-e6{
+  background-color:#e6e6e6;
+}
+.prompt-message{
+  padding-top:px2rem(10px);
+  padding-right:px2rem(40px);
+  padding-bottom:px2rem(10px);
+  padding-left:px2rem(40px);
+  background:rgba(0,0,0,0.5);
+  color:#fff;
+  font-size:px2rem(24px);
+  line-height:px2rem(60px);
+  position:fixed;
+  left:50%;
+  top:50%;
+  z-index:100;
+  border-radius:px2rem(10px);
+  display:none;
+}
+.mask-layer{
+  position:absolute;
+  top:0;
+  left:0;
+  background-color:#000;
+  opacity:0.45;
+  filter:alpha(opacity=45);
+  -ms-filter:alpha(opacity=45);
+  z-index:99;
+}
+.text::-webkit-input-placeholder{
+  color:#ccc;
+}
+.text:-moz-placeholder{
+  color:#ccc;
+}
+.text-ms-input-placeholder{
+  color:#ccc;
+}
+.topfixed{
+  position:fixed;
+  left:0;
+  top:0;
+}
+.fixed{
+  position:fixed;
+}
+.right-arrow{
+  float:right;
+  width:px2rem(12px);
+  height:px2rem(21px);
+  background:url("../images/mobile/index/arrow_right.png") 0 0 no-repeat;
+  background-size: px2rem(12px) px2rem(21px);
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  -webkit-appearance: none;
+}
+.hover.active{
+  background-color:#f0f8ff;
+}

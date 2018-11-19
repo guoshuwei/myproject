@@ -1,0 +1,82 @@
+.mod-redpapersuccess{
+    font-size:14px;
+    line-height:30px;
+    li{
+        text-align:center;
+        .money{
+            color:#0080cc;
+        }
+    }
+    .hd{
+        font-size:24px;
+        font-weight:bold; 
+        font-family: Microsoft YaHei;    
+    }
+    li.fd{
+        text-align:left;
+        padding:0 80px;
+        .btn-box{
+            display:block;
+            float:left;
+            width:50%;
+            text-align:center;
+            margin-top:15px;
+            .btn{
+                background: #fff none repeat scroll 0 0;
+                border: 1px solid #0080cc;
+                border-radius: 8px;
+                color: #0080cc;
+                cursor: pointer;
+                display: inline-block;
+                font-family: Microsoft YaHei;
+                font-size: 16px;
+                line-height: 35px;
+                margin: 0 auto;
+                width:120px;
+                transition: all 0.25s ease-in-out 0s;
+                &:hover{
+                    background: #0080cc none repeat scroll 0 0;
+                    color:#fff;
+                    text-decoration:none;
+                }
+            } 
+            .btn_blue{
+                background-color: #3cbbf9;
+                border: 1px solid #3cbbf9;
+                color: #fff;
+            }    
+        }
+    }
+}
+.mod-redpaperfail{
+    font-size:14px;
+    line-height:30px;
+    text-align:center;
+    .hd{
+        font-size:24px;
+        font-weight:bold;
+        font-family: Microsoft YaHei;
+    }
+    .fd{
+        margin-top:15px;
+        .btn{            
+            background: #fff none repeat scroll 0 0;
+                border: 1px solid #0080cc;
+                border-radius: 8px;
+                color: #0080cc;
+                cursor: pointer;
+                display: inline-block;
+                font-family: Microsoft YaHei;
+                font-size: 16px;
+                line-height: 35px;
+                margin: 0 auto;
+                width:180px;
+                transition: all 0.25s ease-in-out 0s;
+                &:hover{
+                    background: #0080cc none repeat scroll 0 0;
+                    color:#fff;
+                    text-decoration:none;
+                }
+        }
+    }
+}

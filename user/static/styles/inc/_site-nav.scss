@@ -1,0 +1,173 @@
+.site-nav {
+	background:#475059;
+
+	.hd{
+		font-size: 14px;
+	    height: 40px;
+		a{
+			padding: 0 20px;
+			color: #fff;
+			line-height: 40px;
+			display: block;
+			float: left;
+			-webkit-transition: background .25s ease-in-out;
+			-moz-transition: background .25s ease-in-out; 
+			transition: background .25s ease-in-out;
+		  	position:relative;
+		  	height:40px;
+		}
+		#newsnav:hover,#licainav:hover{
+		  text-decoration: none;
+		}
+	  div{
+		padding: 0 20px;
+		color: #fff;
+		line-height: 40px;
+		float: left;
+		-webkit-transition: background .25s ease-in-out;
+		-moz-transition: background .25s ease-in-out;
+		transition: background .25s ease-in-out;
+		position:relative;
+		height:40px;
+	  	}
+		a.current{
+			text-decoration: none;
+		}
+	  .iconindex{
+		float: left;
+		display: block;
+		margin-top: 11px;
+		margin-right: 6px;
+		width: 15px;
+		height: 16px;
+		background: url("/styles/images/index/newindex/room.png") no-repeat;
+		@include ratioBackground($url:"/styles/images/index/newindex/room2.png",$size:15px 16px);
+	  }
+		.iconphone{
+		  float: left;
+		  display: block;
+		  margin-top: 12px;
+		  margin-right: 6px;
+		  width: 10px;
+		  height: 16px;
+		  background: url("/styles/images/index/newindex/phone.png") no-repeat;
+		  @include ratioBackground($url:"/styles/images/index/newindex/phone2.png",$size:10px 16px);
+		}
+	}
+	.bd{
+		font-size: 14px;
+		color: #fff;
+		height: 40px;
+		line-height: 40px;
+		position:relative;
+		a{
+			color: #fff;
+		}
+		span{
+			padding: 0 10px;
+		  	color: #999;
+		  	font-size: 12px;
+		}
+	}
+  	.site-nav-pipe {
+	  background: none;
+	  line-height: 40px;
+	  color: #999;
+	  font-size: 12px;
+	  margin: 0px;
+	  vertical-align: middle;
+	  float: left;
+	}
+  	.site-nav-triangle {
+	  padding: 0px 0px 0px 5px;
+	  position: relative;
+	  width: 10px;
+	  display: inline-block;
+	  height: 40px;
+	  vertical-align: middle;
+	  &:before {
+		width: 0px;
+		content: '\20';
+		display: block;
+		height: 0px;
+		border: 5px solid transparent;
+		border-top-color: #fff;
+		position: absolute;
+		top: 17px;
+	  }
+	}
+	.msg-tiplist{
+		
+		position:absolute;
+		top:41px;
+		li{
+			border-radius:5px;
+			background:#000;
+			font-size:12px;
+			line-height:150%;
+			color:#fff;
+			padding:5px 18px 5px 10px;
+			opacity:0.78;
+			margin-bottom:2px;
+			width:200px;
+			position:relative;
+			.close{
+				display:block;
+				position:absolute;
+				width:14px;
+				overflow:hidden;
+				height:14px;
+				font-size:12px;
+				text-align:center;
+				line-height:12px;
+				padding:0;
+				margin:0;
+				right:5px;
+				top:5px;
+				background:#444;
+				border-radius:14px;
+				cursor:pointer;
+			}
+		}
+	}
+	.msg-tiplist:after{
+			top:-5px;
+			left:78px;
+			content:"\20";
+			position:absolute;
+			border-bottom:5px solid #333;
+			border-left:5px solid #fff;
+			border-right:5px solid #fff;
+		}
+}
+.nav_site_pop {
+	position: absolute;
+	font: 14px Microsoft YaHei;
+	z-index:1000;
+	a {
+	  color: #333;
+	  text-decoration: none;
+	  &:hover {
+		color:#ea534a;
+	  }
+	}
+	.nav_pop_list{
+	  	width: 130px;
+	  	height: 138px;
+	  	overflow: hidden;
+	  li{
+		width: 130px;
+		height: 138px;
+		overflow: hidden;
+		background: url("/styles/images/index/newindex/erweimabj.png") no-repeat;
+		.nav_pop_list-img{
+		  width: 88px;
+		  height: 88px;
+		  display: block;
+		  margin:26px auto 0px;
+		}
+	  }
+
+
+	}
+}

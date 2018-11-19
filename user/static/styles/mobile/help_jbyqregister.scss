@@ -1,0 +1,264 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../inc/m_ui';
+@import '../inc/footer-mobile';
+@import '../inc/header-mobile';
+
+@mixin center{
+  padding-left:px2rem(33px);
+  padding-right:px2rem(33px);
+}
+main {
+	width:px2rem(750px);
+	margin:0px auto;
+}
+.ui-module-title{
+  position: relative;
+  height: px2rem(107px);
+  background-color: #fff;
+  .tit {
+    position: absolute;
+    // top: px2rem(-57px);
+    left: px2rem(35px);
+    font-size:px2rem(48px);
+    font-weight: bold;
+    color:#fb615a;
+    line-height: px2rem(107px);
+    z-index: 1;
+  }
+}
+.pinkbj{
+  background: #f59481;
+  height: px2rem(667px);
+}
+.whitebj{
+  background: #fff;
+  height: px2rem(667px);
+}
+.content-inner{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.jbone1 {
+	width: px2rem(750px);
+  	height: px2rem(404px);
+  	background:url("/styles/images/help/mobile/jbhy1.jpg") no-repeat;
+  	background-size: 100% 100%;
+}
+.jbone2 {
+	width: px2rem(750px);
+  	height: px2rem(666px);
+  	background:url("/styles/images/help/mobile/jbhy2.jpg") no-repeat;
+  	background-size: 100% 100%;
+}
+
+.jbone3 {
+	width: px2rem(750px);
+  	height: px2rem(666px);
+  	background:url("/styles/images/help/mobile/jbhy3.jpg") no-repeat;
+  	background-size: 100% 100%;
+}
+
+.jbone-left{
+  width: px2rem(572px);
+  height: px2rem(538px);
+  background:url("/styles/images/help/mobile/jbh51.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 10;
+}
+.jbone-right{
+  width: px2rem(287px);
+  height: px2rem(217px);
+  background:url("/styles/images/help/mobile/jbh52.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom:0;
+  left:px2rem(43px);
+  z-index: 11;
+}
+.jbtwo-left{
+  width: px2rem(334px);
+  height: px2rem(639px);
+  background:url("/styles/images/help/mobile/jbh53.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom:0;
+  left:px2rem(32px);
+  z-index: 10;
+}
+.jbtwo-right{
+  width: px2rem(330px);
+  height: px2rem(352px);
+  background:url("/styles/images/help/mobile/jbh54.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom:0;
+  right:px2rem(40px);
+  z-index: 10;
+}
+.form {
+  position:relative;
+  
+  @include center;
+  background-color: #fff;
+  input {
+    border:none;
+  }
+  .item {
+    height:px2rem(78px);
+    padding-bottom:px2rem(30px);
+    .input {
+      padding-left:px2rem(30px);
+      border:1px solid #d9d9d9;
+      border-radius: 8px;
+      height: px2rem(78px);
+      overflow: hidden;
+    }
+    input {
+      font-size:px2rem(30px);
+      background: #fff;
+      height: px2rem(78px);
+      width: 100%;
+      text-indent:px2rem(50px);
+      float: left;
+    }
+    .wrap {
+      float: left;
+      width:100%;
+    }
+    .usename .icon{
+      background:url("/styles/images/help/mobile/zhuce/usename.png") no-repeat  left center;
+      background-size:px2rem(32px) px2rem(36px);
+    }
+    .password .icon{
+      background:url("/styles/images/help/mobile/zhuce/password.png") no-repeat  left center;
+      background-size:px2rem(29px) px2rem(36px);
+    }
+    .code {
+      width:px2rem(380px);
+      float: left;
+      .icon{
+        background:url("/styles/images/help/mobile/zhuce/code.png") no-repeat  left center;
+        background-size:px2rem(32px) px2rem(36px);
+      }
+    }
+    .phone .icon{
+      background:url("/styles/images/help/mobile/zhuce/phone.png") no-repeat  left center;
+      background-size:px2rem(26px) px2rem(36px);
+    }
+    .phone-code {
+      width:px2rem(380px);
+      float: left;
+      .icon{
+        background:url("/styles/images/help/mobile/zhuce/phone-code.png") no-repeat  left center;
+        background-size:px2rem(26px) px2rem(35px);
+      }
+    }
+    .icon {
+      float: left;
+      width:px2rem(52px);
+      height: 100%;
+      margin-left:-100%;
+    }
+    .changecode {
+      width:px2rem(246px);
+      height: px2rem(80px);
+      img {
+        width: 100%;
+      }
+    }
+    .phonecode {
+      width:px2rem(244px);
+      height:px2rem(78px);
+      border:1px solid #fb615a;
+      border-radius: 8px;
+      color:#fb615a;
+      font-size: px2rem(24px);
+      line-height: px2rem(78px);
+      text-align: center;
+    }
+    .disabled {
+      background: #787878;
+      border:1px solid #787878;
+      color:#fff;
+    }
+  }
+  .submit {
+    padding-bottom:px2rem(30px);
+    input {
+      float: left;
+      width: 100%;
+      font-size: px2rem(32px);
+      color:#fff;
+      background: #fb615a;
+      height: px2rem(88px);
+      text-align: center;
+      line-height: px2rem(88px);
+      border-radius: 8px;
+      font-weight: bold;
+    }
+  }
+  .item-gou {
+    color:#787878;
+    padding-bottom:px2rem(30px);
+    span {
+      float: left;
+      font-size: px2rem(24px);
+      line-height: 1em;
+      padding-left: px2rem(15px);
+    }
+    a {
+      float: left;
+      color: #0080cc;
+      font-size: px2rem(24px);
+      line-height: 1em;
+    }
+    i {
+      float: left;
+      width: px2rem(18px);
+      height: px2rem(18px);
+      border: px2rem(3px) solid #fb615a;
+      border-radius: 8px;
+    }
+    .active {
+      background: url("/styles/images/help/mobile/zhuce/gou.png") no-repeat center center;
+      background-size:contain;
+    }
+  }
+  .forget {
+    text-align: center;
+    font-size:px2rem(30px);
+    padding-bottom:px2rem(8px);
+    line-height: 1em;
+    .wrap {
+      float: left;
+      width:100%;
+      padding-bottom: px2rem(30px);
+    }
+    a {
+      color:#383838;
+    }
+  }
+}
+.local-tyqbind {
+  color:#383838;
+  .mobilenumber {
+    font-size: px2rem(72px);
+    font-weight: bold;
+    font-family: arial;
+    line-height: px2rem(80px);
+  }
+  .desc {
+    line-height: px2rem(86px);
+    padding-bottom:px2rem(16px);
+    font-size: px2rem(30px);
+  }
+}

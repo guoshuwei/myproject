@@ -1,0 +1,22 @@
+#animate_dom_num{
+	position:absolute;
+	width : 24px;
+	height : 24px;
+	line-height : 24px;
+	font-size: 14px;
+	color : #ea544a;
+	text-align:center;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out; 
+	transition: all .5s ease-in-out; 
+	margin-left:-12px;
+}
+
+#animate_dom_num.uping{
+	opacity:0;
+	margin-top:-10px;
+}
+#animate_dom_num.downing{
+	opacity:0;
+	margin-top:10px;
+}

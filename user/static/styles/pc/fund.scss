@@ -1,0 +1,515 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav-ty';
+@import '../inc/header';
+@import '../inc/header-ty';
+@import '../inc/member-header';
+@import '../inc/footer';
+@import '../mod/animate';
+@import '../mod/bind';
+@import '../mod/charge';
+@import '../mod/floatlayer';
+@import '../mod/activity';
+.qt-w{
+	padding-bottom:35px;
+}
+
+.box-top{
+	padding-top:50px;
+	padding-bottom:50px;
+	.col-main{
+		width:100%;
+		float: left;
+		.col-wrap{
+			padding:0 492px 0 307px;
+		}
+
+		.title{
+			font-size: 20px;
+			font-family: Microsoft YaHei;
+			color: #383838;
+			font-weight: bold;
+			.tag{
+				height: 20px;
+				font-size: 12px;
+				color: #fff;
+				line-height: 20px;
+				border-radius:10px;
+				background:#3dbbf9;
+				padding:0 11px;
+				display: inline-block;
+				*display: inline;
+				*zoom:1;
+				margin-left: 15px;
+				vertical-align: top;
+				*vertical-align: middle;
+				margin-top: 5px;
+				*margin-top: 0;
+
+				em{
+					display: inline-block;
+					*display: inline;
+					*zoom:1;
+					width: 14px;
+					height: 17px;
+					background:url(/styles/images/common/icons.png) no-repeat -60px -134px;
+					vertical-align: top;
+					*vertical-align: middle;
+					margin-top: 3px;
+					*margin-top: 0;
+				}
+			}
+		}
+		.key-val{
+			font-size: 14px;
+			padding-bottom:17px;
+			color: #787878;
+			.label{
+				display: inline-block;
+				*display: inline;
+				*zoom:1;
+				width: 82px;
+				color: #787878;
+			}
+			.value{
+				color: #383838;
+			}
+			.b{
+				font-size: 20px;
+			}
+			.input{
+				width: 127px;
+				height: 33px;
+				border:1px solid #e6e6e6;
+				line-height: 33px;
+				color: #383838;
+				padding-left:10px;
+				margin-right: 25px;
+			}
+		}
+
+		.cardtip{
+			background:#ffecec;
+			padding:15px 0;
+			height: 70px;
+			.qt-gl{
+				width:215px;
+				height: 70px;
+				text-indent: 40px;
+			}
+			.qt-gr{
+				width:183px;
+				height: 70px;
+				border-left:1px dashed #999595;
+				text-align: center;
+			}
+			.tit{
+				color: #383838;
+				font-size: 14px;
+				line-height: 28px;
+			}
+			.val{
+				color: #ea544a;
+				font-size: 16px;
+				line-height: 46px;
+				span{
+					font-size: 40px;
+					font-weight: bold;
+				}
+			}
+
+		}
+
+		.box{
+			border-top:1px solid #e6e6e6;
+			margin-top:5px;
+			padding-top:18px;
+		}
+		.ui-link{
+			margin-top: 10px;
+		}
+	}
+
+	.col-sub{
+		float: left;
+		margin-left: -100%;
+		padding-left:50px;
+		text-align: center;
+		.logo{
+			background: #faf9f9;
+			width: 151px;
+			padding:15px;
+			.txt{
+				font-size: 24px;
+				font-weight: bold;
+				font-family: Microsoft YaHei;
+				color: #383838;
+				text-align: center;
+				line-height: 55px;
+			}
+		}
+		.ui-follow{
+			margin-top:10px;
+		}
+	}
+	.col-extra{
+		float: left;
+		margin-left: -387px;
+		padding-left:62px;
+		border-left: 1px dashed #f2f2f2;
+		height: 444px;
+		.info-top{
+			width: 182px;
+			height: 165px;
+			padding-top:43px;
+			color: #fff;
+			padding:43px 9px 0;
+			line-height: 36px;
+			background:url(/styles/images/fund/icons.png) no-repeat 0 0;
+			span{
+				display: inline-block;
+				*display: inline;
+				*zoom:1;
+				font-size: 14px;
+			}
+			.label{
+				width: 82px;
+				text-align: right;
+			}
+			li{
+				line-height: 36px;
+				border-bottom:1px dashed #fff;
+			}
+			.last{
+				border-bottom:none;
+			}
+		}
+
+		.info-bottom{
+			margin-top: 36px;
+			li{
+				line-height: 36px;
+				color: #787878;
+				font-size: 13px;
+				border-bottom:1px dashed #e6e6e6;
+				padding:0 10px;
+			}
+			em{
+				display: inline-block;
+				*display: inline;
+				*zoom:1;
+				width: 20px;
+				height: 20px;
+				margin-right: 10px;
+				vertical-align: top;
+				*vertical-align: middle;
+				margin-top:8px;
+				*margin-top:0;
+				background:url(/styles/images/common/icons.png) no-repeat;
+			}
+			.qx em{
+				background-position:-296px 0;
+			}
+			.sy em{
+				background-position:-296px -26px;
+			}
+			.zr em{
+				background-position:-296px -53px;
+			}
+			.db em{
+				background-position:-296px -80px;
+			}
+		}	
+	}
+}
+
+.mod-mbox{
+	.hd{
+		height: 40px;
+		background:#faf9f9;
+		position:relative;
+		border-bottom:1px solid #ebebeb;
+		.h3{
+			height: 16px;
+			line-height: 16px;
+			font-size: 16px;
+			border-right:1px solid #ebebeb;
+			color: #383838;
+			display: block;
+  			float: left;
+  			margin-top: 14px;
+  			padding: 0 30px;
+  			font-family: Microsoft YaHei;
+  			cursor: pointer;
+		}
+		.h3.last{
+			border-right:none;
+		}
+		h3,.h3.current,.h3:hover{
+			display: block;
+			float: left;
+			padding:0 30px;
+			border-top:2px solid #0080cc;
+			line-height: 39px;
+			height: 39px;
+			background:#fff;
+			font-size: 16px;
+			font-family: Microsoft YaHei;
+			border-right:1px solid #ebebeb;
+			text-decoration: none;
+			margin-top: 0;;
+		}
+		.more{
+			font-size: 14px;
+			font-family: arial;
+			color: #383838;
+			line-height: 40px;
+			float: right;
+			margin-right: 22px;
+		}
+	}
+	.bd{
+		padding:50px;
+		display: none;
+		font-size: 14px;
+		color: #787878;
+		line-height: 1.5em;
+	}
+	.bd.active{
+		display: block;
+	}
+
+}
+.risk-cue{
+	height:60px;
+	line-height:60px;
+	font-size:16px;
+	font-family:Microsoft YaHei;
+	text-align:center;
+	color:#787878;
+	em{
+		display: inline-block;
+		*display: inline;
+		*zoom:1;
+		width: 21px;
+		height: 21px;
+		background:url(/styles/images/common/icons.png) no-repeat -176px -121px;
+		vertical-align: top;
+		*vertical-align: middle;
+		margin-top: 19px;
+		*margin-top: 0;
+		margin-right: 10px;
+	}
+}
+
+/**基金列表*/
+.content{
+	position:relative;
+	padding-top:50px;
+}
+
+.mod-platfixed{
+	position:absolute;
+	width:100%;
+	left:0;
+	top:0;
+	background:#fff;
+	height:50px;
+	-webkittransform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+	z-index:11;
+	border-bottom:1px solid #e6e6e6;
+	box-shadow: rgb(230, 230, 230) 0px 2px 2px;
+
+	.a{
+		display: block;
+		float: left;
+		border-right:1px solid #e6e6e6;
+		height:50px;
+		line-height:50px;
+		color: #383838;
+		font-size: 16px;
+		font-family: Microsoft YaHei;
+		width: 153px;
+		text-align: center;
+		-webkit-transition: background .25s ease-in-out;
+		-moz-transition: background .25s ease-in-out; 
+		transition: background .25s ease-in-out; 
+
+		span{
+			color: #ea544a;
+		}
+	}
+	.a:hover,.a.current{
+		background:#0080cc;
+		width: 154px;
+		border-right:none;
+		color: #fff;
+		text-decoration: none;
+		font-weight: bold;
+	}
+}
+
+.funddesc{
+	.col-main{
+		width: 100%;
+		float: left;
+
+	}
+	.col-wrap{
+		margin-left: 200px;
+	}
+	.col-sub{
+		float: left;
+		margin-left: -100%;
+		width: 180px;
+	}
+
+	.top{
+		padding-left:35px;
+		height: 130px;
+		li{
+			width: 16.66%;
+		}
+		h3{
+			padding-top:37px;
+			font-size: 14px;
+			color: #787878;
+		}
+		div{
+			padding-top:20px;
+			font-size: 14px;
+
+		}
+		span{
+			font-size: 20px;
+		}
+	}
+	.bottom table{
+		width:100%;
+		th{
+			height: 50px;
+			line-height: 50px;
+			color: #fff;
+			text-align: center;
+			font-size: 16px;
+			font-family: Microsoft YaHei;
+			background:#0080cc;
+		}
+		td{
+			height: 50px;
+			line-height: 50px;
+			color: #383838;
+			text-align: center;
+			font-size: 14px;
+			background:#fff;
+			border-bottom:1px dashed #ccc;
+		}
+	}
+}
+.fundtotal{
+	height:130px;
+	background:#0080cc;
+	color:#fff;
+	text-align:center;
+	.label{
+		font-size: 18px;
+		font-weight: bold;
+		padding-top:40px;
+		padding-bottom:10px;
+		font-family: Microsoft YaHei;
+	}
+	.value{
+		font-size: 26px;
+	}
+}
+
+.menu{
+	padding:12px;
+	font-size:14px;
+	li{
+		line-height: 43px;
+		border-top:1px dashed #ccc;
+	}
+	.first{
+		border-top:none;
+	}
+	a{
+		padding-left:43px;
+		display: block;
+		color: #383838;
+	}
+	.current a,a:hover{
+		color: #0080cc;
+		text-decoration: none;
+	}
+	.current a{
+		background:url(/styles/images/common/icons.png) no-repeat -765px -71px;
+	}
+}
+.mod-mbox .bd{
+	padding-top:20px;
+}
+.fund-summary{
+	width:100%;
+	td{
+		border-bottom:1px dashed #ccc;
+		padding-bottom:25px;
+		padding-top:25px;
+	}
+	.tit{
+		margin:0;
+		vertical-align: top;
+		font-size:14px;
+		color: #0080cc;
+		font-weight: bold;
+		font-family: Microsoft YaHei;
+	}
+}
+
+
+.qa{
+	dl{
+		padding: 25px 0;
+		border-bottom:1px dashed #ccc;
+	}
+	dt{
+		font-size:16px;
+		color: #333;
+		padding-bottom:15px;
+	}
+	em{
+		display: inline-block;
+		width: 6px;
+		height: 6px;
+		border-radius:50%;
+		background:#0080cc;
+		vertical-align: top;
+		*vertical-align:middle;
+    	margin-top: 7px;
+    	*margin-top:0;
+    	margin-left:7px;
+    	margin-right: 7px;
+	}
+}
+.addpromt{
+	.ui-crumb{
+		float:left;
+	}
+	.prompt{
+		float:right;
+		background: #ffffcc;
+    	border: 1px solid #ffc662;
+    	line-height: 25px;
+    	padding-left: 14px;
+    	color: #cc7c40;
+    	font-size: 12px;
+    	padding:0 20px;
+    	margin-top:10px;
+	}
+}

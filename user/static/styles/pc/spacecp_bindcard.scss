@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../inc/site-nav';
+@import '../inc/header';
+@import '../inc/member-header';
+@import '../inc/member-tab';
+@import '../inc/footer';
+@import '../mod/search';
+@import '../mod/floatlayer';
+@import '../mod/dialog';
+@import '../mod/bind';
+@import '../mod/activity';
+
+.content {
+  background: #eaedf4;
+}
+.bind-wrap {
+  width: 932px;
+  padding: 18px 29px 70px;
+  float: left;
+  background: #fff;
+}
+.my-account{
+  width: 100%;
+}
+.bind-wrap-head{
+  width: 933px;
+  height: 37px;
+  border-bottom: 1px solid #e8e8e8;
+  color: #333;
+}
+.bind-wrap-head-ui{
+  font-size: 16px;
+  border-left: 4px solid #ea544a;
+  padding-left: 10px;
+  width: 922px;
+  font-weight: 800;
+}

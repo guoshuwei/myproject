@@ -1,0 +1,659 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/header';
+@import '../inc/member-header';
+@import '../inc/search-header';
+@import '../inc/footer';
+@import '../mod/bind';
+@import '../mod/floatlayer';
+@import '../mod/activity';
+a {
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+}
+@mixin bg($url:" ",$url1:" ",$size:content){
+  background: url($url) center top no-repeat;
+  background-size: $size;
+  @include ratioBackground($url:$url1,$size:$size);
+}
+.mod-icon{
+  background: url("/styles/images/topic/financial/pc/icon.png") no-repeat center top ;
+  @include ratioBackground($url:"/styles/images/topic/financial/pc/icon_2x.png",$x:center,$y:top,$size:500px 500px);
+}
+@mixin bgposition($x:0px,$y:0px){
+  background-position:$x $y;
+  @include ratioBackgroundPosition($x:$x,$y:$y);
+}
+.ui-window-remind {
+  display: none;
+}
+.fontarial{
+  font-family:arial;
+}
+.page_section {
+  position: relative;
+  background: #140036 url("/styles/images/topic/financial/pc/envelopesbg.jpg") no-repeat center top;
+}
+.banner {
+  position:absolute;
+  width:100%;
+  height: 282px;
+  top:0px;
+  left:0px;
+  z-inde:2px;
+  background:url("/styles/images/topic/financial/pc/envelopesfloat.png") no-repeat center top;
+}
+.content {
+  padding:60px 0px 0px;
+}
+.mod-section {
+  width:800px;
+  margin:0px auto;
+}
+.mod-title {
+  padding:120px 0px 0px;
+  text-align: center;
+  position:relative;
+  z-index: 5;
+  height: 80px;
+  .title-info {
+    font-size: 24px;
+    line-height: 55px;
+    color: #fff;
+  }
+  .title-link {
+    width: 67px;
+    height: 20px;
+    display: inline-block;
+    background: #ffce00;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #c90e48;
+    line-height: 20px;
+    &:hover {
+      background: #F77400;
+      color: #fff;
+    }
+  }
+}
+.mod-main {
+  padding:16px 0px 0px;
+  .main-business {
+    text-align: center;
+    .business-img-wrap {
+      width:228px;
+      margin:0px auto;
+      height:110px;
+      overflow:hidden;
+    }
+    .business-img {
+      width:684px;
+      height:110px;
+      text-align:center;
+      margin:0px auto;
+      a {
+        display:inline-block;
+        height:110px;
+        background:#fff;
+      }
+      img {
+        height: 100px;
+        margin: 0px auto;
+        border:5px solid #a5290c;
+        vertical-align: top;
+      }
+    }
+    .business-desc {
+      font-size: 14px;
+      line-height: 46px;
+      color:#fff;
+      text-align: center;
+      height: 46px;
+    }
+  }
+  .main-block {
+    padding:6px 0px 0px;
+    .main-block-wrap {
+      width: 640px;
+      height: 210px;
+      margin: 0px auto;
+      background: #a5290c;
+      border-radius: 10px;
+    }
+  }
+}
+.mod-code {
+  text-align: center;
+  .code-img {
+    padding: 16px 0px 0px;
+    img {
+      width: 100px;
+      vertical-align: top;
+      margin:0px auto;
+      border:5px solid #a5290c
+    }
+  }
+  .code-desc {
+    font-size: 12px;
+    color:#fff;
+    line-height: 49px;
+    text-align: center;
+    a {
+      color: #ffee1f;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.activity-notday {
+  width: 800px;
+  .section-bg {
+    width:800px;
+    height: 418px;
+    @include bg($url:"/styles/images/topic/financial/pc/envelopes1.png",$url1:"/styles/images/topic/financial/pc/envelopes1_2x.png",$size:800px 418px);
+  }
+}
+.activity-periodstart {
+  width: 872px;
+  .section-bg {
+    width:872px;
+    height: 854px;
+    @include bg($url:"/styles/images/topic/financial/pc/envelopes2.png",$url1:"/styles/images/topic/financial/pc/envelopes2_2x.png",$size:872px 854px);
+  }
+  .main-block-title {
+    font-size: 24px;
+    line-height: 34px;
+    padding:15px 0px 0px;
+    color:#ffee1f;
+    font-weight: bold;
+    text-align: center;
+  }
+  .main-block-text {
+    line-height:22px;
+    padding:0px 0px 14px;
+    font-size:12px;
+    color:#fff;
+    text-align:center;
+  }
+  .main-block {
+    padding:0px 0px 15px;
+  }
+  .block-body-list {
+    width: 580px;
+    margin:0px auto;
+  }
+  .block-body-item {
+    width: 145px;
+    text-align: center;
+  }
+  .block-body-item-link {
+    display: inline-block;
+    img {
+      vertical-align: top;
+      width: 95px;
+      height: 95px;
+      border-radius: 5px;
+      border:5px solid #ff6520;
+      overflow: hidden;
+    }
+  }
+  .code-desc {
+    line-height: 57px;
+  }
+}
+.activity-periodend {
+  width: 872px;
+  .section-bg {
+    width:872px;
+    height: 854px;
+    @include bg($url:"/styles/images/topic/financial/pc/envelopes2.png",$url1:"/styles/images/topic/financial/pc/envelopes2_2x.png",$size:872px 854px);
+  }
+  .main-block {
+    text-align: center;
+  }
+  .code-img {
+    padding: 0px 0px 0px;
+    }
+  .main-block-title {
+    padding:45px 0px 0px;
+    font-size: 30px;
+    color:#ffee1f;
+    font-weight: bold;
+    line-height: 68px;
+  }
+  .mod-info {
+    font-size:12px;
+    text-align:center;
+    color:#fff;
+    line-height:50px;
+    padding:0px 0px 3px;
+    a {
+      color:#ffee1f;
+      &:hover {
+        text-decoration:underline;
+      }
+    }
+  }
+  .main-block-body {
+    font-size:14px;
+    color: #fff;
+    line-height: 49px;
+    span {
+      font-family: airil;
+      font-size: 20px;
+      color: #ffee1f;
+      font-weight: bold;
+    }
+  }
+  .code-desc {
+    line-height: 57px;
+  }
+}
+.activity-endday {
+  width: 800px;
+  .section-bg {
+    width:800px;
+    height: 683px;
+    @include bg($url:"/styles/images/topic/financial/pc/envelopes3.png",$url1:"/styles/images/topic/financial/pc/envelopes3_2x.png",$size:800px 683px);
+  }
+  .mod-title {
+    .title-info {
+      padding:35px 0px 0px;
+    }
+  }
+  .mod-title {
+    height:auto;
+    }
+
+  .mod-main {
+    .business-text {
+      height: 26px;
+      width: 100%;
+    }
+    .business-desc {
+      font-size: 24px;
+      line-height: 84px;
+      color: #fff;
+      font-weight: bold;
+      height: 96px;
+    }
+  }
+
+  .main-block {
+    text-align: center;
+    color: #ffee1f;
+  }
+  .main-block-title {
+    padding:22px 0px 0px;
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 124px;
+    span {
+      font-family: airil;
+    }
+  }
+  .main-block-body {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .code-desc {
+    line-height: 74px;
+  }
+}
+//信息
+.pageinfo {
+  width:800px;
+  position:relative;
+  margin:0px auto;
+  padding:40px 0px 30px;
+  .pageinfo-wrap {
+    position:relative;
+  }
+  .pageinfobg {
+    background:#fff;
+    position:absolute;
+    @include opacity(0.2);
+    border-radius:10px;
+    width:100%;
+    height:100%;
+  }
+  .pageinfo-list {
+    padding:0px 20px;
+    position:relative;
+  }
+  .pageinfo-item {
+
+    border-bottom:1px dashed #999;
+    line-height:52px;
+    font-size:12px;
+    color:#fff;
+    a {
+      color:#ffee1f;
+      &:hover {
+        text-decoration:underline;
+      }
+    }
+  }
+  .noborder{
+    border:none
+  }
+}
+//弹框
+.mod-framefloat {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  .framefloat-bg {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    @include opacity(0.83);
+  }
+  .framefloat-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 7px;
+  }
+
+  .framefloat-title {
+    height: 40px;
+    background: #ff6520;
+    font-size: 14px;
+    line-height: 40px;
+    color: #fff;
+    padding: 0px 18px;
+    position: relative;
+    border-radius: 7px 7px 0px 0px ;
+    overflow: hidden;
+  }
+  .framefloat-close {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 13px;
+    right: 18px;
+    display: block;
+    @include bgposition(-40px, -144px);
+    @include fadein(0.25s);
+    &:hover {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .framefloat-closered {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    display: block;
+    background: url("/styles/images/topic/financial/pc/code_close.png") no-repeat center center;
+    @include ratioBackground($url: "/styles/images/topic/financial/pc/code_close_2x.png", $x: center, $y: top, $size: 30px 30px);
+    @include fadein(0.25s);
+    &:hover {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+}
+.mod-heavenfloat {
+  .framefloat-wrap {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    overflow: visible;
+  }
+  .heavenfloat-title {
+    text-align: center;
+    padding: 37px 0px 0px;
+    .heavenfloat-title-text {
+      font-size: 28px;
+      line-height: 58px;
+      color: #ffe600;
+      font-weight: bold;
+    }
+    .heavenfloat-title-desc {
+      font-size: 20px;
+      line-height: 42px;
+      color:#fff;
+    }
+  }
+  .heavenfloat-main-code {
+    padding:20px 0px 0px;
+    .img {
+      margin: 0px auto;
+      vertical-align: top;
+      width: 110px;
+      height: 110px;
+      border: 5px solid #c40021;
+    }
+  }
+  .heavenfloat-footer {
+    font-size: 12px;
+    color: #fff;
+    line-height: 42px;
+    text-align: center;
+  }
+  .heavenfloat-prompt {
+    width: 400px;
+    height: 230px;
+    margin: -115px 0px 0px -200px;
+    .heavenfloat-main {
+      height: 131px;
+    }
+    .heavenfloat-main-img {
+      padding: 13px  0px 0px;
+      height: 70px;
+      overflow: hidden;
+      .img {
+        vertical-align: top;
+        width: 70px;
+        height: 70px;
+        margin: 0px auto;
+      }
+    }
+    .heavenfloat-main-text {
+      text-align: center;
+      padding: 33px  0px 0px;
+      height: 50px;
+      overflow: hidden;
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      line-height: 50px;
+      span {
+        color: #f73954;
+      }
+    }
+    .heavenfloat-main-desc {
+      text-align: center;
+      font-size: 14px;
+      line-height: 38px;
+      color: #333;
+    }
+    .heavenfloat-footer {
+      text-align: center;
+      .heavenfloat-footer-link {
+        display: inline-block;
+        width: 128px;
+        height: 32px;
+        border: 1px solid #ff6520;
+        background: #ff6520;
+        margin: 0px 4px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 32px;
+        border-radius: 3px;
+        overflow: hidden;
+        &:hover, &:active {
+          background: #f23f07;
+        }
+      }
+    }
+  }
+  .heavenfloat-drawprize {
+    width: 500px;
+    height: 460px;
+    margin:-230px 0px 0px -250px;
+    background: url("/styles/images/topic/financial/pc/codepromt.png") no-repeat center center ;
+    @include ratioBackground($url:"/styles/images/topic/financial/pc/codepromt_2x.png",$x:center,$y:center,$size:501px 461px);
+    .heavenfloat-main-list {
+      padding:18px 0px 8px;
+      width: 472px;
+      margin: 0px auto;
+    }
+    .heavenfloat-main-item {
+      height: 105px;
+      width: 118px;
+      text-align: left;
+      overflow: hidden;
+      .heavenfloat-main-link {
+        display: inline-block;
+        border: 5px solid #c40021;
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      img {
+        width: 95px;
+        height: 95px;
+        vertical-align: top;
+      }
+    }
+  }
+  .heavenfloat-redland {
+    width: 500px;
+    height: 350px;
+    margin: -175px 0px 0px -250px;
+    background: url("/styles/images/topic/financial/pc/codebg.png") no-repeat center center ;
+    @include ratioBackground($url:"/styles/images/topic/financial/pc/codebg_2x.png",$x:center,$y:center,$size:500px 350px);
+  }
+  .heavenfloat-result {
+    width: 500px;
+    height: 262px;
+    margin:-131px 0px 0px -250px;
+    background: url("/styles/images/topic/financial/pc/codebg.png") no-repeat center center ;
+    @include ratioBackground($url:"/styles/images/topic/financial/pc/codebg_2x.png",$x:center,$y:center,$size:500px 262px);
+    .heavenfloat-title {
+      padding: 15px 0px 0px;
+      .heavenfloat-title-text {
+        line-height: 47px;
+      }
+      .heavenfloat-title-desc {
+        line-height: 34px;
+      }
+    }
+    .heavenfloat-end-main {
+      padding: 30px 0px 0px;
+      font-size: 60px;
+      line-height: 116px;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      span {
+        font-size: 40px;
+      }
+    }
+  }
+}
+.recordfloat {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  .recordfloat-bg {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    @include opacity(0.83);
+  }
+  .recordfloat-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 7px;
+    width:400px;
+    height:340px;
+    margin:-170px 0px 0px -200px;
+  }
+  .recordfloat-title {
+    height: 40px;
+    background: #ff6520;
+    font-size: 14px;
+    line-height: 40px;
+    color: #fff;
+    padding: 0px 18px;
+    position: relative;
+    border-radius: 7px 7px 0px 0px ;
+    overflow: hidden;
+  }
+  .recordfloat-close {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 13px;
+    right: 18px;
+    display: block;
+    @include bgposition(-40px, -144px);
+    @include fadein(0.25s);
+    &:hover {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .recordfloat-overflow {
+    padding:6px 6px 0px;
+    height:266px;
+    overflow:hidden;
+  }
+  .recordfloat-main-list {
+    height:266px;
+    overflow-y:scroll;
+  }
+  .recordfloat-main-item {
+    font-size:12px;
+    line-height:37px;
+    color:#333333;
+    width:310px;
+    margin:0px auto;
+    border-bottom:1px dashed #e8e8e8;
+  }
+  .item-name {
+    font-size:14px;
+    color:#000;
+    border-bottom:1px solid #e8e8e8;
+  }
+  .recordfloat-main-item-left {
+    float:left;
+    width:130px;
+    text-align:center;
+  }
+  .recordfloat-main-item-right {
+    float:right;
+    width:120px;
+    text-align:right;
+  }
+
+}

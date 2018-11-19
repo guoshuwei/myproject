@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/grid';
+@import '../inc/m_ui';
+
+body{
+  background:#fff;
+}
+.ui-header{
+  display: none;
+}
+.banner{
+  width:100%;
+  img{
+    width:100%;
+  }
+}
+.main {
+  width: auto;
+  float: none;
+  padding:0px px2rem(32px) px2rem(10px);
+  text-align:center;
+  a{
+    text-decoration:none;
+    &:hover {
+      text-decoration:none;
+    }
+  }
+
+  .down{
+    text-align:center;
+    display:block;
+    background:#ff3030;
+    color:#fff;
+    height:px2rem(92px);
+    font-size:px2rem(32px);
+    line-height:px2rem(92px);
+    border-radius:5px;
+    img{
+      width:px2rem(36px);
+      height:px2rem(36px);
+      vertical-align:top;
+      margin-top:px2rem(28px);
+      padding-right:px2rem(16px);
+    }
+  }
+  .linkold {
+    display: none;
+    font-size:px2rem(28px);
+    line-height:px2rem(128px);
+    color:#5c5c5c;
+  }
+}

@@ -1,0 +1,18 @@
+$(function(){
+    $('.min1').click(function(){
+        $('.bgpic').css('display','block');
+        $('.max1').css('display','block');
+    });
+    $('.min2').click(function(){
+        $('.bgpic').css('display','block');
+        $('.max2').css('display','block');
+    });
+    $('.max1').click(function(){
+        $(this).css('display','none');
+        $(this).siblings('.bgpic').css('display','none');
+    })
+    $('.max2').click(function(){
+        $(this).css('display','none');
+        $(this).siblings('.bgpic').css('display','none');
+    })
+});

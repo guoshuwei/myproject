@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog';
+@import '../inc/m_ui';
+@import '../inc/header-mobile';
+@import '../inc/footer-mobile';
+body {
+	width:px2rem(750px);
+	margin:0px auto;
+}
+.ui-sectiontitle {
+	line-height:px2rem(80px);
+	font-size:px2rem(24px);
+	background:#efefef;
+	padding:0px px2rem(30px);
+	.sectiontitle-text {
+		color:#7a858d;
+	}
+	.sectiontitle-link{
+		color:#ff7856;
+	}
+}
+.ui-sectionlist {
+	padding:0px px2rem(30px);
+	background:#efefef;
+	.sectionlist-wrap {
+		border-top:px2rem(6px) solid #ff7856;
+		background:#fff;
+	}
+	.sectionlist-link {
+		display:block;
+		font-size:px2rem(28px);
+		line-height:px2rem(120px);
+		color:#7c868e;
+		border-bottom:px2rem(2px) solid #e8e8e8;
+		&:last-of-type {
+			border:none;
+		}
+	}
+	.sectionlist-platname {
+		color:#404040;
+		padding:0px px2rem(40px) 0px px2rem(40px);
+	}
+	.sectionlist-icon {
+		padding:0px px2rem(32px) 0px px2rem(40px);
+		i{
+			display:block;
+			width:px2rem(14px);
+			height:px2rem(22px);
+			position:relative;
+			top:px2rem(48px);
+			background:url("/styles/images/common/mobile/icons.png") no-repeat px2rem(-12px) px2rem(-159px);
+			background-size:px2rem(358px) px2rem(195px);
+		}
+	}
+}
+.ui-empty {
+	padding-bottom:px2rem(50px);
+}
+.ui-sectiondesc{
+	padding:0px px2rem(30px);
+	padding-top:px2rem(52px);
+	font-size:px2rem(24px);
+	color:#666;
+	background:#efefef;
+	.sectiondesc-title {
+		line-height:px2rem(40px);
+		font-weight:bold;
+	}
+	.sectiondesc-text {
+		line-height:px2rem(40px);
+		padding-top:px2rem(12px);
+	}
+}

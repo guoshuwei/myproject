@@ -1,0 +1,10 @@
+{
+    "code":200,
+    "message":"Success.",
+    "data":{
+        "obtain":20,
+        "remaining":26,
+        "price":0.43,
+        "date_t":"31"
+    }
+}

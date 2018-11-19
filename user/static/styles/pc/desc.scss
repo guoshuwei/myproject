@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/header';
+@import '../inc/member-header';
+@import '../inc/footer';
+@import '../mod/asidelist';
+@import '../mod/articlelist';
+@import '../mod/animate';
+@import '../mod/comment';
+@import '../mod/desclist';
+@import '../mod/bind';
+@import '../mod/floatlayer';
+@import '../mod/activity';
+.mod-mbox{
+	.hd{
+		height: 40px;
+		background:#faf9f9;
+		position:relative;
+		border-bottom:1px solid #ebebeb;
+		.h1{
+			height: 16px;
+			line-height: 16px;
+			font-size: 16px;
+			border-right:1px solid #ebebeb;
+			color: #383838;
+			display: block;
+  			float: left;
+  			margin-top: 14px;
+  			padding: 0 30px;
+  			font-family: Microsoft YaHei;
+  			cursor: pointer;
+		}
+		.h1.last{
+			border-right:none;
+		}
+		h1,.h1.current,.h1:hover{
+			display: block;
+			float: left;
+			padding:0 30px;
+			border-top:2px solid #0080cc;
+			line-height: 39px;
+			height: 39px;
+			background:#fff;
+			font-size: 16px;
+			font-family: Microsoft YaHei;
+			border-right:1px solid #ebebeb;
+			text-decoration: none;
+			margin-top: 0;;
+		}
+		.more{
+			font-size: 14px;
+			font-family: arial;
+			color: #383838;
+			line-height: 40px;
+			float: right;
+			margin-right: 22px;
+		}
+	}
+
+}
+.ui-empty{
+	padding: 28px 0 68px 0;
+}
+.ui-empty-img{
+	width: 102px;
+	height: 136px;
+	margin: 0 auto 46px;
+	background: url('/styles/images/profile/empty.png') 0 0 no-repeat;
+}
+.ui-empty-txt{
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	font-size: 14px;
+	color: #999;
+}
+
+
+
+

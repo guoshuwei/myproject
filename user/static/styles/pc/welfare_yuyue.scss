@@ -1,0 +1,434 @@
+@charset "UTF-8";
+@import '../base/utils';
+@import '../base/reset';
+@import '../base/grid';
+@import '../inc/ui';
+@import '../mod/dialog';
+@import '../inc/site-nav';
+@import '../inc/footer';
+@import '../mod/bind';
+@import '../mod/getkillloans';
+
+body{
+  background: #c41212;
+}
+a:hover{
+  text-decoration: none;
+}
+.ui-banner{
+  height: 410px;
+  width: 100%;
+  background: url(/styles/images/topic/welfare/pc/yure/yure_back.png) no-repeat center 0;
+  @include ratioBackground($url:'/styles/images/topic/welfare/pc/yure/yure_back_2x.png',$size:1920px 410px,$x: center,$y: 0px);
+}
+.ui-wrap {
+  width: 1000px;
+  margin: 0 auto;
+  .ui-back1 {
+    margin-bottom: 25px;
+    width: 1000px;
+    height: 283px;
+    background-image: url("/styles/images/topic/welfare/pc/yure/ditu1.png");
+    @include ratioBackground($url:'/styles/images/topic/welfare/pc/yure/ditu1_2x.png',$size:1000px 283px,$x: 0px,$y: 0px);
+    overflow: hidden;
+    .ui-brandtitle-text{
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      margin-top: 35px;
+    }
+    .ui-brandtitle-licons{
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      //margin-right: 10px;
+      width: 130px;
+      height: 20px;
+      vertical-align: middle;
+      background: url(/styles/images/topic/brand1218/pc/icons.png) no-repeat 0 -52px;
+    }
+    .ui-brandtitle-ricons{
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      //margin-left: 10px;
+      width: 130px;
+      height: 20px;
+      vertical-align: middle;
+      background: url(/styles/images/topic/brand1218/pc/icons.png) no-repeat -138px -52px;
+    }
+    .ui-brandtitle-detail {
+      margin-top: 10px;
+      width: 1000px;
+      text-align: center;
+      line-height: 14px;
+      color: #fff;
+    }
+    .ui-yuyue {
+      height: 40px;
+      max-width: 867px;
+      padding: 30px 0px;
+      line-height: 40px;
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      margin: 0 auto;
+      .progress-num{
+        font-size: 18px;
+      }
+      .progress-wrap {
+        display: inline-block;
+        height: 14px;
+        width: 420px;
+        background: #fff;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        margin: 11px 5px;
+        padding: 1px 0px;
+        //.progress-liner {
+        //  height: 14px;
+        //  //根据已经预约的用户个数决定
+        //  //width: 100px;
+        //  max-width: 417px;
+        //  margin-left: 1px;
+        //  background: #ff3e5d;
+        //  //border-top-left-radius: 10px;
+        //  //-moz-border-radius-topleft: 10px;
+        //  //border-bottom-left-radius: 10px;
+        //  //-moz-border-radius-bottomleft: 10px;
+        //  border-radius: 16px;
+        //  -moz-border-radius: 10px;
+        //}
+        .progress-liner-wrap {
+          height: 14px;
+          width: 418px;
+          margin: 0 auto;
+          overflow: hidden;
+          background: #fff;
+          border-radius: 16px;
+          .progress-liner {
+            height: 14px;
+            width: 418px;
+            background: #ffe21c;
+          }
+        }
+      }
+      .progress-button {
+        height: 40px;
+        width: 180px;
+        background: #ffe21c;
+        margin-left: 15px;
+        font-size: 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #ff8c2a;
+        &:hover {
+            background:#fff;
+        }
+      }
+      .my-yuyue {
+        display: inline-block;
+        margin-left: 10px;
+        height: 38px;
+        width: 110px;
+        border: 1px solid #d9c0ff;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+        @include fadein(0.25s);
+        &:hover {
+          background:#fff;
+          border:1px solid #fff;
+          color: #c41212;
+        }
+      }
+    }
+    .ui-user {
+      height: 64px;
+      width: 900px;
+      padding: 0px 50px;
+      .ui-user-wrap {
+        height: 14px;
+        width: 850px;
+        padding: 25px;
+        overflow: hidden;
+        background:#c41212;
+        cursor: pointer;
+        border-radius: 8px;
+        .ui-user-info {
+          height: 14px;
+          //根据li的个数决定
+          width: 1000px;
+          border-radius: 5px;
+          color: #fff;
+          li {
+            float: left;
+            margin-right: 50px;
+            font-size: 14px;
+            width: auto !important;
+          }
+        }
+      }
+    }
+  }
+  .ui-back2 {
+    margin-bottom: 25px;
+    width: 1000px;
+    height: 445px;
+    background: url(/styles/images/topic/welfare/pc/yure/ditu2.png) no-repeat center 0;
+    background-size: 1000x 445px;
+    @include ratioBackground($url:'/styles/images/topic/welfare/pc/yure/ditu2_2x.png',$size:1000px 445px,$x: center,$y: 0px);
+    overflow: hidden;
+    .ui-brandtitle-text{
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      margin-top: 35px;
+    }
+    .ui-brandtitle-licons{
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      //margin-right: 10px;
+      width: 130px;
+      height: 20px;
+      vertical-align: middle;
+      background: url(/styles/images/topic/brand1218/pc/icons.png) no-repeat 0 -52px;
+    }
+    .ui-brandtitle-ricons{
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      //margin-left: 10px;
+      width: 130px;
+      height: 20px;
+      vertical-align: middle;
+      background: url(/styles/images/topic/brand1218/pc/icons.png) no-repeat -138px -52px;
+    }
+    .ui-brandtitle-detail {
+      margin-top: 10px;
+      width: 1000px;
+      text-align: center;
+      line-height: 14px;
+      color: #fff;
+    }
+    .ui-into {
+      height: 300px;
+      width: 900px;
+      margin: 20px auto;
+      //display: flex;
+      //display: -ms-flexbox; /* IE 10 */
+      //display: -webkit-flex;
+      justify-content: space-between;
+      color: #fff;
+      font-size: 14px;
+      .step1, .step2 {
+        float: left;
+        height: 300px;
+        width: 401px;
+        background: #fff0dd;
+        line-height: 25px;
+        font-size: 16px;
+        .step-n {
+          background: #ffe21c;
+          width: 70px;
+          height: 25px;
+          border-radius: 25px;
+          text-align: center;
+          color: #e24d05;
+          margin-right: 10px;
+          display: inline-block;
+        }
+        .a-look {
+          color: #ffe21c;
+          font-size: 12px;
+          margin-left: -5px;
+          &:hover {
+            color: #f0ad4e;
+
+          }
+        }
+        .step-look {
+          height: 14px;
+          width: 401px;
+          text-align: center;
+          margin: 2px auto;argin-top: 245px;
+        }
+      }
+      .step2 {
+        margin-left: 98px;
+      }
+    }
+    .ui-into1 {
+      .step1 {
+        background: url(/styles/images/topic/welfare/pc/yure/step1.png) no-repeat center 34px;
+        @include ratioBackground($url:'/styles/images/topic/welfare/pc/yure/step1_2x.png',$size:401px 235px,$x: center,$y: 34px);
+      }
+      .step2 {
+        background: url(/styles/images/topic/welfare/pc/yure/step2.png) no-repeat center 34px;
+        @include ratioBackground($url:'/styles/images/topic/welfare/pc/yure/step2_2x.png',$size:401px 235px,$x: center,$y: 34px);
+      }
+    }
+  }
+  .ui-back3 {
+    width: 1000px;
+    height: 445px;
+    background: url(/styles/images/topic/welfare/pc/yure/ditu3.png) no-repeat center 0;
+    @include ratioBackground($url:'/styles/images/topic/welfare/pc/yure/ditu3_2x.png',$size:1000px 445px,$x: center,$y: 0px);
+    .ui-into2 {
+      .step1 {
+        background: url(/styles/images/topic/welfare/pc/yure/step3.png) no-repeat center 34px;
+        @include ratioBackground($url:'/styles/images/topic/welfare/pc/yure/step3_2x.png',$size:401px 235px,$x: center,$y: 34px);
+      }
+      .step2 {
+        background: url(/styles/images/topic/welfare/pc/yure/step4.png) no-repeat center 34px;
+        @include ratioBackground($url:'/styles/images/topic/welfare/pc/yure/step4_2x.png',$size:401px 235px,$x: center,$y: 34px);
+      }
+    }
+  }
+}
+
+.my-yuyue-alert-wrap {
+   display: none;
+   background: #000;
+   opacity: .7;
+}
+.my-yuyue-alert {
+  height:345px;
+  width: 420px;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -215px;
+  margin-top: -192.5px;
+  padding: 10px 10px;
+  text-align: center;
+  z-index: 100;
+  border-radius: 15px;
+  display: none;
+  overflow: hidden;
+  .yuyue-close {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    font-size: 30px;
+    color: #ff3e5d;
+    cursor: pointer;
+  }
+  h1 {
+    width: 255px;
+    font-size: 24px;
+    margin: 0 auto;
+  }
+  p {
+    //margin: 5px 0px 0px 0px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .yuyue-table {
+    font-size: 14px;
+    margin: 0 auto;
+    tr, td ,th{
+      text-align: center;
+      font-size: 14px;
+    }
+    tr {
+      height: 35px;
+      line-height: 35px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+    .th-left {
+      width: 30px;
+    }
+    .th-center {
+      width: 210px;
+    }
+    .th-right {
+      width: 150px;
+    }
+  }
+  .ui-record-pager{
+    height: 35px;
+    text-align: center;
+    margin: 0 auto;
+    a:hover{
+      text-decoration: none;
+    }
+    a{
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      margin: 0 4px;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #cccccc;
+      &:hover{
+        color: #fff;
+        background-color: #ef3756;
+      }
+    }
+    span{
+      color: #fff;
+    }
+    .jp-current{
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      background-color: #ff3e5d;
+      cursor: default;
+      &:hover{
+        background-color: #ef3756;
+      }
+    }
+    .jp-previous,
+    .jp-next{
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      width: auto;
+      padding: 0 16px;
+      border-radius: 3px;
+      font-size:14px;
+      color: #fff;
+      height: 35px;
+      line-height: 35px;
+      background-color: #ff3e5d;
+      &:hover{
+        background-color: #ef3756;
+      }
+    }
+    .jp-disabled{
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      width: auto;
+      padding: 0 16px;
+      border-radius: 3px;
+      font-size: 14px;
+      color: #fff;
+      height: 35px;
+      line-height: 35px;
+      background-color: #cccccc;
+      cursor: default;
+    }
+  }
+}
+
+.mod-floatlayer {
+  display: none;
+}

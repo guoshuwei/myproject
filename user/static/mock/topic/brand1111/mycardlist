@@ -1,0 +1,22 @@
+{
+    "code": 200,
+    "message": "Success.",
+    "data": [
+        {
+            "card_id": "4",
+            "add_time": "1508592157",
+            "status": "1",
+            "platform_name": "人人贷",
+            "face_value": "200.00",
+            "min_amount": "10000.00"
+        },
+        {
+            "card_id": "5",
+            "add_time": "1508727241",
+            "status": "1",
+            "platform_name": "微贷网",
+            "face_value": "200.00",
+            "min_amount": "10000.00"
+        }
+    ]
+}

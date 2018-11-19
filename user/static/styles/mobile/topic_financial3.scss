@@ -1,0 +1,608 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils'; 
+@import '../base/mreset';
+@import '../base/mobileGrid';
+@import '../mod/dialog'; 
+@import '../inc/m_ui';
+@import '../inc/footer-mobile';
+
+body{
+    background: #f77400 url(/styles/images/topic/financial/mobile/banner3.png) no-repeat center top;
+    background-size: px2rem(750px) px2rem(416px);
+}
+.ui-section{
+    width: px2rem(750px);
+    margin: 0 auto;
+}
+.ui-banner{
+    height: px2rem(346px);
+}
+.ui-hotloan{
+    width: px2rem(670px);
+    margin: 0 auto;
+    padding: px2rem(10px) px2rem(18px) px2rem(18px);
+    background: #dd222d url(/styles/images/topic/financial/mobile/bg_hotloan.png) no-repeat 0 0;
+    background-size: px2rem(710px) px2rem(100px);
+}
+.ui-hotloan-nav{
+    padding-top: px2rem(19px);
+    height: px2rem(51px);
+    border-bottom: 1px dashed #fff;
+    margin-bottom: px2rem(20px);
+}
+.ui-hotloan-nav-item{
+    float: left;
+    width: 25%;
+    line-height: px2rem(32px);
+    vertical-align: middle;
+    a{
+        font-size: px2rem(20px); 
+        color: #fff;
+    }
+}
+.ui-hotloan-nav-item-sign{
+    text-align: center;
+    .ui-icons{
+        display: inline-block;
+        margin-right: px2rem(10px); 
+        width: px2rem(31px);
+        height: px2rem(32px);
+        vertical-align: top;
+        background: url(/styles/images/topic/financial/mobile/icons.png) no-repeat 0 px2rem(-69px);
+        background-size: px2rem(400px) px2rem(400px);
+
+    }
+}
+.ui-hotloan-nav-item-welfare{
+    text-align: center;
+    .ui-icons{
+        display: inline-block;
+        margin-right: px2rem(10px); 
+        width: px2rem(30px);
+        height: px2rem(32px);
+        vertical-align: top;
+        background: url(/styles/images/topic/financial/mobile/icons.png) no-repeat px2rem(-42px) px2rem(-66px);
+        background-size: px2rem(400px) px2rem(400px);
+
+    }
+}
+.ui-hotloan-nav-item-gl{
+    text-align: center;
+    //text-align: left;
+    .ui-icons{
+        display: inline-block;
+        margin-right: px2rem(10px); 
+        width: px2rem(23px);
+        height: px2rem(32px);
+        vertical-align: top;
+        background: url(/styles/images/topic/financial/mobile/icons.png) no-repeat px2rem(-83px) px2rem(-66px);
+        background-size: px2rem(400px) px2rem(400px);
+    }
+}
+.ui-hotloan-nav-item-more{
+    text-align: center;
+    //text-align: right;
+    .ui-icons{
+        display: inline-block;
+        margin-right: px2rem(10px); 
+        width: px2rem(30px);
+        height: px2rem(32px);
+        vertical-align: top;
+        background: url(/styles/images/topic/financial/mobile/icons.png) no-repeat px2rem(-117px) px2rem(-69px);
+        background-size: px2rem(400px) px2rem(400px);
+
+    }
+}
+.ui-hotloan-red{
+    width: px2rem(285px);
+    padding: px2rem(18px);
+    background: #fd3b47 url(/styles/images/topic/financial/mobile/bg_rate.png) no-repeat px2rem(175px) px2rem(135px);
+    background-size: px2rem(138px) px2rem(108px);
+}
+.ui-hotloan-blue{
+    width: px2rem(285px);
+    padding: px2rem(18px);
+    background: #259fd8;
+    background: #259fd8 url(/styles/images/topic/financial/mobile/bg_card.png) no-repeat px2rem(175px) px2rem(140px);
+    background-size: px2rem(128px) px2rem(98px);
+}
+.ui-hotloan-title{
+    display: inline-block;
+    line-height: px2rem(37px);
+    font-size: px2rem(32px);
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: px2rem(17px);
+    margin-bottom: px2rem(17px);
+    border-bottom: 1px solid #fff;
+}
+.ui-hotloan-note{
+    font-size: px2rem(20px);
+    color: #fee300;
+    line-height: px2rem(30px);
+}
+.ui-rate-btn{
+    display: block;
+    width: px2rem(136px);
+    height: px2rem(34px);
+    line-height: px2rem(34px);
+    border-radius: px2rem(17px);
+    text-align: center;
+    font-size: px2rem(20px);
+    color: #fff;
+    margin-top: px2rem(25px);
+    background-color: #d22b3c;
+}
+.ui-card-btn{
+    display: block;
+    width: px2rem(136px);
+    height: px2rem(34px);
+    line-height: px2rem(34px);
+    border-radius: px2rem(17px);
+    text-align: center;
+    font-size: px2rem(20px);
+    color: #fff;
+    margin-top: px2rem(25px);
+    background-color: #1a84b5;
+}
+.ui-icons-fire{
+    display: inline-block;
+    margin-right: px2rem(15px); 
+    width: px2rem(24px);
+    height: px2rem(37px);
+    vertical-align: bottom;
+    background: url(/styles/images/topic/financial/mobile/icons.png) no-repeat px2rem(-158px) px2rem(-69px);
+    background-size: px2rem(400px) px2rem(400px);    
+}
+.ui-icons-card{
+    display: inline-block;
+    margin-right: px2rem(15px); 
+    width: px2rem(33px);
+    height: px2rem(37px);
+    vertical-align: bottom;
+    background: url(/styles/images/topic/financial/mobile/icons.png) no-repeat px2rem(-193px) px2rem(-61px);
+    background-size: px2rem(400px) px2rem(400px);    
+
+}
+.ui-icons-gift{
+    display: inline-block;
+    margin-right: px2rem(15px); 
+    width: px2rem(30px);
+    height: px2rem(37px);
+    vertical-align: bottom;
+    background: url(/styles/images/topic/financial/mobile/icons.png) no-repeat px2rem(-237px) px2rem(-66px);
+    background-size: px2rem(400px) px2rem(400px);    
+
+}
+.ui-icons-invite{
+    display: inline-block;
+    margin-right: px2rem(15px); 
+    width: px2rem(31px);
+    height: px2rem(45px);
+    vertical-align: bottom;
+    background: url(/styles/images/topic/financial/mobile/icons.png) no-repeat px2rem(-278px) px2rem(-66px);
+    background-size: px2rem(400px) px2rem(400px);    
+}
+.ui-icons-cooperation{
+    display: inline-block;
+    margin-right: px2rem(15px); 
+    width: px2rem(40px);
+    height: px2rem(37px);
+    vertical-align: bottom;
+    background: url(/styles/images/topic/financial/mobile/icons.png) no-repeat px2rem(-320px) px2rem(-64px);
+    background-size: px2rem(400px) px2rem(400px);    
+
+}
+.ui-hotplatform{
+    margin: px2rem(20px);
+    padding: px2rem(20px) px2rem(8px);
+    width: px2rem(694px);
+    height: px2rem(326px);
+    background: #8f2bef url(/styles/images/topic/financial/mobile/bg_loans.png) no-repeat 0 0;
+    background-size: px2rem(710px) px2rem(366px);
+    a{
+        display: block;
+        height: px2rem(245px);
+        line-height: px2rem(135px);
+        font-size: px2rem(110px);
+        color: #ffec00;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+.ui-financial-title{
+    font-size: px2rem(40px);
+    color: #fff;
+    line-height: px2rem(37px);
+    text-align: center;
+}
+.ui-financial-note{
+    font-size: px2rem(20px);
+    color: #fff;
+    text-align: center;
+    line-height: px2rem(50px);
+    margin-bottom: px2rem(15px);
+}
+
+
+.ui-bg-item{
+    margin-top: px2rem(10px); 
+    display: inline-block;
+    padding: px2rem(3px);
+    line-height: px2rem(20px);
+    border: 1px solid #11aee5;
+    color: #11aee5;
+    font-size: px2rem(18px);
+    border-radius: px2rem(5px);
+
+}
+
+.ui-integral{
+    background: #ffd400 url(/styles/images/topic/financial/mobile/bg_integrals3.png) no-repeat 0 0;
+    background-size: px2rem(710px) px2rem(483px);
+    margin: px2rem(15px) px2rem(20px) px2rem(20px);
+    padding: px2rem(20px);
+    height: px2rem(443px);
+    .ui-financial-title{
+        color: #a65003;
+    }
+    .ui-financial-note{
+        color: #a65003;
+    }
+    a{
+        display: block;
+        height: px2rem(350px);
+    }
+}
+.ui-integral-item{
+    width: px2rem(325px);
+    height: px2rem(325px);
+    border-radius: px2rem(10px);
+    background-color: #fff;
+    img{
+        display: block;
+        width: px2rem(172px);
+        height: px2rem(194px);
+        padding: px2rem(50px) 0 px2rem(15px);
+        margin: 0 auto;
+    }
+    span{
+        display: block;
+        text-align: center;
+        line-height: px2rem(60px);
+        font-size: px2rem(24px);
+        color: #333;
+    }
+}
+.ui-invite{
+    margin: px2rem(20px);
+    padding: px2rem(20px) 0 px2rem(35px);
+    background: #8f2bef url(/styles/images/topic/financial/mobile/bg_invite.png) no-repeat 0 0;
+    background-size: px2rem(710px) px2rem(100px);
+    .ui-financial-title{
+        line-height: px2rem(45px);
+    }
+    a{
+        display: block;
+    }
+}
+.ui-invite-pic{
+    img{
+        display: block;
+        margin: 0 auto;
+        width: px2rem(669px);
+        height: px2rem(181px);
+    }
+}
+.ui-cooperation{
+    margin: 0 px2rem(20px);
+    padding: px2rem(20px) px2rem(18px) 0;
+    background: #2888e0 url(/styles/images/topic/financial/mobile/bg_cooperation.png) no-repeat 0 0;
+    background-size: px2rem(710px) px2rem(100px);
+}
+.ui-cooperation-item{
+    float: left;
+    width: px2rem(152px);
+    height: px2rem(130px);
+    overflow: hidden;
+    margin: 0 px2rem(8px) px2rem(20px);
+}
+.ui-cooperation-logo{
+    display: table-cell;
+    width: px2rem(152px);
+    height: px2rem(130px);
+    vertical-align: middle;
+    background-color: #fff;
+    text-align: center;
+    img{
+        max-width: px2rem(152px);
+        max-height: px2rem(130px);
+    }
+}
+.ui-friendly{
+    line-height: px2rem(90px);
+    text-align: center;
+    font-size: px2rem(20px);
+    color: #fff;
+}
+.ui-redland518{
+    position: fixed;
+    top: px2rem(150px);
+    right: px2rem(11px);
+    width: px2rem(192px);
+    height: px2rem(193px);
+    background: url(/styles/images/topic/financial/mobile/518float3.png) no-repeat 0 0;
+    background-size: px2rem(192px) px2rem(193px);
+   
+}
+.ui-prize518-none{
+    display: none;
+}
+.ui-prize518-btn{
+    margin: 0 px2rem(20px);
+    text-align: center;
+    a{
+        display: inline-block;
+        width: px2rem(223px);
+        height: px2rem(54px);
+        line-height: px2rem(54px);
+        text-align: center;
+        font-size: px2rem(24px);
+        color: #a0490e;
+        background-color: #ffec00;
+        border-radius: px2rem(6px);
+
+    }
+}
+.ui-prize518-list{
+    margin: px2rem(20px) px2rem(20px) px2rem(15px);
+    padding: 0 px2rem(20px);
+    height: px2rem(54px);
+    line-height: px2rem(54px);
+    border-radius: px2rem(6px);
+    background-color: #b74a00;
+    overflow: hidden;
+}
+.ui-prize518-list-warp{
+}
+.ui-prize518-list-item{
+    float: left;
+    width: auto!important;
+    margin-right: px2rem(50px);
+    font-size: px2rem(20px);
+    color: #fff;
+}
+.ui-prize518-box{
+    position: relative;
+    margin: 0 auto;
+    width: px2rem(720px);
+    height: px2rem(720px);
+    background: url(/styles/images/topic/financial/mobile/bg_prizelist.png) no-repeat 0 0;
+    background-size: px2rem(720px) px2rem(720px);    
+}
+.ui-prize518-item-pic{
+    width: px2rem(109px);
+    margin: 0 auto;
+    padding-top: px2rem(10px);
+    img{
+        display: block;
+        width: px2rem(110px);
+        height: px2rem(110px);
+    }
+}
+.ui-prize518-item-name{
+    line-height: px2rem(35px);
+    color: #333;
+    background-color: #f77400;
+    text-align: center;
+    @include text-ellipsis;
+}
+.ui-prize518-btnbox{
+    position: absolute;
+    top: px2rem(365px);
+    left: px2rem(200px);
+    width: px2rem(320px);
+}
+.ui-prize518-button{
+    display: block;
+    width: px2rem(320px);
+    height: px2rem(126px);   
+    background: url(/styles/images/topic/financial/mobile/prizelist_btn.png) no-repeat 0 0;
+    background-size: px2rem(320px) px2rem(126px);   
+}
+.ui-prize518-chance{
+    font-size: px2rem(26px);
+    color: #f73954;
+    text-align: center;
+}
+.ui-prize518-number{
+    color: #ffd400;
+    font-weight: bold;
+}
+.ui-prize518-item{
+    position: absolute;
+    width: px2rem(155px);
+    height: px2rem(155px);
+    background-color: #fff;
+}
+.ui-prize518-item-active{
+    border: px2rem(6px) solid #ffec00;
+    margin-top: px2rem(-6px);
+    margin-left: px2rem(-6px);
+}
+.ui-prize518-position1{
+    top: px2rem(35px);
+    left: px2rem(35px);
+}
+.ui-prize518-position2{
+    top: px2rem(35px);
+    left: px2rem(200px);
+}
+.ui-prize518-position3{
+    top: px2rem(35px);
+    left: px2rem(365px);
+}
+.ui-prize518-position4{
+    top: px2rem(35px);
+    left: px2rem(530px);
+}
+.ui-prize518-position5{
+    top: px2rem(200px);
+    left: px2rem(35px);
+}
+.ui-prize518-position6{
+    top: px2rem(200px);
+    left: px2rem(200px);
+}
+.ui-prize518-position7{
+    top: px2rem(200px);
+    left: px2rem(365px);
+}
+.ui-prize518-position8{
+    top: px2rem(200px);
+    left: px2rem(530px);
+}
+.ui-prize518-position9{
+    top: px2rem(365px);
+    left: px2rem(35px);
+}
+.ui-prize518-position10{
+    top: px2rem(365px);
+    left: px2rem(530px);
+}
+
+.ui-prize518-position11{
+    top: px2rem(530px);
+    left: px2rem(35px);
+}
+.ui-prize518-position12{
+    top: px2rem(530px);
+    left: px2rem(200px);
+}
+.ui-prize518-position13{
+    top: px2rem(530px);
+    left: px2rem(365px); 
+}
+.ui-prize518-position14{
+    top: px2rem(530px);
+    left: px2rem(530px);
+}
+//dialog
+.dialog{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: px2rem(10px);
+    overflow: hidden;
+}
+.dialog_title{
+    background-color: #fd3b47;
+    text-align: center;
+    font-size: px2rem(24px);
+    padding: px2rem(15px) px2rem(30px);
+    .closebtn{
+        top: px2rem(17px);
+        right: px2rem(30px);
+        width: px2rem(25px);
+        height: px2rem(25px);
+        display: block;
+        background: url(/styles/images/topic/financial/mobile/icons.png) no-repeat px2rem(-378px) px2rem(-70px);
+        background-size: px2rem(400px) px2rem(400px);
+    }
+}
+.dialog_content{
+    padding: px2rem(15px) px2rem(10px) px2rem(20px);
+}
+.ui-text{
+    text-align: center;
+    font-size: px2rem(30px);
+    color: #333;
+    line-height: px2rem(40px);
+    padding: px2rem(35px) 0;
+}
+.ui-dialog-btnbox{
+    text-align: center;
+}
+.ui-dialog-btnbox-btn{
+    display: inline-block;
+    padding: 0 px2rem(25px);
+    margin: 0 px2rem(15px);
+    border: 1px solid #fd3b47;
+    border-radius: px2rem(6px);
+    font-size: px2rem(24px);
+    color: #fd3b47;
+    height: px2rem(55px);
+    line-height: px2rem(55px);
+}
+.ui-dialog-btnbox-btnprev{
+    display: inline-block;
+    padding: 0 px2rem(25px);
+    margin: 0 px2rem(15px);
+    border: 1px solid #fd3b47;
+    border-radius: px2rem(6px);
+    font-size: px2rem(24px);
+    height: px2rem(55px);
+    line-height: px2rem(55px);
+    background-color: #fd3b47;
+    color: #fff;
+}
+.ui-dialog-note{
+    display: block;
+    text-align: center;
+    font-size: px2rem(20px);
+    line-height: px2rem(50px);
+    color: #fd3b47;
+}
+.ui-dialog1{
+    width: px2rem(450px);
+    height: px2rem(300px);
+    margin-top: px2rem(-150px);
+    margin-left: px2rem(-225px);
+}
+.ui-dialog2{
+    width: px2rem(520px);
+    height: px2rem(300px);
+    margin-top: px2rem(-150px);
+    margin-left: px2rem(-260px);
+}
+.ui-dialog3{
+    width: px2rem(680px);
+    height: px2rem(490px);
+    margin-top: px2rem(-245px);
+    margin-left: px2rem(-340px);
+}
+.ui-prize-pic{
+    height: px2rem(190px);
+    padding: px2rem(20px) 0 0;
+    text-align: center;
+    img{
+        height: px2rem(190px);
+    }
+}
+
+.ui-prize-note{
+    font-size: px2rem(30px);
+    line-height: px2rem(95px);
+    text-align: center;
+    color: #333;
+    span{
+        color: #333;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

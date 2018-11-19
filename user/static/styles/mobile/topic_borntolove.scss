@@ -1,0 +1,1091 @@
+@Fcharset "UTF-8";
+@import '../base/mobileUtils';
+@import '../base/utils';
+@import '../base/mreset';
+@import '../base/grid';
+@import '../mod/dialog';
+@import '../mod/swiper';
+@import '../inc/m_ui';
+
+body{
+  width: 100%;
+  background: #000710;
+  position: relative;
+}
+
+.module{
+  width:px2rem(690px);
+  margin: 0 auto;
+}
+.top{
+  width: 100%;
+  overflow: hidden;
+}
+.top-title{
+  width: 100%;
+  height: px2rem(522px);
+  margin: 0 auto;
+  background: url("/styles/images/topic/borntolove/mobile/title1.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.playback{
+  width: px2rem(133px);
+  height:px2rem(206px);
+  background: url("/styles/images/topic/borntolove/mobile/zheng1.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top:0;
+  right: px2rem(50px);
+}
+.doswinging{
+  -webkit-animation:swinging 4s ease-in-out 0s infinite;
+  -moz-animation:swinging 4s ease-in-out 0s infinite;
+  animation:swinging 4s ease-in-out 0s infinite;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+@-webkit-keyframes swinging{
+  0% { -webkit-transform: rotate(10deg); }
+  50% { -webkit-transform: rotate(-10deg); }
+  100% { -webkit-transform: rotate(10deg); }
+}
+
+.luckbag-title{
+  width: px2rem(634px);
+  height: px2rem(112px);
+  margin: 0 auto;
+  background: url("/styles/images/topic/borntolove/mobile/lihei1.png") no-repeat;
+  background-size: 100% 100%;
+}
+.mod-slider-box {
+  width: px2rem(750px);
+  height: px2rem(650px);
+  overflow: hidden;
+  position: relative;
+  margin: px2rem(50px) auto 0;
+  .swiper-wrapper{
+    height: px2rem(650px);
+    li {
+      width: 100%;
+      height: px2rem(650px);
+    }
+  }
+  .mod-slider-lb {
+    height: px2rem(650px);
+    li {
+      width: 100%;
+      height: px2rem(650px);
+    }
+  }
+  .mod-slider-bj {
+    width: 100%;
+    height: px2rem(650px);
+    background: url("/styles/images/topic/borntolove/mobile/jiqirenbj.png") no-repeat center px2rem(290px);
+    background-size: 100%;
+  }
+  .nowtime{
+    .time {
+      font-size: px2rem(44px);
+      color: #16bce8;
+      font-weight: 800;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .gotime{
+    .time {
+      font-size: px2rem(44px);
+      color: #515151;
+      font-weight: 800;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .nexttime{
+    .time {
+      font-size: px2rem(44px);
+      color: #eeae23;
+      font-weight: 800;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .dotime {
+    font-size: 28px;
+    color: #16bce8;
+    width: 100%;
+    text-align: center;
+  }
+  .futuretime{
+    font-size: 28px;
+    color: #eeae23;
+    width: 100%;
+    text-align: center;
+  }
+  .latetime{
+    font-size: 28px;
+    color: #515151;
+    width: 100%;
+    text-align: center;
+  }
+  .lucky {
+    width: px2rem(501px);
+    height: px2rem(445px);
+    background: url("/styles/images/topic/borntolove/mobile/jiqiren1.png") no-repeat center;
+    background-size: 100% 100%;
+    margin: px2rem(43px) auto 0px;
+    overflow: hidden;
+  }
+  .pager {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .swiper-pagination{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  .swiper-pagination-switch{
+    float: left;
+    margin-right: px2rem(10px);
+    display: inline-block;
+    width: px2rem(14px);
+    height: px2rem(14px);
+    border: px2rem(1px) solid #15b7e2;
+    border-radius: 50%;
+  }
+  .swiper-active-switch{
+    background: #15b7e2;
+  }
+  .mod-slider-bj .swiper-pagination{
+    height: px2rem(20px);
+    left: 50%;
+    margin-left: px2rem(-117px);
+    bottom: px2rem(10px);
+  }
+
+  .pager-wrap{
+    display: inline-block;
+  }
+  .bx-pager-item {
+    float: left;
+    margin-right: px2rem(10px);
+  }
+  .bx-pager-item{
+    display: inline-block;
+    width: px2rem(14px);
+    height: px2rem(14px);
+    border: px2rem(1px) solid #15b7e2;
+    border-radius: 50%;
+  }
+  .active{
+      background: #15b7e2;
+  }
+}
+.jigsaw{
+  width: 100%;
+  height: px2rem(600px);
+  margin-top:px2rem(80px);
+}
+.jigsaw-title{
+  width: px2rem(628px);
+  height: px2rem(104px);
+  background: url("/styles/images/topic/borntolove/mobile/pintu.png") no-repeat center;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+.jigsaw-xiaotian{
+  width: px2rem(690px);
+  height: px2rem(460px);
+  background: url("/styles/images/topic/borntolove/mobile/eyept.png") no-repeat center;
+  background-size: 100% 100%;
+  margin-top: px2rem(30px);
+  overflow: hidden;
+}
+.jigsaw-examine{
+  display: block;
+  width: px2rem(630px);
+  height: px2rem(80px);
+  background: #16bce8;
+  line-height: px2rem(80px);
+  text-align: center;
+  color: #eeeeee;
+  font-size: px2rem(34px);
+  margin: px2rem(350px) auto 0px;
+  cursor: pointer;
+}
+.bonus-title{
+  width: px2rem(639px);
+  height: px2rem(99px);
+  background: url("/styles/images/topic/borntolove/mobile/jiangjinchi.png") no-repeat center;
+  background-size: 100% 100%;
+  margin: px2rem(75px) auto 0px;
+}
+.top-bonus{
+  width: px2rem(690px);
+  height: px2rem(280px);
+  background: url("/styles/images/topic/borntolove/mobile/jiangjinchibj.png") no-repeat center;
+  background-size: 100% 100%;
+  margin: px2rem(25px) auto 0px;
+  overflow: hidden;
+}
+.top-bonus-box{
+  width: px2rem(510px);
+  height: px2rem(80px);
+  margin: px2rem(56px) auto 0px;
+  overflow: hidden;
+}
+.money-sign{
+  height:px2rem(62px);
+  width: px2rem(44px);
+  font-size: px2rem(60px);
+  float: left;
+  color: #333333;
+  margin-right: px2rem(25px);
+  font-weight: 800;
+  line-height: px2rem(62px);
+}
+.comma{
+  display: block;
+  height: px2rem(62px);
+  width: px2rem(12px);
+  color: #333333;
+  font-weight: 900;
+  font-size: px2rem(36px);
+  margin-left: px2rem(8px);
+  margin-right:px2rem(8px);
+  line-height: px2rem(82px);
+}
+.money-list{
+  display: block;
+  width: px2rem(40px);
+  height: px2rem(62px);
+  color: #333333;
+  font-weight: 900;
+  line-height: px2rem(62px);
+  font-size: px2rem(62px);
+  text-align: center;
+}
+.money {
+  float: left;
+  overflow: hidden;
+  .moneyhide {
+    display: none;
+  }
+  span {
+    float: left;
+  }
+}
+.top-rule{
+  width: px2rem(625px);
+  height: px2rem(60px);
+  font-size: px2rem(24px);
+  color:#4c4c4c;
+  margin: px2rem(55px) auto px2rem(0px);
+}
+.investment{
+  width: 100%;
+  overflow: hidden;
+  margin-top: px2rem(77px);
+}
+.investment-title{
+  width: px2rem(619px);
+  height: px2rem(98px);
+  background: url("/styles/images/topic/borntolove/mobile/jingxuanh5.png") no-repeat center;
+  background-size: 100% 100%;
+  margin:0 auto;
+}
+.investment-specific{
+  width: px2rem(691px);
+  height: px2rem(668px);
+  background: url("/styles/images/topic/borntolove/mobile/214bj.png") no-repeat center;
+  background-size: 100% 100%;
+  margin:px2rem(16px) auto 0;
+  overflow: hidden;
+}
+.it-name{
+  width: 100%;
+  height: px2rem(36px);
+  line-height: px2rem(36px);
+  text-align: center;
+  font-size: px2rem(36px);
+  color: #333333;
+  font-weight: 800;
+  margin-top: px2rem(52px);
+}
+.it-model{
+  width: 100%;
+  height: px2rem(30px);
+  line-height: px2rem(30px);
+  text-align: center;
+  font-size: px2rem(28px);
+  color: #333333;
+  margin-top: px2rem(20px);
+  margin-bottom: px2rem(20px);
+}
+.it-context{
+  max-width: 80%;
+  height:px2rem(45px);
+  line-height: px2rem(45px);
+  font-size: px2rem(22px);
+  padding: px2rem(9px) px2rem(20px);
+  color: #7ac8ec;
+  border: px2rem(1px) solid #7ac8ec;
+  margin: auto;
+  margin-left: px2rem(280px);
+  border-radius: px2rem(3px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+}
+.it-sum{
+  width: px2rem(505px);
+  height: px2rem(120px);
+  margin-top: px2rem(60px);
+  margin-left:px2rem(96px);
+  font-size: px2rem(60px);
+  color: #333333;
+  font-weight: 800;
+  overflow: hidden;
+}
+.it-sum-top{
+  display: block;
+  width:100%;
+  text-align: center;
+  font-size: px2rem(110px);
+  font-weight: 800;
+  color: #333333;
+  .it-sum-persent{
+    font-size: px2rem(80px);
+    color: #333333;
+    font-weight: 400;
+  }
+}
+.added{
+  float: left;
+  font-size: px2rem(60px);
+  color: #333;
+  margin-left: px2rem(32px);
+  margin-right: px2rem(32px);
+}
+.it-sum-added{
+  float: left;
+  width: px2rem(201px);
+  height: px2rem(60px);
+  color: #ea544a;
+  font-weight: 800;
+  line-height: px2rem(60px);
+  text-align: center;
+  font-size: px2rem(60px);
+}
+
+.it-term{
+  width: 100%;
+  height: px2rem(30px);
+  font-size: px2rem(26px);
+  color: #3f3f3f;
+  text-align: center;
+  margin-top: px2rem(50px);
+}
+.it-ensure{
+  display: block;
+  width: px2rem(630px);
+  height: px2rem(80px);
+  background: #16bce8;
+  font-size: px2rem(33px);
+  color: #eee;
+  line-height: px2rem(80px);
+  text-align: center;
+  border-radius: px2rem(5px);
+  margin: px2rem(51px) auto 0px;
+}
+.it-more{
+  display: block;
+  width: 100%;
+  height: px2rem(36px);
+  font-size: px2rem(34px);
+  line-height: px2rem(36px);
+  color: #ffffff;
+  text-align: center;
+  margin-top: px2rem(40px);
+}
+.invest{
+  width: 100%;
+  height: px2rem(1132px);
+  margin-top:px2rem(80px);
+}
+.invest-title{
+  width: px2rem(615px);
+  height: px2rem(101px);
+  background: url("/styles/images/topic/borntolove/mobile/jifen.png") no-repeat center;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+.invest-box{
+  width: px2rem(690px);
+  height: px2rem(1000px);
+  background: #eeeeee;
+  border-radius: px2rem(10px);
+  margin: px2rem(30px) auto 0px;
+  overflow: hidden;
+}
+.invest-box-title{
+  font-size: px2rem(50px);
+  color: #333333;
+  width: 100%;
+  height: px2rem(60px);
+  line-height: px2rem(60px);
+  margin-top: px2rem(40px);
+  font-weight: 500;
+  text-align: center;
+}
+.invest-box-total{
+  width: px2rem(245px);
+  height: px2rem(24px);
+  text-align: center;
+  line-height: px2rem(24px);
+  font-size: px2rem(24px);
+  color: #999;
+  margin: px2rem(18px) auto 0px;
+  span{
+    color: #ee2137;
+  }
+}
+.rank{
+  overflow: hidden;
+  width: px2rem(532px);
+  height: px2rem(68px);
+  padding-left: px2rem(30px);
+  padding-right: px2rem(30px);
+  margin: px2rem(20px) auto 0px;
+  border-bottom: 2px solid #cccccc;
+}
+.rank-left{
+  font-size: px2rem(28px);
+  color: #999999;
+  float: left;
+  line-height: px2rem(68px);
+}
+.rank-right{
+  font-size: px2rem(28px);
+  color: #999999;
+  float: right;
+  line-height: px2rem(68px);
+}
+.rank-content{
+  margin: 0 auto;
+  width:px2rem(592px);
+  height: px2rem(630px);
+  overflow: hidden;
+}
+.rank-number{
+  margin-top: px2rem(30px);
+  overflow: hidden;
+}
+.user-number{
+  height: px2rem(30px);
+  line-height: px2rem(30px);
+  float: left;
+  font-size: px2rem(28px);
+  color: #333333;
+}
+.user-name{
+  height: px2rem(30px);
+  line-height: px2rem(30px);
+  width: px2rem(220px);
+  float: left;
+  font-size: px2rem(28px);
+  color: #333333;
+  margin-left: px2rem(20px);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.user-score{
+  line-height: px2rem(30px);
+  float: right;
+  font-size: px2rem(28px);
+  color: #333333;
+}
+.topthree{
+  .user-number{
+    height: px2rem(30px);
+    line-height: px2rem(30px);
+    float: left;
+    font-size: px2rem(28px);
+    color: #ee2137;
+  }
+  .user-name{
+    height: px2rem(30px);
+    line-height: px2rem(30px);
+    width: px2rem(220px);
+    float: left;
+    font-size: px2rem(28px);
+    color: #ee2137;
+    margin-left: px2rem(20px);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .user-score{
+    line-height: px2rem(30px);
+    float: right;
+    font-size: px2rem(28px);
+    color: #ee2137;
+  }
+}
+.my-rank{
+  margin: 0 auto;
+  width:px2rem(592px);
+  overflow: hidden;
+  .my-number{
+    display: block;
+    height: px2rem(16px);
+    width: px2rem(16px);
+    background: #12aa52;
+    float: left;
+    margin-left: px2rem(8px);
+    margin-top: px2rem(6px);
+  }
+  .my-name{
+    height: px2rem(30px);
+    line-height: px2rem(30px);
+    width: px2rem(220px);
+    float: left;
+    font-size: px2rem(28px);
+    color: #12aa52;
+    margin-left: px2rem(25px);
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .my-score{
+    line-height: px2rem(30px);
+    float: right;
+    font-size: px2rem(28px);
+    color: #12aa52;
+  }
+}
+.invest-module-bottom{
+  width: px2rem(592px);
+  margin: px2rem(15px) auto 0px;
+  height:px2rem(65px);
+  padding-top: px2rem(15px);
+  border-top: px2rem(2px) solid #cccccc;
+  font-size: px2rem(23px);
+  color: #999999;
+}
+.prize{
+  width: px2rem(690px);
+  height: px2rem(830px);
+  background: #eeeeee;
+  border-radius: px2rem(10px);
+  margin: px2rem(30px) auto 0px;
+  overflow: hidden;
+  position: relative;
+  .pager {
+    position: absolute;
+    bottom: px2rem(138px);
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .pager-wrap{
+    display: inline-block;
+  }
+
+  .bx-pager-item{
+    display: inline-block;
+    width: px2rem(14px);
+    height: px2rem(14px);
+    border: px2rem(1px) solid #9b9b9b;
+    border-radius: 50%;
+    float: left;
+    margin-right: px2rem(10px);
+  }
+  .active{
+    background: #666666;
+  }
+
+}
+.scoreboard{
+  font-size: px2rem(46px);
+  color: #333;
+  width: 100%;
+  height: px2rem(52px);
+  line-height: px2rem(52px);
+  text-align: center;
+  margin-top:px2rem(37px);
+}
+.mod-slider-prize{
+  height: px2rem(700px);
+  margin-top: px2rem(40px);
+  margin-left: px2rem(50px);
+  li{
+    width: px2rem(590px);
+    height: px2rem(700px);
+    margin: 0 auto;
+  }
+}
+.prize-item1{
+  width: px2rem(590px);
+  height: px2rem(590px);
+  background:url("/styles/images/topic/borntolove/mobile/prize1.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.prize-item2{
+  width: px2rem(590px);
+  height: px2rem(590px);
+  background:url("/styles/images/topic/borntolove/mobile/2deng.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.prize-item3{
+  width: px2rem(590px);
+  height: px2rem(590px);
+  background:url("/styles/images/topic/borntolove/mobile/3deng.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.prize-item4{
+  width: px2rem(590px);
+  height: px2rem(590px);
+  background:url("/styles/images/topic/borntolove/mobile/4deng.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.prize-item5{
+  width: px2rem(590px);
+  height: px2rem(590px);
+  background:url("/styles/images/topic/borntolove/mobile/5deng.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.prize-explain{
+  font-size: px2rem(28px);
+  color: #333;
+  margin-left: px2rem(166px);
+  margin-top:px2rem(33px);
+}
+
+.rule{
+  width: 100%;
+}
+.rule-title{
+  width: px2rem(519px);
+  height: px2rem(55px);
+  background:url("/styles/images/topic/borntolove/mobile/guize.png") no-repeat center ;
+  background-size: 100% 100%;
+  margin:px2rem(79px) auto 0px;
+}
+.rule-list{
+  width: px2rem(615px);
+  height: px2rem(350px);
+  padding: px2rem(50px) px2rem(30px) px2rem(45px) px2rem(45px);
+  background: #eeeeee;
+  border-radius: px2rem(10px);
+  margin: px2rem(30px) auto 0px;
+  overflow: hidden;
+}
+.rule-list-time{
+  overflow: hidden;
+  width: 100%;
+}
+.rule-list-time-left{
+  width: px2rem(140px);
+  float: left;
+  font-size: px2rem(28px);
+  color: #333333;
+  font-weight: 800;
+}
+.rule-list-time-right{
+  width: px2rem(475px);
+  float: left;
+  font-size:px2rem(28px);
+  color: #333333;
+}
+.rule-list-cash{
+  overflow: hidden;
+  width: 100%;
+  margin-top: px2rem(40px);
+}
+.rule-list-cash-left{
+  width: px2rem(140px);
+  float: left;
+  font-size: px2rem(28px);
+  color: #333333;
+  font-weight: 800;
+}
+.rule-list-cash-right{
+  width: px2rem(475px);
+  float: left;
+  font-size:px2rem(28px);
+  color: #333333;
+}
+.rule-list-entity{
+  overflow: hidden;
+  width: 100%;
+  margin-top: px2rem(40px);
+}
+.rule-list-entity-left{
+  width: px2rem(140px);
+  float: left;
+  font-size: px2rem(28px);
+  color: #333333;
+  font-weight: 800;
+}
+.rule-list-entity-right{
+  width: px2rem(475px);
+  float: left;
+  font-size:px2rem(28px);
+  color: #333333;
+}
+.remind{
+  width: 100%;
+  margin-top: px2rem(40px);
+  color: #666666;
+  font-size: px2rem(24px);
+  text-align: center;
+  padding-bottom: px2rem(40px);
+}
+.boxback{
+  display: none;
+  width: px2rem(440px);
+  height: px2rem(442px);
+  background:url("/styles/images/topic/borntolove/mobile/h5bj.png") no-repeat ;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+    a{
+      display: block;
+      width: px2rem(380px);
+      height: px2rem(80px);
+      background: #50baeb;
+      line-height: px2rem(80px);
+      text-align: center;
+      font-size: px2rem(34px);
+      color: #fff;
+      margin: px2rem(50px) auto 0px;
+    }
+}
+
+.bj{
+  display: none;
+  width: 100%;
+  background-color:#000;
+  filter:alpha(opacity=90);
+  -moz-opacity:0.90;
+  opacity:0.9;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 999;
+}
+.boxback-btn{
+  display: none;
+  width: px2rem(50px);
+  height: px2rem(50px);
+  background:url("/styles/images/topic/borntolove/mobile/chadiao.png") no-repeat ;
+  background-size: 100% 100%;
+  position: absolute;
+  top:px2rem(490px);
+  right:px2rem(100px);
+  z-index: 1001;
+}
+
+.cartoon{
+  display: none;
+  position: absolute;
+  width:100%;
+  height: px2rem(1334px);
+  z-index: 2001;
+  background:url("/styles/images/topic/borntolove/mobile/manhuabj.png") no-repeat;
+  background-size: 100% 100%;
+  top: 0px;
+  overflow: hidden;
+}
+.cartoon-btn{
+  width: px2rem(692px);
+  height:px2rem(238px);
+  overflow: hidden;
+  margin: px2rem(907px) auto 0px;
+}
+.cartoon-bagin{
+  display: block;
+  width: px2rem(692px);
+  height: px2rem(102px);
+  background: #27a2f0;
+  color: #eee;
+  line-height: px2rem(102px);
+  text-align: center;
+  cursor: pointer;
+  font-size: px2rem(40px);
+}
+.cartoon-bagin:hover{
+  text-decoration: none;
+}
+.cartoon-end{
+  display: block;
+  width:px2rem(690px);
+  height:px2rem(100px);
+  border: px2rem(1px) solid #eeeeee;
+  color: #eeeeee;
+  line-height: px2rem(100px);
+  text-align: center;
+  cursor: pointer;
+  margin-top: px2rem(30px);
+  font-size: px2rem(40px);
+}
+.cartoon-end:hover{
+  text-decoration: none;
+}
+.cover{
+  position: absolute;
+  top:0;
+  left: 0;
+  display: none;
+  width: 100%;
+  z-index: 2000;
+}
+
+.question{
+  width: 100%;
+  height: 100%;
+  margin: px2rem(43px) auto 0px;
+  display: none;
+  position: relative;
+}
+.question-bj{
+  width: px2rem(440px);
+  height: px2rem(440px);
+  background:url("/styles/images/topic/borntolove/mobile/h5tibj.png") no-repeat;
+  background-size: 100% 100%;
+  padding-left: px2rem(30px);
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  h2{
+    font-size: px2rem(30px);
+    color: #16bce8;
+    width: 100%;
+    text-align: center;
+    margin-top: px2rem(36px);
+    margin-bottom: px2rem(34px);
+  }
+}
+.question-item{
+  i{
+    width: px2rem(16px);
+    height: px2rem(16px);
+    background: #50baeb;
+    display: block;
+    float: left;
+    margin-top:px2rem(6px);
+    margin-right:px2rem(6px);
+  }
+  font-size: px2rem(28px);
+  color: #333333;
+  margin-bottom:px2rem(19px);
+  padding-right: px2rem(30px);
+}
+.answer{
+  display: block;
+  float: left;
+  width: px2rem(144px);
+  height: px2rem(50px);
+  padding: px2rem(13px) px2rem(16px);
+  font-size:px2rem(23px);
+  color: #666666;
+  margin-right: px2rem(20px);
+  border: px2rem(2px) solid #cccccc;
+  text-align: center;
+  margin-top: px2rem(20px);
+}
+.error-close{
+  width: px2rem(50px);
+  height: px2rem(50px);
+  background:url("/styles/images/topic/borntolove/mobile/chadiao.png") no-repeat;
+  background-size: 100% 100%;
+  float: right;
+  position: absolute;
+  right: px2rem(80px);
+}
+.success-bj{
+  width: px2rem(440px);
+  height: px2rem(440px);
+  background:url("/styles/images/topic/borntolove/mobile/h5tibj.png") no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.success-time{
+  width: 100%;
+  text-align: center;
+  font-size: px2rem(30px);
+  color: #16bce8;
+  margin: px2rem(26px) auto px2rem(20px);
+}
+.succesimg{
+  width: px2rem(218px);
+  height: px2rem(218px);
+  display: block;
+  margin: 0 auto;
+}
+.success-top{
+  font-size: px2rem(28px);
+  color: #333;
+  width: 100%;
+  text-align: center;
+  margin-top: px2rem(24px);
+}
+.success-bottom{
+  height: px2rem(60px);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: px2rem(440px);
+  background: #16bce8;
+  font-size: px2rem(24px);
+  color: #ffffff;
+  line-height: px2rem(60px);
+  text-align: center;
+  border-bottom-right-radius:px2rem(3px);
+  border-bottom-left-radius:px2rem(3px);
+}
+.error-img{
+  width: px2rem(440px);
+  height: px2rem(440px);
+  background:url("/styles/images/topic/borntolove/mobile/yihan.png") no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.error-btn{
+  display: block;
+  margin: px2rem(330px) auto 0px;
+  width: px2rem(380px);
+  height: px2rem(80px);
+  background: #16bce8;
+  font-size:px2rem(32px);
+  color: #eeeeee;
+  text-align: center;
+  line-height: px2rem(80px);
+}
+.expectimg{
+  width: px2rem(440px);
+  height: px2rem(440px);
+  background:url("/styles/images/topic/borntolove/mobile/qidai.png") no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.do-close{
+  width: px2rem(50px);
+  height: px2rem(50px);
+  background:url("/styles/images/topic/borntolove/mobile/chadiao.png") no-repeat;
+  background-size: 100% 100%;
+  float: right;
+  position: absolute;
+  right: px2rem(80px);
+}
+.expecttime{
+  font-size: px2rem(46px);
+  color: #333333;
+  text-align: center;
+  margin:px2rem(270px) auto 0px;
+}
+.lateimg{
+  width: px2rem(440px);
+  height: px2rem(440px);
+  background:url("/styles/images/topic/borntolove/mobile/guang.png") no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.latebtn{
+  width: px2rem(380px);
+  height: px2rem(80px);
+  display: block;
+  font-size: px2rem(36px);
+  text-align: center;
+  line-height: px2rem(80px);
+  margin:px2rem(330px) auto 0px;
+  background: #16bce8;
+  color: #eeeeee;
+}
+.muchimg{
+  width: px2rem(440px);
+  height: px2rem(440px);
+  background:url("/styles/images/topic/borntolove/mobile/gtaiduo.png") no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.ranknumber{
+  margin-top: px2rem(30px);
+  overflow: hidden;
+}
+.username{
+  height: px2rem(30px);
+  line-height: px2rem(30px);
+  width: px2rem(220px);
+  float: left;
+  font-size: px2rem(26px);
+  color: #333333;
+  margin-left: px2rem(20px);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.userscore{
+  line-height: px2rem(30px);
+  float: right;
+  font-size: px2rem(28px);
+  color: #333333;
+  margin-right: px2rem(46px);
+}
+.shupingAnimate{
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  animation: iphone 1.6s ease-in infinite
+}
+
+.shuping{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+  background-color: #000;
+
+  .content{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    width: 100%;
+    height: px2remcolumnviews(230px);
+    margin-left: -50%;
+    margin-top: px2remcolumnviews(-115px);
+    text-align: center;
+    line-height: 1.5rem;
+    .img{
+      width: px2remcolumnviews(230px);
+    }
+    .text{
+      text-align: center;
+      font-size: .3rem;
+      color: #fff;
+      white-space: nowrap;
+      overflow: visible;
+    }
+  }
+}
