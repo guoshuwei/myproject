@@ -1,4 +1,4 @@
-git test
+git test 提交前注意pull代码。
 
 项目描述:
 名称：【农联网】-【农联交易】 一期。
@@ -18,6 +18,9 @@ mysql  Ver 14.14 Distrib 5.6.42, for Linux (x86_64) using  EditLine wrapper
 PHP 7.0.30-0+deb9u1 (cli)(尽量用7.2以上)
 
 nginx/1.14.0
+
+
+任务列表:资讯模块的网站爬虫开发。（爬取行业相关新闻和文章）
 
 
 
