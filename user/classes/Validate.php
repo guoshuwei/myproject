@@ -33,6 +33,11 @@ class Validate{
 								$this->addError("两次输入密码不一致,请重新输入!");
 							}
 						break;
+						case 'reg':
+							if (!preg_match($rule_value, $value)) {
+								$this->addError("格式有误！");
+							}
+						break;
 						case 'unique':
 							$check = $this->_db->get($rule_value,array($item ,'=',$value));
 							if($check->count()){

@@ -45,7 +45,8 @@ if(Input::exists()){
 						)
 					);
 				Session::flash('home','注册成功，即将跳转首页！');
-				Redirect::to('/main/index.php');
+				// Redirect::to('/main/index.php');
+				Redirect::to(ROOT_URL . 'main/index.php');
 			}catch(Exception $e){
 				die($e->getMessage());
 			}

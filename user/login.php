@@ -13,7 +13,8 @@ if(Input::exists()){
 			$login = $user->login(Input::get('username'), Input::get('password'));
 			if($login){
 				$data =array(
-					'url' => '/user/home.php',
+					// 'url' => '/user/home.php',
+					'url' => ROOT_URL . 'user/home.php',
 				); 
 				Lib_Function::getInstance()->returnJson('200',$data);
 			}else{

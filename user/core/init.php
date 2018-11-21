@@ -16,7 +16,8 @@ $GLOBALS['config'] = array(
 			'host' => '127.0.0.1',
 			'dbname' => 'main',
 			'username' => 'root',
-			'password' => '',
+			// 'password' => '',
+			'password' => '123456',
 			'charset' => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix' => '',
@@ -41,6 +42,8 @@ $GLOBALS['config'] = array(
 // set_error_handler("exception_error_handler");
 // //全局常量
 define('ROOT_PATH', dirname(__FILE__));
+// 站点根URL
+define('ROOT_URL', 'http://localhost/myproject/');
 // //获取一个目录下的所有文件名
 $inter_class = array();
 $classes_dir = ROOT_PATH."/../classes";
