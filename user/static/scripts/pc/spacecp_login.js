@@ -4,7 +4,7 @@ dialogUi = require('../modules/dialogUi'),
 template = require('../modules/template'),
 formMod = require('../modules/form'),
 animate = require('../modules/animate'),
-datajson=$("form.register-form").serialize(),
+datajson=$("form.login-form").serialize(),
 floatlayer = require('../modules/floatlayer');
 formMod.listen('login.php',{
     ajaxBefore:function(){

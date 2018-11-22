@@ -690,7 +690,7 @@ formMod.listen("/member/stockBuyOrSell",{
             var type = $("#stockAction").val() == 1;
         if(item.attr('name')=="invest[cost]"){
             if(validResutl.valid == 'notempty'){
-                item_span.html(type ? '成本价不能为空！' : '卖出单价不能为空！').show();
+                item_span.html(type ? '成本价不能为空1234567！' : '卖出单价不能为空！').show();
             }else if(validResutl.valid == 'floatNumber'){
                 item_span.html(type ? '成本价中请输入数字！' : '卖出单价中请输入数字！').show();
             }
@@ -782,7 +782,7 @@ $("body")
         }
         that.addClass('disabled');
         $.ajax({
-            url : "/spacecp/getmobilecode",
+            url : "ajax.php",
             type : "post",
             data : {
                 mobileval : mobileVal,
@@ -821,7 +821,7 @@ $("body")
             type : "post",
             data : {
                 mobileval : mobileVal,
-                type : "modifytymobile"
+                type : "modify_mobile_code"
             },
             dataType : "json",
             success : function(res){

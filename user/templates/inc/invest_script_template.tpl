@@ -1,4 +1,3 @@
-
 <script type="text/template" id="test"> 
 <select class="selectBox">
     <option>1</option>
@@ -40,7 +39,7 @@
 </script>
 {* 修改手机号 start *}
 <script type="text/template" id="spacpceMobileChangeTpl">
-    <form action="/spacecp/modifytymobile?step=1" method="post" role="ajaxfrom" id="spacpceMobileChangeStep1">
+    <form action="/ajax.php?type=modify_mobile_code&step=1" method="post" role="ajaxfrom" id="spacpceMobileChangeStep1">
         <input type="hidden" name="mobile" value="15201131389" id="spacpceMobileChangeStep1Moblie"/>
         <input type="hidden" name="optype" value="2"/>
         <ul class="spacpce-form-list">

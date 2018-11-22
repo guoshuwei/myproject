@@ -1,3 +1,4 @@
+
 //加载验证模块
 var validate = require('./validate'),
 	Event = require('./Event'),
@@ -28,7 +29,6 @@ function parentsUntil($el,srcTarget){
 }
 
 $('body').on('submit','[role=ajaxfrom],[role=validform]',function(e){
-	
 	var $this = $(this),
 		method = $this.attr('method')||'GET',
 		action = $this.attr('action'),
