@@ -50,10 +50,13 @@ function modifyMobileCode($mobile,$step){
 	if($step == 0){
 		getMobilecode($mobile);
 	}elseif($step == 1){
+		//验证手机验证码
+		// $res = TyLib_Duanxin_Main::verifyCode($_SESSION['mobile'], 1, $mobile_code);
 		$return_data['step'] = 2;
 		$_SESSION['time'] = 0;//结束第一次清空记时
 		Lib_Function::getInstance()->returnJson(200,$return_data,'');
 	}elseif($step == 2){
+		// $res = TyLib_Duanxin_Main::verifyCode($_SESSION['mobile'], 1, $mobile_code);
 		//验证手机号是否已注册
 		//验证手机格式
 		$checkmobile = Lib_Function::getInstance()->checkmobile($mobile);
