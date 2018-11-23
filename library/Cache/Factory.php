@@ -15,7 +15,7 @@ class Cache_Factory{
 	 * @param string $cache_adapter
 	 * @throws Exception
 	 */
-	function __construct($cache_adapter='memcache'){
+	function __construct($cache_adapter='memcached'){
 		// $env = getenv('RUNTIME_ENVIROMENT') ? getenv('RUNTIME_ENVIROMENT') : (defined('SHELL_VARIABLE') ? SHELL_VARIABLE : '');
 		$env = 'local';//empty($env)?'local':$env;
 		$config = require (LIBRARY_DIR.'/Conf/cache.php');

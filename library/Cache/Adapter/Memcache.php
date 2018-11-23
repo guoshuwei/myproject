@@ -11,6 +11,7 @@ class Cache_Adapter_Memcache extends Cache_Abstract implements Cache_Interface {
 	
 	function __construct($cache_config) {
 		$this->mem = new Memcache ();
+		var_dump($this->mem);die;
 		foreach ( $cache_config as $config ) {
 			$this->mem->addserver ( $config ['host'], $config ['port'],false, $config ['weight'] );
 		}
