@@ -46,6 +46,7 @@ class User{
 				$this->_data = $data->first();
 				return array(
 					'username' => $this->_data->username,
+					'mobile' => $this->_data->mobile,
 				);
 			}
 		}

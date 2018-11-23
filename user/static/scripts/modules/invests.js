@@ -79,7 +79,7 @@ dialogUi.listen('spacpceMobileSet',function(){
 // 修改天眼手机号
 dialogUi.listen('spacpceMobileChange',function(){
     this.showLightbox = true;
-    this.setTitle('修改手机号123');
+    this.setTitle('修改手机号');
     this.setBox(600,280);
     var content = template.render('spacpceMobileChangeTpl');
     this.setContent(content);
@@ -438,7 +438,7 @@ $("body")
             url : "ajax.php",
             type : "post",
             data : {
-                mobileval : mobileVal,
+                mobile : mobileVal,
                 type : "modify_mobile_code"
             },
             dataType : "json",
@@ -470,11 +470,11 @@ $("body")
         }
         that.addClass('disabled');
         $.ajax({
-            url : "/spacecp/getmobilecode",
+            url : "ajax.php",
             type : "post",
             data : {
-                mobileval : mobileVal,
-                type : "modifytymobile"
+                mobile : mobileVal,
+                type : "modify_mobile_code"
             },
             dataType : "json",
             success : function(res){
@@ -548,7 +548,7 @@ formMod.listen("/spacecp/setTyMobile",{
 
 
 // 修改天眼手机号第一步 表单验证
-formMod.listen("/spacecp/modifytymobile?step=1",{
+formMod.listen("/myproject/user/ajax.php?type=modify_mobile_code&step=1",{
     ajaxBefore: function(){
         $("#spacpceMobileChangeStep1Submit").addClass("disabled").val("提交中 ... ");
     },
@@ -589,7 +589,7 @@ formMod.listen("/spacecp/modifytymobile?step=1",{
 
 
 // 修改天眼手机号第二步 表单验证
-formMod.listen("/spacecp/modifytymobile?step=2",{
+formMod.listen("/myproject/user/ajax.php?type=modify_mobile_code&step=2",{
     ajaxBefore: function(){
         $("#spacpceMobileChangeStep2Submit").addClass("disabled").val("提交中 ... ");
     },
