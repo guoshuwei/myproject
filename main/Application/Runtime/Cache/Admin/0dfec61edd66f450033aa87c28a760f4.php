@@ -3,7 +3,7 @@
 <head> 
 <META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 <TITLE>登录页面</TITLE>  
-<script type="text/javascript" src="/main/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="/myproject/main/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script> 
 </head>
 <STYLE>
 body{
@@ -37,7 +37,7 @@ body{
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
 }
 .u_logo{
-  background: url("/main/Public/Admin/images/login/username.png") no-repeat;
+  background: url("/myproject/main/Public/Admin/images/login/username.png") no-repeat;
   padding: 10px 10px;
   position: absolute;
   top: 43px;
@@ -45,7 +45,7 @@ body{
 
 }
 .p_logo{
-  background: url("/main/Public/Admin/images/login/password.png") no-repeat;
+  background: url("/myproject/main/Public/Admin/images/login/password.png") no-repeat;
   padding: 10px 10px;
   position: absolute;
   top: 12px;
@@ -55,7 +55,7 @@ a{
   text-decoration: none;
 }
 .tou{
-  background: url("/main/Public/Admin/images/login/tou.png") no-repeat;
+  background: url("/myproject/main/Public/Admin/images/login/tou.png") no-repeat;
   width: 97px;
   height: 92px;
   position: absolute;
@@ -63,7 +63,7 @@ a{
   left: 140px;
 }
 .left_hand{
-  background: url("/main/Public/Admin/images/login/left_hand.png") no-repeat;
+  background: url("/myproject/main/Public/Admin/images/login/left_hand.png") no-repeat;
   width: 32px;
   height: 37px;
   position: absolute;
@@ -71,7 +71,7 @@ a{
   left: 150px;
 }
 .right_hand{
-  background: url("/main/Public/Admin/images/login/right_hand.png") no-repeat;
+  background: url("/myproject/main/Public/Admin/images/login/right_hand.png") no-repeat;
   width: 32px;
   height: 37px;
   position: absolute;
@@ -79,7 +79,7 @@ a{
   right: -64px;
 }
 .initial_left_hand{
-  background: url("/main/Public/Admin/images/login/hand.png") no-repeat;
+  background: url("/myproject/main/Public/Admin/images/login/hand.png") no-repeat;
   width: 30px;
   height: 20px;
   position: absolute;
@@ -87,7 +87,7 @@ a{
   left: 100px;
 }
 .initial_right_hand{
-  background: url("/main/Public/Admin/images/login/hand.png") no-repeat;
+  background: url("/myproject/main/Public/Admin/images/login/hand.png") no-repeat;
   width: 30px;
   height: 20px;
   position: absolute;
@@ -95,7 +95,7 @@ a{
   right: -112px;
 }
 .left_handing{
-  background: url("/main/Public/Admin/images/login/left-handing.png") no-repeat;
+  background: url("/myproject/main/Public/Admin/images/login/left-handing.png") no-repeat;
   width: 30px;
   height: 20px;
   position: absolute;
@@ -103,7 +103,7 @@ a{
   left: 139px;
 }
 .right_handinging{
-  background: url("/main/Public/Admin/images/login/right_handing.png") no-repeat;
+  background: url("/myproject/main/Public/Admin/images/login/right_handing.png") no-repeat;
   width: 30px;
   height: 20px;
   position: absolute;
