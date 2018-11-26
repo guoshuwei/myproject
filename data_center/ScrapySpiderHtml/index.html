@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" /> 
+   <script type="text/javascript" src="/js/mobile.js"></script>
+   <script type="text/javascript">uaredirect("http://m.nongtoutiao.cn/");</script>
+  <title>农头条-农关心的,才是头条! www.nongtoutiao.cn</title> 
+  <meta name="keywords" content="农头条，农业头条，农村头条，三农头条，头条新闻，今日头条,农业资讯,农业新闻,农业信息,土地流转,三农新闻资讯,农头条官网,农村新闻资讯" /> 
+  <meta name="description" content="农头条（nongtoutiao.cn），提供最新三农资讯/三农政策/三农技术/三农致富/三农价格行情/三农金融,为三农服务的资讯平台。农业资讯,农业政策,土地政策,农业技术,农业新闻,农业致富,农业价格行情,农业金融,土地流转,宅基地,农资信息" /> 
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> 
+  <link rel="stylesheet" href="/toutiao5/layout_e204ad0.css" /> 
+  <script type="text/javascript" src="/toutiao5/jquery.min.js"></script>
+  <script src="/toutiao5/es5-shim_110642e.js"></script> 
+  <script src="/toutiao5/lib_2507a32.js"></script>  
+  <!--[if lt IE 9]>
+      <script src="/toutiao5/es5-shim_110642e.js"></script>
+    <![endif]--> 
+  <link rel="stylesheet" href="/toutiao5/home_1037c8d.css" /> 
+  <script src="/e/data/js/ajax.js"></script>
+  <script>
+var curpage = 2;
+    var totalpage = 5901;
+    var geturl = '/e/extend/list/?classid=119,70,71,108,107,74,75,76,77,78,79,80,81,82,83,106,69,68,109,66,118,117,116,115,62,111,114,64,63,112,113,65,54,84,97,98,99,100,101,103,104,105,102,48,96,95,93,86,87,88,89,90,91,92,94,72,52,73,51,85,50,49,53,120,60,59,61,67,&orderby=newstime&page=';
+</script>
+<script type="text/javascript" charset="utf-8" src="/toutiao5/scrollpagination.js"></script>
+ </head> 
+ <body style="min-width: 1220px; overflow-x: hidden;"> 
+  <div class="y-wrap"> 
+   <!-- 公共头部 --> 
+   <div class="y-header"> 
+    <div class="header"> 
+          <div riot-tag="topbar" style="height: 24px; background: #ed4040;"> </div> 
+     <div class="middlebar"> 
+      <div class="y-box middlebar-inner"> 
+       <div class="y-left logo-box"> 
+        <a class="logo-link" href="/" ga_event="go_home"> <img class="logo" id="home-logo" src="/toutiao5/logo.png" /> </a> 
+       </div> 
+       <div riot-tag="searchbox"></div>
+       <div riot-tag="userbox"><script src="/e/member/login/loginjs.php"></script></div>        
+      </div> 
+     </div> 
+    </div> 
+<div riot-tag="login">
+</div>
+<div id="toast"></div>
+
+</div>
+
+<div class="y-box container">
+  <div class="y-left index-channel">
+    <div riot-tag="channel">
+      <div class="channel "> <ul> <li class="channel-item active"> <a href="/" target=""> <i class="y-icon icon-recommandchannel"></i><span>推荐</span> </a> </li><li class="channel-item "> <a href="/news_zixun/" target=""> <i class="y-icon icon-technologychannel"></i><span>资讯</span> </a> </li><li class="channel-item "> <a href="/news_zhengce/" target=""> <i class="y-icon icon-videochannel"></i><span>政策</span> </a> </li><li class="channel-item "> <a href="/news_jishu/" target=""> <i class="y-icon icon-imagechannel"></i><span>技术</span> </a> </li><li class="channel-item "> <a href="/news_nongzi/" target=""> <i class="y-icon icon-militarychannel"></i><span>农资</span> </a> </li><li class="channel-item "> <a href="/news_zhifu/" target=""> <i class="y-icon icon-entertainmentchannel"></i><span>致富</span> </a> </li><li class="channel-item "> <a href="/news_tudi/" target=""> <i class="y-icon icon-technologychannel"></i><span>土地</span> </a> </li><!--riot placeholder--> <li class="channel-item channel-more"> <a href="javascript:;"> <i class="y-icon icon-morechannel"></i><span>更多</span> </a> <div class="channel-more-layer"> <ul> <li class="y-left channel-item"> <a href="/news_hangqing/" target=""> <i class="y-icon icon-sportschannel"></i><span>行情</span> </a> </li><!--riot placeholder--> </ul> </div> </li> </ul> </div>
+    </div>
+    <div riot-tag="nchannel"></div>
+  </div>
+    <div class="y-left index-content"> 
+     <div riot-tag="tfeedadd"></div> 
+     <div riot-tag="subchannel" id="subchannel"></div> 
+     <div riot-tag="feedBox">
+      <div class="feedBox" name="feedBox"> 
+       <div riot-tag="commonFeed" category="__all__" abtype="1">
+        <div class="commonFeed"> 
+         <div riot-tag="msgAlert" mwidth="600" mtop="100" category="__all__">          
+         </div> 
+         <ul class="listNewsTimeLy"> 
+                  <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizixun/57782.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20171018/hxnq3p0kdv1.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizixun/57782.html"> 重磅消息来了：农村土地承包期再延长30年!对农民是 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizixun/">土地资讯</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;土流网&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;6个月前</span> 
+                <span>&nbsp;1413阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/html/2017091656780.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20170915/xizkwd00shh.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/html/2017091656780.html"> 2018年新农合缴费比例再次上涨，快来看看到底要交多 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_zhengce/">政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;惠农网&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;7个月前</span> 
+                <span>&nbsp;538阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67358.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180511/s4gdp3m0gr1.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67358.html"> 为什么城市土地不确权？土地确权对农户、村干部、种 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;土流网整理&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;5小时前</span> 
+                <span>&nbsp;371阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67357.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180511/strc0eapbdl.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67357.html"> 大化县政府印发关于《部分调整补充贺州至巴马高速 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;大化瑶族自治县政府&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;5小时前</span> 
+                <span>&nbsp;869阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67356.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180511/4xvkjeu2gny.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67356.html"> 批了宅基地建好新房后，又继承了老宅基地，能确权吗？ </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;土流网整理&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;5小时前</span> 
+                <span>&nbsp;662阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67355.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180511/vxzn2c4sonu.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67355.html"> 《吉林省黑土地保护条例》我国首部黑土地保护地方 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;吉林省农业委员会&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;11小时前</span> 
+                <span>&nbsp;1580阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67354.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180511/h2dt1y4nekh.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67354.html"> 2018年湖南省征地补偿标准：各类土地补偿标准是多少 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;湖南省人民政府&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;12小时前</span> 
+                <span>&nbsp;715阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67353.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180510/3bgkneitxjn.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67353.html"> 土地确权这4大“烧脑”问题，该如何解决？ </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;三农视点&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;1天前</span> 
+                <span>&nbsp;217阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67352.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180510/so0kbdnjqan.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67352.html"> 凤山县征地拆迁安置补偿暂行办法公布，县城规划区水 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;凤山县政府&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;1天前</span> 
+                <span>&nbsp;1109阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67351.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180510/ulf0l2fmvry.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67351.html"> 2018年云南保山市农村宅基地管理办法：建房有什么要 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;保山市人民政府&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;1天前</span> 
+                <span>&nbsp;1356阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67350.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180510/nrm1fw4xs30.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67350.html"> 2018年青海省格尔木市老城区改造河滩片区国有土地 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;格尔木新闻网&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;1天前</span> 
+                <span>&nbsp;1712阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67349.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180510/fuhg1mym1pc.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67349.html"> 2018年合肥肥东县被征收集体土地上房屋补偿安置暂 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;合肥市人民政府&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;1天前</span> 
+                <span>&nbsp;1201阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67348.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180510/4va1emcbing.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67348.html"> 苏州市人民政府征收土地方案通告苏府通〔2018〕17 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;苏州市人民政府&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;1天前</span> 
+                <span>&nbsp;379阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67347.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180509/g1ybtjchbgy.png" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67347.html"> 农民土地在确权前被政府租用了，现在还能确权吗？ </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;土流网整理&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;2天前</span> 
+                <span>&nbsp;1664阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67346.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180509/ilpsnhioem3.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67346.html"> 农村土地确权，死亡户的土地能确权吗？和承包方式有关 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;土流网整理&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;2天前</span> 
+                <span>&nbsp;1218阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67345.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180509/hc45gcxpepb.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67345.html"> 为什么要搞农村宅基地确权？以前的宅基地证明有用吗 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;土流网整理&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;2天前</span> 
+                <span>&nbsp;1730阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67344.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180509/jr5kirgncyd.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67344.html"> 农村土地确权的范围是什么？基本凭据有哪些？实测面积 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;土流网&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;2天前</span> 
+                <span>&nbsp;1304阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67343.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180509/c4tqrarcynu.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67343.html"> 2018温州瓯海茶山街道舜岙村徐岙（区块）城中村改造范 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;2天前</span> 
+                <span>&nbsp;1486阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67342.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180509/p4ckydokvwc.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67342.html"> 2018年大同市新华街街道办事处辖区内平房、土楼危 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;大同市人民政府&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;2天前</span> 
+                <span>&nbsp;22阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67341.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180509/qbibr4nyfdx.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67341.html"> 土地确权结束后，没确权的土地会怎么处理？还有使用权 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;土流网综合&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;2天前</span> 
+                <span>&nbsp;549阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67340.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180509/50hkh44ateu.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67340.html"> 2018年河南南阳市中心城区集体土地上房屋征收与补 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;南阳市国土资源局&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;2天前</span> 
+                <span>&nbsp;1753阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67339.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180509/mjuks1kutt0.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67339.html"> 2018年海南儋州市万洋高速儋州互通棚户区（城中村）改 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;儋州市人民政府&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;2天前</span> 
+                <span>&nbsp;254阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67338.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180509/3l5dyzwqgfs.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67338.html"> 父亲和儿子的土地为什么确权到一起？和分户有关系吗 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;土流网整理&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;2天前</span> 
+                <span>&nbsp;1142阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67337.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180509/rmfe14euype.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67337.html"> 农民在外打工，家里土地没有被确权该怎么办？需要找什 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;土流网整理&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;2天前</span> 
+                <span>&nbsp;364阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67336.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180509/2gdbfz5z2md.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67336.html"> 郑州市人民政府关于国有土地上房屋征收和国有土地 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;郑州市人民政府&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;2天前</span> 
+                <span>&nbsp;256阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/html/2018051067191.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180509/an5vl2yfdfe.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/html/2018051067191.html"> 农机报废补贴能领多少钱？2018农机报废补贴新政策标 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_zhengce/">政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;惠农网&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;2天前</span> 
+                <span>&nbsp;1778阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67335.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180508/jncontdgssa.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67335.html"> 土地确权证丢失怎么办？能补办吗？怎么补办？ </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;土流网综合&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;3天前</span> 
+                <span>&nbsp;709阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67334.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180508/dhtcq5h4pph.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67334.html"> 2018年广东潮州市出台城区房屋征收补偿安置办法：一 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;潮州市人民政府&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;3天前</span> 
+                <span>&nbsp;1591阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67333.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180508/wz3wietes3e.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67333.html"> 土地确权费用包括哪些？农民要出多少钱？ </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;土流网整理&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;3天前</span> 
+                <span>&nbsp;1787阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item"> <span id="ad_extra" style="display:none;"></span> 
+           <div class="y-box item-inner"> 
+           
+           
+           
+
+<div class="y-left lbox" ga_event="article_img_click"><a class="img-wrap" target="_blank" href="/news_tudi/tudizhengce/67332.html"> <img alt="" src="http://www.nongtoutiao.cn/d/file/20180508/5dnknkausv1.jpg" /> </a></div> 
+
+           
+           
+           
+            
+            <div class="rbox "> 
+             <div class="rbox-inner"> 
+              <div class="title-box" ga_event="article_title_click"> 
+               <a class="link title" target="_blank" href="/news_tudi/tudizhengce/67332.html"> 农村土地确权后多少钱一亩？中央和省财政补助标准是 </a> 
+              </div> 
+              <div class="y-box footer"> 
+               <div class="y-left"> 
+                <div class="y-left"> 
+                 <a class="lbtn tag-hot" ga_event="article_avatar_click" href="/news_tudi/tudizhengce/">土地政策</a> 
+                 <a class="lbtn source" ga_event="article_name_click">&nbsp;&nbsp;骏景农业&nbsp;</a> 
+                </div> 
+                <span class="lbtn">&nbsp;3天前</span> 
+                <span>&nbsp;460阅读</span> 
+               </div> 
+               <div class="y-right"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div>           <li class="item  " ga_event="refresh_item_click" ad_id="" ad_track=""> <span id="ad_extra" style="display:none;"></span> 
+          <!--riot placeholder--> 
+         </ul> 
+        </div>
+       </div> 
+       <div riot-tag="wcommonFeed" category="__all__" abtype="1"></div> 
+      </div>
+     </div> 
+    </div>     <div class="y-right index-modules"> 
+     <div id="module-place"></div> 
+     <div class="module-inner" id="module-inner"> 
+      <div riot-tag="tbanneradd"><div style="margin-bottom:16px;"> <script src="/d/js/acmsd/thea1.js"></script></div></div>  
+      <div style="height: 366px; overflow: hidden;"> 
+       <div id="m-hotNews" class=""> 
+        <div riot-tag="hotNews" class="hotNews module" ga_event="click_hot_news">
+         <div class="module-head news-head">
+           24小时热闻 
+         </div> 
+         <ul class="news-content"> 
+		           <li class="news-list"> <a target="_blank" class="news-link" href="/news_tudi/tudizhengce/67355.html"> 
+            <div class="module-pic news-pic">
+             <img src="http://www.nongtoutiao.cn/d/file/20180511/vxzn2c4sonu.jpg" />
+            </div> 
+            <div class="news-inner"> 
+             <p class="module-title">《吉林省黑土地保护条例》我国首部黑土地保护地方</p> 
+            </div> </a> </li>
+			          <li class="news-list"> <a target="_blank" class="news-link" href="/news_tudi/tudizhengce/67357.html"> 
+            <div class="module-pic news-pic">
+             <img src="http://www.nongtoutiao.cn/d/file/20180511/strc0eapbdl.jpg" />
+            </div> 
+            <div class="news-inner"> 
+             <p class="module-title">大化县政府印发关于《部分调整补充贺州至巴马高速</p> 
+            </div> </a> </li>
+			          <li class="news-list"> <a target="_blank" class="news-link" href="/news_tudi/tudizhengce/67354.html"> 
+            <div class="module-pic news-pic">
+             <img src="http://www.nongtoutiao.cn/d/file/20180511/h2dt1y4nekh.jpg" />
+            </div> 
+            <div class="news-inner"> 
+             <p class="module-title">2018年湖南省征地补偿标准：各类土地补偿标准是多少</p> 
+            </div> </a> </li>
+			          <li class="news-list"> <a target="_blank" class="news-link" href="/news_tudi/tudizhengce/67356.html"> 
+            <div class="module-pic news-pic">
+             <img src="http://www.nongtoutiao.cn/d/file/20180511/4xvkjeu2gny.jpg" />
+            </div> 
+            <div class="news-inner"> 
+             <p class="module-title">批了宅基地建好新房后，又继承了老宅基地，能确权吗？</p> 
+            </div> </a> </li>
+			          <!--riot placeholder--> 
+         </ul>
+        </div> 
+        <div id="adindexhover" style="margin-top: -10px; display: none;"> 
+        <script src="/d/js/acmsd/thea1.js"></script>
+        </div> 
+       </div> 
+      </div> 
+      <div style="margin-bottom:16px;"> 
+   <script src="/d/js/acmsd/thea2.js"></script>
+      </div> 
+
+      <div style="margin-bottom:16px;"> 
+     
+      </div> 
+     
+     <div style="margin-bottom:16px;"> <script src="/d/js/acmsd/thea3.js"></script></div> 
+      <div class="friendLink module" ga_event="click_friend_link"> 
+       <div class="module-head link-head">
+        友情链接
+       </div> 
+       <div class="link-content"> 
+        <ul> <li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农头条</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农村头条</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农业头条</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农业网</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/e/search/result/?searchid=28">土地流转</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/e/search/result/?searchid=29">宅基地</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农村创业</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/news_zhengce/">农业政策</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/news_nongzi">农资信息</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">致富经</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/news_zixun/">农业资讯</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/e/search/result/?searchid=38">土地承包</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/news_jishu">农业技术</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/news_tudi/tudizixun/">土地资讯</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/news_nongzi/nongyao/">农药资讯</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">三农网</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/news_nongzi/nongji/">农机资讯</a></li><li class="item"><a target="_blank" href="http://www.92kaifa.com/s/92Game-CYL/">92工作室</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农村网</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农村网</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农民网</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农资网</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/news_nongzi/feiliao/">化肥资讯</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农技网</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">土地网</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农业信息</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农业新闻</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农机网</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农业种植</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农业养殖</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农村土地网</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农村金融</a></li><li class="item"><a target="_blank" href="http://www.nongtoutiao.cn/">农村集体产权改革</a></li></ul> 
+       </div> 
+      </div> 
+      <div class="company"> 
+       <p class="J-company-name"> &copy; 2016 农头条 www.nongtoutiao.cn</p> 
+        <p>注：凡本网注明来源非农头条的作品，均转载自其它媒体，并不代表本网赞同其观点和对其真实性负责。</p>  
+       <p>农头条致力于资讯传播，希望建立合作关系。若有任何不当请联系我们，将会在24小时内删除。邮箱：<a href="mailto:nongtoutiao@163.com">nongtoutiao@163.com</a></p> 
+       <span>备案号:粤ICP备17101705号-1  <script src="https://s13.cnzz.com/z_stat.php?id=1263421095&web_id=1263421095" language="JavaScript"></script></span> 
+      </div> 
+<script src="/d/js/acmsd/thea10.js"></script> <script src="/d/js/acmsd/thea11.js"></script>
+     </div> 
+    </div> 
+   </div> 
+   <div class="action-feedback">
+  <div riot-tag="feedback"></div>
+</div>
+ 
+<div riot-tag="verification"></div>
+    <script src="/toutiao5/home_1b79f60.js"></script> 
+
+  <script>
+  riot.mount('topbar', {
+    home: true
+  });
+  riot.mount('searchbox');
+  riot.mount('userbox', {
+      userInfo: userInfo
+  });
+  riot.mount('login');
+</script> 
+  <script>
+  riot.mount('feedBox', {
+    type: channelType,
+    category: '__all__',
+    feedUrl: use_feed_service,
+    abType: ab_list_style
+  });
+</script> 
+<script>
+  riot.mount('channel', {
+    tag: '__all__' == '__all__'?'/':'/'+'__all__'+'/'
+  });
+  riot.mount('feedback', {});
+  riot.mount('verification');
+  subchannels && subchannels.length>0 && riot.mount('subchannel', {
+    subchannels: subchannels,
+    suspension: true
+  });
+</script>
+  <script>
+  riot.mount('adTab');
+  riot.mount('hotNews',{hotNews:hotNews});
+  riot.mount('hotJoke');
+  riot.mount('hotVideo');
+  riot.mount('hotPicture');
+</script> 
+ </body>
+</html>
+<script src="/e/extend/DoTimeRepage/"></script>
