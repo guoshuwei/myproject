@@ -1,0 +1,52 @@
+<include file="template:header" />
+<title>添加商户招商模板</title>
+</head>
+<body>
+<div class="pd-20">
+	<form action="{:U('YW/zhaoshang_add')}" method="post" class="form form-horizontal" id="form-user-character-add">
+		<div class="row cl">
+			<label class="form-label col-2"><span class="c-red">*</span>角色名称：</label>
+			<div class="formControls col-10">
+				<input type="text" class="input-text" id="rname" name="rname">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-2">描述：</label>
+			<div class="formControls col-10">
+				<input type="text" class="input-text" value="" placeholder="" id="description" name="description">
+			</div>
+		</div>
+		<div class="row cl">
+			<div class="col-10 col-offset-2">
+				<button type="submit" class="btn btn-success radius" id="admin-role-save" name="admin-role-save"><i class="icon-ok"></i> 确定</button>
+			</div>
+		</div>
+	</form>
+</div>
+<include file="template:footer" />
+<script>
+// $(function(){
+// 	$(".permission-list dt input:checkbox").click(function(){
+// 		$(this).closest("dl").find("dd input:checkbox").prop("checked",$(this).prop("checked"));
+// 	});
+// 	$(".permission-list2 dd input:checkbox").click(function(){
+// 		var l =$(this).parent().parent().find("input:checked").length;
+// 		var l2=$(this).parents(".permission-list").find(".permission-list2 dd").find("input:checked").length;
+// 		if($(this).prop("checked")){
+// 			$(this).closest("dl").find("dt input:checkbox").prop("checked",true);
+// 			$(this).parents(".permission-list").find("dt").first().find("input:checkbox").prop("checked",true);
+// 		}
+// 		else{
+// 			if(l==0){
+// 				$(this).closest("dl").find("dt input:checkbox").prop("checked",false);
+// 			}
+// 			if(l2==0){
+// 				$(this).parents(".permission-list").find("dt").first().find("input:checkbox").prop("checked",false);
+// 			}
+// 		}
+		
+// 	});
+// });
+</script>
+</body>
+</html>
