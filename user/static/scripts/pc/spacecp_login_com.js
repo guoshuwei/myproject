@@ -980,6 +980,7 @@ $('body')
 	return false;
 })
 },{"../modules/ajaxcodecall":4,"../modules/animate":5}],9:[function(require,module,exports){
+
 //加载验证模块
 var validate = require('./validate'),
 	Event = require('./Event'),
@@ -1010,7 +1011,6 @@ function parentsUntil($el,srcTarget){
 }
 
 $('body').on('submit','[role=ajaxfrom],[role=validform]',function(e){
-	
 	var $this = $(this),
 		method = $this.attr('method')||'GET',
 		action = $this.attr('action'),
@@ -2626,7 +2626,7 @@ dialogUi = require('../modules/dialogUi'),
 template = require('../modules/template'),
 formMod = require('../modules/form'),
 animate = require('../modules/animate'),
-datajson=$("form.register-form").serialize(),
+datajson=$("form.login-form").serialize(),
 floatlayer = require('../modules/floatlayer');
 formMod.listen('login.php',{
     ajaxBefore:function(){

@@ -34,12 +34,12 @@ class Lib_Duanxin_Main{
      */
     public static function sendCode($mobile, $type,$message_type =1,$is_weixin=0,$orderid=0,$id=0,$openid=0)
     {
-        //SPAM验证
-        $spam = self::spam($mobile, $type);
-        if($spam !== true)
-        {
-            return $spam;
-        }
+        //SPAM验证 todo 先注释掉
+        // $spam = self::spam($mobile, $type);
+        // if($spam !== true)
+        // {
+        //     return $spam;
+        // }
 		$black = array(
 			"18757872829",
 			"13392943833",
@@ -84,11 +84,7 @@ class Lib_Duanxin_Main{
         $adapterTags = [3];
         foreach ($adapterTags as $key => $val) {
             $adapter = self::getAdapter($val);
-            if($is_weixin){
-                $res = $adapter->sendCodeWeixin($mobile, $openid,$orderid,$id,$message_type);
-            }else{
-                $res = $adapter->sendCode($mobile, $type,$message_type);
-            }
+            $res = $adapter->sendCode($mobile, $type,$message_type);
             if($res === true) { // 如果发送成功则跳出循环，否则使用下一个短信接口发送
                 break;
             }

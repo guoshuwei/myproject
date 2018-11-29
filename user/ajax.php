@@ -1,11 +1,15 @@
 <?php
 require_once 'core/init.php';
-if(Input::exists()){
-	//判断登录状态
-	if($_POST['type'] == "modify_mobile_code"){//修改手机号
-
-	}elseif($_POST['type'] == "get_mobile_code"){//获取手机验证码
-		//发短信
-		$res =Lib_Duanxin_Main::sendCode($mobile, 1);
+$islogin = Session::get(Config::get('session/session_name'));
+if($islogin && Input::exists()){
+	$mobile = Input::get('mobile');
+	$type = Input::get('type');
+	$step = null !== Input::get('step') ? Input::get('step') : 0;
+	switch($type){
+		case 'modify_mobile_code':
+			modifyMobileCode($mobile,$step);
+		default:
+			break;
 	}
 }
+

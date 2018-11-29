@@ -20,4 +20,10 @@ return array(
 	'DB_PORT'		=>	'3306',
 	'DB_PREFIX'		=>	'',
 	'LOG_RECORD' => true, // 开启日志记录
+	'API_COMPONENT' => array(
+		'data_center' => array(
+			'news' => 'http://192.168.186.158/data_center/server/news.php',
+			'zixun' => '',	
+		),
+	),
 );

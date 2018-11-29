@@ -6,16 +6,16 @@ class LoginController extends Controller{
     public function __construct()
     {
         parent::__construct();
-        // var_dump($_SESSION);die;
         if($_SESSION['user']){
-            Vendor('Yar.Client');
-            $yar_client = new \Client('http://192.168.186.143/acl/api/acl.php');
-            $acl = $yar_client->execute('getRoleIdByUid',$_SESSION['user']);
-            if(empty($acl) || $acl['role_id'] !=2 ){
-                //还不是商户，跳转商户信息审核页面
-                $this->redirect('Merchant/shenhe');
-                exit;
-            }
+            // Vendor('Yar.Client');
+            // $yar_client = new \Client('http://192.168.186.158/acl/api/acl.php');
+            // $acl = $yar_client->execute('getRoleIdByUid',$_SESSION['user']);
+            // var_dump($acl);die;
+            // if(empty($acl) || $acl['role_id'] !=2 ){
+            //     //还不是商户，跳转商户信息审核页面
+            //     $this->redirect('Merchant/shenhe');
+            //     exit;
+            // }
             //查处用户组信息
             // $roleID =   
         }else{
