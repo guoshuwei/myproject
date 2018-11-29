@@ -69,4 +69,7 @@ class Validate{
  	public function passed(){
  		return $this->_passed;
  	}
+
+ 	// ------ 校验规则 -------
+ 	
 }

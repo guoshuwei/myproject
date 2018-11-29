@@ -42,7 +42,7 @@
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
           <p class="centered"><a href="profile.html"><img src="/img/ui-sam.jpg" class="img-circle" width="80"></a></p>
-          <h5 class="centered"></h5>
+          <h5 class="centered">{$username}</h5>
           <li class="mt">
             <a class="active" href="profile.php">
               <i class="fa fa-dashboard"></i>
@@ -109,6 +109,27 @@
                     <div class="bind-wrap-head">
                         <div class="bind-wrap-head-ui">实名认证<a class="bind-wrap-return" href="/spacecp">< 返回</a></div>
                     </div>
+                    {if isset($user_det.certify_at) && ($user_det.certify_at>0)}
+                    <div class="revise-password">
+                        <div class="form-list-item">
+                            <div class="revise-password-item">
+                                <div class="text-success">已实名！</div>
+                            </div>
+                        </div>
+                        <div class="form-list-item">
+                            <div class="revise-password-item">
+                                <div>真实姓名</div>
+                                <div>{$user_det.truename}</div>
+                            </div>
+                        </div>
+                        <div class="form-list-item">
+                            <div class="revise-password-item">
+                                <div>身份证号</div>
+                                <div>{$user_det.idcard}</div>
+                            </div>
+                        </div>
+                    </div>
+                    {else}
                     <form action="certify.php" method="post" role="ajaxfrom" id="formBox">
                         <div class="revise-password">
                             <div class="form-list-item">
@@ -132,6 +153,8 @@
                         </div>
                         <input type="submit" class="revise-password-btn" id="submit" value="完成">
                     </form>
+                    {/if}
+                    
                 </div>
             </div>     
       </section>

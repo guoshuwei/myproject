@@ -6,7 +6,7 @@
  * 2015-1-28
  * UTF-8
  */
-class TyLib_Duanxin_Adapter_DieXin extends TyLib_Duanxin_Base_Abstract {
+class Lib_Duanxin_Adapter_DieXin extends Lib_Duanxin_Base_Abstract {
 	
 	/**
      * 发送验证码

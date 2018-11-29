@@ -8,35 +8,35 @@
  */
 class Lib_Duanxin_Config {
 	private static $duanxin_config = array (
-			1 => array (
-				'class_name' => 'Lib_Duanxin_Adapter_iHuYi',
-				'config' => array (
-					'url' => 'http://106.ihuyi.cn/webservice/sms.php?method=Submit',
-					'account' => 'nonglian',
-					'password' => 'nonglian@2018$%^',
-					'code_expire' => 600, // 验证码失效时间
-				),
+		1 => array (
+			'class_name' => 'Lib_Duanxin_Adapter_iHuYi',
+			'config' => array (
+				'url' => 'http://106.ihuyi.cn/webservice/sms.php?method=Submit',
+				'account' => 'nonglian',
+				'password' => 'nonglian@2018$%^',
+				'code_expire' => 600, // 验证码失效时间
 			),
-			2 => array (
-				'class_name' => 'Lib_Duanxin_Adapter_DieXin',
-				'config' => array (
-					'url' => 'http://120.106818.com/SendMTU8/SendMessage_utf8.aspx',
-					'UserName' => 'nonglian',
-					'UserPass' => 'nonglian@2018$%^',
-					'subid' => '', // 选填 通道号码末尾添加的扩展号码
-					'code_expire' => 600, // 验证码失效时间
-				),
+		),
+		2 => array (
+			'class_name' => 'Lib_Duanxin_Adapter_DieXin',
+			'config' => array (
+				'url' => 'http://120.106818.com/SendMTU8/SendMessage_utf8.aspx',
+				'UserName' => 'nonglian',
+				'UserPass' => 'nonglian@2018$%^',
+				'subid' => '', // 选填 通道号码末尾添加的扩展号码
+				'code_expire' => 600, // 验证码失效时间
 			),
-			3 => array (
-				'class_name' => 'Lib_Duanxin_Adapter_Zhizhen',
-				'config' => array (
-					'url' => 'http://115.28.112.245:8082/SendMT/SendMessage',
-					'UserName' => 'nonglian',
-					'UserPass' => 'nonglian@2018$%^',
-					'subid' => '', // 选填 通道号码末尾添加的扩展号码
-					'code_expire' => 600, // 验证码失效时间
-				),
+		),
+		3 => array (
+			'class_name' => 'Lib_Duanxin_Adapter_Zhizhen',
+			'config' => array (
+				'url' => 'http://115.28.112.245:8082/SendMT/SendMessage',
+				'UserName' => 'nonglian',
+				'UserPass' => 'nonglian@2018$%^',
+				'subid' => '', // 选填 通道号码末尾添加的扩展号码
+				'code_expire' => 600, // 验证码失效时间
 			),
+		),
 	    4 => array (
 	        'class_name' => 'Lib_Duanxin_Adapter_Zhizhen',
 	        'config' => array (
