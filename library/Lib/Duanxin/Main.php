@@ -1,4 +1,6 @@
 <?php
+require_once(__DIR__.'/Config.php');
+
 /**
  * 
  * @author WangYan
@@ -146,10 +148,10 @@ class Lib_Duanxin_Main{
             return array('code'=>400,'error'=>'请尝试使用普通登陆！');
         }
         //发送次数限制
-        $is_send = TyFunc_Redisfunc::getInstance()->checkceiling('tianyan_duanxin', $mobile, 5);
-        if($is_send === false){
-            return array('code'=>400,'error'=>'获取验证码次数超过上限,请明天再试');
-        }
+        // $is_send = TyFunc_Redisfunc::getInstance()->checkceiling('tianyan_duanxin', $mobile, 5);
+        // if($is_send === false){
+        //     return array('code'=>400,'error'=>'获取验证码次数超过上限,请明天再试');
+        // }
 
         //判断两次请求间隔60秒
         $last_send = self::lastMessage($mobile,$type);
@@ -201,21 +203,21 @@ class Lib_Duanxin_Main{
     //两次获取验证码时间间隔
     public static function lastMessage($mobile,$type,$act = 'get')
     {
-        $mem = TyFunc_Cachefunc::getInstance();
-        $key = '__SPAM_MESSAGE_LEAP_TIME'.$mobile.$type;
-        if($act == 'get')
-        {
-            $last = intval($mem->get($key));
-            if(!$last)
-            {
-                $mem->set($key,time(),0,86400);
-                $last = 0;
-            }
-            return $last;
-        }else
-        {
-            $mem->set($key,time(),0,86400);
-        }
+        // $mem = TyFunc_Cachefunc::getInstance();
+        // $key = '__SPAM_MESSAGE_LEAP_TIME'.$mobile.$type;
+        // if($act == 'get')
+        // {
+        //     $last = intval($mem->get($key));
+        //     if(!$last)
+        //     {
+        //         $mem->set($key,time(),0,86400);
+        //         $last = 0;
+        //     }
+        //     return $last;
+        // }else
+        // {
+        //     $mem->set($key,time(),0,86400);
+        // }
     }
     
 

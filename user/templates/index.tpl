@@ -68,7 +68,7 @@
               </a>
           </li>
           <li class="sub-menu">
-            <a href="javascript:;">
+            <a href="address.php">
               <i class="fa fa-tasks"></i>
               <span>收货地址</span>
               </a>

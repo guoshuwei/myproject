@@ -1,5 +1,8 @@
 <?php
 header('content-type;text/html;charset=utf-8');
+
+date_default_timezone_set('PRC');// 设置中国时区
+
 session_start();
 
 require __DIR__ . '/../smarty/libs/Smarty.class.php';

@@ -6,7 +6,7 @@
  * 2014-11-7
  * UTF-8
  */
-abstract class TyLib_Duanxin_Base_Abstract{
+abstract class Lib_Duanxin_Base_Abstract{
 	protected $config = array();
 	
 	/**
