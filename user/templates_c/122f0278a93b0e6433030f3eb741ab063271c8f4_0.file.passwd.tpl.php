@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-5, created on 2018-11-29 10:04:57
-  from 'D:\tools\phpStudy\PHPTutorial\WWW\myproject\user\templates\certify.tpl' */
+/* Smarty version 3.1.34-dev-5, created on 2018-11-29 15:44:16
+  from 'D:\tools\phpStudy\PHPTutorial\WWW\myproject\user\templates\passwd.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-5',
-  'unifunc' => 'content_5bff4949ca31f6_63292259',
+  'unifunc' => 'content_5bff98d06ec068_70931672',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'c54da494cc37e2cab2c5635804a4818e44609a18' => 
+    '122f0278a93b0e6433030f3eb741ab063271c8f4' => 
     array (
-      0 => 'D:\\tools\\phpStudy\\PHPTutorial\\WWW\\myproject\\user\\templates\\certify.tpl',
-      1 => 1543456910,
+      0 => 'D:\\tools\\phpStudy\\PHPTutorial\\WWW\\myproject\\user\\templates\\passwd.tpl',
+      1 => 1543477451,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:partials/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5bff4949ca31f6_63292259 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bff98d06ec068_70931672 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -31,7 +31,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 <html lang="en">
 <head>
 <?php $_smarty_tpl->_subTemplateRender("file:partials/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5499751785bff4949c39a63_73215571', 'page_style');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15843195315bff98d06e4361_11793856', 'page_style');
 ?>
 
 </head>
@@ -71,22 +71,21 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5499751785bff4949c
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
           <p class="centered"><a href="profile.html"><img src="/img/ui-sam.jpg" class="img-circle" width="80"></a></p>
-          <h5 class="centered"><?php echo $_smarty_tpl->tpl_vars['username']->value;?>
-</h5>
+          <h5 class="centered"></h5>
           <li class="mt">
-            <a class="active" href="profile.php">
+            <a href="home.php">
               <i class="fa fa-dashboard"></i>
               <span>帐号信息</span>
               </a>
           </li>
           <li class="sub-menu">
-            <a href="javascript:;">
+            <a href="profile.php">
               <i class="fa fa-desktop"></i>
               <span>绑定信息</span>
               </a>
           </li>
           <li class="sub-menu">
-            <a href="javascript:;">
+            <a class="active" href="passwd.php">
               <i class="fa fa-cogs"></i>
               <span>修改密码</span>
               </a>
@@ -98,7 +97,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5499751785bff4949c
               </a>
           </li>
           <li class="sub-menu">
-            <a href="javascript:;">
+            <a href="address.php">
               <i class="fa fa-tasks"></i>
               <span>收货地址</span>
               </a>
@@ -137,56 +136,39 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5499751785bff4949c
           <div class="bind-wrap">
                 <div class="my-bind">
                     <div class="bind-wrap-head">
-                        <div class="bind-wrap-head-ui">实名认证<a class="bind-wrap-return" href="/spacecp">< 返回</a></div>
+                        <div class="bind-wrap-head-ui">收货信息<a class="bind-wrap-return" onclick="window.history.back()">< 返回</a></div>
                     </div>
-                    <?php if (isset($_smarty_tpl->tpl_vars['user_det']->value['certify_at']) && ($_smarty_tpl->tpl_vars['user_det']->value['certify_at'] > 0)) {?>
-                    <div class="revise-password">
-                        <div class="form-list-item">
-                            <div class="revise-password-item">
-                                <div class="text-success">已实名！</div>
-                            </div>
-                        </div>
-                        <div class="form-list-item">
-                            <div class="revise-password-item">
-                                <div>真实姓名</div>
-                                <div><?php echo $_smarty_tpl->tpl_vars['user_det']->value['truename'];?>
-</div>
-                            </div>
-                        </div>
-                        <div class="form-list-item">
-                            <div class="revise-password-item">
-                                <div>身份证号</div>
-                                <div><?php echo $_smarty_tpl->tpl_vars['user_det']->value['idcard'];?>
-</div>
-                            </div>
-                        </div>
-                    </div>
-                    <?php } else { ?>
-                    <form action="certify.php" method="post" role="ajaxfrom" id="formBox">
-                        <div class="revise-password">
-                            <div class="form-list-item">
-                                <div class="revise-password-item">
-                                    <div>真实姓名</div>
-                                    <input type="text" placeholder="请输入真实姓名" name="name" data-valid="notempty" autocomplete="off"/>
+                    <form id="passWdForm" method="post" role="ajaxfrom" class="passwd-form" >
+                        <ul class="passwd-form-list">
+                            <li class="passwd-form-item" role-prompt="passwd">
+                                <div class="passwd-form-box clearfix">
+                                    <div class="left passwd-form-box-text">旧的密码:</div>
+                                    <input type="password" class="left passwd-form-box-input" name="old_passwd" placeholder="原来的登录密码">
                                 </div>
-                                <div class="error-prompt now-password">
-                                    <span><i></i>对不起，输入有误！</span>
+                                <div class="passwd-form-desc">
                                 </div>
-                            </div>
-                            <div class="form-list-item">
-                                <div class="revise-password-item">
-                                    <div>身份证号</div>
-                                    <input type="text" placeholder="请输入本人真实身份证号" name="idnumber" data-valid="notempty|len:18:18" maxlength="18" autocomplete="off"/>
+                            </li>
+                            <li class="passwd-form-item" role-prompt="passwd">
+                                <div class="passwd-form-box clearfix">
+                                    <div class="left passwd-form-box-text">新的密码:</div>
+                                    <input type="password" class="left passwd-form-box-input" name="new_passwd" id="new_passwd" value="" placeholder="新的登录密码">
                                 </div>
-                                <div class="error-prompt new-password">
-                                    <span><i></i>对不起，输入有误！</span>
+                                <div class="passwd-form-desc">
                                 </div>
-                            </div>
-                        </div>
-                        <input type="submit" class="revise-password-btn" id="submit" value="完成">
+                            </li>
+                            <li class="passwd-form-item">
+                                <div class="passwd-form-box clearfix">
+                                    <div class="left passwd-form-box-text">确认密码:</div>
+                                    <input type="password" class="left passwd-form-box-input" name="rep_passwd" value="" placeholder="重复输入新密码">
+                                </div>
+                                <div class="passwd-form-desc">
+                                </div>
+                            </li>
+                            <li class="passwd-form-item passwd-submit">
+                                <input type="button" class="passwd-submit-btn" id="Submitskip" value="保存">
+                            </li>
+                        </ul>
                     </form>
-                    <?php }?>
-                    
                 </div>
             </div>     
       </section>
@@ -211,41 +193,104 @@ $_smarty_tpl->_subTemplateRender("file:partials/footer.tpl", $_smarty_tpl->cache
 </body>
 </html>
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13380921945bff4949c9f376_67315773', "page_scripts");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20461898175bff98d06e81e4_86728426', "page_scripts");
 ?>
 
 <?php }
 /* {block 'page_style'} */
-class Block_5499751785bff4949c39a63_73215571 extends Smarty_Internal_Block
+class Block_15843195315bff98d06e4361_11793856 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_style' => 
   array (
-    0 => 'Block_5499751785bff4949c39a63_73215571',
+    0 => 'Block_15843195315bff98d06e4361_11793856',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-    <link rel="stylesheet" type="text/css" href="/css/certify.css">
+    <link rel="stylesheet" type="text/css" href="/css/passwd.css">
+    <link rel="stylesheet" type="text/css" href="/lib/validate/jquery.validate.css">
 <?php
 }
 }
 /* {/block 'page_style'} */
 /* {block "page_scripts"} */
-class Block_13380921945bff4949c9f376_67315773 extends Smarty_Internal_Block
+class Block_20461898175bff98d06e81e4_86728426 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_scripts' => 
   array (
-    0 => 'Block_13380921945bff4949c9f376_67315773',
+    0 => 'Block_20461898175bff98d06e81e4_86728426',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
+    <!-- <?php echo '<script'; ?>
+ type="text/javascript" src="/scripts/pc/spacecp_address_com.js" init="pc/spacecp_address"><?php echo '</script'; ?>
+> -->
     <?php echo '<script'; ?>
- type="text/javascript" src="/scripts/pc/spacecp_certify_com.js" init="pc/spacecp_certify"><?php echo '</script'; ?>
+ type="text/javascript" src="/lib/validate/jquery.validate.min.js" ><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ type="text/javascript" src="/lib/validate/jquery.validate.extend.js" ><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ type="text/javascript" src="/lib/noty/jquery.noty.packaged.min.js" ><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ type="text/javascript" src="/lib/noty/jquery.noty.packaged.extend.js" ><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ type="text/javascript">
+      $(function(){
+        // 添加
+        $('#Submitskip').click(function(){
+            $('#passWdForm').submit();
+        });
+        $("#passWdForm").validate({
+            rules: {
+              old_passwd:{
+                required: true,
+                rangelength:[6,32],
+              },
+              new_passwd:{
+                required: true,
+                rangelength:[6,32],
+              },
+              rep_passwd:{
+                required: true,
+                rangelength:[6,32],
+                equalTo:'#new_passwd',
+              },
+            },
+            errorClass: "error invalid",
+            errorPlacement:function(error,element) {  
+              error.appendTo(element.parent().siblings('.passwd-form-desc'));
+            },
+            submitHandler:function(form){ 
+                var $data = $(form).serialize(); //序列化表单数据 
+
+                $.post('#',$data,function(dat){
+                    if(dat.code=='200'){
+                        notyTip('topRight','success',dat.message);
+                        setTimeout(function(){
+                            window.location.reload();
+                        },800);
+                    }else{
+                        notyTip('topRight','error',dat.message);
+                        setTimeout(function(){
+                            window.location.reload();
+                        },800);
+                    }
+                },'json');
+
+              return false;
+            },
+        });
+      });
+    <?php echo '</script'; ?>
 >
 <?php
 }

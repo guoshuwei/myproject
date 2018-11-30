@@ -45,13 +45,13 @@
           <p class="centered"><a href="profile.html"><img src="/img/ui-sam.jpg" class="img-circle" width="80"></a></p>
           <h5 class="centered">{$username}</h5>
           <li class="mt">
-            <a class="active" href="home.php">
+            <a class="" href="home.php">
               <i class="fa fa-dashboard"></i>
               <span>帐号信息</span>
               </a>
           </li>
           <li class="sub-menu">
-            <a href="javascript:;">
+            <a class="active" href="profile.php">
               <i class="fa fa-desktop"></i>
               <span>绑定信息</span>
               </a>

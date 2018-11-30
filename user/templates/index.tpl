@@ -50,13 +50,13 @@
               </a>
           </li>
           <li class="sub-menu">
-            <a href="javascript:;">
+            <a href="profile.php">
               <i class="fa fa-desktop"></i>
               <span>绑定信息</span>
               </a>
           </li>
           <li class="sub-menu">
-            <a href="javascript:;">
+            <a href="passwd.php">
               <i class="fa fa-cogs"></i>
               <span>修改密码</span>
               </a>
@@ -114,35 +114,43 @@
                         <tr>
                             <td class="center">我的用户名</td>
                             <td class="have"><div class="have-icon"></div></td>
-                            <td class="content-ui"></td>
+                            <td class="content-ui">{$user_inf.username}</td>
                             <td class="link"></td>
                         </tr>
                         <tr>
                             <td class="center">我的头像</td>
                             <td class="have"><div class="have-icon"></div></td>
                             
-                                <td class="content-ui">已上传头像</td>
+                                <td class="content-ui">已上传头像/系统默认头像</td>
                             
-                                <td class="content-ui">系统默认头像</td>
+                                <!-- <td class="content-ui">系统默认头像</td> -->
                            
                             <td class="link"><a href="avatar.php">修改头像</a></td>
                         </tr>
                         <tr>
                             <td class="center">手机号</td>
                             <td class="have"><div class="have-icon"></div></td>
-                            <td class="content-ui"></td>
+                            <td class="content-ui">{$user_inf.mobile}</td>
                             <td class="link">
                                     <a href="javascript:;" role="dialog" role-api="spacpceMobileChange">
-                                    修改号码 </a> <a href="">设置手机号</a>
+                                    修改号码</a>&nbsp;<a href="">设置</a>
                             </td>
                         </tr>
                         <tr>
                             <td class="center">实名认证</td>
                             <td class="have"><div class="have-icon"></div></td>
-                            <td class="content-ui">还未完成实名认证</td>
+                            {if isset($user_det.certify_at) && ($user_det.certify_at>0)}
+                            <td class="content-ui text-success">已实名</td>
+                            <td class="link">
+                                <a href="#" role-click="tipmobile">更改</a>
+                            </td>
+                            {else}
+                            <td class="content-ui text-error">未实名</td>
                             <td class="link">
                                 <a href="certify.php" role-click="tipmobile">立即认证</a>
                             </td>
+                            {/if}
+                            
                         </tr>
 
                         </tbody>
@@ -157,8 +165,9 @@
                         <tr>
                             <td class="center">登录密码</td>
                             <td class="have"><div class="have-icon"></div></td>
-                            <td class="content-ui">qq登录账户 登录密码已设置</td>
-                            <td class="link"><a href="/spacecp/security">修改密码</a></td>
+                            <!-- <td class="content-ui">qq登录账户 登录密码已设置</td> -->
+                            <td class="content-ui">已设置</td>
+                            <td class="link"><a href="passwd.php">修改密码</a></td>
                           
                         </tr>
                         </tbody>
@@ -173,33 +182,40 @@
                         <tr>
                             <td class="center">性别</td>
                             <td class="have"><div class="{if $userprofile['gender_des']}have-icon{/if}"></div></td>
-                            <td class="content-ui">{$userprofile['gender_des']|default:'----'}</td>
+                            <td class="content-ui">
+                            {$sex = ['保密','男','女']}  
+                            {if isset($user_det.sex)}
+                            {$sex[$user_det.sex]}
+                            {else}
+                            无
+                            {/if}
+                            </td>
                             <td class="link"><a href="profile.php">修改个人信息</a></td>
                         </tr>
                         <tr>
                             <td class="center">生日</td>
                             <td class="have"><div class="have-icon"></div></td>
-                            <td class="content-ui"></td>
+                            <td class="content-ui">{$user_det.birthday}</td>
                             <td class="link"><a></a></td>
                         </tr>
                         <tr>
                             <td class="center">行业</td>
                             <td class="have"><div class=""></div></td>
-                            <td class="content-ui"></td>
+                            <td class="content-ui">{$user_det.occupation}</td>
                             <td class="link"><a></a></td>
                         </tr>
                         <tr>
                             <td class="center">年收入</td>
                             <td class="have"><div class=""></div></td>
-                            <td class="content-ui"></td>
+                            <td class="content-ui">{$user_det.revenue}</td>
                             <td class="link"><a></a></td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td class="center">最高学历</td>
                             <td class="have"><div class=""></div></td>
                             <td class="content-ui"></td>
                             <td class="link"><a></a></td>
-                        </tr>
+                        </tr> -->
                         </tbody>
                     </table>
                 </div>

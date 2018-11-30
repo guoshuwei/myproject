@@ -76,4 +76,20 @@ class User{
 	public function logout(){
 		Session::delete($this->_sessionName);
 	}
+
+	// 修改密码
+	public function chgPasswd($old_pwd, $new_pwd){
+		if ($this->isLoggedIn()) {
+			if ($this->data()->password === Hash::make($old_pwd, $this->data()->salt)) {
+				$password = Hash::make($new_pwd, $this->data()->salt);
+				$res = $this->_db->update('t_user_dd', $this->data()->id, array('password'=>$password));
+				if ($res) {
+					return true;
+				}
+				// return false;
+			}
+			// return false;
+		}
+		return false;
+	}
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-5, created on 2018-11-26 02:21:03
+/* Smarty version 3.1.34-dev-5, created on 2018-11-30 14:20:52
   from 'D:\tools\phpStudy\PHPTutorial\WWW\myproject\user\templates\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-5',
-  'unifunc' => 'content_5bfb588fccdcb7_31761583',
+  'unifunc' => 'content_5c00d6c4238537_70381692',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'bc2b7b9e8a0c559961fc4876e9656e8411354ea9' => 
     array (
       0 => 'D:\\tools\\phpStudy\\PHPTutorial\\WWW\\myproject\\user\\templates\\index.tpl',
-      1 => 1543198852,
+      1 => 1543558836,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:partials/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5bfb588fccdcb7_31761583 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c00d6c4238537_70381692 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -31,7 +31,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 <html lang="en">
 <head>
 <?php $_smarty_tpl->_subTemplateRender("file:partials/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14031133355bfb588fb10756_75267555', 'page_style');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19715890515c00d6c4228b31_89196494', 'page_style');
 ?>
 
 </head>
@@ -80,13 +80,13 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14031133355bfb588f
               </a>
           </li>
           <li class="sub-menu">
-            <a href="javascript:;">
+            <a href="profile.php">
               <i class="fa fa-desktop"></i>
               <span>绑定信息</span>
               </a>
           </li>
           <li class="sub-menu">
-            <a href="javascript:;">
+            <a href="passwd.php">
               <i class="fa fa-cogs"></i>
               <span>修改密码</span>
               </a>
@@ -144,35 +144,45 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14031133355bfb588f
                         <tr>
                             <td class="center">我的用户名</td>
                             <td class="have"><div class="have-icon"></div></td>
-                            <td class="content-ui"></td>
+                            <td class="content-ui"><?php echo $_smarty_tpl->tpl_vars['user_inf']->value['username'];?>
+</td>
                             <td class="link"></td>
                         </tr>
                         <tr>
                             <td class="center">我的头像</td>
                             <td class="have"><div class="have-icon"></div></td>
                             
-                                <td class="content-ui">已上传头像</td>
+                                <td class="content-ui">已上传头像/系统默认头像</td>
                             
-                                <td class="content-ui">系统默认头像</td>
+                                <!-- <td class="content-ui">系统默认头像</td> -->
                            
                             <td class="link"><a href="avatar.php">修改头像</a></td>
                         </tr>
                         <tr>
                             <td class="center">手机号</td>
                             <td class="have"><div class="have-icon"></div></td>
-                            <td class="content-ui"></td>
+                            <td class="content-ui"><?php echo $_smarty_tpl->tpl_vars['user_inf']->value['mobile'];?>
+</td>
                             <td class="link">
                                     <a href="javascript:;" role="dialog" role-api="spacpceMobileChange">
-                                    修改号码 </a> <a href="">设置手机号</a>
+                                    修改号码</a>&nbsp;<a href="">设置</a>
                             </td>
                         </tr>
                         <tr>
                             <td class="center">实名认证</td>
                             <td class="have"><div class="have-icon"></div></td>
-                            <td class="content-ui">还未完成实名认证</td>
+                            <?php if (isset($_smarty_tpl->tpl_vars['user_det']->value['certify_at']) && ($_smarty_tpl->tpl_vars['user_det']->value['certify_at'] > 0)) {?>
+                            <td class="content-ui text-success">已实名</td>
+                            <td class="link">
+                                <a href="#" role-click="tipmobile">更改</a>
+                            </td>
+                            <?php } else { ?>
+                            <td class="content-ui text-error">未实名</td>
                             <td class="link">
                                 <a href="certify.php" role-click="tipmobile">立即认证</a>
                             </td>
+                            <?php }?>
+                            
                         </tr>
 
                         </tbody>
@@ -187,8 +197,9 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14031133355bfb588f
                         <tr>
                             <td class="center">登录密码</td>
                             <td class="have"><div class="have-icon"></div></td>
-                            <td class="content-ui">qq登录账户 登录密码已设置</td>
-                            <td class="link"><a href="/spacecp/security">修改密码</a></td>
+                            <!-- <td class="content-ui">qq登录账户 登录密码已设置</td> -->
+                            <td class="content-ui">已设置</td>
+                            <td class="link"><a href="passwd.php">修改密码</a></td>
                           
                         </tr>
                         </tbody>
@@ -203,34 +214,44 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14031133355bfb588f
                         <tr>
                             <td class="center">性别</td>
                             <td class="have"><div class="<?php if ($_smarty_tpl->tpl_vars['userprofile']->value['gender_des']) {?>have-icon<?php }?>"></div></td>
-                            <td class="content-ui"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['userprofile']->value['gender_des'])===null||$tmp==='' ? '----' : $tmp);?>
-</td>
+                            <td class="content-ui">
+                            <?php $_smarty_tpl->_assignInScope('sex', array('保密','男','女'));?>  
+                            <?php if (isset($_smarty_tpl->tpl_vars['user_det']->value['sex'])) {?>
+                            <?php echo $_smarty_tpl->tpl_vars['sex']->value[$_smarty_tpl->tpl_vars['user_det']->value['sex']];?>
+
+                            <?php } else { ?>
+                            无
+                            <?php }?>
+                            </td>
                             <td class="link"><a href="profile.php">修改个人信息</a></td>
                         </tr>
                         <tr>
                             <td class="center">生日</td>
                             <td class="have"><div class="have-icon"></div></td>
-                            <td class="content-ui"></td>
+                            <td class="content-ui"><?php echo $_smarty_tpl->tpl_vars['user_det']->value['birthday'];?>
+</td>
                             <td class="link"><a></a></td>
                         </tr>
                         <tr>
                             <td class="center">行业</td>
                             <td class="have"><div class=""></div></td>
-                            <td class="content-ui"></td>
+                            <td class="content-ui"><?php echo $_smarty_tpl->tpl_vars['user_det']->value['occupation'];?>
+</td>
                             <td class="link"><a></a></td>
                         </tr>
                         <tr>
                             <td class="center">年收入</td>
                             <td class="have"><div class=""></div></td>
-                            <td class="content-ui"></td>
+                            <td class="content-ui"><?php echo $_smarty_tpl->tpl_vars['user_det']->value['revenue'];?>
+</td>
                             <td class="link"><a></a></td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td class="center">最高学历</td>
                             <td class="have"><div class=""></div></td>
                             <td class="content-ui"></td>
                             <td class="link"><a></a></td>
-                        </tr>
+                        </tr> -->
                         </tbody>
                     </table>
                 </div>
@@ -285,15 +306,15 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14031133355bfb588f
 </body>
 </html>
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19360269125bfb588fcc9e33_50353978', "page_scripts");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4533788955c00d6c42346b2_22191738', "page_scripts");
 }
 /* {block 'page_style'} */
-class Block_14031133355bfb588fb10756_75267555 extends Smarty_Internal_Block
+class Block_19715890515c00d6c4228b31_89196494 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_style' => 
   array (
-    0 => 'Block_14031133355bfb588fb10756_75267555',
+    0 => 'Block_19715890515c00d6c4228b31_89196494',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -305,12 +326,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'page_style'} */
 /* {block "page_scripts"} */
-class Block_19360269125bfb588fcc9e33_50353978 extends Smarty_Internal_Block
+class Block_4533788955c00d6c42346b2_22191738 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_scripts' => 
   array (
-    0 => 'Block_19360269125bfb588fcc9e33_50353978',
+    0 => 'Block_4533788955c00d6c42346b2_22191738',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

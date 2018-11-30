@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-5, created on 2018-11-20 07:36:54
+/* Smarty version 3.1.34-dev-5, created on 2018-11-29 11:06:21
   from 'D:\tools\phpStudy\PHPTutorial\WWW\myproject\user\templates\address.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-5',
-  'unifunc' => 'content_5bf3b99678ffa7_72939807',
+  'unifunc' => 'content_5bff57ad21a895_26669977',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '99c025e0dc4a7f16d180bf2b33b08dbe7ea5c8c1' => 
     array (
       0 => 'D:\\tools\\phpStudy\\PHPTutorial\\WWW\\myproject\\user\\templates\\address.tpl',
-      1 => 1542610593,
+      1 => 1543460778,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:partials/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5bf3b99678ffa7_72939807 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bff57ad21a895_26669977 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -31,7 +31,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 <html lang="en">
 <head>
 <?php $_smarty_tpl->_subTemplateRender("file:partials/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3585920125bf3b9967882a2_92037979', 'page_style');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8989998205bff57ad212b89_19808050', 'page_style');
 ?>
 
 </head>
@@ -73,13 +73,13 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3585920125bf3b9967
           <p class="centered"><a href="profile.html"><img src="/img/ui-sam.jpg" class="img-circle" width="80"></a></p>
           <h5 class="centered"></h5>
           <li class="mt">
-            <a class="active" href="profile.php">
+            <a href="home.php">
               <i class="fa fa-dashboard"></i>
               <span>帐号信息</span>
               </a>
           </li>
           <li class="sub-menu">
-            <a href="javascript:;">
+            <a href="profile.php">
               <i class="fa fa-desktop"></i>
               <span>绑定信息</span>
               </a>
@@ -97,7 +97,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3585920125bf3b9967
               </a>
           </li>
           <li class="sub-menu">
-            <a href="javascript:;">
+            <a class="active" href="address.php">
               <i class="fa fa-tasks"></i>
               <span>收货地址</span>
               </a>
@@ -220,17 +220,17 @@ $_smarty_tpl->_subTemplateRender("file:partials/footer.tpl", $_smarty_tpl->cache
 </body>
 </html>
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3101208655bf3b99678c123_16238956', "page_scripts");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5291396855bff57ad216a07_59139599', "page_scripts");
 ?>
 
 <?php }
 /* {block 'page_style'} */
-class Block_3585920125bf3b9967882a2_92037979 extends Smarty_Internal_Block
+class Block_8989998205bff57ad212b89_19808050 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_style' => 
   array (
-    0 => 'Block_3585920125bf3b9967882a2_92037979',
+    0 => 'Block_8989998205bff57ad212b89_19808050',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -242,12 +242,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'page_style'} */
 /* {block "page_scripts"} */
-class Block_3101208655bf3b99678c123_16238956 extends Smarty_Internal_Block
+class Block_5291396855bff57ad216a07_59139599 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_scripts' => 
   array (
-    0 => 'Block_3101208655bf3b99678c123_16238956',
+    0 => 'Block_5291396855bff57ad216a07_59139599',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

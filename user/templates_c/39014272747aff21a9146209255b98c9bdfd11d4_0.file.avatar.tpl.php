@@ -1,29 +1,27 @@
 <?php
-/* Smarty version 3.1.34-dev-5, created on 2018-11-29 10:04:57
-  from 'D:\tools\phpStudy\PHPTutorial\WWW\myproject\user\templates\certify.tpl' */
+/* Smarty version 3.1.34-dev-5, created on 2018-11-29 10:57:18
+  from 'D:\tools\phpStudy\PHPTutorial\WWW\myproject\user\templates\avatar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-5',
-  'unifunc' => 'content_5bff4949ca31f6_63292259',
+  'unifunc' => 'content_5bff558ee9d9e6_93133462',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'c54da494cc37e2cab2c5635804a4818e44609a18' => 
+    '39014272747aff21a9146209255b98c9bdfd11d4' => 
     array (
-      0 => 'D:\\tools\\phpStudy\\PHPTutorial\\WWW\\myproject\\user\\templates\\certify.tpl',
-      1 => 1543456910,
+      0 => 'D:\\tools\\phpStudy\\PHPTutorial\\WWW\\myproject\\user\\templates\\avatar.tpl',
+      1 => 1543456909,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
     'file:partials/header.tpl' => 1,
-    'file:inc/invest_script_template.tpl' => 1,
-    'file:partials/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5bff4949ca31f6_63292259 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bff558ee9d9e6_93133462 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -31,7 +29,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 <html lang="en">
 <head>
 <?php $_smarty_tpl->_subTemplateRender("file:partials/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5499751785bff4949c39a63_73215571', 'page_style');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_11231889265bff558ee99b67_31905218', 'page_style');
 ?>
 
 </head>
@@ -71,8 +69,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5499751785bff4949c
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
           <p class="centered"><a href="profile.html"><img src="/img/ui-sam.jpg" class="img-circle" width="80"></a></p>
-          <h5 class="centered"><?php echo $_smarty_tpl->tpl_vars['username']->value;?>
-</h5>
+          <h5 class="centered"></h5>
           <li class="mt">
             <a class="active" href="profile.php">
               <i class="fa fa-dashboard"></i>
@@ -137,56 +134,37 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5499751785bff4949c
           <div class="bind-wrap">
                 <div class="my-bind">
                     <div class="bind-wrap-head">
-                        <div class="bind-wrap-head-ui">实名认证<a class="bind-wrap-return" href="/spacecp">< 返回</a></div>
+                        <div class="bind-wrap-head-ui">修改头像<a class="bind-wrap-return" href="/spacecp">< 返回</a></div>
                     </div>
-                    <?php if (isset($_smarty_tpl->tpl_vars['user_det']->value['certify_at']) && ($_smarty_tpl->tpl_vars['user_det']->value['certify_at'] > 0)) {?>
-                    <div class="revise-password">
-                        <div class="form-list-item">
-                            <div class="revise-password-item">
-                                <div class="text-success">已实名！</div>
-                            </div>
-                        </div>
-                        <div class="form-list-item">
-                            <div class="revise-password-item">
-                                <div>真实姓名</div>
-                                <div><?php echo $_smarty_tpl->tpl_vars['user_det']->value['truename'];?>
-</div>
-                            </div>
-                        </div>
-                        <div class="form-list-item">
-                            <div class="revise-password-item">
-                                <div>身份证号</div>
-                                <div><?php echo $_smarty_tpl->tpl_vars['user_det']->value['idcard'];?>
-</div>
+                    <div class="revise-img">
+                        <div class="revise-img-left">
+                            <div class="revise-img-title">当前我的头像</div>
+                            <p class="revise-img-text">如果您还没有设置自己的头像，系统会 显示为默认头像，您需要自己上传一张 新照片来作为自己的个人头像。</p>
+                            <img src="/discuz/uc_server/avatar.php?uid=1&size=big" class="my-img"/>
+                                                    </div>
+                        <div class="revise-img-right" >
+                            <div class="revise-img-title">设置我的新头像</div>
+                            <div class="revise-img-hight">请选择一个新照片进行上传编辑。</div>
+                            <p class="revise-img-text">（头像保存后，您可能需要刷新一下本页面(按ctrl+F5键)，才能查看最新的头像效果）</p>
+                            <div class="avatar">
+                            <?php echo '<script'; ?>
+ src="/discuz/static/js/upload.js"><?php echo '</script'; ?>
+> 
+                            <?php echo '<script'; ?>
+ src="/discuz/static/js/swfupload.js"><?php echo '</script'; ?>
+> 
+                            <?php echo '<script'; ?>
+ src="/discuz/static/js/common.js"><?php echo '</script'; ?>
+>   
+
+                            <?php echo '<script'; ?>
+ type="text/javascript">document.write(AC_FL_RunContent(<?php echo $_smarty_tpl->tpl_vars['uc_avatarflash']->value;?>
+))<?php echo '</script'; ?>
+> 
+                             
                             </div>
                         </div>
                     </div>
-                    <?php } else { ?>
-                    <form action="certify.php" method="post" role="ajaxfrom" id="formBox">
-                        <div class="revise-password">
-                            <div class="form-list-item">
-                                <div class="revise-password-item">
-                                    <div>真实姓名</div>
-                                    <input type="text" placeholder="请输入真实姓名" name="name" data-valid="notempty" autocomplete="off"/>
-                                </div>
-                                <div class="error-prompt now-password">
-                                    <span><i></i>对不起，输入有误！</span>
-                                </div>
-                            </div>
-                            <div class="form-list-item">
-                                <div class="revise-password-item">
-                                    <div>身份证号</div>
-                                    <input type="text" placeholder="请输入本人真实身份证号" name="idnumber" data-valid="notempty|len:18:18" maxlength="18" autocomplete="off"/>
-                                </div>
-                                <div class="error-prompt new-password">
-                                    <span><i></i>对不起，输入有误！</span>
-                                </div>
-                            </div>
-                        </div>
-                        <input type="submit" class="revise-password-btn" id="submit" value="完成">
-                    </form>
-                    <?php }?>
-                    
                 </div>
             </div>     
       </section>
@@ -205,50 +183,26 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5499751785bff4949c
     </footer>
     <!--footer end-->
   </section>
-<?php $_smarty_tpl->_subTemplateRender("file:inc/invest_script_template.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-$_smarty_tpl->_subTemplateRender("file:partials/footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?>
+  
 </body>
-</html>
-<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13380921945bff4949c9f376_67315773', "page_scripts");
-?>
 
+</html>
 <?php }
 /* {block 'page_style'} */
-class Block_5499751785bff4949c39a63_73215571 extends Smarty_Internal_Block
+class Block_11231889265bff558ee99b67_31905218 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_style' => 
   array (
-    0 => 'Block_5499751785bff4949c39a63_73215571',
+    0 => 'Block_11231889265bff558ee99b67_31905218',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-    <link rel="stylesheet" type="text/css" href="/css/certify.css">
+    <link rel="stylesheet" type="text/css" href="/css/avatar.css">
 <?php
 }
 }
 /* {/block 'page_style'} */
-/* {block "page_scripts"} */
-class Block_13380921945bff4949c9f376_67315773 extends Smarty_Internal_Block
-{
-public $subBlocks = array (
-  'page_scripts' => 
-  array (
-    0 => 'Block_13380921945bff4949c9f376_67315773',
-  ),
-);
-public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
-?>
-
-    <?php echo '<script'; ?>
- type="text/javascript" src="/scripts/pc/spacecp_certify_com.js" init="pc/spacecp_certify"><?php echo '</script'; ?>
->
-<?php
-}
-}
-/* {/block "page_scripts"} */
 }
