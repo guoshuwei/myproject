@@ -13,7 +13,7 @@ BOT_NAME = 'ScrapySpiderHtml'
 
 SPIDER_MODULES = ['ScrapySpiderHtml.spiders']
 NEWSPIDER_MODULE = 'ScrapySpiderHtml.spiders'
-
+FEED_EXPORT_ENCODING = 'utf-8'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'ScrapySpiderHtml (+http://www.yourdomain.com)'

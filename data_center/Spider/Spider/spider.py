@@ -1,6 +1,7 @@
 from urllib.request import urlopen
 from link_finder import LinkFinder
 from data_finder import DataFinder
+from html_escape import *
 from domain import *
 from general import *
 
@@ -13,7 +14,7 @@ class Spider:
     crawled_file = ''
     queue = set()
     crawled = set()
-
+    datalist = list()
     def __init__(self, project_name, base_url, domain_name):
         Spider.project_name = project_name
         Spider.base_url = base_url
@@ -32,6 +33,7 @@ class Spider:
         create_data_files(Spider.project_name, Spider.base_url)
         Spider.queue = file_to_set(Spider.queue_file)
         Spider.crawled = file_to_set(Spider.crawled_file)
+        # Spider.datalist = set_to_list(Spider.data_file)
         # print(Spider.queue)
 
     # Updates user display, fills queue and updates files
@@ -57,7 +59,7 @@ class Spider:
                 html_bytes = response.read()
                 html_string = html_bytes.decode("utf-8")
             finder = LinkFinder(Spider.base_url, page_url)
-            finder.feed(html_string)
+            finder.feed(sanitize_html(html_string))
         except Exception as e:
             print(str(e))
             return set()
@@ -73,7 +75,7 @@ class Spider:
                 html_bytes = response.read()
                 html_string = html_bytes.decode("utf-8")
             finder = DataFinder(Spider.base_url, page_url)
-            finder.parse(html_string)
+            finder.parse(sanitize_html(html_string))
         except Exception as e:
             print(str(e))
             return set()
@@ -92,7 +94,8 @@ class Spider:
     # extract queue data to project files
     @staticmethod
     def extract_data_to_json(data):
-        pass
+        print(data)
+        # list_to_file(Spider.queue, Spider.queue_file)
         # for url in links:
         #     if (url in Spider.queue) or (url in Spider.crawled):
         #         continue
