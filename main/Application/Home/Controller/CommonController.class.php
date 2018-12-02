@@ -19,7 +19,7 @@ class CommonController extends Controller {
             $this->assign('logining_user_name',$user_res['username']);
         }
         // var_dump(phpinfo());
-        Vendor('Yar.Client');
+        // Vendor('Yar.Client');
         $this->assign('visited_count',self::$hasVisitedCount);
     }
     //访问 统计
