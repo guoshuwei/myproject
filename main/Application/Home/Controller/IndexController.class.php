@@ -27,15 +27,17 @@ class IndexController extends CommonController {
             'mod' => 1,
             'id' => 2,
         );
-        $yar_client_toutiao = new \Client($this->data_center_urls['toutiao']);
-        $toutiao_apires = $yar_client_toutiao->execute('getLatestNewsByMod',$toutiao_apidata);
+        // $yar_client_toutiao = new \Client($this->data_center_urls['toutiao']);
+        // $toutiao_apires = $yar_client_toutiao->execute('getLatestNewsByMod',$toutiao_apidata);
+        $toutiao_apires = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/myproject/data_center/template/items.json');
         $toutiao_apires = json_decode(str_replace("'", "\"", $toutiao_apires),true);
         //首页行业观察板块。
-        $hygc_apidata = array(
-            'mod' => 1,
-            'id' => 2,
-        );
-        $hygc_apires = $yar_client_toutiao->execute('getLatestHYGC',$hygc_apidata);
+        // $hygc_apidata = array(
+        //     'mod' => 1,
+        //     'id' => 2,
+        // );
+        // $hygc_apires = $yar_client_toutiao->execute('getLatestHYGC',$hygc_apidata);
+        $hygc_apires = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/myproject/data_center/template/hygc.json');
         $hygc_apires = array_slice(json_decode($hygc_apires,true),0,4);
         $yumi_index_item = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/myproject/data_center/template/yumi_index_item.json');
         $yumi_index_item = json_decode($yumi_index_item,true);
