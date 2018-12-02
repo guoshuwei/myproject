@@ -1287,7 +1287,7 @@ select option
 	height: 100px;
 	/*box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
 	border: solid 1px #e8e8e8;*/
-	padding-left: 36px;
+	padding-left: 11px;
 }
 .char_icon
 {
@@ -1329,8 +1329,8 @@ select option
 	width: 36%;
 	margin-right: 7%;
 	padding-top: 85px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
 	padding-bottom: 35px;
 	/*box-shadow: 0px 10px 25px rgba(0,0,0,0.1);*/
 	/*border-radius: 5px;*/

@@ -1,4 +1,5 @@
 <?php
+namespace Admin\Controller;
 // 本类由系统自动生成，仅供测试用途
 class YWController extends CommonController{
 	public function __construct()
@@ -20,6 +21,15 @@ class YWController extends CommonController{
 		$refresh_tables = C('REFRESH-TABLES-NUM');
 		$this->assign('refresh_tables',$refresh_tables);
 		$this->display('system_base');
+	}
+	//招商
+	public function zhaoshang(){
+		//引入一套商户的模板
+		$this->display('zhaoshang');
+	}
+
+	public function zhaoshang_add(){
+		
 	}
 	//刷新表,清除无效数据
 	public function table_refresh()

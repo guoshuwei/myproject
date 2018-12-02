@@ -13,6 +13,10 @@ class BranchController extends CommonController {
     }
 
     public function list(){
+        // var_dump($_SERVER);die;
+        $archeve = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/myproject/data_center/template/archeve.json');
+        $archeve_info = json_decode($archeve,true);
+        $this->assign('archeve_info',$archeve_info[0]); 
         $this->display('list');
     }
 

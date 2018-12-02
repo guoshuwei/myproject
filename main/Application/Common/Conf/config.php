@@ -22,8 +22,8 @@ return array(
 	'LOG_RECORD' => true, // 开启日志记录
 	'API_COMPONENT' => array(
 		'data_center' => array(
-			'news' => 'http://192.168.186.158/data_center/server/news.php',
-			'zixun' => '',	
+			'news' => 'http://192.168.186.166/data_center/server/news.php',
+			'toutiao' => 'http://192.168.186.166/myproject/data_center/server/toutiao.php',	
 		),
 	),
 );

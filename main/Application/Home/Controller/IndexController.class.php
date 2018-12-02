@@ -6,6 +6,9 @@ class IndexController extends CommonController {
     {
 
         parent::__construct();
+        //获取rpc配置
+        $this->data_center_urls = C('API_COMPONENT.data_center');
+        // print_r($this->data_center_urls);
     }
 	//首页列表
 	public function navlist()
@@ -18,6 +21,37 @@ class IndexController extends CommonController {
         //导航内容
         $this->assign('navlist',$this->navlist());
         $this->assign('bannerlist',$this->getbannerpic());
+        //首页头条板块。
+        //rpc请求数据中心    
+        $toutiao_apidata = array(
+            'mod' => 1,
+            'id' => 2,
+        );
+        $yar_client_toutiao = new \Client($this->data_center_urls['toutiao']);
+        $toutiao_apires = $yar_client_toutiao->execute('getLatestNewsByMod',$toutiao_apidata);
+        $toutiao_apires = json_decode(str_replace("'", "\"", $toutiao_apires),true);
+        //首页行业观察板块。
+        $hygc_apidata = array(
+            'mod' => 1,
+            'id' => 2,
+        );
+        $hygc_apires = $yar_client_toutiao->execute('getLatestHYGC',$hygc_apidata);
+        $hygc_apires = array_slice(json_decode($hygc_apires,true),0,4);
+        $yumi_index_item = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/myproject/data_center/template/yumi_index_item.json');
+        $yumi_index_item = json_decode($yumi_index_item,true);
+
+        $dami_index_item = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/myproject/data_center/template/dami_price_item.json');
+        $dami_index_item = json_decode($dami_index_item,true);
+
+        $zhu_index_item = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/myproject/data_center/template/zhu_price_item.json');
+        $zhu_index_item = json_decode($zhu_index_item,true);
+        // var_dump($dami_index_item);die;
+        // var_dump($yumi_index_item);die;
+        $this->assign('zhu_index_item',$zhu_index_item);
+        $this->assign('dami_index_item',$dami_index_item);
+        $this->assign('yumi_index_item',$yumi_index_item);
+        $this->assign('hygclist',$hygc_apires);   
+        $this->assign('toutiaolist',$toutiao_apires);     
 		$this->display('index');
     }
     public function about()
