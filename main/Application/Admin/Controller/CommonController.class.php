@@ -7,10 +7,10 @@ class CommonController extends Controller {
     public function __construct()
     {
         parent::__construct();
-        if(!$_SESSION['emplid']){
-             $this->tip('nologin');
-             die;
-        }
+        // if(!$_SESSION['emplid']){
+        //      $this->tip('nologin');
+        //      die;
+        // }
        
     }
     // function _initialize()
@@ -30,13 +30,13 @@ class CommonController extends Controller {
     }
     public function tip($type)
     {
-        switch ($type) {
-            case 'nologin':
-                $this->assign('msg','请先登录');
-                $this->display('Login/tip');
-                break;
-            default:
-                break;
-        }
+        // switch ($type) {
+        //     case 'nologin':
+        //         $this->assign('msg','请先登录');
+        //         $this->display('Login/tip');
+        //         break;
+        //     default:
+        //         break;
+        // }
     }
 }
