@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>组织架构 </title>
+    <link rel="stylesheet" href="../css/common.min.min.css">
+    <link rel="stylesheet" href="../css/chart.min.css">
+    <link rel="stylesheet" href="tooltip.css">
+    <style>
+        .item-unfold_on {
+            background-color: rgba(0, 0, 0, .1);
+        }
+
+        .item-unfold_on {
+            border-color: #fecc91 !important;
+        }
+
+        .m-chart .item-unfold_on:hover .more {
+            background: none !important;
+        }
+
+            .m-chart .item-unfold_on:hover .more .ico {
+                display: block;
+                background: none !important;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="g-site-wrap">
+        <div class="g-site-top">
+
+		<!-- g-head -->
+		<div class="g-head clearfix">
+			<h1 class="fl m-logo">
+				<i class="fl ico ico-logo u-hide">滴滴</i>
+				<span class="fl msg">eHR系统</span>
+			</h1>
+
+			<ul class="fr m-login">
+				<li class="fl avatar J_Avatar">
+					<div class="info clearfix">
+						<img class="fl pic" src="../img/tmp/avatar.jpg" height="26" width="26">
+						<span class="fl name">Admin</span>
+					</div>
+					<div class="handle">
+						<div class="inner">
+							<a href="#">注销</a>
+						</div>
+					</div>
+				</li>
+				<li class="fl help line">
+					<i class="fl pic ico ico-help"></i>
+					<a href="#" class="fl name">帮助</a>
+				</li>
+			</ul>
+
+			<div class="m-search">
+				<input class="search" type="text" placeholder="搜索HR政策流程">
+				<span class="query ico ico-search"><input class="btn" type="submit"></span>
+			</div>
+		</div>
+
+	</div>
+        <div class="J_SiteBody g-site-body">
+            <div class="J_SiteSide g-site-side">
+
+			<!-- m-leftbar -->
+			<ul class="m-leftbar">
+				<!-- 选中状态的li添加class名active -->
+				<li class="active">
+					<a class="item" href="#">
+						<span class="pic">
+							<i class="def ico ico-nav-info"></i>
+							<i class="now ico ico-nav-info2"></i>
+						</span>
+						<span class="name">我的信息</span>
+					</a>
+				</li>
+				<li>
+					<a class="item" href="#">
+						<span class="pic">
+							<i class="def ico ico-nav-salary"></i>
+							<i class="now ico ico-nav-salary2"></i>
+						</span>
+						<span class="name">我的薪酬</span>
+					</a>
+				</li>
+				<li>
+					<a class="item" href="#">
+						<span class="pic">
+							<i class="def ico ico-nav-team"></i>
+							<i class="now ico ico-nav-team2"></i>
+						</span>
+						<span class="name">我的团队</span>
+					</a>
+				</li>
+				<li>
+					<a class="item" href="#">
+						<span class="pic">
+							<i class="def ico ico-nav-structure"></i>
+							<i class="now ico ico-nav-structure2"></i>
+						</span>
+						<span class="name">组织结构</span>
+					</a>
+				</li>
+				<li>
+					<a class="item" href="#">
+						<span class="pic">
+							<i class="def ico ico-nav-prove"></i>
+							<i class="now ico ico-nav-prove2"></i>
+						</span>
+						<span class="name">证明办理</span>
+					</a>
+				</li>
+				<li>
+					<a class="item" href="#">
+						<span class="pic">
+							<i class="def ico ico-nav-welfare"></i>
+							<i class="now ico ico-nav-welfare2"></i>
+						</span>
+						<span class="name">福利政策</span>
+					</a>
+				</li>
+				<li>
+					<a class="item" href="#">
+						<span class="pic">
+							<i class="def ico ico-nav-backlog"></i>
+							<i class="now ico ico-nav-backlog2"></i>
+						</span>
+						<span class="name">待办流程</span>
+					</a>
+				</li>
+				<li>
+					<a class="item" href="#">
+						<span class="pic">
+							<i class="def ico ico-nav-staff"></i>
+							<i class="now ico ico-nav-staff2"></i>
+						</span>
+						<span class="name">查看员工信息</span>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+            <div class="J_SiteMain g-site-main">
+                <div class="m-layout">
+                    <h2 class="m-title2">组织架构</h2>
+
+                    <div class="p-structure m-wrap">
+                        <a href="#" class="m-chart-superior ico ico-chart-arr-top"></a>
+                        <table class="m-chart">
+                            <tr>
+                                <td colspan="3">
+                                    <div class="item item-retract">
+                                        <dl>
+                                            <dt>
+                                                <img width="84" height="84" src="../img/tmp/avatar-tex.jpg"></dt>
+                                            <dd class="name">张晓晓</dd>
+                                            <dd>公共用户产品 T1</dd>
+                                        </dl>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="line-y">
+                                    <div class="line"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="empty">&nbsp;</td>
+                                <td class="line-group">&nbsp;</td>
+                                <td class="empty">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="J_ChartItemBox">
+                                    <div class="item item-unfold">
+                                        <dl>
+                                            <dt><img width="84" height="84" src="../img/tmp/avatar-tex.jpg"></dt>
+                                            <dd href="#" class="help-tip">
+                                                <a href="#">
+                                                <p class="name">张晓晓2</p>
+                                                <p>公共用户产品 T2</p>
+                                                </a>
+                                                <div class="tipboxinfo">
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <p>工号：D00022</p>
+                                                                <p>姓名：张博</p>
+                                                                <p>部门：CTO</p>
+                                                                <p>岗位：CTO</p>
+                                                            </td>
+                                                            <td>
+                                                                <p>公司邮箱：zhangbo@didichuxing.com</p>
+                                                                <p>直接上级：程维</p>
+                                                                <p>手机号码：12333338919</p>
+                                                                <p>入职日期：2012-09-10</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <div class="tip_coment">
+                                                        <b>备注：</b>这里可以显示几个字呢，你可以数数数数一起来数数吧,来吧24678，怎么也数不清快来一起数一数吧！
+                                                    </div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        
+                                        <a class="more" href="#"><i class="ico ico-chart-arr-bottom"></i></a>
+                                    </div>
+
+                                    <div class="item item-unfold">
+                                        <dl>
+                                            <dt><img width="84" height="84" src="../img/tmp/avatar-tex.jpg"></dt>
+                                           <a href="#" class="help-tip">
+                                            <dd class="name">张晓晓</dd>
+                                            <dd>公共用户产品 T2</dd>
+                                               <div class="tipboxinfo">
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <p>工号：D00022</p>
+                                                                <p>姓名：张博</p>
+                                                                <p>部门：CTO</p>
+                                                                <p>岗位：CTO</p>
+                                                            </td>
+                                                            <td>
+                                                                <p>公司邮箱：zhangbo@didichuxing.com</p>
+                                                                <p>直接上级：程维</p>
+                                                                <p>手机号码：12333338919</p>
+                                                                <p>入职日期：2012-09-10</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <div class="tip_coment">
+                                                        <b>备注：</b>这里可以显示几个字呢，你可以数数数数一起来数数吧,来吧24678，怎么也数不清快来一起数一数吧！
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </dl>
+                                        <a class="more" href="#"><i class="ico ico-chart-arr-bottom"></i></a>
+                                    </div>
+
+                                    <div class="item item-unfold">
+                                        <dl>
+                                            <dt>
+                                                <img width="84" height="84" src="../img/tmp/avatar-tex.jpg"></dt>
+                                            <dd class="name">张晓晓</dd>
+                                            <dd>公共用户产品 T2</dd>
+                                        </dl>
+                                        <a class="more" href="#"><i class="ico ico-chart-arr-bottom"></i></a>
+                                    </div>
+
+                                    <div class="item item-unfold">
+                                        <dl>
+                                            <dt>
+                                                <img width="84" height="84" src="../img/tmp/avatar-tex.jpg"></dt>
+                                            <dd class="name">张晓晓</dd>
+                                            <dd>公共用户产品 T2</dd>
+                                        </dl>
+                                        <a class="more" href="#"><i class="ico ico-chart-arr-bottom"></i></a>
+                                    </div>
+
+                                    <div class="item item-unfold">
+                                        <dl>
+                                            <dt>
+                                                <img width="84" height="84" src="../img/tmp/avatar2.jpg"></dt>
+                                            <dd class="name">张晓晓</dd>
+                                            <dd>公共用户产品 T2</dd>
+                                        </dl>
+                                        <a class="more" href="#"><i class="ico ico-chart-arr-bottom"></i></a>
+                                    </div>
+
+                                    <div class="item item-unfold">
+                                        <dl>
+                                            <dt>
+                                                <img width="84" height="84" src="../img/tmp/avatar-tex.jpg"></dt>
+                                            <dd class="name">张晓晓</dd>
+                                            <dd>公共用户产品T2</dd>
+                                        </dl>
+                                        <a class="more" href="#"><i class="ico ico-chart-arr-bottom"></i></a>
+                                    </div>
+
+                                    <div class="item item-unfold">
+                                        <dl>
+                                            <dt>
+                                                <img width="84" height="84" src="../img/tmp/avatar-tex.jpg"></dt>
+                                            <dd class="name">张晓晓</dd>
+                                            <dd>公共用户产品 T2</dd>
+                                        </dl>
+                                        <a class="more" href="#"><i class="ico ico-chart-arr-bottom"></i></a>
+                                    </div>
+
+                                    <div class="item item-unfold">
+                                        <dl>
+                                            <dt>
+                                                <img width="84" height="84" src="../img/tmp/avatar-tex.jpg"></dt>
+                                            <dd class="name">张晓晓5555555</dd>
+                                            <dd>公共用户产品 T2</dd>
+                                        </dl>
+
+                                    </div>
+
+                                    <div class="item item-unfold">
+                                        <dl>
+                                            <dt>
+                                                <img width="84" height="84" src="../img/tmp/avatar-tex.jpg"></dt>
+                                            <dd class="name">张晓晓22222222</dd>
+                                            <dd>公共用户产品 T1</dd>
+                                        </dl>
+                                        <a class="more" href="#"><i class="ico ico-chart-arr-bottom"></i></a>
+                                    </div>
+
+                                    <div class="item item-unfold">
+                                        <dl>
+                                            <dt>
+                                                <img width="84" height="84" src="../img/tmp/avatar-tex.jpg"></dt>
+                                            <dd class="name">张晓晓</dd>
+                                            <dd>公共用户产品 T1</dd>
+                                        </dl>
+                                        <a class="more" href="#"><i class="ico ico-chart-arr-bottom"></i></a>
+                                    </div>
+
+                                    <div class="item item-unfold">
+                                        <dl>
+                                            <dt>
+                                                <img width="84" height="84" src="../img/tmp/avatar-tex.jpg"></dt>
+                                            <dd class="name">张晓晓</dd>
+                                            <dd>公共用户产品 T1</dd>
+                                        </dl>
+                                        <a class="more" href="#"><i class="ico ico-chart-arr-bottom"></i></a>
+                                    </div>
+
+                                    <div class="item item-unfold">
+                                        <dl>
+                                            <dt>
+                                                <img width="84" height="84" src="../img/tmp/avatar-tex.jpg"></dt>
+                                            <dd class="name">张晓晓</dd>
+                                            <dd>公共用户产品 T1</dd>
+                                        </dl>
+                                        <a class="more" href="#"><i class="ico ico-chart-arr-bottom"></i></a>
+                                    </div>
+
+                                    <div class="item item-unfold">
+                                        <dl>
+                                            <dt>
+                                                <img width="84" height="84" src="../img/tmp/avatar2.jpg"></dt>
+                                            <dd class="name">张晓晓</dd>
+                                            <dd>公共用户产品 T1</dd>
+                                        </dl>
+                                        <a class="more" href="#"><i class="ico ico-chart-arr-bottom"></i></a>
+                                    </div>
+
+                                    <a class="item handle J_ChartHandle" href="#">
+                                        <i class="ico ico-chart-retract"></i>收起
+									<!--<i class="ico ico-chart-unfold"></i>展开-->
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../libs/jquery/jquery-1.11.3.min.js"></script>
+    <script src="../js/common.min.min.js"></script>
+    <script src="../js/jquery.fly.min.min.js"></script>
+
+
+    <script>
+        $(function () {
+            // 展开收起
+            (function () {
+                var bChartHandle = !0,
+                        oBox = $('.J_ChartItemBox'),
+                        oHandle = $('.J_ChartHandle');
+
+                oHandle.on('click', function () {
+                    var sUnfold = '<i class="ico ico-chart-unfold"></i>展开',
+                            sRetract = '<i class="ico ico-chart-retract"></i>收起';
+
+                    if (bChartHandle) {
+                        $(this).html(sUnfold);
+                        oBox.find('.item:gt(5):not(:last-child)').hide();
+                    } else {
+                        $(this).html(sRetract);
+                        oBox.find('.item').show();
+                    }
+                    bChartHandle = !bChartHandle;
+                    return false;
+                });
+            }());
+
+
+            $(".item-retract").click(function () {
+                //alert(1);
+                //$(this).fadeOut();
+
+                //$(this).fadeIn();
+            })
+
+            $(".item-unfold").click(function (event) {
+
+
+                //方案三
+                /*
+                var parP = $(".item-retract");
+                //var p_top=parP.position().top; 
+                //var p_left=parP.position().left; 
+                
+                var p_top=parP.offset().top; 
+                var p_left=parP.offset().left; 
+                
+                $('.J_ChartItemBox').css("position","position"); 
+                
+                $(this).css('top',p_top+'px');
+                $(this).css('left',p_left+'px');
+                
+                */
+
+                //方案4
+
+                var parP = $(".item-retract");
+                var p_top = parP.offset().top;
+                var p_left = parP.offset().left;
+
+                var nextP = $(this).children('dl').html();
+
+                //item-unfold_on
+
+
+
+
+                //var img = $(this).children().children().children('img').attr('src');//获取当前点击图片链接
+                //console.log(img);
+                //var flyer = $('<img class="flyer-img" src="' + img + '">');//抛物体对象
+
+                var obj = $(this);
+                obj.addClass('item-unfold_on');
+                var item_html = $('.item-unfold_on').html();
+
+                var flyer = $('<table class="m-chart"><tr><td><div class="item item-unfold item-unfold_on">' + item_html + '</div></td></tr></table>');
+
+                //alert(item_html);
+                //alert(flyer.html());
+                flyer.fly({
+                    start: {
+                        left: event.pageX, //抛物体起点横坐标
+                        top: event.pageY////抛物体起点纵坐标
+                    },
+                    end: {
+                        left: p_left, //抛物体终点横坐标
+                        top: p_top, //抛物体终点纵坐标
+                    },
+                    onEnd: function () {
+                        //$("#tip").show().animate({width: '200px'}, 300).fadeOut(500);//成功加入购物车动画效果
+                        this.destroy();//销毁抛物体
+
+                        parP.children('dl').html(nextP);
+
+
+                        //刷新子数据
+
+                        $(".J_ChartItemBox").fadeOut(1000);
+
+                        //加载数据 成功 使用 fadeIn 展出
+
+
+                        $(".J_ChartItemBox").fadeIn(1000);
+
+
+                    }
+                })
+
+
+                //方案5
+                /*
+                var parP = $(".item-retract");
+                
+                var s_left = event.pageX;
+                var s_top=top: event.pageY;
+                
+                var p_top=parP.offset().top; 
+                var p_left=parP.offset().left; 
+                
+                var nextP= $(this).children('dl').html();
+                
+                $(this).animate({"left":p_left,"top":p_top},1000,'linear',function(){
+                    //alert(1);
+                })
+                
+                */
+            })
+
+
+            function RefChil(obj) {
+                obj.css("position", "relative");
+                //obj.slideUp( 100, "linear" );   
+
+                obj.fadeOut("slow", function () {
+                    //加载样式的样式
+
+                    //alert(1);
+                    //obj.slideDown("slow");
+                    //加载数据
+                    obj.fadeIn();
+                });
+
+            }
+
+            function testAnim(obj, x) {
+                obj.removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                    $(this).removeClass();
+                });
+            };
+
+        });
+    </script>
+</body>
+</html>

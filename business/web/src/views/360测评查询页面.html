@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- IE / Chrome -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- 360极速模式 -->
+	<meta name="renderer" content="webkit" />
+	<title>360测评查询页面</title>
+	<link rel="stylesheet" href="../libs/selectbox/selectbox-min.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/backlog.css">
+</head>
+<body>
+	<div class="g-site-wrap">
+	<div class="g-site-top">
+
+		<!-- g-head -->
+		<div class="g-head clearfix">
+    <h1 class="fl m-logo">
+        <a href="/">
+            <img width="86" class="fl logo" src="../img/logo.png" alt="滴滴">
+            <span class="fl msg">eHR系统</span>
+        </a>
+    </h1>
+
+    <ul class="fr m-login">
+        <li class="fl avatar J_Avatar">
+            <div class="info clearfix">
+                <div class="fl pic m-coverimg" style="background-image: url(../img/tmp/avatar1-ORCH.jpg)"></div>
+                <span class="fl name">Admin</span>
+            </div>
+            <div class="handle">
+                <div class="inner">
+                    <a href="#">注销</a>
+                </div>
+            </div>
+        </li>
+        <li class="fl help line">
+            <i class="fl pic ico ico-help"></i>
+            <a href="#" class="fl name">帮助</a>
+        </li>
+    </ul>
+
+    <div class="m-search">
+        <input class="search" type="text" placeholder="搜索HR政策流程">
+        <span class="query ico ico-search"><input class="btn" type="submit"></span>
+        <!--<ul class="datalist">-->
+            <!--<li><a href="#">搜索</a></li>-->
+            <!--<li><a href="#">搜索搜索</a></li>-->
+            <!--<li><a href="#">搜索搜索搜索</a></li>-->
+        <!--</ul>-->
+    </div>
+</div>
+
+	</div>
+	<div class="J_SiteBody g-site-body">
+		
+		<div class="J_SiteSide g-site-side">
+
+    <div class="J_ScrollMenu">
+        <!-- m-leftbar -->
+        <ul class="m-leftbar">
+            <!-- 选中状态的li添加class名active -->
+            <li class="active">
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-home"></i>
+                    <i class="now ico ico-nav-home2"></i>
+                </span>
+                    <span class="name">首页</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-info"></i>
+                    <i class="now ico ico-nav-info2"></i>
+                </span>
+                    <span class="name">我的信息</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-salary"></i>
+                    <i class="now ico ico-nav-salary2"></i>
+                </span>
+                    <span class="name">我的薪酬</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-team"></i>
+                    <i class="now ico ico-nav-team2"></i>
+                </span>
+                    <span class="name">我的团队</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-structure"></i>
+                    <i class="now ico ico-nav-structure2"></i>
+                </span>
+                    <span class="name">组织结构</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-prove"></i>
+                    <i class="now ico ico-nav-prove2"></i>
+                </span>
+                    <span class="name">证明办理</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-welfare"></i>
+                    <i class="now ico ico-nav-welfare2"></i>
+                </span>
+                    <span class="name">福利政策</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-service"></i>
+                    <i class="now ico ico-nav-service2"></i>
+                </span>
+                    <span class="name">自助服务</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                    <span class="pic">
+                        <i class="def ico ico-nav-backlog"></i>
+                        <i class="now ico ico-nav-backlog2"></i>
+                    </span>
+                    <span class="name">待办流程</span>
+                    <span class="num">10</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-staff"></i>
+                    <i class="now ico ico-nav-staff2"></i>
+                </span>
+                    <span class="name">查看员工信息</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+		<div class="J_SiteMain g-site-main">
+
+			<!-- p-backlog -->
+			<div class="m-layout p-backlog J_Backlog">
+				<h2 class="m-title2">360评测</h2>
+
+				<div class="m-wrap">
+					<!-- m-tab -->
+					<div class="m-tab J_Tab">
+						
+						<div class="bd">
+							<div class="item active">
+
+								<div class="p-examine">
+									<ul class="clearfix">
+										<li class="fl">
+											<label class="fl m-label">姓名：</label>
+											<input type="text" class="w210 m-input" placeholder="请输入被评价人姓名">
+										</li>
+										
+										<li class="fl">
+											<label class="fl m-label">状态：</label>
+											<select class="w210 fl m-select J_Select">
+												<option value="全部">全部</option>
+												<option value="未开始">未开始</option>
+												<option value="进行中">进行中</option>
+												<option value="已完成">已完成</option>
+											</select>
+										</li>
+										<li class="fl">											
+											<a class="fl m-btn m-btn-orange query" href="javascript:;">查 询</a>
+										</li>
+									</ul>
+
+								</div>
+
+								<!-- m-table -->
+								<div class="p-table">
+									<table class="m-table">
+										<tr>
+											<th>单号</th>
+											<th>名称</th>
+											<th>被评价人</th>
+											<th>开始日期</th>
+											<th>截止日期</th>
+											<th>角色</th>
+											<th>状态</th>
+										</tr>
+										<tr>
+											<td>00001</td>
+											<td>xxx评测</td>
+											<td>刘昕颐</td>
+											<td>2016.03.30</td>
+											<td>2016.03.29</td>
+											<td>下属</td>
+											<td>未开始</td>
+											<td class="handle">
+												<a class="details" href="#"></a>
+											</td>
+										</tr>
+										<tr>
+											<td>00002</td>
+											<td>xxx评测</td>
+											<td>刘昕颐</td>
+											<td>2016.03.30</td>
+											<td>2016.03.29</td>
+											<td>下属</td>
+											<td>未开始</td>
+											<td class="handle">
+												<a class="details" href="#"></a>
+											</td>
+										</tr>
+										<tr>
+											<td>00003</td>
+											<td>xxx评测</td>
+											<td>刘昕颐</td>
+											<td>2016.03.30</td>
+											<td>2016.03.29</td>											
+											<td>下属</td>
+											<td>未开始</td>
+											<td class="handle">
+												<a class="details" href="#"></a>
+											</td>
+										</tr>
+										<tr>
+											<td>00004</td>
+											<td>xxx评测</td>
+											<td>刘昕颐</td>
+											<td>2016.03.30</td>
+											<td>2016.03.29</td>
+
+											<td>下属</td>
+											<td>未开始</td>
+											<td class="handle">
+												<a class="details" href="#"></a>
+											</td>
+										</tr>
+										<tr>
+											<td>00005</td>
+											<td>xxx评测</td>
+											<td>刘昕颐</td>
+											<td>2016.03.30</td>
+											<td>2016.03.29</td>
+
+											<td>下属</td>
+											<td>未开始</td>
+											<td class="handle">
+												<a class="details" href="#"></a>
+											</td>
+										</tr>
+										<tr>
+											<td>00006</td>
+											<td>xxx评测</td>
+											<td>刘昕颐</td>
+											<td>2016.03.30</td>
+											<td>2016.03.29</td>
+
+											<td>下属</td>
+											<td>未开始</td>
+											<td class="handle">
+												<a class="details" href="#"></a>
+											</td>
+										</tr>
+										<tr>
+											<td>00007</td>
+											<td>xxx评测</td>
+											<td>刘昕颐</td>
+											<td>2016.03.30</td>
+											<td>2016.03.29</td>
+
+											<td>下属</td>
+											<td>未开始</td>
+											<td class="handle">
+												<a class="details" href="#"></a>
+											</td>
+										</tr>
+										<tr>
+											<td>00008</td>
+											<td>xxx评测</td>
+											<td>刘昕颐</td>
+											<td>2016.03.30</td>
+											<td>2016.03.29</td>
+											
+											<td>下属</td>
+											<td>未开始</td>
+											<td class="handle">
+												<a class="details" href="#"></a>
+											</td>
+										</tr>
+									</table>
+								</div>
+
+								<!-- m-pagination -->
+								<div class="m-pagination">
+									<a class="prev" href="#">上一页</a>
+
+									<a class="list" href="#">1</a>
+									<a class="list" href="#">2</a>
+									<a class="list on" href="#">3</a>
+									<a class="list" href="#">4</a>
+									<a class="list" href="#">5</a>
+									<a class="list dot" href="#">...</a>
+									<a class="list" href="#">100</a>
+									<a class="next" href="#">下一页</a>
+								</div>
+
+							</div>
+
+							<div class="item">同"待我审批"</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<script src="../libs/jquery/jquery.min.js"></script>
+<script src="../libs/jquery/jquery.slimscroll.min.js"></script>
+<script src="../libs/wdatePicker/wdatePicker.js"></script>
+<script src="../libs/selectbox/selectbox-min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/jquery.tab.js"></script>
+<script>
+	$(function(){
+		// 模拟select选择框 by http://aui.github.io/popupjs/doc/selectbox.html
+		$('.J_Select').each(function(){
+			selectbox(this);
+		});
+
+		// tab切换
+		$('.J_Tab').tabs('.hd li', '.bd .item');
+
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/**
+ * 我的信息
+ * 
+ * @author: XieJun
+ * @e-mail: jununx@qq.com
+ * @q    q: 121318538
+ * @update: 2015-10-12 14:57:10
+ */
+
+/*p-info*/
+.p-info {
+	overflow: hidden;
+}
+/*p-basic*/
+.p-basic {
+	background: #fff;
+}
+.p-basic .avatar {
+	width: 150px;
+	height: 150px;
+	margin: 20px;
+}
+.p-basic .box {
+	width: 800px;
+	margin-top: 24px;
+}
+/*p-list*/
+.p-list {
+	width: 100%;
+	font: 14px/36px 'Microsoft Yahei';
+	color: #7f8286;
+}
+.p-list li {
+	height: 36px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+/*p-tab*/
+.p-tab {
+	margin: 20px 0;
+	background: #fff;
+}
+.p-tab .hd {
+}
+.p-tab .bd {
+	padding: 9px 20px 20px 40px;
+}
+/*p-table-edu*/
+.p-table-edu {
+	color: #7a7b7c;
+	line-height: 34px;
+}
+.p-table-edu .m-table {
+	margin-left: -10px;
+}
+.p-table-edu td {
+	border-bottom: 1px #f9f9f9 solid;
+	text-indent: 10px;
+}
+.p-table-edu tr:last-child td {
+	border: 0 none;
+}
+
+/* p-tab */
+.p-tab .table-family {
+	line-height: 34px;
+	width: 100%;
+	text-align: left;
+}
+.p-tab .table-family th {
+	font-weight: 400;
+	text-align: left;
+	color: #929395;
+}
+.p-tab .table-family td {
+	padding-top: 10px;
+}
+.p-tab .table-family .m-select {
+	width: 78px;
+}
+.p-tab .table-family .ui-selectbox-inner {
+	margin-right: 20px;
+	color: #7f8286;
+}
+
+/*handle*/
+.p-tab .table-family .handle-item {
+	margin: 12px 12px 12px 0;
+	line-height: 16px;
+	color: #fa8919;
+	text-decoration: none;
+}
+.p-tab .table-family .handle-item:last-child {
+	margin-right:0;
+}
+.p-tab .table-family .handle-item,
+.p-tab .table-family .handle-item .ico {
+	display: inline-block;
+	vertical-align: top;
+}
+.p-tab .table-family .handle-item:hover .handle-text {
+	text-decoration: underline;
+}

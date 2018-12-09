@@ -17,10 +17,21 @@ class IndexController extends CommonController {
         $navlist = $remod->where('pid=0')->order('vsort asc')->select();
         return $navlist;
 	}
+
+    public function getbannerpic()
+    {
+        $bannermod = M('t_pic_manager_dd');
+        $bannerlist = $bannermod->where('mid=6')->order('vsort desc')->select();
+        return $bannerlist;
+    }
+
     public function index(){
         //导航内容
         $this->assign('navlist',$this->navlist());
         $this->assign('bannerlist',$this->getbannerpic());
+        //一周内排行聚合的数据:
+        $index_weeklist_item = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/myproject/data_center/template/index_weeklist_item.json');
+        $index_weeklist_item = json_decode($index_weeklist_item,true);
         //首页头条板块。
         //rpc请求数据中心    
         $toutiao_apidata = array(
@@ -31,6 +42,7 @@ class IndexController extends CommonController {
         // $toutiao_apires = $yar_client_toutiao->execute('getLatestNewsByMod',$toutiao_apidata);
         $toutiao_apires = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/myproject/data_center/template/items.json');
         $toutiao_apires = json_decode(str_replace("'", "\"", $toutiao_apires),true);
+        // var_dump($toutiao_apires);die;
         //首页行业观察板块。
         // $hygc_apidata = array(
         //     'mod' => 1,
@@ -48,7 +60,8 @@ class IndexController extends CommonController {
         $zhu_index_item = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/myproject/data_center/template/zhu_price_item.json');
         $zhu_index_item = json_decode($zhu_index_item,true);
         // var_dump($dami_index_item);die;
-        // var_dump($yumi_index_item);die;
+        // var_dump($index_weeklist_item);die;
+        $this->assign('index_weeklist_item',$index_weeklist_item);
         $this->assign('zhu_index_item',$zhu_index_item);
         $this->assign('dami_index_item',$dami_index_item);
         $this->assign('yumi_index_item',$yumi_index_item);

@@ -12,6 +12,10 @@ class ZhaoshangController extends CommonController {
         // print_r($this->data_center_urls);
     }
 
+    public function index(){
+        echo 333;die;
+    }
+
     public function list(){
         $this->display('list');
     }

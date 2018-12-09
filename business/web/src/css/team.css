@@ -1,0 +1,68 @@
+/**
+ * 我的团队
+ *
+ * @author: XieJun
+ * @e-mail: jununx@qq.com
+ * @q    q: 121318538
+ * @update: 2015/10/21
+ */
+
+/*p-query*/
+.p-query {
+    padding: 20px 30px;
+    border-bottom: 1px #e6e6e6 solid;
+}
+.p-query .m-btn {
+    margin-left: 17px;
+}
+.p-query .m-input {
+    width: 260px;
+}
+
+/*p-tree*/
+.p-tree {
+    margin: 4px 30px 20px;
+}
+.p-tree .hd {
+    line-height: 46px;
+    color: #7a7b7d;
+    border-bottom: 1px #e6e6e6 solid;
+    text-align: center;
+}
+.p-tree .hd .name {
+    text-align: left;
+    text-indent: 16px;
+}
+.p-tree .hd .sort {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 15px;
+    margin-left: 7px;
+    background: url(../img/icon_sort.png) 0 0 no-repeat;
+}
+.p-tree .hd .sort-up { background-position: -20px 0;}
+.p-tree .hd .sort-down { background-position: 0 0; }
+.p-tree .row-1 {
+    width: 70px;
+}
+.p-tree .row-2 {
+    width: 120px;
+}
+.p-tree .row-3 {
+    width: 200px;
+}
+.p-tree .row-4 {
+    width: 300px;
+}
+.p-tree .bd {
+    padding-top: 15px;
+}
+
+
+
+
+    
+        
+            
+                

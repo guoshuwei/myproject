@@ -18,6 +18,7 @@ class CommonController extends Controller {
             $user_res = $muser->where('id='.$_SESSION['user'])->find(); 
             $this->assign('logining_user_name',$user_res['username']);
         }
+        
         // var_dump(phpinfo());
         // Vendor('Yar.Client');
         $this->assign('visited_count',self::$hasVisitedCount);

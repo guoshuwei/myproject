@@ -1,0 +1,16 @@
+.m-wdate {
+	border: 1px solid #e6e6e6;
+	border-radius: 2px;
+	height:20px;
+	line-height:20px;
+	padding: 9px;
+	background: #fff url(date.png) right 10px no-repeat;
+	cursor: pointer;
+	color: #46494c;
+}
+.m-wdate:hover {
+	border-color: #fa8919;
+	background-position: right -30px;
+}
+.m-wdate::-ms-clear,
+.m-wdate::-ms-reveal{display: none;}

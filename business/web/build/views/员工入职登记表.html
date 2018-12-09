@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- IE / Chrome -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- 360极速模式 -->
+	<meta name="renderer" content="webkit" />
+	<title> 员工入职登记表 </title>
+	<link rel="stylesheet" href="../libs/selectbox/selectbox-min.css">
+
+	<link rel="stylesheet" href="../css/common.min.css">
+	<link rel="stylesheet" href="../css/staff.min.css">
+</head>
+<body>
+
+<div class="g-site-wrap">
+	<div class="g-site-top">
+		<!-- g-head -->
+		<div class="g-head clearfix">
+			<div class="m-layout">
+				<h1 class="fl m-logo">
+				    <a href="/">
+				        <img width="86" class="fl logo" src="../img/logo.png" alt="滴滴">
+				    </a>
+				</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="J_SiteBody g-site-body">
+		<div class="J_SiteMain g-site-main" style="margin-left: 0">
+			
+			<!-- staff -->
+			<div class="p-staff-wrap">
+				<div class="m-layout p-staff">
+					<h2 class="m-title2">员工信息</h2>
+					<div class="m-wrap">
+
+						<h2 class="staff-title">员工入职登记表</h2>
+
+						<!-- 人事信息 -->
+						<div class="staff-item staff-personnel">
+							<h3 class="tit">人事信息</h3>
+							<ul class="info clearfix">
+								<li class="fl col-1">
+									<label class="text-label">姓：</label>
+									<input type="text" class="m-input w160">
+								</li>
+								<li class="fl col-1">
+									<label class="text-label">姓(拼音)：</label>
+									<input type="text" class="m-input w160">
+								</li>
+								<li class="fl col-1">
+									<label class="text-label">名：</label>
+									<input type="text" class="m-input w160">
+								</li>
+								<li class="fl col">
+									<label class="text-label">名(拼音)：</label>
+									<input type="text" class="m-input w160">
+								</li>
+
+								<li class="fl col-1">
+									<label class="text-label">证件姓名：</label>
+									<input type="text" class="m-input w160">
+								</li>
+								<li class="fl col-1">
+									<label class="text-label">证件类型：</label>
+									<select class="m-select J_Select w178">
+										<option value="1">1</option>
+										<option value="2">2</option>
+									</select>
+								</li>
+								<li class="fl col-2">
+									<label class="text-label">证件号码：</label>
+									<input type="text" class="m-input w390">
+								</li>
+
+								<li class="fl col-1">
+									<label class="text-label">出生日期：</label>
+									<input class="m-wdate w160" type="text" readonly onclick="WdatePicker()">
+								</li>
+								<li class="fl col-1">
+									<label class="text-label">性别：</label>
+									<select class="m-select J_Select w178">
+										<option value="男">男</option>
+										<option value="女">女</option>
+									</select>
+								</li>
+								<li class="fl col-2">
+									<label class="text-label">民族：</label>
+									<select class="m-select J_Select w178">
+										<option value="汉">汉</option>
+									</select>
+								</li>
+
+								<li class="fl col-1">
+									<label class="text-label">户口类型：</label>
+									<select class="m-select J_Select w178">
+										<option value="农">农</option>
+										<option value="非农">非农</option>
+									</select>
+								</li>
+								<li class="fl col-1">
+									<label class="text-label">户口所在地：</label>
+									<select class="m-select J_Select w178">
+										<option value="四川">四川</option>
+									</select>
+								</li>
+								<li class="fl col-2">
+									<label class="text-label">婚姻状态：</label>
+									<select class="m-select J_Select w178">
+										<option value="未婚">未婚</option>
+									</select>
+								</li>
+
+								<li class="fl col-1">
+									<label class="text-label">国籍：</label>
+									<select class="m-select J_Select w178">
+										<option value="中国">中国</option>
+									</select>
+								</li>
+								<li class="fl col-1">
+									<label class="text-label">政治面貌：</label>
+									<select class="m-select J_Select w178">
+										<option value="党员">党员</option>
+									</select>
+								</li>
+								<li class="fl col-2">
+									<label class="text-label">籍贯：</label>
+									<select class="m-select J_Select w178">
+										<option value="四川">四川</option>
+									</select>
+								</li>
+
+								<li class="fl col-1">
+									<label class="text-label">是否有工作居住证：</label>
+									<select class="m-select J_Select w178">
+										<option value="是">是</option>
+										<option value="否">否</option>
+									</select>
+								</li>
+								<li class="fl col-1">
+									<label class="text-label">工作居住证办理地：</label>
+									<select class="m-select J_Select w178">
+										<option value="四川">四川</option>
+									</select>
+								</li>
+								<li class="fl col-1">
+									<label class="text-label">银行名称：</label>
+									<select class="m-select J_Select w178">
+										<option value="建设银行">建设银行</option>
+									</select>
+								</li>
+								<li class="fl col">
+									<label class="text-label">银行卡：<span class="staff-replenish">(本地本人借记卡)</span></label>
+									<input type="text" class="m-input w160">
+								</li>
+							</ul>
+						</div>
+
+						<!-- 社保、公积金信息 -->
+						<div class="staff-item staff-funds">
+							<h3 class="tit">社保、公积金信息</h3>
+
+							<div class="staff-tips">注：每月15日（含）之前入职的员工，且原公司已完成社保减员，则入职当月即可缴纳社保；每月15日之后入职则在次月缴纳。</div>
+
+							<ul class="clearfix">
+								<li class="fl col-1">
+									<label class="text-label">原保险关系所在地：</label>
+									<input type="text" class="m-input w160">
+								</li>
+								<li class="fl col-1">
+									<label class="text-label">社保地选择：</label>
+									<select class="m-select J_Select w178">
+										<option value="四川">四川</option>
+									</select>
+								</li>
+								<li class="fl col-1">
+									<label class="text-label">社保、公积金缴纳地情况：</label>
+									<select class="m-select J_Select w178">
+										<option value="四川">四川</option>
+									</select>
+								</li>
+								<li class="fl col">
+									<label class="text-label">上家单位社保、公积金减员日期：</label>
+									<input type="text" class="m-input w160">
+								</li>
+							</ul>
+						</div>
+
+						<!-- 联络方式 -->
+						<div class="staff-item staff-contact">
+							<h3 class="tit">联络方式</h3>
+
+							<ul class="info clearfix">
+								<li class="fl col-1">
+									<label class="text-label">固定电话：</label>
+									<input type="text" class="m-input w160">
+								</li>
+								<li class="fl col-1">
+									<label class="text-label">手机：</label>
+									<input type="text" class="m-input w160">
+								</li>
+								<li class="fl col-2">
+									<label class="text-label">电子邮箱：</label>
+									<input type="text" class="m-input w160">
+								</li>
+
+								<li class="fl col-address">
+									<label class="text-label">实际通讯住址：<span class="staff-replenish">(填写到门牌号)</span></label>
+									<div class="clearfix">
+										<div class="input-text fl">
+											<input type="text" class="m-input w160">
+											<span class="site">省</span>
+										</div>
+										<div class="text-gap fl"></div>
+										<div class="input-text fl">
+											<input type="text" class="m-input w160">
+											<span class="site">市</span>
+										</div>
+										<div class="text-gap fl"></div>
+										<input type="text" class="m-input w250 fl">
+									</div>
+								</li>
+								<li class="fl col-post">
+									<label class="text-label">邮编：</label>
+									<input type="text" class="m-input w70">
+								</li>
+
+								<li class="fl col-address">
+									<label class="text-label">家庭通讯住址：<span class="staff-replenish">(填写到门牌号)</span></label>
+									<div class="clearfix">
+										<div class="input-text fl">
+											<input type="text" class="m-input w160">
+											<span class="site">省</span>
+										</div>
+										<div class="text-gap fl"></div>
+										<div class="input-text fl">
+											<input type="text" class="m-input w160">
+											<span class="site">市</span>
+										</div>
+										<div class="text-gap fl"></div>
+										<input type="text" class="m-input w250 fl">
+									</div>
+								</li>
+								<li class="fl col-post">
+									<label class="text-label">邮编：</label>
+									<input type="text" class="m-input w70">
+								</li>
+
+								<li class="fl col-1">
+									<label class="text-label">紧急联系人姓名：</label>
+									<input type="text" class="m-input w160">
+								</li>
+								<li class="fl col-1">
+									<label class="text-label">紧急联系人关系：</label>
+									<select class="m-select J_Select w178">
+										<option value="父子">父子</option>
+									</select>
+								</li>
+								<li class="fl col-2">
+									<label class="text-label">紧急联系人电话：</label>
+									<input type="text" class="m-input w390">
+								</li>
+
+							</ul>
+						</div>
+
+						<!-- 工作履历 -->
+						<div class="staff-item staff-record">
+							<h3 class="tit">工作履历</h3>
+
+							<div class="staff-tips">填写本次入职之前的工作信息，请从最近一份工作填起；第一份与最近一份工作为必填项；无需填写实习经历</div>
+
+							<!-- 添加表单 -->
+							<div class="staff-table">
+								<ul class="clearfix">
+									<li class="fl">
+										<label class="text-label">开始时间：</label>
+										<input class="m-wdate w110" type="text" readonly onclick="WdatePicker({dateFmt:'yyyy-MM'})">
+									</li>
+									<li class="fl">
+										<label class="text-label">结束时间：</label>
+										<input class="m-wdate w110" type="text" readonly onclick="WdatePicker({dateFmt:'yyyy-MM'})">
+									</li>
+									<li class="fl">
+										<label class="text-label">雇主：</label>
+										<input type="text" class="m-input w200">
+									</li>
+									<li class="fl">
+										<label class="text-label">职位：</label>
+										<input type="text" class="m-input w100">
+									</li>
+									<li class="fl handle">
+										<a class="handle-item" href="javascript:;">
+											<i class="ico ico-add-table"></i>
+											<span class="handle-text">添加</span>
+										</a>
+										<a class="handle-item" href="javascript:;">
+											<i class="ico ico-del-table"></i>
+											<span class="handle-text">删除</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- 教育背景 -->
+						<div class="staff-item staff-edu">
+							<h3 class="tit">教育背景</h3>
+
+							<div class="staff-tips">请根据最高学历【含在读】由高至低填写至高中，最高学历为高中以下的仅填写一行教育信息即可</div>
+
+							<!-- 添加表单 -->
+							<div class="staff-table">
+								<ul class="clearfix">
+									<li class="fl">
+										<label class="text-label">开始时间：</label>
+										<input class="m-wdate w110" type="text" readonly onclick="WdatePicker({dateFmt:'yyyy-MM'})">
+									</li>
+									<li class="fl">
+										<label class="text-label">结束时间：</label>
+										<input class="m-wdate w110" type="text" readonly onclick="WdatePicker({dateFmt:'yyyy-MM'})">
+									</li>
+									<li class="fl">
+										<label class="text-label">就读地：<span class="staff-replenish">(国家)</span> </label>
+										<select class="m-select J_Select w178">
+											<option value="中国">中国</option>
+										</select>
+									</li>
+									<li class="fl">
+										<label class="text-label">毕业学校：</label>
+										<input type="text" class="m-input w160">
+									</li>
+									<li class="fl">
+										<label class="text-label">专业：</label>
+										<input type="text" class="m-input w160">
+									</li>
+									<li class="fl">
+										<label class="text-label">学历：</label>
+										<select class="m-select J_Select w178">
+											<option value="本科">本科</option>
+										</select>
+									</li>
+									<li class="fl">
+										<label class="text-label">学位：</label>
+										<select class="m-select J_Select w178">
+											<option value="学士">学士</option>
+										</select>
+									</li>
+									<li class="fl handle">
+										<a class="handle-item" href="javascript:;">
+											<i class="ico ico-add-table"></i>
+											<span class="handle-text">添加</span>
+										</a>
+										<a class="handle-item" href="javascript:;">
+											<i class="ico ico-del-table"></i>
+											<span class="handle-text">删除</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- 主要家庭成员情况 -->
+						<div class="staff-item staff-family">
+							<h3 class="tit">主要家庭成员情况</h3>
+
+							<div class="staff-tips">家庭成员为您的直系亲属</div>
+
+							<!-- 添加表单 -->
+							<div class="staff-table">
+								<ul class="clearfix">
+									<li class="fl">
+										<label class="text-label">姓名：</label>
+										<input type="text" class="m-input w70">
+									</li>
+									<li class="fl">
+										<label class="text-label">关系：</label>
+										<select class="m-select J_Select w78">
+											<option value="父子">父子</option>
+										</select>
+									</li>
+									<li class="fl">
+										<label class="text-label">工作单位：</label>
+										<input type="text" class="m-input w200">
+									</li>
+									<li class="fl">
+										<label class="text-label">职务：</label>
+										<input type="text" class="m-input w134">
+									</li>
+									<li class="fl">
+										<label class="text-label">联系方式：</label>
+										<input type="text" class="m-input w100">
+									</li>
+									<li class="fl handle">
+										<a class="handle-item" href="javascript:;">
+											<i class="ico ico-add-table"></i>
+											<span class="handle-text">添加</span>
+										</a>
+										<a class="handle-item" href="javascript:;">
+											<i class="ico ico-del-table"></i>
+											<span class="handle-text">删除</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- 问答&反馈 -->
+						<ul class="staff-item staff-quiz clearfix">
+							<li class="fl">
+								<label class="m-checkbox">
+									<input class="check u-dn" type="checkbox">
+									<i class="check-ico check-on fl ico ico-checkbox-on"></i>
+									<i class="check-ico check-off fl ico ico-checkbox-off"></i>
+									<span class="check-txt fl">是否有传染病及重大疾病的病史？</span>
+								</label>
+							</li>
+							<li class="fl">
+								<label class="m-checkbox">
+									<input class="check u-dn" type="checkbox">
+									<i class="check-ico check-on fl ico ico-checkbox-on"></i>
+									<i class="check-ico check-off fl ico ico-checkbox-off"></i>
+									<span class="check-txt fl">目前是否在其他单位担任兼职？</span>
+								</label>
+							</li>
+							<li class="fl">
+								<label class="m-checkbox">
+									<input class="check u-dn" type="checkbox">
+									<i class="check-ico check-on fl ico ico-checkbox-on"></i>
+									<i class="check-ico check-off fl ico ico-checkbox-off"></i>
+									<span class="check-txt fl">是否与原单位签订"竞业限制协议"等保密协议？</span>
+								</label>
+							</li>
+							<li class="fl">
+								<label class="m-checkbox">
+									<input class="check u-dn" type="checkbox">
+									<i class="check-ico check-on fl ico ico-checkbox-on"></i>
+									<i class="check-ico check-off fl ico ico-checkbox-off"></i>
+									<span class="check-txt fl">是否有违法犯罪的记录？如果是，请解释其原因。</span>
+								</label>
+								<textarea class="staff-textarea m-textarea"></textarea>
+							</li>
+						</ul>
+
+						<div class="staff-tips staff-tips-promise">本人知悉并确认提供真实无误的个人信息是公司的录用条件之一，提供虚假的个人信息是严重违反公司规章制度的行为。本人保证上述信息真实无误，并同意公司对上述信息进行调查，若发现上述信息有任何虚假，或存在未与其他雇主解除的劳动关系，或对其他雇主仍然负有竞业限制等义务，本人愿承担全部责任，包括但不限于公司立即与本人解除劳动合同并不支付任何经济补偿。</div>
+
+						<p class="m-btn-group staff-submit">
+							<a class="m-btn m-btn-orange" href="javascript:;">保 存</a>
+							<a class="m-btn m-btn-orange" href="javascript:;">提 交</a>
+						</p>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- 保存提示 -->
+	<p class="staff-tips-save"><i class="ico ico-clock"></i>13:56 登记表自动保存为草稿</p>
+</div>
+
+
+<script src="../libs/jquery/jquery.min.js"></script>
+<script src="../libs/wdatePicker/wdatePicker.js"></script>
+<script src="../libs/selectbox/selectbox-min.js"></script>
+<script src="../js/common.min.js"></script>
+<script>
+	$(function(){
+		// 模拟select选择框 by http://aui.github.io/popupjs/doc/selectbox.html
+		$('.J_Select').each(function(){
+			selectbox(this);
+		});
+
+	});
+</script>
+</body>
+</html>

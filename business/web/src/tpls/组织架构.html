@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- IE / Chrome -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- 360极速模式 -->
+	<meta name="renderer" content="webkit" />
+	<title> 组织架构 </title>
+	<link rel="stylesheet" href="../libs/jquery/chart/chart.min.css">
+	<link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+
+<div class="g-site-wrap">
+	<div class="g-site-top">
+
+		<!-- g-head -->
+		<%- include ../tpl/site-hd.html %>
+
+	</div>
+	<div class="J_SiteBody g-site-body">
+		
+		<%- include ../tpl/site-side.html %>
+		
+		<div class="J_SiteMain g-site-main">
+			<div class="m-layout">
+				<h2 class="m-title2">组织架构</h2>
+
+				<div class="p-structure m-wrap">
+					<!-- ul>li>dl || ul... -->
+					<ul id="J_ChartDate" style="display:none">
+						<li>
+
+							<dl class="info">
+								<dt><img width="84" height="84" src="../img/tmp/avatar1-PAGE.jpg"></dt>
+								<dd class="name">张晓晓</dd>
+								<dd>公共用户产品 T1</dd>
+							</dl>
+
+							<ul>
+								<li>
+									<span class="arr"><i></i></span>
+									<dl class="info">
+										<dt><img width="84" height="84" src="../img/tmp/avatar1-PAGE.jpg"></dt>
+										<dd class="name">张晓晓</dd>
+										<dd>公共用户产品 T1</dd>
+									</dl>
+
+									<ul>
+										<li>
+											<span class="arr"><i></i></span>
+											<dl class="info">
+												<dt><img width="84" height="84" src="../img/tmp/avatar1-PAGE.jpg"></dt>
+												<dd class="name">张晓晓</dd>
+												<dd>公共用户产品 T1</dd>
+											</dl>
+										</li>
+										<li>
+											<span class="arr"><i></i></span>
+											<dl class="info">
+												<dt><img width="84" height="84" src="../img/tmp/avatar1-PAGE.jpg"></dt>
+												<dd class="name">张晓晓</dd>
+												<dd>公共用户产品 T1</dd>
+											</dl>
+										</li>
+										<li>
+											<span class="arr"><i></i></span>
+											<dl class="info">
+												<dt><img width="84" height="84" src="../img/tmp/avatar1-PAGE.jpg"></dt>
+												<dd class="name">张晓晓</dd>
+												<dd>公共用户产品 T1</dd>
+											</dl>
+										</li>
+									</ul>
+								</li>
+								<li>
+
+									<span class="arr"><i></i></span>
+									<dl class="info">
+										<dt><img width="84" height="84" src="../img/tmp/avatar1-PAGE.jpg"></dt>
+										<dd class="name">张晓晓</dd>
+										<dd>公共用户产品 T1</dd>
+									</dl>
+
+									<ul>
+										<li>
+											<span class="arr"><i></i></span>
+											<dl class="info">
+												<dt><img width="84" height="84" src="../img/tmp/avatar1-PAGE.jpg"></dt>
+												<dd class="name">张晓晓</dd>
+												<dd>公共用户产品 T1</dd>
+											</dl>
+										</li>
+										<li>
+											<span class="arr"><i></i></span>
+											<dl class="info">
+												<dt><img width="84" height="84" src="../img/tmp/avatar1-PAGE.jpg"></dt>
+												<dd class="name">张晓晓</dd>
+												<dd>公共用户产品 T1</dd>
+											</dl>
+										</li>
+										<li>
+											<span class="arr"><i></i></span>
+											<dl class="info">
+												<dt><img width="84" height="84" src="../img/tmp/avatar1-PAGE.jpg"></dt>
+												<dd class="name">张晓晓</dd>
+												<dd>公共用户产品 T1</dd>
+											</dl>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<div id="J_Chart"></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<script src="../libs/jquery/jquery.min.js"></script>
+<script src="../libs/jquery/jquery.slimscroll.min.js"></script>
+<script src="../libs/jquery/chart/jquery.chart.min.js"></script>
+<script src="../js/common.js"></script>
+<script>
+$(function() {
+	$("#J_ChartDate").Chart({
+		chartElement: '#J_Chart'
+	});
+});
+</script>
+</body>
+</html>

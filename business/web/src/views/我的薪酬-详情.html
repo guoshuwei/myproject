@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- IE / Chrome -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- 360极速模式 -->
+	<meta name="renderer" content="webkit" />
+	<title> 我的薪酬 </title>
+	<link rel="stylesheet" href="../libs/jquery/tooltip/tooltipster.css">
+
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/remuneration.css">
+</head>
+<body>
+
+<div class="g-site-wrap">
+	<div class="g-site-top">
+
+		<!-- g-head -->
+		<div class="g-head clearfix">
+    <h1 class="fl m-logo">
+        <a href="/">
+            <img width="86" class="fl logo" src="../img/logo.png" alt="滴滴">
+            <span class="fl msg">eHR系统</span>
+        </a>
+    </h1>
+
+    <ul class="fr m-login">
+        <li class="fl avatar J_Avatar">
+            <div class="info clearfix">
+                <div class="fl pic m-coverimg" style="background-image: url(../img/tmp/avatar1-ORCH.jpg)"></div>
+                <span class="fl name">Admin</span>
+            </div>
+            <div class="handle">
+                <div class="inner">
+                    <a href="#">注销</a>
+                </div>
+            </div>
+        </li>
+        <li class="fl help line">
+            <i class="fl pic ico ico-help"></i>
+            <a href="#" class="fl name">帮助</a>
+        </li>
+    </ul>
+
+    <div class="m-search">
+        <input class="search" type="text" placeholder="搜索HR政策流程">
+        <span class="query ico ico-search"><input class="btn" type="submit"></span>
+        <!--<ul class="datalist">-->
+            <!--<li><a href="#">搜索</a></li>-->
+            <!--<li><a href="#">搜索搜索</a></li>-->
+            <!--<li><a href="#">搜索搜索搜索</a></li>-->
+        <!--</ul>-->
+    </div>
+</div>
+
+	</div>
+	<div class="J_SiteBody g-site-body">
+		
+		<div class="J_SiteSide g-site-side">
+
+    <div class="J_ScrollMenu">
+        <!-- m-leftbar -->
+        <ul class="m-leftbar">
+            <!-- 选中状态的li添加class名active -->
+            <li class="active">
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-home"></i>
+                    <i class="now ico ico-nav-home2"></i>
+                </span>
+                    <span class="name">首页</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-info"></i>
+                    <i class="now ico ico-nav-info2"></i>
+                </span>
+                    <span class="name">我的信息</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-salary"></i>
+                    <i class="now ico ico-nav-salary2"></i>
+                </span>
+                    <span class="name">我的薪酬</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-team"></i>
+                    <i class="now ico ico-nav-team2"></i>
+                </span>
+                    <span class="name">我的团队</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-structure"></i>
+                    <i class="now ico ico-nav-structure2"></i>
+                </span>
+                    <span class="name">组织结构</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-prove"></i>
+                    <i class="now ico ico-nav-prove2"></i>
+                </span>
+                    <span class="name">证明办理</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-welfare"></i>
+                    <i class="now ico ico-nav-welfare2"></i>
+                </span>
+                    <span class="name">福利政策</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-service"></i>
+                    <i class="now ico ico-nav-service2"></i>
+                </span>
+                    <span class="name">自助服务</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                    <span class="pic">
+                        <i class="def ico ico-nav-backlog"></i>
+                        <i class="now ico ico-nav-backlog2"></i>
+                    </span>
+                    <span class="name">待办流程</span>
+                    <span class="num">10</span>
+                </a>
+            </li>
+            <li>
+                <a class="item" href="#">
+                <span class="pic">
+                    <i class="def ico ico-nav-staff"></i>
+                    <i class="now ico ico-nav-staff2"></i>
+                </span>
+                    <span class="name">查看员工信息</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+		
+		<div class="J_SiteMain g-site-main">
+
+			<!--p-remuneration-->
+			<div class="p-remuneration m-layout">
+				<h2 class="m-title2">我的薪酬</h2>
+
+				<div class="m-wrap">
+					<!-- 查询区域 -->
+					<div class="p-locating">
+						<ul class="list clearfix">
+							<li>
+								<input class="m-wdate w192" type="text" readonly onclick="WdatePicker({dateFmt:'yyyy-MM'})">
+							</li>
+							<li>
+								<a class="m-btn m-btn-orange" href="javascript:;">查 询</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- 工资单 -->
+					<div class="p-payroll">
+						<h3 class="tit">2015年9月工资单<span class="time">（7.25-8.25）</span></h3>
+
+						<ul class="item clearfix">
+							<li class="fl wb55">
+								<span class="fl label">姓名：</span>
+								<span class="fl value">于晨曦</span>
+							</li>
+							<li class="fl wb45">
+								<span class="fl label">工号：</span>
+								<span class="fl value">D003234</span>
+							</li>
+							<li class="fl wb100">
+								<span class="fl label">部门-职位：</span>
+								<span class="fl value">产品技术部－公共用户部－界面设计师</span>
+							</li>
+						</ul>
+
+						<ul class="item clearfix">
+							<li class="fl wb55">
+								<span class="fl label">基本工资：</span>
+								<span class="fl value c-green J_Tooltip">1000.00</span>
+							</li>
+							<li class="fl wb45">
+								<span class="fl label">养老保险：</span>
+								<span class="fl value c-red J_Tooltip">100000.00</span>
+							</li>
+
+							<li class="fl wb55">
+								<span class="fl label">加班津贴：</span>
+								<span class="fl value c-green">1000.00</span>
+							</li>
+							<li class="fl wb45">
+								<span class="fl label">医疗保险：</span>
+								<span class="fl value c-red">1000.00</span>
+							</li>
+
+							<li class="fl wb55">
+								<span class="fl label">餐补：</span>
+								<span class="fl value c-green">1000.00</span>
+							</li>
+							<li class="fl wb45">
+								<span class="fl label">失业保险：</span>
+								<span class="fl value c-red">1000.00</span>
+							</li>
+
+							<li class="fl wb55">
+								<span class="fl label">通讯补贴：</span>
+								<span class="fl value c-green">1000.00</span>
+							</li>
+							<li class="fl wb45">
+								<span class="fl label">住房公积金：</span>
+								<span class="fl value c-red">1000.00</span>
+							</li>
+
+							<li class="fl wb55">
+								<span class="fl label">早中晚班补贴：</span>
+								<span class="fl value c-green">1000.00</span>
+							</li>
+							<li class="fl wb45">
+								<span class="fl label">迟到扣款：</span>
+								<span class="fl value c-red">1000.00</span>
+							</li>
+
+							<li class="fl wb55">
+								<span class="fl label">提成及奖金：</span>
+								<span class="fl value c-green">1000.00</span>
+							</li>
+							<li class="fl wb45">
+								<span class="fl label">事假扣款：</span>
+								<span class="fl value c-red">1000.00</span>
+							</li>
+
+							<li class="fl wb55">
+								<span class="fl label">社保补贴：</span>
+								<span class="fl value c-green">1000.00</span>
+							</li>
+							<li class="fl wb45">
+								<span class="fl label">病假扣款：</span>
+								<span class="fl value c-red">1000.00</span>
+							</li>
+
+							<li class="fl wb55">
+								<span class="fl label">工资差额：</span>
+								<span class="fl value c-green">1000.00</span>
+							</li>
+							<li class="fl wb45">
+								<span class="fl label">其他扣款：</span>
+								<span class="fl value c-red">1000.00</span>
+							</li>
+
+							<li class="fl wb55">
+								<span class="fl label">其他补贴：</span>
+								<span class="fl value c-green">1000.00</span>
+							</li>
+							<li class="fl wb45">
+								<span class="fl label">个人所得税：</span>
+								<span class="fl value c-red">1000.00</span>
+							</li>
+						</ul>
+
+						<ul class="item clearfix">
+							<li class="fl wb55">
+								<span class="fl label">实发工资：</span>
+								<span class="fl value c-green u-fs16">1000.00</span>
+							</li>
+							<li class="fl wb45">
+								<span class="fl label">最终实发：</span>
+								<span class="fl value c-green u-fs16">1000.00</span>
+							</li>
+							<li class="fl wb55">
+								<span class="fl label">薪资备注：</span>
+								<span class="fl value">别老请假了</span>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<script src="../libs/jquery/jquery.min.js"></script>
+<script src="../libs/jquery/jquery.slimscroll.min.js"></script>
+<script src="../libs/jquery/tooltip/jquery.tooltipster.min.js"></script>
+<script src="../libs/wdatePicker/wdatePicker.js"></script>
+<script src="../js/common.js"></script>
+<script>
+$(function(){
+
+	(function(){
+		var tplTooltip = [
+			'<ul><li>提示1：提示内容1</li><li>提示1：提示内容2</li></ul>',
+			'<ul><li>提示2：提示内容1</li><li>提示2：提示内容2</li></ul>'
+		];
+
+		for (var i = 0; i < tplTooltip.length; i++){
+			$('.J_Tooltip').eq(i).tooltipster({
+				position: 'bottom',
+				content: tplTooltip[i],
+				contentAsHTML: true,
+				offsetY: -15,
+				delay: 0
+			});
+		}
+	}());
+
+});
+</script>
+</body>
+</html>

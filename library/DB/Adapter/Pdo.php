@@ -104,7 +104,7 @@ class DB_Adapter_Pdo extends DB_Abstract implements DB_Interface {
 				$res = $this->pdo->rollBack ();
 			} catch ( PDOException $e ) {
 				$this->_close ();
-				TyFunc_Log::write ( 'system_sql', 'transaction', $e->getMessage () );
+				Function_Log::write ( 'system_sql', 'transaction', $e->getMessage () );
 			}
 		}
 		$this->_close ();
@@ -125,7 +125,7 @@ class DB_Adapter_Pdo extends DB_Abstract implements DB_Interface {
 				// 出问题回滚 写入日志
 				$this->pdo->rollBack ();
 				$this->_close ();
-				TyFunc_Log::write ( 'system_sql', 'transaction', $e->getMessage () );
+				Function_Log::write ( 'system_sql', 'transaction', $e->getMessage () );
 				return false;
 			}
 			$this->_close ();
@@ -259,7 +259,7 @@ class DB_Adapter_Pdo extends DB_Abstract implements DB_Interface {
 			}
 		} catch ( PDOException $e ) {
 			$msg = $e->getMessage ();
-			TyFunc_Log::write ( 'system_sql', 'connect', $msg );
+			Function_Log::write ( 'system_sql', 'connect', $msg );
 		}
 		return self::$pdo_arr[$hash];
 	}

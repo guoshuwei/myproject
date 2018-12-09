@@ -1,0 +1,220 @@
+/**
+ * 打印
+ *
+ * @author: XieJun
+ * @e-mail: jununx@qq.com
+ * @q    q: 121318538
+ * @update: 2015-11-12
+ */
+
+/* m-print */
+.m-print h2,
+.m-print p,
+.m-print dl,
+.m-print dd {
+    margin: 0;
+}
+.m-print table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.m-print img {
+    vertical-align: top;
+}
+.m-print .clear {
+    clear: both;
+}
+.m-print .mb60 {
+    margin-bottom: 1.5875cm;
+}
+.m-print .mb10 {
+    margin-bottom: 0.265cm;
+}
+.m-print .mb5 {
+    margin-bottom: 0.1325cm;
+}
+.m-print .mb23 {
+    margin-bottom: 0.6085cm;
+}
+.m-print .mb30 {
+    margin-bottom: 0.79375cm;
+}
+.m-print .mb39 {
+    margin-bottom: 1.0319cm;
+}
+.m-print .mb140 {
+    margin-bottom: 3.7cm;
+}
+.m-print .mb160 {
+    margin-bottom: 4.2cm;
+}
+.m-print .ml300 {
+    margin-left: 7.9375cm;
+}
+.m-print .pr17 {
+    padding-right: 0.45cm;
+}
+.m-print .pr30 {
+    padding-right: 0.7937cm;
+}
+.m-print .pl6 {
+    padding-left: 0.1588cm;
+}
+.m-print .pl38 {
+    padding-left: 1.0054cm;
+}
+.m-print .lh36 {
+    line-height: 0.9525cm;
+}
+.m-print .lh30 {
+    line-height: 0.7937cm;
+}
+.m-print .lh21 {
+    line-height: 0.5556cm;
+}
+.m-print .lh24 {
+    line-height: 0.6350cm;
+}
+.m-print .print-text-right {
+    text-align: right;
+}
+.m-print .bold {
+    font-weight: 700;
+}
+
+.m-print,
+.m-print-visa {
+    background: #fff;
+    font-size: 0.4233cm;
+    width: 21cm;
+    height: 29.7cm;
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+}
+.m-print {
+    line-height: 1.0583cm;
+}
+.m-print .page,
+.m-print .page-bd,
+.m-print .page-ft {
+    overflow: hidden;
+}
+.m-print .page-hd {
+    padding: 0.25cm 0;
+}
+.m-print .page-hd img {
+    height: 0.9cm;
+    margin-left: 0.25cm;
+}
+.m-print .print-title {
+    text-align: center;
+}
+.m-print .page-bd {
+    height: 24.62cm;
+}
+.m-print .page-ft {
+    border-top: 0.0265cm #000 solid;
+    font-size: 0.3175cm;
+    line-height: 0.79375cm;
+}
+.m-print .print-intent {
+    text-indent: 0.75cm;
+}
+
+/*m-print-default*/
+.m-print-default .page {
+    margin: 0 2.54cm;
+}
+.m-print-default .page-hd {
+    margin-top: 1.1135cm;
+}
+.m-print-default .page-hd,
+.m-print .print-underline {
+    border-bottom: 0.0265cm #000 solid;
+}
+.m-print-default .print-title {
+    font-size: 0.635cm;
+    font-weight: 700;
+    margin: 1.2cm 0;
+}
+
+.m-print .print-underline {
+    padding: 0 0.2cm;
+}
+
+/*m-print-visa*/
+.m-print-visa {
+    line-height: 0.9525cm;
+}
+.m-print-visa .page {
+    margin: 0.688cm 0.47625cm;
+    border: 0.0529cm #000 solid;
+    padding: 0 2.01085cm;
+}
+.m-print-visa .page-hd {
+    margin-top: 0.3726cm;
+}
+.m-print-visa .print-title {
+    font-size: 0.47625cm;
+}
+.m-print-visa .print-table,
+.m-print-visa .print-table th,
+.m-print-visa .print-table td {
+    border: 0.0265cm #000 solid;
+}
+.m-print-visa .print-table,
+.m-print-visa .print-table th {
+    text-align: center;
+}
+.m-print-visa .print-table {
+    width: 100%;
+}
+.m-print-visa .print-table th {
+    font-weight: 400;
+}
+
+/*m-print-leave*/
+.m-print-leave {
+    font-size: 0.3704cm;
+}
+.m-print-leave .page {
+    margin: 1.7198cm 3.175cm 1.4552cm;
+}
+.m-print-leave .print-title {
+    line-height: 1.1642cm;
+    font-size: 0.7408cm;
+    font-weight: 700;
+    margin-bottom: 0.8202cm;
+}
+.m-print-leave .print-remark {
+    font-size: 0.3175cm;
+    line-height: 0.7408cm;
+}
+.m-print-leave .print-line {
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    font-size: 0;
+    border-bottom: 0.0265cm #000 dashed;
+    margin: 0.4763cm 0;
+}
+.m-print-leave .print-stub {
+    line-height: 0.6350cm;
+    font-size: 0.4233cm;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 0.9260cm;
+}
+.m-print-leave .table-usr,
+.m-print-leave .table-usr td {
+    border: 0.0265cm #000 dotted;
+}
+.m-print-leave .table-usr {
+    width: 100%;
+}
+.m-print-leave .table-usr td {
+    padding-left: 0.1588cm;
+    line-height: 0.7408cm;
+}
+

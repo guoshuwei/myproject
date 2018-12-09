@@ -41,4 +41,21 @@ $db ['local'] ['main'] ['reader'] = array (
 		'database' => 'main',
 		'charset' => 'utf8' 
 );
+//merchant
+$db ['local'] ['merchant'] ['writer'] = array (
+		'host' => '127.0.0.1',
+		'port' => '3306',
+		'user' => 'root',
+		'password' => '',
+		'database' => 'merchant',
+		'charset' => 'utf8' 
+);
+$db ['local'] ['merchant'] ['reader'] = array (
+		'host' => '127.0.0.1',
+		'port' => '3306',
+		'user' => 'root',
+		'password' => '',
+		'database' => 'merchant',
+		'charset' => 'utf8' 
+);
 return $db;

@@ -1362,7 +1362,7 @@ select option
 }
 .deals_content
 {
-	margin-top: 33px;
+	margin-top: 14px;
 }
 .deals_item_category a
 {
@@ -1535,6 +1535,7 @@ select option
 .deals_slider_prev
 {
 	margin-right: 4px;
+	float:left;
 }
 
 /*********************************

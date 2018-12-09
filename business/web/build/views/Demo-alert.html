@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> Demo - blockUI </title>
+    <link rel="stylesheet" href="../css/common.min.css">
+</head>
+<body>
+
+<a id="J_Type1Mode1" href="javascript:;" class="m-btn m-btn-white">格式1：头部+内容+底部</a>
+<a id="J_Type1Mode2" href="javascript:;" class="m-btn m-btn-white">格式1：头部+内容</a>
+<a id="J_Type1Mode3" href="javascript:;" class="m-btn m-btn-white">格式1：内容+底部</a>
+<a id="J_Type1Mode4" href="javascript:;" class="m-btn m-btn-white">格式1：自动隐藏+内容</a>
+
+<a id="J_Type2Mode1" href="javascript:;" class="m-btn m-btn-white">格式2：无员工信息</a>
+<a id="J_Type2Mode2" href="javascript:;" class="m-btn m-btn-white">格式2：单据不存在</a>
+
+<script src="../libs/jquery/jquery.min.js"></script>
+<script src="../libs/jquery/jquery.simplemodal.js"></script>
+<script>
+    // show modal
+    function showModal(options){
+        options = $.extend({
+            type: 1, // 弹窗类别
+            title: false,
+            msg: '',
+            bSure: false,
+            bCancel: false,
+            autoHide: 0,
+            bIcon: true,
+            callback: true
+        }, options || {});
+
+        var timer = null,
+            tpl = '',
+            template = {
+                'tpl1HeadWrap': '<div class="m-popup-box m-popup-box1">',
+                'tpl1FootWrap': '</div>',
+
+                'tpl1Head': '<div class="hd"><h2 class="title">'+ options.title +'</h2><a class="simplemodal-close close">×</a></div>',
+                'tpl1FootWrapHead': '<div class="m-btn-group">',
+                'tpl1FootWrapFoot': '</div>',
+                'tpl1FootSure': '<a class="m-btn m-btn-orange simplemodal-btnSure" href="javascript:;">确 认</a>',
+                'tpl1FootCancel': '<a class="m-btn m-btn-white simplemodal-btnCancel" href="javascript:;">取 消</a>',
+
+                'tpl1BodyWrapHead': '<div class="bd">',
+                'tpl1BodyWrapFoot': '</div>',
+                'tpl1Body': '<div class="popup-tips">'+ options.msg +'</div>',
+                'tpl1BodyIcon': '<i class="popup-tips-ico ico ico-popup-tips"></i>',
+
+                'tpl2HeadWrap': '<div class="m-popup-box m-popup-box2">',
+                'tpl2FootWrap': '</div>',
+                'tpl2BodyIcon': '<i class="popup-tips-ico ico ico-no-staff"></i>',
+                'tpl2BodyTips': '<div class="popup-tips">对不起，系统未能取到您的员工信息！<br />如有疑问，请联系EHR。</div>',
+                'tpl2Foot': '<div class="m-btn-group"><a class="m-btn m-btn-white simplemodal-close" href="javascript:;">关 闭</a></div>'
+            };
+
+        template = $.extend(template, options.template || {});
+
+        function case1Tpl(){
+            tpl += template.tpl1HeadWrap;
+            // title
+            options.title && (tpl += template.tpl1Head);
+
+            // body
+            tpl += template.tpl1BodyWrapHead;
+            options.bIcon && (tpl += template.tpl1BodyIcon);
+            tpl += template.tpl1Body;
+            tpl += template.tpl1BodyWrapFoot;
+
+            // foot
+            tpl += template.tpl1FootWrapHead;
+            options.bSure && (tpl += template.tpl1FootSure);
+            options.bCancel && (tpl += template.tpl1FootCancel);
+            tpl += template.tpl1FootWrapFoot;
+
+            tpl += template.tpl1FootWrap;
+        }
+
+        function case2Tpl(){
+            tpl += template.tpl2HeadWrap;
+            tpl += template.tpl2BodyIcon;
+            tpl += template.tpl2BodyTips;
+            tpl += template.tpl2Foot;
+            tpl += template.tpl2FootWrap;
+        }
+
+        switch (options.type){
+            case 1:
+                case1Tpl();
+                break;
+
+            case 2:
+                case2Tpl();
+                break;
+
+            default:
+                case1Tpl();
+        }
+
+        $.modal(tpl, {
+            overlayCss: { backgroundColor: '#000' },
+            overlayClose: true,
+            maxHeight: 600,
+            onShow: function(dialog){
+                // 确定
+                $(".simplemodal-btnSure", dialog.data).click(function () {
+                    options.bSure && options.bSure();
+                    $.modal.close();
+                    return;
+                });
+
+                // 取消
+                $(".simplemodal-btnCancel", dialog.data).click(function () {
+                    options.bCancel && options.bCancel();
+                    $.modal.close();
+                    return;
+                });
+
+                // 自动隐藏
+                clearTimeout(timer);
+                if(options.autoHide > 0){
+                    timer = setTimeout((function(){
+                        $.modal.close();
+                        options.callback && options.callback();
+                    }), options.autoHide);
+                }
+            }
+        });
+    }
+
+    // auto hide alert
+    function showAlert(msg, timeout, callback){
+        showModal({
+            title: "提示",
+            msg: msg,
+            autoHide: timeout || 1000,
+            callback: callback || false
+        });
+    }
+
+
+    // 演示demo
+    $(function(){
+
+        // case1
+        $('#J_Type1Mode1').on('click', function(){
+            showModal({
+                title: '提示',
+                msg: '提示内容',
+                bSure: function(o){
+                    alert('确定');
+                },
+                bCancel: function(o){
+                    alert('取消');
+                }
+            });
+        });
+
+        // case2
+        $('#J_Type1Mode2').on('click', function(){
+            showModal({
+                title: '提示',
+                msg: '提示内容'
+            });
+        });
+
+        // case3
+        $('#J_Type1Mode3').on('click', function(){
+            showModal({
+                msg: '提示内容',
+                bSure: function(o){
+                    alert('确定');
+                },
+                bCancel: function(o){
+                    alert('取消');
+                }
+            });
+        });
+
+        // case4
+        $('#J_Type1Mode4').on('click', function(){
+            showAlert("提示！")
+        });
+
+        // case2-1
+        $('#J_Type2Mode1').on('click', function(){
+            showModal({
+                type: 2
+            });
+        });
+
+        // case2-2
+        $('#J_Type2Mode2').on('click', function(){
+            showModal({
+                type: 2,
+                template: {
+                    'tpl2BodyIcon': '<i class="popup-tips-ico ico ico-no-bills"></i>',
+                    'tpl2BodyTips': '<div class="popup-tips">抱歉，单据（219）不存在！</div>'
+                }
+            });
+        });
+    });
+
+</script>
+</body>
+</html>

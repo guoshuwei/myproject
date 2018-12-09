@@ -1,0 +1,251 @@
+[ 2018-12-08T20:49:42+08:00 ] 192.168.186.1 /myproject/main/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2018-12-08T20:49:47+08:00 ] 192.168.186.1 /myproject/main/index.php/Admin/UL/picture_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `t_pic_manager_dd`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001733s ]
+
+[ 2018-12-08T20:49:59+08:00 ] 192.168.186.1 /myproject/main/index.php/Admin/UL/picture_edit/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `t_pic_manager_dd` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `t_module_dd` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `t_pic_manager_dd` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `t_module_dd`  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2018-12-08T20:50:19+08:00 ] 192.168.186.1 /myproject/main/index.php/Admin/MV/product_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: select trd.name as tname,tzd.id,tzd.title,tzd.dt,tzd.updatetime,tzd.pubstatus from main.t_zj_dd tzd left join main.t_relation_dd trd on tzd.pid = trd.id where showstatus=1 order by tzd.id desc [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000993s ]
+
+[ 2018-12-08T20:50:20+08:00 ] 192.168.186.1 /myproject/main/index.php/Admin/MV/product_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `t_fj_dd` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `t_zj_dd` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `t_fj_dd`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `t_relation_dd` ORDER BY pid asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Undefined index: subname /var/www/myproject/main/Application/Runtime/Cache/Admin/5eb171fe511603facf8900ed6a67a60d.php 第 54 行.
+NOTIC: [8] Undefined index: subname /var/www/myproject/main/Application/Runtime/Cache/Admin/5eb171fe511603facf8900ed6a67a60d.php 第 54 行.
+NOTIC: [8] Undefined index: subname /var/www/myproject/main/Application/Runtime/Cache/Admin/5eb171fe511603facf8900ed6a67a60d.php 第 54 行.
+NOTIC: [8] Undefined index: subname /var/www/myproject/main/Application/Runtime/Cache/Admin/5eb171fe511603facf8900ed6a67a60d.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000618s ]
+
+[ 2018-12-08T20:51:21+08:00 ] 192.168.186.1 /myproject/main/index.php/Admin/MV/product_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+SQL: SHOW COLUMNS FROM `t_fj_dd` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `t_zj_dd` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000165s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+
+[ 2018-12-08T20:51:24+08:00 ] 192.168.186.1 /myproject/main/index.php/Admin/MV/product_add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `t_fj_dd` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `t_zj_dd` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `t_fj_dd`  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `t_relation_dd` ORDER BY pid asc  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+NOTIC: [8] Undefined index: subname /var/www/myproject/main/Application/Runtime/Cache/Admin/5eb171fe511603facf8900ed6a67a60d.php 第 54 行.
+NOTIC: [8] Undefined index: subname /var/www/myproject/main/Application/Runtime/Cache/Admin/5eb171fe511603facf8900ed6a67a60d.php 第 54 行.
+NOTIC: [8] Undefined index: subname /var/www/myproject/main/Application/Runtime/Cache/Admin/5eb171fe511603facf8900ed6a67a60d.php 第 54 行.
+NOTIC: [8] Undefined index: subname /var/www/myproject/main/Application/Runtime/Cache/Admin/5eb171fe511603facf8900ed6a67a60d.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001349s ]
+
+[ 2018-12-08T20:51:52+08:00 ] 192.168.186.1 /myproject/main/index.php/Admin/MV/product_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `t_fj_dd` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `t_zj_dd` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0021s ]
+SQL: INSERT INTO `t_zj_dd` (`pid`,`title`,`content`,`vsort`,`jump_url`,`keywords`,`dt`,`updatetime`) VALUES ('0','1111111111','<p style=\"line-height: 16px;\"><img style=\"vertical-align: middle; margin-right: 2px;\" src=\"http://192.168.186.166/myproject/main/Public/Admin/lib/ueditor/1.4.3/dialogs/attachment/fileTypeImages/icon_doc.gif\"/><a style=\"font-size:12px; color:#0066cc;\" href=\"/ueditor/php/upload/file/20181208/1544273507629838.docx\" title=\"authorizationletter.docx\">authorizationletter.docx</a></p><p><br/></p>','0','0','','1544273512','') [ RunTime:0.0068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000629s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2018-12-08T20:51:53+08:00 ] 192.168.186.1 /myproject/main/index.php/Admin/MV/product_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: select trd.name as tname,tzd.id,tzd.title,tzd.dt,tzd.updatetime,tzd.pubstatus from main.t_zj_dd tzd left join main.t_relation_dd trd on tzd.pid = trd.id where showstatus=1 order by tzd.id desc [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000982s ]
+
+[ 2018-12-08T20:51:56+08:00 ] 192.168.186.1 /myproject/main/index.php/Admin/MV/product_stop.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `t_zj_dd` [ RunTime:0.0023s ]
+SQL: UPDATE `t_zj_dd` SET `pubstatus`='0' WHERE ( id=1 ) [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000818s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2018-12-08T20:52:01+08:00 ] 192.168.186.1 /myproject/main/index.php/Admin/MV/product_edit/id/1/op/edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `t_zj_dd` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `t_zj_dd` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `t_relation_dd` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `t_relation_dd` ORDER BY pid asc  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+NOTIC: [8] Undefined index: subname /var/www/myproject/main/Application/Runtime/Cache/Admin/e3c9135aa09e3cf28aae64ee6e105efe.php 第 56 行.
+NOTIC: [8] Undefined index: subname /var/www/myproject/main/Application/Runtime/Cache/Admin/e3c9135aa09e3cf28aae64ee6e105efe.php 第 56 行.
+NOTIC: [8] Undefined index: subname /var/www/myproject/main/Application/Runtime/Cache/Admin/e3c9135aa09e3cf28aae64ee6e105efe.php 第 56 行.
+NOTIC: [8] Undefined index: subname /var/www/myproject/main/Application/Runtime/Cache/Admin/e3c9135aa09e3cf28aae64ee6e105efe.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001458s ]
+

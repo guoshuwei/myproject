@@ -7,11 +7,6 @@
 <meta name="description" content="shop project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/lib/bootstrap4/bootstrap.min.css">
-<!-- <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-<link rel="stylesheet" type="text/css" href="plugins/slick-1.8.0/slick.css"> -->
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/main_styles.css">
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/responsive.css">
 
@@ -39,10 +34,14 @@
               </div>
               <div class="top_bar_user">
                 <div class="user_icon"><img src="/images/user.svg" alt=""></div>
-                <div><a href="/myproject/user/login.php">登录</a></div>
-                <div><a href="/myproject/user/register.php">注册</a></div>
+                <if condition="$logining_user_name != ''">
+                  <div>{$logining_user_name}</div>
+                <else/>
+                  <div><a href="/myproject/user/login.php">登录</a></div>
+                  <div><a href="/myproject/user/register.php">注册</a></div>
+                </if>
                 <div><a href="/myproject/cart/public/home.php">交易平台</a></div>
-                <div><a href="/myproject/main/index.php/Admin/Login/login.html">商户入口</a></div>
+                <div><a href="/myproject/business/application.php">商户入口</a></div>
               </div>
             </div>
           </div>
