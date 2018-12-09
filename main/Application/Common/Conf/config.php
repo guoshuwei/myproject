@@ -16,7 +16,8 @@ return array(
 	'DB_HOST'		=>	'127.0.0.1',
 	'DB_NAME'		=>	'main',
 	'DB_USER'		=>	'root',
-	'DB_PWD'		=>	'',
+	// 'DB_PWD'		=>	'',
+	'DB_PWD'		=>	'123456',
 	'DB_PORT'		=>	'3306',
 	'DB_PREFIX'		=>	'',
 	'LOG_RECORD' => true, // 开启日志记录

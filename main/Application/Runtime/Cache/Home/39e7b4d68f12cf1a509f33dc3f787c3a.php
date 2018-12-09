@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -646,4 +647,657 @@ $('.btn-like').bind('click', function(){
 });
 </script>
 </body>
+=======
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+<title>农联网</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="shop project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="/myproject/main/Public/Home/lib/bootstrap4/bootstrap.min.css">
+<!-- <link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="plugins/slick-1.8.0/slick.css"> -->
+<link rel="stylesheet" type="text/css" href="/myproject/main/Public/Home/css/main_styles.css">
+<link rel="stylesheet" type="text/css" href="/myproject/main/Public/Home/css/responsive.css">
+
+</head>
+<body>
+    <div class="super_container">
+    
+    <!-- Header -->
+    
+    <header class="header">
+    
+    <!-- Top Bar -->
+
+
+    <div class="top_bar">
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex flex-row">
+            <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="/images/phone.png" alt=""></div>农联网LOGO</div>
+            <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="/images/mail.png" alt=""></div><a href="mailto:fastsales@gmail.com"></a></div>
+            <div class="top_bar_content ml-auto">
+              <div class="top_bar_menu">
+                <ul class="standard_dropdown top_bar_dropdown">
+                </ul>
+              </div>
+              <div class="top_bar_user">
+                <div class="user_icon"><img src="/images/user.svg" alt=""></div>
+                <div><a href="/myproject/user/login.php">登录</a></div>
+                <div><a href="/myproject/user/register.php">注册</a></div>
+                <div><a href="/myproject/cart/public/home.php">交易平台</a></div>
+                <div><a href="/myproject/main/index.php/Admin/Login/login.html">商户入口</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+    
+     <!-- Top Bar -->
+
+
+
+
+  
+
+
+<link rel="canonical" href="http://brand.ef360.com/103146/">
+<link rel="alternate" media="only screen and (max-width:640px)" href="http://m.ef360.com/brand/103146/">
+<script type="text/javascript" src="//www.ef360.com/_public2012/js/uaredirect.js"></script>
+<script type="text/javascript">uaredirect("http://m.ef360.com/brand/103146/");</script>
+<link rel="stylesheet" type="text/css" href="http://www.ef360.com/_public2012/css/global.css" />
+<link rel="stylesheet" type="text/css" href="http://brand.ef360.com/css/v2013.css" />
+<script type="text/javascript" src="/_public2012/js/lin.package.js"></script>
+<!--[if lte IE 9]> 
+<script src="//www.ef360.com/_public2012/js/html5.js"></script> 
+<![endif]-->
+</head>
+<body>
+
+<div id="header"> 
+  <link rel="stylesheet" type="text/css" href="//www.ef360.com/_public2012/css/top_nav.css" />
+
+<script type="text/javascript" src="http://www.ef360.com/_public2012/js/lin/lin.user.js?v20131030"></script> 
+<script type="text/javascript">
+var top_sitemap_hide='';
+var top_sitemap_show='';
+$('.top_sitemap_btn,#top_sitemap div').on('mouseover', function(){
+  clearTimeout(top_sitemap_hide);
+  if(!$('#top_sitemap').hasClass('active')){
+    top_sitemap_show = setTimeout(function(){$('.top_sitemap_btn').addClass('active');$('#top_sitemap').addClass('active').show();},100);
+  }
+}).on('mouseout', function(){
+  clearTimeout(top_sitemap_show);
+  top_sitemap_hide = setTimeout(function(){$('.top_sitemap_btn').removeClass('active');$('#top_sitemap').removeClass('active').hide();},100);
+});
+</script>   
+</div>
+
+
+<div class="png" style=" background:#f3f3f3 url() no-repeat center top;">
+  <div class="wrapper">
+    <div id="content" class="content clearfix"> 
+      <div class="d-top clearfix">
+  <div class="d-top-l">
+    <div class="d-top-logo">
+    	<a href="http://zs.ef360.com/items/vinnytido/" target="_blank" class="brandlogo">
+    		<img src="<?php echo ($archeve_info['logo']); ?>" width="120" height="60" alt="维尼叮当" />
+    	</a>
+    	<!-- <a href="javascript:" rel="nofollow" class="btn-like btn-like-small">
+    		<i class="i-heart3 png vm mr5 ml5"></i>我喜欢 (<span class="like-num fb"></span>)
+    	</a> -->
+    </div>
+    <div class="d-top-title">
+      <h1><?php echo ($archeve_info['name']); ?></h1>
+      <span><?php echo ($archeve_info['egname']); ?></span>
+      <span style="margin-top:0px; padding-top:0;"><i class="i-vip png" title="VIP会员"></i><!--<i class="i-auth png" title="资质认证"></i>--></span></div>
+    <div class="d-top-subtitle"><?php echo ($archeve_info['subtitle']); ?></div>
+    <div class="d-top-star"><strong>品牌好评度</strong>：<span class="star star1"></span><span class="star star1"></span><span class="star star1"></span><span class="star star1"></span><span class="star star1"></span> <strong style="color:#f9a27f; font-size:24px; font-weight:normal; font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', monospace">10.0<span style="font-size:12px; font-weight:bold;"> 分</span></strong></div>
+    <div class="d-top-hits"><?php echo ($archeve_info['hits']); ?> 人浏览 | 更新于：1&#22825;&#21069;</div>
+  </div>
+</div>
+<div class="sub-crumb">
+  <div class="sub-bdshare">
+    <div id="bdshare" class="bdshare_b" style="line-height: 12px;"><img src="http://bdimg.share.baidu.com/static/images/type-button-5.jpg" /> <a class="shareCount"></a> </div>
+    <script type="text/javascript" id="bdshare_js" data="type=button&amp;uid=635583" ></script> 
+    <script type="text/javascript" id="bdshell_js"></script> 
+    <script type="text/javascript">document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?t=" + new Date().getHours();</script> 
+  </div>
+您所在位置：<a href="http://www.ef360.com/">首页</a> &gt; <a href="http://brand.ef360.com/">品牌</a> &gt; <a href="http://brand.ef360.com/103146/">维尼叮当</a></div>
+
+      <div class="content-inner clearfix">
+        <div class="d-detail-lft">
+          <div class="d-detail-title mt15">
+            <h2>维尼叮当</h2>
+          </div>
+          <div class="d-detail-box mt15 clearfix">
+            <div class="d-detail-subtitle">
+              <h2>维尼叮当品牌档案</h2>
+            </div>
+            <div class="d-detail-inner">
+              <div class="clearfix">
+                <div class="d-detail-brandimage"><a href="http://zs.ef360.com/items/vinnytido/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201804101554523406_300x400.jpg" width="300" height="400" alt="维尼叮当品牌封面" /></a></div>
+                <div class="d-detail-brandinfo">
+                  <ul>
+                    <li>品牌名称：<a href="http://brand.ef360.com/103146/" target="_blank" style="color:#39F"><strong style="font-size:16px;"><?php echo ($archeve_info['name']); ?></strong></a></li>
+                    <li>英文名称：<a href="http://brand.ef360.com/103146/" target="_blank" style="color:#39F"><?php echo ($archeve_info['egname']); ?></a></li>
+                    <li><?php echo ($archeve_info['brand_type']); ?></li>
+                    <li><?php echo ($archeve_info['character']); ?></li>
+                    <li><?php echo ($archeve_info['brand_create_time']); ?></li>
+                    
+                    <li><?php echo ($archeve_info['annual_sale']); ?><span style="color:#888; font-size:12px;">（以维尼叮当官方年度公布数据为准）</span></li>
+                    
+                    <li><?php echo ($archeve_info['company_address']); ?></li>
+                    <li>运营企业：<a href="http://company.ef360.com/Detail/369569.html" target="_blank" style="color:#39F"><?php echo ($archeve_info['company_name']); ?></a></li>
+                    <li><?php echo ($archeve_info['store_num']); ?><span style="color:#888; font-size:12px;">（以维尼叮当官方公布数据为准）</span></li>
+                    <li><?php echo ($archeve_info['comapny_phone']); ?></li>
+                    <li>维尼叮当官网：<a href="http://www.weinidingdang.com/" target="_blank" rel="nofollow" style="color:#39F"><?php echo ($archeve_info['comapny_link']); ?></a></li>
+                  </ul>
+                  <a href="javascript:" class="btn-blue mt10" rel="nofollow" onClick="$('html,body').animate({scrollTop: $('#msg_box').position().top-36}, 300);">我要加盟咨询</a> </div>   
+              </div>
+              <div class="d-detail-inbox d-detail-proinfo clearfix"><strong>维尼叮当主营</strong>：维尼叮当童装</div>
+            </div>
+          </div>
+          
+          <div class="d-detail-box mt15">
+            <div class="d-detail-subtitle">
+              <h2>维尼叮当品牌简介</h2>
+            </div>
+            <div class="d-detail-inner" style="padding:10px 30px;">
+				<?php echo ($archeve_info['comapny_brief']); ?>
+            </div>
+          </div>
+          <div class="d-detail-box mt15 clearfix">
+            <div class="d-detail-subtitle">
+              <h2>维尼叮当品牌定位 / 维尼叮当经营基本信息</h2>
+            </div>
+            <div class="d-detail-inner" style="padding:10px 30px;">
+              <ul class="d-detail-infolist clearfix">
+              
+                <li>·经营模式：直营,代理,加盟</li><li>·档次定位：低档,中低档</li><li>·年龄定位：3-14岁</li><li>·风格定位：休闲,运动,时尚,潮服</li><li>·加盟费：免加盟费</li><li>·保证金：免保证金</li><li style="width:100%">·招商区域：全国</li><li style="width:100%">·加盟支持：免加盟费,营销推广支持,管理培训,装修支持,换货支持,广告支持</li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-detail-title mt30" id="item_policy">
+            <h2><a href="http://brand.ef360.com/103146/news/">维尼叮当动态</a></h2>
+          </div>
+          <div class="d-detail-box mt15 clearfix">
+            <div class="d-detail-inner" style="padding:0 20px;">
+              <ul class="d-detail-news clearfix">
+                
+                <li class="first clearfix">
+                  
+                  <a href="http://news.ef360.com/Articles/2018-11-28/377258.html" target="_blank" class="l-pic"><img src="/myproject/imgs/ouyue/branch/201811281739401144_400x300.jpg" width="160" height="120" alt="维尼叮当店铺产品陈列图" /></a>
+                  
+                  <a href="http://news.ef360.com/Articles/2018-11-28/377258.html" target="_blank" class="l-tit">不惧严寒 维尼叮当童装2018冬装正“当红”</a>
+                  <p class="l-desc">寒冬来袭，潮爸潮妈以及萌娃们做好御寒的准备了吗?维尼叮当童装2018暖暖冬装正&ldquo;当红&rdquo;，让我们不惧严寒，一起来挑战冬日时尚+保暖穿搭!男孩依...</p>
+                  
+                  <em class="l-tag"><i class="i-tag png vm mr5"></i><span>维尼叮当童装，2018冬装</span></em>
+                  
+                </li>
+                
+                <li class=" clearfix">
+                  
+                  <a href="http://news.ef360.com/Articles/2018-11-23/377084.html" target="_blank" class="l-pic"><img src="/myproject/imgs/ouyue/branch/201811231353486481_400x300.jpg" width="160" height="120" alt="维尼叮当店铺产品陈列图" /></a>
+                  
+                  <a href="http://news.ef360.com/Articles/2018-11-23/377084.html" target="_blank" class="l-tit">维尼叮当童装2018冬日新品持续上新 用温暖治愈整个冬天</a>
+                  <p class="l-desc">当气温&ldquo;超长待机&rdquo;寒冷模式时尚就像天气一样冷酷无情维尼叮当童装2018冬日新品持续上新用温暖治愈整个冬天单调的季节里是否让你的衣柜也单...</p>
+                  
+                  <em class="l-tag"><i class="i-tag png vm mr5"></i><span>维尼叮当童装，2018冬日新品</span></em>
+                  
+                </li>
+                
+                <li class=" clearfix">
+                  
+                  <a href="http://news.ef360.com/Articles/2018-11-13/376826.html" target="_blank" class="l-pic"><img src="/myproject/imgs/ouyue/branch/201811131459408449_400x300.png" width="160" height="120" alt="维尼叮当店铺产品陈列图" /></a>
+                  
+                  <a href="http://news.ef360.com/Articles/2018-11-13/376826.html" target="_blank" class="l-tit">维尼叮当童装2018秋冬“焕新”不停等你来!</a>
+                  <p class="l-desc">秋冬&ldquo;焕&rdquo;新颜初冬的脚步已经悄悄临近耳边了一波波的冷空气袭来是否让大家穿上了秋裤呢摆脱沉闷的冬季，让我们穿出多彩维尼叮当童装2018冬季...</p>
+                  
+                  <em class="l-tag"><i class="i-tag png vm mr5"></i><span>维尼叮当童装，2018秋冬</span></em>
+                  
+                </li>
+                
+                <li class=" clearfix">
+                  
+                  <a href="http://news.ef360.com/Articles/2018-11-5/376560.html" target="_blank" class="l-pic"><img src="/myproject/imgs/ouyue/branch/201811051044052711_400x300.jpg" width="160" height="120" alt="维尼叮当店铺产品陈列图" /></a>
+                  
+                  <a href="http://news.ef360.com/Articles/2018-11-5/376560.html" target="_blank" class="l-tit">备好维尼叮当冬装 这个冬季萌娃们时髦不降温!</a>
+                  <p class="l-desc">进入11月，气温一点点下降，冬季的脚步也越来越临近了!时髦精们已经开始寻找最当季的冬装新款，在线下的商场门店里，或者是在即将到来的双11线上...</p>
+                  
+                  <em class="l-tag"><i class="i-tag png vm mr5"></i><span>维尼叮当，冬装</span></em>
+                  
+                </li>
+                
+                <li class=" clearfix">
+                  
+                  <a href="http://news.ef360.com/Articles/2018-10-10/376180.html" target="_blank" class="l-pic"><img src="/myproject/imgs/ouyue/branch/201810101506215611_400x300.jpg" width="160" height="120" alt="维尼叮当店铺产品陈列图" /></a>
+                  
+                  <a href="http://news.ef360.com/Articles/2018-10-10/376180.html" target="_blank" class="l-tit">维尼叮当童装2018秋季“动物故事大会”开始啦!</a>
+                  <p class="l-desc">维尼叮当童装2018秋季&ldquo;动物故事大会&rdquo;开始啦!魔法师戴上了巫师帽、挥舞着魔法棒森林里的小动物们，也一个个化身精灵，在魔法的指引下汇聚到一...</p>
+                  
+                  <em class="l-tag"><i class="i-tag png vm mr5"></i><span>维尼叮当童装</span></em>
+                  
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          
+          <div class="d-detail-tagbar">
+            <div class="d-detail-tag">标签：维尼叮当 维尼叮当Vinnytido 加盟维尼叮当</div>
+          </div>
+        </div>
+        <div class="d-detail-rgt"><div id="d_right" style="width:260px; padding-bottom:20px;">
+  
+  <div class="r-pub-box mt20">
+    <div class="hd"> <i></i>
+      <h2><a href="http://zs.ef360.com/items/vinnytido/" target="_blank">维尼叮当招商</a></h2>
+    </div>
+    <div class="bd" style="padding:0;">
+      <div class="r-item">
+        <div class="pic"><a href="http://zs.ef360.com/items/vinnytido/" target="_blank"><img src='/myproject/imgs/ouyue/branch/vinnytido_240_60.gif' width='240' height='60' border='0' /></a></div>
+        <div class="txt"><a href="http://zs.ef360.com/items/vinnytido/" target="_blank">维尼叮当童装加盟优势大</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  $(".r-item a").each(function(){
+    var x = 12;
+    var y = 1;
+    var rand = parseInt(Math.random() * (x - y + 1) + y);
+    $(this).addClass("tags"+rand);
+  });
+  </script>
+  
+  <div class="album-slider mt20">
+    <div class="hd"> <i></i>
+      <h2>维尼叮当新款画册</h2>
+      <span></span></div>
+    <div class="bd">
+      <div id="album_slider">
+        <ul id="album_slider_list" class="album-slider-list clearfix">
+        
+          <li>
+            <div class="img"><a href="http://product.ef360.com/album-103626/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201811161203574483_240x300.jpg" width="240" height="300" alt="维尼叮当童装2018冬季新品画册" /></a></div>
+            <div class="imgshadow png">
+              <h4><a href="http://product.ef360.com/album-103626/" target="_blank">维尼叮当童装2018冬季新品画册</a></h4>
+              <p>2018Winter</p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="img"><a href="http://product.ef360.com/album-103562/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201808141358033424_240x300.jpg" width="240" height="300" alt="维尼叮当童装2018秋季新品画册" /></a></div>
+            <div class="imgshadow png">
+              <h4><a href="http://product.ef360.com/album-103562/" target="_blank">维尼叮当童装2018秋季新品画册</a></h4>
+              <p>2018Autumn</p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="img"><a href="http://product.ef360.com/album-103442/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201804101529236089_240x300.jpg" width="240" height="300" alt="维尼叮当童装2018夏季新品系列画册" /></a></div>
+            <div class="imgshadow png">
+              <h4><a href="http://product.ef360.com/album-103442/" target="_blank">维尼叮当童装2018夏季新品系列画册</a></h4>
+              <p>2018Summer</p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="img"><a href="http://product.ef360.com/album-103359/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201801181744474316_240x300.jpg" width="240" height="300" alt="维尼叮当童装2018春季新品画册" /></a></div>
+            <div class="imgshadow png">
+              <h4><a href="http://product.ef360.com/album-103359/" target="_blank">维尼叮当童装2018春季新品画册</a></h4>
+              <p>2018Spring</p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="img"><a href="http://product.ef360.com/album-103292/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201712041339475810_240x300.jpg" width="240" height="300" alt="维尼叮当2017冬季新品系列" /></a></div>
+            <div class="imgshadow png">
+              <h4><a href="http://product.ef360.com/album-103292/" target="_blank">维尼叮当2017冬季新品系列</a></h4>
+              <p>2017Winter</p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="img"><a href="http://product.ef360.com/album-103195/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201708240958199501_240x300.JPG" width="240" height="300" alt="维尼叮当童装2017秋冬新品画册" /></a></div>
+            <div class="imgshadow png">
+              <h4><a href="http://product.ef360.com/album-103195/" target="_blank">维尼叮当童装2017秋冬新品画册</a></h4>
+              <p>2017Autumn-Winter</p>
+            </div>
+          </li>
+          
+          <li>
+            <div class="img"><a href="http://product.ef360.com/album-102268/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201611181446491334_240x300.jpg" width="240" height="300" alt="2016秋冬维尼叮当新款童装画册" /></a></div>
+            <div class="imgshadow png">
+              <h4><a href="http://product.ef360.com/album-102268/" target="_blank">2016秋冬维尼叮当新款童装画册</a></h4>
+              <p>2016Autumn-Winter</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      <a href="javascript:void(0)" rel="nofollow" id="slider_lft" class="slider_lft"><i></i></a> <a href="javascript:void(0)" rel="nofollow" id="slider_rgt" class="slider_rgt"><i></i></a> </div>
+  </div>
+  <script type="text/javascript">
+  var album_marquee_count= $('#album_slider_list').find('li').size();
+  var album_marquee = new Marquee({MSClass:["album_slider","album_slider_list"],PrevBtnID:"slider_lft",NextBtnID:"slider_rgt",Direction:2, Step:0.5, Width:240, Height:300, Timer:20, DelayTime:5000, WaitTime:5000, ScrollStep:240, SwitchType:0, AutoStart:true});      
+  album_marquee.OnScroll = function(){
+    var index = album_marquee.Counter;
+    $(".album-slider").find('.hd').find('span').html(index + '/' + album_marquee_count);
+  }
+  $('.album-slider').find('#slider_lft').hide();
+  $('.album-slider').find('#slider_rgt').hide();
+  $('.album-slider').bind('mouseover',function(){
+    $(this).find('#slider_lft').show();
+    $(this).find('#slider_rgt').show();
+  }).bind('mouseout',function(){
+    $(this).find('#slider_lft').hide();
+    $(this).find('#slider_rgt').hide();
+  })
+  </script>
+  
+  <div class="r-pub-box mt20">
+    <div class="hd"> <i></i>
+      <h2>维尼叮当资讯</h2>
+    </div>
+    <div class="bd">
+      
+      <div class="news-pic clearfix"><a href="http://news.ef360.com/Articles/2018-11-28/377258.html" target="_blank"><img src="/EditManager/FileCustomer/news/201811/201811281739401144_400x300.jpg" width="100" height="75" alt="不惧严寒 维尼叮当童装2018冬装正“当红”" />不惧严寒 维尼叮当童装2018冬装正&ldquo;当红&rdquo;</a></div>
+      
+      <ul class="news-list">
+        
+        <li><a href="http://news.ef360.com/Articles/2018-11-23/377084.html" target="_blank">维尼叮当童装2018冬日新品持续上新 用温暖治愈整个冬天</a></li>
+        
+        <li><a href="http://news.ef360.com/Articles/2018-11-13/376826.html" target="_blank">维尼叮当童装2018秋冬“焕新”不停等你来!</a></li>
+        
+        <li style="position:relative;"><a href="http://www.ef360.com/subject/" target="_blank" style="position:absolute; left:10px; top:4px; background-color:#393f48; color:#fff; padding:0 4px; font-size:12px;">专题</a><a href="http://www.ef360.com/subject/fashion/Vinnytido2018s/" target="_blank" style="padding-left:42px;">维尼叮当童装2018夏季新品 诠释你的时尚主张</a></li>
+        
+      </ul>
+    </div>
+  </div>
+  
+  <div class="r-pub-box mt20 ">
+    <div class="hd"> <i></i>
+      <h2>维尼叮当新款图片</h2>
+    </div>
+    <div class="bd clearfix">
+      <ul class="r-product">
+        
+        <li><a href="http://product.ef360.com/Detail/101691.html" target="_blank"><img src="/myproject/imgs/ouyue/branch/201811161204365099_120x150.jpg" width="108" height="135" /><span>维尼叮当童装2018冬季个性印花棉服</span></a></li>
+        
+        <li><a href="http://product.ef360.com/Detail/101690.html" target="_blank"><img src="/myproject/imgs/ouyue/branch/201811161204353846_120x150.jpg" width="108" height="135" /><span>维尼叮当童装2018冬季奶咖色羊羔绒皮草大衣</span></a></li>
+        
+        <li><a href="http://product.ef360.com/Detail/101689.html" target="_blank"><img src="/myproject/imgs/ouyue/branch/201811161204347105_120x150.jpg" width="108" height="135" /><span>维尼叮当童装2018冬季短款拼接潮牌风羽绒服</span></a></li>
+        
+        <li><a href="http://product.ef360.com/Detail/101688.html" target="_blank"><img src="/myproject/imgs/ouyue/branch/201811161204344380_120x150.jpg" width="108" height="135" /><span>维尼叮当童装2018冬季灰色肌理大衣</span></a></li>
+        
+      </ul>
+    </div>
+  </div>
+  
+  <div class="mt15 clearfix">
+    <ul class="r-trade" style="margin:0 20px;">
+      <li><a href="http://trade.ef360.com/detail/1322155.html" target="_blank" class="clearfix"><span class="icotit">商机</span>五大优势助力 加盟维尼叮当童装心动不如行动！</a></li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+  $(".r-trade a").each(function(){
+    var x = 12, y = 1, rand = parseInt(Math.random() * (x - y + 1) + y);
+    $(this).addClass("tags"+rand);
+  });
+  </script>
+  
+  <div class="r-pub-box mt20 clearfix">
+    <div class="hd"><i></i>
+      <h2>维尼叮当联系方式</h2>
+    </div>
+    <div class="bd">
+      <div class="f14 fb">广州童声童色品牌管理有限公司（维尼叮当）</div>
+      <ul class="r-contact mt10">
+        <li><span>地址：</span>广州市白云区嘉禾街望岗工业三路38号德汇望岗科技园A栋一楼101</li><li><span>联系人：</span>市场部</li><li><span>电话：</span>020-31527969</li><li><span>官网：</span>http://www.weinidingdang.com/</li>
+      </ul>
+    </div>
+  </div>
+  
+</div>
+</div>
+      </div>
+    </div>
+    <div class="nx-box mt20" id="msg_box">
+  <div class="hd"><i></i>
+    <h2>留言咨询</h2>
+  </div>
+  <div class="bd">
+    <div class="msg-tab">
+      <div id="message_box" class="message_box" style="border:none;"></div>
+      <script type="text/javascript" src="http://www.ef360.com/_public2012/include/Comment/lin.comment.js"></script> 
+      <script type="text/javascript">$("#message_box").lin_comment_iframe({typeid : '2', productid : '103146'});</script> 
+    </div>
+    <!--<div class="msg-tab">
+      <div id="msg_point" style=" padding:30px;">
+        <form action="" method="post">
+          <input type="hidden" name="stat_point" id="stat_point" />
+          <div class="d-top-star" id="msg_star"><strong>品牌好评度</strong>：<span class="star star3" title="很差"></span><span class="star star3" title="较差"></span><span class="star star3" title="还行"></span><span class="star star3" title="推荐"></span><span class="star star3" title="力荐"></span> <strong id="message_star_point" style="color:#f9a27f; font-size:24px; font-weight:normal; font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', monospace">0.0<span style="font-size:12px; font-weight:bold;"> 分</span></strong>（0人评分 / 0人参与）</div>
+          <div>点评内容 <span>（字数限制为5-200个）</span></div>
+          <div><textarea name="Review" id="Review" class="text" style="width:600px; height:100px;">发表下您对这个品牌的感想吧！</textarea></div>
+          <div><input name="" id="submit_review" value="发布点评" type="submit" style=" border:1px solid #ccc; margin:0; margin-top:5px; width:80px; height:24px; cursor:pointer;"/></div>
+        </form>
+      </div>
+      <script type="text/javascript">
+        $('#msg_point').find('#msg_star').find('.star').bind('click',function(e){
+          var index = $('#msg_point').find('#msg_star').find('.star').index($(this));
+          var point = (index+1)*2;
+          $(this).prevAll().removeClass('star1').removeClass('star2').removeClass('star3').addClass('star1');
+          $(this).nextAll().removeClass('star1').removeClass('star2').removeClass('star3').addClass('star3');
+          if(e.offsetX>9){
+            $(this).removeClass('star1').removeClass('star2').removeClass('star3').addClass('star1');
+          }else{
+            $(this).removeClass('star1').removeClass('star2').removeClass('star3').addClass('star2');
+            point = point-1;
+          }
+          $('#msg_point').find('#message_star_point').val(point + '.0');
+          $('#msg_point').find('#stat_point').val(point);
+        }).bind('mousemove',function(e){
+          $(this).prevAll().removeClass('star1').removeClass('star2').removeClass('star3').addClass('star1');
+          $(this).nextAll().removeClass('star1').removeClass('star2').removeClass('star3').addClass('star3');
+          if(e.offsetX>9){
+            $(this).removeClass('star1').removeClass('star2').removeClass('star3').addClass('star1');
+          }else{
+            $(this).removeClass('star1').removeClass('star2').removeClass('star3').addClass('star2');
+          }
+        }).bind('mouseout',function(e){
+          if($('#stat_point').val()==null){
+            $('#msg_point').find('#msg_star').find('.star').removeClass('star1').removeClass('star2').removeClass('star3').addClass('star3');
+          }
+        })
+      </script>
+    </div>-->
+  </div>
+</div>
+
+    <div class="nx-box mt20">
+      <div class="hd"><i></i>
+        <h2>同类<a href="http://brand.ef360.com/">服饰品牌</a>推荐</h2>
+      </div>
+      <div class="bd">
+        <ul class="d-brandlogo clearfix" id="d_brandlogo">
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/8775/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201704121348082879_120x60.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/8775/" target="_blank">红豆居家</a></span><!--<span class="desc"><a href="http://brand.ef360.com/8775/" target="_blank">红豆居家内衣生活馆全新联营模式全托管零库存火爆招商中</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/102868/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201708311025226337_120x60.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/102868/" target="_blank">贝尚</a></span><!--<span class="desc"><a href="http://brand.ef360.com/102868/" target="_blank">B.story童装诚邀您的加盟</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/101351/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201406301804153444.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/101351/" target="_blank">小熊哇噻</a></span><!--<span class="desc"><a href="http://brand.ef360.com/101351/" target="_blank">小熊哇噻童装诚邀您的加盟！</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/14104/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201401161108477546.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/14104/" target="_blank">李维斯童装</a></span><!--<span class="desc"><a href="http://brand.ef360.com/14104/" target="_blank">Levi's 独一无二的牛仔童装</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/7426/" target="_blank"><img src="/myproject/imgs/ouyue/branch/200710171634437152.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/7426/" target="_blank">淘宝龙</a></span><!--<span class="desc"><a href="http://brand.ef360.com/7426/" target="_blank">淘宝龙诚邀加盟</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/17487/" target="_blank"><img src="/myproject/imgs/ouyue/branch/20121024132544837.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/17487/" target="_blank">欢呼小马</a></span><!--<span class="desc"><a href="http://brand.ef360.com/17487/" target="_blank">cheers colt欢呼小马时尚品牌童装诚邀加盟</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/102115/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201709221446098224_120x60.png" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/102115/" target="_blank">杰西凯</a></span><!--<span class="desc"><a href="http://brand.ef360.com/102115/" target="_blank">杰西凯童装 一样的童年，不一样的气质</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/14809/" target="_blank"><img src="/myproject/imgs/ouyue/branch/20110324120619791.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/14809/" target="_blank">Trelise Cooper</a></span><!--<span class="desc"><a href="http://brand.ef360.com/14809/" target="_blank">Trelise Cooper 品牌童装诚邀您的加盟</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/10091/" target="_blank"><img src="/myproject/imgs/ouyue/branch/2009925171614544.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/10091/" target="_blank">舒贝儿</a></span><!--<span class="desc"><a href="http://brand.ef360.com/10091/" target="_blank">舒贝儿婴童服饰诚邀加盟</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/6393/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201711101534163997_120x60.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/6393/" target="_blank">奇乐蜜儿</a></span><!--<span class="desc"><a href="http://brand.ef360.com/6393/" target="_blank">奇乐蜜儿童装邀您加盟</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/13386/" target="_blank"><img src="/myproject/imgs/ouyue/branch/20100810101953310.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/13386/" target="_blank">超人</a></span><!--<span class="desc"><a href="http://brand.ef360.com/13386/" target="_blank">超人童装诚邀加盟</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/13412/" target="_blank"><img src="/myproject/imgs/ouyue/branch/20100812134309231.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/13412/" target="_blank">米格鲁</a></span><!--<span class="desc"><a href="http://brand.ef360.com/13412/" target="_blank">米格鲁童装品牌加盟</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/9304/" target="_blank"><img src="/myproject/imgs/ouyue/branch/20081030144314659.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/9304/" target="_blank">古狗童话</a></span><!--<span class="desc"><a href="http://brand.ef360.com/9304/" target="_blank">古狗童话童装诚邀加盟</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/15280/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201705221453186923_120x60.png" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/15280/" target="_blank">意玛</a></span><!--<span class="desc"><a href="http://brand.ef360.com/15280/" target="_blank">意玛诚邀您的加盟</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/14823/" target="_blank"><img src="/myproject/imgs/ouyue/branch/20110329155240887.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/14823/" target="_blank">宝贝豆叮</a></span><!--<span class="desc"><a href="http://brand.ef360.com/14823/" target="_blank">宝贝豆叮童装诚邀加盟</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/101295/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201406191322103965.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/101295/" target="_blank">棉果果</a></span><!--<span class="desc"><a href="http://brand.ef360.com/101295/" target="_blank">棉果果婴童装 聆听宝宝的声音</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/17625/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201406111534233320.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/17625/" target="_blank">wua.wua</a></span><!--<span class="desc"><a href="http://brand.ef360.com/17625/" target="_blank">wua.wua婴幼儿品牌童装招商加盟</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/16200/" target="_blank"><img src="/myproject/imgs/ouyue/branch/20111201181719166.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/16200/" target="_blank">乐背尔</a></span><!--<span class="desc"><a href="http://brand.ef360.com/16200/" target="_blank">乐背尔品牌童装邀您加盟</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/18047/" target="_blank"><img src="/myproject/imgs/ouyue/branch/20130607164016302.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/18047/" target="_blank">米乐谷</a></span><!--<span class="desc"><a href="http://brand.ef360.com/18047/" target="_blank">米乐谷童装诚邀各地加盟代理商</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/100694/" target="_blank"><img src="/myproject/imgs/ouyue/branch/201403241752111484.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/100694/" target="_blank">吆吆炫</a></span><!--<span class="desc"><a href="http://brand.ef360.com/100694/" target="_blank">吆吆炫童装品牌打造自主品牌“吆吆炫”个性服装</a></span>--></li>
+          
+          <li><span class="logo"><a href="http://brand.ef360.com/7804/" target="_blank"><img src="//myproject/imgs/ouyue/branch/2008130133421477.jpg" width="120" height="60" alt="" /></a></span><span class="txt"><a href="http://brand.ef360.com/7804/" target="_blank">米娜</a></span><!--<span class="desc"><a href="http://brand.ef360.com/7804/" target="_blank">MINA</a></span>--></li>
+          
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+  <div style="margin:20px auto 0; width:1000px;"><a href="http://www.ef360.com/jiameng/" target="_blank"><img src="http://www.ef360.com/_Public/_UpFile/jiameng_1000_50.gif" width="1000" height="50" /></a></div>
+<div class="footer">
+  
+  <div class="wrapper clearfix">
+    <!--<div class="footer_weixin"><img src="/_public2012/images/weixin.jpg" width="120" height="120" /><br>
+      关注华衣网微信公众号</div>-->
+    
+<div class="mobile-tl clearfix" style=" padding-top:20px;">
+  <div class="mobile-tl-1"><a href="http://www.ef360.com/app/" target="_blank" title="华衣网官方微信" class="mobile-tl-11"></a></div>
+  <div class="mobile-tl-2"><a href="http://www.ef360.com/app/" target="_blank" title="华衣网移动版" class="mobile-tl-21"></a></div>
+  <div class="mobile-tl-3"><a href="http://www.ef360.com/app/" target="_blank" title="华衣网APP客户端下载" class="mobile-tl-31"></a></div>
+</div>
+
+<!--<div id="server_nav"><a href="http://www.ef360.com/" target="_blank">首页</a> | <a href="http://www.ef360.com/about/" target="_blank">关于华衣网</a> | <a href="http://www.ef360.com/jiameng/" target="_blank">服装店加盟</a> | <a rel="nofollow" href="http://www.ef360.com/about/contact/" target="_blank">联系我们</a> | <a rel="nofollow" href="http://www.ef360.com/about/services/" target="_blank">客户服务</a> | <a rel="nofollow" href="http://www.ef360.com/about/server.htm" target="_blank">免责条款</a> | <a href="http://brand.ef360.com/sitemap.html" target="_blank">网站地图</a></div>-->
+<div id="copyright">咨询QQ+微信：634363622　　客服QQ：976943617 / 634363622　　<a href="http://www.ef360.com/jiameng/" target="_blank">服装加盟</a>咨询QQ：1465512630　　展会合作QQ：865583974　　合作连接QQ：976943617<br />
+  服装品牌加盟代理群：80836417 （<a href="http://www.ef360.com/" target="_blank">服装</a> <a href="http://www.lady.ef360.com/" target="_blank">女装</a> <a href="http://www.man.ef360.com/" target="_blank">男装</a>）　　<a href="http://www.tz.ef360.com/" target="_blank">童装</a>品牌加盟代理群：22517331　　<a href="http://www.ne.ef360.com/" target="_blank">内衣</a>品牌加盟代理群：102994190　　<a href="http://www.sp.ef360.com/" target="_blank">饰品</a>品牌加盟代理群：57608143<br />
+  咨询热线：0512-50126582（昆山营销中心）　　上海总部：021-62339528　　传真：021-32030502　　广州办电话：020-34093626<br />
+  华衣网-服装品牌网 彰显品牌价值 版权所有 &copy; 2010-2018　沪ICP备07503963号<br />
+  为了您的权益不受侵害，华衣网-服装品牌网提醒您在加盟代理服装服饰品牌时，请认真考察欲加盟代理服装服饰品牌的资信度！</div>
+<div style="display:none;"><script type="text/javascript" src="http://www.ef360.com/_Public2012/include/tongji.js"></script>
+
+</div>
+<script type="text/javascript" src="http://www.ef360.com/_public2012/js/lin/lin.quickbar.js?v=20140417"></script> 
+  </div>
+</div>
+ 
+</div>
+<script type="text/javascript">
+var _subnavTop = $('.sub-nav').parents().position().top;
+var _boxTop = $('#d_right').parent().position().top;
+var _contentTop = $('#content').position().top;
+var _scrolled = 0;
+var _goTop = _boxTop;
+function setTop(){
+  _boxTop = $('#d_right').parent().position().top;
+  _contentTop = $('#content').position().top;
+  
+  var _scrollTop = $(document).scrollTop();
+  var _windowHeight = $(window).height();
+  var _boxHeight = $('#d_right').outerHeight();
+  var _contentHeight = $('.d-detail-lft').outerHeight();
+  
+  if (_scrollTop>=_subnavTop){
+    $('.sub-nav').addClass('fixed');
+  }else{
+    $('.sub-nav').removeClass('fixed');
+  }
+  
+  if (_boxHeight>=_contentHeight){
+    return false; 
+  }
+  
+  _goTop = _goTop + (_scrolled-_scrollTop);
+  if(_scrolled>=_scrollTop){
+    if(_goTop>=36){
+      _goTop = 36;
+    }
+  }else{
+    $('#d_right').addClass('fixed');
+    if(_goTop<=_windowHeight-_boxHeight){
+      _goTop = _windowHeight-_boxHeight;
+    }
+    if (_windowHeight>_boxHeight){
+      _goTop = 36;
+    }
+  }
+  if(_scrollTop<=_boxTop-36){
+    _goTop = _boxTop - _scrollTop;
+    $('#d_right').removeClass('fixed');
+  }
+  if (_windowHeight>_boxHeight){
+    if(_scrollTop>=(_boxTop+_contentHeight)-_boxHeight-36){
+      _goTop = (_boxTop+_contentHeight)-_boxHeight-_scrollTop;
+    }
+  }else{
+    if(_scrollTop>=(_boxTop+_contentHeight)-_boxHeight-(_windowHeight-_boxHeight)){
+      _goTop = (_boxTop+_contentHeight)-_boxHeight-_scrollTop;
+    }
+  }
+  //$('.info').html('_windowHeight:' + _windowHeight + '<br/>' + '_contentHeight:' + _contentHeight + '<br/>' + '_boxHeight:' + _boxHeight + '<br/>' + '_scrollTop:' + _scrollTop + '<br/>' + 'boxTop:' + _boxTop + '<br/>' + '_goTop:' + _goTop + '<br/>' + '_contentS:' + (_contentTop+_contentHeight) + '/' + (_scrollTop+_windowHeight) + '<br/>');
+  $('#d_right').css({'top':_goTop});
+  _scrolled = _scrollTop;
+}
+$(window,document).bind('scroll',setTop).bind('resize',setTop);
+</script> 
+<script type="text/javascript">
+$('#album_list').find('li').bind('mouseover', function(){
+  $(this).addClass('active');
+}).bind('mouseout', function(){
+  $(this).removeClass('active');
+})
+
+$('.btn-like').bind('click', function(){
+  var data = '';
+  data += 'id=103146'; 
+  data += '&action=upit';
+  $.ajax({ 
+    type: 'get',
+    url: '/search',
+    data: data,
+    dataType: 'jsonp',
+    cache:false,
+    beforeSend: function(){},
+    complete: function(){},
+    success: function(data){
+      if(data.error=='0'){
+        $('.like-num').html(data.hits);
+        $(_this).parent().parent().append('<div class="hearts">&hearts;</div>').find('div.hearts').animate({top:0,opacity:0},1000,function(){
+          $(this).remove(); 
+        });
+      }else if(data.error=='1'){
+        alert('您已经重复喜欢过该品牌，明天还可以再来投票。');
+      }else{
+        alert('提交错误！请再重复提交一次。');
+      }
+    },
+    error: function(xhr, textStatus, errorThrown){
+      alert('提交错误！请再重复提交一次。');
+    }
+  });
+});
+</script>
+</body>
+>>>>>>> c04a19038846600c58b0b199ea1b925aeb706037
 </html>
