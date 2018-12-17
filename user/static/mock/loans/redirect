@@ -1,7 +1,0 @@
-{
-    "code": 200,
-    "message": "Success.",
-    "data": {
-        "redirect": "http:\/\/www.platform.com\/bind.php?appid=p2peye&signkey=923c76a0e5cf3293903b69880febb934&data=g39MX32V75NHE7s9i3oPSZyifwUxYDnIuXOPEJrvuyrlpzR%2Fb31y%2B3A3AMOisfZEV4UDE4SMuF2RfdV9d4fSkuc8y1Rgyb%2B6xNQSUobFpFtz9kpRI3ejJF%2FGjN1P7ZqTtcNB3d%2FUGGF0G5Hr2Cltjp2qtXZtrc7l8dYuGd5KAC8%3D"
-    }
-}
